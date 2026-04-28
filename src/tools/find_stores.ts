@@ -1,17 +1,29 @@
 import { z } from 'zod';
 import type { AdapterRegistry } from '../adapters/registry.js';
-import type { Chain, NormalizedStore } from '../adapters/types.js';
+import type { NormalizedStore } from '../adapters/types.js';
 import { geocode } from '../services/geocoding.js';
+import { ToolError } from './errors.js';
 
 export const findStoresSchema = z.object({
   near: z.union([
-    z.object({ lat: z.number(), lng: z.number() }),
-    z.object({ zip: z.string() }),
-    z.object({ address: z.string() }),
-  ]),
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl'])).optional(),
-  radiusKm: z.number().positive().max(50).optional(),
-});
+    z.object({
+      lat: z.number().describe('Latitude in decimal degrees (WGS 84), e.g. 47.3769'),
+      lng: z.number().describe('Longitude in decimal degrees (WGS 84), e.g. 8.5417'),
+    }).describe('Coordinates of the search center'),
+    z.object({
+      zip: z.string().describe('Swiss postal code (PLZ / NPA), e.g. "8001"'),
+    }).describe('Swiss postal code (PLZ), e.g. "8001"'),
+    z.object({
+      address: z.string().describe('Free-text address string, e.g. "Bahnhofstrasse 1, Zürich"'),
+    }).describe('Free-text address (limited support — prefer zip or lat/lng)'),
+  ]).describe('Center of the search radius. Pass either coordinates, a Swiss ZIP, or a free-text address.'),
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl']))
+    .optional()
+    .describe('Limit results to specific chains. Omit to search all configured chains.'),
+  radiusKm: z.number().positive().max(50)
+    .optional()
+    .describe('Search radius in kilometers (1–50). Defaults to 5 km.'),
+}).describe('Find grocery stores near a location, filtered by chain and radius. Returns store name, address, location, and hours.');
 
 export type FindStoresInput = z.infer<typeof findStoresSchema>;
 
@@ -20,7 +32,21 @@ export async function findStoresHandler(
   input: FindStoresInput,
 ): Promise<NormalizedStore[]> {
   const geo = geocode(input.near as any);
-  if (!geo.ok) throw new Error(geo.error.code);
+  if (!geo.ok) {
+    const err = geo.error;
+    if (err.code === 'unknown_zip') {
+      throw new ToolError(
+        'unknown_zip',
+        `ZIP "${(err as any).zip}" is not in the lookup table`,
+        'Pass { lat, lng } directly or check that the ZIP is a valid Swiss PLZ (e.g. "8001").',
+      );
+    }
+    throw new ToolError(
+      err.code,
+      'address_unsupported' in err ? (err as any).reason : err.code,
+      'Pass a Swiss ZIP code or { lat, lng } coordinates instead of a free-text address.',
+    );
+  }
 
   const radius = input.radiusKm ?? 5;
   const adapters = registry.withCapability('storeSearch', input.chains);

@@ -13,6 +13,7 @@ import type {
   NormalizedProduct, NormalizedStore, NormalizedPromotion, StockResult,
   SearchQuery, StoreQuery, PromotionQuery, GeoPoint,
 } from '../types.js';
+import { logger } from '../../util/log.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
@@ -167,7 +168,7 @@ export class MigrosAdapter implements StoreAdapter {
             return { store, inStock: !!((r as any).available ?? (r as any).inStock), quantity: (r as any).quantity };
           } catch (e) {
             const msg = e instanceof Error ? e.message : String(e);
-            console.warn(`[migros] stock check failed for store ${store.id}: ${msg}`);
+            logger.debug(`[migros] stock check failed for store ${store.id}: ${msg}`);
             return { store, inStock: false };
           }
         }),

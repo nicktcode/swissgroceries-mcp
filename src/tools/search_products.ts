@@ -8,19 +8,30 @@ const TAG_VALUES = [
 ] as const;
 
 export const searchProductsSchema = z.object({
-  query: z.string().min(1),
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl'])).optional(),
-  storeIds: z.array(z.string()).optional(),
+  query: z.string().min(1)
+    .describe('Search term in any language, e.g. "Milch", "pâtes", "Bier". At least 1 character.'),
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl']))
+    .optional()
+    .describe('Restrict search to specific chains. Omit to search all configured chains in parallel.'),
+  storeIds: z.array(z.string())
+    .optional()
+    .describe('Filter results to products available in these store IDs (chain-specific internal IDs).'),
   filters: z.object({
-    tags: z.array(z.enum(TAG_VALUES)).optional(),
-    maxPrice: z.number().positive().optional(),
+    tags: z.array(z.enum(TAG_VALUES))
+      .optional()
+      .describe('Product tags to filter by, e.g. ["organic", "vegan"]. All tags must match.'),
+    maxPrice: z.number().positive()
+      .optional()
+      .describe('Maximum product price in CHF (inclusive), e.g. 3.5.'),
     sizeRange: z.object({
-      minMl: z.number().nonnegative().optional(),
-      maxMl: z.number().nonnegative().optional(),
-    }).optional(),
-  }).optional(),
-  limit: z.number().int().positive().max(50).optional(),
-});
+      minMl: z.number().nonnegative().optional().describe('Minimum size in millilitres (ml), e.g. 500.'),
+      maxMl: z.number().nonnegative().optional().describe('Maximum size in millilitres (ml), e.g. 1500.'),
+    }).optional().describe('Size range filter in millilitres; useful for beverages and liquids.'),
+  }).optional().describe('Optional product filters applied after search.'),
+  limit: z.number().int().positive().max(50)
+    .optional()
+    .describe('Maximum number of results per chain (1–50). Defaults to chain-specific limit.'),
+}).describe('Search for products across configured Swiss grocery chains by keyword, with optional price, size, and tag filters. Returns results grouped by chain.');
 
 export type SearchProductsInput = z.infer<typeof searchProductsSchema>;
 

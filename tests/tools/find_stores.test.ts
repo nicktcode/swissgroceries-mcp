@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { findStoresHandler, findStoresSchema } from '../../src/tools/find_stores.js';
 import { AdapterRegistry } from '../../src/adapters/registry.js';
+import { ToolError } from '../../src/tools/errors.js';
 import type { StoreAdapter } from '../../src/adapters/types.js';
 
 const fakeAdapter: StoreAdapter = {
@@ -35,11 +36,16 @@ describe('find_stores tool', () => {
     expect(out[0].chain).toBe('migros');
   });
 
-  it('returns empty array on unknown zip', async () => {
+  it('throws ToolError with code unknown_zip on unknown zip', async () => {
     const r = new AdapterRegistry();
     r.register(fakeAdapter);
-    await expect(
-      findStoresHandler(r, { near: { zip: '9999' }, radiusKm: 5 }),
-    ).rejects.toThrow(/unknown_zip/);
+    let caught: unknown;
+    try {
+      await findStoresHandler(r, { near: { zip: '9999' }, radiusKm: 5 });
+    } catch (e) {
+      caught = e;
+    }
+    expect(caught).toBeInstanceOf(ToolError);
+    expect((caught as ToolError).code).toBe('unknown_zip');
   });
 });
