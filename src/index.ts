@@ -17,7 +17,7 @@ import { getPromotionsHandler, getPromotionsSchema } from './tools/get_promotion
 import { findStockHandler, findStockSchema } from './tools/find_stock.js';
 import { planShoppingHandler, planShoppingSchema } from './tools/plan_shopping.js';
 
-import { z } from 'zod';
+import { zodToJsonSchema } from 'zod-to-json-schema';
 
 export function buildRegistry(): AdapterRegistry {
   const r = new AdapterRegistry();
@@ -63,13 +63,6 @@ export async function createServer(registry: AdapterRegistry = buildRegistry()) 
   });
 
   return server;
-}
-
-// Minimal zod → JSON Schema converter for tool input descriptions.
-// Permissive shape so the MCP loads. Replace with the `zod-to-json-schema`
-// package before final v1 release for richer schemas.
-function zodToJsonSchema(_schema: z.ZodTypeAny): Record<string, unknown> {
-  return { type: 'object', properties: {}, additionalProperties: true };
 }
 
 async function main() {
