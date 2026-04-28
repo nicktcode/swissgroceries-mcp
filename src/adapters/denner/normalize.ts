@@ -1,5 +1,6 @@
 import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
+import { annotateMultipack } from '../../util/multipack.js';
 import { deriveDennerTags } from './tags.js';
 
 const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk)/i;
@@ -68,6 +69,7 @@ export function normalizeProduct(raw: DennerProductRaw): NormalizedProduct {
     raw,
   };
   product.unitPrice = computeUnitPrice(current, size);
+  annotateMultipack(product);
   return product;
 }
 

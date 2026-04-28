@@ -1,5 +1,6 @@
 import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
+import { annotateMultipack } from '../../util/multipack.js';
 import { deriveAldiTags } from './tags.js';
 
 // Actual Aldi API shape (verified against live fixtures 2026-04-28)
@@ -130,6 +131,7 @@ export function normalizeProduct(raw: AldiProductRaw): NormalizedProduct {
     raw,
   };
   product.unitPrice = computeUnitPrice(current, size);
+  annotateMultipack(product);
   return product;
 }
 

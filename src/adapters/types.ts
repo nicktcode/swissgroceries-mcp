@@ -38,6 +38,18 @@ export interface NormalizedProduct {
   size?: { value: number; unit: Unit };
   price: { current: number; regular?: number; currency: 'CHF' };
   unitPrice?: { value: number; per: 'kg' | 'l' | 'piece' };
+  /**
+   * For products sold as multipacks (e.g. "6x1.5l"), an estimate of what
+   * a single unit would cost. Useful for cross-chain comparison when one
+   * chain only stocks multipacks and the user wants a single bottle.
+   * The estimate is derived from the multipack price ÷ pack count and is
+   * not guaranteed to match the chain's actual single-unit price.
+   */
+  multipack?: {
+    count: number;
+    perUnitPrice: number;
+    perUnitSize?: { value: number; unit: Unit };
+  };
   category?: string[];
   tags: Tag[];
   imageUrl?: string;

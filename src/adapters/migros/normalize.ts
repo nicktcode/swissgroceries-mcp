@@ -22,6 +22,7 @@
 
 import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
+import { annotateMultipack } from '../../util/multipack.js';
 import { deriveTags } from './tags.js';
 
 interface MigrosProductRaw {
@@ -163,6 +164,7 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     };
   }
   product.unitPrice = computeUnitPrice(current, size);
+  annotateMultipack(product);
   return product;
 }
 

@@ -6,26 +6,12 @@ const r = buildRegistry();
 const items = [{ query: 'apfel' }, { query: 'apfelschorle' }];
 const chains: Chain[] = ['migros', 'coop', 'aldi', 'lidl'];
 
-/**
- * Detect pack count from product names like "6x1.5l" / "12 x 50cl" / "4er Pack".
- * Returns 1 if not a multipack.
- */
-function packCount(name: string): number {
-  const m1 = name.match(/(\d+)\s*[x×]\s*[\d.,]+\s*(?:g|kg|ml|cl|dl|l)/i);
-  if (m1) return parseInt(m1[1], 10);
-  const m2 = name.match(/\b(\d+)er\b/i);
-  if (m2) return parseInt(m2[1], 10);
-  return 1;
-}
-
 function describeLine(p: NormalizedProduct): string {
   const u = p.unitPrice ? ` [${p.unitPrice.value.toFixed(2)}/${p.unitPrice.per}]` : '';
-  const pc = packCount(p.name);
-  const perBottle =
-    pc > 1
-      ? ` ≈ CHF ${(p.price.current / pc).toFixed(2)} per single (${pc}-pack)`
-      : '';
-  return `${p.name.slice(0, 55)} CHF ${p.price.current.toFixed(2)}${u}${perBottle}`;
+  const m = p.multipack
+    ? ` ≈ CHF ${p.multipack.perUnitPrice.toFixed(2)} per single (${p.multipack.count}-pack)`
+    : '';
+  return `${p.name.slice(0, 55)} CHF ${p.price.current.toFixed(2)}${u}${m}`;
 }
 
 console.log('Single-store comparison for: apfel + apfelschorle near 5430 Wettingen\n');
