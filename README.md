@@ -129,7 +129,7 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 | Chain | Product search | Promotions | Per-store stock | Auth required | Notes |
 |---|---|---|---|---|---|
 | Migros | Full catalog | Yes | Yes | Guest token (auto) | Uses `migros-api-wrapper`. Zod schema validation catches API drift. |
-| Coop | Delivery catalog only | Yes (limited) | Yes | None | DataDome bot protection may trigger. Physical store catalog differs from online. |
+| Coop | Full catalog (Hybris) | Yes (limited) | Yes (geo) | None | Catalog and prices match physical Coop stores; coopathome adds an availability layer. DataDome bot protection may trigger if you exceed reasonable rates. |
 | Aldi | Full catalog | Yes | No | None | Well-structured REST API; reliable. |
 | Denner | Full catalog (content API) | Yes | No | `DENNER_JWT` (Bearer) | JWT extracted from iOS app via Charles. Set `DENNER_JWT` env var to enable. |
 | Lidl | Weekly leaflet only | Yes | No | None | Only products in the current weekly campaign are visible; not the full catalog. |
@@ -205,13 +205,13 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 
 ## Status
 
-v0.1.0: Migros (full catalog), Coop (delivery catalog only), Aldi (full), Denner (env-gated, full), Lidl (weekly leaflet only).
+v0.1.0: Migros (full catalog), Coop (full catalog via coopathome), Aldi (full), Denner (env-gated, full), Lidl (weekly leaflet only).
 
 Known limitations:
 - ZIP geocoding only — free-text addresses are not supported (pass `{ lat, lng }` instead)
-- Cross-chain price comparison uses catalog prices, not per-store shelf prices
+- Cross-chain price comparison uses catalog prices; per-store shelf-level pricing variations (rare in CH) are not modeled
 - Lidl and Aldi catalogs are limited (weekly campaigns / walk-in service point)
-- Coop online catalog differs from the physical store catalog
+- Coop's online catalog (coopathome) is the same data as the physical-store assortment; it just adds availability/inventory info per store
 - Migros `migros-api-wrapper` is a third-party library; if it diverges from the real API, update the adapter
 
 See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the full design.
