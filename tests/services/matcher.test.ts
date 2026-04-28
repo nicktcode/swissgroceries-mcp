@@ -78,4 +78,68 @@ describe('matchProduct', () => {
     const m = matchProduct({ query: 'milch' }, milkProducts);
     expect(m?.id).not.toBe('3');
   });
+
+  it('rejects Pflegebad (bath product) for milch query', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'aldi', id: '1', name: 'Pflegebad, Milch & Honig',
+        price: { current: 1.55, currency: 'CHF' },
+        tags: [],
+      },
+      {
+        chain: 'aldi', id: '2', name: 'Vollmilch UHT 1L',
+        price: { current: 1.85, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.85, per: 'l' },
+        tags: [],
+      },
+    ];
+    const m = matchProduct({ query: 'milch' }, products);
+    expect(m?.id).toBe('2');
+  });
+
+  it('prefers a category-matching milk over a chocolate with "Milch" in name', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'aldi', id: 'choc', name: 'Tafelschokolade Milch',
+        price: { current: 1.79, currency: 'CHF' },
+        size: { value: 200, unit: 'g' },
+        unitPrice: { value: 8.95, per: 'kg' },
+        category: ['Süsswaren'],
+        tags: [],
+      },
+      {
+        chain: 'aldi', id: 'milk', name: 'Vollmilch UHT 1L',
+        price: { current: 1.85, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.85, per: 'l' },
+        category: ['Milchprodukte'],
+        tags: [],
+      },
+    ];
+    const m = matchProduct({ query: 'milch' }, products);
+    expect(m?.id).toBe('milk');
+  });
+
+  it('handles brand prefix in the name (M-Budget Milch wins via brand strip)', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'migros', id: 'mb', name: 'M-Budget Milch UHT 1L',
+        brand: 'M-Budget',
+        price: { current: 1.45, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.45, per: 'l' },
+        tags: ['budget'],
+      },
+      {
+        chain: 'migros', id: 'reg', name: 'Vollmilch UHT 1L',
+        price: { current: 1.85, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.85, per: 'l' },
+        tags: [],
+      },
+    ];
+    const m = matchProduct({ query: 'milch' }, products);
+    expect(m?.id).toBe('mb'); // cheaper, both should match well after brand strip
+  });
 });

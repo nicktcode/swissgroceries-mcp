@@ -71,33 +71,67 @@ interface Scored {
   score: number;
 }
 
+const NEG_KEYWORDS = /(pflegebad|crème|creme|lotion|shampoo|dusche|seife|haar(?:\s|$)|kosmetik|drogerie|\bdeo\b|\bbad\s)/i;
+
 function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
-  const haystack = [p.name, p.brand ?? '', ...(p.category ?? [])].join(' ');
-  const nameSim = tokenSetRatio(item.query, haystack);
+  const queryTokens = [...tokens(item.query)];
+  if (queryTokens.length === 0) return 0;
 
-  let score = nameSim;
-
-  const nameTokens = tokens(p.name);
-  const queryTokens = tokens(item.query);
-  let nameHits = 0;
-  for (const t of queryTokens) if (nameTokens.has(t)) nameHits++;
-  if (queryTokens.size > 0) {
-    score += 0.2 * (nameHits / queryTokens.size);
-  }
-
-  // Substring bonus for compound-word matches (e.g., "milch" inside "vollmilch")
-  const normalizedName = normalize(p.name);
-  let substringHits = 0;
-  for (const t of queryTokens) {
-    if (t.length >= 4 && normalizedName.includes(t) && !nameTokens.has(t)) {
-      substringHits++;
+  // Strip brand prefix so it doesn't push the real product noun deeper
+  let nameForScoring = p.name;
+  if (p.brand) {
+    const brandLower = p.brand.toLowerCase();
+    const nameLower = p.name.toLowerCase();
+    if (nameLower.startsWith(brandLower)) {
+      nameForScoring = p.name.slice(p.brand.length).replace(/^[\s,.-]+/, '');
     }
   }
-  if (queryTokens.size > 0) {
-    score += 0.3 * (substringHits / queryTokens.size);
+
+  const nameTokensArr = [...tokens(nameForScoring)];
+  if (nameTokensArr.length === 0) return 0;
+
+  let totalMatch = 0;
+  for (const qt of queryTokens) {
+    let bestMatch = 0;
+    for (let i = 0; i < nameTokensArr.length; i++) {
+      const nt = nameTokensArr[i];
+      let strength = 0;
+      if (nt === qt) strength = 1.0;
+      else if (qt.length >= 4 && nt.includes(qt)) strength = 0.85;
+
+      if (strength > 0) {
+        const posWeight =
+          i === 0 ? 1.0 :
+          i === 1 ? 0.55 :
+          i === 2 ? 0.4 :
+          0.3;
+        const candidate = strength * posWeight;
+        if (candidate > bestMatch) bestMatch = candidate;
+      }
+    }
+    totalMatch += bestMatch;
   }
 
-  return score;
+  let avg = totalMatch / queryTokens.length;
+
+  // Name-length penalty
+  if (nameTokensArr.length > 5) avg *= 0.7;
+
+  // Negative-keyword penalty (drogerie/cosmetics)
+  if (NEG_KEYWORDS.test(p.name)) avg *= 0.2;
+
+  // Category match bonus
+  if (p.category && p.category.length > 0) {
+    const catText = p.category.join(' ').toLowerCase();
+    for (const qt of queryTokens) {
+      if (qt.length >= 4 && catText.includes(qt)) {
+        avg *= 1.5;
+        break;
+      }
+    }
+  }
+
+  return avg;
 }
 
 export function matchProduct(
