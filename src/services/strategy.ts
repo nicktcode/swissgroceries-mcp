@@ -1,5 +1,5 @@
 import type { Chain, NormalizedProduct, NormalizedStore } from '../adapters/types.js';
-import type { ShoppingItem } from './matcher.js';
+import { isMultipack, type ShoppingItem } from './matcher.js';
 
 export type Strategy = 'single_store' | 'split_cart' | 'absolute_cheapest';
 
@@ -140,6 +140,13 @@ function solveSplit(
       for (const [, p] of withUnit) counts[p.unitPrice!.per] = (counts[p.unitPrice!.per] ?? 0) + 1;
       const dominantPer = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
       pool = withUnit.filter(([, p]) => p.unitPrice!.per === dominantPer);
+    }
+
+    // Prefer single packs unless the user asked for a multipack via query syntax.
+    const userWantsBulk = /\d+\s*[x×]\s*\d|multipack|sixpack|sechserpack/i.test(item.query);
+    if (!userWantsBulk) {
+      const singles = pool.filter(([, p]) => !isMultipack(p));
+      if (singles.length > 0) pool = singles;
     }
 
     pool.sort((a, b) => {

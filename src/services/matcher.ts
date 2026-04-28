@@ -211,6 +211,24 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
   return avg;
 }
 
+/**
+ * Detects multipacks via name patterns ("6x1l", "12 x 50cl", "4er", "Pack").
+ * Multipacks are de-prioritized by default; users can opt in by including
+ * the pattern in their query (e.g. "apfelschorle 6x") or by pinning a SKU.
+ */
+export function isMultipack(p: NormalizedProduct): boolean {
+  const n = p.name.toLowerCase();
+  if (/\d+\s*[x×]\s*\d/i.test(n)) return true;
+  if (/\b\d+er[\s\-]?pack/i.test(n)) return true;
+  if (/\b(multipack|sixpack|sechserpack|six pack)\b/i.test(n)) return true;
+  return false;
+}
+
+function userWantsMultipack(item: ShoppingItem): boolean {
+  const q = item.query.toLowerCase();
+  return /\d+\s*[x×]\s*\d/i.test(q) || /multipack|sixpack|sechserpack|\d+er pack/i.test(q);
+}
+
 export function matchProduct(
   item: ShoppingItem,
   candidates: NormalizedProduct[],
@@ -236,9 +254,16 @@ export function matchProduct(
   // This prevents a weakly-matched cheap item from beating a strongly-matched one.
   const topScore = scored[0].score;
   const scoreFloor = topScore * 0.35;
-  const topK = scored.slice(0, 3).filter((s) => s.score >= scoreFloor);
-  const priceOf = (p: NormalizedProduct) => p.unitPrice?.value ?? p.price.current;
+  let topK = scored.slice(0, 3).filter((s) => s.score >= scoreFloor);
 
+  // Default: prefer single packs over multipacks. Users opt into bulk via
+  // explicit query patterns ("6x", "multipack") or by pinning a SKU.
+  if (!userWantsMultipack(item)) {
+    const singles = topK.filter((s) => !isMultipack(s.product));
+    if (singles.length > 0) topK = singles;
+  }
+
+  const priceOf = (p: NormalizedProduct) => p.unitPrice?.value ?? p.price.current;
   topK.sort((a, b) => priceOf(a.product) - priceOf(b.product));
   return topK[0].product;
 }
