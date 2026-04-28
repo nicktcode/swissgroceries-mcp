@@ -118,27 +118,39 @@ function solveSplit(
 
   for (const item of items) {
     const offers = matrix[keyOf(item)] ?? {};
-    let bestChain: Chain | null = null;
-    let bestPrice = Infinity;
-    let bestProduct: NormalizedProduct | null = null;
 
+    // Cross-chain comparison: prefer the cheapest UNIT price (CHF/kg, CHF/l,
+    // CHF/piece) so a 0.5L bottle isn't unfairly preferred over a 6×1.5L pack.
+    // Restrict to products that share a `unitPrice.per` unit. Fall back to
+    // absolute price when no candidate has a unit price (or units are mixed).
+    const candidates: Array<[Chain, NormalizedProduct]> = [];
     for (const [chain, product] of Object.entries(offers) as [Chain, NormalizedProduct | null | undefined][]) {
-      if (!product) continue;
-      const price = product.price.current;
-      if (price < bestPrice) {
-        bestPrice = price;
-        bestChain = chain;
-        bestProduct = product;
-      }
+      if (product) candidates.push([chain, product]);
     }
-
-    if (!bestChain || !bestProduct) {
+    if (candidates.length === 0) {
       unmatched.push(item);
       continue;
     }
 
+    const withUnit = candidates.filter(([, p]) => p.unitPrice !== undefined);
+    let pool = candidates;
+    if (withUnit.length > 0) {
+      // Pick the dominant `per` unit (most candidates share it) to compare like-for-like.
+      const counts: Record<string, number> = {};
+      for (const [, p] of withUnit) counts[p.unitPrice!.per] = (counts[p.unitPrice!.per] ?? 0) + 1;
+      const dominantPer = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+      pool = withUnit.filter(([, p]) => p.unitPrice!.per === dominantPer);
+    }
+
+    pool.sort((a, b) => {
+      const ap = a[1].unitPrice?.value ?? a[1].price.current;
+      const bp = b[1].unitPrice?.value ?? b[1].price.current;
+      return ap - bp;
+    });
+
+    const [bestChain, bestProduct] = pool[0];
     const qty = item.quantity ?? 1;
-    const line = { requested: item, matched: bestProduct, lineTotal: bestPrice * qty };
+    const line = { requested: item, matched: bestProduct, lineTotal: bestProduct.price.current * qty };
     if (!perChain.has(bestChain)) perChain.set(bestChain, []);
     perChain.get(bestChain)!.push(line);
   }
