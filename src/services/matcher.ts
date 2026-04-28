@@ -70,6 +70,11 @@ function expandQuery(queryTokens: string[]): string[] {
 }
 
 function passesHardFilters(p: NormalizedProduct, item: ShoppingItem): boolean {
+  // Reject products with no usable price — happens when chain APIs return
+  // incomplete records (e.g. Migros sometimes returns just {multiplier:1}
+  // for placeholder produce entries).
+  if (!(p.price.current > 0)) return false;
+
   const f = item.filters;
   if (!f) return true;
 
@@ -104,7 +109,10 @@ interface Scored {
   score: number;
 }
 
-const NEG_KEYWORDS = /(pflegebad|crème|creme|lotion|shampoo|dusche|seife|haar(?:\s|$)|kosmetik|drogerie|\bdeo\b|\bbad\s)/i;
+// Strong "this is not the food category you asked for" markers.
+// Drogerie/cosmetics catch Pflegebad-style mismatches. Drink suffixes (Schorle,
+// Limonade, Smoothie, Sirup) catch e.g. "Apfelschorle" winning a query for fresh apples.
+const NEG_KEYWORDS = /(pflegebad|crème|creme|lotion|shampoo|dusche|seife|haar(?:\s|$)|kosmetik|drogerie|\bdeo\b|\bbad\s|schorle|limonade|\blimo\b|smoothie|\bsirup\b|nektar)/i;
 
 function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
   const queryTokens = [...tokens(item.query)];
