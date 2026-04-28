@@ -197,4 +197,55 @@ describe('matchProduct', () => {
     const m = matchProduct({ query: 'milch' }, products);
     expect(m?.id).toBe('a'); // cheaper milk
   });
+
+  it('rejects "Apfelschorle" (apple juice) for apfel query when real apples exist', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'lidl', id: 'js', name: 'Apfelschorle',
+        price: { current: 0.55, currency: 'CHF' },
+        size: { value: 500, unit: 'ml' },
+        unitPrice: { value: 1.10, per: 'l' },
+        tags: [],
+      },
+      {
+        chain: 'coop', id: 'app', name: 'Äpfel Gala süsslich IP-Suisse',
+        price: { current: 1.45, currency: 'CHF' },
+        size: { value: 500, unit: 'g' },
+        unitPrice: { value: 2.90, per: 'kg' },
+        category: ['Obst', 'Äpfel'],
+        tags: [],
+      },
+    ];
+    const m = matchProduct({ query: 'apfel' }, products);
+    expect(m?.id).toBe('app');
+  });
+
+  it('still matches "Vollmilch" (suffix-head) for milch query', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'migros', id: 'vm', name: 'Vollmilch UHT 1L',
+        price: { current: 1.85, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.85, per: 'l' },
+        tags: [],
+      },
+    ];
+    const m = matchProduct({ query: 'milch' }, products);
+    expect(m?.id).toBe('vm');
+  });
+
+  it('expands "mandelmilch" to match Mandeldrink', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'coop', id: 'md', name: 'Alpro Mandeldrink Original',
+        brand: 'Alpro',
+        price: { current: 2.95, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 2.95, per: 'l' },
+        tags: ['vegan'],
+      },
+    ];
+    const m = matchProduct({ query: 'mandelmilch' }, products);
+    expect(m?.id).toBe('md');
+  });
 });

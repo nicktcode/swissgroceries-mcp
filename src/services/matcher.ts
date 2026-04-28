@@ -31,8 +31,20 @@ const QUERY_SYNONYMS: Record<string, string[]> = {
   zucker: ['zucker', 'sugar', 'sucre'],
   reis: ['reis', 'rice', 'riz'],
   obst: ['obst', 'frucht', 'fruchte', 'fruit', 'frutta'],
-  gemuese: ['gemuese', 'legumes', 'verdura'],
+  gemuese: ['gemuese', 'legumes', 'verdura', 'vegetables'],
   fisch: ['fisch', 'lachs', 'thunfisch', 'fish', 'poisson'],
+  mandelmilch: ['mandelmilch', 'mandeldrink', 'almond'],
+  hafermilch: ['hafermilch', 'haferdrink', 'oat'],
+  sojamilch: ['sojamilch', 'sojadrink', 'soya'],
+  quark: ['quark', 'magerquark'],
+  joghurt: ['joghurt', 'yogurt', 'jogurt'],
+  banane: ['banane', 'bananen'],
+  bananen: ['banane', 'bananen'],
+  apfel: ['apfel', 'apfeln', 'apfeli', 'apple'],
+  aepfel: ['apfel', 'apfeln', 'apfeli', 'apple'],
+  himbeeren: ['himbeeren', 'himbeere', 'raspberry'],
+  erdbeeren: ['erdbeeren', 'erdbeere', 'strawberry'],
+  haferflocken: ['haferflocken', 'haferflocke', 'oats'],
 };
 
 function normalize(s: string): string {
@@ -119,8 +131,17 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
     for (let i = 0; i < nameTokensArr.length; i++) {
       const nt = nameTokensArr[i];
       let strength = 0;
-      if (nt === token) strength = 1.0;
-      else if (token.length >= 4 && nt.includes(token)) strength = 0.85;
+      if (nt === token) {
+        strength = 1.0;
+      } else if (token.length >= 4 && nt.includes(token)) {
+        if (nt.endsWith(token)) {
+          strength = 0.9;       // German head-noun: "voll-MILCH"
+        } else if (nt.startsWith(token)) {
+          strength = 0.4;       // German modifier: "APFEL-schorle"
+        } else {
+          strength = 0.5;       // middle substring
+        }
+      }
       if (strength > 0) {
         const posWeight =
           i === 0 ? 1.0 :
@@ -158,7 +179,7 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
 
   // Category match bonus — also consider synonyms
   if (p.category && p.category.length > 0) {
-    const catText = p.category.join(' ').toLowerCase();
+    const catText = normalize(p.category.join(' '));
     const catCheckTokens = isSingleWordQuery ? expanded : queryTokens;
     for (const qt of catCheckTokens) {
       if (qt.length >= 4 && catText.includes(qt)) {
@@ -192,7 +213,11 @@ export function matchProduct(
 
   if (scored.length === 0) return null;
 
-  const topK = scored.slice(0, 3);
+  // Only allow items within 35% of the top score to compete on price.
+  // This prevents a weakly-matched cheap item from beating a strongly-matched one.
+  const topScore = scored[0].score;
+  const scoreFloor = topScore * 0.35;
+  const topK = scored.slice(0, 3).filter((s) => s.score >= scoreFloor);
   const priceOf = (p: NormalizedProduct) => p.unitPrice?.value ?? p.price.current;
 
   topK.sort((a, b) => priceOf(a.product) - priceOf(b.product));
