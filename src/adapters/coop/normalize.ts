@@ -57,8 +57,8 @@ interface HybrisProduct {
   regionalProduct?: boolean;
 }
 
-export function normalizeProduct(raw: HybrisProduct): NormalizedProduct {
-  const name = raw.name ?? '';
+export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName?: string; productName?: string }): NormalizedProduct {
+  const name = (raw as any).title ?? raw.name ?? (raw as any).fullName ?? (raw as any).productName ?? '';
   // Build size from content + contentUnit (e.g. "500" + "g")
   const sizeText = raw.content && raw.contentUnit
     ? `${raw.content}${raw.contentUnit}`

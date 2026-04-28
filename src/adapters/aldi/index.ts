@@ -8,6 +8,16 @@ import { normalizeProduct, normalizeStore, normalizePromotion } from './normaliz
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
 
+const ALDI_VALID_LIMITS = [12, 16, 24, 30, 32, 48, 60] as const;
+
+function snapAldiLimit(limit?: number): number {
+  const target = limit ?? 16;
+  for (const v of ALDI_VALID_LIMITS) {
+    if (v >= target) return v;
+  }
+  return 60;
+}
+
 function classify(e: unknown): AdapterError {
   const msg = e instanceof Error ? e.message : String(e);
   if (/429/.test(msg)) return { code: 'rate_limited' };
@@ -29,15 +39,16 @@ export class AldiAdapter implements StoreAdapter {
   async searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>> {
     try {
       const servicePoint = q.storeIds?.[0] ?? ALDI_DEFAULT_SERVICE_POINT;
+      const requested = q.limit ?? 16;
       const r = await aldiFetch('/v3/product-search', {
         q: q.query,
         servicePoint,
         serviceType: 'walk-in',
         offset: 0,
-        limit: q.limit ?? 16,
+        limit: snapAldiLimit(requested),
       });
       // Real API wraps results in `data`, not `products`/`results`
-      const list = (r.data ?? r.products ?? r.results ?? []) as any[];
+      const list = ((r.data ?? r.products ?? r.results ?? []) as any[]).slice(0, requested);
       return ok(list.map(normalizeProduct));
     } catch (e) {
       return err(classify(e));
@@ -81,7 +92,7 @@ export class AldiAdapter implements StoreAdapter {
         serviceType: 'walk-in',
         onlyPromotion: 'true',
         offset: 0,
-        limit: 50,
+        limit: snapAldiLimit(50),
       });
       const list = (r.data ?? r.products ?? []) as any[];
       let promos = list.map(normalizePromotion);

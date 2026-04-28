@@ -114,10 +114,36 @@ export class MigrosAdapter implements StoreAdapter {
         language: q.language ?? 'de',
       } as any);
       // r = { items: [{id, type},...], numberOfItems, startDate, endDate }
-      const items: any[] = (r as any).items ?? [];
+      const items = ((r as any).items ?? []) as Array<{ id: number | string; type?: string }>;
       const startDate: string | undefined = (r as any).startDate;
       const endDate: string | undefined = (r as any).endDate;
-      let promos = items.map((item) => normalizePromotion({ ...item, startDate, endDate }));
+
+      const productIds = items
+        .filter((it) => !it.type || it.type === 'PRODUCT')
+        .map((it) => String(it.id))
+        .slice(0, 50);
+
+      if (productIds.length === 0) return ok([]);
+
+      const detailsR: any = await this.api.products.productDisplay.getProductDetails({
+        uids: productIds,
+        language: q.language ?? 'de',
+      } as any);
+      const products = (Array.isArray(detailsR) ? detailsR : Object.values(detailsR as Record<string, unknown>)) as any[];
+
+      let promos: NormalizedPromotion[] = products.map((raw) => {
+        const np = normalizeProduct(raw);
+        return {
+          chain: 'migros' as const,
+          productId: np.id,
+          productName: np.name,
+          price: np.price,
+          validFrom: startDate,
+          validUntil: endDate,
+          description: np.promotion?.description,
+        };
+      });
+
       if (q.endingWithinDays !== undefined) {
         const cutoff = Date.now() + q.endingWithinDays * 24 * 3600 * 1000;
         promos = promos.filter((p) => p.validUntil && Date.parse(p.validUntil) <= cutoff);
