@@ -1,0 +1,2963 @@
+{
+   "assortmentHitConditionalPromotionCategory" : false,
+   "categories" : [ {
+      "id" : "m_0056",
+      "name" : "Milch",
+      "productCount" : 133
+   }, {
+      "id" : "m_5509",
+      "name" : "Vegane Milchalternativen",
+      "productCount" : 24
+   }, {
+      "id" : "m_5262",
+      "name" : "Milchmisch- und Pflanzenmilchgetränke",
+      "productCount" : 8
+   }, {
+      "id" : "milchprodukte_glutenfrei",
+      "name" : "Glutenfreie Milchprodukte",
+      "productCount" : 43
+   }, {
+      "id" : "milchproduktalternativen_vegan",
+      "name" : "Vegane Alternativen zu Milchprodukten",
+      "productCount" : 114
+   }, {
+      "id" : "m_5112",
+      "name" : "Aktionen Milchpulver",
+      "productCount" : 6
+   }, {
+      "id" : "milchprodukte_lactosefrei",
+      "name" : "Laktosefreie Milchprodukte",
+      "productCount" : 167
+   }, {
+      "id" : "m_5263",
+      "name" : "Milchmischgetränke trocken",
+      "productCount" : 8
+   } ],
+   "facets" : [ {
+      "code" : "availableOnline",
+      "count" : 385,
+      "facetTypeValue" : "CATEGORYOPTIONSCHECKBOX",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : false,
+      "name" : "Online verfügbar",
+      "selected" : false,
+      "values" : [ {
+         "code" : "true",
+         "count" : 385,
+         "name" : "true",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "specialOfferFacet",
+      "count" : 48,
+      "facetTypeValue" : "CATEGORYOPTIONSCHECKBOX",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : false,
+      "name" : "in Aktion",
+      "selected" : false,
+      "values" : [ {
+         "code" : "false",
+         "count" : 337,
+         "name" : "false",
+         "selected" : false
+      }, {
+         "code" : "true",
+         "count" : 48,
+         "name" : "true",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "bioFacet",
+      "count" : 42,
+      "facetTypeValue" : "CATEGORYOPTIONSCHECKBOX",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : false,
+      "name" : "Bio",
+      "selected" : false,
+      "values" : [ {
+         "code" : "false",
+         "count" : 343,
+         "name" : "false",
+         "selected" : false
+      }, {
+         "code" : "true",
+         "count" : 42,
+         "name" : "true",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "nutritionalProperties",
+      "facetTypeValue" : "MULTISELECTAND",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : true,
+      "name" : "Ernährung",
+      "selected" : false,
+      "values" : [ {
+         "code" : "GLUTEN_FREE",
+         "count" : 45,
+         "name" : "Glutenfrei",
+         "selected" : false
+      }, {
+         "code" : "HIGH_PROTEIN",
+         "count" : 23,
+         "name" : "High Protein",
+         "selected" : false
+      }, {
+         "code" : "LACTOSE_FREE",
+         "count" : 90,
+         "name" : "Laktosefrei",
+         "selected" : false
+      }, {
+         "code" : "NO_ADDED_SUGAR",
+         "count" : 61,
+         "name" : "Ohne Zuckerzusatz",
+         "selected" : false
+      }, {
+         "code" : "NO_ADDED_SUGAR_OR_SWEETENER",
+         "count" : 47,
+         "name" : "Ohne Zuckerzusatz und ohne Süssungsmittel",
+         "selected" : false
+      }, {
+         "code" : "HIGH_FIBRE",
+         "count" : 1,
+         "name" : "Reich an Nahrungsfasern",
+         "selected" : false
+      }, {
+         "code" : "VEGAN",
+         "count" : 64,
+         "name" : "Vegan",
+         "selected" : false
+      }, {
+         "code" : "VEGETARIAN",
+         "count" : 70,
+         "name" : "Vegetarisch",
+         "selected" : false
+      }, {
+         "code" : "CONTAINS_IRON",
+         "count" : 2,
+         "name" : "enthält Eisen",
+         "selected" : false
+      }, {
+         "code" : "CONTAINS_CALCIUM",
+         "count" : 12,
+         "name" : "enthält Kalzium",
+         "selected" : false
+      }, {
+         "code" : "CONTAINS_VITAMIN_B12",
+         "count" : 8,
+         "name" : "enthält Vitamin B12",
+         "selected" : false
+      }, {
+         "code" : "CONTAINS_VITAMIN_C",
+         "count" : 6,
+         "name" : "enthält Vitamin C",
+         "selected" : false
+      }, {
+         "code" : "CONTAINS_VITAMIN_E",
+         "count" : 2,
+         "name" : "enthält Vitamin E",
+         "selected" : false
+      }, {
+         "code" : "LOW_FAT",
+         "count" : 103,
+         "name" : "fettarm",
+         "selected" : false
+      }, {
+         "code" : "REDUCED_FAT",
+         "count" : 3,
+         "name" : "fettreduziert",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "petBrand",
+      "facetTypeValue" : "MULTISELECTOR",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : true,
+      "name" : "Marke",
+      "selected" : false,
+      "values" : [ {
+         "code" : "Aptamil",
+         "count" : 29,
+         "name" : "Aptamil",
+         "selected" : false
+      }, {
+         "code" : "Avent",
+         "count" : 1,
+         "name" : "Avent",
+         "selected" : false
+      }, {
+         "code" : "BEBA",
+         "count" : 7,
+         "name" : "BEBA",
+         "selected" : false
+      }, {
+         "code" : "Bimbosan",
+         "count" : 11,
+         "name" : "Bimbosan",
+         "selected" : false
+      }, {
+         "code" : "Bio 365",
+         "count" : 1,
+         "name" : "Bio 365",
+         "selected" : false
+      }, {
+         "code" : "Blue Elephant",
+         "count" : 1,
+         "name" : "Blue Elephant",
+         "selected" : false
+      }, {
+         "code" : "Bonne Maman",
+         "count" : 1,
+         "name" : "Bonne Maman",
+         "selected" : false
+      }, {
+         "code" : "Cailler",
+         "count" : 2,
+         "name" : "Cailler",
+         "selected" : false
+      }, {
+         "code" : "Caotina",
+         "count" : 1,
+         "name" : "Caotina",
+         "selected" : false
+      }, {
+         "code" : "Chocato",
+         "count" : 4,
+         "name" : "Chocato",
+         "selected" : false
+      }, {
+         "code" : "Coop",
+         "count" : 35,
+         "name" : "Coop",
+         "selected" : false
+      }, {
+         "code" : "Danone Actimel",
+         "count" : 4,
+         "name" : "Danone Actimel",
+         "selected" : false
+      }, {
+         "code" : "Dr. Oetker",
+         "count" : 1,
+         "name" : "Dr. Oetker",
+         "selected" : false
+      }, {
+         "code" : "Dreamies",
+         "count" : 2,
+         "name" : "Dreamies",
+         "selected" : false
+      }, {
+         "code" : "Echt Entlebuch",
+         "count" : 1,
+         "name" : "Echt Entlebuch",
+         "selected" : false
+      }, {
+         "code" : "Emmi",
+         "count" : 6,
+         "name" : "Emmi",
+         "selected" : false
+      }, {
+         "code" : "Emmi Aktifit",
+         "count" : 6,
+         "name" : "Emmi Aktifit",
+         "selected" : false
+      }, {
+         "code" : "Emmi Beleaf",
+         "count" : 1,
+         "name" : "Emmi Beleaf",
+         "selected" : false
+      }, {
+         "code" : "Emmi Benecol",
+         "count" : 6,
+         "name" : "Emmi Benecol",
+         "selected" : false
+      }, {
+         "code" : "Emmi Caffè Latte",
+         "count" : 20,
+         "name" : "Emmi Caffè Latte",
+         "selected" : false
+      }, {
+         "code" : "Emmi Comella",
+         "count" : 2,
+         "name" : "Emmi Comella",
+         "selected" : false
+      }, {
+         "code" : "Emmi Energy Milk",
+         "count" : 8,
+         "name" : "Emmi Energy Milk",
+         "selected" : false
+      }, {
+         "code" : "Emmi good day",
+         "count" : 3,
+         "name" : "Emmi good day",
+         "selected" : false
+      }, {
+         "code" : "Felix",
+         "count" : 3,
+         "name" : "Felix",
+         "selected" : false
+      }, {
+         "code" : "Floralp",
+         "count" : 1,
+         "name" : "Floralp",
+         "selected" : false
+      }, {
+         "code" : "Free From",
+         "count" : 9,
+         "name" : "Free From",
+         "selected" : false
+      }, {
+         "code" : "High Protein",
+         "count" : 9,
+         "name" : "High Protein",
+         "selected" : false
+      }, {
+         "code" : "Hipp",
+         "count" : 11,
+         "name" : "Hipp",
+         "selected" : false
+      }, {
+         "code" : "Holle",
+         "count" : 12,
+         "name" : "Holle",
+         "selected" : false
+      }, {
+         "code" : "Jucker Farm",
+         "count" : 1,
+         "name" : "Jucker Farm",
+         "selected" : false
+      }, {
+         "code" : "Karma",
+         "count" : 18,
+         "name" : "Karma",
+         "selected" : false
+      }, {
+         "code" : "Knorr",
+         "count" : 2,
+         "name" : "Knorr",
+         "selected" : false
+      }, {
+         "code" : "Lattesso",
+         "count" : 6,
+         "name" : "Lattesso",
+         "selected" : false
+      }, {
+         "code" : "Lindt",
+         "count" : 1,
+         "name" : "Lindt",
+         "selected" : false
+      }, {
+         "code" : "Mars",
+         "count" : 1,
+         "name" : "Mars",
+         "selected" : false
+      }, {
+         "code" : "More Nutrition",
+         "count" : 6,
+         "name" : "More Nutrition",
+         "selected" : false
+      }, {
+         "code" : "Naturaplan",
+         "count" : 27,
+         "name" : "Naturaplan",
+         "selected" : false
+      }, {
+         "code" : "Naturaplus",
+         "count" : 2,
+         "name" : "Naturaplus",
+         "selected" : false
+      }, {
+         "code" : "Nesquik",
+         "count" : 2,
+         "name" : "Nesquik",
+         "selected" : false
+      }, {
+         "code" : "Nestlé",
+         "count" : 9,
+         "name" : "Nestlé",
+         "selected" : false
+      }, {
+         "code" : "Nice",
+         "count" : 3,
+         "name" : "Nice",
+         "selected" : false
+      }, {
+         "code" : "OATLY",
+         "count" : 14,
+         "name" : "OATLY",
+         "selected" : false
+      }, {
+         "code" : "ONE",
+         "count" : 2,
+         "name" : "ONE",
+         "selected" : false
+      }, {
+         "code" : "Ovomaltine",
+         "count" : 3,
+         "name" : "Ovomaltine",
+         "selected" : false
+      }, {
+         "code" : "Prix Garantie",
+         "count" : 12,
+         "name" : "Prix Garantie",
+         "selected" : false
+      }, {
+         "code" : "Pro Montagna",
+         "count" : 4,
+         "name" : "Pro Montagna",
+         "selected" : false
+      }, {
+         "code" : "ProSpecieRara",
+         "count" : 1,
+         "name" : "ProSpecieRara",
+         "selected" : false
+      }, {
+         "code" : "Slow Food",
+         "count" : 1,
+         "name" : "Slow Food",
+         "selected" : false
+      }, {
+         "code" : "Sojasun",
+         "count" : 1,
+         "name" : "Sojasun",
+         "selected" : false
+      }, {
+         "code" : "Sproud",
+         "count" : 2,
+         "name" : "Sproud",
+         "selected" : false
+      }, {
+         "code" : "Starbucks",
+         "count" : 9,
+         "name" : "Starbucks",
+         "selected" : false
+      }, {
+         "code" : "Tchibo",
+         "count" : 1,
+         "name" : "Tchibo",
+         "selected" : false
+      }, {
+         "code" : "Thai Kitchen",
+         "count" : 7,
+         "name" : "Thai Kitchen",
+         "selected" : false
+      }, {
+         "code" : "VICAFE",
+         "count" : 1,
+         "name" : "VICAFE",
+         "selected" : false
+      }, {
+         "code" : "Vitakraft",
+         "count" : 9,
+         "name" : "Vitakraft",
+         "selected" : false
+      }, {
+         "code" : "Whiskas",
+         "count" : 1,
+         "name" : "Whiskas",
+         "selected" : false
+      }, {
+         "code" : "YFood",
+         "count" : 13,
+         "name" : "YFood",
+         "selected" : false
+      }, {
+         "code" : "Yakult",
+         "count" : 2,
+         "name" : "Yakult",
+         "selected" : false
+      }, {
+         "code" : "Yörük",
+         "count" : 1,
+         "name" : "Yörük",
+         "selected" : false
+      }, {
+         "code" : "alpro",
+         "count" : 15,
+         "name" : "alpro",
+         "selected" : false
+      }, {
+         "code" : "dr. molke",
+         "count" : 1,
+         "name" : "dr. molke",
+         "selected" : false
+      }, {
+         "code" : "franui",
+         "count" : 1,
+         "name" : "franui",
+         "selected" : false
+      }, {
+         "code" : "isey SKYR",
+         "count" : 3,
+         "name" : "isey SKYR",
+         "selected" : false
+      }, {
+         "code" : "natürli",
+         "count" : 2,
+         "name" : "natürli",
+         "selected" : false
+      }, {
+         "code" : "satrap",
+         "count" : 1,
+         "name" : "satrap",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "worldNameFacet",
+      "facetTypeValue" : "MULTISELECTOR",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : true,
+      "name" : "Label",
+      "selected" : false,
+      "values" : [ {
+         "code" : "Max Havelaar",
+         "count" : 26,
+         "name" : "Max Havelaar",
+         "selected" : false
+      }, {
+         "code" : "Vegan",
+         "count" : 64,
+         "name" : "Vegan",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "priceValue",
+      "facetTypeValue" : "COOPRANGESLIDER",
+      "maxRange" : 60,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : false,
+      "name" : "Preisspanne",
+      "selected" : false,
+      "unit" : "CHF",
+      "values" : [ {
+         "code" : "4.95",
+         "count" : 24,
+         "name" : "4.95",
+         "selected" : false
+      }, {
+         "code" : "1.95",
+         "count" : 23,
+         "name" : "1.95",
+         "selected" : false
+      }, {
+         "code" : "2.95",
+         "count" : 19,
+         "name" : "2.95",
+         "selected" : false
+      }, {
+         "code" : "2.45",
+         "count" : 11,
+         "name" : "2.45",
+         "selected" : false
+      }, {
+         "code" : "3.3",
+         "count" : 11,
+         "name" : "3.3",
+         "selected" : false
+      }, {
+         "code" : "3.1",
+         "count" : 9,
+         "name" : "3.1",
+         "selected" : false
+      }, {
+         "code" : "3.95",
+         "count" : 9,
+         "name" : "3.95",
+         "selected" : false
+      }, {
+         "code" : "1.9",
+         "count" : 8,
+         "name" : "1.9",
+         "selected" : false
+      }, {
+         "code" : "5.95",
+         "count" : 8,
+         "name" : "5.95",
+         "selected" : false
+      }, {
+         "code" : "1.8",
+         "count" : 7,
+         "name" : "1.8",
+         "selected" : false
+      }, {
+         "code" : "19.95",
+         "count" : 7,
+         "name" : "19.95",
+         "selected" : false
+      }, {
+         "code" : "2.75",
+         "count" : 7,
+         "name" : "2.75",
+         "selected" : false
+      }, {
+         "code" : "1.35",
+         "count" : 6,
+         "name" : "1.35",
+         "selected" : false
+      }, {
+         "code" : "1.6",
+         "count" : 6,
+         "name" : "1.6",
+         "selected" : false
+      }, {
+         "code" : "17.95",
+         "count" : 6,
+         "name" : "17.95",
+         "selected" : false
+      }, {
+         "code" : "2.05",
+         "count" : 6,
+         "name" : "2.05",
+         "selected" : false
+      }, {
+         "code" : "3.2",
+         "count" : 6,
+         "name" : "3.2",
+         "selected" : false
+      }, {
+         "code" : "3.75",
+         "count" : 6,
+         "name" : "3.75",
+         "selected" : false
+      }, {
+         "code" : "0.95",
+         "count" : 5,
+         "name" : "0.95",
+         "selected" : false
+      }, {
+         "code" : "16.95",
+         "count" : 5,
+         "name" : "16.95",
+         "selected" : false
+      }, {
+         "code" : "2.5",
+         "count" : 5,
+         "name" : "2.5",
+         "selected" : false
+      }, {
+         "code" : "24.95",
+         "count" : 5,
+         "name" : "24.95",
+         "selected" : false
+      }, {
+         "code" : "29.95",
+         "count" : 5,
+         "name" : "29.95",
+         "selected" : false
+      }, {
+         "code" : "3.5",
+         "count" : 5,
+         "name" : "3.5",
+         "selected" : false
+      }, {
+         "code" : "9.95",
+         "count" : 5,
+         "name" : "9.95",
+         "selected" : false
+      }, {
+         "code" : "1.7",
+         "count" : 4,
+         "name" : "1.7",
+         "selected" : false
+      }, {
+         "code" : "15.6",
+         "count" : 4,
+         "name" : "15.6",
+         "selected" : false
+      }, {
+         "code" : "18.95",
+         "count" : 4,
+         "name" : "18.95",
+         "selected" : false
+      }, {
+         "code" : "2.25",
+         "count" : 4,
+         "name" : "2.25",
+         "selected" : false
+      }, {
+         "code" : "2.85",
+         "count" : 4,
+         "name" : "2.85",
+         "selected" : false
+      }, {
+         "code" : "25.95",
+         "count" : 4,
+         "name" : "25.95",
+         "selected" : false
+      }, {
+         "code" : "28.95",
+         "count" : 4,
+         "name" : "28.95",
+         "selected" : false
+      }, {
+         "code" : "3.25",
+         "count" : 4,
+         "name" : "3.25",
+         "selected" : false
+      }, {
+         "code" : "32.95",
+         "count" : 4,
+         "name" : "32.95",
+         "selected" : false
+      }, {
+         "code" : "5.1",
+         "count" : 4,
+         "name" : "5.1",
+         "selected" : false
+      }, {
+         "code" : "8.0",
+         "count" : 4,
+         "name" : "8.0",
+         "selected" : false
+      }, {
+         "code" : "9.6",
+         "count" : 4,
+         "name" : "9.6",
+         "selected" : false
+      }, {
+         "code" : "1.2",
+         "count" : 3,
+         "name" : "1.2",
+         "selected" : false
+      }, {
+         "code" : "14.95",
+         "count" : 3,
+         "name" : "14.95",
+         "selected" : false
+      }, {
+         "code" : "15.95",
+         "count" : 3,
+         "name" : "15.95",
+         "selected" : false
+      }, {
+         "code" : "2.1",
+         "count" : 3,
+         "name" : "2.1",
+         "selected" : false
+      }, {
+         "code" : "2.55",
+         "count" : 3,
+         "name" : "2.55",
+         "selected" : false
+      }, {
+         "code" : "22.5",
+         "count" : 3,
+         "name" : "22.5",
+         "selected" : false
+      }, {
+         "code" : "3.15",
+         "count" : 3,
+         "name" : "3.15",
+         "selected" : false
+      }, {
+         "code" : "3.45",
+         "count" : 3,
+         "name" : "3.45",
+         "selected" : false
+      }, {
+         "code" : "36.95",
+         "count" : 3,
+         "name" : "36.95",
+         "selected" : false
+      }, {
+         "code" : "5.5",
+         "count" : 3,
+         "name" : "5.5",
+         "selected" : false
+      }, {
+         "code" : "7.65",
+         "count" : 3,
+         "name" : "7.65",
+         "selected" : false
+      }, {
+         "code" : "0.75",
+         "count" : 2,
+         "name" : "0.75",
+         "selected" : false
+      }, {
+         "code" : "0.9",
+         "count" : 2,
+         "name" : "0.9",
+         "selected" : false
+      }, {
+         "code" : "1.1",
+         "count" : 2,
+         "name" : "1.1",
+         "selected" : false
+      }, {
+         "code" : "1.3",
+         "count" : 2,
+         "name" : "1.3",
+         "selected" : false
+      }, {
+         "code" : "1.55",
+         "count" : 2,
+         "name" : "1.55",
+         "selected" : false
+      }, {
+         "code" : "1.65",
+         "count" : 2,
+         "name" : "1.65",
+         "selected" : false
+      }, {
+         "code" : "1.75",
+         "count" : 2,
+         "name" : "1.75",
+         "selected" : false
+      }, {
+         "code" : "1.85",
+         "count" : 2,
+         "name" : "1.85",
+         "selected" : false
+      }, {
+         "code" : "11.7",
+         "count" : 2,
+         "name" : "11.7",
+         "selected" : false
+      }, {
+         "code" : "13.95",
+         "count" : 2,
+         "name" : "13.95",
+         "selected" : false
+      }, {
+         "code" : "17.45",
+         "count" : 2,
+         "name" : "17.45",
+         "selected" : false
+      }, {
+         "code" : "20.9",
+         "count" : 2,
+         "name" : "20.9",
+         "selected" : false
+      }, {
+         "code" : "3.4",
+         "count" : 2,
+         "name" : "3.4",
+         "selected" : false
+      }, {
+         "code" : "30.95",
+         "count" : 2,
+         "name" : "30.95",
+         "selected" : false
+      }, {
+         "code" : "39.95",
+         "count" : 2,
+         "name" : "39.95",
+         "selected" : false
+      }, {
+         "code" : "4.35",
+         "count" : 2,
+         "name" : "4.35",
+         "selected" : false
+      }, {
+         "code" : "4.5",
+         "count" : 2,
+         "name" : "4.5",
+         "selected" : false
+      }, {
+         "code" : "5.6",
+         "count" : 2,
+         "name" : "5.6",
+         "selected" : false
+      }, {
+         "code" : "5.75",
+         "count" : 2,
+         "name" : "5.75",
+         "selected" : false
+      }, {
+         "code" : "5.85",
+         "count" : 2,
+         "name" : "5.85",
+         "selected" : false
+      }, {
+         "code" : "7.2",
+         "count" : 2,
+         "name" : "7.2",
+         "selected" : false
+      }, {
+         "code" : "7.3",
+         "count" : 2,
+         "name" : "7.3",
+         "selected" : false
+      }, {
+         "code" : "7.5",
+         "count" : 2,
+         "name" : "7.5",
+         "selected" : false
+      }, {
+         "code" : "7.95",
+         "count" : 2,
+         "name" : "7.95",
+         "selected" : false
+      }, {
+         "code" : "8.4",
+         "count" : 2,
+         "name" : "8.4",
+         "selected" : false
+      }, {
+         "code" : "8.95",
+         "count" : 2,
+         "name" : "8.95",
+         "selected" : false
+      }, {
+         "code" : "9.2",
+         "count" : 2,
+         "name" : "9.2",
+         "selected" : false
+      }, {
+         "code" : "0.8",
+         "count" : 1,
+         "name" : "0.8",
+         "selected" : false
+      }, {
+         "code" : "1.4",
+         "count" : 1,
+         "name" : "1.4",
+         "selected" : false
+      }, {
+         "code" : "1.5",
+         "count" : 1,
+         "name" : "1.5",
+         "selected" : false
+      }, {
+         "code" : "11.1",
+         "count" : 1,
+         "name" : "11.1",
+         "selected" : false
+      }, {
+         "code" : "11.95",
+         "count" : 1,
+         "name" : "11.95",
+         "selected" : false
+      }, {
+         "code" : "13.5",
+         "count" : 1,
+         "name" : "13.5",
+         "selected" : false
+      }, {
+         "code" : "14.5",
+         "count" : 1,
+         "name" : "14.5",
+         "selected" : false
+      }, {
+         "code" : "17.9",
+         "count" : 1,
+         "name" : "17.9",
+         "selected" : false
+      }, {
+         "code" : "2.15",
+         "count" : 1,
+         "name" : "2.15",
+         "selected" : false
+      }, {
+         "code" : "2.2",
+         "count" : 1,
+         "name" : "2.2",
+         "selected" : false
+      }, {
+         "code" : "2.3",
+         "count" : 1,
+         "name" : "2.3",
+         "selected" : false
+      }, {
+         "code" : "2.4",
+         "count" : 1,
+         "name" : "2.4",
+         "selected" : false
+      }, {
+         "code" : "2.6",
+         "count" : 1,
+         "name" : "2.6",
+         "selected" : false
+      }, {
+         "code" : "2.7",
+         "count" : 1,
+         "name" : "2.7",
+         "selected" : false
+      }, {
+         "code" : "2.8",
+         "count" : 1,
+         "name" : "2.8",
+         "selected" : false
+      }, {
+         "code" : "2.9",
+         "count" : 1,
+         "name" : "2.9",
+         "selected" : false
+      }, {
+         "code" : "3.35",
+         "count" : 1,
+         "name" : "3.35",
+         "selected" : false
+      }, {
+         "code" : "3.6",
+         "count" : 1,
+         "name" : "3.6",
+         "selected" : false
+      }, {
+         "code" : "3.8",
+         "count" : 1,
+         "name" : "3.8",
+         "selected" : false
+      }, {
+         "code" : "3.9",
+         "count" : 1,
+         "name" : "3.9",
+         "selected" : false
+      }, {
+         "code" : "4.55",
+         "count" : 1,
+         "name" : "4.55",
+         "selected" : false
+      }, {
+         "code" : "4.75",
+         "count" : 1,
+         "name" : "4.75",
+         "selected" : false
+      }, {
+         "code" : "4.9",
+         "count" : 1,
+         "name" : "4.9",
+         "selected" : false
+      }, {
+         "code" : "5.2",
+         "count" : 1,
+         "name" : "5.2",
+         "selected" : false
+      }, {
+         "code" : "5.3",
+         "count" : 1,
+         "name" : "5.3",
+         "selected" : false
+      }, {
+         "code" : "5.35",
+         "count" : 1,
+         "name" : "5.35",
+         "selected" : false
+      }, {
+         "code" : "5.55",
+         "count" : 1,
+         "name" : "5.55",
+         "selected" : false
+      }, {
+         "code" : "5.8",
+         "count" : 1,
+         "name" : "5.8",
+         "selected" : false
+      }, {
+         "code" : "59.95",
+         "count" : 1,
+         "name" : "59.95",
+         "selected" : false
+      }, {
+         "code" : "6.8",
+         "count" : 1,
+         "name" : "6.8",
+         "selected" : false
+      }, {
+         "code" : "7.8",
+         "count" : 1,
+         "name" : "7.8",
+         "selected" : false
+      }, {
+         "code" : "8.1",
+         "count" : 1,
+         "name" : "8.1",
+         "selected" : false
+      }, {
+         "code" : "8.6",
+         "count" : 1,
+         "name" : "8.6",
+         "selected" : false
+      }, {
+         "code" : "8.9",
+         "count" : 1,
+         "name" : "8.9",
+         "selected" : false
+      }, {
+         "code" : "9.8",
+         "count" : 1,
+         "name" : "9.8",
+         "selected" : false
+      } ]
+   }, {
+      "code" : "posFilter",
+      "facetTypeValue" : "COOPPOSFILTER",
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "multiSelect" : false,
+      "name" : "Filiale",
+      "selected" : false,
+      "values" : [ {
+         "code" : "true",
+         "count" : 385,
+         "name" : "true",
+         "selected" : false
+      } ]
+   } ],
+   "freeTextSearch" : "milch",
+   "listType" : "supermarket",
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 20,
+      "sort" : "relevance",
+      "totalPages" : 20,
+      "totalResults" : 385
+   },
+   "products" : [ {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 5.0,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "value" : 1.95
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/multipacks-ab-1l",
+      "code" : "4389992",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "6",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/4389992_001.jpg?_=1738683205064",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/4389992_001.jpg?_=1738683207172",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/4389992_001.jpg?_=1738683208324",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "maxQuantity" : 10.0,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 264,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "11.70",
+         "value" : 11.7
+      },
+      "primaryCategory" : {
+         "id" : "m_2218",
+         "name" : "Multipacks ab 1l"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_1",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Vollmilch 3,9% Milchfett UHT 6x1l",
+      "titleForTracking" : "Naturaplan Bio Vollmilch 3,9% Milchfett UHT 6x1l",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "value" : 1.95
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "4446520",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/4446520_001.jpg?_=1725460727809",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/4446520_001.jpg?_=1725460729328",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/4446520_001.jpg?_=1725460730182",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ ],
+      "lactoseFree" : true,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 265,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Free From",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "value" : 1.95
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_2",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Free From Milch Drink 1,5% Milchfett UHT lactosefrei",
+      "titleForTracking" : "Free From Milch Drink 1,5% Milchfett UHT lactosefrei",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 5.0,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.90",
+         "value" : 1.9
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "3081654",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/3081654_001.jpg?_=1758070428397",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/3081654_001.jpg?_=1758070429931",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/3081654_001.jpg?_=1758070430604",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 196,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.90",
+         "value" : 1.9
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_3",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Vollmilch 3,9% Milchfett Past",
+      "titleForTracking" : "Naturaplan Bio Vollmilch 3,9% Milchfett Past",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 5.0,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "value" : 1.95
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/spezialmilch",
+      "code" : "4389993",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "6",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/4389993_001.jpg?_=1677888785316",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/4389993_001.jpg?_=1677888788263",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/4389993_001.jpg?_=1677888789609",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 238,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "11.70",
+         "value" : 11.7
+      },
+      "primaryCategory" : {
+         "id" : "m_0059",
+         "name" : "Spezialmilch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_4",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Milch Drink 2,7% Milchfett UHT 6x1l",
+      "titleForTracking" : "Naturaplan Bio Milch Drink 2,7% Milchfett UHT 6x1l",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.60",
+         "value" : 1.6
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "7514298",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "6",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/7514298_001.jpg?_=1765493839707",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/7514298_001.jpg?_=1765493842444",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/7514298_001.jpg?_=1765493843853",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 3,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "9.60",
+         "value" : 9.6
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_5",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink UHT 1.5% IP-Suisse 6x1l",
+      "titleForTracking" : "Milchdrink UHT 1.5% IP-Suisse 6x1l",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.13",
+         "value" : 1.13
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "7076404",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1.5",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/7076404_001.jpg?_=1732061280363",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/7076404_001.jpg?_=1732061282022",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/7076404_001.jpg?_=1732061282712",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 50,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Prix Garantie",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.70",
+         "value" : 1.7
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_6",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Prix Garantie Milchdrink 1.5% UHT",
+      "titleForTracking" : "Prix Garantie Milchdrink 1.5% UHT",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.83",
+         "value" : 1.83
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "6425072",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1.75",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6425072_001.jpg?_=1677801889173",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6425072_001.jpg?_=1677801890434",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6425072_001.jpg?_=1677801891106",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 75,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "3.20",
+         "value" : 3.2
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_7",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Vollmilch pasteurisiert 3.9% Milchfett",
+      "titleForTracking" : "Naturaplan Bio Vollmilch pasteurisiert 3.9% Milchfett",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 5.0,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.90",
+         "value" : 1.9
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "3081655",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/3081655_001.jpg?_=1758071702577",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/3081655_001.jpg?_=1758071703904",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/3081655_001.jpg?_=1758071704541",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 110,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.90",
+         "value" : 1.9
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_8",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Milch Drink Teilentrahmt 2,5% Milchfett Past",
+      "titleForTracking" : "Naturaplan Bio Milch Drink Teilentrahmt 2,5% Milchfett Past",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.60",
+         "value" : 1.6
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "6858179",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "6",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6858179_001.jpg?_=1736337826361",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6858179_001.jpg?_=1736337828799",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6858179_001.jpg?_=1736337830003",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 46,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "9.60",
+         "value" : 9.6
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_9",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink UHT 1.5% IP-Suisse 6x1l",
+      "titleForTracking" : "Milchdrink UHT 1.5% IP-Suisse 6x1l",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 5.0,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.05",
+         "value" : 2.05
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "4446618",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/4446618_001.jpg?_=1682381054766",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/4446618_001.jpg?_=1682381056315",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/4446618_001.jpg?_=1682381057287",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ ],
+      "lactoseFree" : true,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 118,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Free From",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.05",
+         "value" : 2.05
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_10",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Free From Vollmilch 3,5% Milchfett UHT lactosefrei",
+      "titleForTracking" : "Free From Vollmilch 3,5% Milchfett UHT lactosefrei",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "100",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "0.19",
+         "value" : 0.19
+      },
+      "basePriceUnit" : "ml",
+      "basePriceUnitName" : "Milliliter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "6849615",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "500",
+      "contentUnit" : "ml",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6849615_001.jpg?_=1747870044888",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6849615_001.jpg?_=1747870047029",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6849615_001.jpg?_=1747870048035",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 95,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "0.95",
+         "value" : 0.95
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_11",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink UHT 1.5% IP-Suisse",
+      "titleForTracking" : "Milchdrink UHT 1.5% IP-Suisse",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.60",
+         "value" : 1.6
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "6850517",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6850517_001.jpg?_=1735951430354",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6850517_001.jpg?_=1735951431606",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6850517_001.jpg?_=1735951432237",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 87,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.60",
+         "value" : 1.6
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_12",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink UHT 1.5% IP-Suisse",
+      "titleForTracking" : "Milchdrink UHT 1.5% IP-Suisse",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.80",
+         "value" : 1.8
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "6638350",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6638350_001.jpg?_=1736813139406",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6638350_001.jpg?_=1736813140687",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6638350_001.jpg?_=1736813141348",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 102,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.80",
+         "value" : 1.8
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_13",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink 2.5% Milchfett pasteurisiert IP-Suisse",
+      "titleForTracking" : "Milchdrink 2.5% Milchfett pasteurisiert IP-Suisse",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.45",
+         "value" : 2.45
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/spezialmilch",
+      "code" : "4473043",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/4473043_001.jpg?_=1619701386553",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/4473043_001.jpg?_=1619701388831",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/4473043_001.jpg?_=1619701389982",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ ],
+      "lactoseFree" : true,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 99,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Emmi good day",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.45",
+         "value" : 2.45
+      },
+      "primaryCategory" : {
+         "id" : "m_0059",
+         "name" : "Spezialmilch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_14",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Emmi Good Day Milchgetränk 1,5% Milchfett pasteurisiert lactosefrei",
+      "titleForTracking" : "Emmi Good Day Milchgetränk 1,5% Milchfett pasteurisiert lactosefrei",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "100",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "0.28",
+         "value" : 0.28
+      },
+      "basePriceUnit" : "ml",
+      "basePriceUnitName" : "Milliliter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "4407235",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "500",
+      "contentUnit" : "ml",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/4407235_001.jpg?_=1731976903388",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/4407235_001.jpg?_=1731976905437",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/4407235_001.jpg?_=1731976906355",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 72,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.40",
+         "value" : 1.4
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_15",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Vollmilch 3,9% Milchfett UHT",
+      "titleForTracking" : "Naturaplan Bio Vollmilch 3,9% Milchfett UHT",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.83",
+         "value" : 1.83
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "6425074",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1.75",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6425074_001.jpg?_=1677802008074",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6425074_001.jpg?_=1677802009374",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6425074_001.jpg?_=1677802009958",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 71,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "3.20",
+         "value" : 3.2
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_16",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Bio Milchdrink pasteurisiert 2.5%",
+      "titleForTracking" : "Naturaplan Bio Milchdrink pasteurisiert 2.5%",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.60",
+         "value" : 1.6
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/uht-milch",
+      "code" : "6858137",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6858137_001.jpg?_=1737529401299",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6858137_001.jpg?_=1737529402242",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6858137_001.jpg?_=1737529402740",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 43,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.60",
+         "value" : 1.6
+      },
+      "primaryCategory" : {
+         "id" : "m_0058",
+         "name" : "UHT Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_17",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink UHT 1.5% Edge IP-Suisse",
+      "titleForTracking" : "Milchdrink UHT 1.5% Edge IP-Suisse",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.10",
+         "value" : 2.1
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/spezialmilch",
+      "code" : "3885279",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/3885279_001.jpg?_=1686869936882",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/3885279_001.jpg?_=1686869937926",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/3885279_001.jpg?_=1686869938460",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ ],
+      "lactoseFree" : true,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 97,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Free From",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.10",
+         "value" : 2.1
+      },
+      "primaryCategory" : {
+         "id" : "m_0059",
+         "name" : "Spezialmilch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_18",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Free From Vollmilch 3,5% Milchfett pasteurisiert lactosefrei",
+      "titleForTracking" : "Free From Vollmilch 3,5% Milchfett pasteurisiert lactosefrei",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.77",
+         "value" : 1.77
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "6638341",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1.75",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/6638341_001.jpg?_=1740097637455",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/6638341_001.jpg?_=1740097638888",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/6638341_001.jpg?_=1740097639587",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_IP_SUISSE",
+         "name" : "IP SUISSE"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 75,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Coop",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "3.10",
+         "value" : 3.1
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_19",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Milchdrink 1.5% Milchfett pasteurisiert IP-Suisse",
+      "titleForTracking" : "Milchdrink 1.5% Milchfett pasteurisiert IP-Suisse",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   }, {
+      "assortmentHitPromotion" : false,
+      "availabilityUnknown" : false,
+      "available" : true,
+      "averageRating" : 4.5,
+      "baseCapacity" : "1",
+      "basePrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.25",
+         "value" : 2.25
+      },
+      "basePriceUnit" : "l",
+      "basePriceUnitName" : "Liter",
+      "butcherHitPromotion" : false,
+      "categoryPathForTracking" : "lebensmittel/milchprodukte-eier/milch/frische-milch",
+      "code" : "5846403",
+      "conditionalPromotionCodes" : [ ],
+      "content" : "1",
+      "contentUnit" : "l",
+      "deliveryRestrictionMessages" : [ ],
+      "deliveryRestrictionMessagesActive" : [ ],
+      "exclusiveWine" : false,
+      "flags" : [ ],
+      "glutenFree" : false,
+      "hasPromotion" : false,
+      "hasShopInShopConfig" : false,
+      "hasSimilarProducts" : false,
+      "images" : [ {
+         "format" : "productTile-supermarket-SM2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/310_310/RGB/5846403_001.jpg?_=1581366683119",
+         "usedFor" : "small"
+      }, {
+         "format" : "productTile-mondovino-MD2x-XL2x",
+         "url" : "https://www.coop.ch/img/produkte/290_410/RGB/5846403_001.jpg?_=1581366683860",
+         "usedFor" : "unkown"
+      }, {
+         "format" : "productTile-delicounter-MD",
+         "url" : "https://www.coop.ch/img/produkte/323_323/RGB/5846403_001.jpg?_=1581366684254",
+         "usedFor" : "unkown"
+      } ],
+      "isRetailOnlyProduct" : false,
+      "labels" : [ {
+         "id" : "LABEL_ZBIO",
+         "name" : "Bio"
+      }, {
+         "id" : "LABEL_DEMETER",
+         "name" : "Demeter (old)"
+      } ],
+      "lactoseFree" : false,
+      "matchingWeNeedCategoryId" : 3,
+      "megaStorePromotion" : false,
+      "microbialRennet" : false,
+      "mondovinoClubOfferBadge" : false,
+      "multipackActive" : false,
+      "notPurchasableInApp" : false,
+      "numberOfRatings" : 106,
+      "onlyOnlinePromotion" : false,
+      "originText" : "Naturaplan",
+      "partOfAssortmentHitPromotion" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.25",
+         "value" : 2.25
+      },
+      "primaryCategory" : {
+         "id" : "m_0057",
+         "name" : "Frische Milch"
+      },
+      "productType" : "SUPERMARKET",
+      "promotionAlertActive" : false,
+      "promotionAlertPossible" : true,
+      "promotionDisclaimers" : [ ],
+      "purchasable" : true,
+      "quantityChangeable" : true,
+      "quantityInCart" : 0,
+      "rdeTrackingToken" : "_SEP_8e6d13c2356b9d45207022b2a27a4ec0_POS_20",
+      "reasonNotAvailable" : "NONE",
+      "salesUnit" : "PCE",
+      "selectedForPromotionAlert" : false,
+      "showTrophyMessage" : false,
+      "smallBottle" : false,
+      "subscriptionProduct" : false,
+      "superprice" : false,
+      "tileTypeApp" : "supermarket",
+      "title" : "Naturaplan Demeter Bio Vollmilch 3,9% Milchfett Past",
+      "titleForTracking" : "Naturaplan Demeter Bio Vollmilch 3,9% Milchfett Past",
+      "vegan" : false,
+      "vegetarian" : false,
+      "weekPromotion" : false,
+      "weekendPromotion" : false,
+      "weekstartPromotion" : false,
+      "wine" : false,
+      "wineRatingExists" : false
+   } ],
+   "sorts" : [ {
+      "code" : "relevance",
+      "name" : "Relevanz",
+      "selected" : true
+   }, {
+      "code" : "topRated",
+      "name" : "Bewertungen",
+      "selected" : false
+   }, {
+      "code" : "name-asc",
+      "name" : "Name",
+      "selected" : false
+   }, {
+      "code" : "brand-asc",
+      "name" : "Marke",
+      "selected" : false
+   }, {
+      "code" : "price-asc",
+      "name" : "Preis (aufsteigend)",
+      "selected" : false
+   }, {
+      "code" : "price-desc",
+      "name" : "Preis (absteigend)",
+      "selected" : false
+   }, {
+      "code" : "basePrice-asc",
+      "name" : "Preis/Menge (aufsteigend)",
+      "selected" : false
+   }, {
+      "code" : "basePrice-desc",
+      "name" : "Preis/Menge (absteigend)",
+      "selected" : false
+   }, {
+      "code" : "specialOffers",
+      "name" : "Rabatt (absteigend)",
+      "selected" : false
+   }, {
+      "code" : "bio",
+      "name" : "Bio",
+      "selected" : false
+   }, {
+      "code" : "mostlyBought",
+      "name" : "Bestseller",
+      "selected" : false
+   } ]
+}

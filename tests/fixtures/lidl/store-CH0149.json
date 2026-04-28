@@ -1,0 +1,14 @@
+{
+  "storeKey": "CH0149",
+  "name": "Wettingen (Fil.Nr. 0149)",
+  "schedule": "",
+  "address": "Schwimmbadstrasse 29",
+  "postalCode": "5430",
+  "locality": "Wettingen",
+  "isLidlPlus": true,
+  "location": {
+    "latitude": 47.46167,
+    "longitude": 8.31073
+  },
+  "province": ""
+}
