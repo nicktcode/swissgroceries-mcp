@@ -34,8 +34,10 @@ interface MigrosProductRaw {
     price?: {
       effectiveValue?: number;
       advertisedValue?: number;
+      unitPrice?: { value?: number; unit?: string };
     };
     quantity?: string;
+    isVariableWeight?: boolean;
     promotion?: {
       startsAt?: string;
       endsAt?: string;
@@ -50,6 +52,47 @@ interface MigrosProductRaw {
     };
   };
   breadcrumb?: Array<{ id?: string; name?: string }>;
+}
+
+function deriveMigrosPrice(offer: any): { current: number; isApprox: boolean } {
+  const ev = offer?.price?.effectiveValue;
+  if (typeof ev === 'number' && ev > 0) {
+    return { current: ev, isApprox: false };
+  }
+  const unitPriceVal: number | undefined = offer?.price?.unitPrice?.value;
+  const unitPriceUnit: string | undefined = offer?.price?.unitPrice?.unit;
+  const qty: string | undefined = offer?.quantity;
+  if (typeof unitPriceVal === 'number' && unitPriceVal > 0 && qty) {
+    // Parse "1 kg", "500 g", "6er", etc.
+    const match = qty.match(/([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk)/i);
+    if (match) {
+      const value = parseFloat(match[1].replace(',', '.'));
+      const unit = match[2].toLowerCase();
+      // Convert quantity to the unitPrice's reference unit
+      // unitPrice.unit is typically '100g' or '100ml' or '1kg' or '1l'
+      if (/100\s*g/i.test(unitPriceUnit ?? '') && (unit === 'g' || unit === 'kg')) {
+        const grams = unit === 'kg' ? value * 1000 : value;
+        return { current: unitPriceVal * (grams / 100), isApprox: true };
+      }
+      if (/100\s*ml/i.test(unitPriceUnit ?? '') && (unit === 'ml' || unit === 'l' || unit === 'cl' || unit === 'dl')) {
+        const ml =
+          unit === 'l' ? value * 1000 :
+          unit === 'cl' ? value * 10 :
+          unit === 'dl' ? value * 100 :
+          value;
+        return { current: unitPriceVal * (ml / 100), isApprox: true };
+      }
+      if (/^1\s*kg/i.test(unitPriceUnit ?? '') && (unit === 'g' || unit === 'kg')) {
+        const kg = unit === 'kg' ? value : value / 1000;
+        return { current: unitPriceVal * kg, isApprox: true };
+      }
+      if (/^1\s*l/i.test(unitPriceUnit ?? '') && (unit === 'l' || unit === 'ml')) {
+        const l = unit === 'l' ? value : value / 1000;
+        return { current: unitPriceVal * l, isApprox: true };
+      }
+    }
+  }
+  return { current: 0, isApprox: false };
 }
 
 const MEASUREMENT_RX = /^([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|pieces?)\b/i;
@@ -81,7 +124,7 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   // Real API: id is uid (number) or migrosId (string)
   const id = raw.migrosId ?? String(raw.uid ?? '');
   const name = raw.name ?? '';
-  const current = raw.offer?.price?.effectiveValue ?? 0;
+  const { current, isApprox } = deriveMigrosPrice(raw.offer);
   const regular = raw.offer?.price?.advertisedValue !== current
     ? raw.offer?.price?.advertisedValue
     : undefined;
@@ -95,6 +138,10 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   const imageUrl = raw.images?.[0]?.url;
   const brand = raw.productInformation?.mainInformation?.brand?.name;
 
+  const basePromotion = raw.offer?.promotion?.endsAt || raw.offer?.promotion?.description
+    ? { endsAt: raw.offer?.promotion?.endsAt, description: raw.offer?.promotion?.description }
+    : undefined;
+
   const product: NormalizedProduct = {
     chain: 'migros',
     id,
@@ -105,11 +152,16 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     category,
     tags,
     imageUrl,
-    promotion: raw.offer?.promotion?.endsAt || raw.offer?.promotion?.description
-      ? { endsAt: raw.offer?.promotion?.endsAt, description: raw.offer?.promotion?.description }
-      : undefined,
+    promotion: basePromotion,
     raw,
   };
+  // If approx, mark via promotion description so the LLM can communicate
+  if (isApprox && current > 0) {
+    product.promotion = {
+      ...product.promotion,
+      description: (product.promotion?.description ?? '') + ' (estimated price for variable-weight item)',
+    };
+  }
   product.unitPrice = computeUnitPrice(current, size);
   return product;
 }
