@@ -8,6 +8,7 @@ import { MigrosAdapter } from './adapters/migros/index.js';
 import { CoopAdapter } from './adapters/coop/index.js';
 import { AldiAdapter } from './adapters/aldi/index.js';
 import { DennerAdapter } from './adapters/denner/index.js';
+import { LidlAdapter } from './adapters/lidl/index.js';
 
 import { findStoresHandler, findStoresSchema } from './tools/find_stores.js';
 import { searchProductsHandler, searchProductsSchema } from './tools/search_products.js';
@@ -24,7 +25,7 @@ export function buildRegistry(): AdapterRegistry {
   r.register(new CoopAdapter());
   r.register(new AldiAdapter());
   if (process.env.DENNER_JWT) r.register(new DennerAdapter());
-  // Lidl adapter registers here once implemented (Task 20).
+  r.register(new LidlAdapter());
   return r;
 }
 
