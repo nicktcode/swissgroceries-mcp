@@ -50,8 +50,8 @@ export const planShoppingSchema = z.object({
       zip: z.string().describe('Swiss postal code (PLZ / NPA), e.g. "8001".'),
     }).describe('Swiss postal code (PLZ), e.g. "8001"'),
     z.object({
-      address: z.string().describe('Free-text address string (limited support — prefer zip or lat/lng).'),
-    }).describe('Free-text address (limited support — prefer zip or lat/lng)'),
+      address: z.string().describe('Free-text address string — geocoded via OpenStreetMap Nominatim; prefer zip or lat/lng for speed.'),
+    }).describe('Free-text address — geocoded via Nominatim; prefer zip or lat/lng for speed'),
   ]).describe('Shopper\'s location — used to find nearby stores. Pass coordinates, ZIP, or address.'),
   chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl']))
     .optional()
@@ -81,7 +81,7 @@ export async function planShoppingHandler(
   registry: AdapterRegistry,
   input: PlanShoppingInput,
 ): Promise<PlanResult> {
-  const geo = geocode(input.near as any);
+  const geo = await geocode(input.near as any);
   if (!geo.ok) {
     const err = geo.error;
     if (err.code === 'unknown_zip') {
@@ -89,6 +89,20 @@ export async function planShoppingHandler(
         'unknown_zip',
         `ZIP "${(err as any).zip}" is not in the lookup table`,
         'Pass { lat, lng } directly or check that the ZIP is a valid Swiss PLZ (e.g. "8001").',
+      );
+    }
+    if (err.code === 'address_not_found') {
+      throw new ToolError(
+        'address_not_found',
+        `Address "${(err as any).query}" could not be geocoded`,
+        'Try a more specific address or pass a Swiss ZIP code or { lat, lng } coordinates.',
+      );
+    }
+    if (err.code === 'unavailable') {
+      throw new ToolError(
+        'unavailable',
+        (err as any).reason,
+        'The Nominatim geocoding service is temporarily unavailable. Try passing a ZIP or { lat, lng } instead.',
       );
     }
     throw new ToolError(

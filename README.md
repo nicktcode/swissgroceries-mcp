@@ -36,6 +36,31 @@ npm install
 npm run build
 ```
 
+### Claude Desktop (one-click)
+
+Download `swissgroceries-mcp.mcpb` from the Releases page and:
+
+- macOS: double-click or drag onto the Claude Desktop app icon
+- Windows: Settings → Extensions → Advanced → Install Extension → select the file
+
+To build the bundle locally:
+```bash
+npm run build
+npx tsx scripts/build-mcpb.ts
+```
+
+### npx (after publish)
+
+```bash
+npx -y swissgroceries-mcp
+```
+
+Or in Claude Code:
+
+```bash
+claude mcp add swissgroceries -- npx -y swissgroceries-mcp
+```
+
 ### Claude Desktop (manual config)
 
 Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or the Windows equivalent:
@@ -75,12 +100,12 @@ claude mcp add swissgroceries \
 
 | Tool | Description | Key parameters | Example call |
 |---|---|---|---|
-| `find_stores` | Find grocery stores near a location, filtered by chain and radius. Returns name, address, and opening hours. | `near` (zip/lat-lng/address), `chains?`, `radiusKm?` (default 5) | `find_stores({ near: { zip: "8001" }, radiusKm: 3 })` |
+| `find_stores` | Find grocery stores near a location, filtered by chain and radius. Returns name, address, and opening hours. | `near` (zip/lat-lng/address — address geocoded via Nominatim), `chains?`, `radiusKm?` (default 5) | `find_stores({ near: { zip: "8001" }, radiusKm: 3 })` |
 | `search_products` | Search products by keyword across chains in parallel. Results grouped by chain with normalised price, unit price, size, and tags. | `query` (string), `chains?`, `filters?` (tags, maxPrice, sizeRange), `limit?` (max 50) | `search_products({ query: "milch", chains: ["migros","coop"], filters: { maxPrice: 2.5 } })` |
 | `get_product` | Fetch full product details for a chain + product ID pair. Use after `search_products` to drill into a result. | `chain` (enum), `id` (string) | `get_product({ chain: "migros", id: "4389992" })` |
 | `get_promotions` | List current promotional deals. Filterable by chain, keyword, store IDs, or days until expiry. | `chains?`, `query?`, `endingWithinDays?` (1–60), `storeIds?` | `get_promotions({ chains: ["aldi"], endingWithinDays: 7 })` |
 | `find_stock` | Check which stores of a chain have a product in stock. Only available for chains with `perStoreStock` capability (Migros, Coop). | `chain`, `productId`, `near?` (lat/lng), `storeId?` | `find_stock({ chain: "migros", productId: "4389992", near: { lat: 47.37, lng: 8.54 } })` |
-| `plan_shopping` | Plan a multi-store trip for a shopping list near a location. Returns a primary plan and two alternatives. | `items` (array of queries), `near`, `strategy` (single_store / split_cart / absolute_cheapest), `radiusKm?`, `splitPenaltyChf?` | `plan_shopping({ items: [{ query: "milch" }, { query: "brot" }], near: { zip: "8001" }, strategy: "split_cart" })` |
+| `plan_shopping` | Plan a multi-store trip for a shopping list near a location. Returns a primary plan and two alternatives. | `items` (array of queries), `near` (zip/lat-lng/address — address geocoded via Nominatim), `strategy` (single_store / split_cart / absolute_cheapest), `radiusKm?`, `splitPenaltyChf?` | `plan_shopping({ items: [{ query: "milch" }, { query: "brot" }], near: { zip: "8001" }, strategy: "split_cart" })` |
 
 ## How it works
 
@@ -208,7 +233,7 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 v0.1.0: Migros (full catalog), Coop (full catalog via coopathome), Aldi (full), Denner (env-gated, full), Lidl (weekly leaflet only).
 
 Known limitations:
-- ZIP geocoding only — free-text addresses are not supported (pass `{ lat, lng }` instead)
+- Free-text addresses geocoded via OpenStreetMap Nominatim (rate-limited, cached for 30 days)
 - Cross-chain price comparison uses catalog prices; per-store shelf-level pricing variations (rare in CH) are not modeled
 - Lidl and Aldi catalogs are limited (weekly campaigns / walk-in service point)
 - Coop's online catalog (coopathome) is the same data as the physical-store assortment; it just adds availability/inventory info per store
@@ -218,4 +243,4 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 
 ## License
 
-TBD (unlicensed for now — personal/research use).
+MIT — see [LICENSE](LICENSE).

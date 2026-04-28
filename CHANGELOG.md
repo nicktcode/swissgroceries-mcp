@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Address-string geocoding via OpenStreetMap Nominatim (rate-limited per their usage policy, cached 30 days)
 - Initial public release.
 - Five chain adapters: Migros, Coop, Aldi, Denner (env-gated via `DENNER_JWT`), Lidl.
 - Six MCP tools: `find_stores`, `search_products`, `get_product`, `get_promotions`, `find_stock`, `plan_shopping`.
