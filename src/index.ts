@@ -6,6 +6,7 @@ import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprot
 import { AdapterRegistry } from './adapters/registry.js';
 import { MigrosAdapter } from './adapters/migros/index.js';
 import { CoopAdapter } from './adapters/coop/index.js';
+import { AldiAdapter } from './adapters/aldi/index.js';
 
 import { findStoresHandler, findStoresSchema } from './tools/find_stores.js';
 import { searchProductsHandler, searchProductsSchema } from './tools/search_products.js';
@@ -20,7 +21,8 @@ export function buildRegistry(): AdapterRegistry {
   const r = new AdapterRegistry();
   r.register(new MigrosAdapter());
   r.register(new CoopAdapter());
-  // Aldi, Denner, Lidl adapters register here once implemented (Tasks 18-20).
+  r.register(new AldiAdapter());
+  // Denner, Lidl adapters register here once implemented (Tasks 19-20).
   return r;
 }
 
