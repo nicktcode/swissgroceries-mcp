@@ -14,6 +14,27 @@ export interface ShoppingItem {
 
 const SCORE_THRESHOLD = 0.3;
 
+// Curated synonym groups for common Swiss grocery queries.
+// When a single-word query matches a key, score against any of the synonyms.
+// Lowercase, normalized form. Cross-language (de/fr/it/en) where common.
+const QUERY_SYNONYMS: Record<string, string[]> = {
+  pasta: ['pasta', 'spaghetti', 'penne', 'fusilli', 'hornli', 'hoernli', 'teigwaren', 'nudeln', 'fettuccine', 'tagliatelle', 'ravioli', 'gnocchi', 'farfalle', 'maccheroni', 'rigatoni', 'lasagne'],
+  spaghetti: ['spaghetti'],
+  milch: ['milch', 'vollmilch', 'milchdrink', 'lait'],
+  kaese: ['kaese', 'fromage', 'cheese'],
+  brot: ['brot', 'baguette', 'brotchen', 'brot'],
+  eier: ['eier', 'oeuf', 'oeufs', 'eggs'],
+  fleisch: ['fleisch', 'rind', 'rindfleisch', 'schwein', 'schweinefleisch', 'poulet', 'huhn', 'huhnchen', 'kalb', 'lamm', 'viande'],
+  poulet: ['poulet', 'huhn', 'huhnchen', 'chicken', 'pollo'],
+  butter: ['butter', 'beurre'],
+  mehl: ['mehl', 'flour', 'farine'],
+  zucker: ['zucker', 'sugar', 'sucre'],
+  reis: ['reis', 'rice', 'riz'],
+  obst: ['obst', 'frucht', 'fruchte', 'fruit', 'frutta'],
+  gemuese: ['gemuese', 'legumes', 'verdura'],
+  fisch: ['fisch', 'lachs', 'thunfisch', 'fish', 'poisson'],
+};
+
 function normalize(s: string): string {
   return s
     .toLowerCase()
@@ -27,13 +48,13 @@ function tokens(s: string): Set<string> {
   return new Set(normalize(s).split(/\s+/).filter(Boolean));
 }
 
-function tokenSetRatio(a: string, b: string): number {
-  const ta = tokens(a);
-  const tb = tokens(b);
-  if (ta.size === 0 || tb.size === 0) return 0;
-  let inter = 0;
-  for (const t of ta) if (tb.has(t)) inter++;
-  return inter / Math.max(ta.size, tb.size);
+function expandQuery(queryTokens: string[]): string[] {
+  // Only expand single-word queries. Multi-word queries keep their tokens.
+  if (queryTokens.length === 1) {
+    const key = queryTokens[0];
+    return QUERY_SYNONYMS[key] ?? [key];
+  }
+  return queryTokens;
 }
 
 function passesHardFilters(p: NormalizedProduct, item: ShoppingItem): boolean {
@@ -77,7 +98,7 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
   const queryTokens = [...tokens(item.query)];
   if (queryTokens.length === 0) return 0;
 
-  // Strip brand prefix so it doesn't push the real product noun deeper
+  // Brand-prefix strip (existing logic, keep it)
   let nameForScoring = p.name;
   if (p.brand) {
     const brandLower = p.brand.toLowerCase();
@@ -90,40 +111,56 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
   const nameTokensArr = [...tokens(nameForScoring)];
   if (nameTokensArr.length === 0) return 0;
 
-  let totalMatch = 0;
-  for (const qt of queryTokens) {
-    let bestMatch = 0;
+  const expanded = expandQuery(queryTokens);
+  const isSingleWordQuery = queryTokens.length === 1 && expanded.length > 1;
+
+  function bestForToken(token: string): number {
+    let best = 0;
     for (let i = 0; i < nameTokensArr.length; i++) {
       const nt = nameTokensArr[i];
       let strength = 0;
-      if (nt === qt) strength = 1.0;
-      else if (qt.length >= 4 && nt.includes(qt)) strength = 0.85;
-
+      if (nt === token) strength = 1.0;
+      else if (token.length >= 4 && nt.includes(token)) strength = 0.85;
       if (strength > 0) {
         const posWeight =
           i === 0 ? 1.0 :
           i === 1 ? 0.55 :
           i === 2 ? 0.4 :
           0.3;
-        const candidate = strength * posWeight;
-        if (candidate > bestMatch) bestMatch = candidate;
+        const c = strength * posWeight;
+        if (c > best) best = c;
       }
     }
-    totalMatch += bestMatch;
+    return best;
   }
 
-  let avg = totalMatch / queryTokens.length;
+  let avg: number;
+  if (isSingleWordQuery) {
+    // Synonym mode: take the best matching synonym score
+    let bestSyn = 0;
+    for (const syn of expanded) {
+      const s = bestForToken(syn);
+      if (s > bestSyn) bestSyn = s;
+    }
+    avg = bestSyn;
+  } else {
+    // Multi-word mode: average across query tokens
+    let total = 0;
+    for (const qt of queryTokens) total += bestForToken(qt);
+    avg = total / queryTokens.length;
+  }
 
-  // Name-length penalty
+  // Name-length penalty (existing)
   if (nameTokensArr.length > 5) avg *= 0.7;
 
-  // Negative-keyword penalty (drogerie/cosmetics)
+  // Negative-keyword penalty (existing)
   if (NEG_KEYWORDS.test(p.name)) avg *= 0.2;
 
-  // Category match bonus
+  // Category match bonus — also consider synonyms
   if (p.category && p.category.length > 0) {
     const catText = p.category.join(' ').toLowerCase();
-    for (const qt of queryTokens) {
+    const catCheckTokens = isSingleWordQuery ? expanded : queryTokens;
+    for (const qt of catCheckTokens) {
       if (qt.length >= 4 && catText.includes(qt)) {
         avg *= 1.5;
         break;

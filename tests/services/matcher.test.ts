@@ -142,4 +142,59 @@ describe('matchProduct', () => {
     const m = matchProduct({ query: 'milch' }, products);
     expect(m?.id).toBe('mb'); // cheaper, both should match well after brand strip
   });
+
+  it('expands "pasta" to match Spaghetti, Penne, Hörnli', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'coop', id: 'sp', name: 'Barilla Spaghetti No. 5',
+        brand: 'Barilla',
+        price: { current: 2.5, currency: 'CHF' },
+        size: { value: 500, unit: 'g' },
+        unitPrice: { value: 5.0, per: 'kg' },
+        category: ['Spaghetti'],
+        tags: [],
+      },
+      {
+        chain: 'coop', id: 'pn', name: 'Barilla Penne Rigate No. 73',
+        brand: 'Barilla',
+        price: { current: 2.5, currency: 'CHF' },
+        size: { value: 500, unit: 'g' },
+        unitPrice: { value: 5.0, per: 'kg' },
+        category: ['Penne & Röhren'],
+        tags: [],
+      },
+      {
+        chain: 'coop', id: 'pg', name: 'Prix Garantie Spaghetti',
+        price: { current: 1.2, currency: 'CHF' },
+        size: { value: 500, unit: 'g' },
+        unitPrice: { value: 2.4, per: 'kg' },
+        category: ['Spaghetti'],
+        tags: ['budget'],
+      },
+    ];
+    const m = matchProduct({ query: 'pasta' }, products);
+    // Cheapest by unit price among matched candidates → Prix Garantie
+    expect(m?.id).toBe('pg');
+  });
+
+  it('expands "milch" to match Vollmilch and Milchdrink', () => {
+    const products: NormalizedProduct[] = [
+      {
+        chain: 'aldi', id: 'a', name: 'Vollmilch UHT',
+        price: { current: 1.85, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.85, per: 'l' },
+        tags: [],
+      },
+      {
+        chain: 'coop', id: 'b', name: 'Milchdrink Drink 1.5%',
+        price: { current: 1.95, currency: 'CHF' },
+        size: { value: 1, unit: 'l' },
+        unitPrice: { value: 1.95, per: 'l' },
+        tags: [],
+      },
+    ];
+    const m = matchProduct({ query: 'milch' }, products);
+    expect(m?.id).toBe('a'); // cheaper milk
+  });
 });
