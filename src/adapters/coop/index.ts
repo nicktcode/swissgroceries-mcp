@@ -7,6 +7,7 @@ import { coopFetch } from './client.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
+import { CoopSearchResponseSchema } from './schemas.js';
 
 function classify(e: unknown): AdapterError {
   const msg = e instanceof Error ? e.message : String(e);
@@ -33,7 +34,11 @@ export class CoopAdapter implements StoreAdapter {
         query: { currentPage: 0, pageSize: q.limit ?? 20, query: 'availableOnline:false' },
         language: q.language ?? 'de',
       });
-      const list = r.products ?? [];
+      const parsed = CoopSearchResponseSchema.safeParse(r);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) } as AdapterError);
+      }
+      const list = (parsed.data.products ?? []) as any[];
       return ok(list.map(normalizeProduct));
     } catch (e) {
       return err(classify(e));
@@ -89,6 +94,7 @@ export class CoopAdapter implements StoreAdapter {
   async findStoresWithStock(productId: string, near?: GeoPoint): Promise<AdapterResult<StockResult[]>> {
     try {
       const point = near ?? { lat: 47.376, lng: 8.541 };
+      // noCache: true — stock availability must always be fresh
       const r: any = await coopFetch('/locations/searchAroundCoordinates', {
         query: {
           latitude: point.lat, longitude: point.lng,
@@ -97,6 +103,7 @@ export class CoopAdapter implements StoreAdapter {
           currentPage: 0,
         },
         language: 'de',
+        noCache: true,
       });
       const list = (r.locations ?? r.stores ?? []) as any[];
       return ok(list.map((raw) => ({ store: normalizeStore(raw), inStock: true })));

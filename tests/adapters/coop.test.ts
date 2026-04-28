@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { normalizeProduct, normalizeStore, parseSize } from '../../src/adapters/coop/normalize.js';
+import { CoopSearchResponseSchema, CoopProductSchema } from '../../src/adapters/coop/schemas.js';
 
 describe('coop parseSize', () => {
   it('handles cl→ml conversion', () => expect(parseSize('33cl')).toEqual({ value: 330, unit: 'ml' }));
@@ -88,5 +89,56 @@ describe('coop normalize (fixture, optional)', () => {
     expect(s.chain).toBe('coop');
     expect(s.id).toBeTruthy();
     expect(s.location.lat).toBeGreaterThan(0);
+  });
+});
+
+describe('coop schemas (zod validation)', () => {
+  it('CoopProductSchema accepts a minimal valid product', () => {
+    const result = CoopProductSchema.safeParse({ code: '123', name: 'Milch' });
+    expect(result.success).toBe(true);
+  });
+
+  it('CoopProductSchema accepts a product with all common fields', () => {
+    const product = {
+      code: '456',
+      name: 'Bio Vollmilch',
+      brand: { name: 'M-Budget' },
+      price: { value: 1.5, formattedValue: 'CHF 1.50' },
+      originalPrice: { value: 2.0 },
+      content: '1',
+      contentUnit: 'l',
+      images: [{ url: 'https://example.com/image.jpg' }],
+      primaryCategory: { id: 'dairy', name: 'Milchprodukte' },
+      vegan: false,
+      vegetarian: true,
+      hasPromotion: false,
+    };
+    const result = CoopProductSchema.safeParse(product);
+    expect(result.success).toBe(true);
+  });
+
+  it('CoopProductSchema passes through unknown fields (passthrough)', () => {
+    const result = CoopProductSchema.safeParse({ code: '789', unknownField: 'extra' });
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect((result.data as any).unknownField).toBe('extra');
+    }
+  });
+
+  it('CoopSearchResponseSchema validates the search-milch fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/coop/search-milch.json', 'utf8')); }
+    catch { return; }
+    if (!raw) return;
+    const result = CoopSearchResponseSchema.safeParse(raw);
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect(Array.isArray(result.data.products)).toBe(true);
+    }
+  });
+
+  it('CoopSearchResponseSchema accepts empty products array', () => {
+    const result = CoopSearchResponseSchema.safeParse({ products: [] });
+    expect(result.success).toBe(true);
   });
 });

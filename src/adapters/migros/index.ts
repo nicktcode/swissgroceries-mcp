@@ -7,6 +7,10 @@
 //   - getProductDetails expects { uids: string[], ... } and returns {"0":{...}, "1":{...}}.
 //   - searchStores returns a plain array (not wrapped).
 //   - getProductPromotionSearch returns { items: [{id, type},...], numberOfItems, startDate, endDate }.
+// Note: migros-api-wrapper does its own fetching internally and is not wrapped
+// with httpJson — the wrapper manages auth tokens and request lifecycle.
+// Caching, retry, and rate-limiting for Migros must be handled at the adapter
+// level or deferred to a future wrapper replacement.
 import { MigrosAPI } from 'migros-api-wrapper';
 import type {
   StoreAdapter, AdapterResult, AdapterError,
@@ -16,6 +20,7 @@ import type {
 import { logger } from '../../util/log.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
+import { MigrosProductDetailsResponseSchema } from './schemas.js';
 import { haversineKm } from '../../util/haversine.js';
 
 function classifyError(e: unknown): AdapterError {
@@ -70,7 +75,11 @@ export class MigrosAdapter implements StoreAdapter {
       const uids = productIds.slice(0, q.limit ?? 20).map(String);
       const det = await this.api.products.productDisplay.getProductDetails({ uids, language: q.language ?? 'de' } as any);
       // det = {"0": product, "1": product, ...}
-      const products = Object.values(det as Record<string, unknown>) as any[];
+      const parsed = MigrosProductDetailsResponseSchema.safeParse(det);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(det).slice(0, 500) } as AdapterError);
+      }
+      const products = (Array.isArray(parsed.data) ? parsed.data : Object.values(parsed.data)) as any[];
       return ok(products.map(normalizeProduct));
     } catch (e) {
       return err(classifyError(e));

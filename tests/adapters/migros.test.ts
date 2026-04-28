@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { normalizeProduct, normalizeStore, parseSize } from '../../src/adapters/migros/normalize.js';
+import { MigrosProductDetailSchema, MigrosProductDetailsResponseSchema } from '../../src/adapters/migros/schemas.js';
 
 describe('migros normalize variable-weight produce', () => {
   it('derives price from unitPrice × quantity when effectiveValue is missing', () => {
@@ -82,5 +83,55 @@ describe('normalizeStore (fixture)', () => {
     expect(s.name).toBeTruthy();
     expect(typeof s.location.lat).toBe('number');
     expect(typeof s.location.lng).toBe('number');
+  });
+});
+
+describe('migros schemas (zod validation)', () => {
+  it('MigrosProductDetailSchema accepts a minimal product', () => {
+    const result = MigrosProductDetailSchema.safeParse({ uid: 123, name: 'Vollmilch' });
+    expect(result.success).toBe(true);
+  });
+
+  it('MigrosProductDetailSchema accepts a product with offer.price fields', () => {
+    const product = {
+      uid: 100006357,
+      migrosId: '204003200000',
+      name: 'Vollmilch',
+      offer: {
+        price: { effectiveValue: 1.45, advertisedValue: 1.45 },
+        quantity: '1 l',
+        isVariableWeight: false,
+      },
+      breadcrumb: [{ id: 'dairy', name: 'Milchprodukte' }],
+    };
+    const result = MigrosProductDetailSchema.safeParse(product);
+    expect(result.success).toBe(true);
+  });
+
+  it('MigrosProductDetailSchema passes through unknown fields', () => {
+    const result = MigrosProductDetailSchema.safeParse({ uid: 1, extraField: 'surprise' });
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect((result.data as any).extraField).toBe('surprise');
+    }
+  });
+
+  it('MigrosProductDetailsResponseSchema validates the product-detail fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/migros/product-detail.json', 'utf8')); }
+    catch { return; }
+    if (!raw) return;
+    // Fixture is an array of products
+    const result = MigrosProductDetailsResponseSchema.safeParse(raw);
+    expect(result.success).toBe(true);
+  });
+
+  it('MigrosProductDetailsResponseSchema accepts record-keyed response', () => {
+    const det = {
+      '0': { uid: 1, name: 'Product A', offer: { price: { effectiveValue: 2.5 } } },
+      '1': { uid: 2, name: 'Product B' },
+    };
+    const result = MigrosProductDetailsResponseSchema.safeParse(det);
+    expect(result.success).toBe(true);
   });
 });
