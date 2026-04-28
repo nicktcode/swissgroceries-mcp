@@ -48,7 +48,13 @@ export function solve(
 }
 
 function solveSingleStore(items: ShoppingItem[], matrix: Matrix, opts: SolveOpts): Plan {
-  const chains: Chain[] = ['migros', 'coop', 'aldi', 'denner', 'lidl'];
+  const chainSet = new Set<Chain>();
+  for (const offers of Object.values(matrix)) {
+    for (const chain of Object.keys(offers ?? {}) as Chain[]) {
+      chainSet.add(chain);
+    }
+  }
+  const chains = [...chainSet];
 
   let best: { chain: Chain; total: number; coverage: number; lines: PlanStop['items'] } | null = null;
 
