@@ -1,0 +1,28 @@
+{
+  "name": "swissgroceries-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Swiss grocery stores: Migros, Coop, Aldi, Denner, Lidl",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": { "swissgroceries-mcp": "dist/index.js" },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "smoke": "RUN_LIVE=1 vitest --run tests/smoke",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "migros-api-wrapper": "^1.1.37",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": { "node": ">=18.0.0" }
+}
