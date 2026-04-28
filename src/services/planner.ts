@@ -2,7 +2,7 @@ import type {
   Chain, NormalizedProduct, NormalizedStore, StoreAdapter, GeoPoint,
 } from '../adapters/types.js';
 import type { AdapterRegistry } from '../adapters/registry.js';
-import { matchProduct, type ShoppingItem } from './matcher.js';
+import { matchProduct, isCanonical, type ShoppingItem } from './matcher.js';
 import { solve, type Strategy, type Plan as StrategyPlan, type Matrix } from './strategy.js';
 import { haversineKm } from '../util/haversine.js';
 
@@ -98,6 +98,34 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
       }),
     ),
   );
+
+  // Canonicality filter: for each item, if at least one chain has a product
+  // whose category contains a query token/synonym, drop all non-canonical chains
+  // to null for that item. This prevents tangential products (e.g. Apfelschorle
+  // for "apfel") from winning cross-chain comparisons against real apples.
+  for (const item of input.items) {
+    const key = keyOf(item);
+    const offers = matrix[key];
+    if (!offers) continue;
+
+    const canonical: typeof offers = {};
+    let hasCanonical = false;
+    for (const [chain, product] of Object.entries(offers) as [Chain, NormalizedProduct | null | undefined][]) {
+      if (product && isCanonical(product, item)) {
+        canonical[chain] = product;
+        hasCanonical = true;
+      }
+    }
+
+    if (hasCanonical) {
+      // Replace the matrix row with only canonical matches.
+      // Tangential chains become null for this item.
+      for (const chain of Object.keys(offers) as Chain[]) {
+        if (!canonical[chain]) offers[chain] = null;
+      }
+    }
+    // If no chain has a canonical match, leave the row alone (best-effort fallback).
+  }
 
   const completedStoreByChain = Object.fromEntries(
     Object.entries(storeByChain).filter(([_, v]) => v !== undefined),

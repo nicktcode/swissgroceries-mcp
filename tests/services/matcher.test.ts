@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { matchProduct } from '../../src/services/matcher.js';
+import { matchProduct, isCanonical } from '../../src/services/matcher.js';
 import type { NormalizedProduct } from '../../src/adapters/types.js';
 
 const milkProducts: NormalizedProduct[] = [
@@ -79,46 +79,50 @@ describe('matchProduct', () => {
     expect(m?.id).not.toBe('3');
   });
 
-  it('rejects Pflegebad (bath product) for milch query', () => {
-    const products: NormalizedProduct[] = [
-      {
-        chain: 'aldi', id: '1', name: 'Pflegebad, Milch & Honig',
-        price: { current: 1.55, currency: 'CHF' },
-        tags: [],
-      },
-      {
-        chain: 'aldi', id: '2', name: 'Vollmilch UHT 1L',
-        price: { current: 1.85, currency: 'CHF' },
-        size: { value: 1, unit: 'l' },
-        unitPrice: { value: 1.85, per: 'l' },
-        tags: [],
-      },
-    ];
-    const m = matchProduct({ query: 'milch' }, products);
-    expect(m?.id).toBe('2');
+  it('rejects Pflegebad (bath product) for milch query via isCanonical', () => {
+    const pflegebad: NormalizedProduct = {
+      chain: 'aldi', id: '1', name: 'Pflegebad, Milch & Honig',
+      price: { current: 1.55, currency: 'CHF' },
+      category: ['Drogerie', 'Pflege'],
+      tags: [],
+    };
+    const milk: NormalizedProduct = {
+      chain: 'aldi', id: '2', name: 'Vollmilch UHT 1L',
+      price: { current: 1.85, currency: 'CHF' },
+      size: { value: 1, unit: 'l' },
+      unitPrice: { value: 1.85, per: 'l' },
+      category: ['Milchprodukte'],
+      tags: [],
+    };
+    // matchProduct may return either (no NEG filter in scorer now)
+    // but isCanonical correctly discriminates them
+    expect(isCanonical(pflegebad, { query: 'milch' })).toBe(false);
+    expect(isCanonical(milk, { query: 'milch' })).toBe(true);
   });
 
   it('prefers a category-matching milk over a chocolate with "Milch" in name', () => {
-    const products: NormalizedProduct[] = [
-      {
-        chain: 'aldi', id: 'choc', name: 'Tafelschokolade Milch',
-        price: { current: 1.79, currency: 'CHF' },
-        size: { value: 200, unit: 'g' },
-        unitPrice: { value: 8.95, per: 'kg' },
-        category: ['Süsswaren'],
-        tags: [],
-      },
-      {
-        chain: 'aldi', id: 'milk', name: 'Vollmilch UHT 1L',
-        price: { current: 1.85, currency: 'CHF' },
-        size: { value: 1, unit: 'l' },
-        unitPrice: { value: 1.85, per: 'l' },
-        category: ['Milchprodukte'],
-        tags: [],
-      },
-    ];
-    const m = matchProduct({ query: 'milch' }, products);
+    const choc: NormalizedProduct = {
+      chain: 'aldi', id: 'choc', name: 'Tafelschokolade Milch',
+      price: { current: 1.79, currency: 'CHF' },
+      size: { value: 200, unit: 'g' },
+      unitPrice: { value: 8.95, per: 'kg' },
+      category: ['Süsswaren'],
+      tags: [],
+    };
+    const milk: NormalizedProduct = {
+      chain: 'aldi', id: 'milk', name: 'Vollmilch UHT 1L',
+      price: { current: 1.85, currency: 'CHF' },
+      size: { value: 1, unit: 'l' },
+      unitPrice: { value: 1.85, per: 'l' },
+      category: ['Milchprodukte'],
+      tags: [],
+    };
+    // Category bonus in scorer still lifts milk above chocolate within the same chain
+    const m = matchProduct({ query: 'milch' }, [choc, milk]);
     expect(m?.id).toBe('milk');
+    // isCanonical confirms: milk is canonical, chocolate is not
+    expect(isCanonical(milk, { query: 'milch' })).toBe(true);
+    expect(isCanonical(choc, { query: 'milch' })).toBe(false);
   });
 
   it('handles brand prefix in the name (M-Budget Milch wins via brand strip)', () => {
@@ -198,26 +202,26 @@ describe('matchProduct', () => {
     expect(m?.id).toBe('a'); // cheaper milk
   });
 
-  it('rejects "Apfelschorle" (apple juice) for apfel query when real apples exist', () => {
-    const products: NormalizedProduct[] = [
-      {
-        chain: 'lidl', id: 'js', name: 'Apfelschorle',
-        price: { current: 0.55, currency: 'CHF' },
-        size: { value: 500, unit: 'ml' },
-        unitPrice: { value: 1.10, per: 'l' },
-        tags: [],
-      },
-      {
-        chain: 'coop', id: 'app', name: 'Äpfel Gala süsslich IP-Suisse',
-        price: { current: 1.45, currency: 'CHF' },
-        size: { value: 500, unit: 'g' },
-        unitPrice: { value: 2.90, per: 'kg' },
-        category: ['Obst', 'Äpfel'],
-        tags: [],
-      },
-    ];
-    const m = matchProduct({ query: 'apfel' }, products);
-    expect(m?.id).toBe('app');
+  it('rejects "Apfelschorle" (apple juice) for apfel query via isCanonical', () => {
+    const apfelschorle: NormalizedProduct = {
+      chain: 'lidl', id: 'js', name: 'Apfelschorle',
+      price: { current: 0.55, currency: 'CHF' },
+      size: { value: 500, unit: 'ml' },
+      unitPrice: { value: 1.10, per: 'l' },
+      category: ['Getränke', 'Süssgetränke'],
+      tags: [],
+    };
+    const apples: NormalizedProduct = {
+      chain: 'coop', id: 'app', name: 'Äpfel Gala süsslich IP-Suisse',
+      price: { current: 1.45, currency: 'CHF' },
+      size: { value: 500, unit: 'g' },
+      unitPrice: { value: 2.90, per: 'kg' },
+      category: ['Obst', 'Äpfel'],
+      tags: [],
+    };
+    // isCanonical: apples are canonical for "apfel", Apfelschorle is not
+    expect(isCanonical(apples, { query: 'apfel' })).toBe(true);
+    expect(isCanonical(apfelschorle, { query: 'apfel' })).toBe(false);
   });
 
   it('still matches "Vollmilch" (suffix-head) for milch query', () => {
@@ -247,5 +251,57 @@ describe('matchProduct', () => {
     ];
     const m = matchProduct({ query: 'mandelmilch' }, products);
     expect(m?.id).toBe('md');
+  });
+});
+
+describe('isCanonical', () => {
+  it('returns true when category contains query token', () => {
+    const p: NormalizedProduct = {
+      chain: 'coop', id: '1', name: 'Prix Garantie Äpfel',
+      price: { current: 3.95, currency: 'CHF' },
+      category: ['Frische', 'Obst', 'Äpfel'],
+      tags: [],
+    };
+    expect(isCanonical(p, { query: 'apfel' })).toBe(true);
+  });
+
+  it('returns false when category is from a different domain', () => {
+    const p: NormalizedProduct = {
+      chain: 'lidl', id: '2', name: 'Apfelschorle',
+      price: { current: 0.55, currency: 'CHF' },
+      category: ['Getränke', 'Süssgetränke'],
+      tags: [],
+    };
+    expect(isCanonical(p, { query: 'apfel' })).toBe(false);
+  });
+
+  it('expands synonyms for category match (pasta → spaghetti)', () => {
+    const p: NormalizedProduct = {
+      chain: 'coop', id: '3', name: 'Barilla Spaghetti No. 5',
+      price: { current: 2.5, currency: 'CHF' },
+      category: ['Spaghetti'],
+      tags: [],
+    };
+    expect(isCanonical(p, { query: 'pasta' })).toBe(true);
+  });
+
+  it('returns false when product has no category', () => {
+    const p: NormalizedProduct = {
+      chain: 'lidl', id: '4', name: 'Whatever',
+      price: { current: 1, currency: 'CHF' },
+      category: [],
+      tags: [],
+    };
+    expect(isCanonical(p, { query: 'milch' })).toBe(false);
+  });
+
+  it('user explicit query for "apfelschorle" matches via category text', () => {
+    const p: NormalizedProduct = {
+      chain: 'coop', id: '5', name: 'Prix Garantie Apfelschorle',
+      price: { current: 1.4, currency: 'CHF' },
+      category: ['Getränke', 'Süssgetränke', 'Apfelschorle'],
+      tags: [],
+    };
+    expect(isCanonical(p, { query: 'apfelschorle' })).toBe(true);
   });
 });

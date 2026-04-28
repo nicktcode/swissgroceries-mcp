@@ -74,6 +74,51 @@ describe('plan', () => {
     expect(result.primary.stops[0].store.chain).toBe('migros');
   });
 
+  it('excludes tangential cross-chain matches when at least one chain is canonical', async () => {
+    const r = new AdapterRegistry();
+    r.register({
+      chain: 'coop',
+      capabilities: { productSearch: true, productDetail: true, storeSearch: true, promotions: false, perStoreStock: false, perStorePricing: false },
+      async searchProducts() {
+        return { ok: true, data: [{
+          chain: 'coop', id: 'a1', name: 'Prix Garantie Äpfel',
+          price: { current: 3.95, currency: 'CHF' as const },
+          category: ['Obst', 'Äpfel'],
+          tags: [],
+        }] };
+      },
+      async getProduct() { return { ok: true, data: null }; },
+      async searchStores() { return { ok: true, data: [{ chain: 'coop', id: '1', name: 'C', address: { street: '', zip: '5430', city: 'W' }, location: { lat: 47.46, lng: 8.32 } }] }; },
+      async getPromotions() { return { ok: true, data: [] }; },
+    });
+    r.register({
+      chain: 'lidl',
+      capabilities: { productSearch: true, productDetail: true, storeSearch: true, promotions: false, perStoreStock: false, perStorePricing: false },
+      async searchProducts() {
+        return { ok: true, data: [{
+          chain: 'lidl', id: 'as', name: 'Apfelschorle',
+          price: { current: 0.55, currency: 'CHF' as const },
+          category: ['Getränke', 'Süssgetränke'],
+          tags: [],
+        }] };
+      },
+      async getProduct() { return { ok: true, data: null }; },
+      async searchStores() { return { ok: true, data: [{ chain: 'lidl', id: '1', name: 'L', address: { street: '', zip: '5430', city: 'W' }, location: { lat: 47.47, lng: 8.32 } }] }; },
+      async getPromotions() { return { ok: true, data: [] }; },
+    });
+
+    const result = await plan(r, {
+      items: [{ query: 'apfel' }],
+      near: { lat: 47.46, lng: 8.32 },
+      strategy: 'split_cart',
+    });
+
+    // Coop must win (canonical: 'Obst/Äpfel') even though Lidl Apfelschorle is cheaper
+    expect(result.primary.stops.length).toBe(1);
+    expect(result.primary.stops[0].store.chain).toBe('coop');
+    expect(result.primary.totalChf).toBeCloseTo(3.95, 2);
+  });
+
   it('returns up to 2 alternatives', async () => {
     const r = new AdapterRegistry();
     r.register(makeAdapter('migros', {
