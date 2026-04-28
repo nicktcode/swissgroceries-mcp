@@ -112,7 +112,7 @@ interface Scored {
 // Strong "this is not the food category you asked for" markers.
 // Drogerie/cosmetics catch Pflegebad-style mismatches. Drink suffixes (Schorle,
 // Limonade, Smoothie, Sirup) catch e.g. "Apfelschorle" winning a query for fresh apples.
-const NEG_KEYWORDS = /(pflegebad|crème|creme|lotion|shampoo|dusche|seife|haar(?:\s|$)|kosmetik|drogerie|\bdeo\b|\bbad\s|schorle|limonade|\blimo\b|smoothie|\bsirup\b|nektar)/i;
+const NEG_KEYWORDS = /(pflegebad|crème|creme|lotion|shampoo|dusche|seife|haar(?:\s|$)|kosmetik|drogerie|\bdeo\b|\bbad\s|schorle|limonade|\blimo\b|smoothie|\bsirup\b|nektar|saft\b|gummibärchen|gummi[- ]?bärchen|bonbon|quetschbeutel)/i;
 
 function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
   const queryTokens = [...tokens(item.query)];
@@ -182,8 +182,18 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
   // Name-length penalty (existing)
   if (nameTokensArr.length > 5) avg *= 0.7;
 
-  // Negative-keyword penalty (existing)
-  if (NEG_KEYWORDS.test(p.name)) avg *= 0.2;
+  // Negative-keyword penalty — only apply when the user did NOT ask for that
+  // category. If the query mentions e.g. "schorle" or "apfelschorle", we
+  // honor the request and skip the penalty.
+  const negMatch = p.name.match(NEG_KEYWORDS);
+  if (negMatch) {
+    const negToken = negMatch[0].toLowerCase().trim();
+    const queryNorm = normalize(item.query);
+    const userWantsIt =
+      queryNorm.includes(negToken) ||
+      (isSingleWordQuery && expanded.some((s) => s.includes(negToken)));
+    if (!userWantsIt) avg *= 0.2;
+  }
 
   // Category match bonus — also consider synonyms
   if (p.category && p.category.length > 0) {
