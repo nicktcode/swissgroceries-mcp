@@ -1,0 +1,1109 @@
+[
+  {
+    "uid": 100006357,
+    "migrosId": "204003200000",
+    "migrosOnlineId": "57521",
+    "name": "Vollmilch",
+    "versioning": "3.5% Fett, pasteurisiert",
+    "title": "Vollmilch · Bio, 3.5% Fett, pasteurisiert",
+    "description": "Vollmilch · Bio, 3.5% Fett, pasteurisiert",
+    "productRange": "STANDARD",
+    "productAvailability": "ONLINE_AND_INSTORE",
+    "productInformation": {
+      "mainInformation": {
+        "labels": [
+          {
+            "id": "L75",
+            "name": "Bio Suisse Knospe",
+            "slug": "bio-suisse-knospe",
+            "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1768560028/labels/Label_-_Biosuisse_Knospe"
+          },
+          {
+            "id": "L53",
+            "name": "Swissness",
+            "slug": "swissness",
+            "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483312/labels/Swissness_-_RGB_-_DEpng"
+          }
+        ],
+        "brand": {
+          "name": "Migros Bio",
+          "slug": "migros-bio",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1678265962/brands/MIGROS_BIO_screen_pantone1_rgb"
+        },
+        "nutritionalCharacteristicsV2": [
+          {
+            "name": "Bio"
+          }
+        ],
+        "allergens": "Milch und daraus gewonnene Erzeugnisse",
+        "origin": "Die Herkunftsangabe findest du auf der Verpackung in der Filiale.",
+        "mcheck": {
+          "carbonFootprint": {
+            "rating": 4,
+            "co2CarKmEquivalent": 8,
+            "productionRatio": 88,
+            "transportRatio": 0,
+            "packagingRatio": 12,
+            "image": "https://image.migros.ch/original/aa267c409e797c3b69d46fc7ba2f0b73a8bae4cf.svg",
+            "stackImage": "https://image.migros.ch/{stack}/aa267c409e797c3b69d46fc7ba2f0b73a8bae4cf.svg",
+            "co2KgRange": "1 - 1.9 kg CO₂eq / kg"
+          },
+          "animalWelfare": {
+            "rating": 4,
+            "image": "https://image.migros.ch/original/e780c432db35d5fc23c70eaae29bfe7f0ef3e15a.svg",
+            "label": "Tierwohl"
+          }
+        },
+        "rating": {
+          "nbReviews": 774,
+          "nbStars": 4.5
+        },
+        "migipediaUrl": "https://migipedia.migros.ch/de/products/204003200000"
+      },
+      "nutrientsInformation": {
+        "nutrientsTable": {
+          "headers": [
+            "100 ml",
+            "1 Glas (250 ml)"
+          ],
+          "rows": [
+            {
+              "label": "Energie",
+              "values": [
+                "287 kJ (69 kcal)",
+                "710 kJ (170 kcal)",
+                "9 %"
+              ]
+            },
+            {
+              "label": "Fett",
+              "values": [
+                "4 g",
+                "10 g",
+                "14 %"
+              ]
+            },
+            {
+              "label": "davon gesättigte Fettsäuren",
+              "values": [
+                "2.2 g",
+                "5.5 g",
+                "28 %"
+              ]
+            },
+            {
+              "label": "Kohlenhydrate",
+              "values": [
+                "5 g",
+                "12 g",
+                "5 %"
+              ]
+            },
+            {
+              "label": "davon Zucker",
+              "values": [
+                "5 g",
+                "12 g",
+                "13 %"
+              ]
+            },
+            {
+              "label": "Ballaststoffe",
+              "values": [
+                "0 g",
+                "0 g",
+                ""
+              ]
+            },
+            {
+              "label": "Eiweiss",
+              "values": [
+                "3.2 g",
+                "8 g",
+                "16 %"
+              ]
+            },
+            {
+              "label": "Salz",
+              "values": [
+                "0.1 g",
+                "0.26 g",
+                "4 %"
+              ]
+            },
+            {
+              "label": "Calcium",
+              "values": [
+                "124 mg",
+                "310 mg",
+                "39 %"
+              ]
+            }
+          ]
+        },
+        "nutrientsTableV2": {
+          "headers": [
+            {
+              "value": "100 ml"
+            },
+            {
+              "value": "Referenzmenge",
+              "infoText": "% der Referenzmenge für einen durchschnittlichen Erwachsenen (8400kj/2000kcal)"
+            },
+            {
+              "value": "1 Glas (250 ml)"
+            },
+            {
+              "value": "Referenzmenge",
+              "infoText": "% der Referenzmenge für einen durchschnittlichen Erwachsenen (8400kj/2000kcal)"
+            }
+          ],
+          "rows": [
+            {
+              "label": "Energie",
+              "values": [
+                "287 kJ (69 kcal)",
+                "3 %",
+                "710 kJ (170 kcal)",
+                "9 %"
+              ]
+            },
+            {
+              "label": "Fett",
+              "values": [
+                "4 g",
+                "6 %",
+                "10 g",
+                "14 %"
+              ]
+            },
+            {
+              "label": "davon gesättigte Fettsäuren",
+              "values": [
+                "2.2 g",
+                "11 %",
+                "5.5 g",
+                "28 %"
+              ]
+            },
+            {
+              "label": "Kohlenhydrate",
+              "values": [
+                "5 g",
+                "2 %",
+                "12 g",
+                "5 %"
+              ]
+            },
+            {
+              "label": "davon Zucker",
+              "values": [
+                "5 g",
+                "6 %",
+                "12 g",
+                "13 %"
+              ]
+            },
+            {
+              "label": "Ballaststoffe",
+              "values": [
+                "0 g",
+                "",
+                "0 g",
+                ""
+              ]
+            },
+            {
+              "label": "Eiweiss",
+              "values": [
+                "3.2 g",
+                "6 %",
+                "8 g",
+                "16 %"
+              ]
+            },
+            {
+              "label": "Salz",
+              "values": [
+                "0.1 g",
+                "2 %",
+                "0.26 g",
+                "4 %"
+              ]
+            },
+            {
+              "label": "Calcium",
+              "values": [
+                "124 mg",
+                "16 %",
+                "310 mg",
+                "39 %"
+              ]
+            }
+          ]
+        },
+        "portionSentence": "1 Packung = 4 Portionen",
+        "isAnalyticalConstituents": false
+      },
+      "otherInformation": {
+        "articleNumber": "204003200000",
+        "legalDesignation": "Vollmilch**, mindestens 3,5% Fett. **Aus Schweizer Bio-Produkt",
+        "identificationMark": "CH 10442969",
+        "distributorName": "Migros-Genossenschafts-Bund",
+        "distributorStreetAndNumber": "Limmatstrasse 152, CH-8031 Zürich",
+        "bioCertification": "Bio-Zertifizierung: CH-BIO-006",
+        "remarks": [
+          {
+            "code": "Kühlhinweis / Aufbewahrungshinweis",
+            "value": "Vor Licht geschützt und bei max. +5 °C aufbewahren."
+          },
+          {
+            "code": "Produktionshinweis",
+            "value": "Mikrofiltriert"
+          }
+        ],
+        "mainSpecificities": [
+          {
+            "code": "Produktionsverfahren",
+            "value": "Bio-Produktion"
+          },
+          {
+            "code": "Fettgehalt",
+            "value": "Vollmilch"
+          },
+          {
+            "code": "Verpackungsart",
+            "value": "TetraPak"
+          }
+        ]
+      }
+    },
+    "gtins": [
+      "7613404894064",
+      "7610200313980",
+      "7613404587140"
+    ],
+    "images": [
+      {
+        "cdn": "rokka",
+        "url": "https://image.migros.ch/d/{stack}/o-af-1-t.clr-fff/f8645d351d6a1ce14c8d38b9523a517e1aa08ea2/bio-vollmilch-35-fett-pasteurisiert.jpg"
+      }
+    ],
+    "imageTransparent": {
+      "cdn": "rokka",
+      "url": "https://image.migros.ch/d/{stack}/f8645d351d6a1ce14c8d38b9523a517e1aa08ea2/bio-vollmilch-35-fett-pasteurisiert.png"
+    },
+    "breadcrumb": [
+      {
+        "id": "7494731",
+        "name": "Milchprodukte, Eier & frische Fertiggerichte",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti"
+        ]
+      },
+      {
+        "id": "7494751",
+        "name": "Milch, Butter & Eier",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier"
+        ]
+      },
+      {
+        "id": "7494867",
+        "name": "Milch & Milchgetränke",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier",
+          "milch-milchgetranke"
+        ]
+      },
+      {
+        "id": "7495313",
+        "name": "Frische & pasteurisierte Milch",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier",
+          "milch-milchgetranke",
+          "frische-pasteurisierte-milch"
+        ]
+      }
+    ],
+    "productUrls": "https://www.migros.ch/de/product/204003200000",
+    "isMgbCompatible": true,
+    "isConsignmentProduct": false,
+    "offer": {
+      "price": {
+        "displayUnitPrice": true,
+        "advertisedDisplayValue": "1.85",
+        "effectiveDisplayValue": "1.85",
+        "multiplier": 1,
+        "effectiveValue": 1.85,
+        "advertisedValue": 1.85,
+        "unitPrice": {
+          "value": 0.19,
+          "unit": "100ml"
+        }
+      },
+      "quantity": "1l",
+      "quantityPrice": "0.19/100ml",
+      "isVariableWeight": false,
+      "channel": {
+        "offerType": "OFFLINE",
+        "region": "national"
+      },
+      "maxOrderableQuantityV2": 96,
+      "pictos": [
+        {
+          "type": "BIO",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483586/labels/bio",
+          "description": "Bio"
+        },
+        {
+          "type": "REGION",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679482984/labels/suisse",
+          "description": "Schweiz"
+        },
+        {
+          "type": "FRESHNESS",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483166/labels/fresh",
+          "description": "cold"
+        }
+      ],
+      "isNewOffer": false,
+      "isNotMorningDeliverable": false,
+      "displayPrice": true,
+      "type": "STANDARD"
+    }
+  },
+  {
+    "uid": 100033136,
+    "migrosId": "204016818000",
+    "migrosOnlineId": "6500575",
+    "name": "Vollmilch",
+    "brand": "Valflora",
+    "versioning": "3.5 % Fett, UHT",
+    "title": "Valflora · Vollmilch · 3.5 % Fett, UHT",
+    "description": "Valflora · Vollmilch · 3.5 % Fett, UHT",
+    "productRange": "STANDARD",
+    "productAvailability": "ONLINE_AND_INSTORE",
+    "productInformation": {
+      "mainInformation": {
+        "labels": [
+          {
+            "id": "L03",
+            "name": "IP-SUISSE",
+            "slug": "ip-suisse",
+            "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483396/labels/IP-Suisse_-_RGB_-_DE"
+          },
+          {
+            "id": "L53",
+            "name": "Swissness",
+            "slug": "swissness",
+            "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483312/labels/Swissness_-_RGB_-_DEpng"
+          }
+        ],
+        "brand": {
+          "name": "Valflora",
+          "slug": "valflora",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1652252510/brands/valflora"
+        },
+        "allergens": "Milch und daraus gewonnene Erzeugnisse",
+        "origin": "Die Herkunftsangabe findest du auf der Verpackung in der Filiale.",
+        "mcheck": {
+          "carbonFootprint": {
+            "rating": 4,
+            "co2CarKmEquivalent": 8,
+            "productionRatio": 87,
+            "transportRatio": 0,
+            "packagingRatio": 11,
+            "image": "https://image.migros.ch/original/aa267c409e797c3b69d46fc7ba2f0b73a8bae4cf.svg",
+            "stackImage": "https://image.migros.ch/{stack}/aa267c409e797c3b69d46fc7ba2f0b73a8bae4cf.svg",
+            "co2KgRange": "1 - 1.9 kg CO₂eq / kg"
+          },
+          "animalWelfare": {
+            "rating": 4,
+            "image": "https://image.migros.ch/original/e780c432db35d5fc23c70eaae29bfe7f0ef3e15a.svg",
+            "label": "Tierwohl"
+          }
+        },
+        "rating": {
+          "nbReviews": 680,
+          "nbStars": 4.5
+        },
+        "migipediaUrl": "https://migipedia.migros.ch/de/products/204016818000"
+      },
+      "nutrientsInformation": {
+        "nutrientsTable": {
+          "headers": [
+            "100 ml",
+            "1 Glas (250 ml)"
+          ],
+          "rows": [
+            {
+              "label": "Energie",
+              "values": [
+                "278 kJ (67 kcal)",
+                "689 kJ (165 kcal)",
+                "8 %"
+              ]
+            },
+            {
+              "label": "Fett",
+              "values": [
+                "3.7 g",
+                "9.3 g",
+                "13 %"
+              ],
+              "fsaLevel": "MEDIUM"
+            },
+            {
+              "label": "davon gesättigte Fettsäuren",
+              "values": [
+                "2.3 g",
+                "5.7 g",
+                "29 %"
+              ],
+              "fsaLevel": "MEDIUM"
+            },
+            {
+              "label": "Kohlenhydrate",
+              "values": [
+                "5 g",
+                "12 g",
+                "5 %"
+              ]
+            },
+            {
+              "label": "davon Zucker",
+              "values": [
+                "5 g",
+                "12 g",
+                "13 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Ballaststoffe",
+              "values": [
+                "0 g",
+                "0 g",
+                ""
+              ]
+            },
+            {
+              "label": "Eiweiss",
+              "values": [
+                "3.3 g",
+                "8.3 g",
+                "17 %"
+              ]
+            },
+            {
+              "label": "Salz",
+              "values": [
+                "0.1 g",
+                "0.26 g",
+                "4 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Calcium",
+              "values": [
+                "120 mg",
+                "300 mg",
+                "38 %"
+              ]
+            }
+          ]
+        },
+        "nutrientsTableV2": {
+          "headers": [
+            {
+              "value": "100 ml"
+            },
+            {
+              "value": "Referenzmenge",
+              "infoText": "% der Referenzmenge für einen durchschnittlichen Erwachsenen (8400kj/2000kcal)"
+            },
+            {
+              "value": "1 Glas (250 ml)"
+            },
+            {
+              "value": "Referenzmenge",
+              "infoText": "% der Referenzmenge für einen durchschnittlichen Erwachsenen (8400kj/2000kcal)"
+            }
+          ],
+          "rows": [
+            {
+              "label": "Energie",
+              "values": [
+                "278 kJ (67 kcal)",
+                "3 %",
+                "689 kJ (165 kcal)",
+                "8 %"
+              ]
+            },
+            {
+              "label": "Fett",
+              "values": [
+                "3.7 g",
+                "5 %",
+                "9.3 g",
+                "13 %"
+              ],
+              "fsaLevel": "MEDIUM"
+            },
+            {
+              "label": "davon gesättigte Fettsäuren",
+              "values": [
+                "2.3 g",
+                "12 %",
+                "5.7 g",
+                "29 %"
+              ],
+              "fsaLevel": "MEDIUM"
+            },
+            {
+              "label": "Kohlenhydrate",
+              "values": [
+                "5 g",
+                "2 %",
+                "12 g",
+                "5 %"
+              ]
+            },
+            {
+              "label": "davon Zucker",
+              "values": [
+                "5 g",
+                "6 %",
+                "12 g",
+                "13 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Ballaststoffe",
+              "values": [
+                "0 g",
+                "",
+                "0 g",
+                ""
+              ]
+            },
+            {
+              "label": "Eiweiss",
+              "values": [
+                "3.3 g",
+                "7 %",
+                "8.3 g",
+                "17 %"
+              ]
+            },
+            {
+              "label": "Salz",
+              "values": [
+                "0.1 g",
+                "2 %",
+                "0.26 g",
+                "4 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Calcium",
+              "values": [
+                "120 mg",
+                "15 %",
+                "300 mg",
+                "38 %"
+              ]
+            }
+          ]
+        },
+        "portionSentence": "1 Packung = 4 Portionen",
+        "isAnalyticalConstituents": false
+      },
+      "otherInformation": {
+        "articleNumber": "204016818000",
+        "legalDesignation": "Vollmilch* (CH) standardisiert, 3,5% Fett\n* in IP-SUISSE Qualität mit Mengenausgleich",
+        "identificationMark": "CH 2434",
+        "distributorName": "Migros-Genossenschafts-Bund",
+        "distributorStreetAndNumber": "Limmatstrasse 152, CH-8031 Zürich",
+        "remarks": [
+          {
+            "code": "Kühlhinweis / Aufbewahrungshinweis",
+            "value": "Nach dem Öffnen bei max. +5 °C aufbewahren und rasch konsumieren."
+          }
+        ],
+        "mainSpecificities": [
+          {
+            "code": "Fettgehalt",
+            "value": "Vollmilch"
+          },
+          {
+            "code": "Verpackungsart",
+            "value": "TetraPak"
+          }
+        ]
+      }
+    },
+    "gtins": [
+      "7613404322956"
+    ],
+    "images": [
+      {
+        "cdn": "rokka",
+        "url": "https://image.migros.ch/d/{stack}/o-af-1-t.clr-fff/114b75535cd5ff46cd89f62531671e35cbb4071f/valflora-vollmilch-35-fett-uht.jpg"
+      },
+      {
+        "cdn": "rokka",
+        "url": "https://image.migros.ch/d/{stack}/2343e27fc511b8c4b65ae15160731c2a0155684c.jpg"
+      }
+    ],
+    "imageTransparent": {
+      "cdn": "rokka",
+      "url": "https://image.migros.ch/d/{stack}/114b75535cd5ff46cd89f62531671e35cbb4071f/valflora-vollmilch-35-fett-uht.png"
+    },
+    "breadcrumb": [
+      {
+        "id": "7494731",
+        "name": "Milchprodukte, Eier & frische Fertiggerichte",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti"
+        ]
+      },
+      {
+        "id": "7494751",
+        "name": "Milch, Butter & Eier",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier"
+        ]
+      },
+      {
+        "id": "7494867",
+        "name": "Milch & Milchgetränke",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier",
+          "milch-milchgetranke"
+        ]
+      },
+      {
+        "id": "7495312",
+        "name": "UHT-Milch",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier",
+          "milch-milchgetranke",
+          "uht-milch"
+        ]
+      }
+    ],
+    "productUrls": "https://www.migros.ch/de/product/204016818000",
+    "isMgbCompatible": true,
+    "isConsignmentProduct": false,
+    "offer": {
+      "price": {
+        "displayUnitPrice": true,
+        "advertisedDisplayValue": "9.30",
+        "effectiveDisplayValue": "9.30",
+        "multiplier": 1,
+        "effectiveValue": 9.3,
+        "advertisedValue": 9.3,
+        "unitPrice": {
+          "value": 0.16,
+          "unit": "100ml"
+        }
+      },
+      "quantity": "6 x 1l",
+      "quantityPrice": "0.16/100ml",
+      "isVariableWeight": false,
+      "channel": {
+        "offerType": "OFFLINE",
+        "region": "national"
+      },
+      "maxOrderableQuantityV2": 96,
+      "pictos": [
+        {
+          "type": "REGION",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679482984/labels/suisse",
+          "description": "Schweiz"
+        }
+      ],
+      "isNewOffer": false,
+      "isNotMorningDeliverable": false,
+      "displayPrice": true,
+      "type": "STANDARD"
+    }
+  },
+  {
+    "uid": 100033132,
+    "migrosId": "204020818000",
+    "migrosOnlineId": "6500592",
+    "name": "Milch Drink",
+    "brand": "Valflora",
+    "versioning": "1.5% Fett, UHT",
+    "title": "Valflora · Milch Drink · 1.5% Fett, UHT",
+    "description": "Valflora · Milch Drink · 1.5% Fett, UHT",
+    "productRange": "STANDARD",
+    "productAvailability": "ONLINE_AND_INSTORE",
+    "productInformation": {
+      "mainInformation": {
+        "labels": [
+          {
+            "id": "L03",
+            "name": "IP-SUISSE",
+            "slug": "ip-suisse",
+            "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483396/labels/IP-Suisse_-_RGB_-_DE"
+          },
+          {
+            "id": "L53",
+            "name": "Swissness",
+            "slug": "swissness",
+            "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679483312/labels/Swissness_-_RGB_-_DEpng"
+          }
+        ],
+        "brand": {
+          "name": "Valflora",
+          "slug": "valflora",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1652252510/brands/valflora"
+        },
+        "ingredients": "<strong>Milch</strong> teilentrahmt* (CH). * in IP-SUISSE Qualität mit Massenbilanz",
+        "allergens": "Milch und daraus gewonnene Erzeugnisse",
+        "origin": "Die Herkunftsangabe findest du auf der Verpackung in der Filiale.",
+        "mcheck": {
+          "carbonFootprint": {
+            "rating": 4,
+            "co2CarKmEquivalent": 8,
+            "productionRatio": 87,
+            "transportRatio": 0,
+            "packagingRatio": 11,
+            "image": "https://image.migros.ch/original/aa267c409e797c3b69d46fc7ba2f0b73a8bae4cf.svg",
+            "stackImage": "https://image.migros.ch/{stack}/aa267c409e797c3b69d46fc7ba2f0b73a8bae4cf.svg",
+            "co2KgRange": "1 - 1.9 kg CO₂eq / kg"
+          },
+          "animalWelfare": {
+            "rating": 4,
+            "image": "https://image.migros.ch/original/e780c432db35d5fc23c70eaae29bfe7f0ef3e15a.svg",
+            "label": "Tierwohl"
+          }
+        },
+        "rating": {
+          "nbReviews": 1009,
+          "nbStars": 4.5
+        },
+        "migipediaUrl": "https://migipedia.migros.ch/de/products/204020818000"
+      },
+      "nutrientsInformation": {
+        "nutrientsTable": {
+          "headers": [
+            "100 ml",
+            "1 Glas (250 ml)"
+          ],
+          "rows": [
+            {
+              "label": "Energie",
+              "values": [
+                "209 kJ (50 kcal)",
+                "518 kJ (123 kcal)",
+                "6 %"
+              ]
+            },
+            {
+              "label": "Fett",
+              "values": [
+                "1.6 g",
+                "3.9 g",
+                "6 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "davon gesättigte Fettsäuren",
+              "values": [
+                "0.9 g",
+                "2.3 g",
+                "12 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Kohlenhydrate",
+              "values": [
+                "5.2 g",
+                "13 g",
+                "5 %"
+              ]
+            },
+            {
+              "label": "davon Zucker",
+              "values": [
+                "5.2 g",
+                "13 g",
+                "14 %"
+              ],
+              "fsaLevel": "MEDIUM"
+            },
+            {
+              "label": "Ballaststoffe",
+              "values": [
+                "0 g",
+                "0 g",
+                ""
+              ]
+            },
+            {
+              "label": "Eiweiss",
+              "values": [
+                "3.6 g",
+                "9 g",
+                "18 %"
+              ]
+            },
+            {
+              "label": "Salz",
+              "values": [
+                "0.1 g",
+                "0.26 g",
+                "4 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Calcium",
+              "values": [
+                "120 mg",
+                "300 mg",
+                "38 %"
+              ]
+            }
+          ]
+        },
+        "nutrientsTableV2": {
+          "headers": [
+            {
+              "value": "100 ml"
+            },
+            {
+              "value": "Referenzmenge",
+              "infoText": "% der Referenzmenge für einen durchschnittlichen Erwachsenen (8400kj/2000kcal)"
+            },
+            {
+              "value": "1 Glas (250 ml)"
+            },
+            {
+              "value": "Referenzmenge",
+              "infoText": "% der Referenzmenge für einen durchschnittlichen Erwachsenen (8400kj/2000kcal)"
+            }
+          ],
+          "rows": [
+            {
+              "label": "Energie",
+              "values": [
+                "209 kJ (50 kcal)",
+                "3 %",
+                "518 kJ (123 kcal)",
+                "6 %"
+              ]
+            },
+            {
+              "label": "Fett",
+              "values": [
+                "1.6 g",
+                "2 %",
+                "3.9 g",
+                "6 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "davon gesättigte Fettsäuren",
+              "values": [
+                "0.9 g",
+                "5 %",
+                "2.3 g",
+                "12 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Kohlenhydrate",
+              "values": [
+                "5.2 g",
+                "2 %",
+                "13 g",
+                "5 %"
+              ]
+            },
+            {
+              "label": "davon Zucker",
+              "values": [
+                "5.2 g",
+                "6 %",
+                "13 g",
+                "14 %"
+              ],
+              "fsaLevel": "MEDIUM"
+            },
+            {
+              "label": "Ballaststoffe",
+              "values": [
+                "0 g",
+                "",
+                "0 g",
+                ""
+              ]
+            },
+            {
+              "label": "Eiweiss",
+              "values": [
+                "3.6 g",
+                "7 %",
+                "9 g",
+                "18 %"
+              ]
+            },
+            {
+              "label": "Salz",
+              "values": [
+                "0.1 g",
+                "2 %",
+                "0.26 g",
+                "4 %"
+              ],
+              "fsaLevel": "LOW"
+            },
+            {
+              "label": "Calcium",
+              "values": [
+                "120 mg",
+                "15 %",
+                "300 mg",
+                "38 %"
+              ]
+            }
+          ]
+        },
+        "portionSentence": "1 Packung = 4 Portionen",
+        "isAnalyticalConstituents": false
+      },
+      "otherInformation": {
+        "articleNumber": "204020818000",
+        "legalDesignation": "Teilentrahmte Milch* (CH), 1,5% Fett\n* in IP-SUISSE Qualität mit Mengenausgleich",
+        "identificationMark": "CH 2434",
+        "distributorName": "Migros-Genossenschafts-Bund",
+        "distributorStreetAndNumber": "Limmatstrasse 152, CH-8031 Zürich",
+        "remarks": [
+          {
+            "code": "Kühlhinweis / Aufbewahrungshinweis",
+            "value": "Nach dem Öffnen bei max. +5 °C aufbewahren und rasch konsumieren."
+          }
+        ],
+        "mainSpecificities": [
+          {
+            "code": "Fettgehalt",
+            "value": "teilentrahmt"
+          },
+          {
+            "code": "Verpackungsart",
+            "value": "TetraPak"
+          }
+        ]
+      }
+    },
+    "gtins": [
+      "7623186628771",
+      "7613404323205"
+    ],
+    "images": [
+      {
+        "cdn": "rokka",
+        "url": "https://image.migros.ch/d/{stack}/o-af-1-t.clr-fff/d5d5d2ccb0bdf36651e7354cb2e31f05bffd020c/valflora-milch-drink-15-fett-uht.jpg"
+      },
+      {
+        "cdn": "rokka",
+        "url": "https://image.migros.ch/d/{stack}/a89296d12cc7e61aa2b6dfc442f8063de69ac518.jpg"
+      }
+    ],
+    "imageTransparent": {
+      "cdn": "rokka",
+      "url": "https://image.migros.ch/d/{stack}/d5d5d2ccb0bdf36651e7354cb2e31f05bffd020c/valflora-milch-drink-15-fett-uht.png"
+    },
+    "breadcrumb": [
+      {
+        "id": "7494731",
+        "name": "Milchprodukte, Eier & frische Fertiggerichte",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti"
+        ]
+      },
+      {
+        "id": "7494751",
+        "name": "Milch, Butter & Eier",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier"
+        ]
+      },
+      {
+        "id": "7494867",
+        "name": "Milch & Milchgetränke",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier",
+          "milch-milchgetranke"
+        ]
+      },
+      {
+        "id": "7495312",
+        "name": "UHT-Milch",
+        "slugs": [
+          "milchprodukte-eier-frische-ferti",
+          "milch-butter-eier",
+          "milch-milchgetranke",
+          "uht-milch"
+        ]
+      }
+    ],
+    "productUrls": "https://www.migros.ch/de/product/204020818000",
+    "isMgbCompatible": true,
+    "isConsignmentProduct": false,
+    "offer": {
+      "price": {
+        "displayUnitPrice": true,
+        "advertisedDisplayValue": "8.70",
+        "effectiveDisplayValue": "8.70",
+        "multiplier": 1,
+        "effectiveValue": 8.7,
+        "advertisedValue": 8.7,
+        "unitPrice": {
+          "value": 0.15,
+          "unit": "100ml"
+        }
+      },
+      "quantity": "6 x 1l",
+      "quantityPrice": "0.15/100ml",
+      "isVariableWeight": false,
+      "channel": {
+        "offerType": "OFFLINE",
+        "region": "national"
+      },
+      "maxOrderableQuantityV2": 96,
+      "pictos": [
+        {
+          "type": "REGION",
+          "imagePath": "https://www-leshop-ch-cld-res.cloudinary.com/image/upload/{stack}/v1679482984/labels/suisse",
+          "description": "Schweiz"
+        }
+      ],
+      "isNewOffer": false,
+      "isNotMorningDeliverable": false,
+      "displayPrice": true,
+      "type": "STANDARD"
+    }
+  }
+]

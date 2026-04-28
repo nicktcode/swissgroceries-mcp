@@ -1,0 +1,1859 @@
+[
+  {
+    "storeId": "0150362",
+    "costCenterId": "0150362",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 06:30",
+            "close": "2026-04-28 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 06:30",
+            "close": "2026-04-29 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 06:30",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 06:30",
+            "close": "2026-05-01 20:00",
+            "invalidated": true
+          },
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 08:00",
+            "close": "2026-05-02 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "open": "2026-05-03 08:00",
+            "close": "2026-05-03 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 06:30",
+            "close": "2026-05-04 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 06:30",
+            "close": "2026-05-05 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 06:30",
+            "close": "2026-05-06 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 06:30",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 06:30",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 08:00",
+            "close": "2026-05-09 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "open": "2026-05-10 08:00",
+            "close": "2026-05-10 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 06:30",
+            "close": "2026-05-11 20:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-01",
+        "timeOpen": "08:00",
+        "timeClose": "20:00",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-14",
+        "timeOpen": "08:00",
+        "timeClose": "20:00",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-24",
+        "timeOpen": "08:00",
+        "timeClose": "20:00",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-25",
+        "timeOpen": "08:00",
+        "timeClose": "20:00",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Daily Zürich-Zollstrasse",
+    "location": {
+      "zip": "8005",
+      "address": "Zollstrasse 6",
+      "city": "Zürich",
+      "latitude": 47.3798176,
+      "longitude": 8.5369492
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/5adb9051f212ec0d1c22a9e7db98c5842e5b4a6d/m--super-dailytakeaway-de.png"
+    },
+    "storeType": "m"
+  },
+  {
+    "storeId": "0150170",
+    "costCenterId": "0150170",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 08:00",
+            "close": "2026-04-28 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 08:00",
+            "close": "2026-04-29 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 08:00",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 20:00",
+            "invalidated": true
+          },
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 08:00",
+            "close": "2026-05-02 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 08:00",
+            "close": "2026-05-04 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 08:00",
+            "close": "2026-05-05 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 08:00",
+            "close": "2026-05-06 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 08:00",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 08:00",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 08:00",
+            "close": "2026-05-09 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 08:00",
+            "close": "2026-05-11 20:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-01",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-24",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Ebmatingen",
+    "location": {
+      "zip": "8123",
+      "address": "Zürichstrasse 108",
+      "city": "Ebmatingen",
+      "latitude": 47.350978,
+      "longitude": 8.6432014
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/b7ed598472b2aa065658425a494316272885c3ff/m-de.png"
+    },
+    "storeType": "m"
+  },
+  {
+    "storeId": "0150157",
+    "costCenterId": "0150157",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 07:30",
+            "close": "2026-04-28 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 07:30",
+            "close": "2026-04-29 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 07:30",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 07:30",
+            "close": "2026-05-01 20:00",
+            "invalidated": true
+          },
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 07:30",
+            "close": "2026-05-02 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 07:30",
+            "close": "2026-05-04 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 07:30",
+            "close": "2026-05-05 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 07:30",
+            "close": "2026-05-06 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 07:30",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 07:30",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 07:30",
+            "close": "2026-05-09 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 07:30",
+            "close": "2026-05-11 20:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-01",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-24",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Küsnacht ZH",
+    "location": {
+      "zip": "8700",
+      "address": "Zürichstrasse 149",
+      "city": "Küsnacht ZH",
+      "latitude": 47.3185861,
+      "longitude": 8.5821107
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/b7ed598472b2aa065658425a494316272885c3ff/m-de.png"
+    },
+    "storeType": "m"
+  },
+  {
+    "storeId": "0150112",
+    "costCenterId": "0150112",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 07:00",
+            "close": "2026-04-28 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 07:00",
+            "close": "2026-04-29 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 07:00",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 07:00",
+            "close": "2026-05-01 20:00",
+            "invalidated": true
+          },
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 07:00",
+            "close": "2026-05-02 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 07:00",
+            "close": "2026-05-04 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 07:00",
+            "close": "2026-05-05 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 07:00",
+            "close": "2026-05-06 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 07:00",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 07:00",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 07:00",
+            "close": "2026-05-09 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 07:00",
+            "close": "2026-05-11 20:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-01",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-24",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Leutschenbach",
+    "location": {
+      "zip": "8050",
+      "address": "Hagenholzstrasse 45",
+      "city": "Zürich",
+      "latitude": 47.414625,
+      "longitude": 8.554264
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/b7ed598472b2aa065658425a494316272885c3ff/m-de.png"
+    },
+    "storeType": "m"
+  },
+  {
+    "storeId": "0034253",
+    "costCenterId": "0034253",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 08:00",
+            "close": "2026-04-28 19:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 08:00",
+            "close": "2026-04-29 19:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 08:00",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 07:30",
+            "close": "2026-05-02 18:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 08:00",
+            "close": "2026-05-04 19:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 08:00",
+            "close": "2026-05-05 19:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 08:00",
+            "close": "2026-05-06 19:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 08:00",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 08:00",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 07:30",
+            "close": "2026-05-09 18:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 08:00",
+            "close": "2026-05-11 19:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Oftringen",
+    "location": {
+      "zip": "4665",
+      "address": "Zürichstrasse 2",
+      "city": "Oftringen",
+      "latitude": 47.3125554,
+      "longitude": 7.9213265
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/66935cb3566ddd039ecd000be03d6893b39dd6c9/mm-de.png"
+    },
+    "storeType": "mm"
+  },
+  {
+    "storeId": "0150251",
+    "costCenterId": "0150251",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 08:00",
+            "close": "2026-04-28 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 08:00",
+            "close": "2026-04-29 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 08:00",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 20:00",
+            "invalidated": true
+          },
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 08:00",
+            "close": "2026-05-02 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 08:00",
+            "close": "2026-05-04 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 08:00",
+            "close": "2026-05-05 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 08:00",
+            "close": "2026-05-06 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 08:00",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 08:00",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 08:00",
+            "close": "2026-05-09 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 08:00",
+            "close": "2026-05-11 20:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-01",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-24",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Uster - Illuster",
+    "location": {
+      "zip": "8610",
+      "address": "Zürichstrasse 20",
+      "city": "Uster",
+      "latitude": 47.349891,
+      "longitude": 8.7152446
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/59693c1c6da2cea59bf3f1910a70f39a93eb4a60/mmm-de.png"
+    },
+    "storeType": "mmm"
+  },
+  {
+    "storeId": "0150015",
+    "costCenterId": "0150015",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 08:00",
+            "close": "2026-04-28 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 08:00",
+            "close": "2026-04-29 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 08:00",
+            "close": "2026-04-30 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 20:00",
+            "invalidated": true
+          },
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 08:00",
+            "close": "2026-05-02 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 08:00",
+            "close": "2026-05-04 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 08:00",
+            "close": "2026-05-05 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 08:00",
+            "close": "2026-05-06 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 08:00",
+            "close": "2026-05-07 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 08:00",
+            "close": "2026-05-08 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 08:00",
+            "close": "2026-05-09 20:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 08:00",
+            "close": "2026-05-11 20:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-01",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-24",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Zürich - Affoltern",
+    "location": {
+      "zip": "8046",
+      "address": "Jonas-Furrer-Strasse 21",
+      "city": "Zürich",
+      "latitude": 47.4202196,
+      "longitude": 8.5082588
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/66935cb3566ddd039ecd000be03d6893b39dd6c9/mm-de.png"
+    },
+    "storeType": "mm"
+  },
+  {
+    "storeId": "0150193",
+    "costCenterId": "0150193",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 06:15",
+            "close": "2026-04-28 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 06:15",
+            "close": "2026-04-29 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 06:15",
+            "close": "2026-04-30 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 06:15",
+            "close": "2026-05-01 23:00",
+            "invalidated": true
+          },
+          {
+            "open": "2026-05-01 06:15",
+            "close": "2026-05-01 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 06:15",
+            "close": "2026-05-02 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "open": "2026-05-03 06:15",
+            "close": "2026-05-03 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 06:15",
+            "close": "2026-05-04 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 06:15",
+            "close": "2026-05-05 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 06:15",
+            "close": "2026-05-06 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 06:15",
+            "close": "2026-05-07 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 06:15",
+            "close": "2026-05-08 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 06:15",
+            "close": "2026-05-09 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "open": "2026-05-10 06:15",
+            "close": "2026-05-10 23:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 06:15",
+            "close": "2026-05-11 23:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-01",
+        "timeOpen": "06:15",
+        "timeClose": "23:00",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-14",
+        "timeOpen": "06:15",
+        "timeClose": "23:00",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-24",
+        "timeOpen": "06:15",
+        "timeClose": "23:00",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-25",
+        "timeOpen": "06:15",
+        "timeClose": "23:00",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Zürich - Airport",
+    "location": {
+      "zip": "8302",
+      "address": "Flughafen Zürich AG",
+      "city": "Kloten",
+      "latitude": 47.4502749,
+      "longitude": 8.5626585
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/66935cb3566ddd039ecd000be03d6893b39dd6c9/mm-de.png"
+    },
+    "storeType": "mm"
+  },
+  {
+    "storeId": "0150327",
+    "costCenterId": "0150327",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 08:00",
+            "close": "2026-04-28 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 08:00",
+            "close": "2026-04-29 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 08:00",
+            "close": "2026-04-30 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 21:00",
+            "invalidated": true
+          },
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 08:00",
+            "close": "2026-05-02 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 08:00",
+            "close": "2026-05-04 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 08:00",
+            "close": "2026-05-05 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 08:00",
+            "close": "2026-05-06 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 08:00",
+            "close": "2026-05-07 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 08:00",
+            "close": "2026-05-08 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 08:00",
+            "close": "2026-05-09 21:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 08:00",
+            "close": "2026-05-11 21:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-01",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-14",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-24",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": false,
+        "dateFrom": "2026-05-25",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Zürich - Albisriederplatz",
+    "location": {
+      "zip": "8004",
+      "address": "Badenerstrasse 376",
+      "city": "Zürich",
+      "latitude": 47.3792702,
+      "longitude": 8.5086822
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/b7ed598472b2aa065658425a494316272885c3ff/m-de.png"
+    },
+    "storeType": "m"
+  },
+  {
+    "storeId": "0150360",
+    "costCenterId": "0150360",
+    "openingHours": [
+      {
+        "date": "2026-04-28",
+        "hours": [
+          {
+            "open": "2026-04-28 06:00",
+            "close": "2026-04-28 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "hours": [
+          {
+            "open": "2026-04-29 06:00",
+            "close": "2026-04-29 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "hours": [
+          {
+            "open": "2026-04-30 06:00",
+            "close": "2026-04-30 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-01",
+        "hours": [
+          {
+            "open": "2026-05-01 06:00",
+            "close": "2026-05-01 22:00",
+            "invalidated": true
+          },
+          {
+            "open": "2026-05-01 08:00",
+            "close": "2026-05-01 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-02",
+        "hours": [
+          {
+            "open": "2026-05-02 06:00",
+            "close": "2026-05-02 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-03",
+        "hours": [
+          {
+            "open": "2026-05-03 06:00",
+            "close": "2026-05-03 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "hours": [
+          {
+            "open": "2026-05-04 06:00",
+            "close": "2026-05-04 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "hours": [
+          {
+            "open": "2026-05-05 06:00",
+            "close": "2026-05-05 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "hours": [
+          {
+            "open": "2026-05-06 06:00",
+            "close": "2026-05-06 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "hours": [
+          {
+            "open": "2026-05-07 06:00",
+            "close": "2026-05-07 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "hours": [
+          {
+            "open": "2026-05-08 06:00",
+            "close": "2026-05-08 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "hours": [
+          {
+            "open": "2026-05-09 06:00",
+            "close": "2026-05-09 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "hours": [
+          {
+            "open": "2026-05-10 06:00",
+            "close": "2026-05-10 22:00",
+            "invalidated": false
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "hours": [
+          {
+            "open": "2026-05-11 06:00",
+            "close": "2026-05-11 22:00",
+            "invalidated": false
+          }
+        ]
+      }
+    ],
+    "specialDaySchedules": [
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-01",
+        "timeOpen": "08:00",
+        "timeClose": "22:00",
+        "holiday": "Tag der Arbeit"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-14",
+        "timeOpen": "08:00",
+        "timeClose": "22:00",
+        "holiday": "Auffahrt"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-24",
+        "timeOpen": "06:00",
+        "timeClose": "22:00",
+        "holiday": "Pfingstsonntag"
+      },
+      {
+        "justMessage": false,
+        "open": true,
+        "dateFrom": "2026-05-25",
+        "timeOpen": "08:00",
+        "timeClose": "22:00",
+        "holiday": "Pfingstmontag"
+      }
+    ],
+    "storeName": "Zürich - Altstetten M-Express",
+    "location": {
+      "zip": "8048",
+      "address": "Hohlstrasse 600",
+      "city": "Zürich",
+      "latitude": 47.391465,
+      "longitude": 8.487543
+    },
+    "storeLogo": {
+      "custom": "//image.migros.ch/filialen/custom/resize-width-{width}-height-{height}/b7ed598472b2aa065658425a494316272885c3ff/m-de.png"
+    },
+    "storeType": "m"
+  }
+]
