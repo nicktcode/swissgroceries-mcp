@@ -1,0 +1,775 @@
+{
+   "locations" : [ {
+      "address" : {
+         "id" : "9521589682199",
+         "line1" : "Bahnhofbrücke",
+         "line2" : "1",
+         "phone" : "+41 44 215 70 30",
+         "postalCode" : "8001",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:00 - 22:00",
+      "distance" : 0.11634773574254485,
+      "geoPoint" : {
+         "latitude" : 47.37670896,
+         "longitude" : 8.54213318
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : true,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Fernandes Ferreira Paula Cristina",
+      "name" : "Coop Supermarkt Zürich Bahnhofbrücke",
+      "vstId" : "1905"
+   }, {
+      "address" : {
+         "id" : "9521608622103",
+         "line1" : "Halle Löwenstrasse",
+         "line2" : "",
+         "phone" : "+41 44 273 93 80",
+         "postalCode" : "8021",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:00 - 22:30",
+      "distance" : 0.20469341072157438,
+      "geoPoint" : {
+         "latitude" : 47.37777888472674,
+         "longitude" : 8.540301358807525
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Bajrami Flamur",
+      "name" : "Coop Supermarkt Zürich ShopVille HB",
+      "vstId" : "4899"
+   }, {
+      "address" : {
+         "id" : "9521579851799",
+         "line1" : "Bahnhofstrasse",
+         "line2" : "57",
+         "phone" : "+41 44 226 91 35",
+         "postalCode" : "8001",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "09:00 - 20:00",
+      "distance" : 0.41714894253518287,
+      "geoPoint" : {
+         "latitude" : 47.37292705,
+         "longitude" : 8.53783083
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : true,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/coop-city.svg",
+      "manager" : "Dreifuss Alan",
+      "name" : "Coop Supermarkt City Zürich St. Annahof Food",
+      "vstId" : "1914"
+   }, {
+      "address" : {
+         "id" : "9521607999511",
+         "line1" : "Europaallee",
+         "line2" : "5",
+         "phone" : "+41 44 403 53 60",
+         "postalCode" : "8001",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:30 - 21:00",
+      "distance" : 0.5125427173617472,
+      "geoPoint" : {
+         "latitude" : 47.3780996,
+         "longitude" : 8.53495795
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Gökduman Gökcan",
+      "name" : "Coop Supermarkt Zürich Europaallee Passage",
+      "vstId" : "4571"
+   }, {
+      "address" : {
+         "id" : "9521609080855",
+         "line1" : "Zollstrasse",
+         "line2" : "42",
+         "phone" : "+41 44 315 32 50",
+         "postalCode" : "8005",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:30 - 21:00",
+      "distance" : 0.7119387735278307,
+      "geoPoint" : {
+         "latitude" : 47.38048089,
+         "longitude" : 8.53426534
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Bilic Darko",
+      "name" : "Coop Supermarkt Zürich Zollstrasse",
+      "vstId" : "5149"
+   }, {
+      "address" : {
+         "id" : "9521607770135",
+         "line1" : "Bärengasse",
+         "line2" : "16",
+         "phone" : "+41 44 215 16 80",
+         "postalCode" : "8001",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:30 - 20:00",
+      "distance" : 0.7260453035820601,
+      "geoPoint" : {
+         "latitude" : 47.37002848,
+         "longitude" : 8.53710902
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Barros Maria",
+      "name" : "Coop Supermarkt Zürich Bärengasse",
+      "vstId" : "1255"
+   }, {
+      "address" : {
+         "id" : "9521608687639",
+         "line1" : "Badenerstrasse",
+         "line2" : "15",
+         "phone" : "+41 44 206 91 70",
+         "postalCode" : "8004",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "08:00 - 22:00",
+      "distance" : 0.8484483738676682,
+      "geoPoint" : {
+         "latitude" : 47.37344718,
+         "longitude" : 8.53041304
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Bakiu Kujtim",
+      "name" : "Coop Supermarkt Zürich Stauffacher",
+      "vstId" : "1412"
+   }, {
+      "address" : {
+         "id" : "9521608818711",
+         "line1" : "Universitätstrasse",
+         "line2" : "73",
+         "phone" : "+41 44 360 40 10",
+         "postalCode" : "8006",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 21:00",
+      "distance" : 0.8958578929743161,
+      "geoPoint" : {
+         "latitude" : 47.38251785,
+         "longitude" : 8.54797484
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Sopi Almir",
+      "name" : "Coop Supermarkt Zürich Universitätstrasse",
+      "vstId" : "1838"
+   }, {
+      "address" : {
+         "id" : "9858189852695",
+         "line1" : "Militärstrasse",
+         "line2" : "106",
+         "phone" : "+41 44 204 83 25",
+         "postalCode" : "8004",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 21:00",
+      "distance" : 0.9890427028147067,
+      "geoPoint" : {
+         "latitude" : 47.37929992452327,
+         "longitude" : 8.528837913137506
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Da Silva Michel Tomas",
+      "name" : "Coop Supermarkt Zürich Militärstrasse",
+      "vstId" : "6147"
+   }, {
+      "address" : {
+         "id" : "9521607835671",
+         "line1" : "Bleicherweg",
+         "line2" : "19",
+         "phone" : "+41 44 204 36 50",
+         "postalCode" : "8002",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:30 - 20:00",
+      "distance" : 0.9974813104119724,
+      "geoPoint" : {
+         "latitude" : 47.36777486,
+         "longitude" : 8.53572531
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Lecaj Beqir",
+      "name" : "Coop Supermarkt Zürich Bleicherweg",
+      "vstId" : "4922"
+   }, {
+      "address" : {
+         "id" : "9521608491031",
+         "line1" : "Universitätstrasse",
+         "line2" : "101",
+         "phone" : "+41 44 315 32 60",
+         "postalCode" : "8006",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 21:00",
+      "distance" : 1.038289410104484,
+      "geoPoint" : {
+         "latitude" : 47.38401936,
+         "longitude" : 8.54804585
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Todorovic Franz",
+      "name" : "Coop Supermarkt Zürich Rigiplatz",
+      "vstId" : "5019"
+   }, {
+      "address" : {
+         "id" : "9521594564631",
+         "line1" : "Theaterstrasse",
+         "line2" : "18",
+         "phone" : "+41 43 268 87 00",
+         "postalCode" : "8024",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "08:00 - 20:00",
+      "distance" : 1.0577016842971738,
+      "geoPoint" : {
+         "latitude" : 47.36709289,
+         "longitude" : 8.54591942
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/coop-city.svg",
+      "manager" : "Zivanovic Zorica",
+      "name" : "Coop Supermarkt City Zürich Bellevue Food",
+      "vstId" : "2623"
+   }, {
+      "address" : {
+         "id" : "9521608163351",
+         "line1" : "Hohlstrasse",
+         "line2" : "35",
+         "phone" : "+41 43 322 12 60",
+         "postalCode" : "8004",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 22:00",
+      "distance" : 1.1039079991631966,
+      "geoPoint" : {
+         "latitude" : 47.37711839,
+         "longitude" : 8.52647584
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Oruc Sanela",
+      "name" : "Coop Supermarkt Zürich Hohlstrasse",
+      "vstId" : "1722"
+   }, {
+      "address" : {
+         "id" : "9521608654871",
+         "line1" : "Stadelhoferstrasse",
+         "line2" : "10",
+         "phone" : "+41 44 250 47 80",
+         "postalCode" : "8001",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:00 - 22:00",
+      "distance" : 1.1661342585641175,
+      "geoPoint" : {
+         "latitude" : 47.36660644,
+         "longitude" : 8.54786884
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Bajraj Lahë",
+      "name" : "Coop Supermarkt Zürich Stadelhofen",
+      "vstId" : "1511"
+   }, {
+      "address" : {
+         "id" : "9912403460119",
+         "line1" : "Seefeldstrasse",
+         "line2" : "9",
+         "phone" : "+41 44 204 83 50",
+         "postalCode" : "8008",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 21:00",
+      "distance" : 1.3875406443235743,
+      "geoPoint" : {
+         "latitude" : 47.364690809174064,
+         "longitude" : 8.54876899639438
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Behluli Mimoza",
+      "name" : "Coop Supermarkt Zürich Seefeldstrasse",
+      "vstId" : "6173"
+   }, {
+      "address" : {
+         "id" : "9521608032279",
+         "line1" : "Zürichbergstrasse",
+         "line2" : "75",
+         "phone" : "+41 43 268 32 70",
+         "postalCode" : "8044",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 21:00",
+      "distance" : 1.4149385860550778,
+      "geoPoint" : {
+         "latitude" : 47.37640455,
+         "longitude" : 8.55972604
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Gecaj Alma",
+      "name" : "Coop Supermarkt Zürich Fluntern",
+      "vstId" : "1600"
+   }, {
+      "address" : {
+         "id" : "9521608196119",
+         "line1" : "Röntgenstrasse",
+         "line2" : "48",
+         "phone" : "+41 44 276 80 30",
+         "postalCode" : "8005",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:00 - 21:00",
+      "distance" : 1.4190480503699563,
+      "geoPoint" : {
+         "latitude" : 47.38471184,
+         "longitude" : 8.52726667
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Stojanoska Anita",
+      "name" : "Coop Supermarkt Zürich Josefstrasse",
+      "vstId" : "1596"
+   }, {
+      "address" : {
+         "id" : "9542616481815",
+         "line1" : "Tessinerplatz",
+         "line2" : "10",
+         "phone" : "+41 44 213 28 70",
+         "postalCode" : "8002",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "05:30 - 22:00",
+      "distance" : 1.4929831843927421,
+      "geoPoint" : {
+         "latitude" : 47.36442877874604,
+         "longitude" : 8.530969678992978
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Valladiyil Leo",
+      "name" : "Coop Supermarkt Zürich Enge Bahnhof",
+      "vstId" : "5646"
+   }, {
+      "address" : {
+         "id" : "9521607901207",
+         "line1" : "Seefeldstrasse",
+         "line2" : "35",
+         "phone" : "+41 44 204 97 10",
+         "postalCode" : "8008",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "06:30 - 21:00",
+      "distance" : 1.5900322532639248,
+      "geoPoint" : {
+         "latitude" : 47.363086378118766,
+         "longitude" : 8.550046257945382
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : false,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Sürün Rukan",
+      "name" : "Coop Supermarkt Zürich Brotgasse",
+      "vstId" : "5178"
+   }, {
+      "address" : {
+         "id" : "9521589813271",
+         "line1" : "Forchstrasse",
+         "line2" : "4",
+         "phone" : "+41 44 382 90 30",
+         "postalCode" : "8008",
+         "town" : "Zürich"
+      },
+      "currentOpeningHours" : "07:30 - 21:00",
+      "distance" : 1.6685839136795306,
+      "geoPoint" : {
+         "latitude" : 47.36435252,
+         "longitude" : 8.55493151
+      },
+      "isFavorite" : false,
+      "isMegastore" : false,
+      "isPickupPossible" : true,
+      "logoUrl" : "/_ui/26.3.1.2333/desktop/common/img/component/128-placeFinder/img/store-logo.png",
+      "manager" : "Abdi Eldin",
+      "name" : "Coop Supermarkt Zürich Kreuzplatz",
+      "vstId" : "1512"
+   } ],
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 20,
+      "totalPages" : 50,
+      "totalResults" : 988
+   },
+   "serviceClusters" : [ {
+      "description" : "Abholservice",
+      "id" : "1",
+      "selected" : false,
+      "services" : [ {
+         "description" : "CEWE Online-Aufträge",
+         "hidden" : false,
+         "id" : "333",
+         "selected" : false
+      }, {
+         "description" : "Hausliefer Service",
+         "hidden" : false,
+         "id" : "32",
+         "selected" : false
+      }, {
+         "description" : "Pick-up Station",
+         "hidden" : false,
+         "id" : "153",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Dienstleistungen",
+      "id" : "2",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Bettenstudio",
+         "hidden" : false,
+         "id" : "28",
+         "selected" : false
+      }, {
+         "description" : "CEWE Fotoautomat",
+         "hidden" : false,
+         "id" : "332",
+         "selected" : false
+      }, {
+         "description" : "Depositenkasse / Change",
+         "hidden" : false,
+         "id" : "105",
+         "selected" : false
+      }, {
+         "description" : "E-Ladestation",
+         "hidden" : false,
+         "id" : "236",
+         "selected" : false
+      }, {
+         "description" : "Farbmischanlage",
+         "hidden" : false,
+         "id" : "17",
+         "selected" : false
+      }, {
+         "description" : "Handwerkerservice",
+         "hidden" : false,
+         "id" : "26",
+         "selected" : false
+      }, {
+         "description" : "Holzzuschnitt",
+         "hidden" : false,
+         "id" : "20",
+         "selected" : false
+      }, {
+         "description" : "Oecoplan Textilreinigung",
+         "hidden" : false,
+         "id" : "10",
+         "selected" : false
+      }, {
+         "description" : "Parkieren mit Superpunkten",
+         "hidden" : false,
+         "id" : "331",
+         "selected" : false
+      }, {
+         "description" : "Postagentur",
+         "hidden" : false,
+         "id" : "143",
+         "selected" : false
+      }, {
+         "description" : "Rasenmäher Service",
+         "hidden" : false,
+         "id" : "78",
+         "selected" : false
+      }, {
+         "description" : "Reka-Card laden",
+         "hidden" : false,
+         "id" : "12",
+         "selected" : false
+      }, {
+         "description" : "Reparaturannahme",
+         "hidden" : false,
+         "id" : "65",
+         "selected" : false
+      }, {
+         "description" : "Sammlung von Plastikverpackungen und Getränkekartons",
+         "hidden" : false,
+         "id" : "317",
+         "selected" : false
+      }, {
+         "description" : "Textilreinigung",
+         "hidden" : false,
+         "id" : "104",
+         "selected" : false
+      }, {
+         "description" : "Ticketverkauf",
+         "hidden" : false,
+         "id" : "35",
+         "selected" : false
+      }, {
+         "description" : "Vorhangservice",
+         "hidden" : false,
+         "id" : "36",
+         "selected" : false
+      }, {
+         "description" : "Änderungsatelier",
+         "hidden" : false,
+         "id" : "27",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Einrichtungen",
+      "id" : "3",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Parkplätze",
+         "hidden" : false,
+         "id" : "174",
+         "selected" : false
+      }, {
+         "description" : "Restaurant",
+         "hidden" : false,
+         "id" : "13",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Frischetheken",
+      "id" : "4",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Chäs-Hüsli",
+         "hidden" : false,
+         "id" : "299",
+         "selected" : false
+      }, {
+         "description" : "Fisch in Bedienung",
+         "hidden" : false,
+         "id" : "2",
+         "selected" : false
+      }, {
+         "description" : "Fleisch in Bedienung",
+         "hidden" : false,
+         "id" : "3",
+         "selected" : false
+      }, {
+         "description" : "Fleischmanufaktur in Selbstbedienung",
+         "hidden" : false,
+         "id" : "318",
+         "selected" : false
+      }, {
+         "description" : "Hausbäckerei",
+         "hidden" : false,
+         "id" : "4",
+         "selected" : false
+      }, {
+         "description" : "Käse in Bedienung",
+         "hidden" : false,
+         "id" : "6",
+         "selected" : false
+      }, {
+         "description" : "Sushi-Insel",
+         "hidden" : false,
+         "id" : "347",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Zahlungsdienste",
+      "id" : "5",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Bargeldbezug",
+         "hidden" : false,
+         "id" : "298",
+         "selected" : false
+      }, {
+         "description" : "Bezahlen per Smartphone (iOS/Android) mit TWINT",
+         "hidden" : false,
+         "id" : "122",
+         "selected" : false
+      }, {
+         "description" : "Self-Checkout",
+         "hidden" : false,
+         "id" : "98",
+         "selected" : false
+      }, {
+         "description" : "passabene",
+         "hidden" : false,
+         "id" : "113",
+         "selected" : false
+      }, {
+         "description" : "passabene Payment T",
+         "hidden" : false,
+         "id" : "292",
+         "selected" : false
+      }, {
+         "description" : "passabene iOS/Android",
+         "hidden" : false,
+         "id" : "11",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Shopformate",
+      "id" : "6",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Blumen in Bedienung",
+         "hidden" : false,
+         "id" : "1",
+         "selected" : false
+      }, {
+         "description" : "Integrierter Jumbo",
+         "hidden" : false,
+         "id" : "5",
+         "selected" : false
+      }, {
+         "description" : "Kiosk in Bedienung",
+         "hidden" : false,
+         "id" : "7",
+         "selected" : false
+      }, {
+         "description" : "Megastore",
+         "hidden" : false,
+         "id" : "8",
+         "selected" : false
+      }, {
+         "description" : "Tchibo Shop",
+         "hidden" : false,
+         "id" : "14",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Sortimente",
+      "id" : "7",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Coffee to go",
+         "hidden" : false,
+         "id" : "348",
+         "selected" : false
+      }, {
+         "description" : "CoopMobile",
+         "hidden" : false,
+         "id" : "99",
+         "selected" : false
+      }, {
+         "description" : "Fischerei-Sortiment",
+         "hidden" : false,
+         "id" : "76",
+         "selected" : false
+      }, {
+         "description" : "Frischteig Brot",
+         "hidden" : false,
+         "id" : "349",
+         "selected" : false
+      }, {
+         "description" : "Kiosk / Blumen",
+         "hidden" : false,
+         "id" : "31",
+         "selected" : false
+      }, {
+         "description" : "Lebensmittelabteilung",
+         "hidden" : false,
+         "id" : "21",
+         "selected" : false
+      }, {
+         "description" : "Megastore Aktionen",
+         "hidden" : false,
+         "id" : "9",
+         "selected" : false
+      }, {
+         "description" : "Schuhabteilung",
+         "hidden" : false,
+         "id" : "34",
+         "selected" : false
+      }, {
+         "description" : "Slow Food",
+         "hidden" : false,
+         "id" : "147",
+         "selected" : false
+      }, {
+         "description" : "Sortiment Fahrräder",
+         "hidden" : false,
+         "id" : "16",
+         "selected" : false
+      }, {
+         "description" : "Toto / Lotto / Lose",
+         "hidden" : false,
+         "id" : "15",
+         "selected" : false
+      } ]
+   }, {
+      "description" : "Barrierefreiheit",
+      "id" : "8",
+      "selected" : false,
+      "services" : [ {
+         "description" : "Rollstuhlgerechte Sitzgelegenheiten",
+         "hidden" : false,
+         "id" : "293",
+         "selected" : false
+      }, {
+         "description" : "Rollstuhlgerechter Eingang",
+         "hidden" : false,
+         "id" : "294",
+         "selected" : false
+      }, {
+         "description" : "Rollstuhlgerechter Fahrstuhl",
+         "hidden" : false,
+         "id" : "295",
+         "selected" : false
+      }, {
+         "description" : "Rollstuhlgerechter Parkplatz",
+         "hidden" : false,
+         "id" : "296",
+         "selected" : false
+      }, {
+         "description" : "Rollstuhlgerechtes WC",
+         "hidden" : false,
+         "id" : "297",
+         "selected" : false
+      } ]
+   } ]
+}
