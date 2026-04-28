@@ -1,19 +1,53 @@
 {
   "name": "swissgroceries-mcp",
   "version": "0.1.0",
-  "description": "MCP server for Swiss grocery stores: Migros, Coop, Aldi, Denner, Lidl",
+  "description": "MCP server for Swiss grocery stores: Migros, Coop, Aldi, Denner, Lidl. Cross-store product search, promotions, and shopping-plan optimization.",
   "type": "module",
+  "license": "MIT",
+  "author": "<your-name>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<your-username>/swissgroceries-mcp.git"
+  },
+  "homepage": "https://github.com/<your-username>/swissgroceries-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/<your-username>/swissgroceries-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "anthropic",
+    "swiss",
+    "grocery",
+    "migros",
+    "coop",
+    "aldi",
+    "denner",
+    "lidl",
+    "shopping",
+    "switzerland"
+  ],
   "main": "dist/index.js",
   "bin": {
     "swissgroceries-mcp": "dist/index.js"
   },
+  "files": [
+    "dist/**/*",
+    "src/data/swiss-zips.json",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest --run",
     "test:watch": "vitest",
     "smoke": "RUN_LIVE=1 vitest --run tests/smoke",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build && npm test",
+    "bundle:mcpb": "tsx scripts/build-mcpb.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",

@@ -1,0 +1,9 @@
+# Source
+src/
+tests/
+scripts/
+docs/
+tsconfig.json
+vitest.config.ts
+.mcpb-stage/
+*.mcpb

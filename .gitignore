@@ -4,3 +4,5 @@ dist/
 .env
 .env.local
 .DS_Store
+.mcpb-stage/
+*.mcpb
