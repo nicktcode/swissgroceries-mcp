@@ -27,7 +27,11 @@ export async function findStoresHandler(
 
   const results = await Promise.all(
     adapters.map(async (a) => {
-      const r = await a.searchStores({ near: geo.data, radiusKm: radius });
+      const r = await a.searchStores({
+        near: { lat: geo.data.lat, lng: geo.data.lng },
+        radiusKm: radius,
+        cityHint: geo.data.city,
+      });
       return r.ok ? r.data : [];
     }),
   );

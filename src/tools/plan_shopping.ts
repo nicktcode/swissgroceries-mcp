@@ -47,7 +47,7 @@ export async function planShoppingHandler(
 
   return plan(registry, {
     items: input.items,
-    near: geo.data,
+    near: { lat: geo.data.lat, lng: geo.data.lng, city: geo.data.city },
     chains: input.chains,
     strategy: input.strategy,
     splitPenaltyChf: input.splitPenaltyChf,

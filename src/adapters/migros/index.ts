@@ -93,12 +93,13 @@ export class MigrosAdapter implements StoreAdapter {
     try {
       await this.ensureAuth();
       // searchStores does NOT require auth token per source — but we call ensureAuth anyway
-      const r = await this.api.stores.searchStores({ query: '' } as any);
+      const query = q.cityHint ?? '';
+      const r: any = await this.api.stores.searchStores({ query } as any);
       // r is a plain array of store objects
-      const list = Array.isArray(r) ? r : ((r as any).stores ?? []);
+      const list = ((r as any).stores ?? r) as any[];
       const radius = q.radiusKm ?? 5;
-      const normalized = (list as any[]).map(normalizeStore).filter(
-        (s: NormalizedStore) => haversineKm(q.near, s.location) <= radius,
+      const normalized = list.map(normalizeStore).filter(
+        (s) => haversineKm(q.near, s.location) <= radius,
       );
       return ok(normalized);
     } catch (e) {

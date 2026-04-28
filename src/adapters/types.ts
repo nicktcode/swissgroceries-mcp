@@ -96,6 +96,7 @@ export interface StoreQuery {
   near: GeoPoint;
   radiusKm?: number;
   limit?: number;
+  cityHint?: string;  // free-text hint (city, region) for chains whose API requires a text query
 }
 
 export interface PromotionQuery {

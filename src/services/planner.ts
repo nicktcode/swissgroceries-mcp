@@ -8,7 +8,7 @@ import { haversineKm } from '../util/haversine.js';
 
 export interface PlanInput {
   items: ShoppingItem[];
-  near: GeoPoint;
+  near: GeoPoint & { city?: string };
   chains?: Chain[];
   strategy: Strategy;
   splitPenaltyChf?: number;
@@ -46,7 +46,7 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
   const storeResults = await Promise.all(
     adapters.map(async (a) => ({
       adapter: a,
-      result: await a.searchStores({ near: input.near, radiusKm: radius }),
+      result: await a.searchStores({ near: input.near, radiusKm: radius, cityHint: input.near.city }),
     })),
   );
 
