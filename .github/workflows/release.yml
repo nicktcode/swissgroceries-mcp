@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: write
       id-token: write   # required for npm OIDC trusted publishing
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -26,7 +28,7 @@ jobs:
       # Only bump npm when OIDC is actually used (no NPM_TOKEN). Bundled npm
       # already supports --provenance for token-based publish.
       - name: Bump npm to latest (only if no NPM_TOKEN; needed for OIDC)
-        if: ${{ secrets.NPM_TOKEN == '' }}
+        if: env.NPM_TOKEN == ''
         run: npm install -g npm@latest
       - name: Publish to npm
         run: |
@@ -48,8 +50,6 @@ jobs:
             fi
             exit $status
           fi
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
