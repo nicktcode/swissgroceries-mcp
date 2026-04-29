@@ -34,6 +34,21 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expect(out.errors?.find((e) => e.chain === 'lidl')).toBeUndefined();
   }, 30000);
 
+  itLive('Farmy search returns products', async () => {
+    const r = buildRegistry();
+    const out = await searchProductsHandler(r, { query: 'milch', chains: ['farmy'], limit: 5 });
+    expect(out.byChain.farmy?.length ?? 0).toBeGreaterThan(0);
+    // Schema-mismatch surfacing: the chain must not have errored on the response shape.
+    expect(out.errors?.find((e) => e.chain === 'farmy' && e.code === 'schema_mismatch')).toBeUndefined();
+  }, 30000);
+
+  itLive('Volgshop search returns products', async () => {
+    const r = buildRegistry();
+    const out = await searchProductsHandler(r, { query: 'milch', chains: ['volgshop'], limit: 5 });
+    expect(out.byChain.volgshop?.length ?? 0).toBeGreaterThan(0);
+    expect(out.errors?.find((e) => e.chain === 'volgshop' && e.code === 'schema_mismatch')).toBeUndefined();
+  }, 30000);
+
   itLive('find_stores near 8001 returns >=1 store across chains', async () => {
     const r = buildRegistry();
     const out = await findStoresHandler(r, { near: { zip: '8001' }, radiusKm: 5 });
