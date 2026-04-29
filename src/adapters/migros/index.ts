@@ -62,18 +62,40 @@ export class MigrosAdapter implements StoreAdapter {
     return this.authPromise;
   }
 
+  /** Force re-auth on the next ensureAuth() call (e.g. after a 401 mid-session). */
+  private invalidateAuth(): void {
+    this.authPromise = null;
+  }
+
+  /**
+   * Wraps an API call with one retry on auth_expired: if the call surfaces a 401/403,
+   * we drop the cached guest token, re-auth, and retry once. Real expired-token
+   * recoveries pass through transparently; programmer errors still bubble up.
+   */
+  private async withAuthRetry<T>(fn: () => Promise<T>): Promise<T> {
+    await this.ensureAuth();
+    try {
+      return await fn();
+    } catch (e) {
+      const err = classifyError(e);
+      if (err.code !== 'auth_expired') throw e;
+      this.invalidateAuth();
+      await this.ensureAuth();
+      return fn();
+    }
+  }
+
   async searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>> {
     try {
-      await this.ensureAuth();
-      const r = await this.api.products.productSearch.searchProduct({
+      const r = await this.withAuthRetry(() => this.api.products.productSearch.searchProduct({
         query: q.query,
         language: q.language ?? 'de',
-      } as any);
+      } as any));
       // r = { productIds: number[], numberOfProducts: number, ... }
       const productIds: number[] = (r as any).productIds ?? [];
       if (productIds.length === 0) return ok([]);
       const uids = productIds.slice(0, q.limit ?? 20).map(String);
-      const det = await this.api.products.productDisplay.getProductDetails({ uids, language: q.language ?? 'de' } as any);
+      const det = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids, language: q.language ?? 'de' } as any));
       // det = {"0": product, "1": product, ...}
       const parsed = MigrosProductDetailsResponseSchema.safeParse(det);
       if (!parsed.success) {
@@ -88,9 +110,8 @@ export class MigrosAdapter implements StoreAdapter {
 
   async getProduct(id: string): Promise<AdapterResult<NormalizedProduct | null>> {
     try {
-      await this.ensureAuth();
       // id is a uid (numeric string)
-      const r = await this.api.products.productDisplay.getProductDetails({ uids: [id], language: 'de' } as any);
+      const r = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids: [id], language: 'de' } as any));
       const products = Object.values(r as Record<string, unknown>);
       const first = products[0];
       return ok(first ? normalizeProduct(first) : null);
@@ -101,10 +122,9 @@ export class MigrosAdapter implements StoreAdapter {
 
   async searchStores(q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
     try {
-      await this.ensureAuth();
-      // searchStores does NOT require auth token per source — but we call ensureAuth anyway
+      // searchStores does NOT require auth token per source — but we ensureAuth + retry anyway for consistency
       const query = q.cityHint ?? '';
-      const r: any = await this.api.stores.searchStores({ query } as any);
+      const r: any = await this.withAuthRetry(() => this.api.stores.searchStores({ query } as any));
       // r is a plain array of store objects
       const list = ((r as any).stores ?? r) as any[];
       const radius = q.radiusKm ?? 5;
@@ -119,11 +139,10 @@ export class MigrosAdapter implements StoreAdapter {
 
   async getPromotions(q: PromotionQuery): Promise<AdapterResult<NormalizedPromotion[]>> {
     try {
-      await this.ensureAuth();
-      const r = await this.api.products.productDisplay.getProductPromotionSearch({
+      const r = await this.withAuthRetry(() => this.api.products.productDisplay.getProductPromotionSearch({
         query: q.query ?? '',
         language: q.language ?? 'de',
-      } as any);
+      } as any));
       // r = { items: [{id, type},...], numberOfItems, startDate, endDate }
       const items = ((r as any).items ?? []) as Array<{ id: number | string; type?: string }>;
       const startDate: string | undefined = (r as any).startDate;
@@ -167,13 +186,12 @@ export class MigrosAdapter implements StoreAdapter {
 
   async findStoresWithStock(productId: string, near?: GeoPoint): Promise<AdapterResult<StockResult[]>> {
     try {
-      await this.ensureAuth();
       const storesRes = await this.searchStores({ near: near ?? { lat: 47.376, lng: 8.541 }, radiusKm: 5 });
       if (!storesRes.ok) return storesRes;
       const checks = await Promise.all(
         storesRes.data.map(async (store) => {
           try {
-            const r = await this.api.products.productStock.getProductSupply({ productId, storeId: store.id } as any);
+            const r = await this.withAuthRetry(() => this.api.products.productStock.getProductSupply({ productId, storeId: store.id } as any));
             return { store, inStock: !!((r as any).available ?? (r as any).inStock), quantity: (r as any).quantity };
           } catch (e) {
             const msg = e instanceof Error ? e.message : String(e);
