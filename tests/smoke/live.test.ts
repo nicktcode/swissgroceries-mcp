@@ -56,6 +56,22 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expect(out.errors?.find((e) => e.chain === 'ottos' && e.code === 'schema_mismatch')).toBeUndefined();
   }, 30000);
 
+  itLive('Ottos store + per-store stock query works near Wettingen', async () => {
+    const { OttosAdapter } = await import('../../src/adapters/ottos/index.js');
+    const adapter = new OttosAdapter();
+    const stores = await adapter.searchStores({ near: { lat: 47.466, lng: 8.319 }, radiusKm: 25 });
+    expect(stores.ok).toBe(true);
+    if (!stores.ok) return;
+    expect(stores.data.length).toBeGreaterThan(0);
+    expect(stores.data.some((s) => s.address.zip === '5430')).toBe(true);
+
+    const stock = await adapter.findStoresWithStock!('350117', { lat: 47.466, lng: 8.319 });
+    expect(stock.ok).toBe(true);
+    if (!stock.ok) return;
+    expect(stock.data.length).toBeGreaterThan(0);
+    expect(stock.data.some((r) => r.inStock && (r.quantity ?? 0) > 0)).toBe(true);
+  }, 30000);
+
   itLive('find_stores near 8001 returns >=1 store across chains', async () => {
     const r = buildRegistry();
     const out = await findStoresHandler(r, { near: { zip: '8001' }, radiusKm: 5 });

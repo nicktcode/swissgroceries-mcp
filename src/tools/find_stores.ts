@@ -17,7 +17,7 @@ export const findStoresSchema = z.object({
       address: z.string().describe('Free-text address string, e.g. "Bahnhofstrasse 1, Zürich" — geocoded via OpenStreetMap Nominatim'),
     }).describe('Free-text address — geocoded via Nominatim; prefer zip or lat/lng for speed'),
   ]).describe('Center of the search radius. Pass either coordinates, a Swiss ZIP, or a free-text address.'),
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl']))
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos']))
     .optional()
     .describe('Limit results to specific chains. Omit to search all configured chains.'),
   radiusKm: z.number().positive().max(50)

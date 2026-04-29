@@ -3,7 +3,7 @@ import type { AdapterRegistry } from '../adapters/registry.js';
 import type { Chain } from '../adapters/types.js';
 
 export const healthCheckSchema = z.object({
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl']))
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos']))
     .optional()
     .describe('Chains to probe. Default: all configured.'),
   timeoutMs: z.number().int().positive().max(30000).optional()
