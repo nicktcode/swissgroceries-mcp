@@ -16,6 +16,7 @@ import { DennerAdapter } from './adapters/denner/index.js';
 import { LidlAdapter } from './adapters/lidl/index.js';
 import { FarmyAdapter } from './adapters/farmy/index.js';
 import { VolgshopAdapter } from './adapters/volgshop/index.js';
+import { OttosAdapter } from './adapters/ottos/index.js';
 
 import { findStoresHandler, findStoresSchema } from './tools/find_stores.js';
 import { searchProductsHandler, searchProductsSchema } from './tools/search_products.js';
@@ -38,6 +39,7 @@ export function buildRegistry(): AdapterRegistry {
   r.register(new LidlAdapter());
   r.register(new FarmyAdapter());
   r.register(new VolgshopAdapter());
+  r.register(new OttosAdapter());
   return r;
 }
 

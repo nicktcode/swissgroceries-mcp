@@ -1,0 +1,328 @@
+{
+   "type" : "productCategorySearchPageWsDTO",
+   "categoryDisplaySize" : "XLARGE",
+   "currentQuery" : {
+      "query" : {
+         "value" : "milch:relevance:category:m_10100"
+      },
+      "url" : "/search?q=milch%3Arelevance%3Acategory%3Am_10100"
+   },
+   "freeTextSearch" : "milch",
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 5,
+      "sort" : "relevance",
+      "totalPages" : 5,
+      "totalResults" : 24
+   },
+   "products" : [ {
+      "availableForPickup" : false,
+      "baseProduct" : "base_444612",
+      "brand" : "Munz",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root",
+         "url" : "/c/M_ROOT"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop",
+         "url" : "/c/M_SHOP"
+      }, {
+         "code" : "m_10000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Supermarkt & Weine",
+         "url" : "/supermarkt-weine/c/m_10000"
+      }, {
+         "code" : "m_10100",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Lebensmittel",
+         "url" : "/supermarkt-weine/lebensmittel/c/m_10100"
+      }, {
+         "code" : "m_10110",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Guetzli & Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/c/m_10110"
+      }, {
+         "code" : "m_10112",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/schokolade/c/m_10112"
+      } ],
+      "code" : "444612",
+      "configurable" : false,
+      "configuratorType" : "",
+      "description" : "<p>Die Munz Tafel Milch kombiniert zartschmelzende Schweizer Milchschokolade mit einer cremigen Pralinéfüllung (60 %). Die Mischung aus feiner Kakaobutter, aromatischer Kakaomasse und hochwertigen Milchbestandteilen sorgt für einen vollmundigen Geschmack. Mit einem Haselnussanteil von 14 % in der Füllung bietet die Tafel ein intensives, nussiges Aroma, das perfekt mit der milden Süsse der Milchschokolade harmoniert.</p>",
+      "hasPickupInSportsOutletOption" : false,
+      "hasPickupInStoreOption" : false,
+      "isDigitalProduct" : false,
+      "name" : "Munz Tafel <em class=\"search-results-highlight\">Milch 10 x 100</em> g",
+      "numberOfReviews" : 0,
+      "onlyOnline" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 19.95",
+         "priceType" : "BUY",
+         "value" : 19.95
+      },
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/schokolade/munz-tafel-milch-10-x-100-g/p/444612"
+   }, {
+      "availableForPickup" : false,
+      "baseProduct" : "base_306685",
+      "brand" : "Lindor",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root",
+         "url" : "/c/M_ROOT"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop",
+         "url" : "/c/M_SHOP"
+      }, {
+         "code" : "m_10000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Supermarkt & Weine",
+         "url" : "/supermarkt-weine/c/m_10000"
+      }, {
+         "code" : "m_10100",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Lebensmittel",
+         "url" : "/supermarkt-weine/lebensmittel/c/m_10100"
+      }, {
+         "code" : "m_10110",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Guetzli & Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/c/m_10110"
+      } ],
+      "code" : "306685",
+      "configurable" : false,
+      "configuratorType" : "",
+      "description" : "Die Schokoladenbox von Lindt mit feinster Milchschokolade. Die leckeren Kugeln mit einzigartigem, schokoladigem Genuss.",
+      "hasPickupInSportsOutletOption" : false,
+      "hasPickupInStoreOption" : false,
+      "isDigitalProduct" : false,
+      "name" : "Lindt Lindor Kugeln <em class=\"search-results-highlight\">Milch 200</em> g",
+      "numberOfReviews" : 0,
+      "onlyOnline" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 6.95",
+         "priceType" : "BUY",
+         "value" : 6.95
+      },
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/lindt-lindor-kugeln-milch-200-g/p/306685"
+   }, {
+      "availableForPickup" : false,
+      "baseProduct" : "base_373167",
+      "brand" : "Favarger",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root",
+         "url" : "/c/M_ROOT"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop",
+         "url" : "/c/M_SHOP"
+      }, {
+         "code" : "m_10000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Supermarkt & Weine",
+         "url" : "/supermarkt-weine/c/m_10000"
+      }, {
+         "code" : "m_10100",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Lebensmittel",
+         "url" : "/supermarkt-weine/lebensmittel/c/m_10100"
+      }, {
+         "code" : "m_10110",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Guetzli & Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/c/m_10110"
+      } ],
+      "code" : "373167",
+      "configurable" : false,
+      "configuratorType" : "",
+      "description" : "<p>Tauche ein in die exquisite Welt der Schweizer Schokolade mit der Favarger Tour Milch/Nuss. Diese köstlichen Tafeln verbinden samtige Vollmilchschokolade mit knackigen Haselnüssen und bieten ein unvergessliches Geschmackserlebnis. Die Kombination aus feinem Vollmilchpulver, hochwertiger Kakaobutter und knackigen Haselnüssen sorgt für einen unwiderstehlichen Genussmoment. Ergib dich dem sanften Schmelz und den nussigen Akzenten, die jeden Bissen zu einem Highlight machen.<br />\nOb als Geschenk oder persönlicher Genuss – diese Schokolade verführt jeden Gaumen. Geniesse die hochwertige Qualität, die traditionell in der Schweiz gefertigt wird und lasse dich von der handwerklichen Perfektion überraschen. Mit der Favarger Tour erlebst du puren Genuss und kannst deinem Alltag einen Hauch von Luxus verleihen.</p>",
+      "hasPickupInSportsOutletOption" : false,
+      "hasPickupInStoreOption" : false,
+      "isDigitalProduct" : false,
+      "name" : "Favarger Tour <em class=\"search-results-highlight\">Milch/Nuss 3 x</em> 100 g",
+      "numberOfReviews" : 0,
+      "onlyOnline" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 8.95",
+         "priceType" : "BUY",
+         "value" : 8.95
+      },
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/favarger-tour-milch/nuss-3-x-100-g/p/373167"
+   }, {
+      "availableForPickup" : false,
+      "baseProduct" : "base_394241",
+      "brand" : "Munz",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root",
+         "url" : "/c/M_ROOT"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop",
+         "url" : "/c/M_SHOP"
+      }, {
+         "code" : "m_10000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Supermarkt & Weine",
+         "url" : "/supermarkt-weine/c/m_10000"
+      }, {
+         "code" : "m_10100",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Lebensmittel",
+         "url" : "/supermarkt-weine/lebensmittel/c/m_10100"
+      }, {
+         "code" : "m_10110",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Guetzli & Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/c/m_10110"
+      }, {
+         "code" : "m_10112",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/schokolade/c/m_10112"
+      } ],
+      "code" : "394241",
+      "configurable" : false,
+      "configuratorType" : "",
+      "description" : "<p>Diese exquisite Schweizer Milchschokolade bietet dir und deinem Liebsten ein einzigartiges Geschmackserlebnis. Hergestellt in der Schweiz garantiert diese Schokolade eine unvergesslich cremige Textur und intensiven Geschmack.</p>\n<p>Perfekt zum Teilen oder einfach selbst geniessen.</p>",
+      "hasPickupInSportsOutletOption" : false,
+      "hasPickupInStoreOption" : false,
+      "isDigitalProduct" : false,
+      "name" : "Munz Swiss Premium <em class=\"search-results-highlight\">Milch XXL 10 x</em> 100 g",
+      "numberOfReviews" : 0,
+      "onlyOnline" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 18.95",
+         "priceType" : "BUY",
+         "value" : 18.95
+      },
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/schokolade/munz-swiss-premium-milch-xxl-10-x-100-g/p/394241"
+   }, {
+      "availableForPickup" : false,
+      "baseProduct" : "base_101158",
+      "brand" : "LU",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root",
+         "url" : "/c/M_ROOT"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop",
+         "url" : "/c/M_SHOP"
+      }, {
+         "code" : "m_10000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Supermarkt & Weine",
+         "url" : "/supermarkt-weine/c/m_10000"
+      }, {
+         "code" : "m_10100",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Lebensmittel",
+         "url" : "/supermarkt-weine/lebensmittel/c/m_10100"
+      }, {
+         "code" : "m_10110",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Guetzli & Schokolade",
+         "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/c/m_10110"
+      } ],
+      "code" : "101158",
+      "configurable" : false,
+      "configuratorType" : "",
+      "description" : "LU Mikado Milchschokolade sind schmale Keks-Sticks, die mit heller Schokolade überzogen wurden.",
+      "hasPickupInSportsOutletOption" : false,
+      "hasPickupInStoreOption" : false,
+      "isDigitalProduct" : false,
+      "name" : "LU Mikado <em class=\"search-results-highlight\">Milchschokolade 3</em> x 75 g",
+      "numberOfReviews" : 0,
+      "onlyOnline" : false,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 6.50",
+         "priceType" : "BUY",
+         "value" : 6.5
+      },
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "url" : "/supermarkt-weine/lebensmittel/guetzli-schokolade/lu-mikado-milchschokolade-3-x-75-g/p/101158"
+   } ],
+   "sorts" : [ {
+      "code" : "relevance",
+      "name" : "Relevanz",
+      "selected" : true
+   }, {
+      "code" : "sale",
+      "name" : "Aktionen",
+      "selected" : false
+   }, {
+      "code" : "novelty",
+      "name" : "Neuheiten",
+      "selected" : false
+   }, {
+      "code" : "name-asc",
+      "name" : "Name (aufsteigend)",
+      "selected" : false
+   }, {
+      "code" : "name-desc",
+      "name" : "Name (absteigend)",
+      "selected" : false
+   }, {
+      "code" : "price-asc",
+      "name" : "Preis (aufsteigend)",
+      "selected" : false
+   }, {
+      "code" : "price-desc",
+      "name" : "Preis (absteigend)",
+      "selected" : false
+   }, {
+      "code" : "topRated",
+      "name" : "Höchstbewertet",
+      "selected" : false
+   }, {
+      "code" : "discountPercentage",
+      "name" : "Rabatt (absteigend)",
+      "selected" : false
+   } ],
+   "categoryResults" : [ ],
+   "topCategories" : [ ]
+}

@@ -49,6 +49,13 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expect(out.errors?.find((e) => e.chain === 'volgshop' && e.code === 'schema_mismatch')).toBeUndefined();
   }, 30000);
 
+  itLive('Ottos search returns grocery-category products', async () => {
+    const r = buildRegistry();
+    const out = await searchProductsHandler(r, { query: 'spaghetti', chains: ['ottos'], limit: 5 });
+    expect(out.byChain.ottos?.length ?? 0).toBeGreaterThan(0);
+    expect(out.errors?.find((e) => e.chain === 'ottos' && e.code === 'schema_mismatch')).toBeUndefined();
+  }, 30000);
+
   itLive('find_stores near 8001 returns >=1 store across chains', async () => {
     const r = buildRegistry();
     const out = await findStoresHandler(r, { near: { zip: '8001' }, radiusKm: 5 });
