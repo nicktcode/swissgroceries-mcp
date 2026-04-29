@@ -1,0 +1,989 @@
+{
+   "type" : "productCategorySearchPageWsDTO",
+   "categoryDisplaySize" : "XLARGE",
+   "facets" : [ {
+      "active" : false,
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "name" : "% Aktionen"
+   }, {
+      "active" : false,
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "name" : "Kategorie"
+   }, {
+      "active" : false,
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "name" : "Marke"
+   }, {
+      "active" : false,
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "name" : "Preis CHF"
+   }, {
+      "active" : false,
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "name" : "productCodeFacet"
+   }, {
+      "active" : false,
+      "maxRange" : 0,
+      "maxValue" : 0,
+      "minRange" : 0,
+      "minValue" : 0,
+      "name" : "Preis"
+   } ],
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 8,
+      "sort" : "relevance",
+      "totalPages" : 3,
+      "totalResults" : 18
+   },
+   "products" : [ {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20403",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Mundspülung"
+      } ],
+      "code" : "422667",
+      "description" : "<p>Stärke dein Zahnbein mit der Elmex Zahnspülung Opti-Schmelz! Diese Mundspülung bietet dir einen effektiven Schutz vor Erosionen und hilft, deinen Zahnschmelz nachhaltig zu stärken. Dank der mikroversiegelnden Technologie bekämpfst du schädliche Säuren bereits im Ansatz. Die Verwendung von Elmex Opti-Schmelz sorgt dafür, dass deine Zähne widerstandsfähiger und gesünder wirken.</p>",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-422667-01?context=bWFzdGVyfGltYWdlc3wxNzM1NnxpbWFnZS9qcGVnfGFHWmxMMmd3TlM4ME5EUTNOamd4TURJMk5EWXdOaTl3Y205a2RXTjBMVzFoYVc1Zk5ESXlOalkzWHpBeHw4YzE4NGQwNTJhN2IzMjllNWY1ZDQxNTU3N2RkMzI2OGNhNTRkYWY5NGQ4OWI4ZDVmZGRlZTFiNDIyODgxMGUz"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-422667-01?context=bWFzdGVyfGltYWdlc3wxMjE0NnxpbWFnZS9qcGVnfGFHRmhMMmhtT1M4ME5EUTNOamd3T1Rrd05ERTFPQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTWpJMk5qZGZNREV8ZTU0ZWFlZGRhNTVmZjk5ZDUzYzc5MGI3OGM0NzY5OGIxZDc2M2IzNWMyZDg5MDJmMWJmOTY2MWMzMTgyNzE5Zg"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-422667-01?context=bWFzdGVyfGltYWdlc3w5MTU0fGltYWdlL2pwZWd8YURkakwyZ3daQzgwTkRRM05qZ3hNREF3TWpRMk1pOXdjbTlrZFdOMExXbGpiMjVmTkRJeU5qWTNYekF4fDY3OTUxNmEwNWY4YjEwMmVhNTJlNmRlNGNlNzg5NGRmYWVhOTgwNjdlMDk4OTk2MzA2MjNmOThkYTgwMmM1MGI"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-422667-01?context=bWFzdGVyfGltYWdlc3wxMDUxMzZ8aW1hZ2UvanBlZ3xhR0prTDJnd09TODBORFEzTmpneE1ERXpNelV6TkM5d2NtOWtkV04wTFhwdmIyMWZOREl5TmpZM1h6QXh8NDI0MzY4ZDVmODEyMTVhNWNkYTYxNjViYTFmMWUwYjg1MGYxZGMxNDlhM2YxYzU1NDA0OTRmM2YzOTRmNjAwZA"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-422667-01?context=bWFzdGVyfGltYWdlc3wzNjA3NXxpbWFnZS9qcGVnfGFHVmpMMmd3TWk4ME5EUTNOamd4TURNek1ERTBNaTl3Y205a2RXTjBMWE4xYlcxaGNubGZOREl5TmpZM1h6QXh8NDJkODFjNmRjNDE0YjMwNjg3YzM4OTExMjRkMzAyZDQ5OGRhYzJhMDQzNGJhYTkwMTI3MGE5MjQ0ODJiZTgxYQ"
+      }, {
+         "format" : "product-main",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-422667-02?context=bWFzdGVyfGltYWdlc3wxNTU2MHxpbWFnZS9qcGVnfGFHRXpMMmcyT0M4eU9UTTFPRGd4TXpBNE5UY3lOaTl3Y205a2RXTjBMVzFoYVc1Zk5ESXlOalkzWHpBeXw4MjRiZDFlYjI2OTczNmQ4YmUxZmNlOThlMWZmZDAzZDAyNWEyZjg4ODczNGRiMjVjYmI4NDgxMTc0YWJkYzRi"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-422667-02?context=bWFzdGVyfGltYWdlc3wxMDYwN3xpbWFnZS9qcGVnfGFESTRMMmd4WVM4eU9UTTFPRGd4TWpnNE9URXhPQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTWpJMk5qZGZNREl8ZDNhNGI2ZDkyMDAyNzgzODUyN2QyMmE2NjBhYjM4ZjVkYTMzYjg3MWU2ZTBmMmIwN2E5YzJhMzcxOTIyZTYxYw"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-422667-02?context=bWFzdGVyfGltYWdlc3w3ODgzfGltYWdlL2pwZWd8YURNNUwyZ3haQzh5T1RNMU9EZ3hNamsxTkRZMU5DOXdjbTlrZFdOMExXbGpiMjVmTkRJeU5qWTNYekF5fDgxM2Y1ZWNmYjQ0ZTA1ZDJiNzg4MDA5OTQ0MDk2MzkzNWVmMzQyMGJlMmI1YzczZDk2YTgzNWJmZmNiNGE2ZWU"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-422667-02?context=bWFzdGVyfGltYWdlc3w5MDg0OXxpbWFnZS9qcGVnfGFHWTFMMmcyTnk4eU9UTTFPRGd4TXpBeU1ERTVNQzl3Y205a2RXTjBMWHB2YjIxZk5ESXlOalkzWHpBeXxjYTYwMDFhN2Y3OTYyZmU3OTc0NmE5NGZkYmNlNWFhNmI2Y2IxNTBjOGFmYjE0Y2IyYjM5YjcwODUwNTJjMjk4"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-422667-02?context=bWFzdGVyfGltYWdlc3wzMjk4MnxpbWFnZS9qcGVnfGFHSTFMMmcyWWk4eU9UTTFPRGd4TXpFMU1USTJNaTl3Y205a2RXTjBMWE4xYlcxaGNubGZOREl5TmpZM1h6QXl8MTk1MDZjY2EwYjJjODMyM2I2ZjBmOWE2NjNiNDM0ZDk1MjhlZGZkMDkwNGQxMmQzMTkyOGJiMTRhMGY2NGFjYg"
+      } ],
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnspülung</em> Opti-Schmelz 2 x 400 ml",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 11.95",
+         "priceType" : "BUY",
+         "value" : 11.95
+      },
+      "productLabels" : [ {
+         "message" : {
+            "raw" : "-33%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "key" : "productLabel.advertisement"
+         },
+         "style" : "advertisement",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/mundspuelung/elmex-zahnspuelung-opti-schmelz-2-x-400-ml/p/422667"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20401",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnbürsten"
+      } ],
+      "code" : "422666",
+      "description" : "<p>Wenn du Wert auf eine schonende und effektive Zahnreinigung legst, ist diese Zahnbürste genau das Richtige für dich. Extra weiche Borsten gewährleisten eine gründliche Reinigung, ohne den empfindlichen Zahnschmelz zu strapazieren. Mit ihrem ergonomischen Griff liegt sie perfekt in der Hand, sodass du jeden Bereich deines Mundes mühelos erreichst.&nbsp;</p>",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-422666-01?context=bWFzdGVyfGltYWdlc3wxOTU1N3xpbWFnZS9qcGVnfGFHSm1MMmhsTXk4ME5EUTNOamcxTkRNM01ETXpOQzl3Y205a2RXTjBMVzFoYVc1Zk5ESXlOalkyWHpBeHwzZTVjNDA1NWIxYTEwMWIwNGM1NDU4N2FjMDdhMGEzMzg3MjQ4MzNjYjBlYTM1MWY0ZTcyYmJhMjkwZWFiMGI4"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-422666-01?context=bWFzdGVyfGltYWdlc3wxMjg2MXxpbWFnZS9qcGVnfGFHVmxMMmhrWXk4ME5EUTNOamcxTkRFM016Y3lOaTl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTWpJMk5qWmZNREV8ZGFjM2M4YTQwODlkNjVmN2Y5OTQyYzI1ZmVjYWIxZGQ4Zjk2MWM0YTQyYjJhZTVlMzUwNGRjYTg0ZjIyMzM4Nw"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-422666-01?context=bWFzdGVyfGltYWdlc3w5MjYwfGltYWdlL2pwZWd8YUdWakwyaGtaaTgwTkRRM05qZzFOREl6T1RJMk1pOXdjbTlrZFdOMExXbGpiMjVmTkRJeU5qWTJYekF4fDRhNmZhYTU2ODU1ZjZkZWRiZmZkZmE0ZGM2NTAzNWVhYzZhMmFkNjZmODUzYzM4NzgxMWU4NGQzMDYzNjM0ZTc"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-422666-01?context=bWFzdGVyfGltYWdlc3wxMDU5Nzd8aW1hZ2UvanBlZ3xhR1prTDJobE1pODBORFEzTmpnMU5ETXdORGM1T0M5d2NtOWtkV04wTFhwdmIyMWZOREl5TmpZMlh6QXh8ZGUyZmVkMmVjOWQzNDJhNWI0MDBjYWM2NDYxNTY0OWIzZDc0N2ZiMTg0MTEzNDRjZWI0ODU1YTBiNWZiYjQyMw"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-422666-01?context=bWFzdGVyfGltYWdlc3wzOTg1OXxpbWFnZS9qcGVnfGFHSmpMMmhsTmk4ME5EUTNOamcxTkRRek5UZzNNQzl3Y205a2RXTjBMWE4xYlcxaGNubGZOREl5TmpZMlh6QXh8MjJmYmQ3NTA4NDA3OWQ1OWQ0OGQxY2JiY2NkZmQ2YjMzZmJkNTFhY2QwNjY2YmMyZGE0YjBkZmNmNDQ2Y2ZkYw"
+      }, {
+         "format" : "product-main",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-422666-02?context=bWFzdGVyfGltYWdlc3wxODI4MXxpbWFnZS9qcGVnfGFHRTVMMmd4TWk4eU9UTTFPRGd4TWpZeU5qazNOQzl3Y205a2RXTjBMVzFoYVc1Zk5ESXlOalkyWHpBeXw2NzIwMmJkMDVhYzY3ZTg3ZTU0MDRlOTZkODllM2FhOGNjNDgyM2UzYmU4N2JkNTk1YTlkNjgzZWNhZjc5MzM5"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-422666-02?context=bWFzdGVyfGltYWdlc3wxMTk0NXxpbWFnZS9qcGVnfGFHVmpMMmd3WWk4eU9UTTFPRGd4TWpRek1ETTJOaTl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTWpJMk5qWmZNREl8MzZkZjcyNTcwMTdmMjdiMThiOWJiOTJlMzVlNzI5NjAzZDRhMWU0YmQ5ZmUxOTA3YTAwZDRlMzIwM2YzYTExZA"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-422666-02?context=bWFzdGVyfGltYWdlc3w4NzQwfGltYWdlL2pwZWd8YURsaEwyZ3dZeTh5T1RNMU9EZ3hNalE1TlRrd01pOXdjbTlrZFdOMExXbGpiMjVmTkRJeU5qWTJYekF5fGM2MzZjODY3OTA4ZTVjMWUyYjA0ZWQ0MjIxMzdkNWJmM2MyZmY0NWNhZWUzZDgyM2NmNjM2YTAwMTVmOGEwMDc"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-422666-02?context=bWFzdGVyfGltYWdlc3w5NDk5NXxpbWFnZS9qcGVnfGFHRmlMMmd3Wmk4eU9UTTFPRGd4TWpVMk1UUXpPQzl3Y205a2RXTjBMWHB2YjIxZk5ESXlOalkyWHpBeXwyOTJlMmI1N2QyODMwNTQ2YWU4NGM0MmY5Njc1MTE3ZGM1M2ZlNDY3MGY2ZWVmOWMwZDQxMTc0YmYzNGIzNmJm"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-422666-02?context=bWFzdGVyfGltYWdlc3wzNzQ0MXxpbWFnZS9qcGVnfGFEWmhMMmd4TXk4eU9UTTFPRGd4TWpZNU1qVXhNQzl3Y205a2RXTjBMWE4xYlcxaGNubGZOREl5TmpZMlh6QXl8MDFmMjQ5ZjA1ZTA2YjRjNTkzN2ZkNGRhZTdhYjk1MmI4YjkzNzE3MjUxMjc2Njg4NDQ2NjYwZWY3NTQxM2QzMA"
+      } ],
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnbürste</em> Opti-Schmelz Duo",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 6.95",
+         "priceType" : "BUY",
+         "value" : 6.95
+      },
+      "productLabels" : [ {
+         "message" : {
+            "raw" : "-37%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "key" : "productLabel.advertisement"
+         },
+         "style" : "advertisement",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/zahnbuersten/elmex-zahnbuerste-opti-schmelz-duo/p/422666"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20402",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpasta"
+      } ],
+      "code" : "422665",
+      "description" : "<p>Entdecke mit der Elmex Zahnpasta Opti-Schmelz die revolutionäre Pflege für deine Zähne. Dank der innovativen Mikro-Versiegelungs-Technologie wird dein Zahnschmelz effektiv gestärkt und vor Abnutzung geschützt. Spüre den Unterschied schon nach den ersten Anwendungen und sage empfindlichen Zähnen den Kampf an. Die klinisch bestätigte Formel sorgt nicht nur für optimalen Schutz, sondern hinterlässt auch ein angenehmes Frischegefühl.&nbsp;</p>",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-422665-01?context=bWFzdGVyfGltYWdlc3wxODE0NHxpbWFnZS9qcGVnfGFEVXdMMmd5T1M4ek1EVXhOak16TVRnd05qYzFNQzl3Y205a2RXTjBMVzFoYVc1Zk5ESXlOalkxWHpBeHw3ZjY0MzA1NjI1NDQ2ZjgxMjhjNTllMzkyOWQ1MDVhYmE1ZWUyMDE2NzY3MWU4YjA5M2QyN2Y0YmZmZTM4YTNi"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-422665-01?context=bWFzdGVyfGltYWdlc3wxMjQyNnxpbWFnZS9qcGVnfGFEa3pMMmd5TWk4ek1EVXhOak16TVRZeE1ERTBNaTl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTWpJMk5qVmZNREV8ZWY3ZDQ3NzhmZmJiYWVhOWNkODY3ODZiZmM1ZjNjYTA0ZTUyOTEwNGVlZGU5ZTc5MTBiNjc0ZjBkOWViMWIwYQ"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-422665-01?context=bWFzdGVyfGltYWdlc3w5MzE1fGltYWdlL2pwZWd8YURReEwyZ3lNeTh6TURVeE5qTXpNVFkzTlRZM09DOXdjbTlrZFdOMExXbGpiMjVmTkRJeU5qWTFYekF4fGUxODlhZTZlODI3ODhhMmUwYWU1ZTFjOTdiZmE2NTViYzA3ZTcxZjM0NDYxYWJlMzA5ZTcyMGZlMzUyNjhjMDc"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-422665-01?context=bWFzdGVyfGltYWdlc3wxMDMxNjd8aW1hZ2UvanBlZ3xhRFV5TDJneU5pOHpNRFV4TmpNek1UYzBNVEl4TkM5d2NtOWtkV04wTFhwdmIyMWZOREl5TmpZMVh6QXh8MWEwN2I2OWQ0MDAzODc4ZmM2Y2JiMDA2ZjUyYjEyZjczOWMyNzRhOTEwMWY2NWE2Mzk2MTYwZDEwNGI0M2MxNQ"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-422665-01?context=bWFzdGVyfGltYWdlc3wzNzE4NHxpbWFnZS9qcGVnfGFERXlMMmd5WVM4ek1EVXhOak16TVRnM01qSTROaTl3Y205a2RXTjBMWE4xYlcxaGNubGZOREl5TmpZMVh6QXh8OTk4YTI4NjVlMTc0NzM2ODRlNjJhODgzMGU1NDEzMDhmNjYyOGM4ODExMzA0MDIwYjVlZjk5ZjBiYjczYzAzNg"
+      }, {
+         "format" : "product-main",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-422665-02?context=bWFzdGVyfGltYWdlc3wxNTkxNHxpbWFnZS9qcGVnfGFEUmlMMmhsTnk4eU9UTTBNalF6TXprMk9ERTFPQzl3Y205a2RXTjBMVzFoYVc1Zk5ESXlOalkxWHpBeXwzNGU2YWJlZTdkNjk1NzgwZWUwZTNjZjNmZWYzY2RjMTNiZDkxMDRlZjc3OTk3MTA1OTY0NDBlNTFkM2E5NjRm"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-422665-02?context=bWFzdGVyfGltYWdlc3wxMDYzNXxpbWFnZS9qcGVnfGFEaGxMMmhsTUM4eU9UTTBNalF6TXpjM01UVTFNQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTWpJMk5qVmZNREl8Mzg5YjQyOGIwYjMxN2Q5MWUxZDE5MDU5N2NkMjY0YjhjZDYwYjNmYzExMWIxOTk0NzI3MjJmM2E0ZjM3YjNjNQ"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-422665-02?context=bWFzdGVyfGltYWdlc3w3ODcxfGltYWdlL2pwZWd8YURoakwyaGxNeTh5T1RNME1qUXpNemd6TnpBNE5pOXdjbTlrZFdOMExXbGpiMjVmTkRJeU5qWTFYekF5fDc1YzA2OTQ4YWUzOTU0MjI0YzM5ZGU4ZmYxZGM1ZDE0MzFhZWQyN2ExMjQyZTA1ZDZmYzRmYTRkN2MyOTNmZGM"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-422665-02?context=bWFzdGVyfGltYWdlc3w4ODAwN3xpbWFnZS9qcGVnfGFEbGtMMmhsTmk4eU9UTTBNalF6TXprd01qWXlNaTl3Y205a2RXTjBMWHB2YjIxZk5ESXlOalkxWHpBeXw2M2ZkZjNiMjdhOGQzZDI0OGM5ZDU1MGRmYTZkZThlOTc2ZWQxYWE5YmE3ODFmYTJmNzhmMGQ5NWJjODY5YjM2"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-422665-02?context=bWFzdGVyfGltYWdlc3wzMjMwOHxpbWFnZS9qcGVnfGFEUTVMMmhqWkM4eU9UTTBNalF6TkRBNU9USXpNQzl3Y205a2RXTjBMWE4xYlcxaGNubGZOREl5TmpZMVh6QXl8OTc5NTY5MDRjNTM3OWNjOWQ3MzhkZGY0NWM3NDhmN2ZhZmJlMjBiNDVlZjMxMTNiMzQ4Yzc3YWE4OWIxYjY4YQ"
+      } ],
+      "insteadOfPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 14.90",
+         "priceType" : "BUY",
+         "value" : 14.9
+      },
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnpasta</em> Opti-Schmelz 2 x 75 ml",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 9.95",
+         "priceType" : "BUY",
+         "value" : 9.95
+      },
+      "productLabels" : [ {
+         "message" : {
+            "key" : "productLabel.priceDiscount"
+         },
+         "style" : "priceDiscount",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "-33%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "key" : "productLabel.advertisement"
+         },
+         "style" : "advertisement",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/zahnpasta/elmex-zahnpasta-opti-schmelz-2-x-75-ml/p/422665"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20402",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpasta"
+      } ],
+      "code" : "350117",
+      "description" : "<p>Erlebe die sofortige Linderung bei schmerzempfindlichen Zähnen mit der Elmex Zahnpasta Sensitive Professional. Dieses Duopack bietet dir gleich doppelten Schutz und Pflege. Dank der innovativen PRO-ARGIN Technologie wirst du Schmerzen im Handumdrehen los, indem die Zahnpasta gezielt die Schmerzwege blockiert. Die klinisch bewährte Formel sorgt dafür, dass deine Zähne nicht nur sauber, sondern auch optimal geschützt sind. Sanft im Geschmack und stark in der Wirkung - diese Zahnpasta ist perfekt für deinen täglichen Gebrauch geeignet.</p>",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-350117-02?context=bWFzdGVyfGltYWdlc3wxNTc5NHxpbWFnZS9qcGVnfGFHVmpMMmd4WWk4ME5EUTNOamd3TnpZeE1ETTVPQzl3Y205a2RXTjBMVzFoYVc1Zk16VXdNVEUzWHpBeXxhYzY0Y2Y3MWEyMmQyYzNmNjc3ZWMyMDE0OTc1YjZkNWJlZTUzYjViNGM3Mzk3OGE2ZTIyMWQ3Y2RhNDE3MDEz"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-350117-02?context=bWFzdGVyfGltYWdlc3wxMDE4NHxpbWFnZS9qcGVnfGFEaGxMMmd3Tnk4ME5EUTNOamd3TnpBeU1EVTNOQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjh6TlRBeE1UZGZNREl8NzgzYmY5OGQ5ZWZkYzlmMjZhOWQ3MjI1ZDYyYTIxZGZkZjBlMjQxNTA3NzE3ZmY1MzZjMzMwZDQyZjJlNDUwMg"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-350117-02?context=bWFzdGVyfGltYWdlc3w3MTE2fGltYWdlL2pwZWd8YUdVekwyZ3dZUzgwTkRRM05qZ3dOekV4T0RnM09DOXdjbTlrZFdOMExXbGpiMjVmTXpVd01URTNYekF5fGEzMTUwMDQyZWY0Yjk3NjdhYjYxZTZhY2MzZDI4ZTVmNTdlYjBiZTRjYWEyZjYzODhkMDRiN2JhYjYzYmIzZGU"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-350117-02?context=bWFzdGVyfGltYWdlc3wxMDUwODZ8aW1hZ2UvanBlZ3xhRGMxTDJneE1pODBORFEzTmpnd056TTRNVEF5TWk5d2NtOWtkV04wTFhwdmIyMWZNelV3TVRFM1h6QXl8MzUwMmIxOTkyMDlhZjM2ZGJlZDdiM2I4Y2MzOTg2YmZhMzI5YWYxN2U1NDgzMGM0MmU3NWQ2YTAyYTJmZTAyYg"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-350117-02?context=bWFzdGVyfGltYWdlc3wzNTU5NHxpbWFnZS9qcGVnfGFEQXpMMmd5TUM4ME5EUTNOamd3TnpjM05ESXpPQzl3Y205a2RXTjBMWE4xYlcxaGNubGZNelV3TVRFM1h6QXl8ZmM3N2FmN2Y5OWRhODlmZTA4YjBmNDlhOTI2MjI4NDE3MWRlZWFlNjljNTkzYTliNjI5MzBiMWI5MmNkMTc4Yw"
+      }, {
+         "format" : "product-main",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-350117-01?context=bWFzdGVyfGltYWdlc3wxNjA2NXxpbWFnZS9qcGVnfGFEVTVMMmc0WkM4ME5EUTNOamd3T0RnNE9ETTFNQzl3Y205a2RXTjBMVzFoYVc1Zk16VXdNVEUzWHpBeHxlN2I3MDIyOTg1MjRlNjRkZjJkMDI2NjdjODQzZTMwYTlmZTMxOTEwOGNmYmJkNTI3YWMwNjg2YjRjOWY2ZDdh"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-350117-01?context=bWFzdGVyfGltYWdlc3wxMDY4N3xpbWFnZS9qcGVnfGFEQmhMMmczWmk4ME5EUTNOamd3T0RReU9UVTVPQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjh6TlRBeE1UZGZNREV8YzMxMTc2OTQ5MzQ2YjMyYTMxNjZhNGQxOWIzMTNhNjVkYmQ2NjA2NDg0OWI1ODdkNTQyNjZiMjNmMTEyYzZiNA"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-350117-01?context=bWFzdGVyfGltYWdlc3w3Nzk5fGltYWdlL2pwZWd8YUdOaUwyZzNaaTgwTkRRM05qZ3dPRFE1TlRFek5DOXdjbTlrZFdOMExXbGpiMjVmTXpVd01URTNYekF4fDQ1ZTI1MWZlMzhlNDM4YjRiMTc2YmFjMjNjOGIwZTg5Y2ZlMzI3OTI1YWUzNTc3ZTQ1ZTc5NTAwNGI2NDdjNWU"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-350117-01?context=bWFzdGVyfGltYWdlc3wxMDA1MjJ8aW1hZ2UvanBlZ3xhR0ZoTDJnNFl5ODBORFEzTmpnd09EZ3lNamd4TkM5d2NtOWtkV04wTFhwdmIyMWZNelV3TVRFM1h6QXh8MDg3MTEwNDUwOTFmYTc2YTI5NGU2Y2ZlYWNlZWM1MDdiMGYzYmNiOWUyZDdkNzVlMDhlNWNhYmZmNTY3NTYwZg"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-350117-01?context=bWFzdGVyfGltYWdlc3wzNDc1NnxpbWFnZS9qcGVnfGFEWTVMMmc1TUM4ME5EUTNOamd3T0RrMU16ZzROaTl3Y205a2RXTjBMWE4xYlcxaGNubGZNelV3TVRFM1h6QXh8ZGEzNGU1OWFmYTFhYTgxZDBiMTc5MzQwNzU5M2QzMjQ5N2ZhOTcyM2RmMTMzOWU3MGU4NTdmNzBhMDQ4OWM3MA"
+      } ],
+      "insteadOfPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 14.90",
+         "priceType" : "BUY",
+         "value" : 14.9
+      },
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnpasta</em> Sensitive Professional 2 x 75 ml",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 9.95",
+         "priceType" : "BUY",
+         "value" : 9.95
+      },
+      "productLabels" : [ {
+         "message" : {
+            "key" : "productLabel.priceDiscount"
+         },
+         "style" : "priceDiscount",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "-33%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "key" : "productLabel.advertisement"
+         },
+         "style" : "advertisement",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/zahnpasta/elmex-zahnpasta-sensitive-professional-2-x-75-ml/p/350117"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20402",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpasta"
+      } ],
+      "code" : "432653",
+      "description" : "<p>Erlebe den ultimativen Schutz für deine Zähne mit der Elmex Zahnpasta Kariesschutz Professional im praktischen Doppelpack. Diese fortschrittliche Formel schützt nicht nur effektiv vor Karies, sondern sorgt auch für die langfristige Zahngesundheit.</p>",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-432653-04?context=bWFzdGVyfGltYWdlc3wyMTcxOHxpbWFnZS9qcGVnfGFEVmpMMmd3WXk4ek16QXhPREl3TnpBeE1EZzBOaTl3Y205a2RXTjBMVzFoYVc1Zk5ETXlOalV6WHpBMHwxYjU4ZTIwMmExNTdlNGRhMWQ4MGMyYmY5ZjUwMGI2ODdjYTVkNTkwOTg4MTczMGJlNzAzYzhmOTNlNDkyNTBh"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-432653-04?context=bWFzdGVyfGltYWdlc3wxMzMwMnxpbWFnZS9qcGVnfGFERm1MMmcwTWk4ek16QXhPREl3TmpneE5ESXpPQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTXpJMk5UTmZNRFF8ZDlmYmY0ZWZhYjE5NzA0M2NhNzNlMTc3OGViNzhlYzdmMzMwMjVhYzIyOWU1MjY2NzY0ZmQwNDRjNTYyZDQzOQ"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-432653-04?context=bWFzdGVyfGltYWdlc3w4NzMxfGltYWdlL2pwZWd8YURjeEwyZzBNUzh6TXpBeE9ESXdOamczT1RjM05DOXdjbTlrZFdOMExXbGpiMjVmTkRNeU5qVXpYekEwfDE4YzBkMGYyOTE1OGEyOGMzZDgzNjAyMmU4MWQ5ZDMzZWM2Nzc3YTNkMzk3M2NhMDViNWY5NTEwYmY1Zjc5MWM"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-432653-04?context=bWFzdGVyfGltYWdlc3wxNTA5NTl8aW1hZ2UvanBlZ3xhRFl3TDJnelpTOHpNekF4T0RJd05qazBOVE14TUM5d2NtOWtkV04wTFhwdmIyMWZORE15TmpVelh6QTB8ZWVlYTY3NjRjNGE2ODk4Y2EzOGZiNDA5MTdjZWFjZTNhNTcyMDg0YzExMGQ1OTA2MWJkYzIzMDFlYjg5NWYzYg"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-432653-04?context=bWFzdGVyfGltYWdlc3w1MTQzOXxpbWFnZS9qcGVnfGFEQmhMMmd3WkM4ek16QXhPREl3TnpBM05qTTRNaTl3Y205a2RXTjBMWE4xYlcxaGNubGZORE15TmpVelh6QTB8YzNjMzIzN2FhMjdmZDQ1NDZlNDdmNjBlOWFjOTI2ZDNkZTgwNTE1ZjY5OGI2ZWZjYmNlMzhhMDUxNjA3YzhjNg"
+      }, {
+         "format" : "product-main",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-432653-01?context=bWFzdGVyfGltYWdlc3wxODcyNXxpbWFnZS9qcGVnfGFEVTNMMmhpT1M4ek16QXhPREl3TlRRek56azRNaTl3Y205a2RXTjBMVzFoYVc1Zk5ETXlOalV6WHpBeHw1ZGQ5ZGMzNTRkZDZhM2EyMTc0YTZmYTY1OTI5NzE5ZTUzYzY1ZTJlMDA4YjY5ODNiYmNmNjFmNWZhNDc1YTIz"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-432653-01?context=bWFzdGVyfGltYWdlc3wxMjMwNnxpbWFnZS9qcGVnfGFESTFMMmhqTXk4ek16QXhPREl3TlRFM05UZ3pPQzl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjgwTXpJMk5UTmZNREV8MjNlYjNiNWEwNDBmMDZhZTIxZjJiMTJhZWEyM2JjYTVmNWQwNDAwNTg3NWU2ZmU3ZjI4ODNmMDQ4MWY5ODJlNA"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-432653-01?context=bWFzdGVyfGltYWdlc3w4NjEzfGltYWdlL2pwZWd8YURFMEwyaGpNQzh6TXpBeE9ESXdOVEkwTVRNM05DOXdjbTlrZFdOMExXbGpiMjVmTkRNeU5qVXpYekF4fGRiNjkyNjJiOTVlYmQ4OGFmZmY4MThkNzY4M2FhNjA4MDQ1M2M0OGMxYzczY2M0OThhYjk1OGFhN2UxMWNjMDA"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-432653-01?context=bWFzdGVyfGltYWdlc3wxMTY0NDJ8aW1hZ2UvanBlZ3xhREUyTDJoaVpDOHpNekF4T0RJd05UTXdOamt4TUM5d2NtOWtkV04wTFhwdmIyMWZORE15TmpVelh6QXh8NmU3ZDBmOWYxYjY1NTYyZGQwNzc1N2NlZjBiMzE0NTljNDk4ZTA1OGY1YTU0YTRhZTU2ZTY3ZTEwYjc1OWVhYw"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-432653-01?context=bWFzdGVyfGltYWdlc3w0Mjc0NXxpbWFnZS9qcGVnfGFEUTFMMmhpTmk4ek16QXhPREl3TlRVd016VXhPQzl3Y205a2RXTjBMWE4xYlcxaGNubGZORE15TmpVelh6QXh8NGYwZWU1YTc0NTEzOTI3OGY5ZjdmZWE2ZDBhY2I1YjY5NWVlMWZmMTk5ZmYwZThiOGNkOTA5ODk5M2UzMDFlMw"
+      } ],
+      "insteadOfPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 14.90",
+         "priceType" : "BUY",
+         "value" : 14.9
+      },
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnpasta</em> Kariesschutz Professional 2 x 75 ml",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 9.95",
+         "priceType" : "BUY",
+         "value" : 9.95
+      },
+      "productLabels" : [ {
+         "message" : {
+            "key" : "productLabel.priceDiscount"
+         },
+         "style" : "priceDiscount",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "-33%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "key" : "productLabel.advertisement"
+         },
+         "style" : "advertisement",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/zahnpasta/elmex-zahnpasta-kariesschutz-professional-2-x-75-ml/p/432653"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20402",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpasta"
+      } ],
+      "code" : "363977",
+      "description" : "Diese Elmex Zahnpasta bietet verlässlichen Schutz vor Karies. Das enthaltene Aminfluorid hilft, die Zähne kontinuierlich zu stärken, beugt Karies vor und baut ein lang anhaltendes Schutzschild auf.  Die feinen Partikel in der Zahnpasta reinigen schonend und entfernen Plaque effektiv.\n\nDie Elmex Forschung entwickelt in Zusammenarbeit mit zahnmedizinischen Wissenschaftlern, welche die Wirksamkeit der einzelnen Inhaltsstoffe nicht nur wissenschaftlich belegen, sondern auch deren Produktnutzen bestätigen.",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-363977-03?context=bWFzdGVyfGltYWdlc3wyMTM3OXxpbWFnZS9qcGVnfGFERXlMMmc0TUM4NE9URXpPVE0yTURJek5UZ3lMM0J5YjJSMVkzUXRiV0ZwYmw4ek5qTTVOemRmTURNfDc5ZDE2YWZkYjg3MTI3NjU5ZTg1ZGQxNjMzMmI3NjJhODQxOWUxOWQ2ZTg2NTUxYzUwNDYyMTVhNDc5NWYxODg"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-363977-03?context=bWFzdGVyfGltYWdlc3wxNTI4NnxpbWFnZS9qcGVnfGFEazJMMmd6TVM4NE9URXpPVE0xT0RJMk9UYzBMM0J5YjJSMVkzUXRkR2gxYldKdVlXbHNYek0yTXprM04xOHdNd3w5OGU1ZTg1MDY3YWY0MGU5YWQyYzE4YjRmYjUzMzlkOTdkNWU2MTIzZWMxZTQ5ODQwZTBkNjUzZjMyZTM4NTY1"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-363977-03?context=bWFzdGVyfGltYWdlc3wxMTY5N3xpbWFnZS9qcGVnfGFEVTRMMmd6TWk4NE9URXpPVE0xT0RreU5URXdMM0J5YjJSMVkzUXRhV052Ymw4ek5qTTVOemRmTURNfGEzNjY4YTc4YTY3M2VhMTkxMmMwMjIzOTFhYzVmNDk4MWE0YTMzZWY1NTU3NTE5YjBiNzQ3YjA5NTAyYTY5YmY"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-363977-03?context=bWFzdGVyfGltYWdlc3wxMTk0MDV8aW1hZ2UvanBlZ3xhRFUyTDJnek5TODRPVEV6T1RNMU9UVTRNRFEyTDNCeWIyUjFZM1F0ZW05dmJWOHpOak01TnpkZk1ETXwzYjUzNjBkNmM5NTYwZjU1ZDdiNGI2ZjU2NmNhMmRjMGI1N2Y4MmFhNWI0Yjg0NzI3OTgzMjNmZjliMTAwM2Vi"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-363977-03?context=bWFzdGVyfGltYWdlc3w0MzI1M3xpbWFnZS9qcGVnfGFHTXhMMmc0TUM4NE9URXpPVE0yTURnNU1URTRMM0J5YjJSMVkzUXRjM1Z0YldGeWVWOHpOak01TnpkZk1ETXwyM2QzMzFiNThiNjEzZGE2ZGMzNDMyM2Q0N2MzYjljYTdlOGQ2Mjk3ZmJiNTQ5MzQ5OTA5OTc5MTVhY2JkM2Ri"
+      }, {
+         "format" : "product-main",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-363977-04?context=bWFzdGVyfGltYWdlc3wxODIyNnxpbWFnZS9qcGVnfGFEQXpMMmcyTkM4NE9URTBNVFl6TkRNek5UQXlMM0J5YjJSMVkzUXRiV0ZwYmw4ek5qTTVOemRmTURRfGU3N2FlYjI4YjBlY2MxNjA1MmI5MDZlZjFhN2QwZWM4OGZjYTEyOWJjOGZhN2Y3MWNjNzUxMWNmZmU2Zjc5ZmI"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-363977-04?context=bWFzdGVyfGltYWdlc3wxMzE0M3xpbWFnZS9qcGVnfGFETXlMMmcxWkM4NE9URTBNVFl6TWpNMk9EazBMM0J5YjJSMVkzUXRkR2gxYldKdVlXbHNYek0yTXprM04xOHdOQXxmN2NlMDY1ZThlMTdkYzQ4ZjM3MDNmN2I2NzM1YjE0ZmQzZDQ1YzFiYzFmYTE4YWVkOTM0MTYyYzRlM2RkYWM3"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-363977-04?context=bWFzdGVyfGltYWdlc3wxMDQwOHxpbWFnZS9qcGVnfGFEUTBMMmcyTUM4NE9URTBNVFl6TXpBeU5ETXdMM0J5YjJSMVkzUXRhV052Ymw4ek5qTTVOemRmTURRfGFhYzYwODM1YzNlZGMwMGFiYmU3MzFjOWIzZTkyYzViZGNlNzFiMGI2ZmIxZjgwODgzMWI0YWNhNDhkODYwZWY"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-363977-04?context=bWFzdGVyfGltYWdlc3w5MTE0OXxpbWFnZS9qcGVnfGFHWXhMMmcyTUM4NE9URTBNVFl6TXpZM09UWTJMM0J5YjJSMVkzUXRlbTl2YlY4ek5qTTVOemRmTURRfDgxODA5YzQ3NGFlZDQ0NzE3YTRhODZlNjRmZGY0ZGIwYTg5M2E2ZjkwM2E4MzExZWNkMzg1MWY3Y2Y5MWI4YjM"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 1,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-363977-04?context=bWFzdGVyfGltYWdlc3wzNDczNHxpbWFnZS9qcGVnfGFHSXhMMmcyTkM4NE9URTBNVFl6TkRrNU1ETTRMM0J5YjJSMVkzUXRjM1Z0YldGeWVWOHpOak01TnpkZk1EUXwyMTc2NDMwN2U4NDgxNWEwMGJiMjc5YTU3ZTJlMTY5MzhjNjdlMTRjMzhkYjQxMGZlOGEyNWMyOGQzOWE3NzUw"
+      } ],
+      "insteadOfPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 9.80",
+         "priceType" : "BUY",
+         "value" : 9.8
+      },
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnpasta</em> Kariesschutz 2 x 75 ml",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 6.75",
+         "priceType" : "BUY",
+         "value" : 6.75
+      },
+      "productLabels" : [ {
+         "message" : {
+            "key" : "productLabel.priceDiscount"
+         },
+         "style" : "priceDiscount",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "-31%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "2 x 75 ml"
+         },
+         "style" : "wzText",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "Beliebt"
+         },
+         "style" : "notice",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/zahnpasta/elmex-zahnpasta-kariesschutz-2-x-75-ml/p/363977"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20401",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnbürsten"
+      } ],
+      "code" : "125175",
+      "description" : "Schmerzempfindliche Zähne benötigen eine besonders weiche Zahnbürste mit feinen Borsten: die Zahnbürste Sensitive von Elmex. Mit den optimal abgerundeten und schräg gestellten Borsten der Zahnbürste werden kariesgefährdete Zahnzwischenräume gründlich und schonend gereinigt.",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-125175-01?context=bWFzdGVyfGltYWdlc3wyMjAyNHxpbWFnZS9qcGVnfGFHUmlMMmd6Wmk4ME5ERXlPVEUxTnpNNE1qRTNOQzl3Y205a2RXTjBMVzFoYVc1Zk1USTFNVGMxWHpBeHw2M2MyZmRjZGI3NTk4N2Y0MmEyNzA3NDVmNWYwNGIxNTNmMjRhNWRjMjAxZWZjMTc0YmIwZjYzYjFmODJmNGQz"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-125175-01?context=bWFzdGVyfGltYWdlc3wxNDA2MXxpbWFnZS9qcGVnfGFHRmpMMmcwTmk4ME5ERXlPVEUxTnpFNE5UVTJOaTl3Y205a2RXTjBMWFJvZFcxaWJtRnBiRjh4TWpVeE56VmZNREV8ZWZkYzlhNmU2YmU3MGE5ODIwZjQ2YzllYzgzY2Q5ZDc2ODc4ZjM1YjFiY2FmODYyZjdkNjdkZmUwOWRlYmM4Mw"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-125175-01?context=bWFzdGVyfGltYWdlc3wxMDA0M3xpbWFnZS9qcGVnfGFEbGlMMmcwTXk4ME5ERXlPVEUxTnpJMU1URXdNaTl3Y205a2RXTjBMV2xqYjI1Zk1USTFNVGMxWHpBeHw1NDg0NGI1ZGQ4MzkxMTY3NjUyOTQwYjkwMDZhMTA2Y2RlYzRhMjY0NGNiYTk0OGU4YmVlYzZkMzk2OGJlNzky"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-125175-01?context=bWFzdGVyfGltYWdlc3wxMjE5MDR8aW1hZ2UvanBlZ3xhRGxrTDJnME1DODBOREV5T1RFMU56TXhOall6T0M5d2NtOWtkV04wTFhwdmIyMWZNVEkxTVRjMVh6QXh8NDM4NGM0ZjQyNThiYTE0N2QyZTY5ZTdiNDcyZmExNzY1MjFlZTliZmI4ZGJhMDg4YzRhNWE0YzNkOTNlNmQyNA"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-125175-01?context=bWFzdGVyfGltYWdlc3w0NTQ4OHxpbWFnZS9qcGVnfGFHUmxMMmd6WXk4ME5ERXlPVEUxTnpRME56Y3hNQzl3Y205a2RXTjBMWE4xYlcxaGNubGZNVEkxTVRjMVh6QXh8YzI5OWVlNTFjMDQ4OWMyZTBhZTg1ZGVkNTNjNzVmN2U1OTBmMzBmMTJjYTY1NWYwODY3ZjdkYjUxZmEwNjYwMQ"
+      } ],
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnbürste</em> Sensitive Duo-Pack",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 6.75",
+         "priceType" : "BUY",
+         "value" : 6.75
+      },
+      "productLabels" : [ {
+         "message" : {
+            "raw" : "-39%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "2 Stück"
+         },
+         "style" : "wzText",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/zahnbuersten/elmex-zahnbuerste-sensitive-duo-pack/p/125175"
+   }, {
+      "brand" : "Elmex",
+      "categories" : [ {
+         "code" : "M_ROOT",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Root"
+      }, {
+         "code" : "M_SHOP",
+         "excludeFromProductBreadcrumb" : true,
+         "name" : "Shop"
+      }, {
+         "code" : "m_20000",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Beauty & Gesundheit"
+      }, {
+         "code" : "m_20400",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Zahnpflege"
+      }, {
+         "code" : "m_20403",
+         "excludeFromProductBreadcrumb" : false,
+         "name" : "Mundspülung"
+      } ],
+      "code" : "368681",
+      "description" : "Die Elmex Sensitive Zahnspülung ist speziell für die Bedürfnisse schmerzempfindlicher Zähne entwickelt worden. Die sanfte Spülung mit Aminfluorid bietet einen Intensiv-Schutz für sensible Zähne und Zahnhalskaries. Die alkoholfreie Formel mit angenehmem Geschmack ist eine wirksame Ergänzung zur täglichen Zahnpflege und schützt effektiv vor Karies. Die Elmex Forschung entwickelt in Zusammenarbeit mit zahnmedizinischen Wissenschaftlern, welche die Wirksamkeit der einzelnen Inhaltsstoffe nicht nur wissenschaftlich belegen, sondern auch deren Produktnutzen bestätigen.",
+      "images" : [ {
+         "format" : "product-main",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-main-368681-01?context=bWFzdGVyfGltYWdlc3wxOTQzMnxpbWFnZS9qcGVnfGFHWXlMMmhoTWk4NE9URXpOek0zTXpFNE5ETXdMM0J5YjJSMVkzUXRiV0ZwYmw4ek5qZzJPREZmTURFfDI1MTA0MWY3M2Y4MTU1ODU3ODI1YWI3MjhlOGFiZTQ3M2ZkZDA3MDYyNTkyMTdmOTc4OWZiMjQ2OGZiOTZjMDg"
+      }, {
+         "format" : "product-thumbnail",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-thumbnail-368681-01?context=bWFzdGVyfGltYWdlc3wxMjg1NXxpbWFnZS9qcGVnfGFETTFMMmc1WXk4NE9URXpOek0zTVRJeE9ESXlMM0J5YjJSMVkzUXRkR2gxYldKdVlXbHNYek0yT0RZNE1WOHdNUXxhZTMzZjgyNjAzNWY5NTA0MGExMmUyM2UzZWQwZjZiYTc4M2FiMzVkYWNlYmJkM2QzZjg1OTc1NTVmNWIzOGJm"
+      }, {
+         "format" : "product-icon",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-icon-368681-01?context=bWFzdGVyfGltYWdlc3w5NDQzfGltYWdlL2pwZWd8YUdVekwyZzVZeTg0T1RFek56TTNNVGczTXpVNEwzQnliMlIxWTNRdGFXTnZibDh6TmpnMk9ERmZNREV8OWI3MjQzZmFhNzdlNGNlMTliNzEyNWI0MWNjNmMzMDUxNjlmYzFjMDI3OGI0NmI3ZGJkODkxMWE4MjYyOTViOQ"
+      }, {
+         "format" : "product-zoom",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-zoom-368681-01?context=bWFzdGVyfGltYWdlc3wxMjQyODZ8aW1hZ2UvanBlZ3xhR1kwTDJnNVppODRPVEV6TnpNM01qVXlPRGswTDNCeWIyUjFZM1F0ZW05dmJWOHpOamcyT0RGZk1ERXwzOTlmYmM1ZDFjMDk3YTczMmVlOWI2ZmQzYmYzMTM3NjIzNjJjZjhjYTVmM2VhNDEwNjdiNmE3ZDM1NzI5NGY1"
+      }, {
+         "format" : "product-summary",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/medias/product-summary-368681-01?context=bWFzdGVyfGltYWdlc3w0MTE5M3xpbWFnZS9qcGVnfGFHSXpMMmhoTXk4NE9URXpOek0zTXpnek9UWTJMM0J5YjJSMVkzUXRjM1Z0YldGeWVWOHpOamcyT0RGZk1ERXw0ZWVjYmMyNWEwYmFmZmEyZGIyZGU5M2FjZjk4ZjVmMjY5MDA3N2QxZjRjNzQwOWYwYmY5N2Q1MDg3YzUwODg3"
+      } ],
+      "insteadOfPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 13.00",
+         "priceType" : "BUY",
+         "value" : 13.0
+      },
+      "name" : "<em class=\"search-results-highlight\">Elmex Zahnspülung</em> Sensitive 2 x 400 ml",
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "CHF 8.95",
+         "priceType" : "BUY",
+         "value" : 8.95
+      },
+      "productLabels" : [ {
+         "message" : {
+            "key" : "productLabel.priceDiscount"
+         },
+         "style" : "priceDiscount",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "-31%"
+         },
+         "style" : "priceDiscountPercentage",
+         "type" : "text"
+      }, {
+         "message" : {
+            "raw" : "2 x 400 ml"
+         },
+         "style" : "wzText",
+         "type" : "text"
+      } ],
+      "purchasable" : true,
+      "stock" : {
+         "isValueRounded" : false,
+         "stockLevelStatus" : "lowStock"
+      },
+      "unitName" : "Stück",
+      "url" : "/beauty-gesundheit/zahnpflege/mundspuelung/elmex-zahnspuelung-sensitive-2-x-400-ml/p/368681"
+   } ],
+   "categoryResults" : [ {
+      "categoryThumbnailContainer" : {
+         "ottosMedias" : [ {
+            "code" : "brand_elmex",
+            "description" : "brand_elmex.jpg",
+            "fileSize" : "40557",
+            "mime" : "image/jpeg",
+            "url" : "/medias/brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3w0MDU1N3xpbWFnZS9qcGVnfGFHRTRMMmcyTlM4ME5EQTRNalF5TlRrMU5ETXpOQzlpY21GdVpGOWxiRzFsZUM1cWNHY3w5Y2VhMWQ5NGFiZmYzMzM5ZWYxMTQzODZmYWI2NTc0NmFlODYyZmIxNTk5OTQxMmQzOTkwOWI2MTI1YTdhYmJm"
+         }, {
+            "code" : "brand_elmex_category-thumbnail-120",
+            "description" : "category-thumbnail-120_brand_elmex.jpg",
+            "fileSize" : "1474",
+            "mediaFormat" : "category-thumbnail-120",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-120-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3wxNDc0fGltYWdlL2pwZWd8YUdabUwyZ3hZUzgwTkRBNE1qUXlOakF4T1RnM01DOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3RNVEl3WDJKeVlXNWtYMlZzYldWNExtcHdad3wzY2MzMDdhNzM5NzMwODIxYWNkZTQzZjk0ZTliNzU5YzZhZjI1Y2NlOWYzMmU3MTJiNTVmODE0NzMxMmY2ODlk",
+            "width" : -1
+         }, {
+            "code" : "brand_elmex_category-thumbnail-240",
+            "description" : "category-thumbnail-240_brand_elmex.jpg",
+            "fileSize" : "3207",
+            "mediaFormat" : "category-thumbnail-240",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-240-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3wzMjA3fGltYWdlL2pwZWd8YURObEwyZ3hZUzgwTkRBNE1qUXlOakE0TlRRd05pOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3RNalF3WDJKeVlXNWtYMlZzYldWNExtcHdad3w0MTNjYWZhMTUwNDNlYWEyNWNkODhhMjY1ZGZhZWEwMGEzMmU5ZDM0ZDEyZjFlMmEzMTY4Yzg1NTFmODMyYjZi",
+            "width" : -1
+         }, {
+            "code" : "brand_elmex_category-thumbnail-480",
+            "description" : "category-thumbnail-480_brand_elmex.jpg",
+            "fileSize" : "6752",
+            "mediaFormat" : "category-thumbnail-480",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-480-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3w2NzUyfGltYWdlL2pwZWd8YURKa0wyZ3hOeTgwTkRBNE1qUXlOakUxTURrME1pOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3RORGd3WDJKeVlXNWtYMlZzYldWNExtcHdad3xkYzRiMzcyMGE5NmY5ZmViZDU1YzEzMTkzOWM2NzM4M2IxNWY5NGUzMDFiZTZiYjgxOWM3YTAxOGZhM2Q2NTM0",
+            "width" : -1
+         }, {
+            "code" : "brand_elmex_category-thumbnail-640",
+            "description" : "category-thumbnail-640_brand_elmex.jpg",
+            "fileSize" : "9097",
+            "mediaFormat" : "category-thumbnail-640",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-640-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3w5MDk3fGltYWdlL2pwZWd8YURKbUwyZ3hOQzgwTkRBNE1qUXlOakl4TmpRM09DOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3ROalF3WDJKeVlXNWtYMlZzYldWNExtcHdad3xmMTYyMTJlNzFiMDU1ZjVjMDFmMzExNzA5YjgyNWM3MTAwZWM5NjNlZDg0NTdmYjk5YmFkOTA2MjcwMThkYzBj",
+            "width" : -1
+         } ]
+      },
+      "code" : "brand_elmex",
+      "name" : "<em class=\"search-results-highlight\">Elmex</em>",
+      "productCount" : 18,
+      "url" : "/marken/elmex/c/brand_elmex"
+   } ],
+   "topCategories" : [ {
+      "categoryThumbnailContainer" : {
+         "ottosMedias" : [ {
+            "code" : "brand_elmex",
+            "description" : "brand_elmex.jpg",
+            "fileSize" : "40557",
+            "mime" : "image/jpeg",
+            "url" : "/medias/brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3w0MDU1N3xpbWFnZS9qcGVnfGFHRTRMMmcyTlM4ME5EQTRNalF5TlRrMU5ETXpOQzlpY21GdVpGOWxiRzFsZUM1cWNHY3w5Y2VhMWQ5NGFiZmYzMzM5ZWYxMTQzODZmYWI2NTc0NmFlODYyZmIxNTk5OTQxMmQzOTkwOWI2MTI1YTdhYmJm"
+         }, {
+            "code" : "brand_elmex_category-thumbnail-120",
+            "description" : "category-thumbnail-120_brand_elmex.jpg",
+            "fileSize" : "1474",
+            "mediaFormat" : "category-thumbnail-120",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-120-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3wxNDc0fGltYWdlL2pwZWd8YUdabUwyZ3hZUzgwTkRBNE1qUXlOakF4T1RnM01DOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3RNVEl3WDJKeVlXNWtYMlZzYldWNExtcHdad3wzY2MzMDdhNzM5NzMwODIxYWNkZTQzZjk0ZTliNzU5YzZhZjI1Y2NlOWYzMmU3MTJiNTVmODE0NzMxMmY2ODlk",
+            "width" : -1
+         }, {
+            "code" : "brand_elmex_category-thumbnail-240",
+            "description" : "category-thumbnail-240_brand_elmex.jpg",
+            "fileSize" : "3207",
+            "mediaFormat" : "category-thumbnail-240",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-240-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3wzMjA3fGltYWdlL2pwZWd8YURObEwyZ3hZUzgwTkRBNE1qUXlOakE0TlRRd05pOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3RNalF3WDJKeVlXNWtYMlZzYldWNExtcHdad3w0MTNjYWZhMTUwNDNlYWEyNWNkODhhMjY1ZGZhZWEwMGEzMmU5ZDM0ZDEyZjFlMmEzMTY4Yzg1NTFmODMyYjZi",
+            "width" : -1
+         }, {
+            "code" : "brand_elmex_category-thumbnail-480",
+            "description" : "category-thumbnail-480_brand_elmex.jpg",
+            "fileSize" : "6752",
+            "mediaFormat" : "category-thumbnail-480",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-480-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3w2NzUyfGltYWdlL2pwZWd8YURKa0wyZ3hOeTgwTkRBNE1qUXlOakUxTURrME1pOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3RORGd3WDJKeVlXNWtYMlZzYldWNExtcHdad3xkYzRiMzcyMGE5NmY5ZmViZDU1YzEzMTkzOWM2NzM4M2IxNWY5NGUzMDFiZTZiYjgxOWM3YTAxOGZhM2Q2NTM0",
+            "width" : -1
+         }, {
+            "code" : "brand_elmex_category-thumbnail-640",
+            "description" : "category-thumbnail-640_brand_elmex.jpg",
+            "fileSize" : "9097",
+            "mediaFormat" : "category-thumbnail-640",
+            "mime" : "image/jpeg",
+            "url" : "/medias/category-thumbnail-640-brand-elmex.jpg?context=bWFzdGVyfGltYWdlc3w5MDk3fGltYWdlL2pwZWd8YURKbUwyZ3hOQzgwTkRBNE1qUXlOakl4TmpRM09DOWpZWFJsWjI5eWVTMTBhSFZ0WW01aGFXd3ROalF3WDJKeVlXNWtYMlZzYldWNExtcHdad3xmMTYyMTJlNzFiMDU1ZjVjMDFmMzExNzA5YjgyNWM3MTAwZWM5NjNlZDg0NTdmYjk5YmFkOTA2MjcwMThkYzBj",
+            "width" : -1
+         } ]
+      },
+      "code" : "brand_elmex",
+      "name" : "<em class=\"search-results-highlight\">Elmex</em>",
+      "productCount" : 18,
+      "url" : "/marken/elmex/c/brand_elmex"
+   } ]
+}

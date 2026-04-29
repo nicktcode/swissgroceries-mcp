@@ -183,4 +183,22 @@ describe('ottos fixture', () => {
     expect(typeof p.price.current).toBe('number');
     expect(p.id).not.toBe('');
   });
+
+  it('parses fixture with rich productLabels objects (regression)', () => {
+    // OCC v2's `fields=FULL` returns productLabels as an array of
+    // { message: { raw, key }, style, type } objects, not strings.
+    // The schema must accept this shape and the normalizer must not crash.
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/ottos/search-elmex-with-labels.json', 'utf8')); }
+    catch { return; }
+    const validated = OttosSearchResponseSchema.safeParse(raw);
+    expect(validated.success).toBe(true);
+    if (!validated.success) return;
+    const products = (validated.data.products ?? []) as any[];
+    const labelled = products.find((p) => Array.isArray(p.productLabels) && p.productLabels.length > 0);
+    if (labelled) {
+      expect(typeof labelled.productLabels[0]).toBe('object');
+      expect(() => normalizeProduct(labelled)).not.toThrow();
+    }
+  });
 });

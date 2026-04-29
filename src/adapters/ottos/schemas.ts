@@ -39,7 +39,14 @@ export const OttosProductSchema = z.object({
   images: z.array(ImageSchema).optional(),
   stock: StockSchema.optional(),
   unitName: z.string().nullable().optional(),
-  productLabels: z.array(z.string()).nullable().optional(),
+  productLabels: z.array(z.object({
+    style: z.string().optional(),
+    type: z.string().optional(),
+    message: z.object({
+      raw: z.string().optional(),
+      key: z.string().optional(),
+    }).passthrough().optional(),
+  }).passthrough()).nullable().optional(),
   purchasable: z.boolean().optional(),
 }).passthrough();
 
