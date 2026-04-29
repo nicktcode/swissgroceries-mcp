@@ -7,8 +7,12 @@ import { makeDennerClient, type DennerClient } from './client.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
+import { DennerContentResponseSchema } from './schemas.js';
 
 function classify(e: unknown): AdapterError {
+  if (e instanceof Error && (e as any).code === 'schema_mismatch') {
+    return { code: 'schema_mismatch', sample: (e as any).sample ?? '' };
+  }
   const msg = e instanceof Error ? e.message : String(e);
   if (/auth_expired/i.test(msg)) return { code: 'auth_expired', reason: msg };
   if (/429/.test(msg)) return { code: 'rate_limited' };
@@ -35,9 +39,16 @@ export class DennerAdapter implements StoreAdapter {
       return { products: this.cache.products, publications: this.cache.publications ?? [] };
     }
     const r = await this.client.fetch('/api/m/content/v2', { v: 0 });
+    const parsed = DennerContentResponseSchema.safeParse(r);
+    if (!parsed.success) {
+      throw Object.assign(new Error('schema_mismatch'), {
+        code: 'schema_mismatch',
+        sample: JSON.stringify(r).slice(0, 500),
+      });
+    }
     this.cache = {
-      products: (r.products ?? []) as any[],
-      publications: (r.publications ?? []) as any[],
+      products: (parsed.data.products ?? []) as any[],
+      publications: (parsed.data.publications ?? []) as any[],
       expires: Date.now() + 5 * 60 * 1000,
     };
     return { products: this.cache.products!, publications: this.cache.publications! };
@@ -47,6 +58,7 @@ export class DennerAdapter implements StoreAdapter {
     try {
       const { products } = await this.loadContent();
       const needle = q.query.toLowerCase();
+      const offset = q.offset ?? 0;
       const matches = products
         .filter((p: any) => {
           const name = typeof p.title === 'string'
@@ -54,7 +66,7 @@ export class DennerAdapter implements StoreAdapter {
             : (p.title?.de ?? p.title?.fr ?? p.title?.it ?? '');
           return name.toLowerCase().includes(needle);
         })
-        .slice(0, q.limit ?? 20);
+        .slice(offset, offset + (q.limit ?? 20));
       return ok(matches.map(normalizeProduct));
     } catch (e) {
       return err(classify(e));

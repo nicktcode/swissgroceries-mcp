@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { normalizeProduct, normalizeStore, normalizePromotion, parseSize } from '../../src/adapters/aldi/normalize.js';
+import { AldiProductSchema, AldiSearchResponseSchema } from '../../src/adapters/aldi/schemas.js';
 
 describe('aldi parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -144,5 +145,35 @@ describe('aldi normalize fixture', () => {
     const s = normalizeStore(data[0]);
     expect(s.chain).toBe('aldi');
     expect(s.id).toBeTruthy();
+  });
+});
+
+describe('aldi schemas (zod validation)', () => {
+  it('AldiProductSchema accepts a minimal valid product', () => {
+    const result = AldiProductSchema.safeParse({ sku: 'TEST', name: 'Milch' });
+    expect(result.success).toBe(true);
+  });
+
+  it('AldiProductSchema passes through unknown fields', () => {
+    const result = AldiProductSchema.safeParse({ sku: 'X', unknownField: 42 });
+    expect(result.success).toBe(true);
+    if (result.success) expect((result.data as any).unknownField).toBe(42);
+  });
+
+  it('AldiSearchResponseSchema accepts empty data array', () => {
+    const result = AldiSearchResponseSchema.safeParse({ data: [] });
+    expect(result.success).toBe(true);
+  });
+
+  it('AldiSearchResponseSchema validates the search-milch fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/aldi/search-milch.json', 'utf8')); }
+    catch { return; }
+    if (!raw) return;
+    const result = AldiSearchResponseSchema.safeParse(raw);
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect(Array.isArray(result.data.data ?? result.data.products ?? result.data.results)).toBe(true);
+    }
   });
 });

@@ -7,6 +7,7 @@ import { aldiFetch, ALDI_DEFAULT_SERVICE_POINT } from './client.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
+import { AldiSearchResponseSchema } from './schemas.js';
 
 const ALDI_VALID_LIMITS = [12, 16, 24, 30, 32, 48, 60] as const;
 
@@ -40,15 +41,20 @@ export class AldiAdapter implements StoreAdapter {
     try {
       const servicePoint = q.storeIds?.[0] ?? ALDI_DEFAULT_SERVICE_POINT;
       const requested = q.limit ?? 16;
+      const offset = q.offset ?? 0;
       const r = await aldiFetch('/v3/product-search', {
         q: q.query,
         servicePoint,
         serviceType: 'walk-in',
-        offset: 0,
+        offset,
         limit: snapAldiLimit(requested),
       });
+      const parsed = AldiSearchResponseSchema.safeParse(r);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) } as AdapterError);
+      }
       // Real API wraps results in `data`, not `products`/`results`
-      const list = ((r.data ?? r.products ?? r.results ?? []) as any[]).slice(0, requested);
+      const list = ((parsed.data.data ?? parsed.data.products ?? parsed.data.results ?? []) as any[]).slice(0, requested);
       return ok(list.map(normalizeProduct));
     } catch (e) {
       return err(classify(e));
