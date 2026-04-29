@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-04-29
+
+### Fixed
+- `.mcpb` bundle now embeds the project icon (icon.png) and references it in manifest.json.
+- Bundle manifest now uses the scoped npm name and propagates user_config to the spawned server's environment, so DENNER_JWT and LIDL_DEFAULT_STORE work when set in Claude Desktop's extension settings.
+
 ## [0.1.2] - 2026-04-29
 
 ### Added

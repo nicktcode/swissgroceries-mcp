@@ -34,6 +34,9 @@ function stage() {
   mkdirSync(join(STAGE, 'server', 'src', 'data'), { recursive: true });
   copyFileSync('src/data/swiss-zips.json', join(STAGE, 'server', 'src', 'data', 'swiss-zips.json'));
 
+  // Copy icon for the manifest reference
+  copyFileSync('assets/icon.png', join(STAGE, 'icon.png'));
+
   // Strip down package.json for the bundle (production only)
   const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
   const slimPkg = {
@@ -53,36 +56,51 @@ function stage() {
   // Manifest
   const manifest = {
     dxt_version: '0.1',
-    name: 'swissgroceries-mcp',
-    display_name: 'Swiss Grocery Stores',
+    name: pkg.name,
+    display_name: 'Swiss Groceries MCP',
     version: pkg.version,
     description: pkg.description,
+    long_description:
+      'Real-time Swiss grocery shopping over MCP. Search products, compare prices ' +
+      'across Migros, Coop, Aldi, Denner, and Lidl, see weekly promotions, and plan ' +
+      'multi-store shopping trips with three optimisation strategies. Zero-config: ' +
+      'no accounts, no tokens, no API keys.',
     author: { name: pkg.author ?? 'Unknown' },
     license: pkg.license ?? 'MIT',
     homepage: pkg.homepage,
+    repository: pkg.repository?.url,
     keywords: pkg.keywords,
+    icon: 'icon.png',
     server: {
       type: 'node',
       entry_point: 'server/dist/index.js',
       mcp_config: {
         command: 'node',
         args: ['${__dirname}/server/dist/index.js'],
-        env: {},
+        env: {
+          DENNER_JWT: '${user_config.DENNER_JWT}',
+          LIDL_DEFAULT_STORE: '${user_config.LIDL_DEFAULT_STORE}',
+        },
       },
     },
     user_config: {
       DENNER_JWT: {
         type: 'string',
-        title: 'Denner JWT',
-        description: 'Optional Bearer token from the Denner iOS app to enable Denner adapter.',
+        title: 'Denner JWT (optional)',
+        description:
+          'Optional pre-supplied Denner Bearer JWT. Leave blank to let the adapter ' +
+          'self-register anonymously on first use.',
         sensitive: true,
         required: false,
       },
       LIDL_DEFAULT_STORE: {
         type: 'string',
         title: 'Lidl default store ID',
-        description: 'Default Lidl store identifier (default: CH0149).',
+        description:
+          'Fallback Lidl store identifier used only when a tool is called without a ' +
+          'location. Default: CH0149 (Wettingen). Most queries auto-discover the nearest store.',
         required: false,
+        default: 'CH0149',
       },
     },
   };
