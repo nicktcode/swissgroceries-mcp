@@ -36,10 +36,12 @@ jobs:
           if [ -n "$NPM_TOKEN" ]; then
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
             echo "Using NPM_TOKEN-based publish."
+            # Granular tokens scoped to @nicktcode don't support --provenance.
+            npm publish --access public
           else
-            echo "Using OIDC trusted publishing."
+            echo "Using OIDC trusted publishing (provenance auto-enabled)."
+            npm publish --access public --provenance
           fi
-          npm publish --access public --provenance
           status=$?
           if [ $status -ne 0 ]; then
             VERSION=$(node -p "require('./package.json').version")
