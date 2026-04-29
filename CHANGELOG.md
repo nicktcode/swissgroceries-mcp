@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-04-29
+
+### Added
+- **Zod response schemas for Aldi, Denner, and Lidl** (parity with Coop and Migros). All five chain adapters now validate API responses with zod and surface `schema_mismatch` errors when upstream APIs change shape.
+- **MCP resource `swissgroceries://chains`** — clients can now list registered adapters and inspect their capability flags via the standard Resources API instead of inferring from tool calls.
+- **Pagination on `search_products`** via a new `offset` parameter (0–500). Coop and Aldi pass it natively to their REST APIs; Migros, Denner, and Lidl slice client-side.
+- **GitHub Actions release workflow now publishes via npm OIDC trusted publishing** with provenance attestations (`--provenance`), with a fallback to `NPM_TOKEN` when the secret is set.
+- **Nightly smoke now opens a deduplicated GitHub issue on failure** (labels: `nightly-smoke`, `adapter-broken`) so chain API drift gets noticed within 24h.
+
 ## [0.1.6] - 2026-04-29
 
 ### Fixed
