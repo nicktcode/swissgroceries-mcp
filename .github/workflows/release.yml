@@ -27,7 +27,20 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
+        run: |
+          set +e
+          npm publish --access public
+          status=$?
+          if [ $status -ne 0 ]; then
+            # Tolerate re-tag of an already-published version (E403 from npm).
+            VERSION=$(node -p "require('./package.json').version")
+            PUBLISHED=$(npm view "$(node -p "require('./package.json').name")" versions --json 2>/dev/null || echo '[]')
+            if echo "$PUBLISHED" | grep -q "\"$VERSION\""; then
+              echo "::notice::Version $VERSION already published; skipping (expected for force-re-tag)."
+              exit 0
+            fi
+            exit $status
+          fi
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
