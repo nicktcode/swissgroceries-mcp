@@ -45,7 +45,6 @@ export class DennerAdapter implements StoreAdapter {
 
   async searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>> {
     try {
-      if (!process.env.DENNER_JWT) return err({ code: 'auth_expired', reason: 'DENNER_JWT not set' });
       const { products } = await this.loadContent();
       const needle = q.query.toLowerCase();
       const matches = products

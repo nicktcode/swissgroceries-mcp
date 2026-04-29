@@ -85,7 +85,7 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
       "command": "node",
       "args": ["/absolute/path/to/swissgroceries-mcp/dist/index.js"],
       "env": {
-        "DENNER_JWT": "eyJ...optional, enables Denner adapter...",
+        "DENNER_JWT": "eyJ... optional pre-supplied token; omit to let the adapter self-register anonymously",
         "SWISSGROCERIES_LOG_LEVEL": "info"
       }
     }
@@ -93,7 +93,7 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
 }
 ```
 
-Replace `/absolute/path/to/swissgroceries-mcp` with the real path. `DENNER_JWT` is optional - omit it if you do not need Denner.
+Replace `/absolute/path/to/swissgroceries-mcp` with the real path. All env vars are optional. `DENNER_JWT` lets you pre-supply a Denner token; the adapter otherwise self-registers anonymously on first use.
 
 ### Claude Code (one-liner)
 
@@ -141,7 +141,7 @@ src/tools/                                                  src/adapters/
   find_stores.ts    ──► geocoding ──► adapter.searchStores     migros/
   search_products.ts ──────────────► adapter.searchProducts    coop/
   get_product.ts   ──────────────► adapter.getProduct          aldi/
-  get_promotions.ts ─────────────► adapter.getPromotions       denner/  (env-gated)
+  get_promotions.ts ─────────────► adapter.getPromotions       denner/  (auto-auth)
   find_stock.ts    ──────────────► adapter.findStoresWithStock  lidl/
   plan_shopping.ts ──► geocoding ──► planner ──► strategy solver
                                                      │
@@ -156,7 +156,7 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 
 | Env var | Default | Effect |
 |---|---|---|
-| `DENNER_JWT` | _(unset)_ | Bearer JWT for the Denner adapter. When unset, Denner is not registered. Extract via Charles Proxy from the Denner iOS app's `Authorization: Bearer ...` header. Tokens typically last ~1 year. |
+| `DENNER_JWT` | _(unset)_ | Optional pre-supplied Denner Bearer JWT. When unset, the Denner adapter self-registers anonymously by calling `/api/auth/m/signup` + `/api/auth/m/signin` on first use and rotates the token automatically. Set this only if you have a token already and want to skip the bootstrap call. |
 | `LIDL_DEFAULT_STORE` | `CH0149` | Default Lidl store ID used when no `storeIds` are passed. |
 | `SWISSGROCERIES_USER_AGENT_COOP` | _(built-in iOS UA)_ | Override the User-Agent sent to coop.ch endpoints. Set to a freshly captured iOS Safari UA string if DataDome blocks requests. |
 | `SWISSGROCERIES_LOG_LEVEL` | `info` | Log verbosity. Set to `debug` to see cache hits, retries, and circuit-breaker events on stderr. |
@@ -169,7 +169,7 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 | Migros | Full catalog | Yes | Yes | Guest token (auto) | Uses `migros-api-wrapper`. Zod schema validation catches API drift. |
 | Coop | Full catalog (Hybris) | Yes (limited) | Yes (geo) | None | Catalog and prices match physical Coop stores; coopathome adds an availability layer. DataDome bot protection may trigger if you exceed reasonable rates. |
 | Aldi | Full catalog | Yes | No | None | Well-structured REST API; reliable. |
-| Denner | Full catalog (content API) | Yes | No | `DENNER_JWT` (Bearer) | JWT extracted from iOS app via Charles. Set `DENNER_JWT` env var to enable. |
+| Denner | Full catalog (content API) | Yes | No | None (anonymous self-auth) | Adapter calls `/api/auth/m/signup` then `/api/auth/m/signin` automatically; rotates the JWT before expiry. Optional `DENNER_JWT` env var pre-supplies a token. |
 | Lidl | Weekly leaflet only | Yes | No | None | Only products in the current weekly campaign are visible; not the full catalog. |
 
 ## Troubleshooting
@@ -181,7 +181,7 @@ SWISSGROCERIES_USER_AGENT_COOP="Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac
 ```
 
 **"adapter_not_registered" for Denner**
-The Denner adapter is only registered when `DENNER_JWT` is set. Extract the token: open Charles Proxy, connect your iPhone, open the Denner app, capture any API request, and copy the `Authorization: Bearer eyJ...` value. Set it in the MCP server's `env` block.
+The Denner adapter requires no setup. On first use it calls `/api/auth/m/signup` (gets a `clientId`) and `/api/auth/m/signin` (gets an anonymous Bearer JWT valid ~1 year), then rotates automatically. To skip the bootstrap call, pre-supply a token via the optional `DENNER_JWT` env var.
 
 **Lidl returns 0 results**
 Lidl only indexes products from the current weekly campaign leaflet. If your search term does not appear in the active campaigns, you will get 0 results. This is expected - it is not a bug.
@@ -243,7 +243,7 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 
 ## Status
 
-v0.1.0: Migros (full catalog), Coop (full catalog via coopathome), Aldi (full), Denner (env-gated, full), Lidl (weekly leaflet only).
+v0.1.0: Migros (full catalog), Coop (full catalog via coopathome), Aldi (full), Denner (full, anonymous auto-auth), Lidl (weekly leaflet only).
 
 Known limitations:
 - Free-text addresses geocoded via OpenStreetMap Nominatim (rate-limited, cached for 30 days)

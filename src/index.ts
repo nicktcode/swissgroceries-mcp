@@ -27,7 +27,7 @@ export function buildRegistry(): AdapterRegistry {
   r.register(new MigrosAdapter());
   r.register(new CoopAdapter());
   r.register(new AldiAdapter());
-  if (process.env.DENNER_JWT) r.register(new DennerAdapter());
+  r.register(new DennerAdapter());
   r.register(new LidlAdapter());
   return r;
 }
