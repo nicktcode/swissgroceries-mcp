@@ -59,17 +59,36 @@ describe('live smoke (RUN_LIVE=1)', () => {
   itLive('Ottos store + per-store stock query works near Wettingen', async () => {
     const { OttosAdapter } = await import('../../src/adapters/ottos/index.js');
     const adapter = new OttosAdapter();
+
+    // 1) searchStores: assert shape, not specific stores. The "Wettingen
+    // exists" check is fair because Otto's has had a permanent store there
+    // since long before this project; if that ever stops being true the
+    // test failure correctly signals real coverage drift.
     const stores = await adapter.searchStores({ near: { lat: 47.466, lng: 8.319 }, radiusKm: 25 });
     expect(stores.ok).toBe(true);
     if (!stores.ok) return;
     expect(stores.data.length).toBeGreaterThan(0);
     expect(stores.data.some((s) => s.address.zip === '5430')).toBe(true);
 
-    const stock = await adapter.findStoresWithStock!('350117', { lat: 47.466, lng: 8.319 });
+    // 2) findStoresWithStock: don't pin to a specific product code or
+    // assert quantity > 0. Either of those will start failing the day
+    // that exact item is delisted or sold out everywhere — neither
+    // signals a real adapter bug. Instead, discover a currently-listed
+    // product via search, then assert the stock endpoint responds with
+    // a parseable shape and at least one store entry.
+    const search = await adapter.searchProducts({ query: 'shampoo', limit: 5 });
+    expect(search.ok).toBe(true);
+    if (!search.ok || search.data.length === 0) return;
+    const id = search.data[0].id;
+    const stock = await adapter.findStoresWithStock!(id, { lat: 47.466, lng: 8.319 });
     expect(stock.ok).toBe(true);
     if (!stock.ok) return;
     expect(stock.data.length).toBeGreaterThan(0);
-    expect(stock.data.some((r) => r.inStock && (r.quantity ?? 0) > 0)).toBe(true);
+    // Each entry has the canonical store fields and a boolean inStock.
+    for (const r of stock.data.slice(0, 3)) {
+      expect(r.store.chain).toBe('ottos');
+      expect(typeof r.inStock).toBe('boolean');
+    }
   }, 30000);
 
   itLive('find_stores near 8001 returns >=1 store across chains', async () => {
