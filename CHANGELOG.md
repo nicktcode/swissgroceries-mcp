@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-04-29
+
+### Added
+- `mcpName` field in package.json (`io.github.nicktcode/swissgroceries-mcp`) for ownership verification by the official MCP Registry.
+- `server.json` manifest at the repo root for MCP Registry submission.
+
 ## [0.1.1] - 2026-04-29
 
 ### Changed

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nicktcode/swissgroceries-mcp",
+  "description": "Real-time Swiss grocery shopping over MCP. Search products, compare prices across Migros, Coop, Aldi, Denner, and Lidl, see weekly promotions, and plan multi-store shopping trips with three optimisation strategies.",
+  "repository": {
+    "url": "https://github.com/nicktcode/swissgroceries-mcp",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@nicktcode/swissgroceries-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DENNER_JWT",
+          "description": "Optional pre-supplied Denner Bearer JWT. Without it, the adapter self-registers anonymously on first use and rotates the token automatically.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "LIDL_DEFAULT_STORE",
+          "description": "Default Lidl store ID used when no storeIds are passed. Defaults to CH0149.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "SWISSGROCERIES_USER_AGENT_COOP",
+          "description": "Override the User-Agent string for Coop calls if DataDome ever blocks the default.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "SWISSGROCERIES_LOG_LEVEL",
+          "description": "Logging verbosity: silent, info (default), or debug.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "SWISSGROCERIES_DISABLE_CACHE",
+          "description": "Set to 1 to bypass the in-memory HTTP response cache.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
