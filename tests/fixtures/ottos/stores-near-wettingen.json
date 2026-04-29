@@ -1,0 +1,3496 @@
+{
+   "boundEastLongitude" : 8.6171481,
+   "boundNorthLatitude" : 47.5846565,
+   "boundSouthLatitude" : 47.3473435,
+   "boundWestLongitude" : 8.020851900000002,
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 20,
+      "totalPages" : 2,
+      "totalResults" : 24
+   },
+   "selectableSpecialOpeningDays" : [ {
+      "comment" : "03.05.2026",
+      "formattedDate" : "03.05.26",
+      "name" : "Sonntagsverkauf"
+   }, {
+      "comment" : "10.05.2026",
+      "formattedDate" : "10.05.26",
+      "name" : "Sonntagsverkauf"
+   } ],
+   "selectableStoreDistances" : [ 10, 30, 50, 100 ],
+   "selectableStoreFeatures" : [ {
+      "key" : "default_pos",
+      "value" : "OTTO'S Filiale"
+   }, {
+      "key" : "FURNITURE",
+      "value" : "Möbel"
+   }, {
+      "key" : "textiles",
+      "value" : "Bekleidung"
+   }, {
+      "key" : "garden",
+      "value" : "Gartenmöbel"
+   }, {
+      "key" : "car_rental",
+      "value" : "Mietwagen"
+   }, {
+      "key" : "ramp_sale",
+      "value" : "Rampenverkauf"
+   }, {
+      "key" : "mini",
+      "value" : "OTTO'S mini"
+   }, {
+      "key" : "beauty",
+      "value" : "OTTO'S Beauty Shop"
+   }, {
+      "key" : "sport",
+      "value" : "OTTO'S Sport Outlet"
+   }, {
+      "key" : "skiService",
+      "value" : "Ski Service"
+   }, {
+      "key" : "bikeService",
+      "value" : "Velo Service"
+   }, {
+      "key" : "cars",
+      "value" : "OTTO'S Cars"
+   }, {
+      "key" : "bistro",
+      "value" : "OTTO'S Bistro"
+   }, {
+      "key" : "parfum",
+      "value" : "Parfum-Testständer"
+   } ],
+   "selectedStoreDistance" : 25,
+   "selectedStoreFeature" : "",
+   "sourceLatitude" : 47.466,
+   "sourceLongitude" : 8.319,
+   "stores" : [ {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Centerpassage, Landstrasse, 99, Wettingen, 5430",
+         "id" : "8796160851991",
+         "line1" : "Centerpassage, Landstrasse",
+         "line2" : "99",
+         "phone" : "0564274957",
+         "postalCode" : "5430",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Wettingen",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Wettingen",
+      "features" : {
+         "entry" : [ {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "0.7 Km",
+      "geoPoint" : {
+         "latitude" : 47.4660192,
+         "longitude" : 8.3276603
+      },
+      "name" : "0074",
+      "openingHours" : {
+         "code" : "0074-weekday-9.0-19.0-weekend-9.0-17.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-wettingen/pos/0074",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0074?lat=47.466&long=8.319"
+   }, {
+      "additionalOpeningInformation" : "Orientierungshilfe: ShoppiBasement",
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Shopping-Center, 4, Spreitenbach, 8957",
+         "id" : "8796162424855",
+         "line1" : "Shopping-Center",
+         "line2" : "4",
+         "phone" : "0562049043",
+         "postalCode" : "8957",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Spreitenbach",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S mini Spreitenbach Tivoli",
+      "features" : {
+         "entry" : [ {
+            "key" : "mini",
+            "value" : "OTTO'S mini"
+         } ]
+      },
+      "formattedDistance" : "6.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.4208605,
+         "longitude" : 8.3688118
+      },
+      "name" : "0116",
+      "openingHours" : {
+         "code" : "0116-weekday-9.0-20.0-weekend-8.0-20.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-mini-spreitenbach-tivoli/pos/0116",
+      "storeFeatures" : [ {
+         "code" : "mini",
+         "name" : "OTTO'S mini",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Überraschend. Kompakt. Günstig."
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0116?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Riedstrasse, 5, Dietikon, 8953",
+         "id" : "8796159049751",
+         "line1" : "Riedstrasse",
+         "line2" : "5",
+         "phone" : "0447420040",
+         "postalCode" : "8953",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Dietikon",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Dietikon",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "7.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.4206683,
+         "longitude" : 8.3940368
+      },
+      "name" : "0016",
+      "openingHours" : {
+         "code" : "0016-weekday-9.0-20.0-weekend-9.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-dietikon/pos/0016",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0016?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Neumarktplatz, 4, Brugg, 5200",
+         "id" : "8796161802263",
+         "line1" : "Neumarktplatz",
+         "line2" : "4",
+         "phone" : "0564411222",
+         "postalCode" : "5200",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Brugg",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Brugg",
+      "features" : {
+         "entry" : [ {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "8.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.4830625,
+         "longitude" : 8.2076671
+      },
+      "name" : "0114",
+      "openingHours" : {
+         "code" : "0114-weekday-9.0-18.5-weekend-9.0-17.0-friday-9.0-20.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-brugg/pos/0114",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "18:30",
+            "hour" : 6,
+            "meridiemIndicator" : "PM",
+            "minute" : 30
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0114?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Zürcherstrasse, 146, Oberengstringen, 8102",
+         "id" : "8882666110999",
+         "line1" : "Zürcherstrasse",
+         "line2" : "146",
+         "phone" : "043 819 04 60",
+         "postalCode" : "8102",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Oberengstringen",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S mini Oberengstringen",
+      "features" : {
+         "entry" : [ {
+            "key" : "mini",
+            "value" : "OTTO'S mini"
+         } ]
+      },
+      "formattedDistance" : "12.1 Km",
+      "geoPoint" : {
+         "latitude" : 47.411168,
+         "longitude" : 8.4570352
+      },
+      "name" : "0124",
+      "openingHours" : {
+         "code" : "0124-weekday-9.0-18.5-weekend-9.0-17.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-mini-oberengstringen/pos/0124",
+      "storeFeatures" : [ {
+         "code" : "mini",
+         "name" : "OTTO'S mini",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Überraschend. Kompakt. Günstig."
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "18:30",
+            "hour" : 6,
+            "meridiemIndicator" : "PM",
+            "minute" : 30
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0124?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Zufikerstrasse, 3, Bremgarten, 5620",
+         "id" : "8796161212439",
+         "line1" : "Zufikerstrasse",
+         "line2" : "3",
+         "phone" : "0566400905",
+         "postalCode" : "5620",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Bremgarten",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Bremgarten",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "12.9 Km",
+      "geoPoint" : {
+         "latitude" : 47.3523353,
+         "longitude" : 8.350559
+      },
+      "name" : "0084",
+      "openingHours" : {
+         "code" : "0084-weekday-8.5-19.0-weekend-8.0-17.0-friday-8.5-20.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 30
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 30
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 30
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 30
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 30
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-bremgarten/pos/0084",
+      "storeFeatures" : [ {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      }, {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "08:30",
+            "hour" : 8,
+            "meridiemIndicator" : "AM",
+            "minute" : 30
+         }
+      },
+      "url" : "/store/0084?lat=47.466&long=8.319"
+   }, {
+      "additionalOpeningInformation" : "<p>Grosse Sonderausstellung für Gartenmöbel in der Filiale</p>",
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Mandachstrasse, 50, Niederhasli, 8155",
+         "id" : "8796160753687",
+         "line1" : "Mandachstrasse",
+         "line2" : "50",
+         "phone" : "0448503960",
+         "postalCode" : "8155",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Niederhasli",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Niederhasli",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "12.9 Km",
+      "geoPoint" : {
+         "latitude" : 47.4795575,
+         "longitude" : 8.4891396
+      },
+      "name" : "0070",
+      "openingHours" : {
+         "code" : "0070-weekday-9.0-19.0-weekend-9.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-niederhasli/pos/0070",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0070?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Aarestrasse, 2a, Döttingen, 5312",
+         "id" : "8796160917527",
+         "line1" : "Aarestrasse",
+         "line2" : "2a",
+         "phone" : "0562500180",
+         "postalCode" : "5312",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Döttingen",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Döttingen",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "12.9 Km",
+      "geoPoint" : {
+         "latitude" : 47.573623,
+         "longitude" : 8.2543073
+      },
+      "name" : "0075",
+      "openingHours" : {
+         "code" : "0075-weekday-9.0-18.5-weekend-9.0-17.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-doettingen/pos/0075",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "18:30",
+            "hour" : 6,
+            "meridiemIndicator" : "PM",
+            "minute" : 30
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0075?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Wagistrasse, 20, Schlieren, 8952",
+         "id" : "8796161769495",
+         "line1" : "Wagistrasse",
+         "line2" : "20",
+         "phone" : "0447302537",
+         "postalCode" : "8952",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Schlieren",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Schlieren",
+      "features" : {
+         "entry" : [ {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "13 Km",
+      "geoPoint" : {
+         "latitude" : 47.398069,
+         "longitude" : 8.4598476
+      },
+      "name" : "0113",
+      "openingHours" : {
+         "code" : "0113-weekday-9.0-20.0-weekend-9.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "services" : "<ul>\n\t<li>157 grosszügige Parkplätze</li>\n</ul>\n",
+      "storeDetailUrl" : "/ottos-schlieren/pos/0113",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0113?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Bremgarterstrasse, 48, Wohlen, 5610",
+         "id" : "8943712993303",
+         "line1" : "Bremgarterstrasse",
+         "line2" : "48",
+         "phone" : "056 621 12 12",
+         "postalCode" : "5610",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Wohlen",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S mini Wohlen",
+      "features" : {
+         "entry" : [ {
+            "key" : "mini",
+            "value" : "OTTO'S mini"
+         } ]
+      },
+      "formattedDistance" : "13.4 Km",
+      "geoPoint" : {
+         "latitude" : 47.3473435,
+         "longitude" : 8.2900121
+      },
+      "name" : "0135",
+      "openingHours" : {
+         "code" : "0135-weekday-9.0-18.5-weekend-9.0-17.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-mini-wohlen/pos/0135",
+      "storeFeatures" : [ {
+         "code" : "mini",
+         "name" : "OTTO'S mini",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Überraschend. Kompakt. Günstig."
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "18:30",
+            "hour" : 6,
+            "meridiemIndicator" : "PM",
+            "minute" : 30
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0135?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Solidapark, Badenerstrasse, 650, Zürich, 8048",
+         "id" : "8796161409047",
+         "line1" : "Solidapark, Badenerstrasse",
+         "line2" : "650",
+         "phone" : "0444326043",
+         "postalCode" : "8048",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Zürich",
+      "features" : {
+         "entry" : [ {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "15.5 Km",
+      "geoPoint" : {
+         "latitude" : 47.3875519,
+         "longitude" : 8.4890246
+      },
+      "name" : "0088",
+      "openingHours" : {
+         "code" : "0088-weekday-8.0-20.0-weekend-8.0-20.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-zuerich/pos/0088",
+      "storeFeatures" : [ {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      }, {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "08:00",
+            "hour" : 8,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0088?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Grabenstrasse, 2, Bachenbülach, 8184",
+         "id" : "8796160720919",
+         "line1" : "Grabenstrasse",
+         "line2" : "2",
+         "phone" : "0448623470",
+         "postalCode" : "8184",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Bachenbülach",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Bachenbülach",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "17.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.5044312,
+         "longitude" : 8.5416066
+      },
+      "name" : "0069",
+      "openingHours" : {
+         "code" : "0069-weekday-9.0-20.0-weekend-8.0-18.0",
+         "specialDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "comment" : "10.05.2026",
+            "date" : "2026-05-10T00:00:00+0000",
+            "formattedDate" : "10.05.26",
+            "name" : "Sonntagsverkauf"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-bachenbuelach/pos/0069",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0069?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Hofwiesenstr., 350-354, Zürich, 8050",
+         "id" : "8796161998871",
+         "line1" : "Hofwiesenstr.",
+         "line2" : "350-354",
+         "phone" : "0443171510",
+         "postalCode" : "8050",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Beauty Shop Zürich",
+      "features" : {
+         "entry" : [ {
+            "key" : "beauty",
+            "value" : "OTTO'S Beauty Shop"
+         } ]
+      },
+      "formattedDistance" : "18 Km",
+      "geoPoint" : {
+         "latitude" : 47.4105681,
+         "longitude" : 8.542987
+      },
+      "name" : "0253",
+      "openingHours" : {
+         "code" : "0253-weekday-9.0-20.0-weekend-9.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-beauty-shop-zuerich/pos/0253",
+      "storeFeatures" : [ {
+         "code" : "beauty",
+         "name" : "OTTO'S Beauty Shop",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Beauty- und Pflegeprodukte"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0253?lat=47.466&long=8.319"
+   }, {
+      "additionalOpeningInformation" : "<p><strong>Dauerhaft geschlossen</strong></p>",
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Friesstrasse, 34, Zürich, 8050",
+         "id" : "8886106783767",
+         "line1" : "Friesstrasse",
+         "line2" : "34",
+         "phone" : "043 443 99 51",
+         "postalCode" : "8050",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "description" : "Aufgrund eines Brandes in der Nachbarschaft vorübergehend geschlossen.",
+      "displayName" : "OTTO'S mini Zürich-Oerlikon",
+      "features" : {
+         "entry" : [ {
+            "key" : "mini",
+            "value" : "OTTO'S mini"
+         } ]
+      },
+      "formattedDistance" : "18 Km",
+      "geoPoint" : {
+         "latitude" : 47.415987,
+         "longitude" : 8.546582
+      },
+      "name" : "0125",
+      "storeDetailUrl" : "/ottos-mini-zuerich-oerlikon/pos/0125",
+      "storeFeatures" : [ {
+         "code" : "mini",
+         "name" : "OTTO'S mini",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Überraschend. Kompakt. Günstig."
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : true
+      },
+      "url" : "/store/0125?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Löwenstrasse, 30, Zürich, 8001",
+         "id" : "9050700414999",
+         "line1" : "Löwenstrasse",
+         "line2" : "30",
+         "phone" : "044 291 00 12",
+         "postalCode" : "8001",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Beauty Shop Zürich",
+      "features" : {
+         "entry" : [ {
+            "key" : "beauty",
+            "value" : "OTTO'S Beauty Shop"
+         } ]
+      },
+      "formattedDistance" : "19.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.3745742,
+         "longitude" : 8.5361646
+      },
+      "name" : "0261",
+      "openingHours" : {
+         "code" : "0261-weekday-10.0-19.0-weekend-10.0-19.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-beauty-shop-zuerich/pos/0261",
+      "storeFeatures" : [ {
+         "code" : "beauty",
+         "name" : "OTTO'S Beauty Shop",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Beauty- und Pflegeprodukte"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "10:00",
+            "hour" : 10,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0261?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Schaffhauserstrasse, 146, Kloten, 8302",
+         "id" : "8796161638423",
+         "line1" : "Schaffhauserstrasse",
+         "line2" : "146",
+         "phone" : "044 651 11 05",
+         "postalCode" : "8302",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Kloten",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Kloten",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "19.8 Km",
+      "geoPoint" : {
+         "latitude" : 47.4531457,
+         "longitude" : 8.5809846
+      },
+      "name" : "0096",
+      "openingHours" : {
+         "code" : "0096-weekday-9.0-19.0-weekend-9.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-kloten/pos/0096",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0096?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Fabrikweg, 16, Buchs, 5033",
+         "id" : "8796159606807",
+         "line1" : "Fabrikweg",
+         "line2" : "16",
+         "phone" : "0628225388",
+         "postalCode" : "5033",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Buchs",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Buchs",
+      "features" : {
+         "entry" : [ {
+            "key" : "car_rental",
+            "value" : "Mietwagen"
+         }, {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "FURNITURE",
+            "value" : "Möbel"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "20 Km",
+      "geoPoint" : {
+         "latitude" : 47.3870929,
+         "longitude" : 8.0814772
+      },
+      "name" : "0035",
+      "openingHours" : {
+         "code" : "0035-weekday-9.0-19.0-weekend-8.5-18.0-thursday-9.0-20.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 30
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-buchs/pos/0035",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "FURNITURE",
+         "name" : "Möbel",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Möbelverkauf"
+      }, {
+         "code" : "car_rental",
+         "name" : "Mietwagen",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "OTTO'S Mietwagen"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0035?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Limmatquai, 22, Zürich, 8001",
+         "id" : "8796161966103",
+         "line1" : "Limmatquai",
+         "line2" : "22",
+         "phone" : "0432437655",
+         "postalCode" : "8001",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Beauty Shop Zürich",
+      "features" : {
+         "entry" : [ {
+            "key" : "beauty",
+            "value" : "OTTO'S Beauty Shop"
+         } ]
+      },
+      "formattedDistance" : "20.1 Km",
+      "geoPoint" : {
+         "latitude" : 47.3694815,
+         "longitude" : 8.5438373
+      },
+      "name" : "0254",
+      "openingHours" : {
+         "code" : "0254-weekday-10.0-19.0-weekend-10.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-beauty-shop-zuerich/pos/0254",
+      "storeFeatures" : [ {
+         "code" : "beauty",
+         "name" : "OTTO'S Beauty Shop",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Beauty- und Pflegeprodukte"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "10:00",
+            "hour" : 10,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0254?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Widengasse, 21, Frick, 5070",
+         "id" : "8796159574039",
+         "line1" : "Widengasse",
+         "line2" : "21",
+         "phone" : "0628715565",
+         "postalCode" : "5070",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Frick",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Frick",
+      "features" : {
+         "entry" : [ {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "22.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.506787,
+         "longitude" : 8.0254113
+      },
+      "name" : "0034",
+      "openingHours" : {
+         "code" : "0034-weekday-9.0-19.0-weekend-8.0-17.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-frick/pos/0034",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "19:00",
+            "hour" : 7,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0034?lat=47.466&long=8.319"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "Industriestrasse, 32, Dietlikon, 8305",
+         "id" : "8796161540119",
+         "line1" : "Industriestrasse",
+         "line2" : "32",
+         "phone" : "0448331303",
+         "postalCode" : "8305",
+         "saveToAddressBook" : false,
+         "shippingAddress" : false,
+         "town" : "Dietlikon",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "OTTO'S Dietlikon",
+      "features" : {
+         "entry" : [ {
+            "key" : "textiles",
+            "value" : "Bekleidung"
+         }, {
+            "key" : "default_pos",
+            "value" : "OTTO'S Filiale"
+         } ]
+      },
+      "formattedDistance" : "23.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.4123369,
+         "longitude" : 8.6171481
+      },
+      "name" : "0094",
+      "openingHours" : {
+         "code" : "0094-weekday-9.0-20.0-weekend-9.0-18.0",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Monday",
+            "weekDayDisplay" : "Montag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Tuesday",
+            "weekDayDisplay" : "Dienstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Wednesday",
+            "weekDayDisplay" : "Mittwoch"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Thursday",
+            "weekDayDisplay" : "Donnerstag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Friday",
+            "weekDayDisplay" : "Freitag"
+         }, {
+            "closed" : false,
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "meridiemIndicator" : "PM",
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "meridiemIndicator" : "AM",
+               "minute" : 0
+            },
+            "weekDay" : "Saturday",
+            "weekDayDisplay" : "Samstag"
+         }, {
+            "closed" : true,
+            "weekDay" : "Sunday",
+            "weekDayDisplay" : "Sonntag"
+         } ]
+      },
+      "storeDetailUrl" : "/ottos-dietlikon/pos/0094",
+      "storeFeatures" : [ {
+         "code" : "default_pos",
+         "name" : "OTTO'S Filiale",
+         "showAsFilter" : true,
+         "showOnDetailPage" : false,
+         "showOnOverviewPage" : false,
+         "tooltip" : "Riesenauswahl. Immer. Günstig"
+      }, {
+         "code" : "textiles",
+         "name" : "Bekleidung",
+         "showAsFilter" : true,
+         "showOnDetailPage" : true,
+         "showOnOverviewPage" : true,
+         "tooltip" : "Bekleidung & Schuhe für Kinder, Jugendliche, Damen & Herren"
+      } ],
+      "storeImages" : [ ],
+      "todaySchedule" : {
+         "closed" : false,
+         "closingTime" : {
+            "formattedHour" : "20:00",
+            "hour" : 8,
+            "meridiemIndicator" : "PM",
+            "minute" : 0
+         },
+         "openingTime" : {
+            "formattedHour" : "09:00",
+            "hour" : 9,
+            "meridiemIndicator" : "AM",
+            "minute" : 0
+         }
+      },
+      "url" : "/store/0094?lat=47.466&long=8.319"
+   } ]
+}

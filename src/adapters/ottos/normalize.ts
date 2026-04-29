@@ -1,4 +1,6 @@
-import type { NormalizedProduct, NormalizedPromotion, Unit } from '../types.js';
+import type {
+  NormalizedProduct, NormalizedPromotion, NormalizedStore, StockResult, WeekHours, Unit,
+} from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
 import { deriveOttosTags } from './tags.js';
@@ -196,5 +198,89 @@ export function normalizePromotion(raw: OttosProductRaw): NormalizedPromotion {
     description: regular !== undefined && current !== undefined && regular > current
       ? `Statt CHF ${regular.toFixed(2)}`
       : undefined,
+  };
+}
+
+interface OttosOpeningTime {
+  formattedHour?: string;
+  hour?: number;
+  minute?: number;
+  meridiemIndicator?: string;
+}
+
+interface OttosWeekDayOpening {
+  closed?: boolean;
+  weekDay?: string;
+  openingTime?: OttosOpeningTime;
+  closingTime?: OttosOpeningTime;
+}
+
+interface OttosAddressRaw {
+  line1?: string;
+  line2?: string;
+  postalCode?: string;
+  town?: string;
+}
+
+export interface OttosStoreRaw {
+  name?: string;            // store ID, e.g. "0074"
+  displayName?: string;     // human label, e.g. "OTTO'S Wettingen"
+  formattedDistance?: string;
+  geoPoint?: { latitude?: number; longitude?: number };
+  address?: OttosAddressRaw;
+  openingHours?: { weekDayOpeningList?: OttosWeekDayOpening[] };
+  todaySchedule?: OttosWeekDayOpening;
+  stockInfo?: { stockLevel?: number; stockLevelStatus?: string };
+}
+
+const WEEKDAY_KEY: Record<string, keyof WeekHours> = {
+  monday: 'mon', tuesday: 'tue', wednesday: 'wed', thursday: 'thu',
+  friday: 'fri', saturday: 'sat', sunday: 'sun',
+};
+
+function formatHours(o: OttosWeekDayOpening): string | undefined {
+  if (o.closed) return 'closed';
+  const open = o.openingTime?.formattedHour;
+  const close = o.closingTime?.formattedHour;
+  if (!open || !close) return undefined;
+  return `${open}-${close}`;
+}
+
+export function normalizeStore(raw: OttosStoreRaw): NormalizedStore {
+  // Address line2 in Otto's data is typically a house number ("99").
+  // Concatenate when present rather than dropping it.
+  const street = [raw.address?.line1, raw.address?.line2].filter(Boolean).join(' ').trim();
+
+  const hours: WeekHours = {};
+  for (const day of raw.openingHours?.weekDayOpeningList ?? []) {
+    const key = day.weekDay && WEEKDAY_KEY[day.weekDay.toLowerCase()];
+    if (!key) continue;
+    const formatted = formatHours(day);
+    if (formatted) hours[key] = formatted;
+  }
+
+  return {
+    chain: 'ottos',
+    id: raw.name ?? '',
+    name: raw.displayName ?? raw.name ?? '',
+    address: {
+      street,
+      zip: raw.address?.postalCode ?? '',
+      city: raw.address?.town ?? '',
+    },
+    location: {
+      lat: raw.geoPoint?.latitude ?? 0,
+      lng: raw.geoPoint?.longitude ?? 0,
+    },
+    hours: Object.keys(hours).length ? hours : undefined,
+  };
+}
+
+export function normalizeStockResult(raw: OttosStoreRaw): StockResult {
+  const status = raw.stockInfo?.stockLevelStatus ?? 'outOfStock';
+  return {
+    store: normalizeStore(raw),
+    inStock: status === 'inStock' || status === 'lowStock',
+    quantity: typeof raw.stockInfo?.stockLevel === 'number' ? raw.stockInfo.stockLevel : undefined,
   };
 }

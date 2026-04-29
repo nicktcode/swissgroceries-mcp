@@ -60,3 +60,64 @@ export const OttosSearchResponseSchema = z.object({
   }).passthrough().optional(),
   freeTextSearch: z.string().optional(),
 }).passthrough();
+
+const OttosAddressSchema = z.object({
+  line1: z.string().optional(),
+  line2: z.string().optional(),
+  postalCode: z.string().optional(),
+  town: z.string().optional(),
+  phone: z.string().optional(),
+  country: z.object({ isocode: z.string().optional() }).passthrough().optional(),
+}).passthrough();
+
+const OttosOpeningTimeSchema = z.object({
+  formattedHour: z.string().optional(),
+  hour: z.number().optional(),
+  minute: z.number().optional(),
+  meridiemIndicator: z.string().optional(),
+}).passthrough();
+
+const OttosWeekDayOpeningSchema = z.object({
+  closed: z.boolean().optional(),
+  weekDay: z.string().optional(),
+  weekDayDisplay: z.string().optional(),
+  openingTime: OttosOpeningTimeSchema.optional(),
+  closingTime: OttosOpeningTimeSchema.optional(),
+}).passthrough();
+
+const OttosOpeningHoursSchema = z.object({
+  weekDayOpeningList: z.array(OttosWeekDayOpeningSchema).optional(),
+}).passthrough();
+
+const OttosStoreSchema = z.object({
+  name: z.string().optional(),
+  displayName: z.string().optional(),
+  formattedDistance: z.string().optional(),
+  geoPoint: z.object({
+    latitude: z.number().optional(),
+    longitude: z.number().optional(),
+  }).passthrough().optional(),
+  address: OttosAddressSchema.optional(),
+  openingHours: OttosOpeningHoursSchema.optional(),
+  todaySchedule: OttosWeekDayOpeningSchema.optional(),
+  stockInfo: z.object({
+    stockLevel: z.number().optional(),
+    stockLevelStatus: z.string().optional(),
+    isValueRounded: z.boolean().optional(),
+  }).passthrough().optional(),
+}).passthrough();
+
+export const OttosStoreSearchResponseSchema = z.object({
+  stores: z.array(OttosStoreSchema).optional(),
+  pagination: z.object({
+    totalResults: z.number().optional(),
+  }).passthrough().optional(),
+}).passthrough();
+
+export const OttosStockResponseSchema = z.object({
+  stores: z.array(OttosStoreSchema).optional(),
+  product: z.unknown().optional(),
+  pagination: z.object({
+    totalResults: z.number().optional(),
+  }).passthrough().optional(),
+}).passthrough();

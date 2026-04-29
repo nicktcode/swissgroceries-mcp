@@ -1,9 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import {
-  normalizeProduct, normalizePromotion, parseOttosSize, stripHighlight, isGroceryProduct,
+  normalizeProduct, normalizePromotion, normalizeStore, normalizeStockResult,
+  parseOttosSize, stripHighlight, isGroceryProduct,
 } from '../../src/adapters/ottos/normalize.js';
-import { OttosProductSchema, OttosSearchResponseSchema } from '../../src/adapters/ottos/schemas.js';
+import {
+  OttosProductSchema, OttosSearchResponseSchema,
+  OttosStoreSearchResponseSchema, OttosStockResponseSchema,
+} from '../../src/adapters/ottos/schemas.js';
 
 describe('ottos parseOttosSize', () => {
   it('parses 1kg', () => expect(parseOttosSize('1kg')).toEqual({ value: 1, unit: 'kg' }));
@@ -182,6 +186,66 @@ describe('ottos fixture', () => {
     expect(p.chain).toBe('ottos');
     expect(typeof p.price.current).toBe('number');
     expect(p.id).not.toBe('');
+  });
+
+  it('parses live stores-near-wettingen fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/ottos/stores-near-wettingen.json', 'utf8')); }
+    catch { return; }
+    const validated = OttosStoreSearchResponseSchema.safeParse(raw);
+    expect(validated.success).toBe(true);
+    if (!validated.success) return;
+    const stores = (validated.data.stores ?? []) as any[];
+    expect(stores.length).toBeGreaterThan(0);
+    const wettingen = stores.find((s) => s.address?.postalCode === '5430');
+    expect(wettingen).toBeDefined();
+    if (!wettingen) return;
+    const s = normalizeStore(wettingen);
+    expect(s.chain).toBe('ottos');
+    expect(s.address.zip).toBe('5430');
+    expect(s.address.city).toBe('Wettingen');
+    expect(s.location.lat).toBeGreaterThan(47);
+    expect(s.location.lat).toBeLessThan(48);
+    expect(s.hours?.mon).toBeDefined();
+  });
+
+  it('parses live per-store stock fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/ottos/stock-350117-wettingen.json', 'utf8')); }
+    catch { return; }
+    const validated = OttosStockResponseSchema.safeParse(raw);
+    expect(validated.success).toBe(true);
+    if (!validated.success) return;
+    const stores = (validated.data.stores ?? []) as any[];
+    expect(stores.length).toBeGreaterThan(0);
+    // Wettingen store should be in stock for the captured product (350117 Elmex Sensitive Professional 2-pack)
+    const wettingen = stores.find((s) => s.address?.postalCode === '5430');
+    expect(wettingen).toBeDefined();
+    if (!wettingen) return;
+    const result = normalizeStockResult(wettingen);
+    expect(result.store.chain).toBe('ottos');
+    expect(typeof result.inStock).toBe('boolean');
+    expect(result.quantity).toBeGreaterThan(0);
+  });
+
+  it('normalizeStockResult marks outOfStock as inStock=false', () => {
+    const r = normalizeStockResult({
+      name: '0099', displayName: 'OTTO\'S Test',
+      address: { postalCode: '8000', town: 'Zürich' },
+      stockInfo: { stockLevelStatus: 'outOfStock' },
+    });
+    expect(r.inStock).toBe(false);
+    expect(r.quantity).toBeUndefined();
+  });
+
+  it('normalizeStockResult treats lowStock as inStock=true', () => {
+    const r = normalizeStockResult({
+      name: '0099', displayName: 'OTTO\'S Test',
+      address: { postalCode: '8000', town: 'Zürich' },
+      stockInfo: { stockLevelStatus: 'lowStock', stockLevel: 2 },
+    });
+    expect(r.inStock).toBe(true);
+    expect(r.quantity).toBe(2);
   });
 
   it('parses fixture with rich productLabels objects (regression)', () => {

@@ -112,7 +112,7 @@ Each tool exposes rich JSON Schema with field-level descriptions, so the LLM kno
 | Lidl | Weekly leaflet only | Yes | No | None |
 | Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | None |
 | Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | None |
-| Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (Aktionen category) | No | None |
+| Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | None |
 
 ---
 

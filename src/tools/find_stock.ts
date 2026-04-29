@@ -4,7 +4,7 @@ import type { StockResult } from '../adapters/types.js';
 import { ToolError } from './errors.js';
 
 export const findStockSchema = z.object({
-  chain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl'])
+  chain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos'])
     .describe('The chain to query for stock. Only chains with perStoreStock capability are supported.'),
   productId: z.string().min(1)
     .describe('Chain-specific product ID to check stock for. Obtain via search_products or get_product.'),

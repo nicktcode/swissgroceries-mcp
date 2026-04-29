@@ -10,7 +10,7 @@ const TAG_VALUES = [
 export const searchProductsSchema = z.object({
   query: z.string().min(1)
     .describe('Search term in any language, e.g. "Milch", "pâtes", "Bier". At least 1 character.'),
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl']))
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos']))
     .optional()
     .describe('Restrict search to specific chains. Omit to search all configured chains in parallel.'),
   storeIds: z.array(z.string())

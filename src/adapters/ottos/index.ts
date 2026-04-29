@@ -1,12 +1,18 @@
 import type {
   StoreAdapter, AdapterResult, AdapterError,
   NormalizedProduct, NormalizedStore, NormalizedPromotion,
+  StockResult, GeoPoint,
   SearchQuery, StoreQuery, PromotionQuery,
 } from '../types.js';
 import { ottosFetch } from './client.js';
-import { normalizeProduct, normalizePromotion, isGroceryProduct } from './normalize.js';
+import {
+  normalizeProduct, normalizePromotion, normalizeStore, normalizeStockResult, isGroceryProduct,
+} from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
-import { OttosSearchResponseSchema } from './schemas.js';
+import { haversineKm } from '../../util/haversine.js';
+import {
+  OttosSearchResponseSchema, OttosStoreSearchResponseSchema, OttosStockResponseSchema,
+} from './schemas.js';
 
 function classify(e: unknown): AdapterError {
   const msg = e instanceof Error ? e.message : String(e);
@@ -33,9 +39,9 @@ export class OttosAdapter implements StoreAdapter {
   readonly capabilities = {
     productSearch: true,
     productDetail: true,
-    storeSearch: false,        // Otto's has ~110 stores; not exposed in this adapter
+    storeSearch: true,
     promotions: true,
-    perStoreStock: false,
+    perStoreStock: true,
     perStorePricing: false,
   };
 
@@ -80,8 +86,57 @@ export class OttosAdapter implements StoreAdapter {
     }
   }
 
-  async searchStores(_q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
-    return ok([]);
+  async searchStores(q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
+    try {
+      const radius = q.radiusKm ?? 10;
+      const r = await ottosFetch('/stores', {
+        latitude: q.near.lat,
+        longitude: q.near.lng,
+        radius,
+        // fields=DEFAULT only returns todaySchedule; FULL gives the full
+        // weekDayOpeningList we need for normalizeStore's hours map.
+        fields: 'FULL',
+      });
+      const parsed = OttosStoreSearchResponseSchema.safeParse(r);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) });
+      }
+      const stores = (parsed.data.stores ?? []).map(normalizeStore);
+      const filtered = stores.filter((s) => haversineKm(q.near, s.location) <= radius);
+      const limited = q.limit ? filtered.slice(0, q.limit) : filtered;
+      return ok(limited);
+    } catch (e) {
+      return err(classify(e));
+    }
+  }
+
+  async findStoresWithStock(productId: string, near?: GeoPoint): Promise<AdapterResult<StockResult[]>> {
+    try {
+      // OCC requires lat/lng on this endpoint to populate distance + ordering.
+      // Fall back to Zürich centre when caller does not pass coordinates.
+      const lat = near?.lat ?? 47.3769;
+      const lng = near?.lng ?? 8.5417;
+      const r = await ottosFetch(`/products/${encodeURIComponent(productId)}/stock`, {
+        latitude: lat,
+        longitude: lng,
+        onlyOpen: 'false',
+        hideOutOfStock: 'false',
+        currentPage: 0,
+        lang: 'de',
+        curr: 'CHF',
+        fields: 'DEFAULT,stores(DEFAULT,features)',
+      });
+      const parsed = OttosStockResponseSchema.safeParse(r);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) });
+      }
+      const list = (parsed.data.stores ?? []).map(normalizeStockResult);
+      return ok(list);
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : '';
+      if (/404/.test(msg)) return err({ code: 'not_found' });
+      return err(classify(e));
+    }
   }
 
   async getPromotions(q: PromotionQuery): Promise<AdapterResult<NormalizedPromotion[]>> {
