@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
+import { readFileSync } from 'node:fs';
 import { parseSize, normalizeProduct, normalizePromotion } from '../../src/adapters/denner/normalize.js';
+import { DennerProductSchema, DennerContentResponseSchema } from '../../src/adapters/denner/schemas.js';
 
 describe('denner parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -91,5 +93,40 @@ describe('denner normalizePromotion', () => {
     };
     const p = normalizePromotion(raw as any);
     expect(p.price?.current).toBeCloseTo(3.5);
+  });
+});
+
+describe('denner schemas (zod validation)', () => {
+  it('DennerProductSchema accepts a minimal valid product', () => {
+    const result = DennerProductSchema.safeParse({ id: 1, title: { de: 'Milch' }, priceDiscount: 1.5 });
+    expect(result.success).toBe(true);
+  });
+
+  it('DennerProductSchema accepts string title', () => {
+    const result = DennerProductSchema.safeParse({ id: 'abc', title: 'Wasser', priceDiscount: 0.8 });
+    expect(result.success).toBe(true);
+  });
+
+  it('DennerProductSchema passes through unknown fields', () => {
+    const result = DennerProductSchema.safeParse({ id: 1, unknownField: 'extra' });
+    expect(result.success).toBe(true);
+    if (result.success) expect((result.data as any).unknownField).toBe('extra');
+  });
+
+  it('DennerContentResponseSchema accepts empty products array', () => {
+    const result = DennerContentResponseSchema.safeParse({ v: 1, products: [] });
+    expect(result.success).toBe(true);
+  });
+
+  it('DennerContentResponseSchema validates the content-full fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/denner/content-full.json', 'utf8')); }
+    catch { return; }
+    if (!raw) return;
+    const result = DennerContentResponseSchema.safeParse(raw);
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect(Array.isArray(result.data.products)).toBe(true);
+    }
   });
 });

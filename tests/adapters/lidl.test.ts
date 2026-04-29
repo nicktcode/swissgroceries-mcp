@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
+import { readFileSync } from 'node:fs';
 import { parseSize, normalizeProduct, normalizeStore, normalizePromotion } from '../../src/adapters/lidl/normalize.js';
+import { LidlProductSchema, LidlCampaignSchema, LidlCampaignGroupsSchema } from '../../src/adapters/lidl/schemas.js';
 
 describe('lidl parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -108,5 +110,39 @@ describe('lidl normalizePromotion', () => {
     const promo = normalizePromotion(raw as any);
     expect(promo.productName).toBe('');
     expect(promo.chain).toBe('lidl');
+  });
+});
+
+describe('lidl schemas (zod validation)', () => {
+  it('LidlProductSchema accepts a minimal valid product', () => {
+    const result = LidlProductSchema.safeParse({ id: '1', title: 'Milch', mainPrice: { price: 1.5 } });
+    expect(result.success).toBe(true);
+  });
+
+  it('LidlProductSchema passes through unknown fields', () => {
+    const result = LidlProductSchema.safeParse({ id: '1', unknownField: 'extra' });
+    expect(result.success).toBe(true);
+    if (result.success) expect((result.data as any).unknownField).toBe('extra');
+  });
+
+  it('LidlCampaignSchema accepts a campaign with products', () => {
+    const result = LidlCampaignSchema.safeParse({
+      id: '10091030',
+      title: 'Dauerhaft günstiger',
+      products: [{ id: 'p1', title: 'Milch', mainPrice: { price: 1.5 } }],
+    });
+    expect(result.success).toBe(true);
+  });
+
+  it('LidlCampaignGroupsSchema validates the campaignGroups fixture', () => {
+    let raw: any;
+    try { raw = JSON.parse(readFileSync('tests/fixtures/lidl/campaignGroups.json', 'utf8')); }
+    catch { return; }
+    if (!raw) return;
+    const result = LidlCampaignGroupsSchema.safeParse(raw);
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect(Array.isArray(result.data.groups)).toBe(true);
+    }
   });
 });

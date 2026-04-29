@@ -94,7 +94,8 @@ export class MigrosAdapter implements StoreAdapter {
       // r = { productIds: number[], numberOfProducts: number, ... }
       const productIds: number[] = (r as any).productIds ?? [];
       if (productIds.length === 0) return ok([]);
-      const uids = productIds.slice(0, q.limit ?? 20).map(String);
+      const offset = q.offset ?? 0;
+      const uids = productIds.slice(offset, offset + (q.limit ?? 20)).map(String);
       const det = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids, language: q.language ?? 'de' } as any));
       // det = {"0": product, "1": product, ...}
       const parsed = MigrosProductDetailsResponseSchema.safeParse(det);

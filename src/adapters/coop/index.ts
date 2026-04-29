@@ -30,15 +30,19 @@ export class CoopAdapter implements StoreAdapter {
 
   async searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>> {
     try {
+      const pageSize = q.limit ?? 20;
+      const offset = q.offset ?? 0;
+      const currentPage = Math.floor(offset / pageSize);
       const r: any = await coopFetch(`/products/search/${encodeURIComponent(q.query)}`, {
-        query: { currentPage: 0, pageSize: q.limit ?? 20, query: 'availableOnline:false' },
+        query: { currentPage, pageSize, query: 'availableOnline:false' },
         language: q.language ?? 'de',
       });
       const parsed = CoopSearchResponseSchema.safeParse(r);
       if (!parsed.success) {
         return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) } as AdapterError);
       }
-      const list = (parsed.data.products ?? []) as any[];
+      const pageOffset = offset % pageSize;
+      const list = ((parsed.data.products ?? []) as any[]).slice(pageOffset);
       return ok(list.map(normalizeProduct));
     } catch (e) {
       return err(classify(e));

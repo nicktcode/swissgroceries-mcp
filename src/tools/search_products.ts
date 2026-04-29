@@ -31,6 +31,9 @@ export const searchProductsSchema = z.object({
   limit: z.number().int().positive().max(50)
     .optional()
     .describe('Maximum number of results per chain (1–50). Defaults to chain-specific limit.'),
+  offset: z.number().int().nonnegative().max(500)
+    .optional()
+    .describe('Skip the first N results per chain. Use with `limit` to paginate. Default 0.'),
 }).describe('Search for products across configured Swiss grocery chains by keyword, with optional price, size, and tag filters. Returns results grouped by chain.');
 
 export type SearchProductsInput = z.infer<typeof searchProductsSchema>;
@@ -57,6 +60,7 @@ export async function searchProductsHandler(
         maxPrice: input.filters?.maxPrice,
         sizeRange: input.filters?.sizeRange,
         limit: input.limit,
+        offset: input.offset,
       });
       if (r.ok) {
         byChain[a.chain] = r.data;

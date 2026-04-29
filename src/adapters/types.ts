@@ -101,6 +101,7 @@ export interface SearchQuery {
   maxPrice?: number;
   sizeRange?: { minMl?: number; maxMl?: number };
   limit?: number;
+  offset?: number;
   language?: 'de' | 'fr' | 'it' | 'en';
 }
 

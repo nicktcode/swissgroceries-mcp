@@ -1,7 +1,12 @@
 #!/usr/bin/env node
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
+import {
+  CallToolRequestSchema,
+  ListToolsRequestSchema,
+  ListResourcesRequestSchema,
+  ReadResourceRequestSchema,
+} from '@modelcontextprotocol/sdk/types.js';
 
 import { AdapterRegistry } from './adapters/registry.js';
 import { MigrosAdapter } from './adapters/migros/index.js';
@@ -110,7 +115,7 @@ const TOOLS = [
 export async function createServer(registry: AdapterRegistry = buildRegistry()) {
   const server = new Server(
     { name: 'swissgroceries-mcp', version: '0.1.0' },
-    { capabilities: { tools: {} } },
+    { capabilities: { tools: {}, resources: {} } },
   );
 
   server.setRequestHandler(ListToolsRequestSchema, async () => ({
@@ -120,6 +125,36 @@ export async function createServer(registry: AdapterRegistry = buildRegistry()) 
       inputSchema: zodToJsonSchema(t.schema),
     })),
   }));
+
+  server.setRequestHandler(ListResourcesRequestSchema, async () => ({
+    resources: [
+      {
+        uri: 'swissgroceries://chains',
+        name: 'Registered chains',
+        description: 'List of currently registered grocery-chain adapters and their capabilities (productSearch, productDetail, storeSearch, promotions, perStoreStock, perStorePricing).',
+        mimeType: 'application/json',
+      },
+    ],
+  }));
+
+  server.setRequestHandler(ReadResourceRequestSchema, async (req) => {
+    if (req.params.uri !== 'swissgroceries://chains') {
+      throw new Error(`Unknown resource: ${req.params.uri}`);
+    }
+    const chains = registry.list().map((a) => ({
+      chain: a.chain,
+      capabilities: a.capabilities,
+    }));
+    return {
+      contents: [
+        {
+          uri: 'swissgroceries://chains',
+          mimeType: 'application/json',
+          text: JSON.stringify({ chains }, null, 2),
+        },
+      ],
+    };
+  });
 
   server.setRequestHandler(CallToolRequestSchema, async (req) => {
     const tool = TOOLS.find((t) => t.name === req.params.name);

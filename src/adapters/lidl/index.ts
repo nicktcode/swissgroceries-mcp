@@ -7,8 +7,12 @@ import { lidlFetch } from './client.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
+import { LidlCampaignGroupsSchema, LidlCampaignSchema } from './schemas.js';
 
 function classify(e: unknown): AdapterError {
+  if (e instanceof Error && (e as any).code === 'schema_mismatch') {
+    return { code: 'schema_mismatch', sample: (e as any).sample ?? '' };
+  }
   const msg = e instanceof Error ? e.message : String(e);
   if (/429/.test(msg)) return { code: 'rate_limited' };
   if (/404/.test(msg)) return { code: 'not_found' };
@@ -40,16 +44,26 @@ export class LidlAdapter implements StoreAdapter {
     if (this.cache.campaigns && this.cache.expires && Date.now() < this.cache.expires) {
       return this.cache.campaigns;
     }
-    const groups = await lidlFetch('digital-leaflet.lidlplus.com', '/api/v1/CH/campaignGroups');
+    const rawGroups = await lidlFetch('digital-leaflet.lidlplus.com', '/api/v1/CH/campaignGroups');
+    const groupsParsed = LidlCampaignGroupsSchema.safeParse(rawGroups);
+    if (!groupsParsed.success) {
+      throw Object.assign(new Error('schema_mismatch'), {
+        code: 'schema_mismatch',
+        sample: JSON.stringify(rawGroups).slice(0, 500),
+      });
+    }
     // Real shape: { groups: [ { title, campaigns: [{id, title, ...}] } ] }
-    const campaignRefs: any[] = (groups.groups ?? []).flatMap((g: any) => g.campaigns ?? []);
+    const campaignRefs: any[] = (groupsParsed.data.groups ?? []).flatMap((g: any) => g.campaigns ?? []);
     const ids: string[] = campaignRefs.map((c: any) => c.id ?? c.campaignId).filter(Boolean);
-    const campaigns = await Promise.all(
+    const rawCampaigns = await Promise.all(
       ids.slice(0, 5).map((id) =>
         lidlFetch('digital-leaflet.lidlplus.com', `/api/v1/CH/campaigns/${id}`).catch(() => null),
       ),
     );
-    const validCampaigns = campaigns.filter(Boolean);
+    const validCampaigns = rawCampaigns.filter(Boolean).filter((raw) => {
+      const cp = LidlCampaignSchema.safeParse(raw);
+      return cp.success;
+    });
     this.cache = {
       campaigns: validCampaigns,
       // Real campaign shape: campaign.products (array of product objects)
@@ -63,9 +77,10 @@ export class LidlAdapter implements StoreAdapter {
     try {
       await this.loadCampaigns();
       const needle = q.query.toLowerCase();
+      const offset = q.offset ?? 0;
       const matches = (this.cache.products ?? [])
         .filter((p: any) => (p.title ?? '').toLowerCase().includes(needle))
-        .slice(0, q.limit ?? 20);
+        .slice(offset, offset + (q.limit ?? 20));
       return ok(matches.map(normalizeProduct));
     } catch (e) {
       return err(classify(e));
