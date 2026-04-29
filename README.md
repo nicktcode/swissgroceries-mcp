@@ -1,6 +1,14 @@
 # swissgroceries-mcp
 
-An MCP server that gives Claude real-time access to Swiss grocery chain catalogs — search products, compare prices across stores, see weekly promotions, and generate optimised multi-store shopping plans. Not affiliated with Migros, Coop, Aldi, Denner, or Lidl.
+An MCP server that gives Claude real-time access to Swiss grocery chain catalogs — search products, compare prices across stores, see weekly promotions, and generate optimised multi-store shopping plans.
+
+> **Disclaimer & spirit of the project**
+>
+> This is a personal fun project by [Nick Thommen](mailto:nick@thommen.it). It is **not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, or any other retailer**. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
+>
+> If you represent any of these stores and have concerns — about API usage, branding, scraping rate, or anything else — please **email nick@thommen.it** directly and we'll work it out. No need to escalate.
+>
+> **PRs welcome.** New chains, better matchers, smarter strategies, bug fixes, doc improvements — all encouraged. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What you can ask Claude
 

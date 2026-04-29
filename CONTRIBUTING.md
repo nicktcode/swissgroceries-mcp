@@ -1,6 +1,12 @@
 # Contributing
 
-Thanks for your interest. This is a personal research project, but issues and pull requests are welcome.
+Thanks for your interest. **This is a personal fun project** maintained by [Nick Thommen](mailto:nick@thommen.it). Issues and pull requests are very welcome — new chains, smarter matchers, bug fixes, doc improvements, anything that makes Swiss grocery shopping a bit smarter.
+
+## A note to the chains
+
+If you represent Migros, Coop, Aldi, Denner, Lidl, or any other Swiss retailer and have concerns about how the project uses your API, please email **nick@thommen.it** directly. We'll work it out — no formal process needed.
+
+## How to contribute
 
 ## Opening issues
 

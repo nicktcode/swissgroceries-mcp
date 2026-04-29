@@ -2,10 +2,10 @@
 
 ## Reporting
 
-This project is research/personal-use software. There is no formal security disclosure process.
+This is a personal fun project. There is no formal security disclosure process.
 
 - For non-sensitive bugs or broken endpoints, open a GitHub issue.
-- For sensitive issues that could affect upstream chain infrastructure, contact the maintainer privately before opening a public issue.
+- For sensitive issues — anything that could affect upstream chain infrastructure, or concerns from a chain (Migros, Coop, Aldi, Denner, Lidl) about API usage — email **nick@thommen.it** directly before opening a public issue.
 
 ## Threat model
 
