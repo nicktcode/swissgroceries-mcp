@@ -1,4 +1,4 @@
-export type Chain = 'migros' | 'coop' | 'aldi' | 'denner' | 'lidl';
+export type Chain = 'migros' | 'coop' | 'aldi' | 'denner' | 'lidl' | 'farmy' | 'volgshop';
 
 export type Unit = 'g' | 'kg' | 'ml' | 'l' | 'piece';
 

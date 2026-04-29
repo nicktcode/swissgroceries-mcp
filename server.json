@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.nicktcode/swissgroceries-mcp",
-  "description": "Swiss grocery search, promotions, and shopping plans across Migros, Coop, Aldi, Denner, Lidl.",
+  "description": "Swiss grocery search, promotions, and shopping plans across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop.",
   "repository": {
     "url": "https://github.com/nicktcode/swissgroceries-mcp",
     "source": "github"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@nicktcode/swissgroceries-mcp",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "transport": {
         "type": "stdio"
       },
