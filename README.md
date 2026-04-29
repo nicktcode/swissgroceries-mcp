@@ -12,7 +12,7 @@ An MCP server that gives Claude real-time access to Swiss grocery chain catalogs
 
 > **API stability**
 >
-> The Swiss grocery chain APIs used here are unofficial and were reverse-engineered from public iOS/Android app traffic. They can change shape, rate-limit policy, or simply break at any time. **The maintainer is not responsible for failures caused by upstream API changes.** When that happens (you'll see a `schema_mismatch`, `unavailable`, or `auth_expired` error from the affected adapter), please [open an issue](https://github.com/USER/swissgroceries-mcp/issues/new?labels=adapter-broken&template=adapter-broken.yml) with the raw response sample so the adapter can be updated.
+> The Swiss grocery chain APIs used here are unofficial and were reverse-engineered from public iOS/Android app traffic. They can change shape, rate-limit policy, or simply break at any time. **The maintainer is not responsible for failures caused by upstream API changes.** When that happens (you'll see a `schema_mismatch`, `unavailable`, or `auth_expired` error from the affected adapter), please [open an issue](https://github.com/nicktcode/swissgroceries-mcp/issues/new?labels=adapter-broken&template=adapter-broken.yml) with the raw response sample so the adapter can be updated.
 
 ## What you can ask Claude
 
@@ -54,7 +54,7 @@ claude mcp add swissgroceries -- npx -y swissgroceries-mcp
 
 ### Claude Desktop — .mcpb one-click (after v0.1.0 is published)
 
-Download `swissgroceries-mcp.mcpb` from the [Releases page](https://github.com/USER/swissgroceries-mcp/releases) and:
+Download `swissgroceries-mcp.mcpb` from the [Releases page](https://github.com/nicktcode/swissgroceries-mcp/releases) and:
 
 - macOS: double-click or drag onto the Claude Desktop app icon
 - Windows: Settings → Extensions → Advanced → Install Extension → select the file
@@ -63,7 +63,7 @@ Download `swissgroceries-mcp.mcpb` from the [Releases page](https://github.com/U
 
 ```bash
 node --version   # requires Node.js >=18
-git clone https://github.com/USER/swissgroceries-mcp
+git clone https://github.com/nicktcode/swissgroceries-mcp
 cd swissgroceries-mcp
 npm install
 npm run build

@@ -33,7 +33,7 @@ The Denner adapter accepts a bearer JWT via the `DENNER_JWT` environment variabl
 
 The grocery chain APIs used by this project are unofficial. They are reverse-engineered from iOS/Android app traffic. This means:
 
-- Endpoint URLs, request parameters, and response shapes can change at any time without notice. **The maintainer is not responsible for failures caused by upstream API changes.** When an adapter breaks you will typically see a `schema_mismatch`, `unavailable`, or `auth_expired` error code. Please [open an adapter-broken issue](https://github.com/USER/swissgroceries-mcp/issues/new?labels=adapter-broken&template=adapter-broken.yml) and include the raw response sample so the adapter can be updated quickly.
+- Endpoint URLs, request parameters, and response shapes can change at any time without notice. **The maintainer is not responsible for failures caused by upstream API changes.** When an adapter breaks you will typically see a `schema_mismatch`, `unavailable`, or `auth_expired` error code. Please [open an adapter-broken issue](https://github.com/nicktcode/swissgroceries-mcp/issues/new?labels=adapter-broken&template=adapter-broken.yml) and include the raw response sample so the adapter can be updated quickly.
 - Rate limiting and bot protection (e.g. DataDome on coop.ch) may block requests. This project mitigates the issue with realistic User-Agent headers and per-host rate limits, but continued access is not guaranteed.
 - Using these APIs may technically violate each chain's terms of service. Use at your own risk and do not use this project for commercial purposes or high-volume scraping.
 

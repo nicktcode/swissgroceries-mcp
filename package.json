@@ -4,14 +4,14 @@
   "description": "MCP server for Swiss grocery stores: Migros, Coop, Aldi, Denner, Lidl. Cross-store product search, promotions, and shopping-plan optimization.",
   "type": "module",
   "license": "MIT",
-  "author": "<your-name>",
+  "author": "Nick T",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-username>/swissgroceries-mcp.git"
+    "url": "git+https://github.com/nicktcode/swissgroceries-mcp.git"
   },
-  "homepage": "https://github.com/<your-username>/swissgroceries-mcp#readme",
+  "homepage": "https://github.com/nicktcode/swissgroceries-mcp#readme",
   "bugs": {
-    "url": "https://github.com/<your-username>/swissgroceries-mcp/issues"
+    "url": "https://github.com/nicktcode/swissgroceries-mcp/issues"
   },
   "keywords": [
     "mcp",
