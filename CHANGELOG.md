@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-04-29
+
+### Changed
+- README: project icon, shield badges (npm, CI, license, MCP), and clearer framing as a generic MCP server (works with Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code, custom clients).
+- npm package description updated to mention all supported MCP clients.
+
+### Fixed
+- Release workflow now tolerates re-tagging an already-published version (no longer reports false-failure on force-re-tag).
+
+## [0.1.0] - 2026-04-29
+
 ### Added
 - Address-string geocoding via OpenStreetMap Nominatim (rate-limited per their usage policy, cached 30 days)
 - Initial public release.
