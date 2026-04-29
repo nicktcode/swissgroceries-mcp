@@ -1,4 +1,18 @@
-# swissgroceries-mcp
+<p align="center">
+  <img src="assets/icon.png" alt="swissgroceries-mcp" width="180">
+</p>
+
+<h1 align="center">swissgroceries-mcp</h1>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@nicktcode/swissgroceries-mcp"><img src="https://img.shields.io/npm/v/@nicktcode/swissgroceries-mcp.svg?label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@nicktcode/swissgroceries-mcp"><img src="https://img.shields.io/npm/dm/@nicktcode/swissgroceries-mcp.svg" alt="npm downloads"></a>
+  <a href="https://github.com/nicktcode/swissgroceries-mcp/actions/workflows/ci.yml"><img src="https://github.com/nicktcode/swissgroceries-mcp/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/node/v/@nicktcode/swissgroceries-mcp" alt="Node"></a>
+  <a href="https://modelcontextprotocol.io/"><img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP compatible"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+</p>
 
 Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, and Lidl, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
 
