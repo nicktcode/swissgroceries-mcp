@@ -68,7 +68,9 @@ function stage() {
     author: { name: pkg.author ?? 'Unknown' },
     license: pkg.license ?? 'MIT',
     homepage: pkg.homepage,
-    repository: pkg.repository?.url,
+    repository: pkg.repository
+      ? { type: pkg.repository.type ?? 'git', url: pkg.repository.url }
+      : undefined,
     keywords: pkg.keywords,
     icon: 'icon.png',
     server: {

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-04-29
+
+### Fixed
+- `.mcpb` manifest `repository` field is now an object `{type, url}` as the manifest schema requires (was a bare string in 0.1.3, causing 'Failed to preview extension' in Claude Desktop).
+
 ## [0.1.3] - 2026-04-29
 
 ### Fixed
