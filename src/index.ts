@@ -16,6 +16,7 @@ import { getProductHandler, getProductSchema } from './tools/get_product.js';
 import { getPromotionsHandler, getPromotionsSchema } from './tools/get_promotions.js';
 import { findStockHandler, findStockSchema } from './tools/find_stock.js';
 import { planShoppingHandler, planShoppingSchema } from './tools/plan_shopping.js';
+import { healthCheckHandler, healthCheckSchema } from './tools/health_check.js';
 import { ToolError } from './tools/errors.js';
 import { logger } from './util/log.js';
 
@@ -86,6 +87,12 @@ const TOOLS = [
     ].join(' '),
     schema: findStockSchema,
     handler: findStockHandler,
+  },
+  {
+    name: 'health_check',
+    description: 'Probe each registered chain adapter with a trivial query and report status, latency, and capability flags. Use this when a chain seems missing from results or when debugging adapter problems.',
+    schema: healthCheckSchema,
+    handler: healthCheckHandler,
   },
   {
     name: 'plan_shopping',

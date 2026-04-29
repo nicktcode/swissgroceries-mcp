@@ -3,6 +3,7 @@ import { buildRegistry } from '../../src/index.js';
 import { searchProductsHandler } from '../../src/tools/search_products.js';
 import { findStoresHandler } from '../../src/tools/find_stores.js';
 import { planShoppingHandler } from '../../src/tools/plan_shopping.js';
+import { getPromotionsHandler } from '../../src/tools/get_promotions.js';
 
 const RUN = process.env.RUN_LIVE === '1';
 const itLive = RUN ? it : it.skip;
@@ -38,6 +39,13 @@ describe('live smoke (RUN_LIVE=1)', () => {
     const out = await findStoresHandler(r, { near: { zip: '8001' }, radiusKm: 5 });
     expect(out.length).toBeGreaterThan(0);
   }, 30000);
+
+  itLive('get_promotions returns promos with non-empty product names from at least one chain', async () => {
+    const r = buildRegistry();
+    const promos = await getPromotionsHandler(r, {});
+    const named = promos.filter((p) => p.productName && p.productName.trim() !== '');
+    expect(named.length).toBeGreaterThan(0);
+  }, 60000);
 
   itLive('end-to-end plan_shopping for a 3-item list near 8001 produces a non-empty plan', async () => {
     const r = buildRegistry();

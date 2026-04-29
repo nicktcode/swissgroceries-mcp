@@ -108,27 +108,38 @@ export function normalizeStore(raw: DennerStoreRaw): NormalizedStore {
   };
 }
 
-// Publications are catalog sections (e.g. "Hits du tabac"). Products carry
-// their own validFrom/validTo, so we build promotions from products.
-interface DennerPublicationRaw {
+// Promotions are derived from individual products (not publications).
+// Products carry their own validFrom/validTo and full title/price data.
+interface DennerPromotionRaw {
   id?: string | number;
   title?: { de?: string; fr?: string; it?: string } | string;
-  filter_title?: { de?: string; fr?: string; it?: string };
-  validity?: { from?: string; to?: string };
-  type?: string;
+  description?: { de?: string; fr?: string; it?: string } | string;
+  priceDiscount?: number;
+  priceOrigin?: number;
+  priceOverride?: number | null;
+  validFrom?: string;
+  validTo?: string;
   [key: string]: unknown;
 }
 
-export function normalizePromotion(raw: DennerPublicationRaw): NormalizedPromotion {
-  const title = typeof raw.title === 'string'
+export function normalizePromotion(raw: DennerPromotionRaw): NormalizedPromotion {
+  const productName = typeof raw.title === 'string'
     ? raw.title
     : (raw.title?.de ?? raw.title?.fr ?? raw.title?.it ?? '');
-  const filterTitle = raw.filter_title?.de ?? raw.filter_title?.fr ?? raw.filter_title?.it ?? '';
+  const descText = typeof raw.description === 'string'
+    ? raw.description
+    : (raw.description?.de ?? raw.description?.fr ?? raw.description?.it ?? '');
+  const current = raw.priceOverride ?? raw.priceDiscount;
+  const regular = raw.priceOrigin && raw.priceOrigin > 0 ? raw.priceOrigin : undefined;
   return {
     chain: 'denner',
     productId: raw.id !== undefined ? String(raw.id) : undefined,
-    productName: filterTitle || title,
-    validFrom: raw.validity?.from,
-    validUntil: raw.validity?.to,
+    productName,
+    price: current !== undefined
+      ? { current, regular, currency: 'CHF' }
+      : undefined,
+    validFrom: raw.validFrom,
+    validUntil: raw.validTo,
+    description: descText || undefined,
   };
 }

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { parseSize, normalizeProduct } from '../../src/adapters/denner/normalize.js';
+import { parseSize, normalizeProduct, normalizePromotion } from '../../src/adapters/denner/normalize.js';
 
 describe('denner parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -47,5 +47,49 @@ describe('denner normalizeProduct', () => {
   it('uses priceOverride when set', () => {
     const p = normalizeProduct({ id: 4, title: { de: 'Test' }, priceDiscount: 5.0, priceOverride: 3.5 } as any);
     expect(p.price.current).toBeCloseTo(3.5);
+  });
+});
+
+describe('denner normalizePromotion', () => {
+  it('populates productName for typical promo product input', () => {
+    const raw = {
+      id: '9aa5349f-6541-483b-86b3-b7831c3a9160',
+      title: { de: 'Marlboro Red', fr: 'Marlboro Red', it: 'Marlboro Red' },
+      description: { de: 'Box, 10 x 20 Zigaretten' },
+      priceDiscount: 28.5,
+      priceOrigin: 32.0,
+      validFrom: '2026-04-23',
+      validTo: '2026-04-29',
+    };
+    const p = normalizePromotion(raw as any);
+    expect(p.productName).toBe('Marlboro Red');
+    expect(p.productName.trim()).not.toBe('');
+    expect(p.chain).toBe('denner');
+    expect(p.price?.current).toBeCloseTo(28.5);
+    expect(p.price?.regular).toBeCloseTo(32.0);
+    expect(p.validFrom).toBe('2026-04-23');
+    expect(p.validUntil).toBe('2026-04-29');
+    expect(p.description).toContain('Zigaretten');
+  });
+
+  it('handles multilingual title in promotion', () => {
+    const raw = {
+      id: 'abc',
+      title: { de: 'Wein', fr: 'Vin', it: 'Vino' },
+      priceDiscount: 9.95,
+    };
+    const p = normalizePromotion(raw as any);
+    expect(p.productName).toBe('Wein');
+  });
+
+  it('uses priceOverride over priceDiscount', () => {
+    const raw = {
+      id: 'x',
+      title: { de: 'Test' },
+      priceDiscount: 5.0,
+      priceOverride: 3.5,
+    };
+    const p = normalizePromotion(raw as any);
+    expect(p.price?.current).toBeCloseTo(3.5);
   });
 });

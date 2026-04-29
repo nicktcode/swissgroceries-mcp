@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { normalizeProduct, normalizeStore, parseSize } from '../../src/adapters/aldi/normalize.js';
+import { normalizeProduct, normalizeStore, normalizePromotion, parseSize } from '../../src/adapters/aldi/normalize.js';
 
 describe('aldi parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -75,6 +75,30 @@ describe('aldi normalizeStore', () => {
     expect(s.address.city).toBe('Lausen');
     expect(s.location.lat).toBeCloseTo(47.472);
     expect(s.location.lng).toBeCloseTo(7.75824);
+  });
+});
+
+describe('aldi normalizePromotion', () => {
+  it('populates productName for typical promo input', () => {
+    const raw = {
+      sku: 'ABC123',
+      name: 'Bio Vollmilch',
+      price: { amount: 185, wasPriceDisplay: 'CHF 2.10' },
+      onSaleDateDisplay: '2026-05-01',
+    };
+    const p = normalizePromotion(raw);
+    expect(p.productName).toBe('Bio Vollmilch');
+    expect(p.productName.trim()).not.toBe('');
+    expect(p.price?.current).toBeCloseTo(1.85);
+    expect(p.validUntil).toBe('2026-05-01');
+    expect(p.description).toContain('Was:');
+  });
+
+  it('handles missing name gracefully (empty string)', () => {
+    const raw = { sku: 'X', price: { amount: 100 } };
+    const p = normalizePromotion(raw);
+    expect(p.productName).toBe('');
+    expect(p.chain).toBe('aldi');
   });
 });
 

@@ -85,8 +85,8 @@ export class DennerAdapter implements StoreAdapter {
 
   async getPromotions(q: PromotionQuery): Promise<AdapterResult<NormalizedPromotion[]>> {
     try {
-      const { publications } = await this.loadContent();
-      let promos = publications.map(normalizePromotion);
+      const { products } = await this.loadContent();
+      let promos = products.map(normalizePromotion);
       if (q.query) {
         const needle = q.query.toLowerCase();
         promos = promos.filter((p) => p.productName.toLowerCase().includes(needle));

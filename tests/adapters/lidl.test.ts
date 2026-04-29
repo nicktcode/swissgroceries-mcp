@@ -88,4 +88,25 @@ describe('lidl normalizePromotion', () => {
     expect(promo.price?.regular).toBeCloseTo(6.5);
     expect(promo.price?.currency).toBe('CHF');
   });
+
+  it('populates productName for typical promo input', () => {
+    const raw = {
+      id: '10091030_10050172',
+      title: 'Schweizer Rohschinken',
+      subtitle: '150g',
+      mainPrice: { price: 3.49, oldPrice: 4.99 },
+    };
+    const promo = normalizePromotion(raw as any);
+    expect(promo.productName).toBe('Schweizer Rohschinken');
+    expect(promo.productName.trim()).not.toBe('');
+    expect(promo.price?.current).toBeCloseTo(3.49);
+    expect(promo.price?.regular).toBeCloseTo(4.99);
+  });
+
+  it('falls back through name fields when title absent', () => {
+    const raw = { id: 'x', mainPrice: { price: 1.0 } };
+    const promo = normalizePromotion(raw as any);
+    expect(promo.productName).toBe('');
+    expect(promo.chain).toBe('lidl');
+  });
 });
