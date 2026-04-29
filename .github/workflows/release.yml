@@ -10,11 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write   # required for npm OIDC trusted publishing
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           registry-url: https://registry.npmjs.org
       - run: npm ci
@@ -22,25 +23,30 @@ jobs:
       - run: npm run build
       - name: Build .mcpb
         run: npx tsx scripts/build-mcpb.ts
+      - name: Bump npm to latest (needed for OIDC trusted publishing)
+        run: npm install -g npm@latest
       - name: Publish to npm
-        if: ${{ env.NPM_TOKEN != '' }}
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           set +e
-          npm publish --access public
+          if [ -n "$NPM_TOKEN" ]; then
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+            echo "Using NPM_TOKEN-based publish."
+          else
+            echo "Using OIDC trusted publishing."
+          fi
+          npm publish --access public --provenance
           status=$?
           if [ $status -ne 0 ]; then
-            # Tolerate re-tag of an already-published version (E403 from npm).
             VERSION=$(node -p "require('./package.json').version")
             PUBLISHED=$(npm view "$(node -p "require('./package.json').name")" versions --json 2>/dev/null || echo '[]')
             if echo "$PUBLISHED" | grep -q "\"$VERSION\""; then
-              echo "::notice::Version $VERSION already published; skipping (expected for force-re-tag)."
+              echo "::notice::Version $VERSION already published; skipping."
               exit 0
             fi
             exit $status
           fi
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:

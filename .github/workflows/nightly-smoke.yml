@@ -2,22 +2,76 @@ name: Nightly live smoke
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # 05:00 UTC daily (~07:00 Europe/Zurich)
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 jobs:
   smoke:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run build
+
       - name: Run live smoke
+        id: smoke
         env:
           RUN_LIVE: '1'
-        run: npm test -- tests/smoke || echo "::warning::Live smoke failed - upstream API may have changed"
+        run: |
+          set -o pipefail
+          npm test -- tests/smoke 2>&1 | tee smoke.log
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Open issue if smoke failed
+        if: steps.smoke.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const log = fs.readFileSync('smoke.log', 'utf8').slice(-4000);
+            const today = new Date().toISOString().split('T')[0];
+            const title = `Nightly smoke failed on ${today}`;
+            const body = [
+              `Nightly smoke run [#${context.runId}](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) failed.`,
+              ``,
+              `**Last 4 KB of log:**`,
+              ``,
+              '```',
+              log,
+              '```',
+              ``,
+              `Triggered by automation. Close once the failing adapter is fixed.`,
+            ].join('\n');
+
+            // Avoid duplicates: only open one open issue at a time
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'nightly-smoke',
+            });
+            if (existing.data.some(i => i.title.startsWith('Nightly smoke failed'))) {
+              console.log('Existing nightly-smoke issue is already open; skipping.');
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['nightly-smoke', 'adapter-broken'],
+            });
+
+      - name: Fail job if smoke failed
+        if: steps.smoke.outcome == 'failure'
+        run: exit 1
