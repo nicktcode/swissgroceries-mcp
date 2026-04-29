@@ -43,13 +43,13 @@ An MCP server that gives Claude real-time access to Swiss grocery chain catalogs
 ### npx (after v0.1.0 is published)
 
 ```bash
-npx -y swissgroceries-mcp
+npx -y @nicktcode/swissgroceries-mcp
 ```
 
 Or in Claude Code:
 
 ```bash
-claude mcp add swissgroceries -- npx -y swissgroceries-mcp
+claude mcp add swissgroceries -- npx -y @nicktcode/swissgroceries-mcp
 ```
 
 ### Claude Desktop — .mcpb one-click (after v0.1.0 is published)
