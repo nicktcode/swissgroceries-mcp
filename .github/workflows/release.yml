@@ -23,7 +23,10 @@ jobs:
       - run: npm run build
       - name: Build .mcpb
         run: npx tsx scripts/build-mcpb.ts
-      - name: Bump npm to latest (needed for OIDC trusted publishing)
+      # Only bump npm when OIDC is actually used (no NPM_TOKEN). Bundled npm
+      # already supports --provenance for token-based publish.
+      - name: Bump npm to latest (only if no NPM_TOKEN; needed for OIDC)
+        if: ${{ secrets.NPM_TOKEN == '' }}
         run: npm install -g npm@latest
       - name: Publish to npm
         run: |
