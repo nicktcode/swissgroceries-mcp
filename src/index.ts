@@ -169,17 +169,23 @@ async function main() {
   process.on('SIGTERM', () => shutdown('SIGTERM'));
 }
 
-// Run main() unless this module is being imported (the test suite imports
-// createServer/buildRegistry as named exports and never executes the bottom of
-// the file because Vitest re-imports it through tsx, where import.meta.url and
-// process.argv[1] don't match anyway). Wrapping the call in pathToFileURL
-// makes the guard robust across spawn patterns (Claude Desktop, npx, direct
-// node, etc.) where the original `file://${process.argv[1]}` comparison fails.
-import { pathToFileURL } from 'node:url';
+// Run main() only when this file is the entry point (not when imported by tests).
+// Compare resolved real paths on both sides so symlinks (macOS /tmp -> /private/tmp,
+// nested install paths under .mcpb bundles, etc.) don't break the guard.
+import { fileURLToPath } from 'node:url';
+import { realpathSync } from 'node:fs';
 
-const isEntrypoint =
-  !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+function isMainModule(): boolean {
+  if (!process.argv[1]) return false;
+  try {
+    const here = realpathSync(fileURLToPath(import.meta.url));
+    const argv = realpathSync(process.argv[1]);
+    return here === argv;
+  } catch {
+    return false;
+  }
+}
 
-if (isEntrypoint) {
+if (isMainModule()) {
   main().catch((e) => { logger.info(e); process.exit(1); });
 }

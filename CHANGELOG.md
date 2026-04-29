@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.6] - 2026-04-29
+
+### Fixed
+- Entrypoint guard now resolves real paths on both sides (symlink-safe), so the bundled server actually starts under Claude Desktop on macOS where /tmp is a symlink to /private/tmp.
+
 ## [0.1.5] - 2026-04-29
 
 ### Fixed
