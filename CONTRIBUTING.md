@@ -1,12 +1,10 @@
 # Contributing
 
-Thanks for your interest. **This is a personal fun project** maintained by [Nick Thommen](mailto:nick@thommen.it). Issues and pull requests are very welcome — new chains, smarter matchers, bug fixes, doc improvements, anything that makes Swiss grocery shopping a bit smarter.
+Thanks for your interest. **This is a personal fun project.** Issues and pull requests are very welcome: new chains, smarter matchers, bug fixes, doc improvements, anything that makes Swiss grocery shopping a bit smarter.
 
 ## A note to the chains
 
-If you represent Migros, Coop, Aldi, Denner, Lidl, or any other Swiss retailer and have concerns about how the project uses your API, please email **nick@thommen.it** directly. We'll work it out — no formal process needed.
-
-## How to contribute
+If you represent Migros, Coop, Aldi, Denner, Lidl, or any other Swiss retailer and have concerns about how the project uses your API, please reach out to the maintainer through GitHub. No formal process needed.
 
 ## Opening issues
 
@@ -17,7 +15,7 @@ If you represent Migros, Coop, Aldi, Denner, Lidl, or any other Swiss retailer a
 ## Running tests
 
 ```bash
-npm test                          # full unit/integration suite — no network calls
+npm test                          # full unit/integration suite - no network calls
 RUN_LIVE=1 npm test -- tests/smoke  # live smoke tests against real chain APIs
 SWISSGROCERIES_DISABLE_CACHE=1 RUN_LIVE=1 npm test -- tests/smoke  # same, cache off
 ```
@@ -39,11 +37,11 @@ Use Charles Proxy or mitmproxy on the chain's iOS or Android app. For each endpo
 
 ```
 src/adapters/<chain>/
-  client.ts     — HTTP client with auth headers; use httpJson from src/util/http.ts
-  tags.ts       — chain-specific label strings → controlled Tag enum mapping
-  normalize.ts  — raw API types → NormalizedProduct / NormalizedStore / NormalizedPromotion
-  index.ts      — StoreAdapter implementation with capability flags
-  schemas.ts    — (optional) Zod schemas for response shape validation
+  client.ts     - HTTP client with auth headers; use httpJson from src/util/http.ts
+  tags.ts       - chain-specific label strings → controlled Tag enum mapping
+  normalize.ts  - raw API types → NormalizedProduct / NormalizedStore / NormalizedPromotion
+  index.ts      - StoreAdapter implementation with capability flags
+  schemas.ts    - (optional) Zod schemas for response shape validation
 ```
 
 Use `src/adapters/aldi/` as the simplest reference implementation.
@@ -56,7 +54,7 @@ Key rules:
 - `price.current` must be a positive CHF number. Return `AdapterResult.err` if not available.
 - `unitPrice` should be derived whenever possible (use `src/util/unit-price.ts`).
 - `size` should use `parseSize` from `src/util/multipack.ts` for consistent unit parsing.
-- Adapters **never throw** on expected failures — return `AdapterResult.err({ code, reason })`.
+- Adapters **never throw** on expected failures - return `AdapterResult.err({ code, reason })`.
 
 ### 4. Declare capability flags
 
@@ -102,9 +100,9 @@ Add a row to the Chain coverage table.
 
 - TypeScript strict mode throughout.
 - One responsibility per file (client, tags, normalize, adapter).
-- Adapters depend on normalised types only — never import chain-specific fields into tools or services.
+- Adapters depend on normalised types only - never import chain-specific fields into tools or services.
 - New synonym groups for the matcher go in `QUERY_SYNONYMS` in `src/services/matcher.ts`. Prefer a broad synonym group over a hand-curated keyword blacklist.
-- `isCanonical` in `src/services/matcher.ts` is the preferred way to drop tangential products — do not add per-chain heuristics outside the adapter.
+- `isCanonical` in `src/services/matcher.ts` is the preferred way to drop tangential products - do not add per-chain heuristics outside the adapter.
 
 ## Commit messages
 

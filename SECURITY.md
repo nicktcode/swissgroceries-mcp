@@ -5,7 +5,7 @@
 This is a personal fun project. There is no formal security disclosure process.
 
 - For non-sensitive bugs or broken endpoints, open a GitHub issue.
-- For sensitive issues — anything that could affect upstream chain infrastructure, or concerns from a chain (Migros, Coop, Aldi, Denner, Lidl) about API usage — email **nick@thommen.it** directly before opening a public issue.
+- For sensitive issues (anything that could affect upstream chain infrastructure, or concerns from a chain about API usage), reach out to the maintainer through GitHub privately before opening a public issue.
 
 ## Threat model
 
@@ -23,7 +23,7 @@ It **does**:
 
 ## Auth tokens
 
-The Denner adapter accepts a bearer JWT via the `DENNER_JWT` environment variable. **This JWT may contain personal information** — depending on how you obtained it, it can include your name, email address, and Denner account identifiers.
+The Denner adapter accepts a bearer JWT via the `DENNER_JWT` environment variable. **This JWT may contain personal information** - depending on how you obtained it, it can include your name, email address, and Denner account identifiers.
 
 - Never commit `DENNER_JWT` to git. Use `.env` files or shell-level env vars only.
 - Never share the raw JWT in issues or bug reports.

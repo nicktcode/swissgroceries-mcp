@@ -1,14 +1,14 @@
 # swissgroceries-mcp
 
-An MCP server that gives Claude real-time access to Swiss grocery chain catalogs — search products, compare prices across stores, see weekly promotions, and generate optimised multi-store shopping plans.
+An MCP server that gives Claude real-time access to Swiss grocery chain catalogs. It can search products, compare prices across stores, surface weekly promotions, and generate optimised multi-store shopping plans.
 
-> **Disclaimer & spirit of the project**
+> **Disclaimer**
 >
-> This is a personal fun project by [Nick Thommen](mailto:nick@thommen.it). It is **not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, or any other retailer**. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
+> This is a personal fun project. It is **not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, or any other retailer**. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
 >
-> If you represent any of these stores and have concerns — about API usage, branding, scraping rate, or anything else — please **email nick@thommen.it** directly and we'll work it out. No need to escalate.
+> If you represent any of these stores and have concerns (about API usage, branding, scraping rate, or anything else), please reach out to the maintainer through GitHub and we will work it out. No need to escalate.
 >
-> **PRs welcome.** New chains, better matchers, smarter strategies, bug fixes, doc improvements — all encouraged. See [CONTRIBUTING.md](CONTRIBUTING.md).
+> **PRs welcome.** New chains, better matchers, smarter strategies, bug fixes, doc improvements; all encouraged. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What you can ask Claude
 
@@ -19,7 +19,7 @@ An MCP server that gives Claude real-time access to Swiss grocery chain catalogs
 
 **Shopping planning**
 - "I need milk, bread, eggs, chicken, and pasta near 8050. Where should I shop to keep costs down?"
-- "Plan my weekly shop for 5 items near 4052 Basel — one stop only."
+- "Plan my weekly shop for 5 items near 4052 Basel - one stop only."
 - "Split my cart across stores for the absolute lowest total, but add a 2 CHF penalty per extra trip."
 
 **Promotions & deals**
@@ -88,7 +88,7 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
 }
 ```
 
-Replace `/absolute/path/to/swissgroceries-mcp` with the real path. `DENNER_JWT` is optional — omit it if you do not need Denner.
+Replace `/absolute/path/to/swissgroceries-mcp` with the real path. `DENNER_JWT` is optional - omit it if you do not need Denner.
 
 ### Claude Code (one-liner)
 
@@ -108,12 +108,12 @@ claude mcp add swissgroceries \
 
 | Tool | Description | Key parameters | Example call |
 |---|---|---|---|
-| `find_stores` | Find grocery stores near a location, filtered by chain and radius. Returns name, address, and opening hours. | `near` (zip/lat-lng/address — address geocoded via Nominatim), `chains?`, `radiusKm?` (default 5) | `find_stores({ near: { zip: "8001" }, radiusKm: 3 })` |
+| `find_stores` | Find grocery stores near a location, filtered by chain and radius. Returns name, address, and opening hours. | `near` (zip/lat-lng/address - address geocoded via Nominatim), `chains?`, `radiusKm?` (default 5) | `find_stores({ near: { zip: "8001" }, radiusKm: 3 })` |
 | `search_products` | Search products by keyword across chains in parallel. Results grouped by chain with normalised price, unit price, size, and tags. | `query` (string), `chains?`, `filters?` (tags, maxPrice, sizeRange), `limit?` (max 50) | `search_products({ query: "milch", chains: ["migros","coop"], filters: { maxPrice: 2.5 } })` |
 | `get_product` | Fetch full product details for a chain + product ID pair. Use after `search_products` to drill into a result. | `chain` (enum), `id` (string) | `get_product({ chain: "migros", id: "4389992" })` |
 | `get_promotions` | List current promotional deals. Filterable by chain, keyword, store IDs, or days until expiry. | `chains?`, `query?`, `endingWithinDays?` (1–60), `storeIds?` | `get_promotions({ chains: ["aldi"], endingWithinDays: 7 })` |
 | `find_stock` | Check which stores of a chain have a product in stock. Only available for chains with `perStoreStock` capability (Migros, Coop). | `chain`, `productId`, `near?` (lat/lng), `storeId?` | `find_stock({ chain: "migros", productId: "4389992", near: { lat: 47.37, lng: 8.54 } })` |
-| `plan_shopping` | Plan a multi-store trip for a shopping list near a location. Returns a primary plan and two alternatives. | `items` (array of queries), `near` (zip/lat-lng/address — address geocoded via Nominatim), `strategy` (single_store / split_cart / absolute_cheapest), `radiusKm?`, `splitPenaltyChf?` | `plan_shopping({ items: [{ query: "milch" }, { query: "brot" }], near: { zip: "8001" }, strategy: "split_cart" })` |
+| `plan_shopping` | Plan a multi-store trip for a shopping list near a location. Returns a primary plan and two alternatives. | `items` (array of queries), `near` (zip/lat-lng/address - address geocoded via Nominatim), `strategy` (single_store / split_cart / absolute_cheapest), `radiusKm?`, `splitPenaltyChf?` | `plan_shopping({ items: [{ query: "milch" }, { query: "brot" }], near: { zip: "8001" }, strategy: "split_cart" })` |
 
 ## How it works
 
@@ -121,7 +121,7 @@ Each grocery chain is wrapped in an independent adapter (`src/adapters/<chain>/`
 
 The HTTP utility (`src/util/http.ts`) underpins all adapters (except Migros, which delegates to the `migros-api-wrapper` library): it provides in-memory response caching (5-minute TTL by default), retry with exponential backoff (3 attempts, 250 ms base), per-host rate limiting (~10 req/sec), and a per-host circuit breaker that opens after 5 consecutive failures and resets after 60 seconds.
 
-The shopping planner (`src/services/planner.ts`) fans out store and product searches in parallel across all active adapters, then feeds the results into a solver (`src/services/strategy.ts`). The solver supports three strategies: `single_store` (minimise stops), `split_cart` (cheapest split with a configurable per-stop penalty), and `absolute_cheapest` (ignore stop count). A canonicality filter (`src/services/matcher.ts`, `isCanonical`) ensures cross-chain comparisons are fair — if any chain returns a product whose category text matches the query, results from chains that only returned tangential products (e.g. Apfelschorle when searching "apfel") are dropped from the comparison matrix for that item.
+The shopping planner (`src/services/planner.ts`) fans out store and product searches in parallel across all active adapters, then feeds the results into a solver (`src/services/strategy.ts`). The solver supports three strategies: `single_store` (minimise stops), `split_cart` (cheapest split with a configurable per-stop penalty), and `absolute_cheapest` (ignore stop count). A canonicality filter (`src/services/matcher.ts`, `isCanonical`) ensures cross-chain comparisons are fair - if any chain returns a product whose category text matches the query, results from chains that only returned tangential products (e.g. Apfelschorle when searching "apfel") are dropped from the comparison matrix for that item.
 
 ```
 Claude (LLM)
@@ -179,7 +179,7 @@ SWISSGROCERIES_USER_AGENT_COOP="Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac
 The Denner adapter is only registered when `DENNER_JWT` is set. Extract the token: open Charles Proxy, connect your iPhone, open the Denner app, capture any API request, and copy the `Authorization: Bearer eyJ...` value. Set it in the MCP server's `env` block.
 
 **Lidl returns 0 results**
-Lidl only indexes products from the current weekly campaign leaflet. If your search term does not appear in the active campaigns, you will get 0 results. This is expected — it is not a bug.
+Lidl only indexes products from the current weekly campaign leaflet. If your search term does not appear in the active campaigns, you will get 0 results. This is expected - it is not a bug.
 
 **"unknown_zip" error**
 The static ZIP table covers 3,190 Swiss PLZ codes from swisstopo data. If your ZIP is missing, pass `{ lat, lng }` coordinates directly instead. You can also open an issue with the missing ZIP.
@@ -195,7 +195,7 @@ Migros and Coop responses are validated with Zod schemas. A `schema_mismatch` me
 ```bash
 npm run build          # tsc → dist/
 npm test               # full test suite (no live API calls)
-npm run smoke          # live smoke tests — requires internet (RUN_LIVE=1 npm test -- tests/smoke)
+npm run smoke          # live smoke tests - requires internet (RUN_LIVE=1 npm test -- tests/smoke)
 npm run dev            # run with tsx watcher (hot-reload, output on stderr)
 ```
 
@@ -221,20 +221,20 @@ SWISSGROCERIES_LOG_LEVEL=debug npm run dev
 
 See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the full design context.
 
-1. **Capture API responses** — use Charles Proxy or mitmproxy on the chain's iOS/Android app. Save product search, product detail, store search, and promotions endpoints as JSON fixtures under `tests/fixtures/<chain>/`.
+1. **Capture API responses** - use Charles Proxy or mitmproxy on the chain's iOS/Android app. Save product search, product detail, store search, and promotions endpoints as JSON fixtures under `tests/fixtures/<chain>/`.
 
 2. **Create the adapter directory** at `src/adapters/<chain>/`:
-   - `client.ts` — HTTP client with auth headers; use `httpJson` from `src/util/http.ts`
-   - `tags.ts` — chain-specific label → controlled `Tag` mapping
-   - `normalize.ts` — raw API response → `NormalizedProduct` / `NormalizedStore` / `NormalizedPromotion`
-   - `index.ts` — `StoreAdapter` implementation
-   - `schemas.ts` (optional) — Zod schemas for response validation
+   - `client.ts` - HTTP client with auth headers; use `httpJson` from `src/util/http.ts`
+   - `tags.ts` - chain-specific label → controlled `Tag` mapping
+   - `normalize.ts` - raw API response → `NormalizedProduct` / `NormalizedStore` / `NormalizedPromotion`
+   - `index.ts` - `StoreAdapter` implementation
+   - `schemas.ts` (optional) - Zod schemas for response validation
 
 3. **Declare capability flags** in the `StoreAdapter` implementation. Only advertise what the chain actually supports (`perStoreStock: false` if the chain API has no stock endpoint).
 
 4. **Register** the adapter in `src/index.ts` inside `buildRegistry()`. Use an env-var guard if the adapter requires a secret (see the Denner pattern).
 
-5. **Add tests** — `tests/adapters/<chain>.test.ts` with `parseSize` unit tests and a fixture-based normalise test. Update the chain coverage table in this README.
+5. **Add tests** - `tests/adapters/<chain>.test.ts` with `parseSize` unit tests and a fixture-based normalise test. Update the chain coverage table in this README.
 
 ## Status
 
@@ -251,4 +251,4 @@ See `docs/superpowers/specs/2026-04-28-swissgroceries-mcp-design.md` for the ful
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
