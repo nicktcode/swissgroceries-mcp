@@ -1,0 +1,23 @@
+name: Nightly live smoke
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # 05:00 UTC daily (~07:00 Europe/Zurich)
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Run live smoke
+        env:
+          RUN_LIVE: '1'
+        run: npm test -- tests/smoke || echo "::warning::Live smoke failed - upstream API may have changed"

@@ -10,6 +10,10 @@ An MCP server that gives Claude real-time access to Swiss grocery chain catalogs
 >
 > **PRs welcome.** New chains, better matchers, smarter strategies, bug fixes, doc improvements; all encouraged. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+> **API stability**
+>
+> The Swiss grocery chain APIs used here are unofficial and were reverse-engineered from public iOS/Android app traffic. They can change shape, rate-limit policy, or simply break at any time. **The maintainer is not responsible for failures caused by upstream API changes.** When that happens (you'll see a `schema_mismatch`, `unavailable`, or `auth_expired` error from the affected adapter), please [open an issue](https://github.com/USER/swissgroceries-mcp/issues/new?labels=adapter-broken&template=adapter-broken.yml) with the raw response sample so the adapter can be updated.
+
 ## What you can ask Claude
 
 **Price comparison**
@@ -34,30 +38,9 @@ An MCP server that gives Claude real-time access to Swiss grocery chain catalogs
 
 ## Install
 
-### Prerequisites
+> **Before v0.1.0 is published**, use the [build-from-source](#build-from-source-before-first-release) path below. The npx and .mcpb paths will work once the first release is tagged.
 
-```bash
-node --version   # requires Node.js >=18
-git clone https://github.com/youruser/swissgroceries-mcp
-cd swissgroceries-mcp
-npm install
-npm run build
-```
-
-### Claude Desktop (one-click)
-
-Download `swissgroceries-mcp.mcpb` from the Releases page and:
-
-- macOS: double-click or drag onto the Claude Desktop app icon
-- Windows: Settings → Extensions → Advanced → Install Extension → select the file
-
-To build the bundle locally:
-```bash
-npm run build
-npx tsx scripts/build-mcpb.ts
-```
-
-### npx (after publish)
+### npx (after v0.1.0 is published)
 
 ```bash
 npx -y swissgroceries-mcp
@@ -67,6 +50,28 @@ Or in Claude Code:
 
 ```bash
 claude mcp add swissgroceries -- npx -y swissgroceries-mcp
+```
+
+### Claude Desktop — .mcpb one-click (after v0.1.0 is published)
+
+Download `swissgroceries-mcp.mcpb` from the [Releases page](https://github.com/USER/swissgroceries-mcp/releases) and:
+
+- macOS: double-click or drag onto the Claude Desktop app icon
+- Windows: Settings → Extensions → Advanced → Install Extension → select the file
+
+### Build from source (before first release)
+
+```bash
+node --version   # requires Node.js >=18
+git clone https://github.com/USER/swissgroceries-mcp
+cd swissgroceries-mcp
+npm install
+npm run build
+```
+
+To also build the .mcpb bundle locally:
+```bash
+npx tsx scripts/build-mcpb.ts
 ```
 
 ### Claude Desktop (manual config)

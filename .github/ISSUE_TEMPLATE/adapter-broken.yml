@@ -1,0 +1,40 @@
+name: Adapter broken (API shape change)
+description: Report that a chain adapter is broken due to an upstream API change.
+labels: [adapter-broken]
+body:
+  - type: dropdown
+    id: chain
+    attributes:
+      label: Chain
+      description: Which chain's adapter is broken?
+      options:
+        - migros
+        - coop
+        - aldi
+        - denner
+        - lidl
+    validations:
+      required: true
+  - type: textarea
+    id: raw_response
+    attributes:
+      label: Raw response sample
+      description: Paste as much of the raw API response as possible (redact personal data). This is the most useful thing you can include.
+      render: json
+    validations:
+      required: false
+  - type: input
+    id: error_code
+    attributes:
+      label: Error code
+      description: "Error code from the adapter, e.g. schema_mismatch, unavailable, auth_expired."
+      placeholder: schema_mismatch
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Any other context — when it started failing, whether it was intermittent, etc.
+    validations:
+      required: false

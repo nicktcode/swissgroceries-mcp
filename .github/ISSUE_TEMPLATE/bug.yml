@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a bug in swissgroceries-mcp
+labels: [bug]
+body:
+  - type: dropdown
+    id: chain
+    attributes:
+      label: Chain affected
+      description: Which grocery chain is involved?
+      options:
+        - migros
+        - coop
+        - aldi
+        - denner
+        - lidl
+        - all / not chain-specific
+    validations:
+      required: true
+  - type: textarea
+    id: tool_call
+    attributes:
+      label: Exact tool call
+      description: Paste the MCP tool call that triggered the bug.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: error_message
+    attributes:
+      label: Error message
+      description: Full error output or unexpected response.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "Node version, OS, swissgroceries-mcp version or commit SHA."
+      placeholder: "Node 20.x, macOS 14, v0.1.0"
+    validations:
+      required: false

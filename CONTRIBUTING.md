@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest. **This is a personal fun project.** Issues and pull requests are very welcome: new chains, smarter matchers, bug fixes, doc improvements, anything that makes Swiss grocery shopping a bit smarter.
+Thanks for your interest. **This is a personal fun project.** Issues and pull requests are very welcome: new chains, smarter matchers, bug fixes, doc improvements, anything that makes Swiss grocery shopping a bit smarter. If a chain adapter breaks because the upstream API changed, that's the most valuable kind of issue/PR you can file — please include the raw response sample.
 
 ## A note to the chains
 
