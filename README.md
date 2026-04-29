@@ -14,11 +14,11 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
-Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, and Volgshop, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
+Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, and Otto's, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
 
 > **Disclaimer**
 >
-> This is a personal fun project. It is not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, Farmy, Volg, or any other retailer. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
+> This is a personal fun project. It is not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, Farmy, Volg, Otto's, or any other retailer. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
 >
 > If you represent any of these stores and have concerns (about API usage, branding, scraping rate, or anything else), please reach out to the maintainer through GitHub and we will work it out. No need to escalate.
 >
@@ -112,6 +112,7 @@ Each tool exposes rich JSON Schema with field-level descriptions, so the LLM kno
 | Lidl | Weekly leaflet only | Yes | No | None |
 | Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | None |
 | Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | None |
+| Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (Aktionen category) | No | None |
 
 ---
 
