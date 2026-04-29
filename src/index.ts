@@ -169,6 +169,17 @@ async function main() {
   process.on('SIGTERM', () => shutdown('SIGTERM'));
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Run main() unless this module is being imported (the test suite imports
+// createServer/buildRegistry as named exports and never executes the bottom of
+// the file because Vitest re-imports it through tsx, where import.meta.url and
+// process.argv[1] don't match anyway). Wrapping the call in pathToFileURL
+// makes the guard robust across spawn patterns (Claude Desktop, npx, direct
+// node, etc.) where the original `file://${process.argv[1]}` comparison fails.
+import { pathToFileURL } from 'node:url';
+
+const isEntrypoint =
+  !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (isEntrypoint) {
   main().catch((e) => { logger.info(e); process.exit(1); });
 }
