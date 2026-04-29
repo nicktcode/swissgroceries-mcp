@@ -107,8 +107,23 @@ export interface OttosProductRaw {
   images?: OttosImageRaw[];
   stock?: OttosStockRaw;
   unitName?: string | null;
-  productLabels?: string[] | null;
+  productLabels?: OttosProductLabel[] | null;
   purchasable?: boolean;
+}
+
+export interface OttosProductLabel {
+  style?: string;
+  type?: string;
+  message?: { raw?: string; key?: string };
+}
+
+function productLabelTexts(labels: OttosProductLabel[] | null | undefined): string[] {
+  if (!labels) return [];
+  return labels.flatMap((l) => {
+    const raw = l.message?.raw;
+    const key = l.message?.key;
+    return [raw, key].filter((x): x is string => typeof x === 'string' && x.length > 0);
+  });
 }
 
 export function isGroceryProduct(p: OttosProductRaw): boolean {
@@ -138,7 +153,7 @@ export function normalizeProduct(raw: OttosProductRaw): NormalizedProduct {
     .map((c) => c.name ?? '')
     .filter(Boolean);
 
-  const labels = raw.productLabels ?? [];
+  const labels = productLabelTexts(raw.productLabels);
 
   const onSale = regular !== undefined && regular > current;
   const promotion = onSale && regular !== undefined
