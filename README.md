@@ -1,6 +1,6 @@
 # swissgroceries-mcp
 
-Real-time Swiss grocery shopping for Claude. Search products, compare prices across Migros, Coop, Aldi, Denner, and Lidl, see weekly promotions, and plan multi-store shopping trips. All in one MCP server.
+Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, and Lidl, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
 
 > **Disclaimer**
 >
@@ -14,7 +14,9 @@ Real-time Swiss grocery shopping for Claude. Search products, compare prices acr
 
 ## Install
 
-### One-click for Claude Desktop
+No accounts, no tokens, no API keys required. The Denner adapter self-registers an anonymous client on first use; everything else uses public endpoints.
+
+### Claude Desktop (one-click)
 
 Download `swissgroceries-mcp.mcpb` from the [Releases page](https://github.com/nicktcode/swissgroceries-mcp/releases) and:
 
@@ -27,9 +29,9 @@ Download `swissgroceries-mcp.mcpb` from the [Releases page](https://github.com/n
 claude mcp add swissgroceries -- npx -y @nicktcode/swissgroceries-mcp
 ```
 
-### Manual config (Claude Desktop)
+### Cursor / Cline / Continue / VS Code / Claude Desktop (manual config)
 
-Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or the Windows equivalent:
+Most MCP-compatible clients accept the same JSON server entry. Add it to your client's MCP config file (paths vary, see your client's docs):
 
 ```json
 {
@@ -42,9 +44,14 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
 }
 ```
 
-That is it. No accounts, no tokens, no API keys. The Denner adapter self-registers an anonymous client on first use; everything else uses public endpoints.
+Common config paths:
 
-## What you can ask Claude
+- **Claude Desktop**: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS), `%APPDATA%\Claude\claude_desktop_config.json` (Windows).
+- **Cursor**: `.cursor/mcp.json` in the project, or `~/.cursor/mcp.json` globally.
+- **Cline / Continue / VS Code**: see each client's MCP documentation.
+- **Custom clients**: any stdio-based MCP client can spawn `npx -y @nicktcode/swissgroceries-mcp` directly.
+
+## What you can ask
 
 **Price comparison**
 - "Where is milk cheapest near 8001 Zürich right now?"
@@ -78,7 +85,7 @@ That is it. No accounts, no tokens, no API keys. The Denner adapter self-registe
 | `plan_shopping` | Plan a multi-store trip for a shopping list near a location. |
 | `health_check` | Probe each registered chain adapter and report status, latency, and capabilities. |
 
-Each tool exposes rich JSON Schema with field-level descriptions, so Claude knows when and how to call it.
+Each tool exposes rich JSON Schema with field-level descriptions, so the LLM knows when and how to call it.
 
 ## Chain coverage
 
@@ -117,7 +124,7 @@ The shopping planner (`src/services/planner.ts`) fans out store and product sear
 Cross-chain comparisons are kept fair by a category-text canonicality filter (`src/services/matcher.ts`, `isCanonical`). When at least one chain returns a product whose category text matches the query, results from chains that only returned tangential products (for example, Apfelschorle when searching for "apfel") are dropped from the comparison matrix for that item.
 
 ```
-Claude (LLM)
+MCP client (any LLM)
     │
     │ MCP tool call
     ▼
