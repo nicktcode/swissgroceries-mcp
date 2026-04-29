@@ -31,12 +31,15 @@ jobs:
         if: env.NPM_TOKEN == ''
         run: npm install -g npm@latest
       - name: Publish to npm
+        env:
+          # setup-node@v4 wrote ~/.npmrc using NODE_AUTH_TOKEN; pass the secret in
+          # under that name (rather than writing the npmrc ourselves) so the auth
+          # mechanism matches what npm expects.
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           set +e
-          if [ -n "$NPM_TOKEN" ]; then
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+          if [ -n "$NODE_AUTH_TOKEN" ]; then
             echo "Using NPM_TOKEN-based publish."
-            # Granular tokens scoped to @nicktcode don't support --provenance.
             npm publish --access public
           else
             echo "Using OIDC trusted publishing (provenance auto-enabled)."
