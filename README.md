@@ -101,6 +101,22 @@ Common config paths:
 
 Each tool exposes rich JSON Schema with field-level descriptions, so the LLM knows when and how to call it.
 
+## Prompts
+
+| Prompt | What it does |
+|---|---|
+| `weekly_deals_digest` | Summarise this week's best grocery deals across the configured chains. Optional category, chains, and location filters. |
+| `compare_basket_across_chains` | Compare a shopping basket across all chains and recommend single-store vs split-cart strategies. |
+| `cheapest_recipe_ingredients` | From an ingredient list (or recipe URL) find the cheapest place to buy each item and produce a consolidated shopping plan. |
+
+Prompts are surfaced as one-click templates in MCP-aware clients (Claude Desktop, Cursor, Cline). They produce structured user messages that drive the right tool calls — useful as a starting point and as discovery of what the server can do.
+
+## Resources
+
+| URI | Content |
+|---|---|
+| `swissgroceries://chains` | JSON list of registered chain adapters and their capabilities (`productSearch`, `productDetail`, `storeSearch`, `promotions`, `perStoreStock`, `perStorePricing`). |
+
 ## Chain coverage
 
 | Chain | Product search | Promotions | Per-store stock | Auth |
