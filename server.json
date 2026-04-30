@@ -6,12 +6,12 @@
     "url": "https://github.com/nicktcode/swissgroceries-mcp",
     "source": "github"
   },
-  "version": "0.5.0",
+  "version": "0.6.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@nicktcode/swissgroceries-mcp",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "transport": {
         "type": "stdio"
       },

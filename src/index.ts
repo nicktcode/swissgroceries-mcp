@@ -6,6 +6,8 @@ import {
   ListToolsRequestSchema,
   ListResourcesRequestSchema,
   ReadResourceRequestSchema,
+  ListPromptsRequestSchema,
+  GetPromptRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 
 import { AdapterRegistry } from './adapters/registry.js';
@@ -26,6 +28,7 @@ import { findStockHandler, findStockSchema } from './tools/find_stock.js';
 import { planShoppingHandler, planShoppingSchema } from './tools/plan_shopping.js';
 import { healthCheckHandler, healthCheckSchema } from './tools/health_check.js';
 import { ToolError } from './tools/errors.js';
+import { listPrompts, getPrompt } from './prompts.js';
 import { logger } from './util/log.js';
 
 import { zodToJsonSchema } from 'zod-to-json-schema';
@@ -121,7 +124,7 @@ const TOOLS = [
 export async function createServer(registry: AdapterRegistry = buildRegistry()) {
   const server = new Server(
     { name: 'swissgroceries-mcp', version: '0.1.0' },
-    { capabilities: { tools: {}, resources: {} } },
+    { capabilities: { tools: {}, resources: {}, prompts: {} } },
   );
 
   server.setRequestHandler(ListToolsRequestSchema, async () => ({
@@ -131,6 +134,15 @@ export async function createServer(registry: AdapterRegistry = buildRegistry()) 
       inputSchema: zodToJsonSchema(t.schema),
     })),
   }));
+
+  server.setRequestHandler(ListPromptsRequestSchema, async () => ({
+    prompts: listPrompts(),
+  }));
+
+  server.setRequestHandler(GetPromptRequestSchema, async (req) => {
+    const args = (req.params.arguments ?? {}) as Record<string, string | undefined>;
+    return getPrompt(req.params.name, args);
+  });
 
   server.setRequestHandler(ListResourcesRequestSchema, async () => ({
     resources: [
