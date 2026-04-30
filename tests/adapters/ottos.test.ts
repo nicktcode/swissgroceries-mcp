@@ -102,13 +102,15 @@ describe('ottos normalizeProduct', () => {
     expect(p.category).toEqual(['Supermarkt & Weine']);
   });
 
-  it('prefixes relative image URL with ottos.ch host', () => {
+  it('prefixes relative image URL with api.ottos.ch CDN host (not www.)', () => {
+    // Regression test: www.ottos.ch returns 302→HTML for these paths; the
+    // actual image bytes live on api.ottos.ch.
     const p = normalizeProduct({
       code: 'X', name: 'X',
       price: { value: 1 },
       images: [{ url: '/medias/foo.jpg', format: 'product-main', imageType: 'PRIMARY' }],
     });
-    expect(p.imageUrl).toBe('https://www.ottos.ch/medias/foo.jpg');
+    expect(p.imageUrl).toBe('https://api.ottos.ch/medias/foo.jpg');
   });
 
   it('keeps absolute image URLs as-is', () => {
