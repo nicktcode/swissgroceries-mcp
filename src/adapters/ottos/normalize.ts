@@ -32,7 +32,12 @@ export const OTTOS_GROCERY_ROOTS = new Set([
 const HTML_RX = /<[^>]+>/g;
 const SIZE_RX = /(\d+(?:[.,]\d+)?)\s*(kg|g|ml|cl|dl|l)\b/i;
 const COUNT_X_SIZE_RX = /(\d+)\s*x\s*(\d+(?:[.,]\d+)?)\s*(kg|g|ml|cl|dl|l)\b/i;
-const IMAGE_BASE = 'https://www.ottos.ch';
+// Otto's storefront has two hosts: www.ottos.ch (HTML pages) and
+// api.ottos.ch (OCC API + image CDN). The OCC `assets[].url` field gives
+// a path-only string like "/medias/product-main-100247-01?context=...".
+// Combining with www.ottos.ch returns 302→HTML; the actual JPEG lives on
+// api.ottos.ch. Verified live 2026-04-30.
+const IMAGE_BASE = 'https://api.ottos.ch';
 
 interface ParsedSize { value: number; unit: Unit }
 
