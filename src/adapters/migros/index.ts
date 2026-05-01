@@ -17,6 +17,18 @@ import type {
   NormalizedProduct, NormalizedStore, NormalizedPromotion, StockResult,
   SearchQuery, StoreQuery, PromotionQuery, GeoPoint,
 } from '../types.js';
+
+// Migros region ID for product search + product-detail bodies. The SDK
+// defaults to Region.NATIONAL ('national') which only returns prices for
+// products that have national-level pricing — region-specific produce like
+// Spargeln come back with `offer.price: {}`. The migros.ch website itself
+// uses regionId "2" by default for unauthenticated visitors (Genossenschaft
+// Zürich, the largest Migros co-op). Switching MCP to the same default
+// surfaces prices for the bulk of regional products.
+//
+// Override via SWISSGROCERIES_MIGROS_REGION_ID for callers in other
+// regions, e.g. "1" (Aare), "3" (Luzern), etc.
+const MIGROS_REGION_ID: string = process.env.SWISSGROCERIES_MIGROS_REGION_ID || '2';
 import { logger } from '../../util/log.js';
 import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
@@ -90,13 +102,14 @@ export class MigrosAdapter implements StoreAdapter {
       const r = await this.withAuthRetry(() => this.api.products.productSearch.searchProduct({
         query: q.query,
         language: q.language ?? 'de',
+        regionId: MIGROS_REGION_ID,
       } as any));
       // r = { productIds: number[], numberOfProducts: number, ... }
       const productIds: number[] = (r as any).productIds ?? [];
       if (productIds.length === 0) return ok([]);
       const offset = q.offset ?? 0;
       const uids = productIds.slice(offset, offset + (q.limit ?? 20)).map(String);
-      const det = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids, language: q.language ?? 'de' } as any));
+      const det = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids, language: q.language ?? 'de', region: MIGROS_REGION_ID } as any));
       // det = {"0": product, "1": product, ...}
       const parsed = MigrosProductDetailsResponseSchema.safeParse(det);
       if (!parsed.success) {
@@ -112,7 +125,7 @@ export class MigrosAdapter implements StoreAdapter {
   async getProduct(id: string): Promise<AdapterResult<NormalizedProduct | null>> {
     try {
       // id is a uid (numeric string)
-      const r = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids: [id], language: 'de' } as any));
+      const r = await this.withAuthRetry(() => this.api.products.productDisplay.getProductDetails({ uids: [id], language: 'de', region: MIGROS_REGION_ID } as any));
       const products = Object.values(r as Record<string, unknown>);
       const first = products[0];
       return ok(first ? normalizeProduct(first) : null);
@@ -162,6 +175,7 @@ export class MigrosAdapter implements StoreAdapter {
       const detailsR: any = await this.api.products.productDisplay.getProductDetails({
         uids: productIds,
         language: q.language ?? 'de',
+        region: MIGROS_REGION_ID,
       } as any);
       const products = (Array.isArray(detailsR) ? detailsR : Object.values(detailsR as Record<string, unknown>)) as any[];
 
