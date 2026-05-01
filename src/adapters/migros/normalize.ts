@@ -25,6 +25,14 @@ import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
 import { deriveTags } from './tags.js';
 
+function sanitizeRokkaUrl(url: string | undefined | null): string | undefined {
+  if (!url) return undefined;
+  if (url.includes('{') || url.includes('}')) {
+    return url.replace(/\{/g, '%7B').replace(/\}/g, '%7D');
+  }
+  return url;
+}
+
 interface MigrosProductRaw {
   uid?: number;
   migrosId?: string;
@@ -174,7 +182,14 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     .filter(Boolean);
   const tags = deriveTags(labelNames, name);
   const category = (raw.breadcrumb ?? []).map((b) => b.name ?? '').filter(Boolean);
-  const imageUrl = raw.images?.[0]?.url;
+  // Migros image URLs come from the rokka CDN with a literal `{stack}`
+  // placeholder, e.g. `https://image.migros.ch/d/{stack}/.../slug.jpg`.
+  // The CDN accepts the placeholder verbatim and returns the original
+  // image, but browsers handle raw `{` / `}` in <img src> inconsistently
+  // (some encode them, some don't, and Cloudfront edge nodes occasionally
+  // choke). Pre-encoding to %7B / %7D forces a stable path so every
+  // consumer of this package gets a browser-safe URL.
+  const imageUrl = sanitizeRokkaUrl(raw.images?.[0]?.url);
   const brand = raw.productInformation?.mainInformation?.brand?.name;
 
   // Build the promotion descriptor. Prefer the per-product promotionDateRange

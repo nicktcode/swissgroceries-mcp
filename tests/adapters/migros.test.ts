@@ -67,6 +67,46 @@ describe('normalizeProduct (fixture)', () => {
   });
 });
 
+describe('imageUrl sanitization', () => {
+  it('encodes literal {stack} placeholder so the URL is browser-safe', () => {
+    const raw: any = {
+      uid: 1,
+      migrosId: '12345',
+      name: 'Test',
+      offer: { price: { effectiveValue: 1, advertisedValue: 1 }, quantity: '1L' },
+      images: [
+        {
+          url: 'https://image.migros.ch/d/{stack}/o-af-1-t.clr-fff/abc123/test.jpg',
+          cdn: 'rokka',
+        },
+      ],
+    };
+    const p = normalizeProduct(raw);
+    expect(p.imageUrl).toBe(
+      'https://image.migros.ch/d/%7Bstack%7D/o-af-1-t.clr-fff/abc123/test.jpg',
+    );
+  });
+  it('leaves URLs without curly braces unchanged', () => {
+    const raw: any = {
+      uid: 1,
+      migrosId: '12345',
+      name: 'Test',
+      offer: { price: { effectiveValue: 1, advertisedValue: 1 }, quantity: '1L' },
+      images: [{ url: 'https://image.migros.ch/d/xyz/abc.jpg' }],
+    };
+    expect(normalizeProduct(raw).imageUrl).toBe('https://image.migros.ch/d/xyz/abc.jpg');
+  });
+  it('returns undefined when no image is present', () => {
+    const raw: any = {
+      uid: 1,
+      migrosId: '12345',
+      name: 'Test',
+      offer: { price: { effectiveValue: 1, advertisedValue: 1 }, quantity: '1L' },
+    };
+    expect(normalizeProduct(raw).imageUrl).toBeUndefined();
+  });
+});
+
 describe('normalizeStore (fixture)', () => {
   it('normalizes a real Migros store', () => {
     let raw: any;
