@@ -9,6 +9,22 @@ import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
 import { CoopSearchResponseSchema } from './schemas.js';
 
+// Returns the upcoming Sunday at 23:59:59 in Europe/Zurich as an ISO string.
+// Coop's weekly Aktionen always run Mon–Sun, so this is a reasonable default
+// when the API itself doesn't expose per-product end dates.
+function nextSundayEndOfDay(): string {
+  const now = new Date();
+  const day = now.getUTCDay(); // 0 = Sunday, 1 = Monday, ...
+  const daysUntilSunday = day === 0 ? 0 : 7 - day;
+  const sunday = new Date(now);
+  sunday.setUTCDate(now.getUTCDate() + daysUntilSunday);
+  // 23:59:59 Europe/Zurich; subtract 1h or 2h depending on DST. Use 22:00:00
+  // UTC during CEST and 23:00:00 UTC during CET. JS doesn't expose tz easily;
+  // accept ±1h slack — the UI rounds to the date anyway.
+  sunday.setUTCHours(22, 0, 0, 0);
+  return sunday.toISOString();
+}
+
 function classify(e: unknown): AdapterError {
   const msg = e instanceof Error ? e.message : String(e);
   if (/DataDome|challenge/i.test(msg)) return { code: 'unavailable', reason: msg };
@@ -76,29 +92,23 @@ export class CoopAdapter implements StoreAdapter {
   }
 
   async getPromotions(q: PromotionQuery): Promise<AdapterResult<NormalizedPromotion[]>> {
-    // Coop has no working /aktionen or facet endpoint we've found that
-    // returns just promo items — OCC-style facet filters (e.g. ?query=
-    // :relevance:hasPromotion:true) are accepted but ignored, returning
-    // the full catalog (~24k items).
+    // Coop's "Aktuelle Highlights" are sourced from category m_1011 —
+    // their actual Aktionen category. The category contains both the
+    // flat-priced promos we want and conditional ones we drop. Endpoint
+    // verified via Charles capture of the Coop iOS app (2026-05-01):
+    //   /rest/v2/coopathome/products/category/m_1011?currentPage=N&pageSize=100&query=availableOnline:false
     //
-    // Strategy: when q.query is given, search for that and surface promo
-    // items. When unspecified, fan out across a curated set of common
-    // grocery seeds and dedupe by product code. Catches most weekly
-    // Aktionen items (typically 30–80 unique promo products) without
-    // burning the catalog scan budget.
-    //
-    // Conditional promos (e.g. "30% ab 2", flagPromotions populated but no
-    // originalPrice) drop out — we can only express was/now reductions.
+    // Coop weekly Aktionen run Mon–Sun in Switzerland. The API doesn't
+    // expose per-product end dates, so we set validUntil to the upcoming
+    // Sunday end-of-day (Europe/Zurich). Adequate signal for the deals
+    // UI and consistent with how Coop runs campaigns.
     try {
-      const seeds = q.query?.trim()
-        ? [q.query.trim()]
-        : ['fleisch', 'gemüse', 'käse', 'getränk', 'milch', 'brot', 'fisch', 'früchte', 'aktion'];
-
+      const pages = 3; // 3 × 100 = up to 300 candidates per call
       const responses = await Promise.all(
-        seeds.map(async (seed) => {
+        Array.from({ length: pages }, async (_, i) => {
           try {
-            const r: any = await coopFetch(`/products/search/${encodeURIComponent(seed)}`, {
-              query: { currentPage: 0, pageSize: 100, query: 'availableOnline:false' },
+            const r: any = await coopFetch('/products/category/m_1011', {
+              query: { currentPage: i, pageSize: 100, query: 'availableOnline:false' },
               language: q.language ?? 'de',
             });
             return (r?.products ?? []) as any[];
@@ -130,7 +140,20 @@ export class CoopAdapter implements StoreAdapter {
         }
       }
 
-      const promos: NormalizedPromotion[] = onPromo.map((raw) => {
+      // Optional q.query filter: substring match against product name/title.
+      const needle = q.query?.trim().toLowerCase();
+      const filtered = needle
+        ? onPromo.filter((p) => {
+            const name = String(p?.title ?? p?.name ?? '').toLowerCase();
+            return name.includes(needle);
+          })
+        : onPromo;
+
+      // Coop weekly Aktionen end Sunday 23:59:59 Europe/Zurich. Compute
+      // next Sunday end-of-day; if today IS Sunday, use today.
+      const validUntil = nextSundayEndOfDay();
+
+      const promos: NormalizedPromotion[] = filtered.map((raw) => {
         const np = normalizeProduct(raw);
         return {
           chain: 'coop' as const,
@@ -141,14 +164,19 @@ export class CoopAdapter implements StoreAdapter {
           size: np.size,
           unitPrice: np.unitPrice,
           price: np.price,
+          validUntil,
           description: typeof raw.discountPercentage === 'number'
             ? `-${raw.discountPercentage}%`
             : (raw.listPromotions?.[0] as string | undefined),
         };
       });
-      // endingWithinDays: Coop search results don't carry per-item end dates,
-      // so this filter is a no-op for this chain. Parameter still accepted.
-      return ok(promos);
+
+      let result = promos;
+      if (q.endingWithinDays !== undefined) {
+        const cutoff = Date.now() + q.endingWithinDays * 24 * 3600 * 1000;
+        result = result.filter((p) => p.validUntil && Date.parse(p.validUntil) <= cutoff);
+      }
+      return ok(result);
     } catch (e) {
       return err(classify(e));
     }
