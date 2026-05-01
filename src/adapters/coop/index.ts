@@ -136,6 +136,10 @@ export class CoopAdapter implements StoreAdapter {
           chain: 'coop' as const,
           productId: np.id,
           productName: np.name,
+          brand: np.brand,
+          imageUrl: np.imageUrl,
+          size: np.size,
+          unitPrice: np.unitPrice,
           price: np.price,
           description: typeof raw.discountPercentage === 'number'
             ? `-${raw.discountPercentage}%`

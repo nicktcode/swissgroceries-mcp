@@ -117,6 +117,7 @@ export function normalizeStore(raw: LidlStoreRaw): NormalizedStore {
 interface LidlPromotionRaw {
   id?: string;
   title?: string;
+  imageUrl?: string;
   mainPrice?: LidlMainPrice;
   price?: { price?: number; oldPrice?: number };
   validFrom?: string;
@@ -131,6 +132,7 @@ export function normalizePromotion(raw: LidlPromotionRaw): NormalizedPromotion {
     chain: 'lidl',
     productId: raw.id,
     productName: raw.title ?? '',
+    imageUrl: raw.imageUrl,
     price: current !== undefined
       ? { current, regular, currency: 'CHF' }
       : undefined,

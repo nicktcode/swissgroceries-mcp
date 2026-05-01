@@ -1,6 +1,6 @@
 {
   "name": "@nicktcode/swissgroceries-mcp",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "MCP server for Swiss grocery stores (Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto's). Cross-chain product search, promotions, and shopping-plan optimisation. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code).",
   "type": "module",
   "license": "MIT",

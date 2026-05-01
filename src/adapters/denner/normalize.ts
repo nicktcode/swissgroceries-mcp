@@ -135,6 +135,7 @@ export function normalizePromotion(raw: DennerPromotionRaw): NormalizedPromotion
     chain: 'denner',
     productId: raw.id !== undefined ? String(raw.id) : undefined,
     productName,
+    imageUrl: typeof raw.imageUrl === 'string' ? raw.imageUrl : undefined,
     price: current !== undefined
       ? { current, regular, currency: 'CHF' }
       : undefined,

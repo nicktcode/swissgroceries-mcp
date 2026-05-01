@@ -70,6 +70,14 @@ export interface NormalizedPromotion {
   chain: Chain;
   productId?: string;
   productName: string;
+  /** Optional brand — surfaced when the chain provides it on the promo product. */
+  brand?: string;
+  /** Optional product image URL — adapter passes through from search/detail. */
+  imageUrl?: string;
+  /** Optional pack size — same meaning as on NormalizedProduct. */
+  size?: { value: number; unit: Unit };
+  /** Optional unit price (per kg / l / piece). */
+  unitPrice?: { value: number; per: 'kg' | 'l' | 'piece' };
   price?: { current: number; regular?: number; currency: 'CHF' };
   validFrom?: string;
   validUntil?: string;

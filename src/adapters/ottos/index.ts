@@ -173,7 +173,21 @@ export class OttosAdapter implements StoreAdapter {
         const reg = p.insteadOfPrice?.value;
         return typeof cur === 'number' && typeof reg === 'number' && reg > cur;
       });
-      return ok(dedup.map(normalizePromotion));
+      // Promote raw → normalizeProduct → NormalizedPromotion so we surface
+      // imageUrl, brand, size, and unitPrice on the deals UI.
+      return ok(
+        dedup.map((raw) => {
+          const np = normalizeProduct(raw);
+          const base = normalizePromotion(raw);
+          return {
+            ...base,
+            brand: np.brand,
+            imageUrl: np.imageUrl,
+            size: np.size,
+            unitPrice: np.unitPrice,
+          };
+        }),
+      );
     } catch (e) {
       return err(classify(e));
     }
