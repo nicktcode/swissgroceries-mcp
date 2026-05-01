@@ -76,19 +76,74 @@ export class CoopAdapter implements StoreAdapter {
   }
 
   async getPromotions(q: PromotionQuery): Promise<AdapterResult<NormalizedPromotion[]>> {
+    // Coop has no working /aktionen or facet endpoint we've found that
+    // returns just promo items — OCC-style facet filters (e.g. ?query=
+    // :relevance:hasPromotion:true) are accepted but ignored, returning
+    // the full catalog (~24k items).
+    //
+    // Strategy: when q.query is given, search for that and surface promo
+    // items. When unspecified, fan out across a curated set of common
+    // grocery seeds and dedupe by product code. Catches most weekly
+    // Aktionen items (typically 30–80 unique promo products) without
+    // burning the catalog scan budget.
+    //
+    // Conditional promos (e.g. "30% ab 2", flagPromotions populated but no
+    // originalPrice) drop out — we can only express was/now reductions.
     try {
-      const r: any = await coopFetch('/cms/content-teasers-aktionen', { language: q.language ?? 'de' });
-      // The endpoint returns near-empty response in practice; items may live in various keys
-      const list = (r.products ?? r.teasers ?? r.items ?? r.entries ?? []) as any[];
-      let promos = list.map(normalizePromotion);
-      if (q.query) {
-        const needle = q.query.toLowerCase();
-        promos = promos.filter((p) => p.productName.toLowerCase().includes(needle));
+      const seeds = q.query?.trim()
+        ? [q.query.trim()]
+        : ['fleisch', 'gemüse', 'käse', 'getränk', 'milch', 'brot', 'fisch', 'früchte', 'aktion'];
+
+      const responses = await Promise.all(
+        seeds.map(async (seed) => {
+          try {
+            const r: any = await coopFetch(`/products/search/${encodeURIComponent(seed)}`, {
+              query: { currentPage: 0, pageSize: 100, query: 'availableOnline:false' },
+              language: q.language ?? 'de',
+            });
+            return (r?.products ?? []) as any[];
+          } catch {
+            return [];
+          }
+        }),
+      );
+
+      const seenCodes = new Set<string>();
+      const onPromo: any[] = [];
+      for (const list of responses) {
+        for (const p of list) {
+          const code = String(p?.code ?? '');
+          if (!code || seenCodes.has(code)) continue;
+          const hasFlag =
+            p?.hasPromotion === true ||
+            p?.weekPromotion === true ||
+            p?.assortmentHitPromotion === true ||
+            p?.megaStorePromotion === true;
+          const hasFlatPrice =
+            typeof p?.originalPrice?.value === 'number' &&
+            typeof p?.price?.value === 'number' &&
+            p.originalPrice.value > p.price.value;
+          if (hasFlag && hasFlatPrice) {
+            seenCodes.add(code);
+            onPromo.push(p);
+          }
+        }
       }
-      if (q.endingWithinDays !== undefined) {
-        const cutoff = Date.now() + q.endingWithinDays * 24 * 3600 * 1000;
-        promos = promos.filter((p) => p.validUntil && Date.parse(p.validUntil) <= cutoff);
-      }
+
+      const promos: NormalizedPromotion[] = onPromo.map((raw) => {
+        const np = normalizeProduct(raw);
+        return {
+          chain: 'coop' as const,
+          productId: np.id,
+          productName: np.name,
+          price: np.price,
+          description: typeof raw.discountPercentage === 'number'
+            ? `-${raw.discountPercentage}%`
+            : (raw.listPromotions?.[0] as string | undefined),
+        };
+      });
+      // endingWithinDays: Coop search results don't carry per-item end dates,
+      // so this filter is a no-op for this chain. Parameter still accepted.
       return ok(promos);
     } catch (e) {
       return err(classify(e));

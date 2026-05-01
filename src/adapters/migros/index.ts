@@ -164,13 +164,16 @@ export class MigrosAdapter implements StoreAdapter {
 
       let promos: NormalizedPromotion[] = products.map((raw) => {
         const np = normalizeProduct(raw);
+        // Prefer per-product promotion end date when present; fall back to
+        // the campaign-wide endDate from the search response.
+        const perProductEnd = raw?.offer?.promotionDateRange?.endDate as string | undefined;
         return {
           chain: 'migros' as const,
           productId: np.id,
           productName: np.name,
           price: np.price,
-          validFrom: startDate,
-          validUntil: endDate,
+          validFrom: raw?.offer?.promotionDateRange?.startDate ?? startDate,
+          validUntil: perProductEnd ?? endDate,
           description: np.promotion?.description,
         };
       });

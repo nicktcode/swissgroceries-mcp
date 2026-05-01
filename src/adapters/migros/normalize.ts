@@ -37,6 +37,19 @@ interface MigrosProductRaw {
       advertisedValue?: number;
       unitPrice?: { value?: number; unit?: string };
     };
+    // Present only on products currently on promotion. When set, this is
+    // the actual checkout price; offer.price is the regular/list price.
+    promotionPrice?: {
+      effectiveValue?: number;
+      advertisedValue?: number;
+      unitPrice?: { value?: number; unit?: string };
+    };
+    // Per-product promotion validity. The promotion-search endpoint also
+    // returns a top-level startDate/endDate but those reflect the overall
+    // weekly campaign window; per-product dates can differ.
+    promotionDateRange?: { startDate?: string; endDate?: string };
+    priceInsteadOfLabel?: string; // typically "statt"
+    badges?: Array<{ type?: string; description?: string; rawDescription?: string }>;
     quantity?: string;
     isVariableWeight?: boolean;
     promotion?: {
@@ -125,10 +138,35 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   // Real API: id is uid (number) or migrosId (string)
   const id = raw.migrosId ?? String(raw.uid ?? '');
   const name = raw.name ?? '';
-  const { current, isApprox } = deriveMigrosPrice(raw.offer);
-  const regular = raw.offer?.price?.advertisedValue !== current
-    ? raw.offer?.price?.advertisedValue
-    : undefined;
+
+  // Migros promotion model:
+  //   - On a normal product, offer.price holds the only price.
+  //   - On a promo product, offer.promotionPrice is the checkout price
+  //     and offer.price is the regular/list price (the "was" amount).
+  //     priceInsteadOfLabel: "statt" confirms the relationship.
+  // We pick promotionPrice when present; otherwise fall back to deriveMigrosPrice
+  // which handles the variable-weight estimation pathway.
+  const hasPromoPrice =
+    typeof raw.offer?.promotionPrice?.effectiveValue === 'number' &&
+    raw.offer.promotionPrice.effectiveValue > 0;
+
+  let current: number;
+  let isApprox: boolean;
+  let regular: number | undefined;
+  if (hasPromoPrice) {
+    current = raw.offer!.promotionPrice!.effectiveValue!;
+    isApprox = false;
+    const reg = raw.offer?.price?.effectiveValue;
+    regular = typeof reg === 'number' && reg > current ? reg : undefined;
+  } else {
+    const derived = deriveMigrosPrice(raw.offer);
+    current = derived.current;
+    isApprox = derived.isApprox;
+    regular = raw.offer?.price?.advertisedValue !== current
+      ? raw.offer?.price?.advertisedValue
+      : undefined;
+  }
+
   // Quantity string (e.g. "1l", "500g", "6er") is the size
   const size = parseSize(raw.offer?.quantity);
   const labelNames = (raw.productInformation?.mainInformation?.labels ?? [])
@@ -139,9 +177,22 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   const imageUrl = raw.images?.[0]?.url;
   const brand = raw.productInformation?.mainInformation?.brand?.name;
 
-  const basePromotion = raw.offer?.promotion?.endsAt || raw.offer?.promotion?.description
-    ? { endsAt: raw.offer?.promotion?.endsAt, description: raw.offer?.promotion?.description }
-    : undefined;
+  // Build the promotion descriptor. Prefer the per-product promotionDateRange
+  // and percentage badge over the older promotion sub-object.
+  const pctBadge = (raw.offer?.badges ?? []).find((b) => b.type === 'PERCENTAGE_PROMOTION');
+  const dateRangeEnd = raw.offer?.promotionDateRange?.endDate;
+  const basePromotion =
+    hasPromoPrice || dateRangeEnd || pctBadge ||
+    raw.offer?.promotion?.endsAt || raw.offer?.promotion?.description
+      ? {
+          endsAt: dateRangeEnd ?? raw.offer?.promotion?.endsAt,
+          description:
+            pctBadge?.description ??
+            (raw.offer?.priceInsteadOfLabel && regular !== undefined
+              ? `${raw.offer.priceInsteadOfLabel} CHF ${regular.toFixed(2)}`
+              : raw.offer?.promotion?.description),
+        }
+      : undefined;
 
   const product: NormalizedProduct = {
     chain: 'migros',
