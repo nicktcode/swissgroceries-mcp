@@ -149,10 +149,13 @@ export class MigrosAdapter implements StoreAdapter {
       const startDate: string | undefined = (r as any).startDate;
       const endDate: string | undefined = (r as any).endDate;
 
+      // Migros's promotion-search returns ~55 product items per week plus
+      // ~45 GROUP_PROMOTION entries (category-level discounts that can't
+      // be expressed as individual deal cards). Take all PRODUCT items.
       const productIds = items
         .filter((it) => !it.type || it.type === 'PRODUCT')
         .map((it) => String(it.id))
-        .slice(0, 50);
+        .slice(0, 100);
 
       if (productIds.length === 0) return ok([]);
 
