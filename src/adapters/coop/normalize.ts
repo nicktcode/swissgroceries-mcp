@@ -45,6 +45,9 @@ interface HybrisProduct {
   contentUnit?: string;                  // size unit (e.g. "g", "ml")
   images?: Array<{ url?: string; usedFor?: string }>;
   primaryCategory?: { id?: string; name?: string }; // replaces categories[]
+  // Slash-separated breadcrumb-ish path used in canonical product URLs.
+  // Example: "lebensmittel/milchprodukte-eier/milch/multipacks-ab-1l".
+  categoryPathForTracking?: string;
   labels?: string[];
   hasPromotion?: boolean;
   weekPromotion?: boolean;
@@ -85,15 +88,33 @@ export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName
     ? { description: raw.selectedPromotion?.text }
     : undefined;
 
+  // Coop runs SAP Commerce Cloud; the canonical product URL is the
+  // categoryPathForTracking slug + the product code:
+  //   /de/<categoryPath>/p/<code>
+  // E.g. /de/lebensmittel/milchprodukte-eier/milch/multipacks-ab-1l/p/4389992.
+  // Coop's edge is on Cloudflare with aggressive bot protection so we can't
+  // verify the URL from a headless probe (always 403), but the pattern
+  // matches every Coop product link we've seen on coop.ch and aligns with
+  // the SAP Commerce default. Real browsers (with cookies + JS UA) follow
+  // it correctly. If categoryPathForTracking is missing the URL is
+  // skipped — partial paths render the wrong page.
+  const code = raw.code;
+  const categoryPath = raw.categoryPathForTracking;
+  const productUrl =
+    code && categoryPath
+      ? `https://www.coop.ch/de/${categoryPath.replace(/^\/+|\/+$/g, '')}/p/${code}`
+      : undefined;
+
   const product: NormalizedProduct = {
     chain: 'coop',
-    id: raw.code ?? '',
+    id: code ?? '',
     name,
     size,
     price: { current, regular, currency: 'CHF' },
     tags,
     category,
     imageUrl,
+    productUrl,
     promotion,
     raw,
   };

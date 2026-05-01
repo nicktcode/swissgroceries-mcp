@@ -55,6 +55,14 @@ export function normalizeProduct(raw: DennerProductRaw): NormalizedProduct {
   const size = parseSize(descText);
   const current = raw.priceOverride ?? raw.priceDiscount ?? 0;
   const regular = raw.priceOrigin && raw.priceOrigin > 0 ? raw.priceOrigin : undefined;
+  // Denner's canonical URL is /de/aktionen/<slug>~p<numericId>?variant=<uuid>.
+  // The numeric `p` ID isn't exposed in the API response, but the variant
+  // UUID alone is enough — denner.ch resolves and 302-redirects to the
+  // canonical URL when given a placeholder slug+id with the right variant
+  // (verified live: HTTP 200 redirect-chain on `/de/aktionen/x~p1?variant=`).
+  const productUrl = id
+    ? `https://www.denner.ch/de/aktionen/x~p1?variant=${id}`
+    : undefined;
   const product: NormalizedProduct = {
     chain: 'denner',
     id,
@@ -63,6 +71,7 @@ export function normalizeProduct(raw: DennerProductRaw): NormalizedProduct {
     price: { current, regular, currency: 'CHF' },
     tags: deriveDennerTags(name, raw.ecoLabels),
     imageUrl: raw.imageUrl,
+    productUrl,
     promotion: (raw.validFrom || raw.validTo)
       ? { endsAt: raw.validTo, description: descText || undefined }
       : undefined,
