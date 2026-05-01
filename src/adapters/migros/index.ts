@@ -190,6 +190,7 @@ export class MigrosAdapter implements StoreAdapter {
           productName: np.name,
           brand: np.brand,
           imageUrl: np.imageUrl,
+          productUrl: np.productUrl,
           size: np.size,
           unitPrice: np.unitPrice,
           price: np.price,

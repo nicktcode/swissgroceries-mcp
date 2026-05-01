@@ -156,6 +156,9 @@ export function normalizeProduct(raw: VolgshopProductRaw): NormalizedProduct {
     tags: deriveVolgshopTags(name, categoryNames, tagNames),
     category: categoryNames.length ? categoryNames : undefined,
     imageUrl: raw.images?.[0]?.src,
+    productUrl: typeof (raw as { permalink?: unknown }).permalink === 'string'
+      ? (raw as { permalink: string }).permalink
+      : undefined,
     promotion,
     raw,
   };

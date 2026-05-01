@@ -133,6 +133,10 @@ export function normalizeProduct(raw: FarmyProductRaw): NormalizedProduct {
     tags: deriveFarmyTags(name, [...certNames, ...certCodes], categoryNames),
     category: categoryNames.length ? categoryNames : undefined,
     imageUrl: pickImageUrl(raw.image),
+    // Farmy returns the SEO slug path; prepend the canonical host + locale.
+    productUrl: typeof (raw as { seo_url?: unknown }).seo_url === 'string'
+      ? `https://www.farmy.ch/de${(raw as { seo_url: string }).seo_url}`
+      : undefined,
     promotion,
     raw,
   };

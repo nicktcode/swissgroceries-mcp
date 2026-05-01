@@ -181,6 +181,11 @@ export function normalizeProduct(raw: OttosProductRaw): NormalizedProduct {
     tags: deriveOttosTags(name, raw.brand, categoryNames, labels),
     category: categoryNames.length ? categoryNames : undefined,
     imageUrl: pickPrimaryImage(raw.images),
+    // Otto's responses carry `url` as a path (e.g. "/c/.../p/123"); prepend
+    // the canonical host to make a deep-linkable URL.
+    productUrl: typeof (raw as { url?: unknown }).url === 'string' && (raw as { url: string }).url.startsWith('/')
+      ? `https://www.ottos.ch${(raw as { url: string }).url}`
+      : undefined,
     promotion,
     raw,
   };

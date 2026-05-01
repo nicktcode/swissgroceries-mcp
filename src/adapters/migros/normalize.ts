@@ -67,6 +67,7 @@ interface MigrosProductRaw {
     };
   };
   images?: Array<{ url?: string; cdn?: string }>;
+  productUrls?: string;
   productInformation?: {
     mainInformation?: {
       brand?: { name?: string };
@@ -190,6 +191,9 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   // choke). Pre-encoding to %7B / %7D forces a stable path so every
   // consumer of this package gets a browser-safe URL.
   const imageUrl = sanitizeRokkaUrl(raw.images?.[0]?.url);
+  // Migros returns the canonical product page URL in raw.productUrls — full
+  // URL ready to deep-link from the consumer.
+  const productUrl = raw.productUrls;
   const brand = raw.productInformation?.mainInformation?.brand?.name;
 
   // Build the promotion descriptor. Prefer the per-product promotionDateRange
@@ -219,6 +223,7 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     category,
     tags,
     imageUrl,
+    productUrl,
     promotion: basePromotion,
     raw,
   };

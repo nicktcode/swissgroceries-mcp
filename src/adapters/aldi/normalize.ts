@@ -117,9 +117,20 @@ export function normalizeProduct(raw: AldiProductRaw): NormalizedProduct {
     ? { description: `Was: ${raw.price.wasPriceDisplay}` }
     : undefined;
 
+  // Aldi gives us a urlSlugText; the canonical product page is
+  //   /de/p.<slug>.<sku>.html
+  // urlSlugTextAlternatives carries fr-CH and it-CH variants but we stick
+  // with German for the de-CH default. SKU is required by Aldi's URL
+  // structure even though the slug alone would be unique enough.
+  const sku = raw.sku ?? '';
+  const slug = typeof (raw as { urlSlugText?: unknown }).urlSlugText === 'string'
+    ? (raw as { urlSlugText: string }).urlSlugText
+    : undefined;
+  const productUrl = slug && sku ? `https://www.aldi-suisse.ch/de/p.${slug}.${sku}.html` : undefined;
+
   const product: NormalizedProduct = {
     chain: 'aldi',
-    id: raw.sku ?? '',
+    id: sku,
     name,
     brand: raw.brandName || undefined,
     size,
@@ -127,6 +138,7 @@ export function normalizeProduct(raw: AldiProductRaw): NormalizedProduct {
     tags: deriveAldiTags(name, badgeTexts),
     category: categoryNames.length ? categoryNames : undefined,
     imageUrl,
+    productUrl,
     promotion,
     raw,
   };

@@ -53,6 +53,17 @@ export interface NormalizedProduct {
   category?: string[];
   tags: Tag[];
   imageUrl?: string;
+  /**
+   * Outbound URL to the chain's own product page. Lets consumers (web UI,
+   * mobile, third-party clients) deep-link "buy here" without each having
+   * to know each chain's URL pattern.
+   *
+   * Set when the adapter's response carries enough info to construct it
+   * (slug + id, full URL, etc.). Undefined when the chain's API doesn't
+   * expose URL data (Coop, Denner, Lidl currently). Coverage may improve
+   * over time as adapters learn more upstream fields.
+   */
+  productUrl?: string;
   promotion?: { endsAt?: string; description?: string };
   raw?: unknown;
 }
@@ -74,6 +85,9 @@ export interface NormalizedPromotion {
   brand?: string;
   /** Optional product image URL — adapter passes through from search/detail. */
   imageUrl?: string;
+  /** Optional outbound URL to the chain's product page — same semantics as
+   *  NormalizedProduct.productUrl. Same coverage caveats apply. */
+  productUrl?: string;
   /** Optional pack size — same meaning as on NormalizedProduct. */
   size?: { value: number; unit: Unit };
   /** Optional unit price (per kg / l / piece). */
