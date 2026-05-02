@@ -11,6 +11,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License: AGPL-3.0"></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/node/v/@nicktcode/swissgroceries-mcp" alt="Node"></a>
   <a href="https://modelcontextprotocol.io/"><img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP compatible"></a>
+  <a href="https://glama.ai/mcp/servers/nicktcode/swissgroceries-mcp"><img src="https://glama.ai/mcp/servers/nicktcode/swissgroceries-mcp/badges/score.svg" alt="nicktcode/swissgroceries-mcp MCP server"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
