@@ -1,9 +1,14 @@
 import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
+import { sizeFromName } from '../../util/size-from-name.js';
 import { deriveCoopTags } from './tags.js';
 
-const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck)/i;
+// 'ST' is Coop's contentUnit abbreviation for Stück (e.g. egg cartons).
+// Without it, content='10' + contentUnit='ST' parses as a no-match and
+// piece-priced products get no size + no unit price — they then sort to
+// the bottom of any per-unit ranking.
+const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck|st)/i;
 
 export function parseSize(text: string | undefined): { value: number; unit: Unit } | undefined {
   if (!text) return undefined;
@@ -20,6 +25,7 @@ export function parseSize(text: string | undefined): { value: number; unit: Unit
     case 'dl': return { value: value * 100, unit: 'ml' };
     case 'l':  return { value, unit: 'l' };
     case 'er':
+    case 'st':
     case 'stk':
     case 'stück':
     case 'stueck':
@@ -65,11 +71,13 @@ interface HybrisProduct {
 
 export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName?: string; productName?: string }): NormalizedProduct {
   const name = (raw as any).title ?? raw.name ?? (raw as any).fullName ?? (raw as any).productName ?? '';
-  // Build size from content + contentUnit (e.g. "500" + "g")
+  // Build size from content + contentUnit (e.g. "500" + "g"). When that's
+  // missing or unparseable, fall back to extracting from the human-readable
+  // name (which often carries something like "10 Stück" or "1.5l" inline).
   const sizeText = raw.content && raw.contentUnit
     ? `${raw.content}${raw.contentUnit}`
     : undefined;
-  const size = parseSize(sizeText);
+  const size = parseSize(sizeText) ?? sizeFromName(name);
   const tags = deriveCoopTags(raw.labels ?? [], name, {
     vegan: raw.vegan,
     vegetarian: raw.vegetarian,
