@@ -87,7 +87,7 @@ function deriveMigrosPrice(offer: any): { current: number; isApprox: boolean } {
   const qty: string | undefined = offer?.quantity;
   if (typeof unitPriceVal === 'number' && unitPriceVal > 0 && qty) {
     // Parse "1 kg", "500 g", "6er", etc.
-    const match = qty.match(/([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk)/i);
+    const match = qty.match(/([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck)/i);
     if (match) {
       const value = parseFloat(match[1].replace(',', '.'));
       const unit = match[2].toLowerCase();
@@ -118,7 +118,7 @@ function deriveMigrosPrice(offer: any): { current: number; isApprox: boolean } {
   return { current: 0, isApprox: false };
 }
 
-const MEASUREMENT_RX = /^([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|pieces?)\b/i;
+const MEASUREMENT_RX = /^([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck|pieces?)\b/i;
 
 export function parseSize(measurement: string | undefined): { value: number; unit: Unit } | undefined {
   if (!measurement) return undefined;
@@ -136,6 +136,8 @@ export function parseSize(measurement: string | undefined): { value: number; uni
     case 'l':  return { value, unit: 'l' };
     case 'er':
     case 'stk':
+    case 'stück':
+    case 'stueck':
     case 'piece':
     case 'pieces':
       return { value, unit: 'piece' };

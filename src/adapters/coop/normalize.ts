@@ -3,7 +3,7 @@ import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
 import { deriveCoopTags } from './tags.js';
 
-const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk)/i;
+const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck)/i;
 
 export function parseSize(text: string | undefined): { value: number; unit: Unit } | undefined {
   if (!text) return undefined;
@@ -21,6 +21,8 @@ export function parseSize(text: string | undefined): { value: number; unit: Unit
     case 'l':  return { value, unit: 'l' };
     case 'er':
     case 'stk':
+    case 'stück':
+    case 'stueck':
       return { value, unit: 'piece' };
   }
   return undefined;

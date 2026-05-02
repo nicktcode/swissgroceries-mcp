@@ -22,7 +22,7 @@ import { deriveAldiTags } from './tags.js';
 //     - zip: `address.zipCode`, not `address.zip`
 //     - city: `address.city`
 
-const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|x)/i;
+const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck|x)/i;
 
 export function parseSize(text: string | undefined): { value: number; unit: Unit } | undefined {
   if (!text) return undefined;
@@ -39,6 +39,8 @@ export function parseSize(text: string | undefined): { value: number; unit: Unit
     case 'l':  return { value, unit: 'l' };
     case 'er':
     case 'stk':
+    case 'stück':
+    case 'stueck':
     case 'x':
       return { value, unit: 'piece' };
   }
