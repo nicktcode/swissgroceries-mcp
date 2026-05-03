@@ -155,10 +155,21 @@ export function normalizeProduct(raw: OttosProductRaw): NormalizedProduct {
 
   const size = parseOttosSize(raw.unitName ?? undefined) ?? parseOttosSize(name);
 
-  const categoryNames = (raw.categories ?? [])
-    .filter((c) => !c.excludeFromProductBreadcrumb)
-    .map((c) => c.name ?? '')
-    .filter(Boolean);
+  const realCategories = (raw.categories ?? []).filter(
+    (c) => !c.excludeFromProductBreadcrumb,
+  );
+  const categoryNames = realCategories.map((c) => c.name ?? '').filter(Boolean);
+
+  // Top-level department = first non-meta category. Otto's codes are
+  // 'm_20000' (Beauty & Gesundheit), 'm_30000' (Lebensmittel), etc.
+  // The 5-digit segment is stable and the first one in the array is
+  // the deepest-applicable top-level (excludeFromProductBreadcrumb
+  // already filtered M_ROOT and M_SHOP).
+  const topCat = realCategories[0];
+  const department =
+    topCat && topCat.code && topCat.name
+      ? { id: topCat.code, name: topCat.name }
+      : undefined;
 
   const labels = productLabelTexts(raw.productLabels);
 
@@ -181,6 +192,7 @@ export function normalizeProduct(raw: OttosProductRaw): NormalizedProduct {
     tags: deriveOttosTags(name, raw.brand, categoryNames, labels),
     category: categoryNames.length ? categoryNames : undefined,
     imageUrl: pickPrimaryImage(raw.images),
+    department,
     // Otto's responses carry `url` as a path (e.g. "/c/.../p/123"); prepend
     // the canonical host to make a deep-linkable URL.
     productUrl: typeof (raw as { url?: unknown }).url === 'string' && (raw as { url: string }).url.startsWith('/')

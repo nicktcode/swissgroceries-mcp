@@ -108,6 +108,16 @@ export function normalizeProduct(raw: AldiProductRaw): NormalizedProduct {
   // Category: use last (most specific) category name
   const categoryNames = (raw.categories ?? []).map((c) => c.name ?? '').filter(Boolean);
 
+  // Top-level department. Aldi's categories[] starts with a brand/range
+  // bucket (shorter id) and nests into actual departments (longer ids
+  // because the full path is concatenated). The LAST entry is the
+  // department-leaf (e.g. 'Milch & Milchprodukte') which is the
+  // meaningful 'shelf' for our purposes.
+  const cats = raw.categories ?? [];
+  const topCat = cats.length > 0 ? cats[cats.length - 1] : undefined;
+  const department =
+    topCat && topCat.id && topCat.name ? { id: topCat.id, name: topCat.name } : undefined;
+
   // Image URL from assets; replace placeholders with sensible defaults
   const rawImageUrl = raw.assets?.[0]?.url;
   const imageUrl = rawImageUrl
@@ -141,6 +151,7 @@ export function normalizeProduct(raw: AldiProductRaw): NormalizedProduct {
     category: categoryNames.length ? categoryNames : undefined,
     imageUrl,
     productUrl,
+    department,
     promotion,
     raw,
   };

@@ -185,6 +185,11 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     .filter(Boolean);
   const tags = deriveTags(labelNames, name);
   const category = (raw.breadcrumb ?? []).map((b) => b.name ?? '').filter(Boolean);
+  // Top-level department = breadcrumb[0]. IDs in Migros's tree (e.g.
+  // 7494732 for 'Früchte & Gemüse') are stable across product responses.
+  const topBc = raw.breadcrumb?.[0];
+  const department =
+    topBc && topBc.id && topBc.name ? { id: String(topBc.id), name: topBc.name } : undefined;
   // Migros image URLs come from the rokka CDN with a literal `{stack}`
   // placeholder, e.g. `https://image.migros.ch/d/{stack}/.../slug.jpg`.
   // The CDN accepts the placeholder verbatim and returns the original
@@ -226,6 +231,7 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     tags,
     imageUrl,
     productUrl,
+    department,
     promotion: basePromotion,
     raw,
   };

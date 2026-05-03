@@ -143,6 +143,27 @@ export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName
       ? `https://www.coop.ch/de/${categoryPath.replace(/^\/+|\/+$/g, '')}/p/${code}`
       : undefined;
 
+  // Top-level department from the category path. Coop's path is
+  // 'lebensmittel/fruechte-gemuese/...' — first segment 'lebensmittel'
+  // is too generic (every food product is there), so the meaningful
+  // department is segment[1] ('fruechte-gemuese'). Slug used as id;
+  // turn it into a readable name by replacing dashes with spaces and
+  // title-casing.
+  let department: { id: string; name: string } | undefined;
+  if (categoryPath) {
+    const segments = categoryPath.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
+    // Skip 'lebensmittel' / 'getraenke' top wrappers and use the next
+    // segment as the actual department. Fall back to first if the path
+    // is shallow.
+    const dept = segments[1] ?? segments[0];
+    if (dept) {
+      department = {
+        id: dept,
+        name: dept.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+      };
+    }
+  }
+
   const product: NormalizedProduct = {
     chain: 'coop',
     id: code ?? '',
@@ -153,6 +174,7 @@ export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName
     category,
     imageUrl,
     productUrl,
+    department,
     promotion,
     raw,
   };

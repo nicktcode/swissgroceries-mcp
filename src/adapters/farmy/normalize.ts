@@ -60,6 +60,9 @@ interface FarmyCertificate {
 
 interface FarmyCategory {
   name?: string;
+  id?: number;
+  depth?: number;
+  parent_id?: number | null;
 }
 
 interface FarmyProducer {
@@ -115,6 +118,17 @@ export function normalizeProduct(raw: FarmyProductRaw): NormalizedProduct {
   const certCodes = (raw.certificates ?? []).map((c) => c.code ?? '').filter(Boolean);
   const categoryNames = (raw.categories ?? []).map((c) => c.name ?? '').filter(Boolean);
 
+  // Top-level department. Farmy's category tree puts internal grouping
+  // at depth 0 ('MarktV3') and 1 ('Markt'); the first meaningful
+  // department is at depth 2 (e.g. 'Früchte & Gemüse', 'Milchprodukte').
+  // Trim whitespace because Farmy ships some entries with trailing
+  // spaces ('Früchte & Gemüse ').
+  const topCat = (raw.categories ?? []).find((c) => c.depth === 2);
+  const department =
+    topCat && topCat.id !== undefined && topCat.name
+      ? { id: String(topCat.id), name: topCat.name.trim() }
+      : undefined;
+
   const promotion = regular !== undefined && regular > current
     ? { description: `Reduziert von CHF ${regular.toFixed(2)}` }
     : undefined;
@@ -137,6 +151,7 @@ export function normalizeProduct(raw: FarmyProductRaw): NormalizedProduct {
     productUrl: typeof (raw as { seo_url?: unknown }).seo_url === 'string'
       ? `https://www.farmy.ch/de${(raw as { seo_url: string }).seo_url}`
       : undefined,
+    department,
     promotion,
     raw,
   };

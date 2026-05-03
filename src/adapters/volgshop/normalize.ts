@@ -69,7 +69,7 @@ interface VolgshopPrices {
 }
 
 interface VolgshopImage { src?: string; thumbnail?: string }
-interface VolgshopCategory { name?: string }
+interface VolgshopCategory { name?: string; slug?: string; id?: number }
 interface VolgshopTag { name?: string }
 interface VolgshopBrand { name?: string }
 
@@ -137,6 +137,19 @@ export function normalizeProduct(raw: VolgshopProductRaw): NormalizedProduct {
   const categoryNames = (raw.categories ?? []).map((c) => decodeHtmlEntities(c.name ?? '')).filter(Boolean);
   const tagNames = (raw.tags ?? []).map((t) => t.name ?? '').filter(Boolean);
 
+  // Volgshop returns categories leaf-first (most specific first); the
+  // LAST entry is the top-level department. Use the slug as a stable id
+  // and the human name decoded from HTML entities.
+  const cats = raw.categories ?? [];
+  const topCat = cats.length > 0 ? cats[cats.length - 1] : undefined;
+  const department =
+    topCat && (topCat.slug || topCat.id !== undefined)
+      ? {
+          id: topCat.slug ? String(topCat.slug) : String(topCat.id),
+          name: decodeHtmlEntities(topCat.name ?? ''),
+        }
+      : undefined;
+
   const onSale = raw.on_sale === true && regular !== undefined && sale !== undefined && sale < regular;
   const promotion = onSale && regular !== undefined
     ? { description: `Reduziert von CHF ${regular.toFixed(2)}` }
@@ -159,6 +172,7 @@ export function normalizeProduct(raw: VolgshopProductRaw): NormalizedProduct {
     productUrl: typeof (raw as { permalink?: unknown }).permalink === 'string'
       ? (raw as { permalink: string }).permalink
       : undefined,
+    department,
     promotion,
     raw,
   };

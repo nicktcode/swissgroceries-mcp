@@ -65,6 +65,19 @@ export interface NormalizedProduct {
    */
   productUrl?: string;
   /**
+   * Top-level department the chain assigns this product to (Migros's
+   * 'Früchte & Gemüse', Coop's 'lebensmittel/fruechte-gemuese', etc.).
+   * Stable id + display name — chains rarely renumber their top-level
+   * taxonomy. Lets consumers map to their own canonical buckets and do
+   * single-bucket-per-product filtering instead of token-soup matching
+   * across breadcrumb levels.
+   *
+   * Set when the adapter can extract a clear top-level department from
+   * the chain's structured response. Undefined for chains that don't
+   * expose one (Lidl) or for individual products with empty categories.
+   */
+  department?: { id: string; name: string };
+  /**
    * Where the product can be bought. Some chains return products that
    * exist only in physical stores (no online listing), and consumers
    * should know to hide outbound 'buy now' CTAs for those.
