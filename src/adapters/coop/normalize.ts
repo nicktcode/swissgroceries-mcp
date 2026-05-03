@@ -10,28 +10,56 @@ import { deriveCoopTags } from './tags.js';
 // the bottom of any per-unit ranking.
 const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck|st)/i;
 
-export function parseSize(text: string | undefined): { value: number; unit: Unit } | undefined {
-  if (!text) return undefined;
-  const m = text.match(SIZE_RX);
-  if (!m) return undefined;
-  const value = parseFloat(m[1].replace(',', '.'));
-  if (!Number.isFinite(value) || value <= 0) return undefined;
-  const u = m[2].toLowerCase();
-  switch (u) {
+// Multipack prefix: '6x 33', '6×33', '4 x 1.5'. Coop sometimes returns
+// content='6x 33' contentUnit='cl' which the plain SIZE_RX silently
+// parses as 33cl (= 330ml), missing the leading factor. The downstream
+// annotateMultipack util then divides that already-per-unit volume by
+// the count it finds in the product name, producing absurd per-unit
+// volumes (e.g. 55 ml per can for a 6×33cl pack) and >10x inflated
+// unit-prices (CHF 34.55/l instead of CHF 5.76/l). Detect and expand
+// the multipack content to total volume up front so size is the full
+// pack and annotateMultipack derives the per-unit numbers correctly.
+const MULTIPACK_PREFIX_RX = /^\s*(\d+)\s*[x×]\s*([\d.,]+)/;
+
+function parseUnitToBase(value: number, unit: string): { value: number; unit: Unit } | undefined {
+  switch (unit) {
     case 'g':  return { value, unit: 'g' };
     case 'kg': return { value, unit: 'kg' };
     case 'ml': return { value, unit: 'ml' };
     case 'cl': return { value: value * 10, unit: 'ml' };
     case 'dl': return { value: value * 100, unit: 'ml' };
     case 'l':  return { value, unit: 'l' };
-    case 'er':
-    case 'st':
-    case 'stk':
-    case 'stück':
-    case 'stueck':
-      return { value, unit: 'piece' };
   }
   return undefined;
+}
+
+export function parseSize(text: string | undefined): { value: number; unit: Unit } | undefined {
+  if (!text) return undefined;
+
+  // Detect multipack prefix first. We still need SIZE_RX to extract the
+  // unit (Coop puts the unit in contentUnit, which is concatenated onto
+  // text by the caller); MULTIPACK_PREFIX_RX gets us count + each-value,
+  // SIZE_RX gets us the unit token.
+  const mp = text.match(MULTIPACK_PREFIX_RX);
+  if (mp) {
+    const count = parseInt(mp[1], 10);
+    const each = parseFloat(mp[2].replace(',', '.'));
+    const um = text.match(SIZE_RX);
+    if (Number.isFinite(count) && count > 0 && Number.isFinite(each) && each > 0 && um) {
+      const total = parseUnitToBase(each * count, um[2].toLowerCase());
+      if (total) return total;
+    }
+  }
+
+  const m = text.match(SIZE_RX);
+  if (!m) return undefined;
+  const value = parseFloat(m[1].replace(',', '.'));
+  if (!Number.isFinite(value) || value <= 0) return undefined;
+  const u = m[2].toLowerCase();
+  if (u === 'er' || u === 'st' || u === 'stk' || u === 'stück' || u === 'stueck') {
+    return { value, unit: 'piece' };
+  }
+  return parseUnitToBase(value, u);
 }
 
 // Actual Coop Hybris API shape (verified against live fixture 2026-04-28)
