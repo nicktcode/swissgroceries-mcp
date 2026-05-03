@@ -143,19 +143,26 @@ export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName
       ? `https://www.coop.ch/de/${categoryPath.replace(/^\/+|\/+$/g, '')}/p/${code}`
       : undefined;
 
-  // Top-level department from the category path. Coop's path is
-  // 'lebensmittel/fruechte-gemuese/...' — first segment 'lebensmittel'
-  // is too generic (every food product is there), so the meaningful
-  // department is segment[1] ('fruechte-gemuese'). Slug used as id;
-  // turn it into a readable name by replacing dashes with spaces and
-  // title-casing.
+  // Top-level department from the category path. Coop has 6 top-level
+  // path roots verified live:
+  //   lebensmittel/         food (generic wrapper, skip and use the
+  //                         next segment for actual dept)
+  //   weine/                wines
+  //   baby-kind/            baby & kids
+  //   haushalt-tier/        household & pet
+  //   kosmetik-gesundheit/  cosmetics & health
+  //   kiosk/                tobacco / lottery / kiosk goods
+  //
+  // 'lebensmittel' is the only true wrapper — it covers the entire
+  // food assortment with sub-departments like 'milchprodukte-eier',
+  // 'fruechte-gemuese', 'fleisch-fisch', etc. Every other root IS the
+  // department. Earlier code stripped segment[0] unconditionally,
+  // which produced 'Alle Weine' (segment[1]) instead of 'Weine'
+  // for wine products. Fix: only skip 'lebensmittel'.
   let department: { id: string; name: string } | undefined;
   if (categoryPath) {
     const segments = categoryPath.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
-    // Skip 'lebensmittel' / 'getraenke' top wrappers and use the next
-    // segment as the actual department. Fall back to first if the path
-    // is shallow.
-    const dept = segments[1] ?? segments[0];
+    const dept = segments[0] === 'lebensmittel' ? segments[1] : segments[0];
     if (dept) {
       department = {
         id: dept,
