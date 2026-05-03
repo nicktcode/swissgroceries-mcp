@@ -52,6 +52,12 @@ interface LidlProductRaw {
   description?: string;
   validFrom?: string;
   validUntil?: string;
+  // Lidl's API explicitly distinguishes online vs in-store inventory.
+  // Most current responses are isStore-only — Lidl Schweiz doesn't run
+  // an online shop, just a digital flyer. Surface this so consumers
+  // know not to offer a 'buy now' CTA for the product.
+  isOnline?: boolean;
+  isStore?: boolean;
 }
 
 export function normalizeProduct(raw: LidlProductRaw): NormalizedProduct {
@@ -65,6 +71,14 @@ export function normalizeProduct(raw: LidlProductRaw): NormalizedProduct {
   const current = raw.mainPrice?.price ?? raw.price?.price ?? 0;
   const regular = raw.mainPrice?.oldPrice ?? raw.price?.oldPrice;
 
+  // Map Lidl's two booleans into our normalized availability enum.
+  // Defensive on undefined — old fixture data without the flags falls
+  // through to availability=undefined (caller treats as 'unknown').
+  let availability: 'online' | 'store-only' | 'both' | undefined;
+  if (raw.isOnline === true && raw.isStore === true) availability = 'both';
+  else if (raw.isOnline === true) availability = 'online';
+  else if (raw.isStore === true) availability = 'store-only';
+
   const p: NormalizedProduct = {
     chain: 'lidl',
     id: raw.id ?? '',
@@ -74,6 +88,7 @@ export function normalizeProduct(raw: LidlProductRaw): NormalizedProduct {
     price: { current, regular, currency: 'CHF' },
     tags: deriveLidlTags(name),
     imageUrl: raw.imageUrl ?? raw.imageUrls?.[0],
+    availability,
     promotion: raw.validUntil ? { endsAt: raw.validUntil } : undefined,
     raw,
   };

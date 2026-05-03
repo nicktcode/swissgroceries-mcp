@@ -64,6 +64,19 @@ export interface NormalizedProduct {
    * over time as adapters learn more upstream fields.
    */
   productUrl?: string;
+  /**
+   * Where the product can be bought. Some chains return products that
+   * exist only in physical stores (no online listing), and consumers
+   * should know to hide outbound 'buy now' CTAs for those.
+   *
+   *   'online'      — orderable online (default for chains with web shops)
+   *   'store-only'  — physical-store inventory only, no online page
+   *   'both'        — explicitly marked available on both surfaces
+   *
+   * Undefined when the adapter has no signal (most chains today). Set
+   * by Lidl adapter where the API is explicit (isOnline / isStore).
+   */
+  availability?: 'online' | 'store-only' | 'both';
   promotion?: { endsAt?: string; description?: string };
   raw?: unknown;
 }
