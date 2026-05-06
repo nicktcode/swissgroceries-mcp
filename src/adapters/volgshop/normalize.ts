@@ -1,6 +1,10 @@
-import type { NormalizedProduct, NormalizedPromotion, Unit } from '../types.js';
+import type { NormalizedProduct, NormalizedPromotion, Nutrition, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
+import {
+  classifyNutrientLabel,
+  parseGramValue,
+} from '../../util/nutrition.js';
 import { deriveVolgshopTags } from './tags.js';
 
 // Volgshop /wp-json/wc/store/v1/products shape (verified live 2026-04-29):
@@ -108,6 +112,62 @@ function attributeTerm(attrs: VolgshopAttribute[] | undefined, namePattern: RegE
   return undefined;
 }
 
+// Volgshop ships nutrient values as a free-text WooCommerce attribute named
+// "Nährwerte" — the whole table is glued into one term value, separated by
+// newlines, e.g.:
+//
+//   Energie in kJ
+//   ca. 1754
+//   Energie in kcal
+//   ca. 421
+//   Fett
+//   ca. 27.9g
+//   davon gesättigte Fettsäuren
+//   ca. 16.6g
+//   …
+//
+// The format is (label, value) pairs, but the API doesn't state the basis.
+// Swiss food labelling is per 100g for solids and per 100ml for liquids;
+// without an explicit hint we default to per-100g, which matches the bulk
+// of the assortment. Consumers comparing across chains should treat
+// volgshop liquids with mild scepticism — Migros and Coop expose the
+// basis explicitly so the cross-chain "best protein" sort still works
+// for solids, which is the common case.
+function parseVolgshopNutrition(blob: string | undefined): Nutrition | undefined {
+  if (!blob || !/[\n]/.test(blob)) return undefined;
+  const lines = blob.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
+  if (lines.length < 2) return undefined;
+  const out: Nutrition = { basis: { value: 100, unit: 'g' } };
+  for (let i = 0; i < lines.length - 1; i++) {
+    const label = lines[i];
+    const value = lines[i + 1];
+    // Pair only when the next line looks like a value ("ca. 27.9g", "1754",
+    // "<0.1g") and the current line doesn't itself look numeric. Skip the
+    // value line on the next iteration by advancing i.
+    if (/^\d|^ca\.|^[<>]/.test(label)) continue;
+    if (!/\d/.test(value)) continue;
+    if (/energie\s+in\s+kj/i.test(label)) {
+      const n = parseGramValue(value);
+      if (n !== undefined) out.energyKj = n;
+      i++;
+      continue;
+    }
+    if (/energie\s+in\s+kcal/i.test(label)) {
+      const n = parseGramValue(value);
+      if (n !== undefined) out.energyKcal = n;
+      i++;
+      continue;
+    }
+    const key = classifyNutrientLabel(label);
+    if (!key) continue;
+    const n = parseGramValue(value);
+    if (n !== undefined) (out as any)[key] = n;
+    i++;
+  }
+  const populated = Object.keys(out).filter((k) => k !== 'basis').length;
+  return populated > 0 ? out : undefined;
+}
+
 export function normalizeProduct(raw: VolgshopProductRaw): NormalizedProduct {
   const name = raw.name ?? '';
   const minorUnit = raw.prices?.currency_minor_unit ?? 2;
@@ -155,6 +215,8 @@ export function normalizeProduct(raw: VolgshopProductRaw): NormalizedProduct {
     ? { description: `Reduziert von CHF ${regular.toFixed(2)}` }
     : undefined;
 
+  const nutrition = parseVolgshopNutrition(attributeTerm(raw.attributes, /n[äa]hrwert/i));
+
   const product: NormalizedProduct = {
     chain: 'volgshop',
     id: String(raw.id ?? raw.sku ?? ''),
@@ -173,6 +235,7 @@ export function normalizeProduct(raw: VolgshopProductRaw): NormalizedProduct {
       ? (raw as { permalink: string }).permalink
       : undefined,
     department,
+    nutrition,
     promotion,
     raw,
   };

@@ -65,6 +65,33 @@ describe('normalizeProduct (fixture)', () => {
     expect(p.name).toBeTruthy();
     expect(p.price.currency).toBe('CHF');
   });
+
+  it('parses nutrition from the captured product detail', () => {
+    // First product in the milk-detail fixture is "Bio Vollmilch IP-SUISSE
+    // pasteurisiert 1l" with the canonical Migros nutrient table per 100ml.
+    const raw = JSON.parse(readFileSync('tests/fixtures/migros/product-detail.json', 'utf8'));
+    const products = raw.products ?? Object.values(raw);
+    const p = normalizeProduct(products[0]);
+    expect(p.nutrition).toBeDefined();
+    expect(p.nutrition!.basis).toEqual({ value: 100, unit: 'ml' });
+    expect(p.nutrition!.energyKj).toBe(287);
+    expect(p.nutrition!.energyKcal).toBe(69);
+    expect(p.nutrition!.fat).toBe(4);
+    expect(p.nutrition!.saturatedFat).toBe(2.2);
+    expect(p.nutrition!.protein).toBeGreaterThan(0);
+    expect(p.nutrition!.salt).toBeGreaterThanOrEqual(0);
+  });
+
+  it('returns undefined nutrition when the product has no nutrient table', () => {
+    const raw: any = {
+      uid: 99,
+      migrosId: '99',
+      name: 'No Nutrition Product',
+      offer: { price: { effectiveValue: 1 }, quantity: '1l' },
+      productInformation: { mainInformation: {} },
+    };
+    expect(normalizeProduct(raw).nutrition).toBeUndefined();
+  });
 });
 
 describe('imageUrl sanitization', () => {

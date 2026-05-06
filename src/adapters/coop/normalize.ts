@@ -1,7 +1,12 @@
-import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
+import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Nutrition, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
 import { sizeFromName } from '../../util/size-from-name.js';
+import {
+  classifyNutrientLabel,
+  parseBasis,
+  parseGramValue,
+} from '../../util/nutrition.js';
 import { deriveCoopTags } from './tags.js';
 
 // 'ST' is Coop's contentUnit abbreviation for Stück (e.g. egg cartons).
@@ -95,6 +100,73 @@ interface HybrisProduct {
   glutenFree?: boolean;
   lactoseFree?: boolean;
   regionalProduct?: boolean;
+  // Only present on the product-detail endpoint, not search results.
+  nutritionInformation?: {
+    nutritionInformationPerUnit?: {
+      description?: string;
+      nutrients?: Array<{
+        name?: string;
+        assembledValue?: string;
+        bigSevenNutrient?: boolean;
+        indented?: boolean;
+      }>;
+    };
+  };
+}
+
+// Coop product-detail nutrition shape (verified via Charles capture):
+//   description: "100g"   (or "100ml")
+//   nutrients[]:
+//     {name: "Energie", assembledValue: "853",  indented: false}  // kJ
+//     {name: "Energie", assembledValue: "205",  indented: false}  // kcal
+//     {name: "Fett",                                ...}
+//     {name: "davon gesättigte Fettsäuren",         ... indented: true}
+//     {name: "Kohlenhydrate",                       ...}
+//     {name: "davon Zucker",                        ... indented: true}
+//     {name: "Eiweiss",                             ...}
+//     {name: "Salz",                                ...}
+//
+// The two "Energie" rows carry no unit suffix in the API, but they always
+// appear in kJ-then-kcal order (the kJ value is also numerically larger
+// since 1 kcal ≈ 4.184 kJ). We use position primarily and fall back to
+// magnitude on the off chance a product reverses them.
+function parseCoopNutrition(
+  block:
+    | { nutritionInformationPerUnit?: { description?: string; nutrients?: Array<any> } }
+    | undefined,
+): Nutrition | undefined {
+  const per = block?.nutritionInformationPerUnit;
+  if (!per?.nutrients?.length) return undefined;
+  const basis = parseBasis(per.description);
+  if (!basis) return undefined;
+  const out: Nutrition = { basis };
+  const energyValues: number[] = [];
+  for (const n of per.nutrients) {
+    const label = String(n?.name ?? '');
+    const raw = String(n?.assembledValue ?? '');
+    if (/energie|energy/i.test(label)) {
+      const v = parseGramValue(raw);
+      if (v !== undefined) energyValues.push(v);
+      continue;
+    }
+    const key = classifyNutrientLabel(label);
+    if (!key) continue;
+    const v = parseGramValue(raw);
+    if (v !== undefined) (out as any)[key] = v;
+  }
+  if (energyValues.length >= 2) {
+    // Larger of the two is kJ (≈4.184× kcal). Falls back to ordering when
+    // values are equal, which never happens in practice.
+    const [a, b] = energyValues;
+    out.energyKj = Math.max(a, b);
+    out.energyKcal = Math.min(a, b);
+  } else if (energyValues.length === 1) {
+    // Single value with no unit — assume kJ since the Coop UI puts kJ
+    // first and a single-row case suggests they only labeled that one.
+    out.energyKj = energyValues[0];
+  }
+  const populated = Object.keys(out).filter((k) => k !== 'basis').length;
+  return populated > 0 ? out : undefined;
 }
 
 export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName?: string; productName?: string }): NormalizedProduct {
@@ -171,6 +243,8 @@ export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName
     }
   }
 
+  const nutrition = parseCoopNutrition(raw.nutritionInformation);
+
   const product: NormalizedProduct = {
     chain: 'coop',
     id: code ?? '',
@@ -182,6 +256,7 @@ export function normalizeProduct(raw: HybrisProduct & { title?: string; fullName
     imageUrl,
     productUrl,
     department,
+    nutrition,
     promotion,
     raw,
   };

@@ -128,4 +128,31 @@ describe('volgshop fixture', () => {
     expect(typeof p.price.current).toBe('number');
     expect(p.id).not.toBe('');
   });
+
+  it('parses Nährwerte attribute into the nutrition field', () => {
+    // First product in search-milch fixture is "Kinder Milchschnitte 5x28g"
+    // and ships a complete free-text nutrient table glued into the
+    // attribute. Volgshop never states the basis — we default to per-100g.
+    const raw = JSON.parse(readFileSync('tests/fixtures/volgshop/search-milch.json', 'utf8'));
+    const p = normalizeProduct(raw[0]);
+    expect(p.nutrition).toBeDefined();
+    expect(p.nutrition!.basis).toEqual({ value: 100, unit: 'g' });
+    expect(p.nutrition!.energyKj).toBe(1754);
+    expect(p.nutrition!.energyKcal).toBe(421);
+    expect(p.nutrition!.fat).toBe(27.9);
+    expect(p.nutrition!.saturatedFat).toBe(16.6);
+    expect(p.nutrition!.carbs).toBe(34);
+    expect(p.nutrition!.sugar).toBe(29.5);
+    expect(p.nutrition!.protein).toBe(7.9);
+    expect(p.nutrition!.salt).toBe(0.61);
+  });
+
+  it('leaves nutrition undefined when the Nährwerte attribute is missing', () => {
+    const p = normalizeProduct({
+      id: 1,
+      name: 'No nutri',
+      prices: { price: '100', currency_minor_unit: 2 },
+    });
+    expect(p.nutrition).toBeUndefined();
+  });
 });

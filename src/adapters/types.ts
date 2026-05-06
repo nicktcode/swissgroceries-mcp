@@ -90,8 +90,51 @@ export interface NormalizedProduct {
    * by Lidl adapter where the API is explicit (isOnline / isStore).
    */
   availability?: 'online' | 'store-only' | 'both';
+  /**
+   * Nutrient values for the product, normalized to a per-100g or per-100ml
+   * basis so consumers can sort/filter cross-chain ("highest protein per
+   * 100g lasagne" etc.). All numeric fields are in grams except energy.
+   *
+   * Coverage varies — chains expose it on different surfaces and not at
+   * all for every SKU. Set when the adapter could parse a clear table;
+   * undefined otherwise. Adapters should not fabricate values: if a row
+   * is missing or non-numeric, leave the field undefined rather than
+   * defaulting to 0.
+   *
+   * Currently populated by:
+   *   - Migros (product detail)
+   *   - Coop   (product detail)
+   *   - Volgshop (search response, parsed from a free-text blob)
+   *
+   * Aldi/Lidl/Denner/Farmy/Ottos do not expose macronutrients in their
+   * APIs as of this writing.
+   */
+  nutrition?: Nutrition;
   promotion?: { endsAt?: string; description?: string };
   raw?: unknown;
+}
+
+export interface Nutrition {
+  /** Reference quantity the values are expressed against — typically 100g/100ml. */
+  basis: { value: number; unit: 'g' | 'ml' };
+  /** Energy in kilojoules. */
+  energyKj?: number;
+  /** Energy in kilocalories. */
+  energyKcal?: number;
+  /** Total fat, grams. */
+  fat?: number;
+  /** Saturated fat, grams. */
+  saturatedFat?: number;
+  /** Total carbohydrates, grams. */
+  carbs?: number;
+  /** Of-which sugars, grams. */
+  sugar?: number;
+  /** Dietary fibre, grams. */
+  fiber?: number;
+  /** Protein, grams. */
+  protein?: number;
+  /** Salt, grams. */
+  salt?: number;
 }
 
 export interface NormalizedStore {

@@ -20,9 +20,15 @@
 //   { items: [{id, type},...], numberOfItems, startDate, endDate }
 //   Items are IDs only — full data requires separate product detail calls.
 
-import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
+import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Nutrition, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
+import {
+  classifyNutrientLabel,
+  parseBasis,
+  parseEnergyDual,
+  parseGramValue,
+} from '../../util/nutrition.js';
 import { deriveTags } from './tags.js';
 
 function sanitizeRokkaUrl(url: string | undefined | null): string | undefined {
@@ -73,8 +79,57 @@ interface MigrosProductRaw {
       brand?: { name?: string };
       labels?: Array<{ id?: string; name?: string; slug?: string }>;
     };
+    nutrientsInformation?: {
+      nutrientsTable?: {
+        headers?: string[];
+        rows?: Array<{ label?: string; values?: string[] }>;
+      };
+    };
   };
   breadcrumb?: Array<{ id?: string; name?: string }>;
+}
+
+// Migros nutrient table shape (real captured response):
+//   headers: ["100 ml", "1 Glas (250 ml)"]            // first column = basis
+//   rows:
+//     {label: "Energie",                values: ["287 kJ (69 kcal)", ...]}
+//     {label: "Fett",                   values: ["4 g", ...]}
+//     {label: "davon gesättigte Fett…", values: ["2.2 g", ...]}
+//     {label: "Kohlenhydrate",          values: ["..."]}
+//     {label: "davon Zucker",           values: ["..."]}
+//     {label: "Eiweiss",                values: ["..."]}
+//     {label: "Salz",                   values: ["..."]}
+//
+// Some labels appear with diacritics or a trailing colon — the matchers
+// in util/nutrition.ts handle the variants. Indented rows (e.g. "davon
+// Zucker") are matched first so they don't get folded into their parent.
+function parseMigrosNutrition(
+  table: { headers?: string[]; rows?: Array<{ label?: string; values?: string[] }> } | undefined,
+): Nutrition | undefined {
+  if (!table?.rows?.length) return undefined;
+  const basis = parseBasis(table.headers?.[0]);
+  // Without a clear per-100g/ml first column the values aren't comparable
+  // cross-product (e.g. some products report only per-portion). We bail
+  // rather than synthesise a basis.
+  if (!basis) return undefined;
+  const out: Nutrition = { basis };
+  for (const row of table.rows) {
+    const label = row.label ?? '';
+    const value = row.values?.[0];
+    if (!value) continue;
+    if (/energie|energy/i.test(label)) {
+      Object.assign(out, parseEnergyDual(value));
+      continue;
+    }
+    const key = classifyNutrientLabel(label);
+    if (!key) continue;
+    const n = parseGramValue(value);
+    if (n !== undefined) (out as any)[key] = n;
+  }
+  // If we couldn't extract a single nutrient besides the basis, return
+  // undefined so consumers don't see a useless empty object.
+  const populated = Object.keys(out).filter((k) => k !== 'basis').length;
+  return populated > 0 ? out : undefined;
 }
 
 function deriveMigrosPrice(offer: any): { current: number; isApprox: boolean } {
@@ -220,6 +275,8 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
         }
       : undefined;
 
+  const nutrition = parseMigrosNutrition(raw.productInformation?.nutrientsInformation?.nutrientsTable);
+
   const product: NormalizedProduct = {
     chain: 'migros',
     id,
@@ -232,6 +289,7 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     imageUrl,
     productUrl,
     department,
+    nutrition,
     promotion: basePromotion,
     raw,
   };

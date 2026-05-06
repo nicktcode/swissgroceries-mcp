@@ -120,16 +120,18 @@ Prompts are surfaced as one-click templates in MCP-aware clients (Claude Desktop
 
 ## Chain coverage
 
-| Chain | Product search | Promotions | Per-store stock | Auth |
-|---|---|---|---|---|
-| Migros | Full catalog | Yes | Yes | Guest token (auto, rotated on expiry) |
-| Coop | Full catalog (coopathome) | Yes | Yes (geo) | None |
-| Aldi | Full catalog | Yes | No | None |
-| Denner | Full catalog | Yes | No | Anonymous self-auth (signup + signin, rotated) |
-| Lidl | Weekly leaflet only | Yes | No | None |
-| Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | None |
-| Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | None |
-| Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | None |
+| Chain | Product search | Promotions | Per-store stock | Nutrition | Auth |
+|---|---|---|---|---|---|
+| Migros | Full catalog | Yes | Yes | Yes (product detail) | Guest token (auto, rotated on expiry) |
+| Coop | Full catalog (coopathome) | Yes | Yes (geo) | Yes (product detail) | None |
+| Aldi | Full catalog | Yes | No | No (API exposes only allergen claims) | None |
+| Denner | Full catalog | Yes | No | No | Anonymous self-auth (signup + signin, rotated) |
+| Lidl | Weekly leaflet only | Yes | No | No (`energeticInformation` field exists but is empty in practice) | None |
+| Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | No | None |
+| Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | Yes (parsed from free-text attribute, basis assumed 100g) | None |
+| Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | No | None |
+
+`NormalizedProduct.nutrition` is normalized to a per-100g (or per-100ml) basis with the standard Swiss labelling fields — `energyKj`, `energyKcal`, `fat`, `saturatedFat`, `carbs`, `sugar`, `fiber`, `protein`, `salt` — so consumers can sort across chains ("highest protein per 100g lasagne") even though each upstream API exposes the data on a different surface and in a different shape. Missing or unparseable fields are left `undefined`; adapters never fabricate values.
 
 ---
 

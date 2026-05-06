@@ -80,6 +80,29 @@ describe('coop normalize (fixture, optional)', () => {
     expect(p.price.current).toBeGreaterThan(0);
   });
 
+  it('parses nutrition from the Coop product detail (Schweins Halssteak)', () => {
+    // Captured 2026-05-06: /rest/v2/coopathome/products/7431706. Two
+    // unmarked "Energie" rows — first kJ (853), second kcal (205); we
+    // sort kJ as the larger value.
+    const raw = JSON.parse(readFileSync('tests/fixtures/coop/product-detail.json', 'utf8'));
+    const p = normalizeProduct(raw);
+    expect(p.nutrition).toBeDefined();
+    expect(p.nutrition!.basis).toEqual({ value: 100, unit: 'g' });
+    expect(p.nutrition!.energyKj).toBe(853);
+    expect(p.nutrition!.energyKcal).toBe(205);
+    expect(p.nutrition!.fat).toBe(14);
+    expect(p.nutrition!.saturatedFat).toBe(5.6);
+    expect(p.nutrition!.carbs).toBe(0.7);
+    expect(p.nutrition!.sugar).toBe(0.5);
+    expect(p.nutrition!.protein).toBe(19);
+    expect(p.nutrition!.salt).toBe(1.5);
+  });
+
+  it('returns undefined nutrition when the product detail lacks the block', () => {
+    const p = normalizeProduct({ code: 'X', name: 'No Nutri', price: { value: 1 } });
+    expect(p.nutrition).toBeUndefined();
+  });
+
   it('parses Coop store fixture if present', () => {
     let raw: any;
     try { raw = JSON.parse(readFileSync('tests/fixtures/coop/stores.json', 'utf8')); }

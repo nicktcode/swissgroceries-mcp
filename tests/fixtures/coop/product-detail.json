@@ -1,313 +1,405 @@
 {
-   "activeDcPromotions" : [ ],
-   "assortmentHitPromotion" : false,
-   "availabilityUnknown" : false,
-   "available" : true,
-   "averageRating" : 4.5,
-   "badgeSlot4" : {
-      "subtype" : "PROMOTION_HIT",
-      "type" : "IMAGE"
-   },
-   "baseCapacity" : "100",
-   "basePrice" : {
-      "currencyIso" : "CHF",
-      "formattedValue" : "1.08",
-      "value" : 1.08
-   },
-   "basePriceUnit" : "g",
-   "basePriceUnitCode" : "GRM",
-   "basePriceUnitName" : "Gramm",
-   "beefCornerProduct" : false,
-   "categoryPathForTracking" : "lebensmittel/fruechte-gemuese/fruechte/beeren",
-   "catering" : false,
-   "cateringFondue" : false,
-   "cateringVariantProduct" : false,
-   "code" : "4315895",
-   "conditionalPromotionCodes" : [ ],
-   "content" : "500",
-   "contentUnit" : "g",
-   "contentUnitCode" : "GRM",
-   "deliveryRestrictionMessages" : [ "Dieses Produkt kann nur bis zum 29.04.2026 geliefert werden.", "Dieses Produkt kann nicht per Paketdienst geliefert oder an einem Pick-up abgeholt werden." ],
-   "deliveryRestrictionMessagesActive" : [ ],
-   "discountPercentage" : 30.0,
-   "ean" : "7627538463164",
-   "fishOrigin" : "",
-   "flags" : [ ],
-   "fsc" : false,
-   "ghsSymbols" : [ ],
-   "glutenFree" : false,
-   "has360Image" : false,
-   "hasPromotion" : true,
-   "hasShopInShopConfig" : false,
-   "hasSimilarProducts" : false,
-   "highQualityBeverage" : false,
-   "images" : [ {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_001.jpg?_=1776840798422",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_001.jpg?_=1776840799631",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_001.jpg?_=1776840798422",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_001.jpg?_=1776840799631",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_001.jpg?_=1776840798422",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_001.jpg?_=1776840799631",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_002.jpg?_=1747267064878",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_002.jpg?_=1747267067176",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_002.jpg?_=1747267064878",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_002.jpg?_=1747267067176",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_002.jpg?_=1747267064878",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_002.jpg?_=1747267067176",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_003.jpg?_=1747267003657",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_003.jpg?_=1747267004959",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_003.jpg?_=1747267003657",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_003.jpg?_=1747267004959",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_003.jpg?_=1747267003657",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_003.jpg?_=1747267004959",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_004.jpg?_=1747265230790",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_004.jpg?_=1747265232042",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_004.jpg?_=1747265230790",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_004.jpg?_=1747265232042",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_004.jpg?_=1747265230790",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_004.jpg?_=1747265232042",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_005.jpg?_=1747266902020",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_005.jpg?_=1747266903341",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_005.jpg?_=1747266902020",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_005.jpg?_=1747266903341",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_005.jpg?_=1747266902020",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_005.jpg?_=1747266903341",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_006.jpg?_=1747265119956",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_006.jpg?_=1747265121268",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_006.jpg?_=1747265119956",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_006.jpg?_=1747265121268",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_006.jpg?_=1747265119956",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_006.jpg?_=1747265121268",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-supermarket-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_007.jpg?_=1747265136495",
-      "usedFor" : "medium"
-   }, {
-      "format" : "productImage-supermarket-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_007.jpg?_=1747265138713",
-      "usedFor" : "large"
-   }, {
-      "format" : "productImage-mondovino-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_007.jpg?_=1747265136495",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-mondovino-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_007.jpg?_=1747265138713",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM",
-      "url" : "https://www.coop.ch/img/produkte/737_737/RGB/4315895_007.jpg?_=1747265136495",
-      "usedFor" : "unkown"
-   }, {
-      "format" : "productImage-delicounter-SM2x",
-      "url" : "https://www.coop.ch/img/produkte/1474_1474/RGB/4315895_007.jpg?_=1747265138713",
-      "usedFor" : "unkown"
-   } ],
-   "ingredientOrigins" : [ ],
-   "ingredientsContainAllergens" : false,
-   "isPetShopProduct" : false,
-   "isRetailOnlyProduct" : false,
-   "labels" : [ ],
-   "lactoseFree" : false,
-   "legacy" : false,
-   "listPromotions" : [ "30%" ],
-   "longerDeliveryTime" : false,
-   "matchingWeNeedCategoryId" : 1,
-   "maxQuantity" : -1.0,
-   "meatPlaceOfBirth" : [ ],
-   "meatPlaceOfCutting" : [ ],
-   "meatPlaceOfRearing" : [ ],
-   "meatPlaceOfSlaughter" : [ ],
-   "megaStorePromotion" : false,
-   "microbialRennet" : false,
-   "miscellaneous" : [ ],
-   "mondovinoClubOfferBadge" : false,
-   "msc" : false,
-   "multipackActive" : false,
-   "mustBeCooled" : false,
-   "mustBeRefrigerated" : false,
-   "name" : "Himbeeren & Heidelbeeren 2x250g",
-   "netCapacity" : "500",
-   "nonFood" : false,
-   "notPurchasableInApp" : false,
-   "numberOfRatings" : 13,
-   "numberOfReviews" : 11,
-   "onlyOnlinePromotion" : false,
-   "originCountries" : [ "Spanien" ],
-   "originRawMaterials" : [ ],
-   "originalPrice" : {
-      "currencyIso" : "CHF",
-      "formattedValue" : "7.80",
-      "value" : 7.8
-   },
-   "packagingCountries" : [ ],
-   "partOfAssortmentHitPromotion" : false,
-   "petFoodConstituents" : [ ],
-   "preperationInformations" : [ ],
-   "price" : {
-      "currencyIso" : "CHF",
-      "formattedValue" : "5.40",
-      "value" : 5.4
-   },
-   "priceHit" : false,
-   "primaryCategory" : {
-      "id" : "m_1785",
-      "name" : "Beeren"
-   },
-   "productType" : "SUPERMARKET",
-   "promotionAlertActive" : false,
-   "promotionAlertPossible" : true,
-   "promotionDisclaimers" : [ ],
-   "purchasable" : true,
-   "quantityChangeable" : true,
-   "quantityInCart" : 0,
-   "reasonNotAvailable" : "NONE",
-   "regionalProduct" : false,
-   "reviewsAllowed" : true,
-   "safetyNotes" : [ ],
-   "salesUnit" : "PCE",
-   "selectedForPromotionAlert" : false,
-   "selectedPromotion" : {
-      "text" : "30%"
-   },
-   "showTrophyMessage" : false,
-   "stock" : {
-      "stockLevelStatus" : "inStock"
-   },
-   "subscriptionProduct" : false,
-   "superprice" : false,
-   "supplier" : [ {
-      "name" : "Inverkehrbringer",
-      "type" : "contactName",
-      "value" : "Coop"
-   }, {
-      "name" : "Adresse",
-      "type" : "contactAddress",
-      "value" : "Postfach, CH-4002 Basel"
-   }, {
-      "name" : "Telefon",
-      "type" : "contactPhone",
-      "value" : "0848 888 444"
-   }, {
-      "name" : "Webseite",
-      "type" : "contactEmail",
-      "value" : "www.coop.ch"
-   } ],
-   "tileTypeApp" : "supermarket",
-   "title" : "Himbeeren & Heidelbeeren 2x250g",
-   "titleForTracking" : "Himbeeren & Heidelbeeren 2x250g",
-   "topup" : false,
-   "vegan" : false,
-   "vegetarian" : false,
-   "weekPromotion" : true,
-   "weekendPromotion" : false,
-   "weekstartPromotion" : false,
-   "wine" : false
+  "activeDcPromotions": [],
+  "assortmentHitPromotion": false,
+  "availabilityUnknown": false,
+  "available": true,
+  "badgeSlot4": {
+    "subtype": "PROMOTION_HIT",
+    "type": "IMAGE"
+  },
+  "baseCapacity": "100",
+  "basePrice": {
+    "currencyIso": "CHF",
+    "formattedValue": "1.40",
+    "value": 1.4
+  },
+  "basePriceUnit": "g",
+  "basePriceUnitCode": "GRM",
+  "basePriceUnitName": "Gramm",
+  "beefCornerProduct": false,
+  "categoryPathForTracking": "lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein",
+  "catering": false,
+  "cateringFondue": false,
+  "cateringVariantProduct": false,
+  "code": "7431706",
+  "compulsoryAdditiveLabelInformation": "Hergestellt aus tiefgekühltem Fleisch. Nicht wieder einfrieren., Vor dem Verzehr erhitzen.",
+  "conditionalPromotionCodes": [],
+  "content": "700",
+  "contentUnit": "g",
+  "contentUnitCode": "GRM",
+  "deliveryRestrictionMessages": [
+    "Dieses Produkt kann nur bis zum 07.05.2026 geliefert werden."
+  ],
+  "deliveryRestrictionMessagesActive": [],
+  "discountPercentage": 50.0,
+  "ean": "7610162414404",
+  "fishOrigin": "",
+  "flags": [],
+  "fsc": false,
+  "ghsSymbols": [],
+  "glutenFree": false,
+  "guaranteedFresh": 2,
+  "has360Image": false,
+  "hasPromotion": true,
+  "hasShopInShopConfig": false,
+  "hasSimilarProducts": false,
+  "highQualityBeverage": false,
+  "images": [
+    {
+      "format": "productImage-supermarket-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_001.jpg?_=1777643000858",
+      "usedFor": "medium"
+    },
+    {
+      "format": "productImage-supermarket-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_001.jpg?_=1777643001798",
+      "usedFor": "large"
+    },
+    {
+      "format": "productImage-mondovino-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_001.jpg?_=1777643000858",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-mondovino-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_001.jpg?_=1777643001798",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_001.jpg?_=1777643000858",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_001.jpg?_=1777643001798",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-supermarket-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_002.jpg?_=1753952190778",
+      "usedFor": "medium"
+    },
+    {
+      "format": "productImage-supermarket-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_002.jpg?_=1753952193200",
+      "usedFor": "large"
+    },
+    {
+      "format": "productImage-mondovino-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_002.jpg?_=1753952190778",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-mondovino-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_002.jpg?_=1753952193200",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_002.jpg?_=1753952190778",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_002.jpg?_=1753952193200",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-supermarket-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_003.jpg?_=1753964645283",
+      "usedFor": "medium"
+    },
+    {
+      "format": "productImage-supermarket-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_003.jpg?_=1753964647417",
+      "usedFor": "large"
+    },
+    {
+      "format": "productImage-mondovino-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_003.jpg?_=1753964645283",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-mondovino-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_003.jpg?_=1753964647417",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_003.jpg?_=1753964645283",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_003.jpg?_=1753964647417",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-supermarket-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_004.jpg?_=1753974804053",
+      "usedFor": "medium"
+    },
+    {
+      "format": "productImage-supermarket-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_004.jpg?_=1753974804857",
+      "usedFor": "large"
+    },
+    {
+      "format": "productImage-mondovino-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_004.jpg?_=1753974804053",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-mondovino-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_004.jpg?_=1753974804857",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_004.jpg?_=1753974804053",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_004.jpg?_=1753974804857",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-supermarket-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_005.jpg?_=1753956209363",
+      "usedFor": "medium"
+    },
+    {
+      "format": "productImage-supermarket-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_005.jpg?_=1753956210208",
+      "usedFor": "large"
+    },
+    {
+      "format": "productImage-mondovino-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_005.jpg?_=1753956209363",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-mondovino-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_005.jpg?_=1753956210208",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM",
+      "url": "https://www.coop.ch/img/produkte/737_737/RGB/7431706_005.jpg?_=1753956209363",
+      "usedFor": "unkown"
+    },
+    {
+      "format": "productImage-delicounter-SM2x",
+      "url": "https://www.coop.ch/img/produkte/1474_1474/RGB/7431706_005.jpg?_=1753956210208",
+      "usedFor": "unkown"
+    }
+  ],
+  "ingredientOrigins": [
+    {
+      "key": "Schweinefleisch",
+      "value": "Schweiz"
+    }
+  ],
+  "ingredients": "Schweinefleisch 97% (Schweiz), Kochsalz, Gewürze, Kräuter.",
+  "ingredientsContainAllergens": false,
+  "isPetShopProduct": false,
+  "isRetailOnlyProduct": false,
+  "labels": [
+    {
+      "id": "COOP_WORLD_ZNATURAFARM",
+      "image": {
+        "url": "/medias/logo-naturafarm.jpeg?context=bWFzdGVyfGxvZ29zfDQ4NTF8aW1hZ2UvanBlZ3xhRFkyTDJobE1DOHhNamswTURNNE1qa3lPRGt5Tmk5c2IyZHZMVzVoZEhWeVlXWmhjbTB1YW5CbFp3fGU4NzUxZjllNTg1ZTBkMjRkZGUyNzNhZjI5MWQyODQ2MWRmNjI5NTc2YTZiNzU2NGU5OGQwZjE0YWEyYzBiMDM"
+      },
+      "name": "Naturafarm",
+      "url": "/de/inspiration-geschenke/labels/naturafarm/c/m_1050"
+    }
+  ],
+  "lactoseFree": false,
+  "legacy": false,
+  "listPromotions": [
+    "50%"
+  ],
+  "longerDeliveryTime": false,
+  "matchingWeNeedCategoryId": 4,
+  "maxQuantity": 4.0,
+  "meatIdentificationMark": "CH 211",
+  "meatPlaceOfBirth": [],
+  "meatPlaceOfCutting": [],
+  "meatPlaceOfRearing": [],
+  "meatPlaceOfSlaughter": [],
+  "megaStorePromotion": false,
+  "microbialRennet": false,
+  "miscellaneous": [
+    "Hergestellt aus tiefgekühltem Fleisch. Nicht wieder einfrieren., Vor dem Verzehr erhitzen."
+  ],
+  "mondovinoClubOfferBadge": false,
+  "msc": false,
+  "multipackActive": false,
+  "mustBeCooled": true,
+  "mustBeRefrigerated": false,
+  "name": "Bell Naturafarm Schweins Halssteak gewürzt ca. 700g",
+  "netCapacity": "700",
+  "nonFood": false,
+  "notPurchasableInApp": false,
+  "numberOfRatings": 0,
+  "numberOfReviews": 0,
+  "nutritionInformation": {
+    "nutritionInformationPerUnit": {
+      "description": "100g",
+      "nutrients": [
+        {
+          "assembledValue": "853",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Energie"
+        },
+        {
+          "assembledValue": "205",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Energie"
+        },
+        {
+          "assembledValue": "14g",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Fett"
+        },
+        {
+          "assembledValue": "5.6g",
+          "bigSevenNutrient": true,
+          "indented": true,
+          "name": "davon gesättigte Fettsäuren"
+        },
+        {
+          "assembledValue": "0.7g",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Kohlenhydrate"
+        },
+        {
+          "assembledValue": "0.5g",
+          "bigSevenNutrient": true,
+          "indented": true,
+          "name": "davon Zucker"
+        },
+        {
+          "assembledValue": "0g",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Nahrungsfasern (Ballaststoffe)"
+        },
+        {
+          "assembledValue": "19g",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Eiweiss"
+        },
+        {
+          "assembledValue": "1.5g",
+          "bigSevenNutrient": true,
+          "indented": false,
+          "name": "Salz"
+        }
+      ]
+    }
+  },
+  "onlyOnlinePromotion": false,
+  "originCountries": [
+    "Schweiz"
+  ],
+  "originRawMaterials": [
+    {
+      "key": "Schweiz",
+      "value": "Schweinefleisch"
+    }
+  ],
+  "originText": "Bell",
+  "originalPrice": {
+    "currencyIso": "CHF",
+    "formattedValue": "19.60",
+    "value": 19.6
+  },
+  "packagingCountries": [],
+  "partOfAssortmentHitPromotion": false,
+  "petFoodConstituents": [],
+  "preperationInformations": [
+    {
+      "name": "Braten in der Pfanne",
+      "value": "Bei mittlerer Hitze ca. 10 Minuten"
+    },
+    {
+      "name": "Grillieren",
+      "value": "Zubereitung Grill: Bei mittlerer Hitze beidseitig je ca. 5 Min. grillieren."
+    }
+  ],
+  "price": {
+    "currencyIso": "CHF",
+    "formattedValue": "9.80",
+    "value": 9.8
+  },
+  "priceHit": false,
+  "primaryCategory": {
+    "id": "m_0092",
+    "name": "Schwein"
+  },
+  "productType": "SUPERMARKET",
+  "promotionAlertActive": false,
+  "promotionAlertPossible": true,
+  "promotionDisclaimers": [],
+  "purchasable": true,
+  "quantityChangeable": true,
+  "quantityInCart": 0,
+  "reasonNotAvailable": "NONE",
+  "regionalProduct": false,
+  "regulatedProductName": "Schweinefleischzubereitung, aufgetaut, gewürzt",
+  "reviewsAllowed": true,
+  "safetyNotes": [],
+  "salesUnit": "PCE",
+  "selectedForPromotionAlert": false,
+  "selectedPromotion": {
+    "text": "50%"
+  },
+  "showTrophyMessage": false,
+  "stock": {
+    "stockLevel": 32,
+    "stockLevelStatus": "inStock"
+  },
+  "storageInformation": "Bei höchstens 5 °C aufbewahren.",
+  "subscriptionProduct": false,
+  "superprice": false,
+  "supplier": [
+    {
+      "name": "Inverkehrbringer",
+      "type": "contactName",
+      "value": "Coop"
+    },
+    {
+      "name": "Adresse",
+      "type": "contactAddress",
+      "value": "Postfach, CH-4002 Basel"
+    },
+    {
+      "name": "Telefon",
+      "type": "contactPhone",
+      "value": "0848 888 444"
+    },
+    {
+      "name": "Webseite",
+      "type": "contactEmail",
+      "value": "www.coop.ch"
+    }
+  ],
+  "tileTypeApp": "supermarket",
+  "title": "Bell Naturafarm Schweins Halssteak gewürzt ca. 700g",
+  "titleForTracking": "Bell Naturafarm Schweins Halssteak gewürzt ca. 700g",
+  "topup": false,
+  "vegan": false,
+  "vegetarian": false,
+  "weekPromotion": true,
+  "weekendPromotion": false,
+  "weekstartPromotion": false,
+  "wine": false
 }
