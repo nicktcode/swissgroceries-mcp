@@ -133,7 +133,10 @@ export async function httpJson<T = unknown>(url: string, opts: HttpOpts = {}): P
 
   if (!cacheDisabled && cacheKey) {
     inFlightByHost.set(cacheKey, exec as Promise<unknown>);
-    exec.finally(() => inFlightByHost.delete(cacheKey));
+    // Detach cleanup without creating an orphan rejected promise: the real
+    // caller awaits `exec` itself and handles errors; this branch must not
+    // surface a second, unhandled rejection on transient 5xx/network failures.
+    void exec.catch(() => {}).finally(() => inFlightByHost.delete(cacheKey));
   }
 
   return exec;

@@ -1,30 +1,57 @@
 import { describe, it, expect } from 'vitest';
 import { buildRegistry } from '../../src/index.js';
 import { searchProductsHandler } from '../../src/tools/search_products.js';
+import type { SearchProductsOutput } from '../../src/tools/search_products.js';
 import { findStoresHandler } from '../../src/tools/find_stores.js';
 import { planShoppingHandler } from '../../src/tools/plan_shopping.js';
 import { getPromotionsHandler } from '../../src/tools/get_promotions.js';
+import type { Chain } from '../../src/adapters/types.js';
 
 const RUN = process.env.RUN_LIVE === '1';
 const itLive = RUN ? it : it.skip;
 
+/**
+ * Assert that a chain returned products from a live search.
+ *
+ * An empty result is only a real failure if the chain DIDN'T report an
+ * upstream outage. If the chain errored with `unavailable` or `rate_limited`,
+ * that's the upstream's fault, not an adapter break — skip the test so the
+ * nightly smoke doesn't file a false `adapter-broken` issue. Empty-with-no-error
+ * or `schema_mismatch` still fails hard: those signal a genuine adapter bug.
+ */
+function expectChainProducts(
+  out: SearchProductsOutput,
+  chain: Chain,
+  ctx: { skip: (note?: string) => void },
+): void {
+  const count = out.byChain[chain]?.length ?? 0;
+  const error = out.errors?.find((e) => e.chain === chain);
+  expect(error?.code).not.toBe('schema_mismatch');
+  if (count > 0) return;
+  if (error && (error.code === 'unavailable' || error.code === 'rate_limited')) {
+    ctx.skip(`${chain} upstream outage (${error.code}): ${error.reason ?? ''}`);
+    return;
+  }
+  expect.fail(`${chain} returned 0 products with no upstream error: ${JSON.stringify(error)}`);
+}
+
 describe('live smoke (RUN_LIVE=1)', () => {
-  itLive('Migros search returns products', async () => {
+  itLive('Migros search returns products', async (ctx) => {
     const r = buildRegistry();
     const out = await searchProductsHandler(r, { query: 'milch', chains: ['migros'], limit: 5 });
-    expect(out.byChain.migros?.length ?? 0).toBeGreaterThan(0);
+    expectChainProducts(out, 'migros', ctx);
   }, 30000);
 
-  itLive('Coop search returns products', async () => {
+  itLive('Coop search returns products', async (ctx) => {
     const r = buildRegistry();
     const out = await searchProductsHandler(r, { query: 'milch', chains: ['coop'], limit: 5 });
-    expect(out.byChain.coop?.length ?? 0).toBeGreaterThan(0);
+    expectChainProducts(out, 'coop', ctx);
   }, 30000);
 
-  itLive('Aldi search returns products', async () => {
+  itLive('Aldi search returns products', async (ctx) => {
     const r = buildRegistry();
     const out = await searchProductsHandler(r, { query: 'milch', chains: ['aldi'], limit: 5 });
-    expect(out.byChain.aldi?.length ?? 0).toBeGreaterThan(0);
+    expectChainProducts(out, 'aldi', ctx);
   }, 30000);
 
   itLive('Lidl returns at least products or no error', async () => {
@@ -34,29 +61,25 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expect(out.errors?.find((e) => e.chain === 'lidl')).toBeUndefined();
   }, 30000);
 
-  itLive('Farmy search returns products', async () => {
+  itLive('Farmy search returns products', async (ctx) => {
     const r = buildRegistry();
     const out = await searchProductsHandler(r, { query: 'milch', chains: ['farmy'], limit: 5 });
-    expect(out.byChain.farmy?.length ?? 0).toBeGreaterThan(0);
-    // Schema-mismatch surfacing: the chain must not have errored on the response shape.
-    expect(out.errors?.find((e) => e.chain === 'farmy' && e.code === 'schema_mismatch')).toBeUndefined();
+    expectChainProducts(out, 'farmy', ctx);
   }, 30000);
 
-  itLive('Volgshop search returns products', async () => {
+  itLive('Volgshop search returns products', async (ctx) => {
     const r = buildRegistry();
     const out = await searchProductsHandler(r, { query: 'milch', chains: ['volgshop'], limit: 5 });
-    expect(out.byChain.volgshop?.length ?? 0).toBeGreaterThan(0);
-    expect(out.errors?.find((e) => e.chain === 'volgshop' && e.code === 'schema_mismatch')).toBeUndefined();
+    expectChainProducts(out, 'volgshop', ctx);
   }, 30000);
 
-  itLive('Ottos search returns grocery-category products', async () => {
+  itLive('Ottos search returns grocery-category products', async (ctx) => {
     const r = buildRegistry();
     const out = await searchProductsHandler(r, { query: 'spaghetti', chains: ['ottos'], limit: 5 });
-    expect(out.byChain.ottos?.length ?? 0).toBeGreaterThan(0);
-    expect(out.errors?.find((e) => e.chain === 'ottos' && e.code === 'schema_mismatch')).toBeUndefined();
+    expectChainProducts(out, 'ottos', ctx);
   }, 30000);
 
-  itLive('Ottos store + per-store stock query works near Wettingen', async () => {
+  itLive('Ottos store + per-store stock query works near Wettingen', async (ctx) => {
     const { OttosAdapter } = await import('../../src/adapters/ottos/index.js');
     const adapter = new OttosAdapter();
 
@@ -65,8 +88,13 @@ describe('live smoke (RUN_LIVE=1)', () => {
     // since long before this project; if that ever stops being true the
     // test failure correctly signals real coverage drift.
     const stores = await adapter.searchStores({ near: { lat: 47.466, lng: 8.319 }, radiusKm: 25 });
-    expect(stores.ok).toBe(true);
-    if (!stores.ok) return;
+    if (!stores.ok) {
+      if (stores.error.code === 'unavailable' || stores.error.code === 'rate_limited') {
+        ctx.skip(`ottos upstream outage (${stores.error.code})`);
+        return;
+      }
+      expect.fail(`ottos searchStores failed: ${JSON.stringify(stores.error)}`);
+    }
     expect(stores.data.length).toBeGreaterThan(0);
     expect(stores.data.some((s) => s.address.zip === '5430')).toBe(true);
 
