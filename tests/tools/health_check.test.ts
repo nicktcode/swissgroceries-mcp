@@ -35,12 +35,22 @@ describe('health_check tool', () => {
     expect(coop?.error?.code).toBe('unavailable');
   });
 
-  it('reports unregistered for chains not in registry', async () => {
+  it('reports unregistered for explicitly requested chains not in registry', async () => {
     const r = new AdapterRegistry();
     r.register(fakeAdapter('migros', true));
-    const out = await healthCheckHandler(r, {});
+    const out = await healthCheckHandler(r, { chains: ['migros', 'lidl'] });
     const lidl = out.chains.find((c) => c.chain === 'lidl');
     expect(lidl?.registered).toBe(false);
+    expect(out.summary.unregistered).toBe(1);
+  });
+
+  it('defaults to probing exactly the registered adapters', async () => {
+    const r = new AdapterRegistry();
+    r.register(fakeAdapter('migros', true));
+    r.register(fakeAdapter('coop', true));
+    const out = await healthCheckHandler(r, {});
+    expect(out.chains.map((c) => c.chain).sort()).toEqual(['coop', 'migros']);
+    expect(out.summary.unregistered).toBe(0);
   });
 
   it('respects chains filter', async () => {

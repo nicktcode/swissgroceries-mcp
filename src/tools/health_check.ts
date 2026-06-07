@@ -27,7 +27,7 @@ export async function healthCheckHandler(
   registry: AdapterRegistry,
   input: HealthCheckInput,
 ): Promise<{ chains: HealthCheckResult[]; summary: { healthy: number; unhealthy: number; unregistered: number } }> {
-  const all: Chain[] = ['migros', 'coop', 'aldi', 'denner', 'lidl'];
+  const all: Chain[] = registry.list().map((a) => a.chain);
   const requested = input.chains ?? all;
   const timeout = input.timeoutMs ?? 5000;
 
