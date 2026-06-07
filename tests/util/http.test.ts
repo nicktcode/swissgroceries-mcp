@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { httpJson, _resetHttpState } from '../../src/util/http.js';
+import { httpJson, withFetchMeta, _resetHttpState } from '../../src/util/http.js';
 
 // Helper: build a Response-like object that fetch returns
 function makeResponse(body: unknown, status = 200): Response {
@@ -66,6 +66,61 @@ describe('httpJson — _resetHttpState', () => {
     const r2 = await httpJson(TEST_URL, { cacheKey: 'test:reset' });
     expect((r2 as any).n).toBe(2);
     expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+});
+
+describe('withFetchMeta — fetch freshness', () => {
+  it('reports a fresh fetch (fromCache=false) on a cache miss', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(makeResponse({ value: 1 }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    const before = Date.now();
+    const { result, meta } = await withFetchMeta(() =>
+      httpJson(TEST_URL, { cacheKey: 'meta:miss' }));
+
+    expect(result).toEqual({ value: 1 });
+    expect(meta.fromCache).toBe(false);
+    expect(meta.fetchedAt).toBeGreaterThanOrEqual(before);
+  });
+
+  it('reports fromCache=true and the ORIGINAL fetch time on a cache hit', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(makeResponse({ value: 2 }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    const miss = await withFetchMeta(() => httpJson(TEST_URL, { cacheKey: 'meta:hit' }));
+    const hit = await withFetchMeta(() => httpJson(TEST_URL, { cacheKey: 'meta:hit' }));
+
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(hit.meta.fromCache).toBe(true);
+    // The hit must carry the ORIGINAL fetch time, not "now"
+    expect(hit.meta.fetchedAt).toBe(miss.meta.fetchedAt);
+  });
+
+  it('treats a scope with no httpJson fetch as fresh-now (e.g. the Migros path)', async () => {
+    const before = Date.now();
+    const { meta } = await withFetchMeta(async () => 'no fetch here');
+    expect(meta.fromCache).toBe(false);
+    expect(meta.fetchedAt).toBeGreaterThanOrEqual(before);
+  });
+
+  it('aggregates: oldest fetchedAt wins and fromCache is true only if all hits', async () => {
+    const fetchMock = vi.fn()
+      .mockResolvedValueOnce(makeResponse({ a: 1 }))
+      .mockResolvedValueOnce(makeResponse({ b: 2 }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    // Prime key A so it becomes a hit; key B will be a fresh miss in the scope.
+    const primed = await withFetchMeta(() => httpJson(TEST_URL, { cacheKey: 'meta:agg:a' }));
+
+    const { meta } = await withFetchMeta(async () => {
+      await httpJson(TEST_URL, { cacheKey: 'meta:agg:a' }); // hit (old time)
+      await httpJson('https://example.test/b', { cacheKey: 'meta:agg:b' }); // miss (new time)
+    });
+
+    // Mixed hit+miss → not fully cached
+    expect(meta.fromCache).toBe(false);
+    // Oldest of the two = the primed key's fetch time
+    expect(meta.fetchedAt).toBe(primed.meta.fetchedAt);
   });
 });
 

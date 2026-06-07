@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import type { AdapterRegistry } from '../adapters/registry.js';
 import type { Chain, NormalizedProduct } from '../adapters/types.js';
+import { withFetchMeta } from '../util/http.js';
 
 const TAG_VALUES = [
   'organic','budget','premium','fairtrade','lactose-free','gluten-free',
@@ -38,8 +39,24 @@ export const searchProductsSchema = z.object({
 
 export type SearchProductsInput = z.infer<typeof searchProductsSchema>;
 
+/**
+ * Per-chain data freshness. `fetchedAt` is an ISO 8601 timestamp of when this
+ * chain's data was fetched from origin (the oldest fetch if the adapter made
+ * several calls); `fromCache` is true only when every underlying request was a
+ * cache hit. Lets a client tell the user how current each chain's prices are.
+ *
+ * Note: granularity is per-chain, not per-product — one upstream response
+ * yields many products that all share the same fetch time. Migros fetches
+ * outside the cache layer, so it always reports `fromCache: false` / now.
+ */
+export interface ChainFreshness {
+  fetchedAt: string;
+  fromCache: boolean;
+}
+
 export interface SearchProductsOutput {
   byChain: Partial<Record<Chain, NormalizedProduct[]>>;
+  sources?: Partial<Record<Chain, ChainFreshness>>;
   errors?: Array<{ chain: Chain; code: string; reason?: string }>;
 }
 
@@ -50,10 +67,11 @@ export async function searchProductsHandler(
   const adapters = registry.withCapability('productSearch', input.chains);
   const errors: SearchProductsOutput['errors'] = [];
   const byChain: SearchProductsOutput['byChain'] = {};
+  const sources: SearchProductsOutput['sources'] = {};
 
   await Promise.all(
     adapters.map(async (a) => {
-      const r = await a.searchProducts({
+      const { result: r, meta } = await withFetchMeta(() => a.searchProducts({
         query: input.query,
         storeIds: input.storeIds,
         tags: input.filters?.tags,
@@ -61,14 +79,19 @@ export async function searchProductsHandler(
         sizeRange: input.filters?.sizeRange,
         limit: input.limit,
         offset: input.offset,
-      });
+      }));
       if (r.ok) {
         byChain[a.chain] = r.data;
+        sources[a.chain] = { fetchedAt: new Date(meta.fetchedAt).toISOString(), fromCache: meta.fromCache };
       } else {
         errors.push({ chain: a.chain, code: r.error.code, reason: 'reason' in r.error ? r.error.reason : undefined });
       }
     }),
   );
 
-  return { byChain, errors: errors.length ? errors : undefined };
+  return {
+    byChain,
+    sources: Object.keys(sources).length ? sources : undefined,
+    errors: errors.length ? errors : undefined,
+  };
 }

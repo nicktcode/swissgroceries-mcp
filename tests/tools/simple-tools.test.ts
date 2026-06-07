@@ -18,10 +18,12 @@ function full(chain: any): StoreAdapter {
 }
 
 describe('simple tools', () => {
-  it('get_product returns the product', async () => {
+  it('get_product returns the product with freshness metadata', async () => {
     const r = new AdapterRegistry(); r.register(full('migros'));
-    const p = await getProductHandler(r, { chain: 'migros', id: '1' });
-    expect(p?.id).toBe('1');
+    const out = await getProductHandler(r, { chain: 'migros', id: '1' });
+    expect(out.product?.id).toBe('1');
+    expect(typeof out.fetchedAt).toBe('string');
+    expect(out.fromCache).toBe(false);
   });
 
   it('get_promotions aggregates across chains', async () => {

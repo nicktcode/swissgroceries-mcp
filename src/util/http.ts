@@ -1,3 +1,4 @@
+import { AsyncLocalStorage } from 'node:async_hooks';
 import { logger } from './log.js';
 
 export interface HttpOpts {
@@ -15,9 +16,54 @@ export interface HttpOpts {
   init?: RequestInit;
 }
 
-interface CacheEntry { value: unknown; expires: number; }
+interface CacheEntry { value: unknown; expires: number; fetchedAt: number; }
 const cache = new Map<string, CacheEntry>();
 const cacheDisabled = process.env.SWISSGROCERIES_DISABLE_CACHE === '1';
+
+// --- Fetch-freshness tracking -------------------------------------------------
+// The cache stores raw upstream responses, so a single fetch yields many
+// normalized records that all share one fetch time. The true resolution of
+// "how fresh is this" is therefore per-fetch (≈ per-chain-per-call), not
+// per-record. withFetchMeta() lets a caller scope a unit of work (one adapter
+// call) and read back the aggregate freshness of every cached fetch inside it,
+// without threading a return value through every adapter/normalize layer.
+
+export interface FetchMeta {
+  /** Epoch ms of the origin fetch. When a scope made several fetches this is
+   *  the OLDEST one — the most stale datum bounds the freshness of the whole. */
+  fetchedAt: number;
+  /** True only if EVERY underlying fetch in the scope was served from cache. */
+  fromCache: boolean;
+}
+
+interface FetchMetaAccumulator { oldest?: number; fromCache: boolean; any: boolean; }
+const fetchMetaStore = new AsyncLocalStorage<FetchMetaAccumulator>();
+
+function reportFetch(fetchedAt: number, fromCache: boolean): void {
+  const acc = fetchMetaStore.getStore();
+  if (!acc) return;
+  acc.any = true;
+  if (acc.oldest === undefined || fetchedAt < acc.oldest) acc.oldest = fetchedAt;
+  acc.fromCache = acc.fromCache && fromCache;
+}
+
+/**
+ * Run `fn` while collecting freshness metadata for every cached httpJson fetch
+ * it triggers, then report the aggregate alongside its result.
+ *
+ * When `fn` performs no httpJson fetch at all (e.g. the Migros adapter, which
+ * fetches through migros-api-wrapper outside this layer and is therefore never
+ * cache-aged here), the data is treated as freshly fetched: `fromCache` is
+ * false and `fetchedAt` is now.
+ */
+export async function withFetchMeta<T>(fn: () => Promise<T>): Promise<{ result: T; meta: FetchMeta }> {
+  const acc: FetchMetaAccumulator = { fromCache: true, any: false };
+  const result = await fetchMetaStore.run(acc, fn);
+  const meta: FetchMeta = acc.any
+    ? { fetchedAt: acc.oldest!, fromCache: acc.fromCache }
+    : { fetchedAt: Date.now(), fromCache: false };
+  return { result, meta };
+}
 
 interface CircuitState { failures: number; openedAt: number | null; }
 const circuits = new Map<string, CircuitState>();
@@ -87,6 +133,7 @@ export async function httpJson<T = unknown>(url: string, opts: HttpOpts = {}): P
     const hit = cache.get(cacheKey);
     if (hit && hit.expires > Date.now()) {
       logger.debug(`[cache HIT] ${cacheKey}`);
+      reportFetch(hit.fetchedAt, true);
       return hit.value as T;
     }
     // Coalesce concurrent calls to the same key
@@ -112,9 +159,11 @@ export async function httpJson<T = unknown>(url: string, opts: HttpOpts = {}): P
         }
         const json = (await res.json()) as T;
         recordSuccess(host);
+        const fetchedAt = Date.now();
         if (!cacheDisabled && cacheKey) {
-          cache.set(cacheKey, { value: json, expires: Date.now() + cacheMaxAge });
+          cache.set(cacheKey, { value: json, expires: fetchedAt + cacheMaxAge, fetchedAt });
         }
+        reportFetch(fetchedAt, false);
         return json;
       } catch (e) {
         lastErr = e;

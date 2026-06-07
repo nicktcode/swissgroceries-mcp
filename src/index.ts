@@ -64,6 +64,7 @@ const TOOLS = [
       'Search for products across configured Swiss grocery chains (Migros, Coop, Aldi, Denner, Lidl) by keyword.',
       'Supports optional filters for price, size range, and product tags (organic, vegan, budget, etc.).',
       'Returns results grouped by chain with normalised price, unit price, size, and promotion info.',
+      'A `sources` map reports each chain\'s data freshness (fetchedAt timestamp + fromCache flag) so you can tell the user how current the prices are.',
       'Use for "find organic milk under 2 CHF", "compare pasta prices", or "search for gluten-free bread".',
     ].join(' '),
     schema: searchProductsSchema,
@@ -73,7 +74,7 @@ const TOOLS = [
     name: 'get_product',
     description: [
       'Fetch full product details for a specific chain + product ID pair.',
-      'Returns price, brand, size, unit price, tags, category, image URL, and active promotions.',
+      'Returns { product, fetchedAt, fromCache }: the product carries price, brand, size, unit price, tags, category, image URL, and active promotions, while fetchedAt + fromCache report how fresh the data is.',
       'Obtain product IDs from search_products. Useful for drilling into a search result.',
       'Use for "get details for this Migros product" or "what is the unit price of this item?".',
     ].join(' '),

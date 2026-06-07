@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import type { AdapterRegistry } from '../adapters/registry.js';
 import type { NormalizedProduct } from '../adapters/types.js';
+import { withFetchMeta } from '../util/http.js';
 import { ToolError } from './errors.js';
 
 export const getProductSchema = z.object({
@@ -12,10 +13,18 @@ export const getProductSchema = z.object({
 
 export type GetProductInput = z.infer<typeof getProductSchema>;
 
+export interface GetProductOutput {
+  product: NormalizedProduct | null;
+  /** ISO 8601 timestamp of when this data was fetched from origin. */
+  fetchedAt: string;
+  /** True if the data was served from cache rather than freshly fetched. */
+  fromCache: boolean;
+}
+
 export async function getProductHandler(
   registry: AdapterRegistry,
   input: GetProductInput,
-): Promise<NormalizedProduct | null> {
+): Promise<GetProductOutput> {
   const adapter = registry.get(input.chain);
   if (!adapter) {
     throw new ToolError(
@@ -24,7 +33,7 @@ export async function getProductHandler(
       'Ensure the chain is enabled in the server configuration. For Denner, set the DENNER_JWT env var.',
     );
   }
-  const r = await adapter.getProduct(input.id);
+  const { result: r, meta } = await withFetchMeta(() => adapter.getProduct(input.id));
   if (!r.ok) {
     throw new ToolError(
       r.error.code,
@@ -34,5 +43,9 @@ export async function getProductHandler(
         : 'Try again later or use search_products to find an alternative.',
     );
   }
-  return r.data;
+  return {
+    product: r.data,
+    fetchedAt: new Date(meta.fetchedAt).toISOString(),
+    fromCache: meta.fromCache,
+  };
 }

@@ -44,6 +44,16 @@ describe('search_products tool', () => {
     expect(out.byChain.coop?.length).toBe(0);
   });
 
+  it('reports per-chain data freshness in `sources`', async () => {
+    const r = new AdapterRegistry();
+    r.register(makeAdapter('migros', [{ chain: 'migros', id: '1', name: 'milk', price: { current: 1.5, currency: 'CHF' }, tags: [] }]));
+    const out = await searchProductsHandler(r, { query: 'milk' });
+    expect(out.sources?.migros).toBeDefined();
+    // Mock adapter does no httpJson fetch → treated as fresh-now, not cached.
+    expect(out.sources?.migros?.fromCache).toBe(false);
+    expect(() => new Date(out.sources!.migros!.fetchedAt).toISOString()).not.toThrow();
+  });
+
   it('offset is optional and defaults gracefully', () => {
     expect(() => searchProductsSchema.parse({ query: 'milk' })).not.toThrow();
     expect(() => searchProductsSchema.parse({ query: 'milk', offset: 0 })).not.toThrow();
