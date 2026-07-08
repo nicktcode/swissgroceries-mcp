@@ -1,0 +1,3842 @@
+{
+  "current_page_number": 1,
+  "items_per_page": 48,
+  "total_items": 73,
+  "items": [
+    {
+      "id": 1993,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 21537,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Norvège Vidé 2/3 kg",
+          "advertisingText": "Saumon frais, 2-3 kg",
+          "additionalDesignation": "entier, vidé",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "21537-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/21537-KG/saumon-frais-2-3-kg-de-norvege-entier-vide",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/215/21537_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/215/21537_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/215/21537_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/215/21537_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 14,
+        "salesPriceHT": 13.65,
+        "discountPriceTTC": 9.2,
+        "discountPriceHT": 8.97,
+        "unitPrice": 8.97,
+        "discountRatePrivate": 0.3429,
+        "discountRatePro": 0.3429,
+        "visible": true
+      }
+    },
+    {
+      "id": 5943,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 46911,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé de Norvège tranché 500g",
+          "advertisingText": "Saumon fumé",
+          "additionalDesignation": "tranché",
+          "brand": null,
+          "weightVolume": "500 g",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "500 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "46911-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/46911-ST/saumon-fume-de-norvege-tranche",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/469/46911_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/469/46911_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/469/46911_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/469/46911_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "500 g",
+      "packagingLabelPro": "500 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 1991,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 21535,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Norvège Vidé 3/4 kg",
+          "advertisingText": "Saumon frais, 3-4 kg",
+          "additionalDesignation": "entier, vidé",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "21535-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/21535-KG/saumon-frais-3-4-kg-de-norvege-entier-vide",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/215/21535_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/215/21535_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/215/21535_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/215/21535_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 14.7,
+        "salesPriceHT": 14.33,
+        "discountPriceTTC": 9.9,
+        "discountPriceHT": 9.65,
+        "unitPrice": 9.65,
+        "discountRatePrivate": 0.3265,
+        "discountRatePro": 0.3265,
+        "visible": true
+      }
+    },
+    {
+      "id": 2277,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 24663,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé Ecosse tranché 250g",
+          "advertisingText": "Saumon fumé",
+          "additionalDesignation": "tranché",
+          "brand": null,
+          "weightVolume": "250 g",
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": "250 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "24663-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/24663-ST/saumon-fume-d-ecosse-tranche",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/246/24663_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/246/24663_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/246/24663_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/246/24663_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "250 g",
+      "packagingLabelPro": "250 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 13.3,
+        "salesPriceHT": 12.96,
+        "discountPriceTTC": 9.9,
+        "discountPriceHT": 9.65,
+        "unitPrice": 9.65,
+        "discountRatePrivate": 0.25564,
+        "discountRatePro": 0.25564,
+        "visible": true
+      }
+    },
+    {
+      "id": 68237,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 419703,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Sauvage Fumé Sockey tranché 250 g",
+          "advertisingText": "Saumon fumé Sockeye",
+          "additionalDesignation": "tranché",
+          "brand": null,
+          "weightVolume": "250 g",
+          "packaging": null,
+          "origin": "d'Alaska",
+          "quantityLabel": "250 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "419703-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/419703-PAK/saumon-fume-sockeye-d-alaska-tranche",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/419/419703_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/419/419703_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/419/419703_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/419/419703_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "250 g",
+      "packagingLabelPro": "250 g",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 1992,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 21536,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Norvège Vidé 5/6 kg",
+          "advertisingText": "Saumon entier vidé frais",
+          "additionalDesignation": "5-6 kg",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "21536-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/21536-KG/saumon-entier-vide-frais-de-norvege-5-6-kg",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/215/21536_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/215/21536_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/215/21536_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/215/21536_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 15.2,
+        "salesPriceHT": 14.81,
+        "discountPriceTTC": 10.2,
+        "discountPriceHT": 9.94,
+        "unitPrice": 9.94,
+        "discountRatePrivate": 0.3289,
+        "discountRatePro": 0.3289,
+        "visible": true
+      }
+    },
+    {
+      "id": 5723,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 45547,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé Ecosse au Whisky 250g",
+          "advertisingText": "Saumon fumé au whisky",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "250 g",
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": "250 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "45547-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/45547-ST/saumon-fume-au-whisky-d-ecosse",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/455/45547_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/455/45547_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/455/45547_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/455/45547_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "250 g",
+      "packagingLabelPro": "250 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 14.8,
+        "salesPriceHT": 14.42,
+        "discountPriceTTC": 12.3,
+        "discountPriceHT": 11.99,
+        "unitPrice": 11.99,
+        "discountRatePrivate": 0.16892,
+        "discountRatePro": 0.16892,
+        "visible": true
+      }
+    },
+    {
+      "id": 98124,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 447989,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé tranché Benefit env. 1 kg",
+          "advertisingText": "Saumon fumé",
+          "additionalDesignation": "tranché",
+          "brand": "Benefit Price",
+          "weightVolume": "env. 1 kg",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "env. 1 kg"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "447989-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/447989-KG/saumon-fume-de-norvege-tranche-benefit-price",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/447/447989_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/447/447989_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/447/447989_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/447/447989_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": "env. 1 kg",
+      "packagingLabelPro": "env. 1 kg",
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 68238,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 419704,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Sauvage Fumé Sockey tranché 500 g",
+          "advertisingText": "Saumon sauvage fumé Sockeye",
+          "additionalDesignation": "tranché",
+          "brand": null,
+          "weightVolume": "500 g",
+          "packaging": null,
+          "origin": "d'Alaska",
+          "quantityLabel": "500 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "419704-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/419704-PAK/saumon-sauvage-fume-sockeye-d-alaska-tranche",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/419/419704_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/419/419704_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/419/419704_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/419/419704_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "500 g",
+      "packagingLabelPro": "500 g",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 5945,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 46913,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé Norvège tranché 800/1200",
+          "advertisingText": "Saumon fumé, 800-1200 g",
+          "additionalDesignation": "tranché",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "46913-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/46913-KG/saumon-fume-800-1200-g-de-norvege-tranche",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/469/46913_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/469/46913_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/469/46913_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/469/46913_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 5944,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 46912,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé de Norvège 800/1200",
+          "advertisingText": "Saumon fumé, 800-1200 g",
+          "additionalDesignation": "entier",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "46912-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/46912-KG/saumon-fume-800-1200-g-de-norvege-entier",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/469/46912_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/469/46912_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/469/46912_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/469/46912_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 107014,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 453823,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Dos de Saumon Fumé Norvège 150 g",
+          "advertisingText": null,
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "453823-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/453823-PAK/dos-de-saumon-fume-norvege-150-g",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/453/453823_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/453/453823_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/453/453823_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/453/453823_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 107469,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 454213,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Gravlax Tranché Norvège env. 500g",
+          "advertisingText": "Saumon gravlax tranché",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "500 g",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "500 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "454213-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/454213-PAK/saumon-gravlax-tranche-de-norvege",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/454/454213_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/454/454213_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/454/454213_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/454/454213_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "500 g",
+      "packagingLabelPro": "500 g",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 2276,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 24662,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé Ecosse Mini Tr. 750g",
+          "advertisingText": "Saumon fumé",
+          "additionalDesignation": "mini tranches",
+          "brand": null,
+          "weightVolume": "750 g",
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": "750 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "24662-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/24662-ST/saumon-fume-d-ecosse-mini-tranches",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/246/24662_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/246/24662_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/246/24662_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/246/24662_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "750 g",
+      "packagingLabelPro": "750 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 31.6,
+        "salesPriceHT": 30.8,
+        "discountPriceTTC": 27.9,
+        "discountPriceHT": 27.19,
+        "unitPrice": 27.19,
+        "discountRatePrivate": 0.11709,
+        "discountRatePro": 0.11709,
+        "visible": true
+      }
+    },
+    {
+      "id": 110478,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 456722,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Vidé 6/8 kg",
+          "advertisingText": "Saumon vidé frais",
+          "additionalDesignation": "6/8",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "456722-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/456722-KG/saumon-vide-frais-6-8",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/456/456722_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/456/456722_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/456/456722_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/456/456722_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 15.9,
+        "salesPriceHT": 15.5,
+        "discountPriceTTC": 10.9,
+        "discountPriceHT": 10.62,
+        "unitPrice": 10.62,
+        "discountRatePrivate": 0.3145,
+        "discountRatePro": 0.3145,
+        "visible": true
+      }
+    },
+    {
+      "id": 2114,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 22978,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé Ecosse tranché 900/1200",
+          "advertisingText": "Saumon fumé",
+          "additionalDesignation": "tranché",
+          "brand": null,
+          "weightVolume": "900-1200 g",
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": "900-1200 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "22978-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/22978-KG/saumon-fume-d-ecosse-tranche",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/229/22978_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/229/22978_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/229/22978_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/229/22978_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": "900-1200 g",
+      "packagingLabelPro": "900-1200 g",
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 45.8,
+        "salesPriceHT": 44.64,
+        "discountPriceTTC": 34.8,
+        "discountPriceHT": 33.92,
+        "unitPrice": 33.92,
+        "discountRatePrivate": 0.24017,
+        "discountRatePro": 0.24017,
+        "visible": true
+      }
+    },
+    {
+      "id": 2602,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 27788,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Vidé 4/5 kg Label Rouge",
+          "advertisingText": "Saumon entier vidé frais",
+          "additionalDesignation": "4-5 kg",
+          "brand": "Label Rouge",
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "27788-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/27788-KG/saumon-entier-vide-frais-d-ecosse-4-5-kg-label-rouge",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/277/27788_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/277/27788_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/277/27788_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/277/27788_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 88683,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 83643,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Norvège Vidé 2/3 kg VAC",
+          "advertisingText": "Saumon frais",
+          "additionalDesignation": "entier, vidé",
+          "brand": null,
+          "weightVolume": "2-3 kg",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "2-3 kg"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "83643-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/83643-KG/saumon-frais-de-norvege-entier-vide",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/836/83643_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/836/83643_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/836/83643_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/836/83643_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": "2-3 kg",
+      "packagingLabelPro": "2-3 kg",
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 14,
+        "salesPriceHT": 13.65,
+        "discountPriceTTC": 9.2,
+        "discountPriceHT": 8.97,
+        "unitPrice": 8.97,
+        "discountRatePrivate": 0.3429,
+        "discountRatePro": 0.3429,
+        "visible": true
+      }
+    },
+    {
+      "id": 110753,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 456929,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Froya mid Loin Norvège env 650g",
+          "advertisingText": "Filet de saumon mid loin",
+          "additionalDesignation": null,
+          "brand": "Frøya",
+          "weightVolume": "env. 650 g",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "env. 650 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "456929-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/456929-KG/filet-de-saumon-mid-loin-de-norvege-froya",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/456/456929_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/456/456929_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/456/456929_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/456/456929_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": "env. 650 g",
+      "packagingLabelPro": "env. 650 g",
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 96843,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 447480,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé pour Toast PL/NO sg 600g",
+          "advertisingText": "Saumon fumé pour toasts",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "600 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "600 g"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "447480-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/447480-ST/saumon-fume-pour-toasts",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/447/447480_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/447/447480_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/447/447480_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/447/447480_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "600 g",
+      "packagingLabelPro": "600 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 18,
+        "salesPriceHT": 17.54,
+        "discountPriceTTC": 15.9,
+        "discountPriceHT": 15.5,
+        "unitPrice": 15.5,
+        "discountRatePrivate": 0.11667,
+        "discountRatePro": 0.11667,
+        "visible": true
+      }
+    },
+    {
+      "id": 93700,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 446196,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Saumon Fumé prétranché sg 1kg",
+          "advertisingText": "Saumon fumé",
+          "additionalDesignation": "prétranché",
+          "brand": null,
+          "weightVolume": "1 kg",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "1 kg"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "446196-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/446196-PAK/saumon-fume-de-norvege-pretranche",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/446/446196_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/446/446196_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/446/446196_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/446/446196_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "1 kg",
+      "packagingLabelPro": "1 kg",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 2275,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 24661,
+        "articleGroup": {
+          "code": 1211,
+          "translations": {
+            "fr": {
+              "wording": "Poisson fumé et salé"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Chutes de Saumon Fumé Ecosse 500g",
+          "advertisingText": "Chutes de saumon fumé",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "500 g",
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": "500 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "24661-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/24661-ST/chutes-de-saumon-fume-d-ecosse",
+        "category": "https://www.aligro.ch/actions/1211-poisson-fume-et-sale"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/246/24661_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/246/24661_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/246/24661_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/246/24661_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "500 g",
+      "packagingLabelPro": "500 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 15.4,
+        "salesPriceHT": 15.01,
+        "discountPriceTTC": 8.5,
+        "discountPriceHT": 8.28,
+        "unitPrice": 8.28,
+        "discountRatePrivate": 0.44805,
+        "discountRatePro": 0.44805,
+        "visible": true
+      }
+    },
+    {
+      "id": 798,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 8167,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Darne de Saumon de Norvège",
+          "advertisingText": "Darnes de saumon frais",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "8167-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/8167-KG/darnes-de-saumon-frais-de-norvege",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/816/8167_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/816/8167_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/816/8167_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/816/8167_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 25.8,
+        "salesPriceHT": 25.15,
+        "discountPriceTTC": 15.3,
+        "discountPriceHT": 14.91,
+        "unitPrice": 14.91,
+        "discountRatePrivate": 0.407,
+        "discountRatePro": 0.407,
+        "visible": true
+      }
+    },
+    {
+      "id": 104813,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 81697,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Tête de Saumon",
+          "advertisingText": "Tête de saumon frais",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "81697-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/81697-KG/tete-de-saumon-frais",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/816/81697_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/816/81697_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/816/81697_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/816/81697_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 652,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 6480,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet de Saumon Norvège a/Peau TRIM D",
+          "advertisingText": "Filet de saumon frais, Trim D, 1-1.4 kg",
+          "additionalDesignation": "avec peau",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "6480-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/6480-KG/filet-de-saumon-frais-trim-d-1-1-4-kg-de-norvege-avec-peau",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/648/6480_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/648/6480_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/648/6480_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/648/6480_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 449,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 5145,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet Saumon Norvège s/P 1/1.4 kg Trim E",
+          "advertisingText": "Filet de saumon frais sans peau",
+          "additionalDesignation": "1-1.4 kg",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "5145-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/5145-KG/filet-de-saumon-frais-sans-peau-de-norvege-1-1-4-kg",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/514/5145_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/514/5145_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/514/5145_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/514/5145_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 91542,
+      "quantityUnit": {
+        "code": "ZSA",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "SA"
+      },
+      "article": {
+        "articleNumber": 445226,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Pavé de Saumon s/peau NO ASC sg 4x150g",
+          "advertisingText": "Pavés de saumon",
+          "additionalDesignation": "sans peau, ASC",
+          "brand": null,
+          "weightVolume": "4 x 150 g",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "4 x 150 g"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "445226-ZSA",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/445226-ZSA/paves-de-saumon-de-norvege-sans-peau-asc",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/445/445226_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/445/445226_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/445/445226_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/445/445226_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "sachet",
+      "packagingLabel": "4 x 150 g",
+      "packagingLabelPro": "4 x 150 g",
+      "quantityUnitBaseLabel": "sachet",
+      "quantityUnitBaseLabelPro": "sachet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "sachet",
+      "quantityLabelForUnitPrice": "sachet",
+      "quantityLabelForFullPrice": "sachet",
+      "quantityLabelForDetail": "sachet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 91540,
+      "quantityUnit": {
+        "code": "ZSA",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "SA"
+      },
+      "article": {
+        "articleNumber": 445225,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Pavé de Saumon a/peau NO sg 4x150g",
+          "advertisingText": "Pavés de saumon",
+          "additionalDesignation": "avec peau",
+          "brand": null,
+          "weightVolume": "4 x 150 g",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "4 x 150 g"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "445225-ZSA",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/445225-ZSA/paves-de-saumon-de-norvege-avec-peau",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/445/445225_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/445/445225_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/445/445225_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/445/445225_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "sachet",
+      "packagingLabel": "4 x 150 g",
+      "packagingLabelPro": "4 x 150 g",
+      "quantityUnitBaseLabel": "sachet",
+      "quantityUnitBaseLabelPro": "sachet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "sachet",
+      "quantityLabelForUnitPrice": "sachet",
+      "quantityLabelForFullPrice": "sachet",
+      "quantityLabelForDetail": "sachet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 14.3,
+        "salesPriceHT": 13.94,
+        "discountPriceTTC": 11.9,
+        "discountPriceHT": 11.6,
+        "unitPrice": 11.6,
+        "discountRatePrivate": 0.16783,
+        "discountRatePro": 0.16783,
+        "visible": true
+      }
+    },
+    {
+      "id": 3355,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 32587,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet Saumon Ecosse a/Peau Désarêté",
+          "advertisingText": "Filet de saumon frais",
+          "additionalDesignation": "avec peau, désarêté",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "32587-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/32587-KG/filet-de-saumon-frais-d-ecosse-avec-peau-desarete",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/325/32587_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/325/32587_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/325/32587_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/325/32587_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 3846,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 35586,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet de Truite Saumonée a/Peau",
+          "advertisingText": "Filets de truite saumonée fraîche",
+          "additionalDesignation": "avec peau",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "35586-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/35586-KG/filets-de-truite-saumonee-fraiche-avec-peau",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/355/35586_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/355/35586_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/355/35586_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/355/35586_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 6845,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 50530,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet Royal de Saumon",
+          "advertisingText": "Filet royal de saumon frais",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "50530-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/50530-KG/filet-royal-de-saumon-frais-de-norvege",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/505/50530_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/505/50530_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/505/50530_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/505/50530_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 4176,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 37834,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Pavé Saumon a/P s/Arête No env.150g",
+          "advertisingText": "Pavés de saumon frais, env. 150 g",
+          "additionalDesignation": "avec peau, sans arêtes",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "37834-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/37834-KG/paves-de-saumon-frais-env-150-g-de-norvege-avec-peau-sans-aretes",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/378/37834_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/378/37834_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/378/37834_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/378/37834_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 3847,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 35587,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet de Truite Saumonée s/Peau",
+          "advertisingText": "Filet de truite saumonée fraîche sans peau",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de France",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "35587-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/35587-KG/filet-de-truite-saumonee-fraiche-sans-peau-de-france",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/355/35587_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/355/35587_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/355/35587_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/355/35587_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 20637,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 221346,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Truite Saumonée Vidée 180/350g",
+          "advertisingText": "Truite saumonée fraîche, 180-350 g",
+          "additionalDesignation": "vidée",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "221346-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/221346-KG/truite-saumonee-fraiche-180-350-g-videe",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/221/221346_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/221/221346_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/221/221346_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/221/221346_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 4395,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 39053,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Portion Saumon Sauv. Atlantis MSC sg 1kg",
+          "advertisingText": "Saumon sauvage, 140-160 g",
+          "additionalDesignation": "portions, MSC",
+          "brand": "Atlantis",
+          "weightVolume": "1 kg",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "1 kg"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "39053-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/39053-PAK/saumon-sauvage-140-160-g-portions-msc-atlantis",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/390/39053_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/390/39053_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/390/39053_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/390/39053_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "1 kg",
+      "packagingLabelPro": "1 kg",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 3390,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 32840,
+        "articleGroup": {
+          "code": 1213,
+          "translations": {
+            "fr": {
+              "wording": "Semi-conserves et spécialités"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1213-semi-conserves-et-specialites"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Oeufs de Saumon MSC 100 g",
+          "advertisingText": "Œufs de saumon MSC",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "100 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "100 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "32840-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/32840-ST/oeufs-de-saumon-msc",
+        "category": "https://www.aligro.ch/actions/1213-semi-conserves-et-specialites"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/328/32840_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/328/32840_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/328/32840_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/328/32840_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "100 g",
+      "packagingLabelPro": "100 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 106754,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 453581,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet de Saumon DK/Iles Feroe a/P TRIMD",
+          "advertisingText": "Filet de saumon frais",
+          "additionalDesignation": "avec peau, Trim D",
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "453581-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/453581-KG/filet-de-saumon-frais-avec-peau-trim-d",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/453/453581_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/453/453581_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/453/453581_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/453/453581_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 3356,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 32588,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Filet Saumon Ecosse s/Peau Désarêté",
+          "advertisingText": "Filet de saumon frais sans peau désarêté",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "d'Ecosse",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "32588-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/32588-KG/filet-de-saumon-frais-sans-peau-desarete-d-ecosse",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/325/32588_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/325/32588_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/325/32588_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/325/32588_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 98412,
+      "quantityUnit": {
+        "code": "ZSA",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "SA"
+      },
+      "article": {
+        "articleNumber": 448287,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Cube de Saumon NO sg 1kg",
+          "advertisingText": "Cubes de saumon",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "1 kg",
+          "packaging": null,
+          "origin": "de Norvège",
+          "quantityLabel": "1 kg"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "448287-ZSA",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/448287-ZSA/cubes-de-saumon-de-norvege",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/448/448287_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/448/448287_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/448/448287_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/448/448287_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "sachet",
+      "packagingLabel": "1 kg",
+      "packagingLabelPro": "1 kg",
+      "quantityUnitBaseLabel": "sachet",
+      "quantityUnitBaseLabelPro": "sachet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "sachet",
+      "quantityLabelForUnitPrice": "sachet",
+      "quantityLabelForFullPrice": "sachet",
+      "quantityLabelForDetail": "sachet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 91478,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 445313,
+        "articleGroup": {
+          "code": 1314,
+          "translations": {
+            "fr": {
+              "wording": "Traiteur et divers"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Sandwich Club au Saumon Hilcona 150 g",
+          "advertisingText": "Sandwich Club saumon avec crème de raifort",
+          "additionalDesignation": null,
+          "brand": "Hilcona",
+          "weightVolume": "150 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "150 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "445313-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/445313-ST/sandwich-club-saumon-avec-creme-de-raifort-hilcona",
+        "category": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/445/445313_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/445/445313_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/445/445313_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/445/445313_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "150 g",
+      "packagingLabelPro": "150 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 4.15,
+        "salesPriceHT": 4.04,
+        "discountPriceTTC": 3.3,
+        "discountPriceHT": 3.22,
+        "unitPrice": 3.22,
+        "discountRatePrivate": 0.20482,
+        "discountRatePro": 0.20482,
+        "visible": true
+      }
+    },
+    {
+      "id": 16278,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 75926,
+        "articleGroup": {
+          "code": 1314,
+          "translations": {
+            "fr": {
+              "wording": "Traiteur et divers"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Sandwich Club Le Gourmand Saumon F. 190g",
+          "advertisingText": "Sandwich Le Gourmand",
+          "additionalDesignation": "saumon fumé",
+          "brand": "Sodebo",
+          "weightVolume": "190 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "190 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "75926-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/75926-ST/sandwich-le-gourmand-saumon-fume-sodebo",
+        "category": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/759/75926_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/759/75926_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/759/75926_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/759/75926_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "190 g",
+      "packagingLabelPro": "190 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 19152,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 79545,
+        "articleGroup": {
+          "code": 1314,
+          "translations": {
+            "fr": {
+              "wording": "Traiteur et divers"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Canapé au Saumon 2 x 80 g",
+          "advertisingText": "Canapés au saumon",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": "2 x 80 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "2 x 80 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "79545-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/79545-PAK/canapes-au-saumon",
+        "category": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/795/79545_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/795/79545_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/795/79545_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/795/79545_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "2 x 80 g",
+      "packagingLabelPro": "2 x 80 g",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 59515,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 83702,
+        "articleGroup": {
+          "code": 1314,
+          "translations": {
+            "fr": {
+              "wording": "Traiteur et divers"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Sandwich Club Suédois Duo Saumon 135 g",
+          "advertisingText": "Sandwich suédois,",
+          "additionalDesignation": "duo de saumon",
+          "brand": "Sodebo",
+          "weightVolume": "135 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "135 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "83702-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/83702-ST/sandwich-suedois-duo-de-saumon-sodebo",
+        "category": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/837/83702_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/837/83702_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/837/83702_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/837/83702_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "135 g",
+      "packagingLabelPro": "135 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 97916,
+      "quantityUnit": {
+        "code": "PAK",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PQ"
+      },
+      "article": {
+        "articleNumber": 447830,
+        "articleGroup": {
+          "code": 1214,
+          "translations": {
+            "fr": {
+              "wording": "Surgelés (poissons, fruits de mer)"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Darnes de Saumon sg 1 kg",
+          "advertisingText": "Darnes de saumon",
+          "additionalDesignation": null,
+          "brand": "Atlantismar",
+          "weightVolume": "1 kg",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "1 kg"
+        }
+      },
+      "frozen": true,
+      "displayType": "ArticleDetail",
+      "sKU": "447830-PAK",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/447830-PAK/darnes-de-saumon-atlantismar",
+        "category": "https://www.aligro.ch/actions/1214-surgeles-poissons-fruits-de-mer"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/447/447830_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/447/447830_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/447/447830_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/447/447830_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "paquet",
+      "packagingLabel": "1 kg",
+      "packagingLabelPro": "1 kg",
+      "quantityUnitBaseLabel": "paquet",
+      "quantityUnitBaseLabelPro": "paquet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "paquet",
+      "quantityLabelForUnitPrice": "paquet",
+      "quantityLabelForFullPrice": "paquet",
+      "quantityLabelForDetail": "paquet",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 98165,
+      "quantityUnit": {
+        "code": "KG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "KG"
+      },
+      "article": {
+        "articleNumber": 448205,
+        "articleGroup": {
+          "code": 1210,
+          "translations": {
+            "fr": {
+              "wording": "Poissons, fruits de mer frais"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Brochette Saumon/Tilapia/Crevette",
+          "advertisingText": "Brochettes de saumon, tilapia et crevettes",
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": "de Norvège/Indonésie/Vietnam",
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "448205-KG",
+      "weightSellable": true,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/448205-KG/brochettes-de-saumon-tilapia-et-crevettes-de-norvege-indonesie-vietnam",
+        "category": "https://www.aligro.ch/actions/1210-poissons-fruits-de-mer-frais"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/448/448205_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/448/448205_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/448/448205_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/448/448205_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "kg",
+      "packagingLabel": null,
+      "packagingLabelPro": null,
+      "quantityUnitBaseLabel": "kg",
+      "quantityUnitBaseLabelPro": "kg",
+      "quantityUnitBaseWording": "kg",
+      "quantityUnitBaseWordingPro": "kg",
+      "quantityLabelForUnitPrice": "kg",
+      "quantityLabelForFullPrice": "kg",
+      "quantityLabelForDetail": "kg",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": {
+        "market": {
+          "id": 15,
+          "code": 0
+        },
+        "nextWeek": false,
+        "promoCode": "B",
+        "public": true,
+        "salesPriceTTC": 44.8,
+        "salesPriceHT": 43.66,
+        "discountPriceTTC": 29.7,
+        "discountPriceHT": 28.95,
+        "unitPrice": 28.95,
+        "discountRatePrivate": 0.3371,
+        "discountRatePro": 0.3371,
+        "visible": true
+      }
+    },
+    {
+      "id": 105720,
+      "quantityUnit": {
+        "code": "ST",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "PI"
+      },
+      "article": {
+        "articleNumber": 452704,
+        "articleGroup": {
+          "code": 1314,
+          "translations": {
+            "fr": {
+              "wording": "Traiteur et divers"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Pasta Box Fusilli au Saumon 300g",
+          "advertisingText": "Pasta box fusilli au saumon",
+          "additionalDesignation": null,
+          "brand": "Sodebo",
+          "weightVolume": "300 g",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "300 g"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "452704-ST",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/452704-ST/pasta-box-fusilli-au-saumon-sodebo",
+        "category": "https://www.aligro.ch/actions/1314-traiteur-et-divers"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/452/452704_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/452/452704_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/452/452704_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/452/452704_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "pièce",
+      "packagingLabel": "300 g",
+      "packagingLabelPro": "300 g",
+      "quantityUnitBaseLabel": "pièce",
+      "quantityUnitBaseLabelPro": "pièce",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "pièce",
+      "quantityLabelForUnitPrice": "pièce",
+      "quantityLabelForFullPrice": "pièce",
+      "quantityLabelForDetail": "pièce",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 12515,
+      "quantityUnit": {
+        "code": "BAG",
+        "number": 1
+      },
+      "quantityUnitBase": {
+        "code": "SAC"
+      },
+      "article": {
+        "articleNumber": 68827,
+        "articleGroup": {
+          "code": 1914,
+          "translations": {
+            "fr": {
+              "wording": "Pour les animaux"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1914-pour-les-animaux"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Purina One Adult Saumon 3 kg",
+          "advertisingText": "Croquettes pour chat Adult saumon & céréales complètes",
+          "additionalDesignation": null,
+          "brand": "Purina One",
+          "weightVolume": "3 kg",
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": "3 kg"
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "68827-BAG",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/68827-BAG/croquettes-pour-chat-adult-saumon-cereales-completes-purina-one",
+        "category": "https://www.aligro.ch/actions/1914-pour-les-animaux"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/688/68827_FR_1.webp",
+          "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/688/68827_FR_1.jpeg"
+        },
+        "all": [
+          {
+            "image/webp": "https://www.aligro.ch/media/cache/article_thumbnail/uploads/articles/688/68827_FR_1.webp",
+            "image/jpeg": "https://www.aligro.ch/media/cache/article_thumbnail_jpeg/uploads/articles/688/68827_FR_1.jpeg"
+          }
+        ]
+      },
+      "quantityWordingLegacy": "sac",
+      "packagingLabel": "3 kg",
+      "packagingLabelPro": "3 kg",
+      "quantityUnitBaseLabel": "sac",
+      "quantityUnitBaseLabelPro": "sac",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "sac",
+      "quantityLabelForUnitPrice": "sac",
+      "quantityLabelForFullPrice": "sac",
+      "quantityLabelForDetail": "sac",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    },
+    {
+      "id": 103759,
+      "quantityUnit": {
+        "code": "Z04",
+        "number": 4
+      },
+      "quantityUnitBase": {
+        "code": "SA"
+      },
+      "article": {
+        "articleNumber": 450764,
+        "articleGroup": {
+          "code": 1914,
+          "translations": {
+            "fr": {
+              "wording": "Pour les animaux"
+            }
+          },
+          "level": 1,
+          "href": {
+            "self": "https://www.aligro.ch/actions/1914-pour-les-animaux"
+          }
+        }
+      },
+      "translations": {
+        "fr": {
+          "description": "Sheba Classic Soup avec Saumon 40 gr",
+          "advertisingText": null,
+          "additionalDesignation": null,
+          "brand": null,
+          "weightVolume": null,
+          "packaging": null,
+          "origin": null,
+          "quantityLabel": null
+        }
+      },
+      "frozen": false,
+      "displayType": "ArticleDetail",
+      "sKU": "450764-Z04",
+      "weightSellable": false,
+      "alcoholCategory": false,
+      "tobaccoCategory": false,
+      "href": {
+        "self": "https://www.aligro.ch/produits/450764-Z04/sheba-classic-soup-avec-saumon-40-gr",
+        "category": "https://www.aligro.ch/actions/1914-pour-les-animaux"
+      },
+      "images": {
+        "main": {
+          "image/webp": "https://www.aligro.ch/build/missing-picture-fr.ccf2e50c.jpg",
+          "image/jpeg": "https://www.aligro.ch/build/missing-picture-fr.2d2c9f23.webp"
+        },
+        "all": []
+      },
+      "quantityWordingLegacy": "4 sachets",
+      "packagingLabel": null,
+      "packagingLabelPro": "4 x",
+      "quantityUnitBaseLabel": "4 sachets",
+      "quantityUnitBaseLabelPro": "sachet",
+      "quantityUnitBaseWording": null,
+      "quantityUnitBaseWordingPro": "4 sachets",
+      "quantityLabelForUnitPrice": "sachet",
+      "quantityLabelForFullPrice": "4 Colis de 4",
+      "quantityLabelForDetail": "4 Colis de 4",
+      "canAddToCart": true,
+      "hasAlertConfigured": false,
+      "canManageAlerts": false,
+      "canConfigureAlerts": false,
+      "availability": true,
+      "mainArticleDetailPrice": null
+    }
+  ]
+}

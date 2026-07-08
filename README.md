@@ -15,11 +15,11 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
-Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, and Otto's, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
+Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto's, and Aligro, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
 
 > **Disclaimer**
 >
-> This is a personal fun project. It is not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, Farmy, Volg, Otto's, or any other retailer. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
+> This is a personal fun project. It is not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, Farmy, Volg, Otto's, Aligro, or any other retailer. It uses publicly accessible mobile-app and web endpoints to make Swiss grocery shopping a bit smarter for end users.
 >
 > If you represent any of these stores and have concerns (about API usage, branding, scraping rate, or anything else), please reach out to the maintainer through GitHub and we will work it out. No need to escalate.
 >
@@ -130,6 +130,7 @@ Prompts are surfaced as one-click templates in MCP-aware clients (Claude Desktop
 | Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | No | None |
 | Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | Yes (parsed from free-text attribute, basis assumed 100g) | None |
 | Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | No | None |
+| Aligro | Promotions only (cash & carry; regular prices are in-store only) | Yes (current week + next week via `nextWeek`) | No | No | None |
 
 `NormalizedProduct.nutrition` is normalized to a per-100g (or per-100ml) basis with the standard Swiss labelling fields — `energyKj`, `energyKcal`, `fat`, `saturatedFat`, `carbs`, `sugar`, `fiber`, `protein`, `salt` — so consumers can sort across chains ("highest protein per 100g lasagne") even though each upstream API exposes the data on a different surface and in a different shape. Missing or unparseable fields are left `undefined`; adapters never fabricate values.
 
