@@ -263,7 +263,19 @@ export function matchProduct(
     if (singles.length > 0) topK = singles;
   }
 
-  const priceOf = (p: NormalizedProduct) => p.unitPrice?.value ?? p.price.current;
-  topK.sort((a, b) => priceOf(a.product) - priceOf(b.product));
+  // Rank by price, but never let a size-less pack win on a low absolute price
+  // against a properly-dimensioned candidate. A product WITH a unit price
+  // (CHF/kg, CHF/l, CHF/piece) always sorts ahead of one WITHOUT — otherwise a
+  // small 100 g pack at 1.60 beats a 16.–/kg product just because its pack
+  // price is a smaller number. When both (or neither) carry a unit price we
+  // keep the existing comparison (unit value, else absolute price).
+  const byUnitAwarePrice = (a: NormalizedProduct, b: NormalizedProduct): number => {
+    if (a.unitPrice && !b.unitPrice) return -1;
+    if (!a.unitPrice && b.unitPrice) return 1;
+    const ap = a.unitPrice?.value ?? a.price.current;
+    const bp = b.unitPrice?.value ?? b.price.current;
+    return ap - bp;
+  };
+  topK.sort((a, b) => byUnitAwarePrice(a.product, b.product));
   return topK[0].product;
 }

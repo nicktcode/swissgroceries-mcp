@@ -1,5 +1,5 @@
 import type {
-  Chain, NormalizedProduct, NormalizedStore, StoreAdapter, GeoPoint,
+  Chain, NormalizedProduct, NormalizedStore, GeoPoint,
 } from '../adapters/types.js';
 import type { AdapterRegistry } from '../adapters/registry.js';
 import { matchProduct, isCanonical, type ShoppingItem } from './matcher.js';
@@ -36,6 +36,12 @@ function keyOf(item: ShoppingItem): string {
     : item.query;
 }
 
+function nearestStore(near: GeoPoint, stores: NormalizedStore[]): NormalizedStore | undefined {
+  return [...stores].sort(
+    (a, b) => haversineKm(near, a.location) - haversineKm(near, b.location),
+  )[0];
+}
+
 export async function plan(registry: AdapterRegistry, input: PlanInput): Promise<PlanResult> {
   const adapters = registry.list(input.chains).filter((a) => a.capabilities.productSearch);
   const radius = input.radiusKm ?? 5;
@@ -57,8 +63,26 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
       continue;
     }
     if (result.data.length === 0) continue;
-    const sorted = [...result.data].sort((a, b) => haversineKm(input.near, a.location) - haversineKm(input.near, b.location));
-    storeByChain[adapter.chain] = sorted[0];
+    storeByChain[adapter.chain] = nearestStore(input.near, result.data);
+  }
+
+  // 1b. Radius fallback: a geolocatable chain with no branch inside `radius`
+  // shouldn't be dropped just because its nearest store sits slightly outside a
+  // tight search radius. Retry those chains once with an expanded radius before
+  // deciding they have no local presence.
+  const fallbackRadius = Math.max(radius * 4, 25);
+  if (fallbackRadius > radius) {
+    await Promise.all(
+      storeResults.map(async ({ adapter, result }) => {
+        if (storeByChain[adapter.chain] !== undefined) return; // already have a nearby store
+        if (!result.ok) return;                                // real error already recorded above
+        if (!adapter.capabilities.storeSearch) return;
+        const retry = await adapter.searchStores({ near: input.near, radiusKm: fallbackRadius, cityHint: input.near.city });
+        if (retry.ok && retry.data.length > 0) {
+          storeByChain[adapter.chain] = nearestStore(input.near, retry.data);
+        }
+      }),
+    );
   }
 
   // 2. Fan out product search per (item × chain)
@@ -68,18 +92,9 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
   await Promise.all(
     adapters.flatMap((adapter) =>
       input.items.map(async (item) => {
-        if (storeByChain[adapter.chain] === undefined && adapter.capabilities.storeSearch) {
-          // No store found for this chain. Still attempt product search so that
-          // a failing adapter registers in errors; on success, skip (no local store).
-          const probe = await adapter.searchProducts({ query: item.query, limit: 1 });
-          if (!probe.ok) {
-            if (!errors.some((e) => e.chain === adapter.chain)) {
-              errors.push({ chain: adapter.chain, code: probe.error.code, reason: 'reason' in probe.error ? probe.error.reason : undefined });
-            }
-          }
-          matrix[keyOf(item)][adapter.chain] = null;
-          return;
-        }
+        // Run the product search for every chain (even those without a nearby
+        // store) so adapter errors are always registered here through a single
+        // path. Reachability is enforced afterwards, not by short-circuiting.
         const r = await adapter.searchProducts({
           query: item.query,
           tags: item.filters?.tags,
@@ -98,6 +113,20 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
       }),
     ),
   );
+
+  // Reachability guard: a geolocatable chain (storeSearch) with no store found
+  // even after the radius expansion above must not be proposed as a physical
+  // stop — otherwise a cheaper-but-unreachable branch could win single_store /
+  // split_cart and hide a store the user can actually get to. Null out its
+  // matches. Online-only chains (no storeSearch) are exempt: they're orderable
+  // without a nearby store, so their products stay in the plan best-effort.
+  for (const adapter of adapters) {
+    if (!adapter.capabilities.storeSearch) continue;
+    if (storeByChain[adapter.chain] !== undefined) continue;
+    for (const item of input.items) {
+      matrix[keyOf(item)][adapter.chain] = null;
+    }
+  }
 
   // Canonicality filter: for each item, if at least one chain has a product
   // whose category contains a query token/synonym, drop all non-canonical chains

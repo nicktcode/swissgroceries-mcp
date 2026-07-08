@@ -252,6 +252,32 @@ describe('matchProduct', () => {
     const m = matchProduct({ query: 'mandelmilch' }, products);
     expect(m?.id).toBe('md');
   });
+
+  it('does not let a size-less cheap pack beat a unit-priced candidate within a chain', () => {
+    // Regression: a small pack with no parsed size (so no unitPrice) used to win
+    // purely because its absolute pack price (1.60) was a smaller number than a
+    // proper CHF/kg unit price (9.50). The unit-priced product must win.
+    const sizeless: NormalizedProduct = {
+      chain: 'migros', id: 'sizeless', name: 'Poulet',
+      price: { current: 1.6, currency: 'CHF' },
+      tags: [],
+    };
+    const unitPriced: NormalizedProduct = {
+      chain: 'migros', id: 'unit', name: 'Poulet',
+      price: { current: 9.5, currency: 'CHF' },
+      size: { value: 1, unit: 'kg' },
+      unitPrice: { value: 9.5, per: 'kg' },
+      tags: [],
+    };
+    const m = matchProduct({ query: 'poulet' }, [sizeless, unitPriced]);
+    expect(m?.id).toBe('unit');
+  });
+
+  // Chantier de fond #2 (matching divergence plan_shopping vs search_products):
+  // compound-word DE substring matching is one-way, so some queries that
+  // search_products resolves get nulled by plan_shopping. Out of scope for the
+  // quick-win PR — tracked here so it isn't lost.
+  it.todo('unifies plan_shopping and search_products matching for DE compound words');
 });
 
 describe('isCanonical', () => {

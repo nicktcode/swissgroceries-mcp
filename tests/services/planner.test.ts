@@ -119,6 +119,72 @@ describe('plan', () => {
     expect(result.primary.totalChf).toBeCloseTo(3.95, 2);
   });
 
+  it('recovers a chain whose nearest store is outside the tight radius but within the expanded one', async () => {
+    // QW3(a): store at ~15km. Absent from a 5km search, found once the radius is
+    // expanded (max(radius*4, 25)). It must come back as a real stop with store
+    // details, not be dropped for sitting just outside the default radius.
+    const farStore: StoreAdapter = {
+      chain: 'aldi',
+      capabilities: { productSearch: true, productDetail: true, storeSearch: true, promotions: false, perStoreStock: false, perStorePricing: false },
+      async searchProducts(q) {
+        return q.query === 'milk'
+          ? { ok: true, data: [fakeProduct('aldi', 'a1', 'milk', 1.2)] }
+          : { ok: true, data: [] };
+      },
+      async getProduct() { return { ok: true, data: null }; },
+      async searchStores(q) {
+        // ~15km north of the search point: outside 5km, inside the 25km fallback.
+        return (q.radiusKm ?? 0) >= 25
+          ? { ok: true, data: [fakeStore('aldi', 'far', 47.505, 8.54)] }
+          : { ok: true, data: [] };
+      },
+      async getPromotions() { return { ok: true, data: [] }; },
+    };
+    const r = new AdapterRegistry();
+    r.register(farStore);
+
+    const result = await plan(r, {
+      items: [{ query: 'milk' }],
+      near: { lat: 47.37, lng: 8.54 },
+      strategy: 'single_store',
+    });
+
+    expect(result.primary.stops.length).toBe(1);
+    expect(result.primary.stops[0].store.chain).toBe('aldi');
+    expect(result.primary.stops[0].store.id).toBe('far'); // recovered store is attached
+    expect(result.primary.totalChf).toBeCloseTo(1.2, 2);
+  });
+
+  it('does not let a cheaper but unreachable geolocatable chain win over a reachable one', async () => {
+    // QW3(b) guard: aldi is cheaper (1.20 < 1.50) but has no store at any radius.
+    // It must NOT become the single_store primary and hide reachable migros.
+    const unreachable: StoreAdapter = {
+      chain: 'aldi',
+      capabilities: { productSearch: true, productDetail: true, storeSearch: true, promotions: false, perStoreStock: false, perStorePricing: false },
+      async searchProducts(q) {
+        return q.query === 'milk'
+          ? { ok: true, data: [fakeProduct('aldi', 'a1', 'milk', 1.2)] }
+          : { ok: true, data: [] };
+      },
+      async getProduct() { return { ok: true, data: null }; },
+      async searchStores() { return { ok: true, data: [] }; }, // no store, at any radius
+      async getPromotions() { return { ok: true, data: [] }; },
+    };
+    const r = new AdapterRegistry();
+    r.register(unreachable);
+    r.register(makeAdapter('migros', { milk: fakeProduct('migros', 'm1', 'milk', 1.5) }));
+
+    const result = await plan(r, {
+      items: [{ query: 'milk' }],
+      near: { lat: 47.37, lng: 8.54 },
+      strategy: 'single_store',
+    });
+
+    expect(result.primary.stops.length).toBe(1);
+    expect(result.primary.stops[0].store.chain).toBe('migros'); // reachable wins
+    expect(result.primary.totalChf).toBeCloseTo(1.5, 2);
+  });
+
   it('returns up to 2 alternatives', async () => {
     const r = new AdapterRegistry();
     r.register(makeAdapter('migros', {
