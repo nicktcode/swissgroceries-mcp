@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { matchProduct, isCanonical } from '../../src/services/matcher.js';
+import { matchProduct, isCanonical, effectiveCost } from '../../src/services/matcher.js';
 import type { NormalizedProduct } from '../../src/adapters/types.js';
 
 const milkProducts: NormalizedProduct[] = [
@@ -329,5 +329,82 @@ describe('isCanonical', () => {
       tags: [],
     };
     expect(isCanonical(p, { query: 'apfelschorle' })).toBe(true);
+  });
+});
+
+describe('effectiveCost', () => {
+  const mince = (over: Partial<NormalizedProduct> = {}): NormalizedProduct => ({
+    chain: 'coop', id: 'x', name: 'Hackfleisch',
+    price: { current: 5, currency: 'CHF' },
+    size: { value: 500, unit: 'g' },
+    unitPrice: { value: 10, per: 'kg' },
+    tags: [],
+    ...over,
+  });
+
+  it('no need → legacy: one pack at pack price, not sized', () => {
+    const c = effectiveCost(mince(), { query: 'hack' });
+    expect(c).toEqual({ chf: 5, packs: 1, sized: false });
+  });
+
+  it('no need but quantity → quantity packs at pack price', () => {
+    const c = effectiveCost(mince(), { query: 'hack', quantity: 3 });
+    expect(c).toEqual({ chf: 15, packs: 3, sized: false });
+  });
+
+  it('need honoured via adapter size, rounding packs up', () => {
+    // 500 g pack, need 1.2 kg → ceil(1200/500) = 3 packs = 15 CHF.
+    const c = effectiveCost(mince(), { query: 'hack', need: { amount: 1.2, unit: 'kg' } });
+    expect(c).toEqual({ chf: 15, packs: 3, sized: true });
+  });
+
+  it('need exactly one pack stays one pack', () => {
+    const c = effectiveCost(mince(), { query: 'hack', need: { amount: 500, unit: 'g' } });
+    expect(c).toEqual({ chf: 5, packs: 1, sized: true });
+  });
+
+  it('need below one pack still buys one pack (ceil floor of 1)', () => {
+    const c = effectiveCost(mince(), { query: 'hack', need: { amount: 100, unit: 'g' } });
+    expect(c).toEqual({ chf: 5, packs: 1, sized: true });
+  });
+
+  it('derives pack size from price ÷ unit price when size is absent', () => {
+    // No `size`; unitPrice 10/kg at 5 CHF ⇒ 0.5 kg pack. Need 1 kg → 2 packs.
+    const p = mince({ size: undefined });
+    const c = effectiveCost(p, { query: 'hack', need: { amount: 1, unit: 'kg' } });
+    expect(c).toEqual({ chf: 10, packs: 2, sized: true });
+  });
+
+  it('prefers adapter size over derived size when they disagree', () => {
+    // size says 500 g; a stale unitPrice would derive 1 kg. `size` must win.
+    const p = mince({ size: { value: 500, unit: 'g' }, unitPrice: { value: 5, per: 'kg' } });
+    const c = effectiveCost(p, { query: 'hack', need: { amount: 1, unit: 'kg' } });
+    expect(c.packs).toBe(2); // ceil(1000/500), not ceil(1000/1000)
+    expect(c.sized).toBe(true);
+  });
+
+  it('falls back to legacy when need dimension mismatches the pack unit', () => {
+    // Need volume, product measured in mass → cannot honour; legacy one pack.
+    const c = effectiveCost(mince(), { query: 'hack', need: { amount: 1, unit: 'l' } });
+    expect(c).toEqual({ chf: 5, packs: 1, sized: false });
+  });
+
+  it('falls back to legacy when neither size nor unit price is known', () => {
+    const p = mince({ size: undefined, unitPrice: undefined });
+    const c = effectiveCost(p, { query: 'hack', need: { amount: 1, unit: 'kg' } });
+    expect(c).toEqual({ chf: 5, packs: 1, sized: false });
+  });
+
+  it('handles piece-based needs', () => {
+    const eggs: NormalizedProduct = {
+      chain: 'migros', id: 'e', name: 'Eier 6er',
+      price: { current: 3, currency: 'CHF' },
+      size: { value: 6, unit: 'piece' },
+      unitPrice: { value: 0.5, per: 'piece' },
+      tags: [],
+    };
+    // Need 10 eggs → ceil(10/6) = 2 packs = 6 CHF.
+    const c = effectiveCost(eggs, { query: 'eier', need: { amount: 10, unit: 'piece' } });
+    expect(c).toEqual({ chf: 6, packs: 2, sized: true });
   });
 });

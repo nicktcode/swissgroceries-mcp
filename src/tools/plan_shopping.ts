@@ -12,7 +12,14 @@ const itemSchema = z.object({
     .describe('Product search term, e.g. "Milch", "pasta integrale". The planner searches this across chains.'),
   quantity: z.number().int().positive()
     .optional()
-    .describe('Number of units needed (default 1). Used for total cost calculation.'),
+    .describe('Number of packs (default 1). Prefer `need` for a real amount; `quantity` applies when `need` is absent, or as a fallback when a `need` is set but the product\'s pack size is unknown.'),
+  need: z.object({
+    amount: z.number().positive()
+      .describe('Target amount to buy, e.g. 1 for 1 kg, 500 for 500 g, 750 for 750 ml.'),
+    unit: z.enum(['g', 'kg', 'ml', 'l', 'piece'])
+      .describe('Unit of the target amount.'),
+  }).optional()
+    .describe('The real amount you need for this item. When set, the planner buys enough packs to cover it (rounding up) and ranks candidates by the true cost to cover the need — so a larger pack with a better price/kg can win, and a small pack can lose when its size forces wasteful rounding. Omit to assume one pack and rank by unit price.'),
   preferredChain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos'])
     .optional()
     .describe('Prefer this chain for this item when scores are tied. Useful for loyalty card preferences.'),

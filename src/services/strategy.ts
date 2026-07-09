@@ -1,5 +1,5 @@
 import type { Chain, NormalizedProduct, NormalizedStore } from '../adapters/types.js';
-import { isMultipack, type ShoppingItem } from './matcher.js';
+import { effectiveCost, isMultipack, type ShoppingItem } from './matcher.js';
 
 export type Strategy = 'single_store' | 'split_cart' | 'absolute_cheapest';
 
@@ -11,6 +11,8 @@ export interface PlanStop {
     requested: ShoppingItem;
     matched: NormalizedProduct;
     lineTotal: number;
+    /** Packs to buy for this line (>1 when a `need` doesn't fit one pack). */
+    packs?: number;
   }>;
   subtotalChf: number;
 }
@@ -31,6 +33,13 @@ function keyOf(item: ShoppingItem): string {
   return item.preferredProductId
     ? `${item.preferredProductId.chain}:${item.preferredProductId.id}`
     : item.query;
+}
+
+/** Cheapest-first by unit price, falling back to absolute pack price. */
+function byUnitPrice(a: NormalizedProduct, b: NormalizedProduct): number {
+  const ap = a.unitPrice?.value ?? a.price.current;
+  const bp = b.unitPrice?.value ?? b.price.current;
+  return ap - bp;
 }
 
 export function solve(
@@ -66,11 +75,10 @@ function solveSingleStore(items: ShoppingItem[], matrix: Matrix, opts: SolveOpts
     for (const item of items) {
       const product = matrix[keyOf(item)]?.[chain];
       if (product) {
-        const qty = item.quantity ?? 1;
-        const line = product.price.current * qty;
-        total += line;
+        const cost = effectiveCost(product, item);
+        total += cost.chf;
         coverage++;
-        lines.push({ requested: item, matched: product, lineTotal: line });
+        lines.push({ requested: item, matched: product, lineTotal: cost.chf, packs: cost.packs });
       }
     }
 
@@ -132,32 +140,57 @@ function solveSplit(
       continue;
     }
 
-    const withUnit = candidates.filter(([, p]) => p.unitPrice !== undefined);
-    let pool = candidates;
-    if (withUnit.length > 0) {
-      // Pick the dominant `per` unit (most candidates share it) to compare like-for-like.
-      const counts: Record<string, number> = {};
-      for (const [, p] of withUnit) counts[p.unitPrice!.per] = (counts[p.unitPrice!.per] ?? 0) + 1;
-      const dominantPer = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
-      pool = withUnit.filter(([, p]) => p.unitPrice!.per === dominantPer);
-    }
-
     // Prefer single packs unless the user asked for a multipack via query syntax.
     const userWantsBulk = /\d+\s*[x×]\s*\d|multipack|sixpack|sechserpack/i.test(item.query);
-    if (!userWantsBulk) {
-      const singles = pool.filter(([, p]) => !isMultipack(p));
-      if (singles.length > 0) pool = singles;
+    const preferSingles = (
+      list: Array<[Chain, NormalizedProduct]>,
+    ): Array<[Chain, NormalizedProduct]> => {
+      if (userWantsBulk) return list;
+      const singles = list.filter(([, p]) => !isMultipack(p));
+      return singles.length > 0 ? singles : list;
+    };
+
+    let bestChain: Chain;
+    let bestProduct: NormalizedProduct;
+
+    if (item.need) {
+      // Need-aware: rank by the true CHF to cover the requested amount (pack
+      // price × packs needed), so pack size and rounding — not just CHF/kg —
+      // decide the winner. Rank over ALL candidates, deliberately NOT the
+      // `dominantPer` pool used by the legacy branch below: that pool is tuned
+      // for like-for-like unit-price comparison and can drop the very candidates
+      // able to satisfy the need's dimension (a majority of per-piece offers
+      // would exclude the per-kg products a kg need requires). `effectiveCost`
+      // marks candidates it can size in the need's dimension (`sized`); rank
+      // those by real cost, and only when none can be sized fall back to the
+      // unit-price order best-effort.
+      const costed = preferSingles(candidates).map(([c, p]) => ({ c, p, cost: effectiveCost(p, item) }));
+      const sized = costed.filter((x) => x.cost.sized);
+      const ranked = sized.length > 0
+        ? [...sized].sort((a, b) => a.cost.chf - b.cost.chf)
+        : [...costed].sort((a, b) => byUnitPrice(a.p, b.p));
+      bestChain = ranked[0].c;
+      bestProduct = ranked[0].p;
+    } else {
+      // Legacy: compare like-for-like UNIT prices within the dominant `per` unit
+      // so a 0.5 L bottle isn't unfairly preferred over a 6×1.5 L pack. Fall back
+      // to absolute price when no candidate carries a unit price.
+      const withUnit = candidates.filter(([, p]) => p.unitPrice !== undefined);
+      let pool = candidates;
+      if (withUnit.length > 0) {
+        const counts: Record<string, number> = {};
+        for (const [, p] of withUnit) counts[p.unitPrice!.per] = (counts[p.unitPrice!.per] ?? 0) + 1;
+        const dominantPer = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+        pool = withUnit.filter(([, p]) => p.unitPrice!.per === dominantPer);
+      }
+      pool = preferSingles(pool);
+      pool.sort((a, b) => byUnitPrice(a[1], b[1]));
+      bestChain = pool[0][0];
+      bestProduct = pool[0][1];
     }
 
-    pool.sort((a, b) => {
-      const ap = a[1].unitPrice?.value ?? a[1].price.current;
-      const bp = b[1].unitPrice?.value ?? b[1].price.current;
-      return ap - bp;
-    });
-
-    const [bestChain, bestProduct] = pool[0];
-    const qty = item.quantity ?? 1;
-    const line = { requested: item, matched: bestProduct, lineTotal: bestProduct.price.current * qty };
+    const cost = effectiveCost(bestProduct, item);
+    const line = { requested: item, matched: bestProduct, lineTotal: cost.chf, packs: cost.packs };
     if (!perChain.has(bestChain)) perChain.set(bestChain, []);
     perChain.get(bestChain)!.push(line);
   }

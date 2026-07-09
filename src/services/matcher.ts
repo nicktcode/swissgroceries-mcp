@@ -1,8 +1,17 @@
-import type { Chain, NormalizedProduct, Tag } from '../adapters/types.js';
+import type { Chain, NormalizedProduct, Tag, Unit } from '../adapters/types.js';
 
 export interface ShoppingItem {
   query: string;
   quantity?: number;
+  /**
+   * The real amount you need for this line (e.g. 1 kg of mince, 750 ml of
+   * milk). When set, the planner works out how many packs cover it and ranks
+   * candidates by the true cost to cover the need — so a larger pack with a
+   * better CHF/kg can beat a small cheap pack, and vice-versa when pack
+   * rounding wastes product. When omitted, the legacy behaviour applies:
+   * assume `quantity` packs (default 1) and rank by unit price.
+   */
+  need?: { amount: number; unit: Unit };
   preferredChain?: Chain;
   preferredProductId?: { chain: Chain; id: string };
   filters?: {
@@ -278,4 +287,75 @@ export function matchProduct(
   };
   topK.sort((a, b) => byUnitAwarePrice(a.product, b.product));
   return topK[0].product;
+}
+
+// ---------------------------------------------------------------------------
+// Need-aware costing
+//
+// A shopping line can carry a real target amount (`item.need`, e.g. 1 kg of
+// mince). To honour it the planner must know how much product one pack holds,
+// then buy enough packs (ceil) to cover the need. `effectiveCost` returns the
+// true CHF to cover the need plus the pack count; the cross-chain ranker uses
+// the CHF so a bigger-but-cheaper-per-kg pack can win — and, conversely, a
+// nominally cheaper-per-kg pack can lose when its size forces wasteful rounding.
+// ---------------------------------------------------------------------------
+
+type Dimension = 'mass' | 'volume' | 'count';
+
+/** Canonical amount for a unit: mass→kg, volume→l, count→piece. */
+function toCanonical(amount: number, unit: Unit): { dim: Dimension; value: number } {
+  switch (unit) {
+    case 'g':  return { dim: 'mass', value: amount / 1000 };
+    case 'kg': return { dim: 'mass', value: amount };
+    case 'ml': return { dim: 'volume', value: amount / 1000 };
+    case 'l':  return { dim: 'volume', value: amount };
+    case 'piece': return { dim: 'count', value: amount };
+  }
+}
+
+/**
+ * How much one pack holds, in canonical units. Prefer the adapter-parsed
+ * `size` (authoritative); otherwise derive it from price ÷ unit price
+ * (packSize = pack CHF / (CHF per unit)). The derived value can drift when a
+ * chain computes its unit price off the regular price while the pack is on
+ * promo, so `size` wins when present.
+ */
+function packSize(p: NormalizedProduct): { dim: Dimension; value: number } | undefined {
+  if (p.size && p.size.value > 0) return toCanonical(p.size.value, p.size.unit);
+  if (p.unitPrice && p.unitPrice.value > 0 && p.price.current > 0) {
+    const dim: Dimension =
+      p.unitPrice.per === 'kg' ? 'mass' : p.unitPrice.per === 'l' ? 'volume' : 'count';
+    return { dim, value: p.price.current / p.unitPrice.value };
+  }
+  return undefined;
+}
+
+export interface CostBreakdown {
+  /** Total CHF to cover the line (need-aware when `sized`, else packs × pack price). */
+  chf: number;
+  /** Number of packs to buy. */
+  packs: number;
+  /** True when the cost was computed from a real `need` and a known pack size. */
+  sized: boolean;
+}
+
+/**
+ * Cost to satisfy a shopping line with a given product.
+ *
+ * With `item.need` and a resolvable pack size in the same dimension, buys
+ * `ceil(need / packSize)` packs and reports the real CHF (`sized: true`).
+ * Otherwise falls back to the legacy model: `quantity` packs (default 1) at
+ * the pack price (`sized: false`), preserving pre-need behaviour exactly.
+ */
+export function effectiveCost(p: NormalizedProduct, item: ShoppingItem): CostBreakdown {
+  if (item.need && item.need.amount > 0) {
+    const need = toCanonical(item.need.amount, item.need.unit);
+    const size = packSize(p);
+    if (size && size.dim === need.dim && size.value > 0) {
+      const packs = Math.max(1, Math.ceil(need.value / size.value));
+      return { chf: packs * p.price.current, packs, sized: true };
+    }
+  }
+  const packs = item.quantity ?? 1;
+  return { chf: p.price.current * packs, packs, sized: false };
 }
