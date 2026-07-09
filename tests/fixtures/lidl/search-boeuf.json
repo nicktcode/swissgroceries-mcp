@@ -1,0 +1,1304 @@
+{
+ "items": [
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10055456",
+   "label": "",
+   "url": "",
+   "xPayload": {
+    "metaData": {
+     "relevancyScore": "39rvavQJrwIKWzt6BXrNBl/urzW4g2kgv1rBDDFdKzeOofhoC2UMeriDz6o=",
+     "keywordScore": "GOMG+JHK3+4rJ6QudHAEcQcVBJ3A0cUj/gqQKLWTBmtSgjxDz0DqPXgCWqU=",
+     "semanticScore": "oA9Hic49G0/vC07fDNZXARF0KiA2vDKGxNbELTa4VMMTqHIP4iG2HbX2ALY=",
+     "keywordScoreRaw": "Di+jl1rwTaezzUB0G541J7yWaaCCKflnnnGPbs7RqFGthZ+Nno5WpjJ1DBM=",
+     "ratingScore": "rX7hmX7QMv5acjDas+YxKEpywMDP+RRpHU0xVpy4QSuE2w5ilkwkr0XpHcc=",
+     "freshnessScore": "0uRTOb1iMLXjk2EcQpHW9GdAfmxmWp6ofJiuwd70TSOMbNdty54LwFv/Cqc=",
+     "searchHubImpressions": "S6zgiPYirYkoZ6oKM0VENT637G9xmEnnNRG0mgRv562l2VtIhkPi3EMp/08=",
+     "searchHubClicks": "ayrjd++r/Fgv4BcW7pTDAHrHpuIF2J9h0aElrFGrWQxpy5eXzrlGMzxnXrs=",
+     "searchHubCarts": "nz+dfyovQ6MjYB1ELSofekjWBVo4pt+tCbkeraSpAIMco7/mhAULkFYHHCk=",
+     "businessRuleFactor": "VVWrDMKlLQJ73X2hE4Yyv6Cl5TvKragCr/MXFmfppGfO5TVM20myq1RuTpw="
+    }
+   },
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1783548167893609,
+    "data": {
+     "ageRestriction": false,
+     "awards": [],
+     "brand": {
+      "name": "CARNESI",
+      "url": "/q/search?q=carnesi",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/carnesi-entrecote-de-boeuf-black-angus/p10055456",
+     "canonicalUrl": "/p/fr-CH/carnesi-entrecote-de-boeuf-black-angus/p10055456",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10055456_7795f496",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10055456_a2157ad1",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10055456",
+     "flashSales": false,
+     "fullTitle": "CARNESI Entrecôte de bœuf Black Angus",
+     "gs1Attributes": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5103268"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/rDPTSBex9-STzFmWSikEAZW92tm3aehBOxtuZItmVMw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FNEUyRTkwRjM3MzUyRkY5NDdBREE0QzM/4QzlGNkZGQTFGNDlDNThGREI0MzgzOEY1MEQ5NUFBNkU4RDc1M0U4LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/rDPTSBex9-STzFmWSikEAZW92tm3aehBOxtuZItmVMw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FNEUyRTkwRjM3MzUyRkY5NDdBREE0QzM/4QzlGNkZGQTFGNDlDNThGREI0MzgzOEY1MEQ5NUFBNkU4RDc1M0U4LnBuZw.png",
+      "accessibility": "Longe de porc crue avec herbes, ail et épices sur une planche en ardoise."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10055456,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/rDPTSBex9-STzFmWSikEAZW92tm3aehBOxtuZItmVMw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FNEUyRTkwRjM3MzUyRkY5NDdBREE0QzM/4QzlGNkZGQTFGNDlDNThGREI0MzgzOEY1MEQ5NUFBNkU4RDc1M0U4LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/rDPTSBex9-STzFmWSikEAZW92tm3aehBOxtuZItmVMw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FNEUyRTkwRjM3MzUyRkY5NDdBREE0QzM/4QzlGNkZGQTFGNDlDNThGREI0MzgzOEY1MEQ5NUFBNkU4RDc1M0U4LnBuZw.png",
+       "accessibility": "Longe de porc crue avec herbes, ail et épices sur une planche en ardoise."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>&Agrave; la pi&egrave;ce</li> <li>Origine: Uruguay</li> <li>100 g</li> <li>Env. 800-1200 g</li> </ul>",
+      "fullTitle": "CARNESI Entrecôte de bœuf Black Angus",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Entrecôte de bœuf Black Angus",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Viande et volaille/viande de bœuf",
+      "wonCategoryPrimaryPath": "0/17/1738/173811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0,
+      "price": 2.95,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10055456,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1783548167,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "9.7. - 11.7.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "9.7. - 11.7.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1783548000,
+        "validUntil": 1783807199
+       }
+      ],
+      "onlineAvailable": false,
+      "orderableQuantities": [],
+      "minOrderableQuantity": 1
+     },
+     "store": true,
+     "storeStartDate": 1783548000,
+     "storeEndDate": 1783807199,
+     "title": "Entrecôte de bœuf Black Angus",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10055456,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "id": "10098150",
+        "name": "Super weekend",
+        "url": "/c/de-CH/super-wochenende/a10098150",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "fullTitle": "CARNESI Entrecôte de bœuf Black Angus",
+     "retailLists": [
+      [
+       {
+        "id": 8052,
+        "productSortIndex": 2
+       }
+      ]
+     ],
+     "lists": [
+      8052
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10095752",
+        "name": "Viande & volaille",
+        "url": "/h/fr-CH/viande-volaille/h10095752",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10095754",
+        "name": "Bœuf",
+        "url": "/h/fr-CH/boeuf/h10095754",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173811",
+       "isMain": true,
+       "name": "viande de bœuf",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Viande et volaille",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10055456"
+   },
+   "tracking": {
+    "position": 1,
+    "xPayload": {
+     "searchTrackingMasterId": "Product.10055456",
+     "searchTrackingTitle": "Entrec%C3%B4te+de+b%C5%93uf+Black+Angus",
+     "searchTrackingPageSize": 36,
+     "searchTrackingPage": 1,
+     "searchTrackingEvent": "click",
+     "list": "search",
+     "searchTrackingId": "Product.10055456",
+     "searchTrackingQuery": "boeuf",
+     "searchTrackingOrigPos": 1,
+     "searchTrackingPos": 1,
+     "searchTrackingOrigPageSize": 36,
+     "searchTrackingChannel": "CH",
+     "category": "Food"
+    }
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10055483",
+   "label": "",
+   "url": "",
+   "xPayload": {
+    "metaData": {
+     "relevancyScore": "iODY4wEUxQoXq1PchptMofQLbG/nzoUgBvM0NfdM0BZcYlT1W392M7ILGI0=",
+     "keywordScore": "E7/vidmT4U7EPw09Wu2DF/viITEo6kx22t6hw3dAo4FfeNhdz0xLSAoj+Ws=",
+     "semanticScore": "TI7UdbWT1V4n20vXAHDaGmbm6nPn6ww8JNY2pNoMxknp1LPbWteTVorvaZg=",
+     "keywordScoreRaw": "fobSdgJYjeScJOqLoGDRCN7Pvvn5dOnvakumTV9dfAFcH1msnwGcTzwX1IU=",
+     "ratingScore": "729TZ63TciFVQZKn+TDmplh93Jg4vQnb7nrn9tklonoQu9I8sWcM+KYdCZo=",
+     "freshnessScore": "HXstB0dOvA2HZDo6Z2dMEIZrmdqSKozOPlWNl0QWHFQL/lkLb6h81PSRf0A=",
+     "searchHubImpressions": "IAj4p4XLctosnx7vZjY7C0CILHSoFtcO4tFYrKTPmVkzlei4LQbzpnRGkDo=",
+     "searchHubClicks": "r1qbLJpA8izs9O18aQznjtggh/3MSclUEPDdaTYWwJbtXPY48ogt+HrAKAU=",
+     "searchHubCarts": "oU2whnZULLOhQ0s2ic9DIbRSEZB8JtEeG8TIHi6qjjojD6RvjgX/Kaw/Ni0=",
+     "businessRuleFactor": "Y+nIHRCE2JJRO77MYKMPTkrQagWLtuuKvTQHQmgwbcXCQK82TI8r6Bh2z90="
+    }
+   },
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1783548168222019,
+    "data": {
+     "ageRestriction": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/qualite-suisse-viande-hachee-de-boeuf-allegee-pack-de-2-xxl/p10055483",
+     "canonicalUrl": "/p/fr-CH/qualite-suisse-viande-hachee-de-boeuf-allegee-pack-de-2-xxl/p10055483",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10055483_a3114afb",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10055483_8bf89d20",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10055483",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Viande hachée de bœuf allégée, pack de 2 XXL",
+     "gs1Attributes": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "1020115"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/mcLTNdzJupt0ZfNGRdDwxBAwOCnzZFxwaDPawSeRR9I/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9COTNFNkI3NTNFNzcyQTIzNzY1QkU4Nzd/DMjUzQzI2RDVGMEYyNTkwRUUwNkIyQzkzNEIxRjI5REM2MjlFODU5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/mcLTNdzJupt0ZfNGRdDwxBAwOCnzZFxwaDPawSeRR9I/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9COTNFNkI3NTNFNzcyQTIzNzY1QkU4Nzd/DMjUzQzI2RDVGMEYyNTkwRUUwNkIyQzkzNEIxRjI5REM2MjlFODU5LnBuZw.png",
+      "accessibility": "Viande hachée fraîche sur une assiette grise, garnie d'herbes et de poivre."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10055483,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/mcLTNdzJupt0ZfNGRdDwxBAwOCnzZFxwaDPawSeRR9I/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9COTNFNkI3NTNFNzcyQTIzNzY1QkU4Nzd/DMjUzQzI2RDVGMEYyNTkwRUUwNkIyQzkzNEIxRjI5REM2MjlFODU5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/mcLTNdzJupt0ZfNGRdDwxBAwOCnzZFxwaDPawSeRR9I/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9COTNFNkI3NTNFNzcyQTIzNzY1QkU4Nzd/DMjUzQzI2RDVGMEYyNTkwRUUwNkIyQzkzNEIxRjI5REM2MjlFODU5LnBuZw.png",
+       "accessibility": "Viande hachée fraîche sur une assiette grise, garnie d'herbes et de poivre."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Origine: Suisse</li> <li>2 x 400 g</li> <li>100 g = 1.87</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Viande hachée de bœuf allégée, pack de 2 XXL",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Viande hachée de bœuf allégée, pack de 2 XXL",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Viande et volaille/viande de bœuf",
+      "wonCategoryPrimaryPath": "0/17/1738/173811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0,
+      "price": 14.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10055483,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1783548168,
+     "seals": [
+      {
+       "altText": "Qualité suisse.",
+       "image": "https://imgproxy-retcat.assets.schwarz/9L8dJv--MVZEfa85kqBLqIoZbs0s1XOZH5Us2JGCyOA/sm:1/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Garantie Suisse",
+       "image": "https://imgproxy-retcat.assets.schwarz/s3J6jV1VO4ztBPSkURgzAsREllpe5uVKdVuGfEVpZh4/sm:1/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82NzZEQzI3MEY5NENERUFEQjk0RTQyMTU/2QzZBMEU3MEJDRDY4QjE4RUI3QjA4NzU3NzQ3MkZBNUFDQkJCNTE4LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 9.7.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 9.7.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1783548000
+       }
+      ],
+      "onlineAvailable": false,
+      "orderableQuantities": [],
+      "minOrderableQuantity": 1
+     },
+     "store": true,
+     "storeStartDate": 1783548000,
+     "title": "Viande hachée de bœuf allégée, pack de 2 XXL",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10055483,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "id": "10098151",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10098151",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Viande hachée de bœuf allégée, pack de 2 XXL",
+     "retailLists": [
+      [
+       {
+        "id": 8051,
+        "productSortIndex": 10003
+       }
+      ]
+     ],
+     "lists": [
+      8051
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10095752",
+        "name": "Viande & volaille",
+        "url": "/h/fr-CH/viande-volaille/h10095752",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10095754",
+        "name": "Bœuf",
+        "url": "/h/fr-CH/boeuf/h10095754",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173811",
+       "isMain": true,
+       "name": "viande de bœuf",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Viande et volaille",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10055483"
+   },
+   "tracking": {
+    "position": 2,
+    "xPayload": {
+     "searchTrackingMasterId": "Product.10055483",
+     "searchTrackingTitle": "Viande+hach%C3%A9e+de+b%C5%93uf+all%C3%A9g%C3%A9e%2C+pack+de+2+XXL",
+     "searchTrackingPageSize": 36,
+     "searchTrackingPage": 1,
+     "searchTrackingEvent": "click",
+     "list": "search",
+     "searchTrackingId": "Product.10055483",
+     "searchTrackingQuery": "boeuf",
+     "searchTrackingOrigPos": 1,
+     "searchTrackingPos": 2,
+     "searchTrackingOrigPageSize": 36,
+     "searchTrackingChannel": "CH",
+     "category": "Food"
+    }
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10055485",
+   "label": "",
+   "url": "",
+   "xPayload": {
+    "metaData": {
+     "relevancyScore": "0+mxVRjMNI69jx8D0HQmabovtpD+RhPSNUzRjL5eMINZhy/dJBiu7RMquh0=",
+     "keywordScore": "o0QqYNeghCfQ+hToPoz0MWYl95hZefVfschBIuojtC6/6sXiwYwEwckMYBs=",
+     "semanticScore": "LqN2qDEA2IOZAt3z5g1lPcJjS6JnOO7CqrrZPvCt04hyNm2AqJAGqfL4aCg=",
+     "keywordScoreRaw": "ACyx4oMAeVK0+Yr35KNiVjGiRamLen3pKk8Pvku3LZwfCR0wcDL/XR6JR50=",
+     "ratingScore": "LEJWcIF3s9l50iE77SeVlfU3obPI5sKyCDojiUGhYfKyRxmsmXmzUv8eH2g=",
+     "freshnessScore": "hbeXGwyH65eZ1JKYN291umFOlWd1kRdhK7/dvpLXL/a1TdYaolaYq0SOL1E=",
+     "searchHubImpressions": "kbOswace5b+o94iv2HgaKPaYnCf1H6bapYNurH3fyocJfScONemnzrvi/S4=",
+     "searchHubClicks": "KrU2Rp+TcHP8i5/4g/pWNUfdxUfUQ3f8EP5Q9++HpGnhH6Cj56azK7c0Y2c=",
+     "searchHubCarts": "RNLSHdvwUl7a7wWOaL29CTNbPnr3xwJRvUAWwEpidb/cHLwvWrtu3WcxWLE=",
+     "businessRuleFactor": "+B2iBD4SqPolXAUrEveUjlsHrLvb9aiZaUDWrEEiDJxlijI5INZUdP6GXVw="
+    }
+   },
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1783548168238380,
+    "data": {
+     "ageRestriction": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/qualite-suisse-steaks-de-filet/p10055485",
+     "canonicalUrl": "/p/fr-CH/qualite-suisse-steaks-de-filet/p10055485",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10055485_873cca93",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10055485_ad5af6ab",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10055485",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Steaks de filet",
+     "gs1Attributes": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5105550"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/ZopZWZVwiy5x4I1izUp7ml7QLQQZRPZTSlToWV1pml4/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83NjY5RjE3MDIwMzZDRjkxODc5NDM5Mzd/GQTdCQjBCNzc4REREODlCRjE1REI3MkU0QzBEMzhFQTA0ODczMTEwLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/ZopZWZVwiy5x4I1izUp7ml7QLQQZRPZTSlToWV1pml4/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83NjY5RjE3MDIwMzZDRjkxODc5NDM5Mzd/GQTdCQjBCNzc4REREODlCRjE1REI3MkU0QzBEMzhFQTA0ODczMTEwLnBuZw.png",
+      "accessibility": "Trois steaks de porc marinés avec du romarin et des grains de poivre sur une planche d'ardoise."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10055485,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/ZopZWZVwiy5x4I1izUp7ml7QLQQZRPZTSlToWV1pml4/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83NjY5RjE3MDIwMzZDRjkxODc5NDM5Mzd/GQTdCQjBCNzc4REREODlCRjE1REI3MkU0QzBEMzhFQTA0ODczMTEwLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/ZopZWZVwiy5x4I1izUp7ml7QLQQZRPZTSlToWV1pml4/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83NjY5RjE3MDIwMzZDRjkxODc5NDM5Mzd/GQTdCQjBCNzc4REREODlCRjE1REI3MkU0QzBEMzhFQTA0ODczMTEwLnBuZw.png",
+       "accessibility": "Trois steaks de porc marinés avec du romarin et des grains de poivre sur une planche d'ardoise."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Assaisonn&eacute;s</li> <li>Origine: Suisse</li> <li>3 x 150 g</li> <li>100 g = 2.22</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Steaks de filet",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Steaks de filet",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Viande et volaille/viande de bœuf",
+      "wonCategoryPrimaryPath": "0/17/1738/173811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0,
+      "price": 9.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10055485,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1783548168,
+     "seals": [
+      {
+       "altText": "Qualité suisse.",
+       "image": "https://imgproxy-retcat.assets.schwarz/9L8dJv--MVZEfa85kqBLqIoZbs0s1XOZH5Us2JGCyOA/sm:1/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Garantie Suisse",
+       "image": "https://imgproxy-retcat.assets.schwarz/s3J6jV1VO4ztBPSkURgzAsREllpe5uVKdVuGfEVpZh4/sm:1/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82NzZEQzI3MEY5NENERUFEQjk0RTQyMTU/2QzZBMEU3MEJDRDY4QjE4RUI3QjA4NzU3NzQ3MkZBNUFDQkJCNTE4LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 9.7.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 9.7.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1783548000
+       }
+      ],
+      "onlineAvailable": false,
+      "orderableQuantities": [],
+      "minOrderableQuantity": 1
+     },
+     "store": true,
+     "storeStartDate": 1783548000,
+     "title": "Steaks de filet",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10055485,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "id": "10098151",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10098151",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Steaks de filet",
+     "retailLists": [
+      [
+       {
+        "id": 8051,
+        "productSortIndex": 10005
+       }
+      ]
+     ],
+     "lists": [
+      8051
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10095752",
+        "name": "Viande & volaille",
+        "url": "/h/fr-CH/viande-volaille/h10095752",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10095754",
+        "name": "Bœuf",
+        "url": "/h/fr-CH/boeuf/h10095754",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173811",
+       "isMain": true,
+       "name": "viande de bœuf",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Viande et volaille",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10055485"
+   },
+   "tracking": {
+    "position": 3,
+    "xPayload": {
+     "searchTrackingMasterId": "Product.10055485",
+     "searchTrackingTitle": "Steaks+de+filet",
+     "searchTrackingPageSize": 36,
+     "searchTrackingPage": 1,
+     "searchTrackingEvent": "click",
+     "list": "search",
+     "searchTrackingId": "Product.10055485",
+     "searchTrackingQuery": "boeuf",
+     "searchTrackingOrigPos": 1,
+     "searchTrackingPos": 3,
+     "searchTrackingOrigPageSize": 36,
+     "searchTrackingChannel": "CH",
+     "category": "Food"
+    }
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10055522",
+   "label": "",
+   "url": "",
+   "xPayload": {
+    "metaData": {
+     "relevancyScore": "u9ly3jZ1VCOBSb9WZ+bB229zjdPIyWoVw/6dOwCI+5TKO7EAaw5oyNbQlAA=",
+     "keywordScore": "7hyINwPCzua4FQ8/aVa9IugN/og0zHw7ymM2UpUOsC7CI1Pqan1/H5ujkQQ=",
+     "semanticScore": "Pq6GLe3IZgdaOIcisPCkA9GGT2Kp1xaK8H92cA/Pid97aHEaNmsS8ytWYxQ=",
+     "keywordScoreRaw": "McQ/CAYAtp0LUOI68uD9QMWoOUBB8TzJzItevjb5SiVutUNPJ+tt6/1fB9Q=",
+     "ratingScore": "2alcak3FOvW8MzPyQ60Ca3fTAMBpUAKwEjjc2ZoIiHbJyX04TdyWhUs9KPs=",
+     "freshnessScore": "kFMpGpyKAOyJra2oWSVW+7xbjWaQ17QQ62rj7kvElj554+qZ4ZStJs8OWt0=",
+     "searchHubImpressions": "1nqN9tEsd2FO0roVCzOOwvgxivOI0j5Z615BdaWw5ie45Ukuxhbmd8MAP+Y=",
+     "searchHubClicks": "UETb1mR7IOBpAgmYJj66x1OF1bKWuyQdD/xT8ehsd7M8S9xzJ/E5BKr4xjo=",
+     "searchHubCarts": "ClBchNv/apBifrenCYRENdkg5TeiZ1rWM5Op3A2bOzwk4/zB7PiB9+XyXdg=",
+     "businessRuleFactor": "w+/rFk3bljh19dt2Kvq9Lesae0u+tntJ0xBSKAMCxQOyK+l4/+yv70qPjus="
+    }
+   },
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1783548168583038,
+    "data": {
+     "ageRestriction": false,
+     "awards": [],
+     "brand": {
+      "name": "FELIX",
+      "url": "/q/search?q=felix",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/felix-sensations-en-gelee/p10055522",
+     "canonicalUrl": "/p/fr-CH/felix-sensations-en-gelee/p10055522",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10055522_fb529fba",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10055522_cc3ed34f",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10055522",
+     "flashSales": false,
+     "fullTitle": "FELIX Sensations en gelée",
+     "gs1Attributes": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "1801496"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/YH6sXzLqrvCUdQeWY1bYIOvFQWlaQ6VmcXdtbdApFKU/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82MUExNjA3RTM1NUE2MDU0MDJEQkQ1NDE/1MDlCRUI2ODU2MUVBQTJGNzZERTA4RTc3NjNGNzI0RDAxQzM0RjgwLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/YH6sXzLqrvCUdQeWY1bYIOvFQWlaQ6VmcXdtbdApFKU/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82MUExNjA3RTM1NUE2MDU0MDJEQkQ1NDE/1MDlCRUI2ODU2MUVBQTJGNzZERTA4RTc3NjNGNzI0RDAxQzM0RjgwLnBuZw.png",
+      "accessibility": "Deux paquets de nourriture pour chats de 24 portions, l'un en gelée et l'autre en sauce."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10055522,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/YH6sXzLqrvCUdQeWY1bYIOvFQWlaQ6VmcXdtbdApFKU/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82MUExNjA3RTM1NUE2MDU0MDJEQkQ1NDE/1MDlCRUI2ODU2MUVBQTJGNzZERTA4RTc3NjNGNzI0RDAxQzM0RjgwLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/YH6sXzLqrvCUdQeWY1bYIOvFQWlaQ6VmcXdtbdApFKU/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82MUExNjA3RTM1NUE2MDU0MDJEQkQ1NDE/1MDlCRUI2ODU2MUVBQTJGNzZERTA4RTc3NjNGNzI0RDAxQzM0RjgwLnBuZw.png",
+       "accessibility": "Deux paquets de nourriture pour chats de 24 portions, l'un en gelée et l'autre en sauce."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>B&oelig;uf, poulet, canard et agneau</li> <li>24 x 85 g</li> <li>100 g = 0.51</li> </ul>",
+      "fullTitle": "FELIX Sensations en gelée",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Sensations en gelée",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Articles pour animaux/Nourriture pour chats",
+      "wonCategoryPrimaryPath": "0/17/1748/174811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0,
+      "price": 10.45,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10055522,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1783548168,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 9.7.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 9.7.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1783548000
+       }
+      ],
+      "onlineAvailable": false,
+      "orderableQuantities": [],
+      "minOrderableQuantity": 1
+     },
+     "store": true,
+     "storeStartDate": 1783548000,
+     "title": "Sensations en gelée",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10055522,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "id": "10098151",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10098151",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "fullTitle": "FELIX Sensations en gelée",
+     "retailLists": [
+      [
+       {
+        "id": 8051,
+        "productSortIndex": 20033
+       }
+      ]
+     ],
+     "lists": [
+      8051
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10071025",
+        "name": "Articles pour animaux",
+        "url": "/h/fr-CH/nourriture-pour-animaux/h10071025",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10096296",
+        "name": "Nourriture pour chats",
+        "url": "/h/fr-CH/aliments-pour-chats/h10096296",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "174811",
+       "isMain": true,
+       "name": "Nourriture pour chats",
+       "parent": "1748",
+       "superCategories": [
+        {
+         "code": "1748",
+         "name": "Articles pour animaux",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10055522"
+   },
+   "tracking": {
+    "position": 4,
+    "xPayload": {
+     "searchTrackingMasterId": "Product.10055522",
+     "searchTrackingTitle": "Sensations+en+gel%C3%A9e",
+     "searchTrackingPageSize": 36,
+     "searchTrackingPage": 1,
+     "searchTrackingEvent": "click",
+     "list": "search",
+     "searchTrackingId": "Product.10055522",
+     "searchTrackingQuery": "boeuf",
+     "searchTrackingOrigPos": 1,
+     "searchTrackingPos": 4,
+     "searchTrackingOrigPageSize": 36,
+     "searchTrackingChannel": "CH",
+     "category": "Food"
+    }
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10055523",
+   "label": "",
+   "url": "",
+   "xPayload": {
+    "metaData": {
+     "relevancyScore": "vBAb20E1KeDXQvRiuSkFhgyomt7BQeI8cxjW0XAEwi/BdzukkM36JRA+ig4=",
+     "keywordScore": "arxfcga9HYc5Mj2l0yJQnjePpiwqSFUfyUanqFaAMzfuLLsVrSGTc+UoIhg=",
+     "semanticScore": "HXXplkXTsaQhRaKuE81Bngg7UShhOcO3gzIgamHCqAC35OSj31U0sYVF6BA=",
+     "keywordScoreRaw": "zO6nhmsDICK8S0dfml0nmj53cX4W6O/xfcfBTn3/hpDdi9w+IeNh/FEnnYg=",
+     "ratingScore": "tgDGowWAJDpcSKxJlD1THYM0VOVoZFdZaFdcOisxnvBXSKh08nfFeboxs1c=",
+     "freshnessScore": "+evk1M9tXd/ofL4G/ZKf1OKLOYW0X4mXDL7iPlbYxgZkaOT7WgWYmtpmPb8=",
+     "searchHubImpressions": "C2CmISR0Mh66yowe8LXjwtzy+k59IEDYm+Tc9RD72km6RywXGxAasfhGlXo=",
+     "searchHubClicks": "itCWnp87c/QbR8rJZgNKdEGGv+nqgwq/EKFIAGUIeDbGnWQwvVyE4iv0OSA=",
+     "searchHubCarts": "3mFTOn1WbzzHpoa/UgfawcH2j64ySDl4vRd5fAnLbsJj25g+8uZjUk5URVk=",
+     "businessRuleFactor": "ASvQoyGUdvPbtSk5Y19JBbrUfurr4RBgCsBr+DDt51mRjfG/ebRglBQaP9k="
+    }
+   },
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1783548168614024,
+    "data": {
+     "ageRestriction": false,
+     "awards": [],
+     "brand": {
+      "name": "FELIX",
+      "url": "/q/search?q=felix",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/felix-sensations-en-sauce/p10055523",
+     "canonicalUrl": "/p/fr-CH/felix-sensations-en-sauce/p10055523",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10055523_f7fae168",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10055523_b415a81c",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10055523",
+     "flashSales": false,
+     "fullTitle": "FELIX Sensations en sauce",
+     "gs1Attributes": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "1801497"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/5O-nMiLwvD--0FLdYTypd2tkmFeXbpl0yvqmrQcGyyw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GNzUwQTVFODM3NTYwQUU4RDZCMUVDQjB/FM0ZEMkQzQjA1MUM5M0IwNkI5MkM5M0UwRTU3MkY1OTg0RjNDOTU4LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/5O-nMiLwvD--0FLdYTypd2tkmFeXbpl0yvqmrQcGyyw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GNzUwQTVFODM3NTYwQUU4RDZCMUVDQjB/FM0ZEMkQzQjA1MUM5M0IwNkI5MkM5M0UwRTU3MkY1OTg0RjNDOTU4LnBuZw.png",
+      "accessibility": "Multipack de nourriture pour chats avec 24 sachets, saveurs assorties en sauce."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10055523,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/5O-nMiLwvD--0FLdYTypd2tkmFeXbpl0yvqmrQcGyyw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GNzUwQTVFODM3NTYwQUU4RDZCMUVDQjB/FM0ZEMkQzQjA1MUM5M0IwNkI5MkM5M0UwRTU3MkY1OTg0RjNDOTU4LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/5O-nMiLwvD--0FLdYTypd2tkmFeXbpl0yvqmrQcGyyw/sm:1/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GNzUwQTVFODM3NTYwQUU4RDZCMUVDQjB/FM0ZEMkQzQjA1MUM5M0IwNkI5MkM5M0UwRTU3MkY1OTg0RjNDOTU4LnBuZw.png",
+       "accessibility": "Multipack de nourriture pour chats avec 24 sachets, saveurs assorties en sauce."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Dinde, b&oelig;uf, agneau et canard</li> <li>24 x 85 g</li> <li>100 g = 0.51</li> </ul>",
+      "fullTitle": "FELIX Sensations en sauce",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Sensations en sauce",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Articles pour animaux/Nourriture pour chats",
+      "wonCategoryPrimaryPath": "0/17/1748/174811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0,
+      "price": 10.45,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10055523,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1783548168,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 9.7.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 9.7.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1783548000
+       }
+      ],
+      "onlineAvailable": false,
+      "orderableQuantities": [],
+      "minOrderableQuantity": 1
+     },
+     "store": true,
+     "storeStartDate": 1783548000,
+     "title": "Sensations en sauce",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10055523,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "id": "10098151",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10098151",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "fullTitle": "FELIX Sensations en sauce",
+     "retailLists": [
+      [
+       {
+        "id": 8051,
+        "productSortIndex": 20034
+       }
+      ]
+     ],
+     "lists": [
+      8051
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10071025",
+        "name": "Articles pour animaux",
+        "url": "/h/fr-CH/nourriture-pour-animaux/h10071025",
+        "hiddenCategory": false
+       },
+       {
+        "id": "10096296",
+        "name": "Nourriture pour chats",
+        "url": "/h/fr-CH/aliments-pour-chats/h10096296",
+        "hiddenCategory": false
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "174811",
+       "isMain": true,
+       "name": "Nourriture pour chats",
+       "parent": "1748",
+       "superCategories": [
+        {
+         "code": "1748",
+         "name": "Articles pour animaux",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10055523"
+   },
+   "tracking": {
+    "position": 5,
+    "xPayload": {
+     "searchTrackingMasterId": "Product.10055523",
+     "searchTrackingTitle": "Sensations+en+sauce",
+     "searchTrackingPageSize": 36,
+     "searchTrackingPage": 1,
+     "searchTrackingEvent": "click",
+     "list": "search",
+     "searchTrackingId": "Product.10055523",
+     "searchTrackingQuery": "boeuf",
+     "searchTrackingOrigPos": 1,
+     "searchTrackingPos": 5,
+     "searchTrackingOrigPageSize": 36,
+     "searchTrackingChannel": "CH",
+     "category": "Food"
+    }
+   }
+  }
+ ]
+}

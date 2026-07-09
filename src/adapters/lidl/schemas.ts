@@ -25,6 +25,21 @@ export const LidlCampaignSchema = z.object({
   items: z.array(LidlProductSchema).optional(),
 }).passthrough();
 
+// Web storefront search API (/q/api/search). Each hit is an `item` with a
+// `type` discriminator; product hits carry the full product record under
+// `gridbox.data`. Kept permissive (passthrough) — we only assert the envelope
+// and read fields defensively in normalizeSearchProduct.
+export const LidlSearchResponseSchema = z.object({
+  items: z.array(
+    z.object({
+      type: z.string().optional(),
+      gridbox: z.object({
+        data: z.record(z.any()).optional(),
+      }).passthrough().optional(),
+    }).passthrough(),
+  ).optional(),
+}).passthrough();
+
 export const LidlCampaignGroupsSchema = z.object({
   groups: z.array(z.object({
     title: z.string().optional(),

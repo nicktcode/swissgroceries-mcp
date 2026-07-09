@@ -3,11 +3,11 @@ import type {
   NormalizedProduct, NormalizedStore, NormalizedPromotion,
   SearchQuery, StoreQuery, PromotionQuery,
 } from '../types.js';
-import { lidlFetch } from './client.js';
-import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
+import { lidlFetch, lidlSearchFetch, localeForLanguage } from './client.js';
+import { normalizeProduct, normalizeSearchProduct, normalizeStore, normalizePromotion } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
-import { LidlCampaignGroupsSchema, LidlCampaignSchema } from './schemas.js';
+import { LidlCampaignGroupsSchema, LidlCampaignSchema, LidlSearchResponseSchema } from './schemas.js';
 
 function classify(e: unknown): AdapterError {
   if (e instanceof Error && (e as any).code === 'schema_mismatch') {
@@ -75,13 +75,27 @@ export class LidlAdapter implements StoreAdapter {
 
   async searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>> {
     try {
-      await this.loadCampaigns();
-      const needle = q.query.toLowerCase();
+      // Public web storefront search: the full catalogue, localized by `locale`.
+      // Replaces the old flyer-only substring match, which saw just the handful
+      // of products in the current weekly leaflet and only in German.
+      const locale = localeForLanguage(q.language);
+      const raw = await lidlSearchFetch(locale, q.query);
+      const parsed = LidlSearchResponseSchema.safeParse(raw);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(raw).slice(0, 500) } as AdapterError);
+      }
       const offset = q.offset ?? 0;
-      const matches = (this.cache.products ?? [])
-        .filter((p: any) => (p.title ?? '').toLowerCase().includes(needle))
-        .slice(offset, offset + (q.limit ?? 20));
-      return ok(matches.map(normalizeProduct));
+      const limit = q.limit ?? 20;
+      const records = (parsed.data.items ?? [])
+        .filter((it) => it.type === 'product' && it.gridbox?.data)
+        .map((it) => it.gridbox!.data as Parameters<typeof normalizeSearchProduct>[0])
+        // Drop hits without a usable price (e.g. "from"/variant listings priced 0
+        // at grid level): a CHF 0.00 product can't be ranked and breaks the
+        // positive-price contract downstream consumers rely on.
+        .filter((d) => typeof d.price?.price === 'number' && d.price.price > 0);
+      // Normalize only the requested window — keyfacts HTML parsing per hit isn't
+      // free, and the API returns the whole catalogue slice unpaged.
+      return ok(records.slice(offset, offset + limit).map(normalizeSearchProduct));
     } catch (e) {
       return err(classify(e));
     }
