@@ -5,6 +5,7 @@ import type { AdapterRegistry } from '../adapters/registry.js';
 import { matchProduct, isCanonical, type ShoppingItem } from './matcher.js';
 import { solve, type Strategy, type Plan as StrategyPlan, type Matrix } from './strategy.js';
 import { haversineKm } from '../util/haversine.js';
+import type { SwissLanguage } from './language.js';
 
 export interface PlanInput {
   items: ShoppingItem[];
@@ -13,6 +14,8 @@ export interface PlanInput {
   strategy: Strategy;
   splitPenaltyChf?: number;
   radiusKm?: number;
+  /** Catalogue language to query each chain in. Defaults per-adapter (usually German). */
+  language?: SwissLanguage;
 }
 
 export interface ChainError {
@@ -101,6 +104,7 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
           maxPrice: item.filters?.maxPrice,
           sizeRange: item.filters?.sizeRange,
           limit: 20,
+          language: input.language,
         });
         if (!r.ok) {
           if (!errors.some((e) => e.chain === adapter.chain)) {

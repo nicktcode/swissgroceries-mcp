@@ -4,7 +4,7 @@ import type {
   SearchQuery, StoreQuery, PromotionQuery,
 } from '../types.js';
 import { makeDennerClient, type DennerClient } from './client.js';
-import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
+import { normalizeProduct, normalizeStore, normalizePromotion, allLangs } from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
 import { DennerContentResponseSchema } from './schemas.js';
@@ -59,15 +59,14 @@ export class DennerAdapter implements StoreAdapter {
       const { products } = await this.loadContent();
       const needle = q.query.toLowerCase();
       const offset = q.offset ?? 0;
+      const lang = q.language === 'fr' ? 'fr' : q.language === 'it' ? 'it' : 'de';
+      // Match the query against every language of the title so a French query
+      // finds a product via its French title even though our default output
+      // language is German.
       const matches = products
-        .filter((p: any) => {
-          const name = typeof p.title === 'string'
-            ? p.title
-            : (p.title?.de ?? p.title?.fr ?? p.title?.it ?? '');
-          return name.toLowerCase().includes(needle);
-        })
+        .filter((p: any) => allLangs(p.title).toLowerCase().includes(needle))
         .slice(offset, offset + (q.limit ?? 20));
-      return ok(matches.map(normalizeProduct));
+      return ok(matches.map((p) => normalizeProduct(p, lang)));
     } catch (e) {
       return err(classify(e));
     }

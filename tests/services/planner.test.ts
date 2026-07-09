@@ -185,6 +185,32 @@ describe('plan', () => {
     expect(result.primary.totalChf).toBeCloseTo(1.5, 2);
   });
 
+  it('propagates the requested language to each adapter searchProducts', async () => {
+    const seen: Array<string | undefined> = [];
+    const capturing: StoreAdapter = {
+      chain: 'migros',
+      capabilities: { productSearch: true, productDetail: true, storeSearch: true, promotions: false, perStoreStock: false, perStorePricing: false },
+      async searchProducts(q) {
+        seen.push(q.language);
+        return { ok: true, data: [fakeProduct('migros', 'm1', 'milk', 1.5)] };
+      },
+      async getProduct() { return { ok: true, data: null }; },
+      async searchStores() { return { ok: true, data: [fakeStore('migros', '1', 47.37, 8.54)] }; },
+      async getPromotions() { return { ok: true, data: [] }; },
+    };
+    const r = new AdapterRegistry();
+    r.register(capturing);
+
+    await plan(r, {
+      items: [{ query: 'milk' }],
+      near: { lat: 47.37, lng: 8.54 },
+      strategy: 'single_store',
+      language: 'fr',
+    });
+
+    expect(seen).toContain('fr');
+  });
+
   it('returns up to 2 alternatives', async () => {
     const r = new AdapterRegistry();
     r.register(makeAdapter('migros', {

@@ -35,6 +35,9 @@ export const searchProductsSchema = z.object({
   offset: z.number().int().nonnegative().max(500)
     .optional()
     .describe('Skip the first N results per chain. Use with `limit` to paginate. Default 0.'),
+  language: z.enum(['de', 'fr', 'it'])
+    .optional()
+    .describe('Catalogue language to search each chain in (Swiss official: de, fr, it). Pass the language your query is written in, e.g. "fr" for "poulet". Defaults to German per chain.'),
 }).describe('Search for products across configured Swiss grocery chains by keyword, with optional price, size, and tag filters. Returns results grouped by chain.');
 
 export type SearchProductsInput = z.infer<typeof searchProductsSchema>;
@@ -79,6 +82,7 @@ export async function searchProductsHandler(
         sizeRange: input.filters?.sizeRange,
         limit: input.limit,
         offset: input.offset,
+        language: input.language,
       }));
       if (r.ok) {
         byChain[a.chain] = r.data;

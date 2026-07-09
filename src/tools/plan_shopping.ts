@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { AdapterRegistry } from '../adapters/registry.js';
 import { plan, type PlanResult } from '../services/planner.js';
 import { geocode } from '../services/geocoding.js';
+import { inferLanguage } from '../services/language.js';
 import { ToolError } from './errors.js';
 
 const TAG_VALUES = ['organic','budget','premium','fairtrade','lactose-free','gluten-free','vegan','vegetarian','sugar-free','regional','swiss-made'] as const;
@@ -68,6 +69,9 @@ export const planShoppingSchema = z.object({
   radiusKm: z.number().positive().max(50)
     .optional()
     .describe('Only consider stores within this radius of the provided location (1–50 km). Default 5 km.'),
+  language: z.enum(['de', 'fr', 'it'])
+    .optional()
+    .describe('Catalogue language to search each chain in (Swiss official: de, fr, it). Omit to auto-detect from the location — French in Romandie, Italian in Ticino, German elsewhere. Pass the language your item queries are written in for the best matches.'),
 }).describe([
   'Plan a multi-store shopping trip near a location, picking the best products across configured Swiss grocery chains.',
   'Items can be generic ("milch", "pasta") or pinned to a specific SKU. Returns a primary plan plus alternatives.',
@@ -112,6 +116,11 @@ export async function planShoppingHandler(
     );
   }
 
+  // Explicit language wins; otherwise infer from the location (a ZIP if the
+  // caller gave one, else the geocoded coordinates).
+  const language = input.language
+    ?? inferLanguage({ zip: (input.near as { zip?: string }).zip, lat: geo.data.lat, lng: geo.data.lng });
+
   return plan(registry, {
     items: input.items,
     near: { lat: geo.data.lat, lng: geo.data.lng, city: geo.data.city },
@@ -119,5 +128,6 @@ export async function planShoppingHandler(
     strategy: input.strategy,
     splitPenaltyChf: input.splitPenaltyChf,
     radiusKm: input.radiusKm,
+    language,
   });
 }

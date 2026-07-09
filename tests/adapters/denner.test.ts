@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { parseSize, normalizeProduct, normalizePromotion } from '../../src/adapters/denner/normalize.js';
+import { parseSize, normalizeProduct, normalizePromotion, allLangs } from '../../src/adapters/denner/normalize.js';
 import { DennerProductSchema, DennerContentResponseSchema } from '../../src/adapters/denner/schemas.js';
 
 describe('denner parseSize', () => {
@@ -15,6 +15,20 @@ describe('denner parseSize', () => {
   it('returns undefined for plain text', () => expect(parseSize('Rauchen ist tödlich')).toBeUndefined());
 });
 
+describe('denner allLangs', () => {
+  it('concatenates every language variant so a query in any language matches', () => {
+    const text = allLangs({ de: 'Hähnchen', fr: 'Poulet', it: 'Pollo' });
+    expect(text.toLowerCase()).toContain('poulet');
+    expect(text.toLowerCase()).toContain('hähnchen');
+    expect(text.toLowerCase()).toContain('pollo');
+  });
+
+  it('handles a plain string and missing field', () => {
+    expect(allLangs('Milch')).toBe('Milch');
+    expect(allLangs(undefined)).toBe('');
+  });
+});
+
 describe('denner normalizeProduct', () => {
   it('returns chain=denner', () => {
     const p = normalizeProduct({ id: 1, title: { de: 'Milch' }, priceDiscount: 1.5, description: { de: '1L' } } as any);
@@ -26,6 +40,14 @@ describe('denner normalizeProduct', () => {
     const p = normalizeProduct({ id: 'abc', title: { de: 'Wasser', fr: 'Eau' }, priceDiscount: 0.8 } as any);
     expect(p.name).toBe('Wasser');
     expect(p.id).toBe('abc');
+  });
+
+  it('outputs the name in the requested language, falling back when absent', () => {
+    const raw = { id: 'abc', title: { de: 'Wasser', fr: 'Eau', it: 'Acqua' }, priceDiscount: 0.8 } as any;
+    expect(normalizeProduct(raw, 'fr').name).toBe('Eau');
+    expect(normalizeProduct(raw, 'it').name).toBe('Acqua');
+    // Language missing on the product → falls back de→fr→it.
+    expect(normalizeProduct({ id: 'x', title: { de: 'Wasser' }, priceDiscount: 0.8 } as any, 'fr').name).toBe('Wasser');
   });
 
   it('sets promotion dates from validFrom/validTo', () => {

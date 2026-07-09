@@ -31,11 +31,12 @@ export class FarmyAdapter implements StoreAdapter {
       const limit = q.limit ?? 16;
       const offset = q.offset ?? 0;
       const page = Math.floor(offset / limit) + 1;
+      const lang = q.language === 'fr' ? 'fr' : q.language === 'it' ? 'it' : 'de';
       const r = await farmyFetch('/api/products', {
         keywords: q.query,
         per_page: limit,
         page,
-      });
+      }, false, lang);
       const parsed = FarmySearchResponseSchema.safeParse(r);
       if (!parsed.success) {
         return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) });

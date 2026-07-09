@@ -5,6 +5,22 @@ import { deriveDennerTags } from './tags.js';
 
 const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck)/i;
 
+type MultiLang = { de?: string; fr?: string; it?: string } | string | undefined;
+
+/** Pick a multilingual field in the requested language, falling back de→fr→it. */
+function pickLang(field: MultiLang, language?: 'de' | 'fr' | 'it'): string {
+  if (typeof field === 'string') return field;
+  if (!field) return '';
+  return (language && field[language]) || field.de || field.fr || field.it || '';
+}
+
+/** All language variants of a multilingual field, for language-agnostic search. */
+export function allLangs(field: MultiLang): string {
+  if (typeof field === 'string') return field;
+  if (!field) return '';
+  return [field.de, field.fr, field.it].filter(Boolean).join(' ');
+}
+
 export function parseSize(text: string | undefined): { value: number; unit: Unit } | undefined {
   if (!text) return undefined;
   const m = text.match(SIZE_RX);
@@ -44,16 +60,12 @@ interface DennerProductRaw {
   [key: string]: unknown;
 }
 
-export function normalizeProduct(raw: DennerProductRaw): NormalizedProduct {
+export function normalizeProduct(raw: DennerProductRaw, language?: 'de' | 'fr' | 'it'): NormalizedProduct {
   const id = String(raw.id ?? '');
-  // title is a multilingual object; fall back through languages
-  const name = typeof raw.title === 'string'
-    ? raw.title
-    : (raw.title?.de ?? raw.title?.fr ?? raw.title?.it ?? '');
-  // description contains size info (e.g. "250 g", "6 x 75 cl")
-  const descText = typeof raw.description === 'string'
-    ? raw.description
-    : (raw.description?.de ?? raw.description?.fr ?? raw.description?.it ?? '');
+  // title/description are multilingual objects; pick the requested language and
+  // fall back de→fr→it.
+  const name = pickLang(raw.title, language);
+  const descText = pickLang(raw.description, language); // contains size info, e.g. "250 g", "6 x 75 cl"
   const size = parseSize(descText);
   const current = raw.priceOverride ?? raw.priceDiscount ?? 0;
   const regular = raw.priceOrigin && raw.priceOrigin > 0 ? raw.priceOrigin : undefined;

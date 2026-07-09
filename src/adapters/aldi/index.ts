@@ -42,13 +42,14 @@ export class AldiAdapter implements StoreAdapter {
       const servicePoint = q.storeIds?.[0] ?? ALDI_DEFAULT_SERVICE_POINT;
       const requested = q.limit ?? 16;
       const offset = q.offset ?? 0;
+      const lang = q.language === 'fr' ? 'fr' : q.language === 'it' ? 'it' : 'de';
       const r = await aldiFetch('/v3/product-search', {
         q: q.query,
         servicePoint,
         serviceType: 'walk-in',
         offset,
         limit: snapAldiLimit(requested),
-      });
+      }, false, lang);
       const parsed = AldiSearchResponseSchema.safeParse(r);
       if (!parsed.success) {
         return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) } as AdapterError);
