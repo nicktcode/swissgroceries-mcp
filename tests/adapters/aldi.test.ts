@@ -1,7 +1,16 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { normalizeProduct, normalizeStore, normalizePromotion, parseSize } from '../../src/adapters/aldi/normalize.js';
 import { AldiProductSchema, AldiSearchResponseSchema } from '../../src/adapters/aldi/schemas.js';
+
+// Mock only the HTTP layer so we can assert the request the adapter builds
+// without hitting the live API. Other http.js exports are preserved.
+vi.mock('../../src/util/http.js', async (importActual) => ({
+  ...(await importActual<typeof import('../../src/util/http.js')>()),
+  httpJson: vi.fn(),
+}));
+import { AldiAdapter } from '../../src/adapters/aldi/index.js';
+import { httpJson } from '../../src/util/http.js';
 
 describe('aldi parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -76,6 +85,32 @@ describe('aldi normalizeStore', () => {
     expect(s.address.city).toBe('Lausen');
     expect(s.location.lat).toBeCloseTo(47.472);
     expect(s.location.lng).toBeCloseTo(7.75824);
+  });
+});
+
+describe('aldi searchStores geo query', () => {
+  it('queries service-points with latitude/longitude, not the ignored lat/lng', async () => {
+    const mock = vi.mocked(httpJson);
+    mock.mockReset();
+    mock.mockResolvedValueOnce({
+      data: [{
+        id: 'E440',
+        name: 'Rue Antoine-Carteret 22',
+        address: { address1: 'Rue Antoine-Carteret 22', city: 'Genève', zipCode: '1202', latitude: '46.2125', longitude: '6.1338' },
+      }],
+    });
+
+    const r = await new AldiAdapter().searchStores({ near: { lat: 46.2, lng: 6.14 }, radiusKm: 5 });
+
+    expect(r.ok).toBe(true);
+    const url = mock.mock.calls[0][0] as string;
+    // The full-word params the API actually honours...
+    expect(url).toContain('latitude=46.2');
+    expect(url).toContain('longitude=6.14');
+    // ...never the short forms it silently ignores (which returned a non-geo page).
+    expect(url).not.toContain('lat=46.2');
+    expect(url).not.toContain('lng=6.14');
+    if (r.ok) expect(r.data[0]?.id).toBe('E440');
   });
 });
 

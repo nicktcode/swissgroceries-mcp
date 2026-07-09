@@ -77,10 +77,15 @@ export class AldiAdapter implements StoreAdapter {
 
   async searchStores(q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
     try {
-      // Real endpoint: /v2/service-points with lat= and lng= params (not latitude/longitude)
+      // /v2/service-points geo-filters on `latitude`/`longitude` (full words).
+      // `lat`/`lng` are silently ignored: the API then falls back to a fixed,
+      // non-geo page (10 of ~240 stores), so nearby branches never surface and a
+      // geolocatable chain looks storeless. Verified against the live API — the
+      // full-word params return distance-sorted local stores (server sets each
+      // store's `distance`), which is what reachability gating needs.
       const r = await aldiFetch('/v2/service-points', {
-        lat: q.near.lat,
-        lng: q.near.lng,
+        latitude: q.near.lat,
+        longitude: q.near.lng,
         radius: q.radiusKm ?? 5,
       });
       const list = (r.data ?? r.stores ?? r.results ?? []) as any[];
