@@ -1,8 +1,8 @@
-import type { NormalizedProduct, NormalizedPromotion, NormalizedStore, Unit } from '../types.js';
+import type { NormalizedProduct, NormalizedPromotion, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
 import { deriveAligroTags } from './tags.js';
-import type { AligroArticle, AligroMarket } from './schemas.js';
+import type { AligroArticle } from './schemas.js';
 
 const BASE = 'https://www.aligro.ch';
 
@@ -117,22 +117,5 @@ export function normalizePromotion(a: AligroArticle): NormalizedPromotion | null
       p.unitPrice != null ? { value: p.unitPrice, per: unitPer(a.quantityLabelForUnitPrice) } : undefined,
     price: { current: p.discountPriceTTC, regular: p.salesPriceTTC ?? undefined, currency: 'CHF' },
     description: p.discountRatePrivate ? `-${Math.round(p.discountRatePrivate * 100)}%` : undefined,
-  };
-}
-
-/**
- * Aligro's /api/markets/ returns market names only (no address/geo), so the
- * store carries the market name as its city with empty street/zip and a null
- * island location. Distance-based store search is therefore not offered
- * (storeSearch capability is false); this exists for completeness/parity.
- */
-export function normalizeStore(m: AligroMarket): NormalizedStore {
-  const name = m.translations?.fr?.name ?? m.translations?.de?.name ?? String(m.code ?? m.id ?? '');
-  return {
-    chain: 'aligro',
-    id: String(m.id ?? m.code ?? ''),
-    name,
-    address: { street: '', zip: '', city: name },
-    location: { lat: 0, lng: 0 },
   };
 }

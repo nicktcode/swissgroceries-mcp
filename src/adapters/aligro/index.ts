@@ -5,7 +5,9 @@ import type {
 } from '../types.js';
 import { aligroSearchRaw } from './client.js';
 import { normalizeProduct, normalizePromotion } from './normalize.js';
+import { ALIGRO_STORES } from './markets.js';
 import { ok, err } from '../../util/adapter-result.js';
+import { haversineKm } from '../../util/haversine.js';
 import { AligroSearchContainerSchema } from './schemas.js';
 
 function classify(e: unknown): AdapterError {
@@ -24,13 +26,19 @@ function classify(e: unknown): AdapterError {
  * therefore strongest on promotions and returns priced items from search;
  * out-of-action items are dropped (no price to expose). Uniquely, Aligro can
  * surface NEXT week's promotions via the client's `nextWeek` option.
+ *
+ * Store search is answered from a static list of Aligro's fixed cash & carry
+ * network (see markets.ts): the chain has no store API with geo, but its market
+ * list is small and stable, with coordinates resolved from the bundled Swiss
+ * ZIP dataset. This lets Aligro's (promotion-priced) products participate in
+ * distance-based shopping plans.
  */
 export class AligroAdapter implements StoreAdapter {
   readonly chain = 'aligro' as const;
   readonly capabilities = {
     productSearch: true, // returns only in-action (priced) items
     productDetail: false, // no per-SKU JSON endpoint carrying a price
-    storeSearch: false, // /api/markets/ exposes names only, no geo
+    storeSearch: true, // static market network, ZIP-resolved coordinates
     promotions: true, // core strength: keyword-scoped weekly promotions
     perStoreStock: false,
     perStorePricing: false,
@@ -59,10 +67,11 @@ export class AligroAdapter implements StoreAdapter {
     return ok(null);
   }
 
-  async searchStores(_q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
-    // /api/markets/ lists market names only (no address/geo), so a
-    // distance-based store search cannot be answered honestly.
-    return err({ code: 'unavailable', reason: 'Aligro markets API exposes names only, no geo' });
+  async searchStores(q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
+    // Aligro's market network is a fixed, statically-known list (markets.ts),
+    // so store search is a local radius filter — no network call needed.
+    const radius = q.radiusKm ?? 5;
+    return ok(ALIGRO_STORES.filter((s) => haversineKm(q.near, s.location) <= radius));
   }
 
   async getPromotions(q: PromotionQuery): Promise<AdapterResult<NormalizedPromotion[]>> {

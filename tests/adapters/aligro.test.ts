@@ -1,11 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import {
-  normalizeProduct, normalizePromotion, normalizeStore, parseSize,
+  normalizeProduct, normalizePromotion, parseSize,
 } from '../../src/adapters/aligro/normalize.js';
 import {
-  AligroArticleSchema, AligroSearchContainerSchema, AligroMarketSchema,
+  AligroArticleSchema, AligroSearchContainerSchema,
 } from '../../src/adapters/aligro/schemas.js';
+import { AligroAdapter } from '../../src/adapters/aligro/index.js';
+import { ALIGRO_MARKETS, ALIGRO_STORES } from '../../src/adapters/aligro/markets.js';
 
 describe('aligro parseSize', () => {
   it('handles 250 g', () => expect(parseSize('250 g')).toEqual({ value: 250, unit: 'g' }));
@@ -95,14 +97,47 @@ describe('aligro normalizePromotion', () => {
   });
 });
 
-describe('aligro normalizeStore', () => {
-  it('maps a market (name only, no geo)', () => {
-    const s = normalizeStore({ id: 3, code: 2, translations: { fr: { name: 'Genève' }, de: { name: 'Genf' } } });
-    expect(s.chain).toBe('aligro');
-    expect(s.id).toBe('3');
-    expect(s.name).toBe('Genève');
-    expect(s.address.city).toBe('Genève');
-    expect(s.location).toEqual({ lat: 0, lng: 0 });
+describe('aligro store search', () => {
+  const adapter = new AligroAdapter();
+
+  it('resolves every market to a real coordinate', () => {
+    expect(ALIGRO_STORES.length).toBe(ALIGRO_MARKETS.length);
+    for (const s of ALIGRO_STORES) {
+      expect(s.chain).toBe('aligro');
+      expect(Number.isFinite(s.location.lat)).toBe(true);
+      expect(Number.isFinite(s.location.lng)).toBe(true);
+      expect(s.location.lat).not.toBe(0);
+      expect(s.location.lng).not.toBe(0);
+      expect(s.address.city.length).toBeGreaterThan(0);
+      expect(s.name.startsWith('ALIGRO ')).toBe(true);
+    }
+  });
+
+  it('returns only the nearby market for a tight radius (Geneva)', async () => {
+    // ~2 km from the Acacias market: a real non-zero distance, still the only
+    // Aligro within 5 km (Chavannes, the next closest, is ~50 km away).
+    const r = await adapter.searchStores({ near: { lat: 46.20, lng: 6.15 }, radiusKm: 5 });
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    expect(r.data.map((s) => s.id)).toEqual(['3']); // ALIGRO Genève only
+  });
+
+  it('widens to more markets with a larger radius but still excludes far ones', async () => {
+    const r = await adapter.searchStores({ near: { lat: 46.20, lng: 6.15 }, radiusKm: 70 });
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    const ids = r.data.map((s) => s.id);
+    expect(ids).toContain('3'); // Genève (~0 km)
+    expect(ids).toContain('1'); // Chavannes (~50 km)
+    expect(ids).not.toContain('4'); // Sion (~94 km)
+    expect(ids).not.toContain('10'); // Bern (far)
+  });
+
+  it('returns an empty list when no market is within range', async () => {
+    const r = await adapter.searchStores({ near: { lat: 46.0037, lng: 8.9511 }, radiusKm: 5 }); // Lugano
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    expect(r.data).toEqual([]);
   });
 });
 
@@ -133,10 +168,6 @@ describe('aligro schemas (zod validation)', () => {
     const r = AligroArticleSchema.safeParse({ sKU: 'X', unknownField: 42 });
     expect(r.success).toBe(true);
     if (r.success) expect((r.data as any).unknownField).toBe(42);
-  });
-
-  it('AligroMarketSchema accepts a market entry', () => {
-    expect(AligroMarketSchema.safeParse({ id: 1, translations: { fr: { name: 'Chavannes' } } }).success).toBe(true);
   });
 
   it('AligroSearchContainerSchema validates the fixture', () => {

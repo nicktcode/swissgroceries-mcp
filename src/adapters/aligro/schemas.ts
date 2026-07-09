@@ -70,22 +70,5 @@ export const AligroSearchContainerSchema = z
   })
   .passthrough();
 
-export const AligroMarketSchema = z
-  .object({
-    id: z.number().optional(),
-    code: z.number().optional(),
-    translations: z
-      .object({
-        fr: z.object({ name: z.string().optional() }).passthrough().optional(),
-        de: z.object({ name: z.string().optional() }).passthrough().optional(),
-      })
-      .passthrough()
-      .optional(),
-  })
-  .passthrough();
-
-export const AligroMarketsSchema = z.array(AligroMarketSchema);
-
 export type AligroArticle = z.infer<typeof AligroArticleSchema>;
 export type AligroPrice = z.infer<typeof AligroPriceSchema>;
-export type AligroMarket = z.infer<typeof AligroMarketSchema>;
