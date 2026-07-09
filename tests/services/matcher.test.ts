@@ -408,3 +408,43 @@ describe('effectiveCost', () => {
     expect(c).toEqual({ chf: 6, packs: 2, sized: true });
   });
 });
+
+describe('matchProduct with a need', () => {
+  // Two same-chain offers that score identically for the query but differ in
+  // pack size. The intra-chain pick should honour the need (cheapest to cover),
+  // not just the best CHF/kg — so the chain hands the cross-chain step its best
+  // representative for the requested amount.
+  const mince: NormalizedProduct[] = [
+    {
+      chain: 'coop', id: 'big', name: 'Hackfleisch 1kg',
+      price: { current: 10, currency: 'CHF' },
+      size: { value: 1, unit: 'kg' }, unitPrice: { value: 10, per: 'kg' }, tags: [],
+    },
+    {
+      chain: 'coop', id: 'small', name: 'Hackfleisch 400g',
+      price: { current: 5, currency: 'CHF' },
+      size: { value: 400, unit: 'g' }, unitPrice: { value: 12.5, per: 'kg' }, tags: [],
+    },
+  ];
+
+  it('without a need, picks the better unit price (1 kg pack)', () => {
+    expect(matchProduct({ query: 'hackfleisch' }, mince)?.id).toBe('big');
+  });
+
+  it('with a need, picks the pack cheapest to cover it', () => {
+    // 1.2 kg need: 1 kg pack → 2 packs = 20.–; 400 g pack → 3 packs = 15.–.
+    expect(
+      matchProduct({ query: 'hackfleisch', need: { amount: 1.2, unit: 'kg' } }, mince)?.id,
+    ).toBe('small');
+  });
+
+  it('falls back to unit-aware price when candidates cannot be sized', () => {
+    const unsized: NormalizedProduct[] = [
+      { chain: 'coop', id: 'a', name: 'Hackfleisch', price: { current: 3, currency: 'CHF' }, tags: [] },
+      { chain: 'coop', id: 'b', name: 'Hackfleisch', price: { current: 2, currency: 'CHF' }, tags: [] },
+    ];
+    expect(
+      matchProduct({ query: 'hackfleisch', need: { amount: 1, unit: 'kg' } }, unsized)?.id,
+    ).toBe('b');
+  });
+});

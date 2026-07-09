@@ -285,6 +285,24 @@ export function matchProduct(
     const bp = b.unitPrice?.value ?? b.price.current;
     return ap - bp;
   };
+
+  // When the line carries a real `need`, break the price tie among the
+  // top-scored candidates by the true cost to COVER the need (pack price ×
+  // packs), not just CHF/kg — so this chain hands the cross-chain step its best
+  // representative for the requested amount. Relevance still comes first (we
+  // only reorder the already-top-scored `topK`). Prefer candidates whose pack
+  // size is resolvable in the need's dimension; fall back to the unit-aware
+  // price order when none can be sized.
+  if (item.need) {
+    const sized = topK
+      .map((s) => ({ s, cost: effectiveCost(s.product, item) }))
+      .filter((x) => x.cost.sized);
+    if (sized.length > 0) {
+      sized.sort((a, b) => a.cost.chf - b.cost.chf);
+      return sized[0].s.product;
+    }
+  }
+
   topK.sort((a, b) => byUnitAwarePrice(a.product, b.product));
   return topK[0].product;
 }
