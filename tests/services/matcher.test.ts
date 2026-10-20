@@ -74,6 +74,30 @@ describe('matchProduct', () => {
     expect(m).toBeNull();
   });
 
+  it('falls back to normal matching at a chain other than the pinned one', () => {
+    const m = matchProduct(
+      { query: 'milch', preferredProductId: { chain: 'coop', id: 'c9' } },
+      milkProducts,
+    );
+    expect(m?.id).toBe('1');
+  });
+
+  it('ignores store labels in front of the product noun when ranking', () => {
+    const bananas: NormalizedProduct[] = [
+      ['1', 'Naturaplan Bio Fairtrade Bananen ca. 1kg', 3.2],
+      ['2', 'Fairtrade Bananen ca. 1kg', 2.6],
+      ['3', 'Prix Garantie Bananen ca. 1.2kg', 1.4],
+      ['4', 'Primagusto Kanarische Bananen ca. 1kg', 3.95],
+    ].map(([id, name, price]) => ({
+      chain: 'coop', id: id as string, name: name as string,
+      price: { current: price as number, currency: 'CHF' },
+      size: { value: 1, unit: 'kg' },
+      unitPrice: { value: price as number, per: 'kg' },
+      tags: [],
+    }));
+    expect(matchProduct({ query: 'bananen' }, bananas)?.id).toBe('3');
+  });
+
   it('penalizes products that do not contain a query token in name or category', () => {
     const m = matchProduct({ query: 'milch' }, milkProducts);
     expect(m?.id).not.toBe('3');

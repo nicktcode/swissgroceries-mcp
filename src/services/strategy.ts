@@ -123,10 +123,15 @@ function solveSplit(
     // CHF/piece) so a 0.5L bottle isn't unfairly preferred over a 6×1.5L pack.
     // Restrict to products that share a `unitPrice.per` unit. Fall back to
     // absolute price when no candidate has a unit price (or units are mixed).
-    const candidates: Array<[Chain, NormalizedProduct]> = [];
+    let candidates: Array<[Chain, NormalizedProduct]> = [];
     for (const [chain, product] of Object.entries(offers) as [Chain, NormalizedProduct | null | undefined][]) {
       if (product) candidates.push([chain, product]);
     }
+    // Multi-stop plans can always reach the pinned chain, so the pin wins
+    // there; stand-ins from other chains only matter when it's unavailable.
+    const pin = item.preferredProductId;
+    const pinned = pin ? candidates.filter(([c, p]) => c === pin.chain && p.id === pin.id) : [];
+    if (pinned.length > 0) candidates = pinned;
     if (candidates.length === 0) {
       unmatched.push(item);
       continue;

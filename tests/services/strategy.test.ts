@@ -69,4 +69,25 @@ describe('solve', () => {
     expect(r.unmatchedItems).toHaveLength(1);
     expect(r.unmatchedItems[0].query).toBe('butter');
   });
+
+  it('keeps a pinned product in multi-stop plans even when a stand-in is cheaper', () => {
+    const pinnedItems: ShoppingItem[] = [{ query: 'milk', preferredProductId: { chain: 'coop', id: 'c1' } }];
+    const pinnedMatrix = { 'coop:c1': matrix.milk };
+    const r = solve('absolute_cheapest', pinnedItems, pinnedMatrix as any, { splitPenaltyChf: 0 });
+    expect(r.stops[0].store.chain).toBe('coop');
+    expect(r.stops[0].items[0].matched.id).toBe('c1');
+  });
+
+  it('single_store uses a stand-in for a product pinned at another chain', () => {
+    const pinnedItems: ShoppingItem[] = [
+      { query: 'milk', preferredProductId: { chain: 'aldi', id: 'a1' } },
+      { query: 'bread' },
+      { query: 'eggs' },
+    ];
+    const pinnedMatrix = { 'aldi:a1': matrix.milk, bread: matrix.bread, eggs: matrix.eggs };
+    const r = solve('single_store', pinnedItems, pinnedMatrix as any, { splitPenaltyChf: 2 });
+    expect(r.stops[0].store.chain).toBe('coop');
+    expect(r.unmatchedItems).toEqual([]);
+    expect(r.stops[0].items.map((l) => l.matched.id)).toEqual(['c1', 'c2', 'c3']);
+  });
 });

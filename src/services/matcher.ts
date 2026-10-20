@@ -56,6 +56,13 @@ function normalize(s: string): string {
     .trim();
 }
 
+const NAME_LABELS = new Set([
+  'prix', 'garantie', 'm', 'budget', 'classic', 'naturaplan', 'naturafarm', 'primagusto',
+  'betty', 'bossi', 'fine', 'food', 'qualite', 'qualité', 'karma', 'jamadu', 'coop', 'migros',
+  'denner', 'volg', 'aldi', 'lidl', 'farmy', 'bio', 'fairtrade', 'alnatura', 'demeter', 'suisse',
+  'swiss', 'schweizer', 'ca', 'ca.',
+]);
+
 function tokens(s: string): Set<string> {
   return new Set(normalize(s).split(/\s+/).filter(Boolean));
 }
@@ -142,7 +149,11 @@ function scoreCandidate(p: NormalizedProduct, item: ShoppingItem): number {
     }
   }
 
-  const nameTokensArr = [...tokens(nameForScoring)];
+  // Store labels and certifications ('Prix Garantie', 'Naturaplan Bio',
+  // 'Fairtrade') sit in front of the product noun. Dropping them keeps the
+  // position weight below about the product, so 'Prix Garantie Bananen'
+  // scores like 'Bananen' and competes on price with the other bananas.
+  const nameTokensArr = [...tokens(nameForScoring)].filter((t) => !NAME_LABELS.has(t));
   if (nameTokensArr.length === 0) return 0;
 
   const expanded = expandQuery(queryTokens);
@@ -233,11 +244,12 @@ export function matchProduct(
   item: ShoppingItem,
   candidates: NormalizedProduct[],
 ): NormalizedProduct | null {
-  if (item.preferredProductId) {
-    const pinned = candidates.find(
-      (c) => c.chain === item.preferredProductId!.chain && c.id === item.preferredProductId!.id,
-    );
-    return pinned ?? null;
+  // A pinned product is binding at its own chain. Every other chain gets its
+  // normal best match as a stand-in, so a single-store plan at another chain
+  // still covers the item instead of dropping it.
+  const pin = item.preferredProductId;
+  if (pin && candidates.some((c) => c.chain === pin.chain)) {
+    return candidates.find((c) => c.chain === pin.chain && c.id === pin.id) ?? null;
   }
 
   const filtered = candidates.filter((c) => passesHardFilters(c, item));
@@ -254,7 +266,10 @@ export function matchProduct(
   // This prevents a weakly-matched cheap item from beating a strongly-matched one.
   const topScore = scored[0].score;
   const scoreFloor = topScore * 0.35;
-  let topK = scored.slice(0, 3).filter((s) => s.score >= scoreFloor);
+  // Top three by score, plus anything tied with the third, so equally good
+  // matches all get to compete on price.
+  const cutoff = Math.max(scoreFloor, scored[Math.min(2, scored.length - 1)].score);
+  let topK = scored.filter((s) => s.score >= cutoff);
 
   // Default: prefer single packs over multipacks. Users opt into bulk via
   // explicit query patterns ("6x", "multipack") or by pinning a SKU.

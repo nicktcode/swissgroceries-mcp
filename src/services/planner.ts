@@ -111,7 +111,8 @@ export async function plan(registry: AdapterRegistry, input: PlanInput): Promise
     const canonical: typeof offers = {};
     let hasCanonical = false;
     for (const [chain, product] of Object.entries(offers) as [Chain, NormalizedProduct | null | undefined][]) {
-      if (product && isCanonical(product, item)) {
+      const isPinned = item.preferredProductId?.chain === chain && item.preferredProductId.id === product?.id;
+      if (product && (isPinned || isCanonical(product, item))) {
         canonical[chain] = product;
         hasCanonical = true;
       }
