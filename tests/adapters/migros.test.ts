@@ -44,6 +44,10 @@ describe('parseSize', () => {
   it('parses 500g', () => expect(parseSize('500g')).toEqual({ value: 500, unit: 'g' }));
   it('parses 1.5kg', () => expect(parseSize('1.5kg')).toEqual({ value: 1.5, unit: 'kg' }));
   it('parses 6er to piece', () => expect(parseSize('6er')).toEqual({ value: 6, unit: 'piece' }));
+  it('parses multipack quantity as total pack size', () => {
+    expect(parseSize('6 x 330ml')).toEqual({ value: 1980, unit: 'ml' });
+    expect(parseSize('6 x 1.5l')).toEqual({ value: 9, unit: 'l' });
+  });
   it('returns undefined for empty', () => expect(parseSize(undefined)).toBeUndefined());
   it('returns undefined for unparseable', () => expect(parseSize('xyz')).toBeUndefined());
 });
@@ -200,5 +204,21 @@ describe('migros schemas (zod validation)', () => {
     };
     const result = MigrosProductDetailsResponseSchema.safeParse(det);
     expect(result.success).toBe(true);
+  });
+});
+
+describe('migros full product name', () => {
+  it('builds the name from title and derives brand + per-litre price for packs', () => {
+    const p = normalizeProduct({
+      uid: 1, migrosId: '204000000000', name: 'Zero',
+      title: 'Coca-Cola · Zero · ohne Zuckerzusatz',
+      offer: { quantity: '6 x 330ml', price: { effectiveValue: 6.5, advertisedValue: 6.5 } },
+    } as any);
+    expect(p.name).toBe('Coca-Cola Zero ohne Zuckerzusatz');
+    expect(p.brand).toBe('Coca-Cola');
+    expect(p.size).toEqual({ value: 1980, unit: 'ml' });
+    expect(p.unitPrice?.per).toBe('l');
+    expect(p.unitPrice?.value).toBeCloseTo(3.28, 2);
+    expect(p.multipack?.count).toBe(6);
   });
 });

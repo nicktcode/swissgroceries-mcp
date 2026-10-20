@@ -6,6 +6,7 @@ describe('detectPackCount', () => {
   it('detects "6x1.5l" pattern', () => expect(detectPackCount('Prix Garantie Apfelschorle 6x1.5l')).toBe(6));
   it('detects "12 x 50cl" pattern', () => expect(detectPackCount('Coca Cola 12 x 50cl')).toBe(12));
   it('detects "6×33cl" with unicode multiplication sign', () => expect(detectPackCount('Bier 6×33cl')).toBe(6));
+  it('detects written-out litres "6 x 1,5 Liter"', () => expect(detectPackCount('Rivella rot 6 x 1,5 Liter')).toBe(6));
   it('detects "4er Pack"', () => expect(detectPackCount('Hörnli 4er Pack')).toBe(4));
   it('detects "10er"', () => expect(detectPackCount('Eier 10er')).toBe(10));
   it('returns 1 for single product names', () => {
@@ -57,5 +58,13 @@ describe('annotateMultipack', () => {
     expect(product2.multipack?.count).toBe(12);
     expect(product2.multipack?.perUnitPrice).toBe(0.5);
     expect(product2.multipack?.perUnitSize).toBeUndefined();
+  });
+});
+
+describe('annotateMultipack with a structured pack field', () => {
+  it('uses packText when the name has no pack size (Migros)', () => {
+    const p: any = { chain: 'migros', id: '1', name: 'Coca-Cola Zero', price: { current: 6.5, currency: 'CHF' }, size: { value: 1980, unit: 'ml' }, tags: [] };
+    annotateMultipack(p, '6 x 330ml');
+    expect(p.multipack).toEqual({ count: 6, perUnitPrice: 1.08, perUnitSize: { value: 330, unit: 'ml' } });
   });
 });

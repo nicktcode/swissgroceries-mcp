@@ -23,6 +23,7 @@
 import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Nutrition, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
+import { parsePack } from '../../util/size-from-name.js';
 import {
   classifyNutrientLabel,
   parseBasis,
@@ -177,6 +178,9 @@ const MEASUREMENT_RX = /^([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck|piece
 
 export function parseSize(measurement: string | undefined): { value: number; unit: Unit } | undefined {
   if (!measurement) return undefined;
+  // offer.quantity carries multipacks as "6 x 330ml"; size is the whole pack.
+  const pack = parsePack(measurement);
+  if (pack) return { value: pack.unitSize.value * pack.count, unit: pack.unitSize.unit };
   const m = measurement.match(MEASUREMENT_RX);
   if (!m) return undefined;
   const value = parseFloat(m[1].replace(',', '.'));
@@ -203,7 +207,11 @@ export function parseSize(measurement: string | undefined): { value: number; uni
 export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   // Real API: id is uid (number) or migrosId (string)
   const id = raw.migrosId ?? String(raw.uid ?? '');
-  const name = raw.name ?? '';
+  // `name` alone is often just the variant ("Zero", "Blau"); `title` is
+  // "Coca-Cola · Zero · ohne Zuckerzusatz". Use the title so products can be
+  // recognised and matched across chains.
+  const titleParts = (raw.title ?? '').split('·').map((t) => t.trim()).filter(Boolean);
+  const name = titleParts.length ? titleParts.join(' ') : (raw.name ?? '');
 
   // Migros promotion model:
   //   - On a normal product, offer.price holds the only price.
@@ -256,7 +264,8 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
   // Migros returns the canonical product page URL in raw.productUrls — full
   // URL ready to deep-link from the consumer.
   const productUrl = raw.productUrls;
-  const brand = raw.productInformation?.mainInformation?.brand?.name;
+  const brand = raw.productInformation?.mainInformation?.brand?.name
+    ?? (titleParts.length >= 2 ? titleParts[0] : undefined);
 
   // Build the promotion descriptor. Prefer the per-product promotionDateRange
   // and percentage badge over the older promotion sub-object.
@@ -301,7 +310,7 @@ export function normalizeProduct(raw: MigrosProductRaw): NormalizedProduct {
     };
   }
   product.unitPrice = computeUnitPrice(current, size);
-  annotateMultipack(product);
+  annotateMultipack(product, raw.offer?.quantity);
   return product;
 }
 

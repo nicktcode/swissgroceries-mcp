@@ -3,6 +3,7 @@ import type {
 } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
+import { sizeFromName } from '../../util/size-from-name.js';
 import { deriveOttosTags } from './tags.js';
 
 // Otto's SAP Commerce OCC v2 product shape (verified live 2026-04-29):
@@ -153,7 +154,7 @@ export function normalizeProduct(raw: OttosProductRaw): NormalizedProduct {
   const current = raw.price?.value ?? 0;
   const regular = raw.insteadOfPrice?.value;
 
-  const size = parseOttosSize(raw.unitName ?? undefined) ?? parseOttosSize(name);
+  const size = parseOttosSize(raw.unitName ?? undefined) ?? parseOttosSize(name) ?? sizeFromName(name);
 
   const realCategories = (raw.categories ?? []).filter(
     (c) => !c.excludeFromProductBreadcrumb,
