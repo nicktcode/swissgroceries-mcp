@@ -1,0 +1,3624 @@
+{
+   "boundEastLongitude" : 0.0,
+   "boundNorthLatitude" : 0.0,
+   "boundSouthLatitude" : 0.0,
+   "boundWestLongitude" : 0.0,
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 20,
+      "totalPages" : 2,
+      "totalResults" : 31
+   },
+   "product" : {
+      "baseOptions" : [ {
+         "selected" : {
+            "code" : "4290522",
+            "priceData" : {
+               "currencyIso" : "CHF",
+               "formattedValue" : "1.95",
+               "priceType" : "BUY",
+               "value" : 1.95
+            },
+            "stock" : {
+               "stockLevel" : 65,
+               "stockLevelStatus" : "inStock"
+            },
+            "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/nivea-volume-wonder-kraeftigendes-shampoo-bambus-extrakt-50ml-travel-size/p/4290522",
+            "variantOptionQualifiers" : [ ]
+         },
+         "variantType" : "GenericVariantProduct"
+      } ],
+      "baseProduct" : "B4290522",
+      "code" : "4290522",
+      "images" : [ {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "basket-LG-XL",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/90Wx90H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDIwNzh8aW1hZ2UvanBlZ3xhREZrTDJnd05TOHlOekUzTmprMk56TTNNamd6TUM4NU1GZDRPVEJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDdjZGY2YjdhZjUzYjk1NThkNzU3M2JjMGE4YWFhYmI5OTdkZmE1ZjgwMzEwZWUxZWEyZDQ0ZWNhOGM4NWEzZjI"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "tile-SM-XL",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/155Wx155H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDM5ODN8aW1hZ2UvanBlZ3xhR1kyTDJnMk55OHlOekUzTmprMk5qVTROak01T0M4eE5UVlhlREUxTlVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fGZkYTk4ZGM1YzEyZjY3MGRhMmViY2ExNWJiZjVmM2I0YTg2OGNmMTBmMmUwNTE2YzBhMThjMjQ0NDEwYzU5NTU"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "productImage-thumbnails-XS-XL",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/40Wx40H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEwMjR8aW1hZ2UvanBlZ3xhR015TDJnd055OHlOekUzTmprMk56Y3dNRFV4TUM4ME1GZDROREJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDdhZjY0NWZhMzdjOTVhZTVhZDA1ODdjNDhlOGQ0YjY4ZTY2NTgxYmI0MjQ3M2VlODRjOGEzMzQ0MGU5MTJhMTA"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "basket-LG2x-XL2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/180Wx180H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDQ4NDB8aW1hZ2UvanBlZ3xhRFk1TDJnMVlTOHlOekUzTmprMk5qazNPVFl4TkM4eE9EQlhlREU0TUVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fDhkZjMwOWMyNDlmZTY5MGQzZmY5NTMwN2JlYmJjYTViODZmYTExYTJhZTAxYTIwZGExYmQxZDNkNTc2MDlhMWY"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "productImage-zoom-SM2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/1474Wx1474H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDExMDI5NHxpbWFnZS9qcGVnfGFHSTFMMmcyWWk4eU56RTNOamsyTmpRMU5UTXlOaTh4TkRjMFYzZ3hORGMwU0MxU1IwSmZOREk1TURVeU1sOHdNREV1YW5CbnwwM2RkMDI2ZDU2M2M4NWMyYmJlNmU2Yjk0MGRiMDcwZmJkYzk2NDQ2OTQwNjY2N2JjMjdhZTc1OGE1MWJjYWJm"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "tile-SM2x-XL2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/310Wx310H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEwNjQ1fGltYWdlL2pwZWd8YURjMEwyZzJaaTh5TnpFM05qazJOak15TkRJMU5DOHpNVEJYZURNeE1FZ3RVa2RDWHpReU9UQTFNakpmTURBeExtcHdad3w5ZGViMjkzY2Y4NTYwYTJkZjhiMDU2ODFkYzI2ZGNhNWVmZDgyY2I0NWVhNzBjZmJhMzk5NDIyMjY3NmM4NjJh"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "productImage-thumbnails-XS2x-XL2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/80Wx80H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE3MzN8aW1hZ2UvanBlZ3xhR0l3TDJnd05DOHlOekUzTmprMk56WXpORGszTkM4NE1GZDRPREJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfGMxMjUwZTlkYWMwNTkzNDQ2NGVmYmExYjQ2OWMzOGMzNTgyOWFkOWYyYTEzNTkyYTg4MmQ4OThhYTVhNzllNWQ"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/50Wx50H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEyMjl8aW1hZ2UvanBlZ3xhREptTDJnd1l5OHlOekUzTmprMk56ZzVOekV4T0M4MU1GZDROVEJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDExNjRjZGNkOWY2MTM0ZTdhMTlkMDg2ZTlhNjdiMzNlM2RiMTMzYzZhZTVjNGE1YTJhN2Q0MWUzMjI4ZmI1Zjg"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "miniBasket-XS-XL",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/65Wx65H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE1NTZ8aW1hZ2UvanBlZ3xhRFF3TDJnd1ppOHlOekUzTmprMk56azJNalkxTkM4Mk5WZDROalZJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDE4YWQ5Nzk4MmQyYWIwZmFiMGU1YzZiZDQ1NTg3NjNhNjM0YzM2OTA2MzA1YjY4M2RlNmFlNTZlOTViMTEyZWU"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "basket-XS2x-MD2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/100Wx100H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDI0NzN8aW1hZ2UvanBlZ3xhRGN3TDJnd09DOHlOekUzTmprMk56YzJOakEwTmk4eE1EQlhlREV3TUVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fGFlZGVmMjRhOGNhNmQ1NThlMGEwZDkwYzMwOTBkYjQ5YzI2OTcxYzVkNGQ2YmEyYmQzYWE3ZjBiN2QyMDRmZDg"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "miniBasket-XS2x-XL2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/130Wx130H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDMyNTJ8aW1hZ2UvanBlZ3xhRGd4TDJnd1lpOHlOekUzTmprMk56Z3pNVFU0TWk4eE16QlhlREV6TUVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fDE3YWVlODUwMWY1NmVhMDQ0ZDNmOTAyZTg5NmYwOTY5YzNjMDA3ZjczNjRlMTZlNDRmMGYwNTU4NzYxYjFjY2Q"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "compareList-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/205Wx205H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDU5MjF8aW1hZ2UvanBlZ3xhR0ZpTDJnMVlTOHlOekUzTmprMk9EQTVNemN5Tmk4eU1EVlhlREl3TlVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fDdlODhmMjlhYjQ1NTgxMDgxNmQ3MDM2NzllNGYxNjNjOWQ3YWMwODBiMjZjN2M2NjViY2FhZjhmZWI2MWMwYjY"
+      }, {
+         "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+         "format" : "compareList-XS2x-MD2x",
+         "galleryIndex" : 0,
+         "imageType" : "GALLERY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/410Wx410H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE2MjAxfGltYWdlL2pwZWd8YUdWaEwyZzFPUzh5TnpFM05qazJPREF5T0RFNU1DODBNVEJYZURReE1FZ3RVa2RDWHpReU9UQTFNakpmTURBeExtcHdad3wzMzFlNjQ3YjI0YTE2MDViYTE5MjA1MTJlYmNjZDQzOWIxNGEzNDQzYTYxZDg4YTVjOWY5ZjliNGM1YTAwZmZk"
+      } ],
+      "name" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "purchasable" : true,
+      "stock" : {
+         "stockLevel" : 65,
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/nivea-volume-wonder-kraeftigendes-shampoo-bambus-extrakt-50ml-travel-size/p/4290522"
+   },
+   "sourceLatitude" : 0.0,
+   "sourceLongitude" : 0.0,
+   "stores" : [ {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 226 9200",
+         "formattedAddress" : "Bahnhofstrasse 57<br /> 8001 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546405399",
+         "line1" : "Bahnhofstrasse",
+         "line2" : "57",
+         "phone" : "+41 44 226 91 00",
+         "postalCode" : "8001",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich St. Annahof",
+      "formattedDistance" : "0.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.37292704779479,
+         "longitude" : 8.537830828477519
+      },
+      "name" : "2194_POS",
+      "openingHours" : {
+         "code" : "2194_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2194_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-st.-annahof/2194_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "043 268 8705",
+         "formattedAddress" : "Theaterstrasse 18<br /> 8001 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546307095",
+         "line1" : "Theaterstrasse",
+         "line2" : "18",
+         "phone" : "+41 43 268 87 00",
+         "postalCode" : "8001",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich Bellevue",
+      "formattedDistance" : "1.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.367136207332514,
+         "longitude" : 8.546092444869897
+      },
+      "name" : "2624_POS",
+      "openingHours" : {
+         "code" : "2624_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2624_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-bellevue/2624_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 204 9551",
+         "formattedAddress" : "Kalanderplatz 1<br /> 8045 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546372631",
+         "line1" : "Kalanderplatz",
+         "line2" : "1",
+         "phone" : "+41 44 204 95 50",
+         "postalCode" : "8045",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich Sihlcity",
+      "formattedDistance" : "2.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.35804304644528,
+         "longitude" : 8.523253619507352
+      },
+      "name" : "2492_POS",
+      "openingHours" : {
+         "code" : "2492_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2492_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-sihlcity/2492_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "043 288 3867",
+         "formattedAddress" : "Wallisellenstrasse 1<br /> 8050 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546339863",
+         "line1" : "Wallisellenstrasse",
+         "line2" : "1",
+         "phone" : "+41 43 288 38 55",
+         "postalCode" : "8050",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich Oerlikon",
+      "formattedDistance" : "3.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.41036213503669,
+         "longitude" : 8.546580700750837
+      },
+      "name" : "2618_POS",
+      "openingHours" : {
+         "code" : "2618_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2618_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-oerlikon/2618_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 908 26 67",
+         "formattedAddress" : "Industriestrasse 1<br /> 8604 Volketswil<br /> Schweiz",
+         "id" : "8858546176023",
+         "line1" : "Industriestrasse",
+         "line2" : "1",
+         "phone" : "+41 44 908 26 66",
+         "postalCode" : "8604",
+         "shippingAddress" : false,
+         "town" : "Volketswil",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Volketswil",
+      "formattedDistance" : "9.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.38251221280828,
+         "longitude" : 8.667634344786396
+      },
+      "name" : "5698_POS",
+      "openingHours" : {
+         "code" : "5698_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5698_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-volketswil/5698_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "052 260 5210",
+         "formattedAddress" : "Bahnhofplatz 3<br /> 8400 Winterthur<br /> Schweiz",
+         "id" : "8858546241559",
+         "line1" : "Bahnhofplatz",
+         "line2" : "3",
+         "phone" : "+41 52 260 52 00",
+         "postalCode" : "8400",
+         "shippingAddress" : false,
+         "town" : "Winterthur",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Winterthur",
+      "formattedDistance" : "19.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.49930027372916,
+         "longitude" : 8.723587259135021
+      },
+      "name" : "2609_POS",
+      "openingHours" : {
+         "code" : "2609_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2609_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-winterthur/2609_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "056 203 9958",
+         "formattedAddress" : "Bahnhofstrasse 28<br /> 5400 Baden<br /> Schweiz",
+         "id" : "8858545618967",
+         "line1" : "Bahnhofstrasse",
+         "line2" : "28",
+         "phone" : "+41 56 203 99 59",
+         "postalCode" : "5400",
+         "shippingAddress" : false,
+         "town" : "Baden",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Baden",
+      "formattedDistance" : "20.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.47578231443443,
+         "longitude" : 8.307707582606868
+      },
+      "name" : "2523_POS",
+      "openingHours" : {
+         "code" : "2523_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "12:00",
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2523_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-baden/2523_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "",
+         "formattedAddress" : "Bahnhofstrasse 28<br /> 5400 Baden<br /> Schweiz",
+         "id" : "8875027890199",
+         "line1" : "Bahnhofstrasse",
+         "line2" : "28",
+         "phone" : "",
+         "postalCode" : "5400",
+         "shippingAddress" : false,
+         "town" : "Baden",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Baden City Outlet",
+      "formattedDistance" : "20.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.47578231443443,
+         "longitude" : 8.307707582606868
+      },
+      "name" : "2911_POS",
+      "openingHours" : {
+         "code" : "2911_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ ],
+      "url" : "/de/standorte/coop-baden-city-outlet/2911_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "041 414 50 41",
+         "formattedAddress" : "Bundesplatz 11<br /> 6300 Zug<br /> Schweiz",
+         "id" : "8858546274327",
+         "line1" : "Bundesplatz",
+         "line2" : "11",
+         "phone" : "+41 41 414 50 40",
+         "postalCode" : "6300",
+         "shippingAddress" : false,
+         "town" : "Zug",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zug",
+      "formattedDistance" : "23 Km",
+      "geoPoint" : {
+         "latitude" : 47.17161658861462,
+         "longitude" : 8.514289133949758
+      },
+      "name" : "2531_POS",
+      "openingHours" : {
+         "code" : "2531_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Maria Empfängnis",
+            "date" : "2026-12-07T23:00:00+0000",
+            "formattedDate" : "08.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2531_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zug/2531_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "companyName" : "Schaffhausen City K.",
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "052 624 5813",
+         "formattedAddress" : "Vordergasse 69<br /> 8200 Schaffhausen<br /> Schweiz",
+         "id" : "8858284883991",
+         "line1" : "Vordergasse",
+         "line2" : "69",
+         "phone" : "+41 52 633 08 48",
+         "postalCode" : "8200",
+         "shippingAddress" : false,
+         "town" : "Schaffhausen",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Schaffhausen",
+      "formattedDistance" : "36.1 Km",
+      "geoPoint" : {
+         "latitude" : 47.69630009621374,
+         "longitude" : 8.634510506802435
+      },
+      "name" : "5930_POS",
+      "openingHours" : {
+         "code" : "5930_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5930_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-schaffhausen/5930_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "062 834 85 80",
+         "formattedAddress" : "Igelweid 10<br /> 5000 Aarau<br /> Schweiz",
+         "id" : "8858545586199",
+         "line1" : "Igelweid",
+         "line2" : "10",
+         "phone" : "+41 62 834 85 85",
+         "postalCode" : "5000",
+         "shippingAddress" : false,
+         "town" : "Aarau",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Aarau",
+      "formattedDistance" : "37.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.39191427778933,
+         "longitude" : 8.046288888503824
+      },
+      "name" : "5731_POS",
+      "openingHours" : {
+         "code" : "5731_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5731_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-aarau/5731_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "071 914 3050",
+         "formattedAddress" : "Obere Bahnhofstrasse 32&#x2f;34<br /> 9500 Wil<br /> Schweiz",
+         "id" : "8858546208791",
+         "line1" : "Obere Bahnhofstrasse",
+         "line2" : "32/34",
+         "phone" : "+41 71 914 30 40",
+         "postalCode" : "9500",
+         "shippingAddress" : false,
+         "town" : "Wil",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Wil",
+      "formattedDistance" : "39.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.46538470275103,
+         "longitude" : 9.04489008788465
+      },
+      "name" : "2592_POS",
+      "openingHours" : {
+         "code" : "2592_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "12:00",
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2592_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-wil/2592_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "041 417 1144",
+         "formattedAddress" : "R&ouml;ssligasse 18-20<br /> 6004 Luzern<br /> Schweiz",
+         "id" : "8858545946647",
+         "line1" : "Rössligasse",
+         "line2" : "18-20",
+         "phone" : "+41 41 417 11 33",
+         "postalCode" : "6004",
+         "shippingAddress" : false,
+         "town" : "Luzern",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Luzern",
+      "formattedDistance" : "40.4 Km",
+      "geoPoint" : {
+         "latitude" : 47.05214165586026,
+         "longitude" : 8.30393481613687
+      },
+      "name" : "5857_POS",
+      "openingHours" : {
+         "code" : "5857_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Vortag Maria Empfängnis",
+            "date" : "2026-12-06T23:00:00+0000",
+            "formattedDate" : "07.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Maria Empfängnis",
+            "date" : "2026-12-07T23:00:00+0000",
+            "formattedDate" : "08.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5857_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-luzern/5857_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "041 348 2829",
+         "formattedAddress" : "Ringstrasse 19<br /> 6010 Kriens<br /> Schweiz",
+         "id" : "8858545848343",
+         "line1" : "Ringstrasse",
+         "line2" : "19",
+         "phone" : "+41 41 348 28 28",
+         "postalCode" : "6010",
+         "shippingAddress" : false,
+         "town" : "Kriens",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Kriens Pilatusmarkt",
+      "formattedDistance" : "44 Km",
+      "geoPoint" : {
+         "latitude" : 47.01767787380197,
+         "longitude" : 8.299380420686843
+      },
+      "name" : "2853_POS",
+      "openingHours" : {
+         "code" : "2853_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Vortag Maria Empfängnis",
+            "date" : "2026-12-06T23:00:00+0000",
+            "formattedDate" : "07.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Maria Empfängnis",
+            "date" : "2026-12-07T23:00:00+0000",
+            "formattedDate" : "08.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2853_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-kriens-pilatusmarkt/2853_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "062 205 0401",
+         "formattedAddress" : "Baslerstrasse 10<br /> 4600 Olten<br /> Schweiz",
+         "id" : "8858546044951",
+         "line1" : "Baslerstrasse",
+         "line2" : "10",
+         "phone" : "+41 62 205 04 00",
+         "postalCode" : "4600",
+         "shippingAddress" : false,
+         "town" : "Olten",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Olten",
+      "formattedDistance" : "48.2 Km",
+      "geoPoint" : {
+         "latitude" : 47.35053906230078,
+         "longitude" : 7.902931502484523
+      },
+      "name" : "2198_POS",
+      "openingHours" : {
+         "code" : "2198_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:30",
+               "hour" : 6,
+               "minute" : 30
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2198_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-olten/2198_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "071 227 7205",
+         "formattedAddress" : "Am Bohl 6<br /> 9000 St. Gallen<br /> Schweiz",
+         "id" : "8858546110487",
+         "line1" : "Am Bohl",
+         "line2" : "6",
+         "phone" : "+41 71 227 72 00",
+         "postalCode" : "9000",
+         "shippingAddress" : false,
+         "town" : "St. Gallen",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City St. Gallen",
+      "formattedDistance" : "63.4 Km",
+      "geoPoint" : {
+         "latitude" : 47.426171589074535,
+         "longitude" : 9.376873631213735
+      },
+      "name" : "5855_POS",
+      "openingHours" : {
+         "code" : "5855_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "12:00",
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5855_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-st.-gallen/5855_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "061 260 6566",
+         "formattedAddress" : "Freie Strasse 75<br /> 4051 Basel<br /> Schweiz",
+         "id" : "8858545684503",
+         "line1" : "Freie Strasse",
+         "line2" : "75",
+         "phone" : "+41 61 260 65 65",
+         "postalCode" : "4051",
+         "shippingAddress" : false,
+         "town" : "Basel",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Basel Pfauen",
+      "formattedDistance" : "74.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.555655546280896,
+         "longitude" : 7.590789770876475
+      },
+      "name" : "2190_POS",
+      "openingHours" : {
+         "code" : "2190_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "comment" : "Trend Night",
+            "date" : "2026-10-21T22:00:00+0000",
+            "formattedDate" : "22.10.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2190_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-basel-pfauen/2190_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "061 269 9251",
+         "formattedAddress" : "Gerbergasse 4<br /> 4001 Basel<br /> Schweiz",
+         "id" : "8858545651735",
+         "line1" : "Gerbergasse",
+         "line2" : "4",
+         "phone" : "+41 61 269 92 50",
+         "postalCode" : "4001",
+         "shippingAddress" : false,
+         "town" : "Basel",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Basel Am Marktplatz",
+      "formattedDistance" : "74.5 Km",
+      "geoPoint" : {
+         "latitude" : 47.5574221899339,
+         "longitude" : 7.587778817804122
+      },
+      "name" : "2498_POS",
+      "openingHours" : {
+         "code" : "2498_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2498_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-basel-am-marktplatz/2498_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "companyName" : "Chur City K.",
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "081 257 1486",
+         "formattedAddress" : "Alexanderstrasse 8<br /> 7000 Chur<br /> Schweiz",
+         "id" : "8858284851223",
+         "line1" : "Alexanderstrasse",
+         "line2" : "8",
+         "phone" : "+41 81 257 14 64",
+         "postalCode" : "7000",
+         "shippingAddress" : false,
+         "town" : "Chur",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Chur",
+      "formattedDistance" : "95.2 Km",
+      "geoPoint" : {
+         "latitude" : 46.85269542537942,
+         "longitude" : 9.53161027368737
+      },
+      "name" : "5934_POS",
+      "openingHours" : {
+         "code" : "5934_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "12:00",
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:30",
+               "hour" : 8,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5934_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-chur/5934_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "031 329 7120",
+         "formattedAddress" : "Aarbergergasse 53<br /> 3011 Bern<br /> Schweiz",
+         "id" : "8858545717271",
+         "line1" : "Aarbergergasse",
+         "line2" : "53",
+         "phone" : "+41 31 329 71 11",
+         "postalCode" : "3011",
+         "shippingAddress" : false,
+         "town" : "Bern",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Bern Ryfflihof",
+      "formattedDistance" : "95.9 Km",
+      "geoPoint" : {
+         "latitude" : 46.94955427596502,
+         "longitude" : 7.442035701451193
+      },
+      "name" : "2192_POS",
+      "openingHours" : {
+         "code" : "2192_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "17:00",
+               "hour" : 5,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2192_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-bern-ryfflihof/2192_POS",
+      "stockInfo" : {
+         "stockLevel" : 50,
+         "stockLevelStatus" : "inStock"
+      }
+   } ]
+}

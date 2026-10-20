@@ -12,11 +12,11 @@ const itemSchema = z.object({
   quantity: z.number().int().positive()
     .optional()
     .describe('Number of units needed (default 1). Used for total cost calculation.'),
-  preferredChain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos'])
+  preferredChain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos', 'coopcity'])
     .optional()
     .describe('Prefer this chain for this item when scores are tied. Useful for loyalty card preferences.'),
   preferredProductId: z.object({
-    chain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos'])
+    chain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos', 'coopcity'])
       .describe('Chain the pinned product belongs to.'),
     id: z.string()
       .describe('Exact product ID to use for this line item; bypasses search.'),
@@ -53,9 +53,9 @@ export const planShoppingSchema = z.object({
       address: z.string().describe('Free-text address string — geocoded via OpenStreetMap Nominatim; prefer zip or lat/lng for speed.'),
     }).describe('Free-text address — geocoded via Nominatim; prefer zip or lat/lng for speed'),
   ]).describe('Shopper\'s location — used to find nearby stores. Pass coordinates, ZIP, or address.'),
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos']))
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos', 'coopcity']))
     .optional()
-    .describe('Restrict the plan to these chains. Omit to consider all configured chains.'),
+    .describe('Restrict the plan to these chains. Omit to consider all configured chains. Coop City (coopcity) is opt-in and only included when listed here.'),
   strategy: z.enum(['single_store', 'split_cart', 'absolute_cheapest'])
     .describe([
       'single_store: buy everything at one chain (minimises trips).',

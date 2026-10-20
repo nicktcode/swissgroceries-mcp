@@ -19,6 +19,7 @@ import { LidlAdapter } from './adapters/lidl/index.js';
 import { FarmyAdapter } from './adapters/farmy/index.js';
 import { VolgshopAdapter } from './adapters/volgshop/index.js';
 import { OttosAdapter } from './adapters/ottos/index.js';
+import { CoopCityAdapter } from './adapters/coopcity/index.js';
 
 import { findStoresHandler, findStoresSchema } from './tools/find_stores.js';
 import { searchProductsHandler, searchProductsSchema } from './tools/search_products.js';
@@ -43,6 +44,7 @@ export function buildRegistry(): AdapterRegistry {
   r.register(new FarmyAdapter());
   r.register(new VolgshopAdapter());
   r.register(new OttosAdapter());
+  r.register(new CoopCityAdapter());
   return r;
 }
 
@@ -61,10 +63,12 @@ const TOOLS = [
   {
     name: 'search_products',
     description: [
-      'Search for products across configured Swiss grocery chains (Migros, Coop, Aldi, Denner, Lidl) by keyword.',
+      'Search for products across configured Swiss grocery chains (Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto\'s, Coop City) by keyword.',
+      'The `coop` chain covers the coop.ch supermarket assortment (groceries, household, drugstore) only. The Coop City department-store range (coop-city.ch: cosmetics, fashion, household, electronics) is the separate `coopcity` chain, which is opt-in: include it in `chains` to search it (it is skipped when `chains` is omitted).',
       'Supports optional filters for price, size range, and product tags (organic, vegan, budget, etc.).',
       'Returns results grouped by chain with normalised price, unit price, size, and promotion info.',
       'A `sources` map reports each chain\'s data freshness (fetchedAt timestamp + fromCache flag) so you can tell the user how current the prices are.',
+      'Every queried chain has a key in `byChain`; when a chain fails (e.g. bot protection or an outage) its array is empty and `errors` lists the chain with a code and reason, so check `errors` before telling the user a chain has no results.',
       'Use for "find organic milk under 2 CHF", "compare pasta prices", or "search for gluten-free bread".',
     ].join(' '),
     schema: searchProductsSchema,

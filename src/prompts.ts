@@ -40,7 +40,7 @@ export const PROMPTS: PromptDef[] = [
         'Use the `get_promotions` tool to pull current promotional deals across the configured Swiss grocery chains.',
         chains
           ? `Restrict the query to these chains: ${chains}.`
-          : 'Survey all configured chains (Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto\'s).',
+          : 'Survey all configured chains (Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto\'s, Coop City).',
         category
           ? `Focus on the "${category}" category — pass it as the \`query\` parameter to filter promotions, and ignore unrelated hits.`
           : 'Cover food, drugstore, drinks, and household categories.',

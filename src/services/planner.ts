@@ -37,7 +37,7 @@ function keyOf(item: ShoppingItem): string {
 }
 
 export async function plan(registry: AdapterRegistry, input: PlanInput): Promise<PlanResult> {
-  const adapters = registry.list(input.chains).filter((a) => a.capabilities.productSearch);
+  const adapters = registry.withCapability('productSearch', input.chains);
   const radius = input.radiusKm ?? 5;
   const splitPenalty = input.splitPenaltyChf ?? 2.0;
   const errors: ChainError[] = [];

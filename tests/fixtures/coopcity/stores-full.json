@@ -1,0 +1,4145 @@
+{
+   "boundEastLongitude" : 8.60489716240245,
+   "boundNorthLatitude" : 47.41562841420146,
+   "boundSouthLatitude" : 47.34017158579854,
+   "boundWestLongitude" : 8.47570283759755,
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 20,
+      "totalPages" : 2,
+      "totalResults" : 22
+   },
+   "sourceLatitude" : 47.3779,
+   "sourceLongitude" : 8.5403,
+   "stores" : [ {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 215 7031",
+         "formattedAddress" : "Bahnhofbr&uuml;cke 1<br /> 8001 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798215962647",
+         "line1" : "Bahnhofbrücke",
+         "line2" : "1",
+         "phone" : "+41 44 215 70 30",
+         "postalCode" : "8001",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Bahnhofbrücke",
+      "distanceKm" : 0.19157539582979025,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "0.2 Km",
+      "geoPoint" : {
+         "latitude" : 47.37670896362205,
+         "longitude" : 8.542133179132414
+      },
+      "name" : "1905_POS",
+      "openingHours" : {
+         "code" : "1905_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "06:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "06:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "06:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "06:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "06:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "06:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1905_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-bahnhofbruecke/1905_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 226 9200",
+         "formattedAddress" : "Bahnhofstrasse 57<br /> 8001 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546405399",
+         "line1" : "Bahnhofstrasse",
+         "line2" : "57",
+         "phone" : "+41 44 226 91 00",
+         "postalCode" : "8001",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich St. Annahof",
+      "distanceKm" : 0.5834939879934015,
+      "features" : {
+         "entry" : [ {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "13",
+            "value" : "Restaurant"
+         }, {
+            "key" : "35",
+            "value" : "Ticketverkauf"
+         }, {
+            "key" : "36",
+            "value" : "Vorhangservice"
+         }, {
+            "key" : "27",
+            "value" : "Änderungsatelier"
+         }, {
+            "key" : "28",
+            "value" : "Bettenstudio"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "332",
+            "value" : "CEWE Fotoautomat"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "105",
+            "value" : "Depositenkasse / Change"
+         }, {
+            "key" : "31",
+            "value" : "Kiosk / Blumen"
+         }, {
+            "key" : "32",
+            "value" : "Hausliefer Service"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "0.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.37292704779479,
+         "longitude" : 8.537830828477519
+      },
+      "name" : "2194_POS",
+      "openingHours" : {
+         "code" : "2194_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2194_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-st.-annahof/2194_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "043 268 8705",
+         "formattedAddress" : "Theaterstrasse 18<br /> 8001 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546307095",
+         "line1" : "Theaterstrasse",
+         "line2" : "18",
+         "phone" : "+41 43 268 87 00",
+         "postalCode" : "8001",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich Bellevue",
+      "distanceKm" : 1.2741779260685973,
+      "features" : {
+         "entry" : [ {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "13",
+            "value" : "Restaurant"
+         }, {
+            "key" : "35",
+            "value" : "Ticketverkauf"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "332",
+            "value" : "CEWE Fotoautomat"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "32",
+            "value" : "Hausliefer Service"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "1.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.367136207332514,
+         "longitude" : 8.546092444869897
+      },
+      "name" : "2624_POS",
+      "openingHours" : {
+         "code" : "2624_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2624_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-bellevue/2624_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 245 8051",
+         "formattedAddress" : "Badenerstrasse 244<br /> 8004 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216093719",
+         "line1" : "Badenerstrasse",
+         "line2" : "244",
+         "phone" : "+41 44 245 80 50",
+         "postalCode" : "8004",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Lochergut",
+      "distanceKm" : 1.7692105972702432,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "1.8 Km",
+      "geoPoint" : {
+         "latitude" : 47.37582133962985,
+         "longitude" : 8.517073936421692
+      },
+      "name" : "1409_POS",
+      "openingHours" : {
+         "code" : "1409_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1409_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-lochergut/1409_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 382 90 31",
+         "formattedAddress" : "Forchstrasse 4<br /> 8008 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216060951",
+         "line1" : "Forchstrasse",
+         "line2" : "4",
+         "phone" : "+41 44 382 90 30",
+         "postalCode" : "8008",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Kreuzplatz",
+      "distanceKm" : 1.8681321475748092,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "1.9 Km",
+      "geoPoint" : {
+         "latitude" : 47.36435252177469,
+         "longitude" : 8.554931512793047
+      },
+      "name" : "1512_POS",
+      "openingHours" : {
+         "code" : "1512_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1512_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-kreuzplatz/1512_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 403 5811",
+         "formattedAddress" : "Scheffelstrasse 12<br /> 8037 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216192023",
+         "line1" : "Scheffelstrasse",
+         "line2" : "12",
+         "phone" : "+41 44 403 58 10",
+         "postalCode" : "8037",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Scheffelstrasse",
+      "distanceKm" : 1.9438858051162882,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "143",
+            "value" : "Postagentur"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "1.9 Km",
+      "geoPoint" : {
+         "latitude" : 47.39380189850268,
+         "longitude" : 8.529598454802267
+      },
+      "name" : "1098_POS",
+      "openingHours" : {
+         "code" : "1098_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1098_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-scheffelstrasse/1098_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 454 8011",
+         "formattedAddress" : "Birmensdorferstrasse 200<br /> 8003 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216290327",
+         "line1" : "Birmensdorferstrasse",
+         "line2" : "200",
+         "phone" : "+41 44 454 80 10",
+         "postalCode" : "8003",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Wiedikon",
+      "distanceKm" : 2.0041945789219673,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "1",
+            "value" : "Blumen in Bedienung"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "2 Km",
+      "geoPoint" : {
+         "latitude" : 47.37073160428275,
+         "longitude" : 8.515951373658297
+      },
+      "name" : "1979_POS",
+      "openingHours" : {
+         "code" : "1979_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1979_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-wiedikon/1979_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 213 28 86",
+         "formattedAddress" : "Maschinenstrasse 10<br /> 8005 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798211211287",
+         "line1" : "Maschinenstrasse",
+         "line2" : "10",
+         "phone" : "+41 44 213 28 85",
+         "postalCode" : "8005",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Prime 2",
+      "distanceKm" : 2.0750839395264564,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "2.1 Km",
+      "geoPoint" : {
+         "latitude" : 47.3874466587949,
+         "longitude" : 8.516686850277742
+      },
+      "name" : "5240_POS",
+      "openingHours" : {
+         "code" : "5240_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5240_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-prime-2/5240_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 269 6481",
+         "formattedAddress" : "Seefeldstrasse 123<br /> 8008 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216224791",
+         "line1" : "Seefeldstrasse",
+         "line2" : "123",
+         "phone" : "+41 44 269 64 80",
+         "postalCode" : "8008",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Seefeld",
+      "distanceKm" : 2.4472262464533343,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "2.4 Km",
+      "geoPoint" : {
+         "latitude" : 47.35810529426488,
+         "longitude" : 8.554469685617764
+      },
+      "name" : "2581_POS",
+      "openingHours" : {
+         "code" : "2581_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "10:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "22:00",
+               "hour" : 10,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2581_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-seefeld/2581_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 204 9501",
+         "formattedAddress" : "Kalanderplatz 1<br /> 8045 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216257559",
+         "line1" : "Kalanderplatz",
+         "line2" : "1",
+         "phone" : "+41 44 204 95 00",
+         "postalCode" : "8045",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Sihlcity Supermarkt",
+      "distanceKm" : 2.555090017215932,
+      "features" : {
+         "entry" : [ {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "332",
+            "value" : "CEWE Fotoautomat"
+         }, {
+            "key" : "299",
+            "value" : "Chäs-Hüsli"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         }, {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "143",
+            "value" : "Postagentur"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "1",
+            "value" : "Blumen in Bedienung"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "4",
+            "value" : "Hausbäckerei"
+         }, {
+            "key" : "347",
+            "value" : "Sushi-Insel"
+         }, {
+            "key" : "6",
+            "value" : "Käse in Bedienung"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "8",
+            "value" : "Megastore"
+         } ]
+      },
+      "formattedDistance" : "2.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.358070524339695,
+         "longitude" : 8.523201227835015
+      },
+      "name" : "2848_POS",
+      "openingHours" : {
+         "code" : "2848_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2848_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-sihlcity-supermarkt/2848_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 204 9551",
+         "formattedAddress" : "Kalanderplatz 1<br /> 8045 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546372631",
+         "line1" : "Kalanderplatz",
+         "line2" : "1",
+         "phone" : "+41 44 204 95 50",
+         "postalCode" : "8045",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich Sihlcity",
+      "distanceKm" : 2.555730643168977,
+      "features" : {
+         "entry" : [ {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "35",
+            "value" : "Ticketverkauf"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "332",
+            "value" : "CEWE Fotoautomat"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "2.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.35804304644528,
+         "longitude" : 8.523253619507352
+      },
+      "name" : "2492_POS",
+      "openingHours" : {
+         "code" : "2492_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "11:00",
+               "hour" : 11,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2492_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-sihlcity/2492_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "",
+         "formattedAddress" : "Hofwiesenstrasse 185<br /> 8057 Z&uuml;rich<br /> Schweiz",
+         "id" : "8849272373271",
+         "line1" : "Hofwiesenstrasse",
+         "line2" : "185",
+         "phone" : "+41 44 204 83 20",
+         "postalCode" : "8057",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Guggach",
+      "distanceKm" : 2.677287720551523,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "1",
+            "value" : "Blumen in Bedienung"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "174",
+            "value" : "Parkplätze"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         } ]
+      },
+      "formattedDistance" : "2.7 Km",
+      "geoPoint" : {
+         "latitude" : 47.40163681371816,
+         "longitude" : 8.534329714508884
+      },
+      "name" : "5881_POS",
+      "openingHours" : {
+         "code" : "5881_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/5881_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-guggach/5881_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "043 288 3867",
+         "formattedAddress" : "Wallisellenstrasse 1<br /> 8050 Z&uuml;rich<br /> Schweiz",
+         "id" : "8858546339863",
+         "line1" : "Wallisellenstrasse",
+         "line2" : "1",
+         "phone" : "+41 43 288 38 55",
+         "postalCode" : "8050",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop City Zürich Oerlikon",
+      "distanceKm" : 3.64016885470806,
+      "features" : {
+         "entry" : [ {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "35",
+            "value" : "Ticketverkauf"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         } ]
+      },
+      "formattedDistance" : "3.6 Km",
+      "geoPoint" : {
+         "latitude" : 47.41036213503669,
+         "longitude" : 8.546580700750837
+      },
+      "name" : "2618_POS",
+      "openingHours" : {
+         "code" : "2618_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2618_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-city-zuerich-oerlikon/2618_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 315 3221",
+         "formattedAddress" : "Sophie-Taeuber-Strasse 4<br /> 8050 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798215995415",
+         "line1" : "Sophie-Taeuber-Strasse",
+         "line2" : "4",
+         "phone" : "+41 44 315 32 20",
+         "postalCode" : "8050",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Eleven",
+      "distanceKm" : 3.893691921310554,
+      "features" : {
+         "entry" : [ {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "174",
+            "value" : "Parkplätze"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "299",
+            "value" : "Chäs-Hüsli"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "13",
+            "value" : "Restaurant"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "1",
+            "value" : "Blumen in Bedienung"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "4",
+            "value" : "Hausbäckerei"
+         }, {
+            "key" : "6",
+            "value" : "Käse in Bedienung"
+         }, {
+            "key" : "347",
+            "value" : "Sushi-Insel"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "8",
+            "value" : "Megastore"
+         } ]
+      },
+      "formattedDistance" : "3.9 Km",
+      "geoPoint" : {
+         "latitude" : 47.41292117615125,
+         "longitude" : 8.540472049132116
+      },
+      "name" : "2250_POS",
+      "openingHours" : {
+         "code" : "2250_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2250_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-eleven/2250_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 434 3166",
+         "formattedAddress" : "Badenerstrasse 650<br /> 8048 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798215897111",
+         "line1" : "Badenerstrasse",
+         "line2" : "650",
+         "phone" : "+41 44 434 31 61",
+         "postalCode" : "8048",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Altstetten",
+      "distanceKm" : 4.000854216076437,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "4 Km",
+      "geoPoint" : {
+         "latitude" : 47.3874837529578,
+         "longitude" : 8.489230866855413
+      },
+      "name" : "1907_POS",
+      "openingHours" : {
+         "code" : "1907_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1907_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-altstetten/1907_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 404 2051",
+         "formattedAddress" : "Albisriederstrasse 334<br /> 8047 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798215929879",
+         "line1" : "Albisriederstrasse",
+         "line2" : "334",
+         "phone" : "+41 44 404 20 50",
+         "postalCode" : "8047",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich A-Park",
+      "distanceKm" : 4.02327805506279,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "4 Km",
+      "geoPoint" : {
+         "latitude" : 47.375890513790594,
+         "longitude" : 8.487108407231169
+      },
+      "name" : "3304_POS",
+      "openingHours" : {
+         "code" : "3304_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/3304_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-a-park/3304_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 273 9311",
+         "formattedAddress" : "Wallisellenstrasse 333<br /> 8050 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216126487",
+         "line1" : "Wallisellenstrasse",
+         "line2" : "333",
+         "phone" : "+41 44 273 93 10",
+         "postalCode" : "8050",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Precisa",
+      "distanceKm" : 4.058387128042736,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "297",
+            "value" : "Rollstuhlgerechtes WC"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "1",
+            "value" : "Blumen in Bedienung"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "4.1 Km",
+      "geoPoint" : {
+         "latitude" : 47.41108811334183,
+         "longitude" : 8.562682552819693
+      },
+      "name" : "1909_POS",
+      "openingHours" : {
+         "code" : "1909_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1909_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-precisa/1909_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "043 311 30 71",
+         "formattedAddress" : "Regensdorferstrasse 9<br /> 8049 Z&uuml;rich<br /> Schweiz",
+         "id" : "8846978482199",
+         "line1" : "Regensdorferstrasse",
+         "line2" : "9",
+         "phone" : "+41 43 311 30 70",
+         "postalCode" : "8049",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Hönggermarkt",
+      "distanceKm" : 4.20076252169985,
+      "features" : {
+         "entry" : [ {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "174",
+            "value" : "Parkplätze"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         }, {
+            "key" : "348",
+            "value" : "Coffee to go"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         } ]
+      },
+      "formattedDistance" : "4.2 Km",
+      "geoPoint" : {
+         "latitude" : 47.40269233550396,
+         "longitude" : 8.498314881873537
+      },
+      "name" : "1906_POS",
+      "openingHours" : {
+         "code" : "1906_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "08:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1906_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-hoenggermarkt/1906_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 485 5661",
+         "formattedAddress" : "Alte Kalchb&uuml;hlstrasse 15<br /> 8038 Z&uuml;rich<br /> Schweiz",
+         "id" : "8798216323095",
+         "line1" : "Alte Kalchbühlstrasse",
+         "line2" : "15",
+         "phone" : "+41 44 485 56 66",
+         "postalCode" : "8038",
+         "shippingAddress" : false,
+         "town" : "Zürich",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "Coop Supermarkt Zürich Wollishofen",
+      "distanceKm" : 4.257240795737359,
+      "features" : {
+         "entry" : [ {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "298",
+            "value" : "Bargeldbezug"
+         }, {
+            "key" : "232",
+            "value" : "passabene Payment"
+         }, {
+            "key" : "299",
+            "value" : "Chäs-Hüsli"
+         }, {
+            "key" : "113",
+            "value" : "passabene"
+         }, {
+            "key" : "333",
+            "value" : "CEWE Online-Aufträge"
+         }, {
+            "key" : "317",
+            "value" : "Sammlung von Plastikverpackungen und Getränkekartons"
+         }, {
+            "key" : "10",
+            "value" : "Oecoplan Textilreinigung"
+         }, {
+            "key" : "98",
+            "value" : "Self-Checkout"
+         }, {
+            "key" : "11",
+            "value" : "passabene iOS/Android"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "12",
+            "value" : "Reka-Card laden"
+         }, {
+            "key" : "14",
+            "value" : "Tchibo Shop"
+         }, {
+            "key" : "15",
+            "value" : "Toto / Lotto / Lose"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "1",
+            "value" : "Blumen in Bedienung"
+         }, {
+            "key" : "2",
+            "value" : "Fisch in Bedienung"
+         }, {
+            "key" : "3",
+            "value" : "Fleisch in Bedienung"
+         }, {
+            "key" : "147",
+            "value" : "Slow Food"
+         }, {
+            "key" : "4",
+            "value" : "Hausbäckerei"
+         }, {
+            "key" : "6",
+            "value" : "Käse in Bedienung"
+         }, {
+            "key" : "7",
+            "value" : "Kiosk in Bedienung"
+         } ]
+      },
+      "formattedDistance" : "4.3 Km",
+      "geoPoint" : {
+         "latitude" : 47.34017158579854,
+         "longitude" : 8.530671265327308
+      },
+      "name" : "1910_POS",
+      "openingHours" : {
+         "code" : "1910_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "21:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "07:30",
+               "hour" : 7,
+               "minute" : 30
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/1910_0001.jpg"
+      } ],
+      "url" : "/de/standorte/coop-supermarkt-zuerich-wollishofen/1910_POS?lat=47.3779&long=8.5403"
+   }, {
+      "address" : {
+         "billingAddress" : false,
+         "country" : {
+            "isocode" : "CH",
+            "name" : "Schweiz"
+         },
+         "defaultAddress" : false,
+         "depositGoods" : false,
+         "fax" : "044 206 91 31",
+         "formattedAddress" : "Neugutstrasse 88<br /> 8600 D&uuml;bendorf<br /> Schweiz",
+         "id" : "8798205739031",
+         "line1" : "Neugutstrasse",
+         "line2" : "88",
+         "phone" : "+41 44 206 91 30",
+         "postalCode" : "8600",
+         "shippingAddress" : false,
+         "town" : "Dübendorf",
+         "visibleInAddressBook" : true
+      },
+      "displayName" : "JUMBO Dübendorf",
+      "distanceKm" : 5.526176489214402,
+      "features" : {
+         "entry" : [ {
+            "key" : "22",
+            "value" : "Teichsortiment"
+         }, {
+            "key" : "99",
+            "value" : "CoopMobile"
+         }, {
+            "key" : "77",
+            "value" : "Sortiment Tiernahrung"
+         }, {
+            "key" : "78",
+            "value" : "Rasenmäher Service"
+         }, {
+            "key" : "23",
+            "value" : "Teppichzuschnitt"
+         }, {
+            "key" : "26",
+            "value" : "Handwerkerservice"
+         }, {
+            "key" : "16",
+            "value" : "Sortiment Fahrräder"
+         }, {
+            "key" : "17",
+            "value" : "Farbmischanlage"
+         }, {
+            "key" : "293",
+            "value" : "Rollstuhlgerechte Sitzgelegenheiten"
+         }, {
+            "key" : "294",
+            "value" : "Rollstuhlgerechter Eingang"
+         }, {
+            "key" : "295",
+            "value" : "Rollstuhlgerechter Fahrstuhl"
+         }, {
+            "key" : "174",
+            "value" : "Parkplätze"
+         }, {
+            "key" : "153",
+            "value" : "Pick-up Station"
+         }, {
+            "key" : "296",
+            "value" : "Rollstuhlgerechter Parkplatz"
+         }, {
+            "key" : "122",
+            "value" : "Bezahlen per Smartphone (iOS/Android) mit TWINT"
+         }, {
+            "key" : "20",
+            "value" : "Holzzuschnitt"
+         }, {
+            "key" : "32",
+            "value" : "Hausliefer Service"
+         }, {
+            "key" : "65",
+            "value" : "Reparaturannahme"
+         } ]
+      },
+      "formattedDistance" : "5.5 Km",
+      "geoPoint" : {
+         "latitude" : 47.40126984501195,
+         "longitude" : 8.60489716240245
+      },
+      "name" : "2015_POS",
+      "openingHours" : {
+         "code" : "2015_POS_OpeningSchedule",
+         "specialDayOpeningList" : [ {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-11-28T23:00:00+0000",
+            "formattedDate" : "29.11.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-05T23:00:00+0000",
+            "formattedDate" : "06.12.26"
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "comment" : "Maria Empfängnis",
+            "date" : "2026-12-07T23:00:00+0000",
+            "formattedDate" : "08.12.26"
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "comment" : "Sonntagsverkauf",
+            "date" : "2026-12-12T23:00:00+0000",
+            "formattedDate" : "13.12.26"
+         } ],
+         "weekDayOpeningList" : [ {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mo."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Di."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "19:00",
+               "hour" : 7,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Mi."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Do."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "20:00",
+               "hour" : 8,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Fr."
+         }, {
+            "closingTime" : {
+               "formattedHour" : "18:00",
+               "hour" : 6,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "formattedHour" : "09:00",
+               "hour" : 9,
+               "minute" : 0
+            },
+            "closed" : false,
+            "weekDay" : "Sa."
+         }, {
+            "closingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "openingTime" : {
+               "hour" : 0,
+               "minute" : 0
+            },
+            "closed" : true,
+            "weekDay" : "So."
+         } ]
+      },
+      "storeImages" : [ {
+         "format" : "320x240",
+         "url" : "/cooptradingcommercewebservices/v2https://contentimages.coop.ch/vstbilder/vst-bilder/320x240/2015_0001.jpg"
+      } ],
+      "url" : "/de/standorte/jumbo-duebendorf/2015_POS?lat=47.3779&long=8.5403"
+   } ]
+}

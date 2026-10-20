@@ -1,0 +1,368 @@
+{
+   "availableForPickup" : false,
+   "baseOptions" : [ {
+      "options" : [ {
+         "code" : "3386114",
+         "priceData" : {
+            "currencyIso" : "CHF",
+            "formattedValue" : "1.35",
+            "priceType" : "BUY",
+            "value" : 1.35
+         },
+         "stock" : {
+            "stockLevel" : 18,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/kueche-haushalt/kochen-am-tisch/exotisch-kochen/gemuese-und-fleischsieb/p/3386114",
+         "variantOptionQualifiers" : [ {
+            "name" : "Color",
+            "qualifier" : "CITY_Color",
+            "value" : "Silber"
+         } ]
+      } ],
+      "selected" : {
+         "code" : "3386114",
+         "priceData" : {
+            "currencyIso" : "CHF",
+            "formattedValue" : "1.35",
+            "priceType" : "BUY",
+            "value" : 1.35
+         },
+         "stock" : {
+            "stockLevel" : 18,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/kueche-haushalt/kochen-am-tisch/exotisch-kochen/gemuese-und-fleischsieb/p/3386114",
+         "variantOptionQualifiers" : [ {
+            "name" : "Color",
+            "qualifier" : "CITY_Color",
+            "value" : "Silber"
+         } ]
+      },
+      "variantType" : "GenericVariantProduct"
+   } ],
+   "baseProduct" : "B3386114",
+   "categories" : [ {
+      "code" : "040204",
+      "url" : "/kueche-haushalt/kochen-am-tisch/exotisch-kochen/c/040204"
+   }, {
+      "code" : "CLASSIFICATION_LABEL_z_produkttyp_0151",
+      "url" : "/zprodukttyp0151/c/CLASSIFICATION_LABEL_z_produkttyp_0151"
+   }, {
+      "code" : "BRAND_nouvel",
+      "url" : "/nouvel/c/BRAND_nouvel"
+   }, {
+      "code" : "CITY_Color_C0C0C0",
+      "url" : "/variants/color/silber/c/CITY_Color_C0C0C0"
+   }, {
+      "code" : "040200",
+      "url" : "/kueche-haushalt/kochen-am-tisch/kochen-am-tisch-in-aktion/c/040200"
+   }, {
+      "code" : "0400",
+      "url" : "/kueche-haushalt/kueche-haushalt-aktionen/c/0400"
+   }, {
+      "code" : "LABEL_SPECIAL_OFFERS",
+      "url" : "//c/LABEL_SPECIAL_OFFERS"
+   } ],
+   "classifications" : [ {
+      "code" : "01015301070402",
+      "features" : [ {
+         "code" : "zbh_eigenschafte",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Spülmaschinenfest."
+         } ],
+         "range" : false
+      }, {
+         "code" : "z_herstellerfarbe",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Silber"
+         } ],
+         "name" : "Herstellerfarbe",
+         "range" : false
+      }, {
+         "code" : "zt_farbcode",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "C0C0C0"
+         } ],
+         "name" : "Farbe HEX",
+         "range" : false
+      }, {
+         "code" : "zbh_herstellungsland",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "China"
+         } ],
+         "name" : "Herstellungsland",
+         "range" : false
+      }, {
+         "code" : "zbh_farbe",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Silber"
+         } ],
+         "name" : "Farbe",
+         "range" : false
+      }, {
+         "code" : "w219",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "2 Jahre"
+         } ],
+         "name" : "Garantie",
+         "range" : false
+      }, {
+         "code" : "zbh_hauptmaterial",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Metall"
+         } ],
+         "name" : "Hauptmaterial",
+         "range" : false
+      }, {
+         "code" : "zbh_versandrestrikt",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "nur VST-Bestand abverkaufbar"
+         } ],
+         "name" : "Versandrestriktionen",
+         "range" : false
+      }, {
+         "code" : "zbh_inhalt_in_stueck",
+         "comparable" : true,
+         "featureUnit" : {
+            "name" : "Stück",
+            "symbol" : "\"ST\"",
+            "unitType" : "SAP-AAAADL"
+         },
+         "featureValues" : [ {
+            "value" : "1"
+         } ],
+         "name" : "Inhalt in Stück",
+         "range" : false
+      }, {
+         "code" : "z_farbgruppe",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Silber"
+         } ],
+         "name" : "Farbgruppe",
+         "range" : false
+      }, {
+         "code" : "z_materialeigenschaften",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Spülmaschinenfest"
+         } ],
+         "name" : "Materialeigenschaften",
+         "range" : false
+      }, {
+         "code" : "nf0408",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Inox"
+         } ],
+         "name" : "Hauptmaterial",
+         "range" : false
+      }, {
+         "code" : "z_produkttyp",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Besteck"
+         } ],
+         "name" : "Produkttyp",
+         "range" : false
+      } ]
+   } ],
+   "code" : "3386114",
+   "description" : "Das Gemüse- und Fleischsieb ermöglicht eine einfache und effiziente Reinigung sowie das Abtropfen von Zutaten und überzeugt durch seine robuste Bauweise.",
+   "images" : [ {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-LG-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDExODV8aW1hZ2UvanBlZ3xhRGhrTDJnNE5pOHlPREUyT0RVM09URTFNemsxTUM4ek16ZzJNVEUwWHpBd01TNXFjR2N8NWEwOGFkNzI0ZTY1ZWY4NDY5ZDg1YTUwOTcxMjIzNjY4YzIwZTM1MmE2NjJjZTgwMWJjNWJhMDFlZjBjNWY3YQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "tile-SM-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDIxMzh8aW1hZ2UvanBlZ3xhR000TDJoa09DOHlPREUyT0RVM09EZ3lOakkzTUM4ek16ZzJNVEUwWHpBd01TNXFjR2N8NjZlNzI2Y2RlYmE5YzZhYzQyNmRjMmIyMjRlNWNjODM5NzI2NzNkNTc5NGQ5MGYzNGJkNWIxNzIyMWRiZTBjZQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "productImage-thumbnails-XS-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDcyMXxpbWFnZS9qcGVnfGFHSm1MMmczWXk4eU9ERTJPRFUzT1RReE5qQTVOQzh6TXpnMk1URTBYekF3TVM1cWNHY3wxNGFhNjg0NjYzZjRmMWFhNzQzY2EyN2NhOGIyNWUyODJlYTU4MjgyOWNiODllOGExYjAxOGNmMTkyNmU4Njlj"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-LG2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDI1ODd8aW1hZ2UvanBlZ3xhRFJqTDJnNFlTOHlPREUyT0RVM09UQXlNamczT0M4ek16ZzJNVEUwWHpBd01TNXFjR2N8ZDIyNzhkNjljMTE2N2E3MzgxODBmN2FiYjhmNTMyNzU4YzJhZWQ0NzI5MTcxZmNmZDI4MmQ5MmJlNjhkOGUxOQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "productImage-zoom-SM2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDQ0MDYyfGltYWdlL2pwZWd8YUdRM0wyaGtaUzh5T0RFMk9EVTNPRFk1TlRFNU9DOHpNemcyTVRFMFh6QXdNUzVxY0djfDg1OGIxYWEyOGM3NjFkYTQ1NTM0OWZmMTRlNjgyYjEzNTZlMjg1ZWE3NjVjNTU5ODM3NDQ3MzczNDUzOTZkZDk"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "tile-SM2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDU0ODd8aW1hZ2UvanBlZ3xhRGsyTDJobE1pOHlPREUyT0RVM09EVTJOREV5Tmk4ek16ZzJNVEUwWHpBd01TNXFjR2N8NTIzZTcyZjJjMmZkMmVkOGI0NDY3Mjc4NzkxNTNjY2M1OWQwYmU2ZGIxMjhmNDYxZDRiZDk5OTYxM2UxOTAzNA"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "productImage-thumbnails-XS2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDExMjZ8aW1hZ2UvanBlZ3xhR0prTDJnM1ppOHlPREUyT0RVM09UTTFNRFUxT0M4ek16ZzJNVEUwWHpBd01TNXFjR2N8YmMwZTRiNjgwZjlmNmM3NTUwZWEyMjJlZjAyZDBhNjUxYTVjY2U4NTJmOTE5ZTI0ZTNlYzM1YTE1MzAxNTcwMA"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-XS-MD",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDgxMXxpbWFnZS9qcGVnfGFHVm1MMmczTlM4eU9ERTJPRFUzT1RZeE1qY3dNaTh6TXpnMk1URTBYekF3TVM1cWNHY3xmNmI2MDM4YmYwODQ1YmZhMmIzMDZjNDU0MmVhNmNhZGU4NDk3MWQxMGEwMDI0NmM4NjY3MzJjMzdiYzg1OTY1"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "miniBasket-XS-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDk3MnxpbWFnZS9qcGVnfGFEUXdMMmczTlM4eU9ERTJPRFUzT1RZM09ESXpPQzh6TXpnMk1URTBYekF3TVM1cWNHY3w3ZmMxMzJiNDkwZWUxMWMzOGMxMDIxOGQwODgzZTBjZjg0YjIyYjUwZDAxZDU1ZjJlZDgyNjJmMDBlNjZjOWM5"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-XS2x-MD2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE0MzR8aW1hZ2UvanBlZ3xhR1psTDJnM1lpOHlPREUyT0RVM09UUTRNVFl6TUM4ek16ZzJNVEUwWHpBd01TNXFjR2N8MWI3MzE3NDE5MmRkNDE5NWY1ZTk0YjM1NGIyMzM5YmQ1MmQxODQ5ZWI1MTA4YTNkZWMyNTcxODk4ZTE1NTM2YQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "miniBasket-XS2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE3NzZ8aW1hZ2UvanBlZ3xhR1ptTDJnM09DOHlPREUyT0RVM09UVTBOekUyTmk4ek16ZzJNVEUwWHpBd01TNXFjR2N8NmViYmYxMWQ2Mzc2Y2UzYzViYWFjN2E4ZjJmOTAzNWQ0MTAzOWM1OTZkNjU0MTc1OTJkNGFjZDViMTRhY2I0OQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "compareList-XS-MD",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDMyMzh8aW1hZ2UvanBlZ3xhRE14TDJnMlppOHlPREUyT0RVM09UZ3dPVE14TUM4ek16ZzJNVEUwWHpBd01TNXFjR2N8ZDFiNjYxZjI0ODc1ZTJhMjVmYmIxYzU5NzdmZjY5NmUxZmUzODk1YjljOTdkYzBhYTcwZGU1OGFjOWZhYjI2MA"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "compareList-XS2x-MD2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDgzOTZ8aW1hZ2UvanBlZ3xhREptTDJnM01pOHlPREUyT0RVM09UYzBNemMzTkM4ek16ZzJNVEUwWHpBd01TNXFjR2N8YzAxZWEyYWFkZjY4ZTIxMzU3MTQ2ZTJlZTU3NDFiMmY4ZDJiY2JmMGIwMjQ0MDEzN2RlY2ZkODM4MzZmZmJlNQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-LG2x-XL2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDE2MjZ8aW1hZ2Uvd2VicHxhRGN3TDJnMlpTOHlPREUyT0RVM09UZzNORGcwTmk4ek16ZzJNVEUwWHpBd01TNTNaV0p3fGI3NTk1NTc4YjAzN2RlMmNiMTYxMDliMjEzNmRiODc4NmU1ODQ1MGJlOTM5NDEzZmU4ZTQ4MzZhM2Y0YWQ4OGU"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "tile-SM-XL_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDEyNjR8aW1hZ2Uvd2VicHxhREJtTDJnNFpDOHlPREUyT0RVNE1EQXdOVGt4T0M4ek16ZzJNVEUwWHpBd01TNTNaV0p3fDAxYzUyZjAwNjExNDBhYTJkMmU2OWNlMDY3ZTdjMWNkYTBjMjI3ZmFjMDAxMDE2OTM4MWYzZDI2N2RiZWU5ZTk"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "tile-SM2x-XL2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDM3NjB8aW1hZ2Uvd2VicHxhRFZtTDJnMllpOHlPREUyT0RVM09UazBNRE00TWk4ek16ZzJNVEUwWHpBd01TNTNaV0p3fGUzMjM0YmRlOTZkODc1ZTcyNWJhZjFlMzQ0YTU5MGNkZjJhYjhiMDQyZjZiMTQ5ODZkZTlkZTJiMWYyOTk5MWI"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-LG-XL_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDUyNnxpbWFnZS93ZWJwfGFHUXhMMmc0WkM4eU9ERTJPRFU0TURBM01UUTFOQzh6TXpnMk1URTBYekF3TVM1M1pXSnd8ODE5MDAzZTVkMTA1YmRkYjNiMDk3YzlhOTY0MDYzNzVkMjE4ZDlhOTg4M2M3OTI1M2E3MDcwMGQ5N2E4OTAzMw"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "productImage-zoom-SM2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDIwMTgyfGltYWdlL3dlYnB8YURWbEwyZzVZaTh5T0RFMk9EVTRNRFEyTkRZM01DOHpNemcyTVRFMFh6QXdNUzUzWldKd3wzYWY5OWIwN2Q1Njk3NmRlZWJjYjU2NTIwMjZhMWZlOGVlMzkyNThkOWMyMjQ2ZjVmMWI4OGQ5ZGMxNjUwOGY4"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "productImage-thumbnails-XS-XL_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDE3MnxpbWFnZS93ZWJwfGFESmxMMmhoTWk4eU9ERTJPRFU0TURZMk1USTNPQzh6TXpnMk1URTBYekF3TVM1M1pXSnd8NWMyNTc2MjRiNmI3YTE0MWQzMmI0ZjllNGFiNmU0MWMyZTkzMDFiOTJhZjE0ZWNlYTI4MGRjODQ2Y2FlMDg3MQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "productImage-thumbnails-XS2x-XL2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDQ0OHxpbWFnZS93ZWJwfGFESmpMMmhoTlM4eU9ERTJPRFU0TURjeU5qZ3hOQzh6TXpnMk1URTBYekF3TVM1M1pXSnd8YzI4ODg4ZTU5N2ZmMjA1YTgxYTMxM2IwZjYxOWEzOTlmY2YyOTE1YmM0Y2NiYzA1MzE4MWE1MDMzYzE4YWQyOA"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-XS-MD_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDIxMHxpbWFnZS93ZWJwfGFHVmlMMmhoT0M4eU9ERTJPRFU0TURnMU56ZzROaTh6TXpnMk1URTBYekF3TVM1M1pXSnd8YzAxMjgyODBiOGM0YWY4YjhhZWU3OGViODNkMDRlMDdiNWJkMTEzYzM1NjU3NTE2ZWQwYTJmYzYzMTllYzI3Mw"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "basket-XS2x-MD2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDczNHxpbWFnZS93ZWJwfGFHWmtMMmhoWWk4eU9ERTJPRFU0TURreU16UXlNaTh6TXpnMk1URTBYekF3TVM1M1pXSnd8NTZjNGQwYWM2NDQzMjhlNjU3NmUzNWE0MjVhZmM1NzVkNzI2NDQzMmNiMTk2MDkzOWM1OTU0ZWJkYmI2YjFjOQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "miniBasket-XS-XL_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDMyNnxpbWFnZS93ZWJwfGFHRmlMMmhoWXk4eU9ERTJPRFU0TURrNE9EazFPQzh6TXpnMk1URTBYekF3TVM1M1pXSnd8MjU0ODJjMmU2NTMzYTllNzVmYzFkMmFlNmFmM2UyNzliNWJjODUzYmVjYjFiY2QzODFkMjE3YmE5YzNlZWU4OQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "miniBasket-XS2x-XL2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDk5OHxpbWFnZS93ZWJwfGFEWTNMMmhtTnk4eU9ERTJPRFU0TVRBMU5EUTVOQzh6TXpnMk1URTBYekF3TVM1M1pXSnd8YjZhOWE2NGMxODUxOTdmZDUyMjA2OTMxZWJmNDI0NjE4ZmMzZTAzODFhZjlmNmUwZTdiMmFkMDhlNWUzYjg0OQ"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "compareList-XS-MD_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDIwNDh8aW1hZ2Uvd2VicHxhRGM1TDJobVlTOHlPREUyT0RVNE1URXlNREF6TUM4ek16ZzJNVEUwWHpBd01TNTNaV0p3fDEzYzUwNmRhMmJlMTczOTIzZTZlYWFmZjhlOGJjMDM2NDdiMjk3NmM3Y2VkOTJiYWY5MTkyYTQzNDQ0YTMxYmI"
+   }, {
+      "altText" : "Gemüse- und Fleischsieb",
+      "format" : "compareList-XS2x-MD2x_WebP",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDU2MDR8aW1hZ2Uvd2VicHxhREkzTDJobVlpOHlPREUyT0RVNE1URTROVFUyTmk4ek16ZzJNVEUwWHpBd01TNTNaV0p3fGU4Mjc4MTc3ZmZhMjllN2Y5NTU4YmU2YTBjN2RmZGM3M2Q4NGFhOWQyMmY5MzUwNjcwYjU2MWNjZGNjNmZlNmE"
+   } ],
+   "name" : "Gemüse- und Fleischsieb",
+   "numberOfReviews" : 0,
+   "price" : {
+      "currencyIso" : "CHF",
+      "formattedValue" : "1.35",
+      "priceType" : "BUY",
+      "value" : 1.35
+   },
+   "priceRange" : {
+      "maxPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.35",
+         "value" : 1.35
+      },
+      "minPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.35",
+         "value" : 1.35
+      }
+   },
+   "productReferences" : [ ],
+   "purchasable" : true,
+   "reviews" : [ ],
+   "stock" : {
+      "stockLevel" : 18,
+      "stockLevelStatus" : "inStock"
+   },
+   "summary" : "",
+   "url" : "/kueche-haushalt/kochen-am-tisch/exotisch-kochen/gemuese-und-fleischsieb/p/3386114",
+   "volumePrices" : [ ]
+}

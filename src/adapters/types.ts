@@ -1,4 +1,4 @@
-export type Chain = 'migros' | 'coop' | 'aldi' | 'denner' | 'lidl' | 'farmy' | 'volgshop' | 'ottos';
+export type Chain = 'migros' | 'coop' | 'aldi' | 'denner' | 'lidl' | 'farmy' | 'volgshop' | 'ottos' | 'coopcity';
 
 export type Unit = 'g' | 'kg' | 'ml' | 'l' | 'piece';
 
@@ -222,6 +222,12 @@ export interface AdapterCapabilities {
 export interface StoreAdapter {
   readonly chain: Chain;
   readonly capabilities: AdapterCapabilities;
+  /**
+   * Opt-in chains are skipped by tools when the caller doesn't name chains
+   * explicitly (e.g. Coop City, whose non-food catalogue would add noise to
+   * every grocery query). They're still listed and health-checked.
+   */
+  readonly optIn?: boolean;
 
   searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>>;
   getProduct(id: string): Promise<AdapterResult<NormalizedProduct | null>>;

@@ -19,7 +19,8 @@ export class AdapterRegistry {
     return filter ? all.filter((a) => filter.includes(a.chain)) : all;
   }
 
+  /** Adapters with `cap`. Without an explicit filter, opt-in adapters are left out. */
   withCapability(cap: keyof AdapterCapabilities, filter?: Chain[]): StoreAdapter[] {
-    return this.list(filter).filter((a) => a.capabilities[cap]);
+    return this.list(filter).filter((a) => a.capabilities[cap] && (filter || !a.optIn));
   }
 }

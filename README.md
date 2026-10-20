@@ -15,7 +15,7 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
-Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, and Otto's, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
+Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto's, and Coop City, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
 
 > **Disclaimer**
 >
@@ -123,13 +123,14 @@ Prompts are surfaced as one-click templates in MCP-aware clients (Claude Desktop
 | Chain | Product search | Promotions | Per-store stock | Nutrition | Auth |
 |---|---|---|---|---|---|
 | Migros | Full catalog | Yes | Yes | Yes (product detail) | Guest token (auto, rotated on expiry) |
-| Coop | Full catalog (coopathome) | Yes | Yes (geo) | Yes (product detail) | None |
+| Coop | coop.ch catalog (coopathome) | Yes | Yes (geo) | Yes (product detail) | None |
 | Aldi | Full catalog | Yes | No | No (API exposes only allergen claims) | None |
 | Denner | Full catalog | Yes | No | No | Anonymous self-auth (signup + signin, rotated) |
 | Lidl | Weekly leaflet only | Yes | No | No (`energeticInformation` field exists but is empty in practice) | None |
 | Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | No | None |
 | Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | Yes (parsed from free-text attribute, basis assumed 100g) | None |
 | Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | No | None |
+| Coop City | Department-store catalog (coop-city.ch: cosmetics, household, fashion, electronics). Opt-in: only queried when `chains` includes `coopcity` | Yes (`hasDiscount` facet, current price only, no was-price or end date) | Yes (per-store stockLevel, capped at 50) | No | None |
 
 `NormalizedProduct.nutrition` is normalized to a per-100g (or per-100ml) basis with the standard Swiss labelling fields — `energyKj`, `energyKcal`, `fat`, `saturatedFat`, `carbs`, `sugar`, `fiber`, `protein`, `salt` — so consumers can sort across chains ("highest protein per 100g lasagne") even though each upstream API exposes the data on a different surface and in a different shape. Missing or unparseable fields are left `undefined`; adapters never fabricate values.
 

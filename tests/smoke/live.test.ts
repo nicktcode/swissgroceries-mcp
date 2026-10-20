@@ -79,6 +79,24 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expectChainProducts(out, 'ottos', ctx);
   }, 30000);
 
+  itLive('Coop City search, stores and per-store stock work near Zürich HB', async (ctx) => {
+    const r = buildRegistry();
+    const out = await searchProductsHandler(r, { query: 'shampoo', chains: ['coopcity'], limit: 5 });
+    expectChainProducts(out, 'coopcity', ctx);
+    const adapter = r.get('coopcity')!;
+    const stores = await adapter.searchStores({ near: { lat: 47.3779, lng: 8.5403 }, radiusKm: 5 });
+    expect(stores.ok).toBe(true);
+    if (!stores.ok) return;
+    expect(stores.data.length).toBeGreaterThan(0);
+    const id = out.byChain.coopcity?.[0]?.id;
+    if (!id) return;
+    const stock = await adapter.findStoresWithStock!(id, { lat: 47.3779, lng: 8.5403 });
+    expect(stock.ok).toBe(true);
+    if (!stock.ok) return;
+    expect(stock.data.length).toBeGreaterThan(0);
+    expect(stock.data.every((x) => x.store.chain === 'coopcity' && typeof x.inStock === 'boolean')).toBe(true);
+  }, 30000);
+
   itLive('Ottos store + per-store stock query works near Wettingen', async (ctx) => {
     const { OttosAdapter } = await import('../../src/adapters/ottos/index.js');
     const adapter = new OttosAdapter();

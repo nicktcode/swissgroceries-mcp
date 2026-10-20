@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.nicktcode/swissgroceries-mcp",
-  "description": "Swiss grocery search across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto's.",
+  "description": "Swiss grocery search across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto's, Coop City.",
   "repository": {
     "url": "https://github.com/nicktcode/swissgroceries-mcp",
     "source": "github"

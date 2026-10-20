@@ -1,0 +1,3825 @@
+{
+   "type" : "productCategorySearchPageWsDTO",
+   "breadcrumbs" : [ {
+      "facetCode" : "hasDiscount",
+      "facetName" : "hasDiscount",
+      "facetValueCode" : "true",
+      "facetValueName" : "true",
+      "removeQuery" : {
+         "query" : {
+            "value" : ":cheapest"
+         },
+         "url" : "/search?q=%3Acheapest"
+      }
+   } ],
+   "currentQuery" : {
+      "query" : {
+         "value" : ":cheapest:hasDiscount:true"
+      },
+      "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue"
+   },
+   "facets" : [ {
+      "category" : false,
+      "multiSelect" : false,
+      "name" : "hasDiscount",
+      "priority" : 2147483641,
+      "values" : [ {
+         "count" : 0,
+         "name" : "false",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:hasDiscount:false"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3AhasDiscount%3Afalse"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : false,
+      "multiSelect" : false,
+      "name" : "inStockFlag",
+      "priority" : 2147483642,
+      "values" : [ {
+         "count" : 822,
+         "name" : "true",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:inStockFlag:true"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3AinStockFlag%3Atrue"
+         },
+         "selected" : false
+      }, {
+         "count" : 508,
+         "name" : "false",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:inStockFlag:false"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3AinStockFlag%3Afalse"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : true,
+      "multiSelect" : true,
+      "name" : "Kategorie",
+      "priority" : 2147483643,
+      "topValues" : [ {
+         "count" : 1285,
+         "name" : "Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:10"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A10"
+         },
+         "selected" : false
+      }, {
+         "count" : 577,
+         "name" : "Spielzeug",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:03"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A03"
+         },
+         "selected" : false
+      }, {
+         "count" : 577,
+         "name" : "Spielwaren Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0300"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0300"
+         },
+         "selected" : false
+      }, {
+         "count" : 452,
+         "name" : "Konstruktionsspielzeug",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0304"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0304"
+         },
+         "selected" : false
+      }, {
+         "count" : 452,
+         "name" : "Konstruktionsspielzeug in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030400"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030400"
+         },
+         "selected" : false
+      } ],
+      "values" : [ {
+         "count" : 1285,
+         "name" : "Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:10"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A10"
+         },
+         "selected" : false
+      }, {
+         "count" : 26,
+         "name" : "Artikel zur Kaffee- & Teezubereitung in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:040500"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A040500"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Baby- & Kleinkinderspielzeug",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0306"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0306"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Baby- & Kleinkinderspielzeug in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030600"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030600"
+         },
+         "selected" : false
+      }, {
+         "count" : 298,
+         "name" : "Bekleidung",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:08"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A08"
+         },
+         "selected" : false
+      }, {
+         "count" : 188,
+         "name" : "Damen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0801"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0801"
+         },
+         "selected" : false
+      }, {
+         "count" : 188,
+         "name" : "Damenbekleidung in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:080100"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A080100"
+         },
+         "selected" : false
+      }, {
+         "count" : 22,
+         "name" : "Gestalten, Experimentieren & Musikinstrumente",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0305"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0305"
+         },
+         "selected" : false
+      }, {
+         "count" : 28,
+         "name" : "Haushaltsgeräte & -waren",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0407"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0407"
+         },
+         "selected" : false
+      }, {
+         "count" : 28,
+         "name" : "Haushaltsgeräte & -waren in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:040700"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A040700"
+         },
+         "selected" : false
+      }, {
+         "count" : 82,
+         "name" : "Herren",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0802"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0802"
+         },
+         "selected" : false
+      }, {
+         "count" : 82,
+         "name" : "Herrenbekleidung in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:080200"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A080200"
+         },
+         "selected" : false
+      }, {
+         "count" : 26,
+         "name" : "Kaffee & Tee",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0405"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0405"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Kerzen & Raumdüfte",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0505"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0505"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "Kochen, Braten & Backen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0401"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0401"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "Kochen, Braten & Backen in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:040100"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A040100"
+         },
+         "selected" : false
+      }, {
+         "count" : 118,
+         "name" : "Kochen am Tisch",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0402"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0402"
+         },
+         "selected" : false
+      }, {
+         "count" : 118,
+         "name" : "Kochen am Tisch in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:040200"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A040200"
+         },
+         "selected" : false
+      }, {
+         "count" : 202,
+         "name" : "Koffer & Taschen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0506"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0506"
+         },
+         "selected" : false
+      }, {
+         "count" : 202,
+         "name" : "Koffer & Taschen in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:050600"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A050600"
+         },
+         "selected" : false
+      }, {
+         "count" : 452,
+         "name" : "Konstruktionsspielzeug",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0304"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0304"
+         },
+         "selected" : false
+      }, {
+         "count" : 452,
+         "name" : "Konstruktionsspielzeug in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030400"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030400"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Kosmetik & Gesundheit",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:01"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A01"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Kosmetik & Gesundheit Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0100"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0100"
+         },
+         "selected" : false
+      }, {
+         "count" : 228,
+         "name" : "Küche & Haushalt",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:04"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A04"
+         },
+         "selected" : false
+      }, {
+         "count" : 228,
+         "name" : "Küche & Haushalt Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0400"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0400"
+         },
+         "selected" : false
+      }, {
+         "count" : 37,
+         "name" : "Küchengeräte",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0408"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0408"
+         },
+         "selected" : false
+      }, {
+         "count" : 37,
+         "name" : "Küchengeräte in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:040800"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A040800"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Küchenzubehör",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0403"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0403"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Küchenzubehör in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:040300"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A040300"
+         },
+         "selected" : false
+      }, {
+         "count" : 14,
+         "name" : "Multimedia",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0508"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0508"
+         },
+         "selected" : false
+      }, {
+         "count" : 13,
+         "name" : "Multimedia",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0307"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0307"
+         },
+         "selected" : false
+      }, {
+         "count" : 13,
+         "name" : "Multimedia in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030700"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030700"
+         },
+         "selected" : false
+      }, {
+         "count" : 94,
+         "name" : "Outdoor, Wasser & Kleinspielzeug",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0308"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0308"
+         },
+         "selected" : false
+      }, {
+         "count" : 94,
+         "name" : "Outdoor, Wasser & Kleinspielzeug in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030800"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030800"
+         },
+         "selected" : false
+      }, {
+         "count" : 13,
+         "name" : "Puppen, Rollenspiele & Plüsch",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0302"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0302"
+         },
+         "selected" : false
+      }, {
+         "count" : 13,
+         "name" : "Puppen, Rollenspiele & Plüsch in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030200"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030200"
+         },
+         "selected" : false
+      }, {
+         "count" : 25,
+         "name" : "Schmuck & Uhren",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0805"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0805"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Spiele & Puzzle",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0301"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0301"
+         },
+         "selected" : false
+      }, {
+         "count" : 11,
+         "name" : "Spielfiguren & Spielfahrzeuge",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0303"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0303"
+         },
+         "selected" : false
+      }, {
+         "count" : 11,
+         "name" : "Spielfiguren & Spielfahrzeuge in Aktion",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:030300"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A030300"
+         },
+         "selected" : false
+      }, {
+         "count" : 577,
+         "name" : "Spielwaren Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0300"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0300"
+         },
+         "selected" : false
+      }, {
+         "count" : 577,
+         "name" : "Spielzeug",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:03"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A03"
+         },
+         "selected" : false
+      }, {
+         "count" : 222,
+         "name" : "Wohnen & Reisen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:05"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A05"
+         },
+         "selected" : false
+      }, {
+         "count" : 222,
+         "name" : "Wohnen & Reisen Aktionen",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:category:0500"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Acategory%3A0500"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : false,
+      "multiSelect" : true,
+      "name" : "Preis",
+      "priority" : 2147483646,
+      "values" : [ {
+         "count" : 1,
+         "name" : "1.35",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:1.35"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A1.35"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "1.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:1.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A1.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "1.8",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:1.8"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A1.8"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "1.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:1.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A1.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "10.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:10.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A10.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "102.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:102.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A102.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 30,
+         "name" : "104.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:104.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A104.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "11.15",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:11.15"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A11.15"
+         },
+         "selected" : false
+      }, {
+         "count" : 15,
+         "name" : "11.85",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:11.85"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A11.85"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "11.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:11.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A11.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "111.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:111.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A111.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 37,
+         "name" : "118.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:118.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A118.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "119.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:119.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A119.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "119.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:119.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A119.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "12.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:12.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A12.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "12.55",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:12.55"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A12.55"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "12.75",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:12.75"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A12.75"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "123.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:123.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A123.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 21,
+         "name" : "125.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:125.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A125.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "126.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:126.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A126.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "129.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:129.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A129.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "1299.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:1299.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A1299.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "13.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:13.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A13.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "13.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:13.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A13.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 21,
+         "name" : "132.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:132.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A132.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "133.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:133.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A133.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "139.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:139.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A139.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "139.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:139.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A139.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "14.35",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:14.35"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A14.35"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "14.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:14.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A14.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "140.7",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:140.7"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A140.7"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "146.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:146.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A146.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "147.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:147.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A147.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "149.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:149.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A149.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "15.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:15.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A15.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "157.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:157.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A157.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "159.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:159.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A159.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 29,
+         "name" : "16.05",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:16.05"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A16.05"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "160.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:160.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A160.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "164.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:164.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A164.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "169.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:169.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A169.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 19,
+         "name" : "17.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:17.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A17.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "17.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:17.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A17.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "17.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:17.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A17.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "171.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:171.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A171.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "174.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:174.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A174.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "178.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:178.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A178.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "179.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:179.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A179.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "18.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:18.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A18.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "185.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:185.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A185.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "189.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:189.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A189.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "19.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:19.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A19.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "19.55",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:19.55"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A19.55"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "19.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:19.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A19.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 11,
+         "name" : "19.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:19.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A19.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "192.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:192.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A192.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "199.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:199.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A199.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "2.05",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.05"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.05"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "2.25",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.25"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.25"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "2.35",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.35"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.35"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "2.4",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.4"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.4"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "2.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "2.7",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.7"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.7"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "2.75",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.75"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.75"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "2.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:2.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A2.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "20.25",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:20.25"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A20.25"
+         },
+         "selected" : false
+      }, {
+         "count" : 31,
+         "name" : "20.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:20.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A20.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "202.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:202.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A202.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "206.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:206.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A206.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "209.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:209.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A209.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "213.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:213.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A213.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "22.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:22.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A22.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "229.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:229.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A229.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "23.05",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:23.05"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A23.05"
+         },
+         "selected" : false
+      }, {
+         "count" : 16,
+         "name" : "230.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:230.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A230.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "231.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:231.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A231.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 32,
+         "name" : "24.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:24.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A24.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "24.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:24.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A24.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "244.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:244.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A244.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "25.85",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:25.85"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A25.85"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "251.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:251.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A251.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "265.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:265.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A265.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "27.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:27.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A27.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "27.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:27.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A27.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "279.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:279.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A279.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "28.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:28.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A28.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "29.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:29.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A29.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "290.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:290.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A290.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "293.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:293.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A293.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "299.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:299.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A299.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "3.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:3.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A3.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "3.85",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:3.85"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A3.85"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "3.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:3.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A3.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "30.05",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:30.05"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A30.05"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "307.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:307.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A307.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 24,
+         "name" : "31.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:31.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A31.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "311.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:311.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A311.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "33.55",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:33.55"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A33.55"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "332.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:332.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A332.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "34.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:34.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A34.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 26,
+         "name" : "34.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:34.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A34.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "349.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:349.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A349.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "357.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:357.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A357.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "37.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:37.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A37.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 18,
+         "name" : "38.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:38.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A38.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "39.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:39.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A39.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "4.15",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:4.15"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A4.15"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "4.55",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:4.55"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A4.55"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "4.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:4.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A4.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 25,
+         "name" : "41.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:41.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A41.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "44.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:44.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A44.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "44.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:44.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A44.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "449.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:449.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A449.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "45.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:45.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A45.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 50,
+         "name" : "48.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:48.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A48.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "49.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:49.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A49.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "5.55",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:5.55"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A5.55"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "52.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:52.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A52.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "54.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:54.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A54.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 39,
+         "name" : "55.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:55.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A55.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "59.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:59.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A59.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "59.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:59.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A59.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 109,
+         "name" : "59.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:59.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A59.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "599.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:599.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A599.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "6.25",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:6.25"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A6.25"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "6.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:6.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A6.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 23,
+         "name" : "6.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:6.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A6.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 35,
+         "name" : "62.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:62.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A62.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 53,
+         "name" : "69.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:69.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A69.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 34,
+         "name" : "69.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:69.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A69.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "7.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:7.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A7.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "7.65",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:7.65"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A7.65"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "7.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:7.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A7.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "729.0",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:729.0"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A729.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 30,
+         "name" : "76.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:76.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A76.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "76.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:76.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A76.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "79.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:79.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A79.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "8.35",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:8.35"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A8.35"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "8.45",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:8.45"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A8.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "8.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:8.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A8.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 34,
+         "name" : "83.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:83.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A83.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "89.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:89.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A89.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "89.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:89.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A89.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "9.05",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:9.05"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A9.05"
+         },
+         "selected" : false
+      }, {
+         "count" : 24,
+         "name" : "9.95",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:9.95"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A9.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 22,
+         "name" : "90.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:90.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A90.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "94.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:94.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A94.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 18,
+         "name" : "97.3",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:97.3"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A97.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "99.5",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:99.5"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A99.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "99.9",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:price:99.9"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Aprice%3A99.9"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : true,
+      "multiSelect" : true,
+      "name" : "Marke",
+      "priority" : 2147483647,
+      "topValues" : [ {
+         "count" : 104,
+         "name" : "Triumph",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_triumph"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_triumph"
+         },
+         "selected" : false
+      }, {
+         "count" : 76,
+         "name" : "Samsonite",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_samsonite"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_samsonite"
+         },
+         "selected" : false
+      }, {
+         "count" : 69,
+         "name" : "Nouvel",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_nouvel"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_nouvel"
+         },
+         "selected" : false
+      }, {
+         "count" : 52,
+         "name" : "Sergio",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_sergio"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_sergio"
+         },
+         "selected" : false
+      }, {
+         "count" : 48,
+         "name" : "Travelline",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_travelline"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_travelline"
+         },
+         "selected" : false
+      } ],
+      "values" : [ {
+         "count" : 9,
+         "name" : "ARMANI EXCHANGE",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_armani_exchange"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_armani_exchange"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "À Table!",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_a_table_"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_a_table_"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "balthasar",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_balthasar"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_balthasar"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Bamix",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_bamix"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_bamix"
+         },
+         "selected" : false
+      }, {
+         "count" : 11,
+         "name" : "Bestway",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_bestway"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_bestway"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Bialetti",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_bialetti"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_bialetti"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "BIG",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_big"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_big"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Bosch",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_bosch"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_bosch"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Brändi",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_braendi"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_braendi"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Braun",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_braun"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_braun"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "BuzzBeeToys",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_buzzbeetoys"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_buzzbeetoys"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Calvin Klein",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_calvin_klein"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_calvin_klein"
+         },
+         "selected" : false
+      }, {
+         "count" : 19,
+         "name" : "Cashmere",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_cashmere"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_cashmere"
+         },
+         "selected" : false
+      }, {
+         "count" : 24,
+         "name" : "Claudia Lindberg",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_claudia_lindberg"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_claudia_lindberg"
+         },
+         "selected" : false
+      }, {
+         "count" : 42,
+         "name" : "CONWOOD",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_conwood"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_conwood"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Coop",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_coop"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_coop"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "De Longhi",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_de_longhi"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_de_longhi"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Dickie",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_dickie"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_dickie"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Disney Princess",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_disney_princess"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_disney_princess"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Disney Stitch",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_disney_stitch"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_disney_stitch"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "DREAME",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_dreame"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_dreame"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Duracell",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_duracell"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_duracell"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Electrolux",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_electrolux"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_electrolux"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Esprit Jewels",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_esprit_jewels"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_esprit_jewels"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "ESTEBAN PARIS",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_esteban_paris"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_esteban_paris"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Evo",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_evo"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_evo"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Fischertechnik",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_fischertechnik"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_fischertechnik"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "GASTROBACK",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_gastroback"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_gastroback"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "green toys",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_green_toys"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_green_toys"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Guzzini",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_guzzini"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_guzzini"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Haier",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_haier"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_haier"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Hape",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_hape"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_hape"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Happy People",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_happy_people"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_happy_people"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Hello Kitty",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_hello_kitty"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_hello_kitty"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Hisense",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_hisense"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_hisense"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Hoover",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_hoover"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_hoover"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Hostfull Toys",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_hostfull_toys"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_hostfull_toys"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "HTI",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_hti"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_hti"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Huawei",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_huawei"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_huawei"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Inhouse",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_inhouse"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_inhouse"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "IT Luggage",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_it_luggage"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_it_luggage"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "JEKCA",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_jekca"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_jekca"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "John",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_john"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_john"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "JURA",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_jura"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_jura"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Kapla",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_kapla"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_kapla"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Kenwood",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_kenwood"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_kenwood"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "Kisag",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_kisag"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_kisag"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Klein Theo",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_klein_theo"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_klein_theo"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "KOENIG",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_koenig"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_koenig"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Krups",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_krups"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_krups"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "Kuhn Rikon",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_kuhn_rikon"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_kuhn_rikon"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Lanard",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lanard"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lanard"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "LauraStar",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_laurastar"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_laurastar"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Lego Animal Crossing",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_animal_crossing"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_animal_crossing"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Lego Architecture",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_architecture"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_architecture"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Lego ART",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_art"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_art"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Lego Bluey",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_bluey"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_bluey"
+         },
+         "selected" : false
+      }, {
+         "count" : 28,
+         "name" : "Lego Botanicals",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_botanicals"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_botanicals"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Lego BrickHeadz",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_brickheadz"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_brickheadz"
+         },
+         "selected" : false
+      }, {
+         "count" : 39,
+         "name" : "Lego City",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_city"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_city"
+         },
+         "selected" : false
+      }, {
+         "count" : 23,
+         "name" : "Lego Classic",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_classic"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_classic"
+         },
+         "selected" : false
+      }, {
+         "count" : 22,
+         "name" : "Lego Creator",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_creator"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_creator"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Lego DC Universe Super Heroes",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_dc_universe_super_heroes"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_dc_universe_super_heroes"
+         },
+         "selected" : false
+      }, {
+         "count" : 14,
+         "name" : "Lego Disney",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_disney"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_disney"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "Lego Disney Princess",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_disney_princess"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_disney_princess"
+         },
+         "selected" : false
+      }, {
+         "count" : 19,
+         "name" : "Lego Duplo",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_duplo"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_duplo"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "Lego Editions",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_editions"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_editions"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "Lego Fortnite",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_fortnite"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_fortnite"
+         },
+         "selected" : false
+      }, {
+         "count" : 26,
+         "name" : "Lego Friends",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_friends"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_friends"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Lego Gabby's Dollhouse",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_gabby_s_dollhouse"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_gabby_s_dollhouse"
+         },
+         "selected" : false
+      }, {
+         "count" : 19,
+         "name" : "Lego Harry Potter",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_harry_potter"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_harry_potter"
+         },
+         "selected" : false
+      }, {
+         "count" : 13,
+         "name" : "Lego Icons",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_icons"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_icons"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Lego Ideas",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_ideas"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_ideas"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Lego Jurassic World",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_jurassic_world"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_jurassic_world"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Lego LEL Seasons and Occasions",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_lel_seasons_and_occasions"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_lel_seasons_and_occasions"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Lego Marvel",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_marvel"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_marvel"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Lego Marvel Super Heroes",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_marvel_super_heroes"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_marvel_super_heroes"
+         },
+         "selected" : false
+      }, {
+         "count" : 14,
+         "name" : "Lego Minecraft",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_minecraft"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_minecraft"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Lego Minifigures",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_minifigures"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_minifigures"
+         },
+         "selected" : false
+      }, {
+         "count" : 28,
+         "name" : "Lego Ninjago",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_ninjago"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_ninjago"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Lego One Piece",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_one_piece"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_one_piece"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Lego Pokémon",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_pokemon"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_pokemon"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Lego Sonic",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_sonic"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_sonic"
+         },
+         "selected" : false
+      }, {
+         "count" : 21,
+         "name" : "Lego Speed Champions",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_speed_champions"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_speed_champions"
+         },
+         "selected" : false
+      }, {
+         "count" : 34,
+         "name" : "Lego Star Wars",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_star_wars"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_star_wars"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Lego Super Mario",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_super_mario"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_super_mario"
+         },
+         "selected" : false
+      }, {
+         "count" : 43,
+         "name" : "Lego Technic",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_technic"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_technic"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Lego Wednesday",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lego_wednesday"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lego_wednesday"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Lena",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_lena"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_lena"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Magic Bubble",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_magic_bubble"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_magic_bubble"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Martinelia",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_martinelia"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_martinelia"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Max Bersinger",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_max_bersinger"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_max_bersinger"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "MGA",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_mga"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_mga"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Micro",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_micro"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_micro"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Miele",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_miele"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_miele"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Minecraft",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_minecraft"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_minecraft"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Mondo",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_mondo"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_mondo"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "MOVA",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_mova"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_mova"
+         },
+         "selected" : false
+      }, {
+         "count" : 28,
+         "name" : "mykka",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_mykka"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_mykka"
+         },
+         "selected" : false
+      }, {
+         "count" : 38,
+         "name" : "Naturaline Textil",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_naturaline_textil"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_naturaline_textil"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Nerf",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_nerf"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_nerf"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "NIIMBOT",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_niimbot"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_niimbot"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "Ninja",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_ninja"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_ninja"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Nintendo",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_nintendo"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_nintendo"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "No Name",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_no_name"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_no_name"
+         },
+         "selected" : false
+      }, {
+         "count" : 69,
+         "name" : "Nouvel",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_nouvel"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_nouvel"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Ô-Cuisine",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_o_cuisine"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_o_cuisine"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Oecoplan",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_oecoplan"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_oecoplan"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Ooni",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_ooni"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_ooni"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Outdoor Active",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_outdoor_active"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_outdoor_active"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Paw Patrol",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_paw_patrol"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_paw_patrol"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Pegasus Spiele",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_pegasus_spiele"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_pegasus_spiele"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Philips",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_philips"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_philips"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "PlayStation",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_playstation"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_playstation"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "PMI Kids World",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_pmi_kids_world"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_pmi_kids_world"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Powerflame",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_powerflame"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_powerflame"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Ritter",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_ritter"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_ritter"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Rowenta",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_rowenta"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_rowenta"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Sage",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_sage"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_sage"
+         },
+         "selected" : false
+      }, {
+         "count" : 76,
+         "name" : "Samsonite",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_samsonite"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_samsonite"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Samsung",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_samsung"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_samsung"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "satrap",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_satrap"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_satrap"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "Schildkröt",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_schildkroet"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_schildkroet"
+         },
+         "selected" : false
+      }, {
+         "count" : 52,
+         "name" : "Sergio",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_sergio"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_sergio"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Shark",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_shark"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_shark"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Simba",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_simba"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_simba"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Smoby",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_smoby"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_smoby"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "SodaStream",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_sodastream"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_sodastream"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Solis",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_solis"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_solis"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "SOMBO",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_sombo"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_sombo"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Sony",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_sony"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_sony"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "SPLASH & FUN",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_splash___fun"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_splash___fun"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Stöckli",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_stoeckli"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_stoeckli"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Street One",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_street_one"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_street_one"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Super Soaker",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_super_soaker"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_super_soaker"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Tefal",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_tefal"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_tefal"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Tomy",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_tomy"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_tomy"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Totally TECH",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_totally_tech"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_totally_tech"
+         },
+         "selected" : false
+      }, {
+         "count" : 29,
+         "name" : "Travelite",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_travelite"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_travelite"
+         },
+         "selected" : false
+      }, {
+         "count" : 48,
+         "name" : "Travelline",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_travelline"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_travelline"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Trisa",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_trisa"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_trisa"
+         },
+         "selected" : false
+      }, {
+         "count" : 104,
+         "name" : "Triumph",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_triumph"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_triumph"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "TTM",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_ttm"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_ttm"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Unold",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_unold"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_unold"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Vacuvin",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_vacuvin"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_vacuvin"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Varta",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_varta"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_varta"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Wenger",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_wenger"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_wenger"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "WMF",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_wmf"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_wmf"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "XTREM TOYS+SPORTS",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_xtrem_toys_sports"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_xtrem_toys_sports"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Zuru",
+         "query" : {
+            "query" : {
+               "value" : ":cheapest:hasDiscount:true:brand:BRAND_zuru"
+            },
+            "url" : "/search?q=%3Acheapest%3AhasDiscount%3Atrue%3Abrand%3ABRAND_zuru"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   } ],
+   "freeTextSearch" : "",
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 5,
+      "sort" : "cheapest",
+      "totalPages" : 266,
+      "totalResults" : 1330
+   },
+   "products" : [ {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "3386114",
+      "description" : "Das Gemüse- und Fleischsieb ermöglicht eine einfache und effiziente Reinigung sowie das Abtropfen von Zutaten und überzeugt durch seine robuste Bauweise.",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDgxMXxpbWFnZS9qcGVnfGFHVm1MMmczTlM4eU9ERTJPRFUzT1RZeE1qY3dNaTh6TXpnMk1URTBYekF3TVM1cWNHY3xmNmI2MDM4YmYwODQ1YmZhMmIzMDZjNDU0MmVhNmNhZGU4NDk3MWQxMGEwMDI0NmM4NjY3MzJjMzdiYzg1OTY1"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/3386114-001.webp?context=bWFzdGVyfHByb2R1a3RlfDIxMHxpbWFnZS93ZWJwfGFHVmlMMmhoT0M4eU9ERTJPRFU0TURnMU56ZzROaTh6TXpnMk1URTBYekF3TVM1M1pXSnd8YzAxMjgyODBiOGM0YWY4YjhhZWU3OGViODNkMDRlMDdiNWJkMTEzYzM1NjU3NTE2ZWQwYTJmYzYzMTllYzI3Mw"
+      } ],
+      "manufacturer" : "Nouvel",
+      "multidimensional" : false,
+      "name" : "Gemüse- und Fleischsieb",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.35",
+         "priceType" : "BUY",
+         "value" : 1.35
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kueche-haushalt/kochen-am-tisch/exotisch-kochen/gemuese-und-fleischsieb/p/3386114",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "7425616",
+      "description" : "Die Käsefonduegabel assortiert bringt Freude und Stil auf den Tisch. Perfekt für gesellige Abende, überzeugt sie mit ihrer hochwertigen Verarbeitung und Funktionalität. Ein unverzichtbares Küchenaccessoire aus unserem Sortiment Elektro/Küche/Essen.",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7425616-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDgzNnxpbWFnZS9qcGVnfGFEZ3pMMmcwWkM4eU56azBPRFF4TkRNek56QTFOQzgzTkRJMU5qRTJYekF3TVM1cWNHY3xlMDk3ZGJmMTdlYWFkOGE5ZDIwNTdjNzFhM2E3N2VkNTE3ZDZkYWVlNDliMTI2NzgyNTJiNTQxZTFmODI3ODRi"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7425616-001.webp?context=bWFzdGVyfHByb2R1a3RlfDIwMHxpbWFnZS93ZWJwfGFHRTFMMmd5TXk4eU56azBPRFF4TlRVNE1qSXpPQzgzTkRJMU5qRTJYekF3TVM1M1pXSnd8NDE4Y2UzZDFjZjFmMGUyNTg0ZWMzY2NhZWMzYmRlODAzZTY0YjE3NjdlMDlkYWU3YzYyMWIyMzI0YjU5MGZiZQ"
+      } ],
+      "multidimensional" : false,
+      "name" : "Käsefonduegabel assortiert",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.50",
+         "priceType" : "BUY",
+         "value" : 1.5
+      },
+      "stock" : {
+      },
+      "url" : "/raclette-und-fondue-sets/kaese-fondue/bestecke/kaesefonduegabel-assortiert/p/7425616",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "6807112",
+      "description" : "Holzspiesse für Grill, Küche und Tisch. Oecoplan Holz mit dem FSC-Label stammt zu 100% aus ökologisch vorbildlich und sozialverträglich bewirtschafteten Wäldern, die FSC-zertifiziert sind.",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/6807112-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE0ODl8aW1hZ2UvanBlZ3xhREEyTDJnM1lTOHlOek16TWpBd01qVXhNamt5Tmk4Mk9EQTNNVEV5WHpBd01TNXFjR2N8MmViMzU1NjMzOGMzNmJkNWI0YzgyNTcwOGY4ZjM3ZmYyYmY5YjZkMDBkZjE5Y2FkMGVkYjY3YjY3ZmU1YjdiZg"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/6807112-001.webp?context=bWFzdGVyfHByb2R1a3RlfDYwNHxpbWFnZS93ZWJwfGFERmpMMmhsWWk4eU56TXpNakF3TXpjMU9ERXhNQzgyT0RBM01URXlYekF3TVM1M1pXSnd8NjY0MzI4MjlmNmZjODEwYmM1NmIxM2MyYTdjNWZkZTgzYWMxYjFkYjUyNjhkMTNjNjlhOGU2MDE0OGY3ZGFlYw"
+      } ],
+      "manufacturer" : "Oecoplan",
+      "multidimensional" : false,
+      "name" : "Oecoplan Grillspiesse 16cm, FSC Holz",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.80",
+         "priceType" : "BUY",
+         "value" : 1.8
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kueche-haushalt/kochen-am-tisch/exotisch-kochen/oecoplan-grillspiesse-16cm-fsc-holz/p/6807112",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "3142296",
+      "description" : "PowerFlame® Macht Feuer sicherPower Flame- Macht Feuer sicherMit Sicherheits-Brennsystem.  Das Sicherheits-Brennsystem von PowerFlame® Sicherheits-Brennpaste. - verhindert gefährliche Tischbrände durch Verschüttung dank spezieller Sicherheitsformel. - verhindert riskante Nachfüllungen während des Fondue-Genussesdank Portionierung (1 Portion = 1 Fondue-Genuss).",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/3142296-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE1MTN8aW1hZ2UvanBlZ3xhR1JqTDJnNE15OHlOekkyT1RVeE1UYzNOREl6T0M4ek1UUXlNamsyWHpBd01TNXFjR2N8Y2RlYWIwZWZhMmQ3Yzk4OTBhZmUzYTU5NzE4YTI3M2E4NmNiNjIxNTFlMGZhMWUzNTdjZTVkNDdlOGI3ZGY5MQ"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/3142296-001.webp?context=bWFzdGVyfHByb2R1a3RlfDYzNnxpbWFnZS93ZWJwfGFETTBMMmd6Tnk4eU56STJPVFV4TXpBeE9UUXlNaTh6TVRReU1qazJYekF3TVM1M1pXSnd8ZmYxNWU5ZWJlOTk1YTM5MzgwNDAxZjFjNjcyYWUyYjcxYTMwZjc0NWY2MWZmNTJjYTA2YmVjOWRiMzczZjMzNQ"
+      } ],
+      "manufacturer" : "Powerflame",
+      "multidimensional" : false,
+      "name" : "Powerflame Sicherheits Brennpaste (3 x 80g)",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.05",
+         "priceType" : "BUY",
+         "value" : 2.05
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kueche-haushalt/kochen-am-tisch/waermehaltesysteme/brennstoffe/powerflame-sicherheits-brennpaste-3-x-80g/p/3142296",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "4857921",
+      "description" : "Schmelzen Sie Ihren Käse mit leistungsstarken Kerzen! Set à 12 Stück. Flamme brennt ca. 3 Stunden. Jede Kerze Ø 4 cm.",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/4857921-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEyMDR8aW1hZ2UvanBlZ3xhR0V4TDJoaU5TOHlOekkyT1RBek1UVTVNVGsyTmk4ME9EVTNPVEl4WHpBd01TNXFjR2N8ZjhlNDkwN2IzMzVkNWNiNjA4OTJjMzkyYmVjNDI2MzNmNzJhY2IxY2U2MzhkYjcwNTRlOWFlMWQzMDE3MTg5Mg"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/4857921-001.webp?context=bWFzdGVyfHByb2R1a3RlfDQ1NnxpbWFnZS93ZWJwfGFESmlMMmd6Wmk4eU56STJPVEF6TWprd01qWTROaTgwT0RVM09USXhYekF3TVM1M1pXSnd8NGVlMGFjODAxZjE5MjQ2ZGEzYTE3N2IyYzUyYzE3OTU3OTViYWY2YTk5OWRmMmI1YTg2YmYzMzM0YTc0NjEwNw"
+      } ],
+      "multidimensional" : false,
+      "name" : "Rechaud-Kerzen Thermo Fire 12 Stück",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.05",
+         "priceType" : "BUY",
+         "value" : 2.05
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kueche-haushalt/kochen-am-tisch/waermehaltesysteme/brennstoffe/rechaud-kerzen-thermo-fire-12-stueck/p/4857921",
+      "volumePricesFlag" : false
+   } ],
+   "sorts" : [ {
+      "code" : "cheapest",
+      "name" : "Günstigste",
+      "selected" : true
+   }, {
+      "code" : "mostExpensive",
+      "name" : "Teuerste",
+      "selected" : false
+   }, {
+      "code" : "novelty",
+      "name" : "Neuheit",
+      "selected" : false
+   }, {
+      "code" : "discount",
+      "name" : "Rabatt",
+      "selected" : false
+   }, {
+      "code" : "bestRated",
+      "name" : "Beste Bewertung",
+      "selected" : false
+   }, {
+      "code" : "bestsellers",
+      "name" : "Bestseller",
+      "selected" : false
+   } ]
+}

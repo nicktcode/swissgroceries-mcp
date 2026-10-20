@@ -5,7 +5,7 @@ import { withFetchMeta } from '../util/http.js';
 import { ToolError } from './errors.js';
 
 export const getProductSchema = z.object({
-  chain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos'])
+  chain: z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos', 'coopcity'])
     .describe('The grocery chain that owns this product ID.'),
   id: z.string().min(1)
     .describe('Chain-specific product identifier, e.g. Migros cumulus ID or Coop product number. Obtain via search_products.'),

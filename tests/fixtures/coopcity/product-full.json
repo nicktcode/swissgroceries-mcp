@@ -1,0 +1,224 @@
+{
+   "availableForPickup" : false,
+   "baseOptions" : [ {
+      "options" : [ {
+         "code" : "4290522",
+         "priceData" : {
+            "currencyIso" : "CHF",
+            "formattedValue" : "1.95",
+            "priceType" : "BUY",
+            "value" : 1.95
+         },
+         "stock" : {
+            "stockLevel" : 65,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/nivea-volume-wonder-kraeftigendes-shampoo-bambus-extrakt-50ml-travel-size/p/4290522",
+         "variantOptionQualifiers" : [ ]
+      } ],
+      "selected" : {
+         "code" : "4290522",
+         "priceData" : {
+            "currencyIso" : "CHF",
+            "formattedValue" : "1.95",
+            "priceType" : "BUY",
+            "value" : 1.95
+         },
+         "stock" : {
+            "stockLevel" : 65,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/nivea-volume-wonder-kraeftigendes-shampoo-bambus-extrakt-50ml-travel-size/p/4290522",
+         "variantOptionQualifiers" : [ ]
+      },
+      "variantType" : "GenericVariantProduct"
+   } ],
+   "baseProduct" : "B4290522",
+   "categories" : [ {
+      "code" : "BRAND_nivea",
+      "url" : "/nivea/c/BRAND_nivea"
+   }, {
+      "code" : "01020101",
+      "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/c/01020101"
+   }, {
+      "code" : "CLASSIFICATION_LABEL_z_produkttyp_0550",
+      "url" : "/zprodukttyp0550/c/CLASSIFICATION_LABEL_z_produkttyp_0550"
+   } ],
+   "classifications" : [ {
+      "code" : "01015101010107",
+      "features" : [ {
+         "code" : "z_besonderes",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Travel Size"
+         } ],
+         "name" : "Besonderes",
+         "range" : false
+      }, {
+         "code" : "zbh_inhalt_in_stueck",
+         "comparable" : true,
+         "featureUnit" : {
+            "name" : "Stück",
+            "symbol" : "\"ST\"",
+            "unitType" : "SAP-AAAADL"
+         },
+         "featureValues" : [ {
+            "value" : "1"
+         } ],
+         "name" : "Inhalt in Stück",
+         "range" : false
+      }, {
+         "code" : "w167",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Damen"
+         } ],
+         "name" : "Zielgruppe",
+         "range" : false
+      }, {
+         "code" : "zt_haartyp",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Alle Haartypen"
+         } ],
+         "name" : "Haartyp",
+         "range" : false
+      }, {
+         "code" : "z_produkttyp",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Shampoo"
+         } ],
+         "name" : "Produkttyp",
+         "range" : false
+      }, {
+         "code" : "z_haarpflegetyp",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "Shampoo"
+         } ],
+         "name" : "Haarpflegetyp",
+         "range" : false
+      }, {
+         "code" : "z_mengenbeschraenkung_cc",
+         "comparable" : true,
+         "featureValues" : [ {
+            "value" : "10"
+         } ],
+         "name" : "Mengenbeschränkung Coop City",
+         "range" : false
+      } ],
+      "name" : "HK Shampoo Volumen"
+   } ],
+   "code" : "4290522",
+   "description" : "<P>NIVEA Volume Wonder Travel Size – Shampoo in Reisegrösse</P><P>Das NIVEA Volume Wonder Shampoo in praktischer Travel Size und Reisegrösse verleiht feinem und kraftlosem Haar sofort sichtbar mehr Volumen – ideal für Reisen, das Handgepäck, das Fitnessstudio oder unterwegs.</P><P>Die kräftigende Formel mit hochwirksamem Kollagen und natürlichem Bambusextrakt sorgt für einen sofortigen 3D-Volumen-Effekt und stärkt das Haar vom Ansatz bis in die Spitzen. Gleichzeitig erhält das Haar mehr Griffigkeit und Fülle, ohne beschwert zu werden. Das Ergebnis ist gesund aussehendes, kraftvolles und natürlich schönes Haar.</P><P>Die silikonfreie Formel ist frei von Mikroplastikpartikeln* und eignet sich für die tägliche Haarpflege.</P><P>Anwendung: Sanft ins nasse Haar einmassieren, aufschäumen und anschliessend gründlich ausspülen.</P><P>Hinweis: *Frei von Mikroplastikpartikeln gemäss UNEP-Definition.</P>",
+   "images" : [ {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "basket-LG-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/90Wx90H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDIwNzh8aW1hZ2UvanBlZ3xhREZrTDJnd05TOHlOekUzTmprMk56TTNNamd6TUM4NU1GZDRPVEJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDdjZGY2YjdhZjUzYjk1NThkNzU3M2JjMGE4YWFhYmI5OTdkZmE1ZjgwMzEwZWUxZWEyZDQ0ZWNhOGM4NWEzZjI"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "tile-SM-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/155Wx155H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDM5ODN8aW1hZ2UvanBlZ3xhR1kyTDJnMk55OHlOekUzTmprMk5qVTROak01T0M4eE5UVlhlREUxTlVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fGZkYTk4ZGM1YzEyZjY3MGRhMmViY2ExNWJiZjVmM2I0YTg2OGNmMTBmMmUwNTE2YzBhMThjMjQ0NDEwYzU5NTU"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "productImage-thumbnails-XS-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/40Wx40H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEwMjR8aW1hZ2UvanBlZ3xhR015TDJnd055OHlOekUzTmprMk56Y3dNRFV4TUM4ME1GZDROREJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDdhZjY0NWZhMzdjOTVhZTVhZDA1ODdjNDhlOGQ0YjY4ZTY2NTgxYmI0MjQ3M2VlODRjOGEzMzQ0MGU5MTJhMTA"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "basket-LG2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/180Wx180H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDQ4NDB8aW1hZ2UvanBlZ3xhRFk1TDJnMVlTOHlOekUzTmprMk5qazNPVFl4TkM4eE9EQlhlREU0TUVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fDhkZjMwOWMyNDlmZTY5MGQzZmY5NTMwN2JlYmJjYTViODZmYTExYTJhZTAxYTIwZGExYmQxZDNkNTc2MDlhMWY"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "productImage-zoom-SM2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/1474Wx1474H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDExMDI5NHxpbWFnZS9qcGVnfGFHSTFMMmcyWWk4eU56RTNOamsyTmpRMU5UTXlOaTh4TkRjMFYzZ3hORGMwU0MxU1IwSmZOREk1TURVeU1sOHdNREV1YW5CbnwwM2RkMDI2ZDU2M2M4NWMyYmJlNmU2Yjk0MGRiMDcwZmJkYzk2NDQ2OTQwNjY2N2JjMjdhZTc1OGE1MWJjYWJm"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "tile-SM2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/310Wx310H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEwNjQ1fGltYWdlL2pwZWd8YURjMEwyZzJaaTh5TnpFM05qazJOak15TkRJMU5DOHpNVEJYZURNeE1FZ3RVa2RDWHpReU9UQTFNakpmTURBeExtcHdad3w5ZGViMjkzY2Y4NTYwYTJkZjhiMDU2ODFkYzI2ZGNhNWVmZDgyY2I0NWVhNzBjZmJhMzk5NDIyMjY3NmM4NjJh"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "productImage-thumbnails-XS2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/80Wx80H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE3MzN8aW1hZ2UvanBlZ3xhR0l3TDJnd05DOHlOekUzTmprMk56WXpORGszTkM4NE1GZDRPREJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfGMxMjUwZTlkYWMwNTkzNDQ2NGVmYmExYjQ2OWMzOGMzNTgyOWFkOWYyYTEzNTkyYTg4MmQ4OThhYTVhNzllNWQ"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "basket-XS-MD",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/50Wx50H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEyMjl8aW1hZ2UvanBlZ3xhREptTDJnd1l5OHlOekUzTmprMk56ZzVOekV4T0M4MU1GZDROVEJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDExNjRjZGNkOWY2MTM0ZTdhMTlkMDg2ZTlhNjdiMzNlM2RiMTMzYzZhZTVjNGE1YTJhN2Q0MWUzMjI4ZmI1Zjg"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "miniBasket-XS-XL",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/65Wx65H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE1NTZ8aW1hZ2UvanBlZ3xhRFF3TDJnd1ppOHlOekUzTmprMk56azJNalkxTkM4Mk5WZDROalZJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDE4YWQ5Nzk4MmQyYWIwZmFiMGU1YzZiZDQ1NTg3NjNhNjM0YzM2OTA2MzA1YjY4M2RlNmFlNTZlOTViMTEyZWU"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "basket-XS2x-MD2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/100Wx100H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDI0NzN8aW1hZ2UvanBlZ3xhRGN3TDJnd09DOHlOekUzTmprMk56YzJOakEwTmk4eE1EQlhlREV3TUVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fGFlZGVmMjRhOGNhNmQ1NThlMGEwZDkwYzMwOTBkYjQ5YzI2OTcxYzVkNGQ2YmEyYmQzYWE3ZjBiN2QyMDRmZDg"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "miniBasket-XS2x-XL2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/130Wx130H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDMyNTJ8aW1hZ2UvanBlZ3xhRGd4TDJnd1lpOHlOekUzTmprMk56Z3pNVFU0TWk4eE16QlhlREV6TUVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fDE3YWVlODUwMWY1NmVhMDQ0ZDNmOTAyZTg5NmYwOTY5YzNjMDA3ZjczNjRlMTZlNDRmMGYwNTU4NzYxYjFjY2Q"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "compareList-XS-MD",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/205Wx205H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDU5MjF8aW1hZ2UvanBlZ3xhR0ZpTDJnMVlTOHlOekUzTmprMk9EQTVNemN5Tmk4eU1EVlhlREl3TlVndFVrZENYelF5T1RBMU1qSmZNREF4TG1wd1p3fDdlODhmMjlhYjQ1NTgxMDgxNmQ3MDM2NzllNGYxNjNjOWQ3YWMwODBiMjZjN2M2NjViY2FhZjhmZWI2MWMwYjY"
+   }, {
+      "altText" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "format" : "compareList-XS2x-MD2x",
+      "galleryIndex" : 0,
+      "imageType" : "GALLERY",
+      "url" : "/cooptradingcommercewebservices/v2/medias/410Wx410H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE2MjAxfGltYWdlL2pwZWd8YUdWaEwyZzFPUzh5TnpFM05qazJPREF5T0RFNU1DODBNVEJYZURReE1FZ3RVa2RDWHpReU9UQTFNakpmTURBeExtcHdad3wzMzFlNjQ3YjI0YTE2MDViYTE5MjA1MTJlYmNjZDQzOWIxNGEzNDQzYTYxZDg4YTVjOWY5ZjliNGM1YTAwZmZk"
+   } ],
+   "name" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+   "numberOfReviews" : 0,
+   "price" : {
+      "currencyIso" : "CHF",
+      "formattedValue" : "1.95",
+      "priceType" : "BUY",
+      "value" : 1.95
+   },
+   "priceRange" : {
+      "maxPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "value" : 1.95
+      },
+      "minPrice" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "value" : 1.95
+      }
+   },
+   "productReferences" : [ ],
+   "purchasable" : true,
+   "reviews" : [ ],
+   "stock" : {
+      "stockLevel" : 65,
+      "stockLevelStatus" : "inStock"
+   },
+   "summary" : "",
+   "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/nivea-volume-wonder-kraeftigendes-shampoo-bambus-extrakt-50ml-travel-size/p/4290522",
+   "volumePrices" : [ ]
+}

@@ -47,6 +47,7 @@ describe('swissgroceries://chains resource', () => {
     expect(chainNames).toContain('farmy');
     expect(chainNames).toContain('volgshop');
     expect(chainNames).toContain('ottos');
+    expect(chainNames).toContain('coopcity');
   });
 });
 

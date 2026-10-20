@@ -1,0 +1,2710 @@
+{
+   "type" : "productCategorySearchPageWsDTO",
+   "breadcrumbs" : [ ],
+   "currentQuery" : {
+      "query" : {
+         "value" : "shampoo:cheapest"
+      },
+      "url" : "/search?q=shampoo%3Acheapest"
+   },
+   "facets" : [ {
+      "category" : false,
+      "multiSelect" : false,
+      "name" : "hasDiscount",
+      "priority" : 2147483641,
+      "values" : [ {
+         "count" : 0,
+         "name" : "true",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:hasDiscount:true"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3AhasDiscount%3Atrue"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : false,
+      "multiSelect" : false,
+      "name" : "inStockFlag",
+      "priority" : 2147483642,
+      "values" : [ {
+         "count" : 348,
+         "name" : "true",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:inStockFlag:true"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3AinStockFlag%3Atrue"
+         },
+         "selected" : false
+      }, {
+         "count" : 33,
+         "name" : "false",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:inStockFlag:false"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3AinStockFlag%3Afalse"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : true,
+      "multiSelect" : true,
+      "name" : "Kategorie",
+      "priority" : 2147483643,
+      "topValues" : [ {
+         "count" : 360,
+         "name" : "Kosmetik & Gesundheit",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:01"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A01"
+         },
+         "selected" : false
+      }, {
+         "count" : 314,
+         "name" : "Haarpflege & Haarstyling",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0102"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0102"
+         },
+         "selected" : false
+      }, {
+         "count" : 290,
+         "name" : "Haarpflege",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:010201"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A010201"
+         },
+         "selected" : false
+      }, {
+         "count" : 238,
+         "name" : "Shampoo",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:01020101"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A01020101"
+         },
+         "selected" : false
+      }, {
+         "count" : 30,
+         "name" : "Herrenpflege & Rasur",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0106"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0106"
+         },
+         "selected" : false
+      } ],
+      "values" : [ {
+         "count" : 16,
+         "name" : "Aktionen",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:10"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A10"
+         },
+         "selected" : false
+      }, {
+         "count" : 21,
+         "name" : "Baby & Kind",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:02"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A02"
+         },
+         "selected" : false
+      }, {
+         "count" : 21,
+         "name" : "Baby- & Kinderpflege",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0201"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0201"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Gesichtspflege & -Reinigung",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0103"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0103"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Gesichtspflege & -Reinigung in Aktion",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:010300"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A010300"
+         },
+         "selected" : false
+      }, {
+         "count" : 314,
+         "name" : "Haarpflege & Haarstyling",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0102"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0102"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Haarpflege & Haarstyling in Aktion",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:010200"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A010200"
+         },
+         "selected" : false
+      }, {
+         "count" : 30,
+         "name" : "Herrenpflege & Rasur",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0106"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0106"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Körperpflege",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0101"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0101"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Körperpflege in Aktion",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:010100"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A010100"
+         },
+         "selected" : false
+      }, {
+         "count" : 360,
+         "name" : "Kosmetik & Gesundheit",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:01"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A01"
+         },
+         "selected" : false
+      }, {
+         "count" : 16,
+         "name" : "Kosmetik & Gesundheit Aktionen",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0100"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0100"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "Make Up & Parfum",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0105"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0105"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Make Up & Parfum in Aktion",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:010500"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A010500"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Zahnpflege",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:0104"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A0104"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Zahnpflege in Aktion",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:category:010400"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Acategory%3A010400"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : false,
+      "multiSelect" : true,
+      "name" : "Preis",
+      "priority" : 2147483646,
+      "values" : [ {
+         "count" : 1,
+         "name" : "1.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:1.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A1.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "10.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:10.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A10.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 19,
+         "name" : "10.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:10.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A10.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 17,
+         "name" : "11.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:11.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A11.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "12.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:12.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A12.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "12.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:12.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A12.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "13.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:13.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A13.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "13.85",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:13.85"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A13.85"
+         },
+         "selected" : false
+      }, {
+         "count" : 19,
+         "name" : "13.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:13.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A13.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 16,
+         "name" : "14.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:14.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A14.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "15.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:15.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A15.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "16.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:16.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A16.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "16.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:16.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A16.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "17.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:17.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A17.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "18.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:18.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A18.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "19.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:19.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A19.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "2.2",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:2.2"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A2.2"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "2.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:2.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A2.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "2.75",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:2.75"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A2.75"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "2.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:2.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A2.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "20.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:20.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A20.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "20.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:20.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A20.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "22.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:22.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A22.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "23.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:23.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A23.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "25.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:25.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A25.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "27.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:27.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A27.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "28.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:28.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A28.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "29.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:29.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A29.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "3.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:3.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A3.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 21,
+         "name" : "3.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:3.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A3.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "31.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:31.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A31.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "33.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:33.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A33.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "34.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:34.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A34.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "35.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:35.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A35.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "36.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:36.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A36.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "37.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:37.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A37.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "4.0",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.0"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.0"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "4.1",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.1"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.1"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "4.2",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.2"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.2"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "4.3",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.3"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "4.4",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.4"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.4"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "4.45",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.45"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "4.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "4.7",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.7"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.7"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "4.75",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.75"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.75"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "4.9",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.9"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 30,
+         "name" : "4.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:4.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A4.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "47.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:47.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A47.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "5.2",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:5.2"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A5.2"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "5.3",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:5.3"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A5.3"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "5.35",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:5.35"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A5.35"
+         },
+         "selected" : false
+      }, {
+         "count" : 17,
+         "name" : "5.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:5.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A5.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "54.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:54.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A54.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "6.4",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:6.4"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A6.4"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "6.45",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:6.45"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A6.45"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "6.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:6.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A6.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "6.7",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:6.7"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A6.7"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "6.8",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:6.8"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A6.8"
+         },
+         "selected" : false
+      }, {
+         "count" : 12,
+         "name" : "6.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:6.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A6.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "7.2",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:7.2"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A7.2"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "7.4",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:7.4"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A7.4"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "7.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:7.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A7.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "7.6",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:7.6"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A7.6"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "7.7",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:7.7"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A7.7"
+         },
+         "selected" : false
+      }, {
+         "count" : 27,
+         "name" : "7.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:7.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A7.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "8.5",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:8.5"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A8.5"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "8.9",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:8.9"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A8.9"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "8.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:8.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A8.95"
+         },
+         "selected" : false
+      }, {
+         "count" : 31,
+         "name" : "9.95",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:price:9.95"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Aprice%3A9.95"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   }, {
+      "category" : true,
+      "multiSelect" : true,
+      "name" : "Marke",
+      "priority" : 2147483647,
+      "topValues" : [ {
+         "count" : 25,
+         "name" : "Elsève",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_elseve"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_elseve"
+         },
+         "selected" : false
+      }, {
+         "count" : 24,
+         "name" : "John Frieda",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_john_frieda"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_john_frieda"
+         },
+         "selected" : false
+      }, {
+         "count" : 20,
+         "name" : "Rausch",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_rausch"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_rausch"
+         },
+         "selected" : false
+      }, {
+         "count" : 18,
+         "name" : "Excellence",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_excellence"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_excellence"
+         },
+         "selected" : false
+      }, {
+         "count" : 17,
+         "name" : "well",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_well"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_well"
+         },
+         "selected" : false
+      } ],
+      "values" : [ {
+         "count" : 0,
+         "name" : "1TEMP",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_1temp"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_1temp"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "24 Bottles",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_24_bottles"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_24_bottles"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "3M",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_3m"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_3m"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "7th Heaven",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_7th_heaven"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_7th_heaven"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "A. Vogel",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_a__vogel"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_a__vogel"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "aarke",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_aarke"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_aarke"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ABC",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_abc"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_abc"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Abtei",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_abtei"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_abtei"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Accentra",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_accentra"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_accentra"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Ace",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ace"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ace"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Acnemy",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_acnemy"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_acnemy"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ADE",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ade"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ade"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "AdHoc",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_adhoc"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_adhoc"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Adidas",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_adidas"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_adidas"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ADOC",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_adoc"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_adoc"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Afrolocke",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_afrolocke"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_afrolocke"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "AGM AG MÜLLER",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_agm_ag_mueller"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_agm_ag_mueller"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "air up",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_air_up"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_air_up"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Aladine",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_aladine"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_aladine"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Alessandro",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_alessandro"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_alessandro"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Alpecin",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_alpecin"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_alpecin"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Alpine White",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_alpine_white"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_alpine_white"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Alustar",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_alustar"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_alustar"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ambar",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ambar"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ambar"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Ambassador",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ambassador"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ambassador"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ambra",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ambra"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ambra"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Ambre Solaire",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ambre_solaire"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ambre_solaire"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Amigo",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_amigo"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_amigo"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "AMORELIE",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_amorelie"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_amorelie"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "AMY ASH",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_amy_ash"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_amy_ash"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Andante",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_andante"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_andante"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Andersen",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_andersen"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_andersen"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Andrea",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_andrea"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_andrea"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Androni",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_androni"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_androni"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Angels",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_angels"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_angels"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ANIA HAIE",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ania_haie"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ania_haie"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "ANNEMARIE BÖRLIND",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_annemarie_boerlind"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_annemarie_boerlind"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Ansmann",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ansmann"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ansmann"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Anua",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_anua"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_anua"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "AOSept",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_aosept"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_aosept"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Apple",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_apple"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_apple"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "APS",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_aps"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_aps"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Aquabeads",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_aquabeads"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_aquabeads"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Ardell",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ardell"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ardell"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ARMANI EXCHANGE",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_armani_exchange"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_armani_exchange"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Artdeco",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_artdeco"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_artdeco"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ARTISTA",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_artista"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_artista"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Artoz",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_artoz"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_artoz"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "ASA",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_asa"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_asa"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Asmodee",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_asmodee"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_asmodee"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "À Table!",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_a_table_"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_a_table_"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Aurora",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_aurora"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_aurora"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Avela",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_avela"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_avela"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Avent",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_avent"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_avent"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Avery Zweckform",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_avery_zweckform"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_avery_zweckform"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Axamine",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_axamine"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_axamine"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Axe",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_axe"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_axe"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "b.fresh",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_b_fresh"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_b_fresh"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "b.tan",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_b_tan"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_b_tan"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "babaria",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_babaria"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_babaria"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Baby Born",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_baby_born"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_baby_born"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Babyliss",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_babyliss"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_babyliss"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Backstar",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_backstar"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_backstar"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Bali Curls",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bali_curls"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bali_curls"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Bali Gents",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bali_gents"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bali_gents"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Bali Home",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bali_home"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bali_home"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Bali Skin",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bali_skin"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bali_skin"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Ballon-Müller",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ballon_mueller"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ballon_mueller"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "balthasar",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_balthasar"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_balthasar"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "bambino mio",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bambino_mio"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bambino_mio"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Bamix",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bamix"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bamix"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Bandai",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bandai"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bandai"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Barbara Hofmann",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_barbara_hofmann"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_barbara_hofmann"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Barbie",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_barbie"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_barbie"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Barnängen",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_barnaengen"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_barnaengen"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Batiste",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_batiste"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_batiste"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Batman",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_batman"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_batman"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "bayer",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bayer"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bayer"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Bburago",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bburago"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bburago"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Beaba",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_beaba"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_beaba"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Bears with Benefits",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bears_with_benefits"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bears_with_benefits"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Beauty Blender",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_beauty_blender"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_beauty_blender"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "BeautyLash",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_beautylash"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_beautylash"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "Beauty of Joseon",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_beauty_of_joseon"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_beauty_of_joseon"
+         },
+         "selected" : false
+      }, {
+         "count" : 0,
+         "name" : "bebe",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bebe"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bebe"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Bübchen",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_buebchen"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_buebchen"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Bulldog",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_bulldog"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_bulldog"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Cantu",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_cantu"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_cantu"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "CHRISTOPHE ROBIN",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_christophe_robin"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_christophe_robin"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Curly Angels",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_curly_angels"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_curly_angels"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "DEJAN GARZ",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_dejan_garz"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_dejan_garz"
+         },
+         "selected" : false
+      }, {
+         "count" : 25,
+         "name" : "Elsève",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_elseve"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_elseve"
+         },
+         "selected" : false
+      }, {
+         "count" : 18,
+         "name" : "Excellence",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_excellence"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_excellence"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Farfalla",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_farfalla"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_farfalla"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Frosch",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_frosch"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_frosch"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "Fructis",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_fructis"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_fructis"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Gillette",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_gillette"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_gillette"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Gliss",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_gliss"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_gliss"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "got2b",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_got2b"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_got2b"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "Guhl",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_guhl"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_guhl"
+         },
+         "selected" : false
+      }, {
+         "count" : 15,
+         "name" : "H&S",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_h_s"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_h_s"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Hairlust",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_hairlust"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_hairlust"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "HASK",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_hask"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_hask"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "HAUSCHKA",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_hauschka"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_hauschka"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Herbal Essences",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_herbal_essences"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_herbal_essences"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Hipp",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_hipp"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_hipp"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Jean&Len",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_jean_len"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_jean_len"
+         },
+         "selected" : false
+      }, {
+         "count" : 24,
+         "name" : "John Frieda",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_john_frieda"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_john_frieda"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Johnson's",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_johnson_s"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_johnson_s"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Johnson's Baby",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_johnson_s_baby"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_johnson_s_baby"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "JUNGLÜCK",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_junglueck"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_junglueck"
+         },
+         "selected" : false
+      }, {
+         "count" : 9,
+         "name" : "Kérastase",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_kerastase"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_kerastase"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "KEUNE",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_keune"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_keune"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "KEVIN.MURPHY",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_kevin_murphy"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_kevin_murphy"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "L'ORÉAL PARIS",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_l_oreal_paris"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_l_oreal_paris"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "L'Oréal Professionnel",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_l_oreal_professionnel"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_l_oreal_professionnel"
+         },
+         "selected" : false
+      }, {
+         "count" : 8,
+         "name" : "Lavera",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_lavera"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_lavera"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Lee Stafford",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_lee_stafford"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_lee_stafford"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Live",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_live"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_live"
+         },
+         "selected" : false
+      }, {
+         "count" : 13,
+         "name" : "Logona",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_logona"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_logona"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Lubex",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_lubex"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_lubex"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Men Perfect",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_men_perfect"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_men_perfect"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "minLen",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_minlen"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_minlen"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Monday",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_monday"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_monday"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Moroccanoil",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_moroccanoil"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_moroccanoil"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Naturaline Cosmetics",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_naturaline_cosmetics"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_naturaline_cosmetics"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "NEQI",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_neqi"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_neqi"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "Nivea",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_nivea"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_nivea"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Nivea Baby",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_nivea_baby"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_nivea_baby"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Noberu",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_noberu"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_noberu"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "NUXE",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_nuxe"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_nuxe"
+         },
+         "selected" : false
+      }, {
+         "count" : 10,
+         "name" : "OGX",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ogx"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ogx"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "OLAPLEX",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_olaplex"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_olaplex"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Old Spice",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_old_spice"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_old_spice"
+         },
+         "selected" : false
+      }, {
+         "count" : 14,
+         "name" : "Pantene",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_pantene"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_pantene"
+         },
+         "selected" : false
+      }, {
+         "count" : 2,
+         "name" : "Penaten",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_penaten"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_penaten"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Plantur39",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_plantur39"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_plantur39"
+         },
+         "selected" : false
+      }, {
+         "count" : 20,
+         "name" : "Rausch",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_rausch"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_rausch"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Redken",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_redken"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_redken"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Roger&Gallet",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_roger_gallet"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_roger_gallet"
+         },
+         "selected" : false
+      }, {
+         "count" : 14,
+         "name" : "Sante",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_sante"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_sante"
+         },
+         "selected" : false
+      }, {
+         "count" : 4,
+         "name" : "Soeder",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_soeder"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_soeder"
+         },
+         "selected" : false
+      }, {
+         "count" : 5,
+         "name" : "Syoss",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_syoss"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_syoss"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "tetesept",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_tetesept"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_tetesept"
+         },
+         "selected" : false
+      }, {
+         "count" : 1,
+         "name" : "Theramed",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_theramed"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_theramed"
+         },
+         "selected" : false
+      }, {
+         "count" : 3,
+         "name" : "Timotei",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_timotei"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_timotei"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Ultra DOUX",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_ultra_doux"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_ultra_doux"
+         },
+         "selected" : false
+      }, {
+         "count" : 6,
+         "name" : "URTEKRAM",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_urtekram"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_urtekram"
+         },
+         "selected" : false
+      }, {
+         "count" : 7,
+         "name" : "Weleda",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_weleda"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_weleda"
+         },
+         "selected" : false
+      }, {
+         "count" : 17,
+         "name" : "well",
+         "query" : {
+            "query" : {
+               "value" : "shampoo:cheapest:brand:BRAND_well"
+            },
+            "url" : "/search?q=shampoo%3Acheapest%3Abrand%3ABRAND_well"
+         },
+         "selected" : false
+      } ],
+      "visible" : true
+   } ],
+   "freeTextSearch" : "shampoo",
+   "pagination" : {
+      "currentPage" : 0,
+      "pageSize" : 5,
+      "sort" : "cheapest",
+      "totalPages" : 77,
+      "totalResults" : 381
+   },
+   "products" : [ {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "4290522",
+      "description" : "<P>NIVEA Volume Wonder Travel Size – Shampoo in Reisegrösse</P><P>Das NIVEA Volume Wonder Shampoo in praktischer Travel Size und Reisegrösse verleiht feinem und kraftlosem Haar sofort sichtbar mehr Volumen – ideal für Reisen, das Handgepäck, das Fitnessstudio oder unterwegs.</P><P>Die kräftigende Formel mit hochwirksamem Kollagen und natürlichem Bambusextrakt sorgt für einen sofortigen 3D-Volumen-Effekt und stärkt das Haar vom Ansatz bis in die Spitzen. Gleichzeitig erhält das Haar mehr Griffigkeit und Fülle, ohne beschwert zu werden. Das Ergebnis ist gesund aussehendes, kraftvolles und natürlich schönes Haar.</P><P>Die silikonfreie Formel ist frei von Mikroplastikpartikeln* und eignet sich für die tägliche Haarpflege.</P><P>Anwendung: Sanft ins nasse Haar einmassieren, aufschäumen und anschliessend gründlich ausspülen.</P><P>Hinweis: *Frei von Mikroplastikpartikeln gemäss UNEP-Definition.</P>",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/50Wx50H-RGB-4290522-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEyMjl8aW1hZ2UvanBlZ3xhREptTDJnd1l5OHlOekUzTmprMk56ZzVOekV4T0M4MU1GZDROVEJJTFZKSFFsODBNamt3TlRJeVh6QXdNUzVxY0djfDExNjRjZGNkOWY2MTM0ZTdhMTlkMDg2ZTlhNjdiMzNlM2RiMTMzYzZhZTVjNGE1YTJhN2Q0MWUzMjI4ZmI1Zjg"
+      } ],
+      "manufacturer" : "Nivea",
+      "multidimensional" : false,
+      "name" : "Nivea Volume Wonder Kräftigendes Shampoo Bambus Extrakt 50ml Travel Size",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "1.95",
+         "priceType" : "BUY",
+         "value" : 1.95
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/nivea-volume-wonder-kraeftigendes-shampoo-bambus-extrakt-50ml-travel-size/p/4290522",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "7384799",
+      "description" : "Das milde well Kids Sensitive 3in1 Duschgel, Shampoo, Bad mit Duft nach Apfel und Erdbeeren reinigt Haut und Haar sanft, ohne sie auszutrocknen. Die Formulierung mit Panthenol wurde speziell für empfindliche Kinderhaut entwickelt. Brennt nicht in den Augen. Mit Bitterstoff gegen Verschlucken. pH-hautneutral. ",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7384799-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDEyOTd8aW1hZ2UvanBlZ3xhRE5pTDJnMVpTOHlOemcxTURjNE9EVXpOak0xTUM4M016ZzBOems1WHpBd01TNXFjR2N8NDU1Nzc3MWYyNjc0MzhiMmI5ODFjNjZlZWU5YTE4NTVhMzFkZTM2Njg0MmY0NWRlZGFhY2ZjZmQxMmI4MmI1Zg"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7384799-001.webp?context=bWFzdGVyfHByb2R1a3RlfDUyMHxpbWFnZS93ZWJwfGFEWXpMMmhqWmk4eU56ZzFNRGM0T1RjNE1UVXpOQzgzTXpnME56azVYekF3TVM1M1pXSnd8NzI2N2IxOTI4MGRiODJhYzJiYWJiM2ZkMmMwYjA4MzJhOWQ4OWNiZDAxNWViOTVhNzUwMjIyNzJiMzc1MWEzMA"
+      } ],
+      "manufacturer" : "well",
+      "multidimensional" : false,
+      "name" : "well Kids 3in1 Dusch Shampoo Bad",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.20",
+         "priceType" : "BUY",
+         "value" : 2.2
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kosmetik-gesundheit/koerperpflege/duschen/duschgel/well-kids-3in1-dusch-shampoo-bad/p/7384799",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "7384798",
+      "description" : "reinigt Kinderhaare und Kopfhaut sanft",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7384798-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDE1NzN8aW1hZ2UvanBlZ3xhR0l3TDJnM05DOHlOemcxTURreU1ERXpNall6T0M4M016ZzBOems0WHpBd01TNXFjR2N8MjFjNmRhM2M4NGQ5YWNmYTgyYWEwYWQ4YmNkNzNjNzMwMjFiMmJiOTllMzI1M2M0NGExNjk3NWQ2MTAyYzQ1Yg"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7384798-001.webp?context=bWFzdGVyfHByb2R1a3RlfDY2MHxpbWFnZS93ZWJwfGFHTTJMMmhsTlM4eU56ZzFNRGt5TVRNM056Z3lNaTgzTXpnME56azRYekF3TVM1M1pXSnd8NGYzYjgyM2VlYjE1YzE1ODI1NTU5NGQ3MDcyODU3MTc3ZDI5ZDc5OTliMzZhYWRlNjFmMjRhM2RkZDhmMjE2Mg"
+      } ],
+      "manufacturer" : "well",
+      "multidimensional" : false,
+      "name" : "well Kids 2in1 Shampoo & Conditioner",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.20",
+         "priceType" : "BUY",
+         "value" : 2.2
+      },
+      "stock" : {
+      },
+      "url" : "/kosmetik-gesundheit/haarpflege-haarstyling/haarpflege/shampoo/well-kids-2in1-shampoo-conditioner/p/7384798",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "7328771",
+      "description" : "<P>well! Lotionsflasche 55 ml Travel Size – Nachfüllbare Flasche in Reisegrösse</P><P>Die well! Lotionsflasche 55 ml in praktischer Travel Size und Reisegrösse eignet sich ideal zum Abfüllen kleiner Mengen von Shampoo, Duschgel, Bodylotion, Conditioner oder anderen flüssigen Pflegeprodukten. Das kompakte Format ist perfekt für Kurzreisen, das Handgepäck oder den Alltag unterwegs.</P><P>Die leichte Flasche mit Schraubverschluss lässt sich einfach befüllen und sorgt für den sicheren Transport Ihrer Pflegeprodukte. Dank der wiederverwendbaren Ausführung ist sie eine praktische und nachhaltige Lösung für Reisen und unterwegs.</P><P>Vorteile auf einen Blick:</P><UL> <LI>Nachfüllbare Lotionsflasche mit 55 ml Fassungsvermögen<B></B></LI><STRONG></STRONG> <LI>Travel Size und Reisegrösse</LI> <LI>Ideal für Shampoo, Duschgel, Bodylotion, Conditioner und weitere Flüssigkeiten</LI> <LI>Sicherer Schraubverschluss</LI> <LI>Leicht und platzsparend</LI> <LI>Wiederverwendbar</LI> <LI>Handgepäcktauglich</LI> <LI>Perfekt für Kurzreisen und unterwegs</LI></UL><B><B><B><B><B><B><B></B></B></B></B></B></B></B>",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7328771-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDk4NXxpbWFnZS9qcGVnfGFEZ3lMMmhrWmk4eU9ESXlNVGM1T0RjeE1UTXlOaTgzTXpJNE56Y3hYekF3TVM1cWNHY3w5Y2JhZTU3Yzc2ODM1MWIyOTA2ZThmMTVkYmViOWM5ZGYyNTJhMmU1YmM4NmQ4NmIzZjM1MTA3MDc4OWQ4NmYy"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7328771-001.webp?context=bWFzdGVyfHByb2R1a3RlfDI5OHxpbWFnZS93ZWJwfGFEWmtMMmcyWlM4eU9ESXlNVGM1T1RrMU5qVXhNQzgzTXpJNE56Y3hYekF3TVM1M1pXSnd8NjQzZDYyYjFmOGRiZTRjNWFlNGU3ZjI2MmFlMGQyOThjYTg1NWFlMmI5ODllNjBmNmYwNzU2MjFmMDFjYWMxNQ"
+      } ],
+      "manufacturer" : "well",
+      "multidimensional" : false,
+      "name" : "Well Lotionsflasche 55ml Travel Size",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.50",
+         "priceType" : "BUY",
+         "value" : 2.5
+      },
+      "stock" : {
+         "stockLevelStatus" : "inStock"
+      },
+      "url" : "/kosmetik-gesundheit/make-up-parfum/zubehoer/zerstaeuber/well-lotionsflasche-55ml-travel-size/p/7328771",
+      "volumePricesFlag" : false
+   }, {
+      "availableForPickup" : false,
+      "categories" : [ ],
+      "code" : "7457896",
+      "description" : "<P>well! Lotion Pumpbehältnis 30 ml Travel Size – Nachfüllbarer Pumpspender in Reisegrösse</P><P>Das well! Lotion Pumpbehältnis 30 ml in praktischer Travel Size und Reisegrösse eignet sich ideal zum Abfüllen und Dosieren von Lotion, Serum, Flüssigseife, Shampoo oder anderen flüssigen Pflegeprodukten. Das kompakte Format ist perfekt für Reisen, das Handgepäck oder den Alltag unterwegs.</P><P>Der transparente Pumpbehälter ermöglicht eine saubere und präzise Dosierung. Der Schraubverschluss sowie die schützende Verschlusskappe sorgen für einen sicheren Transport und schützen zuverlässig vor dem Auslaufen. Wiederverwendbar und leicht ist das Pumpbehältnis die ideale Lösung für Ihre Beauty- und Pflegeprodukte.</P><P>Vorteile auf einen Blick:</P><UL> <LI>Nachfüllbares Lotion Pumpbehältnis mit 30 ml Fassungsvermögen<B></B></LI><STRONG></STRONG> <LI>Travel Size und Reisegrösse</LI> <LI>Praktischer Pumpspender für sauberes Dosieren</LI> <LI>Ideal für Lotion, Serum, Flüssigseife, Shampoo und weitere Flüssigkeiten</LI> <LI>Schraubverschluss mit schützender Verschlusskappe</LI> <LI>Transparenter Behälter zur einfachen Füllstandskontrolle</LI> <LI>Wiederverwendbar und leicht</LI> <LI>Handgepäcktauglich</LI> <LI>Perfekt für Reisen, Beauty-Bag und unterwegs</LI></UL><B><B><B><B><B><B><B><B></B></B></B></B></B></B></B></B>",
+      "images" : [ {
+         "format" : "basket-XS-MD",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7457896-001.jpg?context=bWFzdGVyfHByb2R1a3RlfDk5OXxpbWFnZS9qcGVnfGFEY3dMMmcxTVM4eU9ESXlNell4T1RVMk16VTFNQzgzTkRVM09EazJYekF3TVM1cWNHY3xmNWYzYmQ0ZTIzNWU0MGVmMTYzY2M0ZDc2MmFiZjE2OGI1OTQ0MDI4YzlkMDk0N2I2MTcwY2JlODdiMzJlNDIx"
+      }, {
+         "format" : "basket-XS-MD_WebP",
+         "galleryIndex" : 0,
+         "imageType" : "PRIMARY",
+         "url" : "/cooptradingcommercewebservices/v2/medias/7457896-001.webp?context=bWFzdGVyfHByb2R1a3RlfDMyMHxpbWFnZS93ZWJwfGFHSTVMMmhqWmk4eU9ESXlNell5TURnd09EY3pOQzgzTkRVM09EazJYekF3TVM1M1pXSnd8ODA1YTAyMGZhZGM5ZWU3MTk3ZGQ5ODA1YzExYTA2NDNmYzkyN2E4ZjNlMWExOTAyYTYzNWMwYTkyYjgyMmNmOA"
+      } ],
+      "manufacturer" : "well",
+      "multidimensional" : false,
+      "name" : "Well Lotion Pumpbehältnis 30ml Travel Size",
+      "numberOfReviews" : 0,
+      "price" : {
+         "currencyIso" : "CHF",
+         "formattedValue" : "2.50",
+         "priceType" : "BUY",
+         "value" : 2.5
+      },
+      "stock" : {
+      },
+      "url" : "/kosmetik-gesundheit/make-up-parfum/zubehoer/zerstaeuber/well-lotion-pumpbehaeltnis-30ml-travel-size/p/7457896",
+      "volumePricesFlag" : false
+   } ],
+   "sorts" : [ {
+      "code" : "cheapest",
+      "name" : "Günstigste",
+      "selected" : true
+   }, {
+      "code" : "mostExpensive",
+      "name" : "Teuerste",
+      "selected" : false
+   }, {
+      "code" : "novelty",
+      "name" : "Neuheit",
+      "selected" : false
+   }, {
+      "code" : "discount",
+      "name" : "Rabatt",
+      "selected" : false
+   }, {
+      "code" : "bestRated",
+      "name" : "Beste Bewertung",
+      "selected" : false
+   }, {
+      "code" : "bestsellers",
+      "name" : "Bestseller",
+      "selected" : false
+   } ]
+}

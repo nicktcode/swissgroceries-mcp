@@ -46,3 +46,30 @@ describe('AdapterRegistry', () => {
     expect(() => r.register(fakeAdapter('migros'))).toThrow(/already registered/);
   });
 });
+
+describe('AdapterRegistry opt-in adapters', () => {
+  const mk = (chain: any, optIn?: boolean): any => ({
+    chain, optIn,
+    capabilities: { productSearch: true, productDetail: true, storeSearch: true, promotions: true, perStoreStock: false, perStorePricing: false },
+  });
+
+  it('skips opt-in adapters when no chain filter is given', () => {
+    const r = new AdapterRegistry();
+    r.register(mk('coop'));
+    r.register(mk('coopcity', true));
+    expect(r.withCapability('productSearch').map((a) => a.chain)).toEqual(['coop']);
+  });
+
+  it('includes opt-in adapters when named explicitly', () => {
+    const r = new AdapterRegistry();
+    r.register(mk('coop'));
+    r.register(mk('coopcity', true));
+    expect(r.withCapability('productSearch', ['coop', 'coopcity']).map((a) => a.chain)).toEqual(['coop', 'coopcity']);
+  });
+
+  it('still lists opt-in adapters', () => {
+    const r = new AdapterRegistry();
+    r.register(mk('coopcity', true));
+    expect(r.list().map((a) => a.chain)).toEqual(['coopcity']);
+  });
+});
