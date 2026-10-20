@@ -1,0 +1,5470 @@
+{
+ "type": "search",
+ "version": "v2.0.0",
+ "engine": "ldt-searcher",
+ "xPayload": {
+  "keywordResults": {
+   "num_items_found": 20
+  }
+ },
+ "id": "6e5f8ec1-102a-4cd1-a580-64c35621bb61",
+ "q": "fleisch",
+ "locale": "de_CH",
+ "assortment": "CH",
+ "resultType": "search",
+ "masterQuery": "fleisch",
+ "numFound": 35,
+ "offset": 0,
+ "fetchsize": 20,
+ "maxfetchsize": 1000,
+ "sort": {
+  "code": "relevancy",
+  "label": "Relevanz",
+  "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&sort=relevancy",
+  "link": {
+   "type": "search",
+   "filter": {},
+   "sort": "relevancy",
+   "q": "fleisch"
+  }
+ },
+ "sorts": [
+  {
+   "code": "relevancy",
+   "label": "Relevanz",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&sort=relevancy",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "relevancy",
+    "q": "fleisch"
+   }
+  },
+  {
+   "code": "price",
+   "label": "Preis aufsteigend",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&sort=price",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "price",
+    "q": "fleisch"
+   }
+  },
+  {
+   "code": "price-desc",
+   "label": "Preis absteigend",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&sort=price-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "price-desc",
+    "q": "fleisch"
+   }
+  },
+  {
+   "code": "firstOnlineDate-desc",
+   "label": "Neueste Artikel zuerst",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&sort=firstOnlineDate-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "firstOnlineDate-desc",
+    "q": "fleisch"
+   }
+  },
+  {
+   "code": "percentageDiscount-desc",
+   "label": "Höchster Rabatt zuerst",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&sort=percentageDiscount-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "percentageDiscount-desc",
+    "q": "fleisch"
+   }
+  }
+ ],
+ "facets": [
+  {
+   "type": "TEXT",
+   "code": "category",
+   "label": "Kategorie",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": false,
+    "selectedPosition": "BELOW",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "topvalues": [
+    {
+     "type": "TEXT",
+     "label": "Essen & Trinken",
+     "selected": false,
+     "count": 33,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&category=Essen+%26+Trinken",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Essen & Trinken"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "children": [],
+     "value": "10068374"
+    },
+    {
+     "type": "TEXT",
+     "label": "Küche & Haushalt",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&category=K%C3%BCche+%26+Haushalt",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Küche & Haushalt"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "children": [],
+     "value": "10068166"
+    },
+    {
+     "type": "TEXT",
+     "label": "Tierbedarf",
+     "selected": false,
+     "count": 4,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&category=Tierbedarf",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Tierbedarf"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "children": [],
+     "value": "10100091"
+    }
+   ],
+   "values": [
+    {
+     "type": "TEXT",
+     "label": "Essen & Trinken",
+     "selected": false,
+     "count": 33,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&category=Essen+%26+Trinken",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Essen & Trinken"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "children": [],
+     "value": "10068374"
+    },
+    {
+     "type": "TEXT",
+     "label": "Küche & Haushalt",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&category=K%C3%BCche+%26+Haushalt",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Küche & Haushalt"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "children": [],
+     "value": "10068166"
+    },
+    {
+     "type": "TEXT",
+     "label": "Tierbedarf",
+     "selected": false,
+     "count": 4,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&category=Tierbedarf",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Tierbedarf"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "children": [],
+     "value": "10100091"
+    }
+   ]
+  },
+  {
+   "type": "RANGE",
+   "code": "price",
+   "label": "Preis",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": false,
+    "selectedPosition": "BELOW",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "unit": "CHF",
+   "baseURL": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch",
+   "baseLink": {
+    "type": "search",
+    "filter": {},
+    "q": "fleisch"
+   },
+   "globalMin": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 1.0
+   },
+   "globalMax": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 25.0
+   },
+   "min": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 1.0
+   },
+   "max": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 25.0
+   },
+   "selectedMin": {
+    "type": "SelectedNumericValue",
+    "value": 1.0
+   },
+   "selectedMax": {
+    "type": "SelectedNumericValue",
+    "value": 25.0
+   },
+   "values": [
+    {
+     "type": "NUMERIC",
+     "label": "bis 10CHF",
+     "selected": false,
+     "count": 27,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&price=1+-+10",
+     "link": {
+      "type": "search",
+      "filter": {
+       "price": [
+        "1 - 10"
+       ]
+      },
+      "q": "fleisch"
+     }
+    },
+    {
+     "type": "NUMERIC",
+     "label": "bis 20CHF",
+     "selected": false,
+     "count": 34,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&price=1+-+20",
+     "link": {
+      "type": "search",
+      "filter": {
+       "price": [
+        "1 - 20"
+       ]
+      },
+      "q": "fleisch"
+     }
+    }
+   ]
+  },
+  {
+   "type": "TEXT",
+   "code": "brand",
+   "label": "Marke",
+   "selector": "OR",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": true,
+    "selectedPosition": "ABOVE",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "topvalues": [
+    {
+     "type": "TEXT",
+     "label": "QUALITÉ SUISSE",
+     "selected": false,
+     "count": 18,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=QUALIT%C3%89+SUISSE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "QUALITÉ SUISSE"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "QUALITÉ SUISSE"
+    },
+    {
+     "type": "TEXT",
+     "label": "CARNESI",
+     "selected": false,
+     "count": 4,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=CARNESI",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "CARNESI"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "CARNESI"
+    },
+    {
+     "type": "TEXT",
+     "label": "DELUXE",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=DELUXE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "DELUXE"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "DELUXE"
+    },
+    {
+     "type": "TEXT",
+     "label": "DULANO SELECTION",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=DULANO+SELECTION",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "DULANO SELECTION"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "DULANO SELECTION"
+    },
+    {
+     "type": "TEXT",
+     "label": "FELIX",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=FELIX",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "FELIX"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "FELIX"
+    },
+    {
+     "type": "TEXT",
+     "label": "MILA’S WORLD",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=MILA%E2%80%99S+WORLD",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "MILA’S WORLD"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "MILA’S WORLD"
+    },
+    {
+     "type": "TEXT",
+     "label": "SILVERCREST",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=SILVERCREST",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "SILVERCREST"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "SILVERCREST"
+    },
+    {
+     "type": "TEXT",
+     "label": "CHEF SELECT",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=CHEF+SELECT",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "CHEF SELECT"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "CHEF SELECT"
+    },
+    {
+     "type": "TEXT",
+     "label": "DULANO",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=DULANO",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "DULANO"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "DULANO"
+    },
+    {
+     "type": "TEXT",
+     "label": "HALLOWEEN",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=HALLOWEEN",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "HALLOWEEN"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "HALLOWEEN"
+    }
+   ],
+   "values": [
+    {
+     "type": "TEXT",
+     "label": "QUALITÉ SUISSE",
+     "selected": false,
+     "count": 18,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=QUALIT%C3%89+SUISSE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "QUALITÉ SUISSE"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "QUALITÉ SUISSE"
+    },
+    {
+     "type": "TEXT",
+     "label": "CARNESI",
+     "selected": false,
+     "count": 4,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=CARNESI",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "CARNESI"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "CARNESI"
+    },
+    {
+     "type": "TEXT",
+     "label": "DELUXE",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=DELUXE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "DELUXE"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "DELUXE"
+    },
+    {
+     "type": "TEXT",
+     "label": "DULANO SELECTION",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=DULANO+SELECTION",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "DULANO SELECTION"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "DULANO SELECTION"
+    },
+    {
+     "type": "TEXT",
+     "label": "CHEF SELECT",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=CHEF+SELECT",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "CHEF SELECT"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "CHEF SELECT"
+    },
+    {
+     "type": "TEXT",
+     "label": "DULANO",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=DULANO",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "DULANO"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "DULANO"
+    },
+    {
+     "type": "TEXT",
+     "label": "FELIX",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=FELIX",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "FELIX"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "FELIX"
+    },
+    {
+     "type": "TEXT",
+     "label": "HALLOWEEN",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=HALLOWEEN",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "HALLOWEEN"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "HALLOWEEN"
+    },
+    {
+     "type": "TEXT",
+     "label": "MILA’S WORLD",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=MILA%E2%80%99S+WORLD",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "MILA’S WORLD"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "MILA’S WORLD"
+    },
+    {
+     "type": "TEXT",
+     "label": "SILVERCREST",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&brand=SILVERCREST",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "SILVERCREST"
+       ]
+      },
+      "q": "fleisch"
+     },
+     "value": "SILVERCREST"
+    }
+   ]
+  },
+  {
+   "type": "SWITCH",
+   "code": "newArticleFlag",
+   "label": "Neu",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TOGGLE",
+    "searchable": false,
+    "selectedPosition": "ABOVE",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "value": {
+    "label": "Neu",
+    "selected": false,
+    "count": 35,
+    "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch&newArticleFlag=1",
+    "link": {
+     "type": "search",
+     "filter": {
+      "newArticleFlag": [
+       "1"
+      ]
+     },
+     "q": "fleisch"
+    }
+   }
+  }
+ ],
+ "items": [
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060341",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720234984,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-premium-burger-duopack/p10060341",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-premium-burger-duopack/p10060341",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060341_e89cbecf",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060341_b094e558",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060341",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Premium Burger Duopack",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5113218"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/sX1N7O89CYW9ssRiBVf4BKtW12KLPCmyd4MLcONIbXY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wNzQ3MEI0NTc5ODk0OUJGMzk5RUMzMUQ/wNjQ1ODMxMjE3MkI0NDk0QTJDMUE0Qzc1OUYyQjkwOTY2RDNDRTk5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/sX1N7O89CYW9ssRiBVf4BKtW12KLPCmyd4MLcONIbXY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wNzQ3MEI0NTc5ODk0OUJGMzk5RUMzMUQ/wNjQ1ODMxMjE3MkI0NDk0QTJDMUE0Qzc1OUYyQjkwOTY2RDNDRTk5LnBuZw.png",
+      "accessibility": "Drei rohe Rinderhacksteaks auf einem Teller mit Gewürzen angerichtet."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060341,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/sX1N7O89CYW9ssRiBVf4BKtW12KLPCmyd4MLcONIbXY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wNzQ3MEI0NTc5ODk0OUJGMzk5RUMzMUQ/wNjQ1ODMxMjE3MkI0NDk0QTJDMUE0Qzc1OUYyQjkwOTY2RDNDRTk5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/sX1N7O89CYW9ssRiBVf4BKtW12KLPCmyd4MLcONIbXY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wNzQ3MEI0NTc5ODk0OUJGMzk5RUMzMUQ/wNjQ1ODMxMjE3MkI0NDk0QTJDMUE0Qzc1OUYyQjkwOTY2RDNDRTk5LnBuZw.png",
+       "accessibility": "Drei rohe Rinderhacksteaks auf einem Teller mit Gewürzen angerichtet."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>Pro 8 x 100 g</li> <li>100 g = 1.50</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Premium Burger Duopack",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Premium Burger Duopack",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Sonstiges Fleisch",
+      "wonCategoryPrimaryPath": "0/17/1738/173814"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 11.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060341,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Premium Burger Duopack",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060341,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Premium Burger Duopack",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 10006
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095757",
+        "name": "Sonstiges Fleisch",
+        "url": "/h/de-CH/sonstiges-fleisch/h10095757"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173814",
+       "isMain": true,
+       "name": "Sonstiges Fleisch",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060341"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060343",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720237247,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "CARNESI",
+      "url": "/q/search?q=carnesi",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/carnesi-wildschweinfilet-medaillon/p10060343",
+     "canonicalUrl": "/p/de-CH/carnesi-wildschweinfilet-medaillon/p10060343",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060343_d9708f38",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060343_17a23809",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060343",
+     "flashSales": false,
+     "fullTitle": "CARNESI Wildschweinfilet Médaillon",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5105676"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/zBsxOJQ-qWmZjgWoUj-nqE042180jyPQRMDrs6DQ9uY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BOTY5RkRGRUVENzkyODkyQTNCQjkxMDI/wRUZBNUEzQjg1OTI5OTVBM0QwMDA4QUIxM0QzOTk3NjI2RDlDODM1LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/zBsxOJQ-qWmZjgWoUj-nqE042180jyPQRMDrs6DQ9uY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BOTY5RkRGRUVENzkyODkyQTNCQjkxMDI/wRUZBNUEzQjg1OTI5OTVBM0QwMDA4QUIxM0QzOTk3NjI2RDlDODM1LnBuZw.png",
+      "accessibility": "Rohe Rindfleischstücke auf einer Schieferplatte mit Rosmarin und Pfeffer."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060343,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/zBsxOJQ-qWmZjgWoUj-nqE042180jyPQRMDrs6DQ9uY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BOTY5RkRGRUVENzkyODkyQTNCQjkxMDI/wRUZBNUEzQjg1OTI5OTVBM0QwMDA4QUIxM0QzOTk3NjI2RDlDODM1LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/zBsxOJQ-qWmZjgWoUj-nqE042180jyPQRMDrs6DQ9uY/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BOTY5RkRGRUVENzkyODkyQTNCQjkxMDI/wRUZBNUEzQjg1OTI5OTVBM0QwMDA4QUIxM0QzOTk3NjI2RDlDODM1LnBuZw.png",
+       "accessibility": "Rohe Rindfleischstücke auf einer Schieferplatte mit Rosmarin und Pfeffer."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Aus freier Wildbahn</li> <li>Herkunft: Deutschland</li> <li>Pro 100 g</li> <li>Ca. 200-300 g</li> </ul>",
+      "fullTitle": "CARNESI Wildschweinfilet Médaillon",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Wildschweinfilet Médaillon",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Sonstiges Fleisch",
+      "wonCategoryPrimaryPath": "0/17/1738/173814"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 4.29,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060343,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Wildschweinfilet Médaillon",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060343,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "CARNESI Wildschweinfilet Médaillon",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 10008
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095757",
+        "name": "Sonstiges Fleisch",
+        "url": "/h/de-CH/sonstiges-fleisch/h10095757"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173814",
+       "isMain": true,
+       "name": "Sonstiges Fleisch",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060343"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060346",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720289088,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-cottowuerfeli/p10060346",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-cottowuerfeli/p10060346",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060346_d712d3e7",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060346_9871b110",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060346",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Cottowürfeli",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5108323"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/A6PaD_s9Dpt87TpWMtJtqc7husrC2K9ZOz2uCSD63Ak/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NjA3NzJFMUE1RUMzN0Q1NkE3NjBBMzY/5MDI2MUE0MjRGNDM2Q0Q5MEJBQUY3NEY4RERCRTI1MkU3QzRENTk2LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/A6PaD_s9Dpt87TpWMtJtqc7husrC2K9ZOz2uCSD63Ak/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NjA3NzJFMUE1RUMzN0Q1NkE3NjBBMzY/5MDI2MUE0MjRGNDM2Q0Q5MEJBQUY3NEY4RERCRTI1MkU3QzRENTk2LnBuZw.png",
+      "accessibility": "Schinkenwürfel auf einer Schieferplatte mit Salz und Petersilie."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060346,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/A6PaD_s9Dpt87TpWMtJtqc7husrC2K9ZOz2uCSD63Ak/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NjA3NzJFMUE1RUMzN0Q1NkE3NjBBMzY/5MDI2MUE0MjRGNDM2Q0Q5MEJBQUY3NEY4RERCRTI1MkU3QzRENTk2LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/A6PaD_s9Dpt87TpWMtJtqc7husrC2K9ZOz2uCSD63Ak/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NjA3NzJFMUE1RUMzN0Q1NkE3NjBBMzY/5MDI2MUE0MjRGNDM2Q0Q5MEJBQUY3NEY4RERCRTI1MkU3QzRENTk2LnBuZw.png",
+       "accessibility": "Schinkenwürfel auf einer Schieferplatte mit Salz und Petersilie."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Pro 2 x 80 g</li> <li>100 g = 1.75</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Cottowürfeli",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Cottowürfeli",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Sonstiges Fleisch",
+      "wonCategoryPrimaryPath": "0/17/1738/173814"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 0.5,
+       "deletedPrice": 3.29,
+       "discountHasStar": false,
+       "discountText": "-15%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 15,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 3.29,
+      "price": 2.79,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060346,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "Cottowürfeli",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060346,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Cottowürfeli",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 20000
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095757",
+        "name": "Sonstiges Fleisch",
+        "url": "/h/de-CH/sonstiges-fleisch/h10095757"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173814",
+       "isMain": true,
+       "name": "Sonstiges Fleisch",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060346"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060571",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792363124685465,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-speckwu-rfeli-duo-xxl/p10060571",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-speckwu-rfeli-duo-xxl/p10060571",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060571_100e54e8",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060571_886ada28",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060571",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Speckwürfeli Duo XXL",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "7029"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/9b_G2gsiSv5h3-NQiCTZSB401BDvc8wbzTZF8LpOHvQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQjA2RDI5NUNBQkExOTg5OTY2NEU3NEJ/CMEFCNDIzNzBEODdFRjlBMjI2RUI3MDRDNUUzM0UwRkQwRDlEQzFELnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/9b_G2gsiSv5h3-NQiCTZSB401BDvc8wbzTZF8LpOHvQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQjA2RDI5NUNBQkExOTg5OTY2NEU3NEJ/CMEFCNDIzNzBEODdFRjlBMjI2RUI3MDRDNUUzM0UwRkQwRDlEQzFELnBuZw.png",
+      "accessibility": "Schweizer Speckwürfeli, 2x100g"
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060571,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/9b_G2gsiSv5h3-NQiCTZSB401BDvc8wbzTZF8LpOHvQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQjA2RDI5NUNBQkExOTg5OTY2NEU3NEJ/CMEFCNDIzNzBEODdFRjlBMjI2RUI3MDRDNUUzM0UwRkQwRDlEQzFELnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/9b_G2gsiSv5h3-NQiCTZSB401BDvc8wbzTZF8LpOHvQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQjA2RDI5NUNBQkExOTg5OTY2NEU3NEJ/CMEFCNDIzNzBEODdFRjlBMjI2RUI3MDRDNUUzM0UwRkQwRDlEQzFELnBuZw.png",
+       "accessibility": "Schweizer Speckwürfeli, 2x100g"
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Pro 2 x 200 g</li> <li>100 g = 0.79</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Speckwürfeli Duo XXL",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Speckwürfeli Duo XXL",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Sonstiges Fleisch",
+      "wonCategoryPrimaryPath": "0/17/1738/173814"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "XXL",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 3.15,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060571,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792363124,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 19.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 19.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792360800
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792360800,
+     "title": "Speckwürfeli Duo XXL",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060571,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104647",
+        "name": "XXL sparen",
+        "url": "/c/de-CH/xxl-sparen/a10104647"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Speckwürfeli Duo XXL",
+     "retailLists": [
+      [
+       {
+        "id": 8349,
+        "productSortIndex": 43
+       }
+      ]
+     ],
+     "lists": [
+      8349
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095757",
+        "name": "Sonstiges Fleisch",
+        "url": "/h/de-CH/sonstiges-fleisch/h10095757"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173814",
+       "isMain": true,
+       "name": "Sonstiges Fleisch",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060571"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060738",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274769681250,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "CARNESI",
+      "url": "/q/search?q=carnesi",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/carnesi-rehkeule/p10060738",
+     "canonicalUrl": "/p/de-CH/carnesi-rehkeule/p10060738",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060738_4e5d40fa",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060738_e83ed016",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060738",
+     "flashSales": false,
+     "fullTitle": "CARNESI Rehkeule",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "7593"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/2cskblT0E9ZCsSuqvEy8pf3w9g8xEYEsBVnUlHcTHjc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81RTQ0RERCRTUzODdBN0U5ODdCRTBFRUM/xQkYzQzAzMzI4NzIyNzAyNkU5MUQzMURDODNFNUE4MjIwNUY4QjNGLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/2cskblT0E9ZCsSuqvEy8pf3w9g8xEYEsBVnUlHcTHjc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81RTQ0RERCRTUzODdBN0U5ODdCRTBFRUM/xQkYzQzAzMzI4NzIyNzAyNkU5MUQzMURDODNFNUE4MjIwNUY4QjNGLnBuZw.png",
+      "accessibility": "Rohes Hirschfleisch auf einem Schieferbrett mit Rosmarin, Salz und Pfeffer."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060738,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/2cskblT0E9ZCsSuqvEy8pf3w9g8xEYEsBVnUlHcTHjc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81RTQ0RERCRTUzODdBN0U5ODdCRTBFRUM/xQkYzQzAzMzI4NzIyNzAyNkU5MUQzMURDODNFNUE4MjIwNUY4QjNGLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/2cskblT0E9ZCsSuqvEy8pf3w9g8xEYEsBVnUlHcTHjc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81RTQ0RERCRTUzODdBN0U5ODdCRTBFRUM/xQkYzQzAzMzI4NzIyNzAyNkU5MUQzMURDODNFNUE4MjIwNUY4QjNGLnBuZw.png",
+       "accessibility": "Rohes Hirschfleisch auf einem Schieferbrett mit Rosmarin, Salz und Pfeffer."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Aus freier Wildbahn</li> <li>Herkunft: &Ouml;sterreich</li> <li>Pro 100 g</li> <li>Ca. 1800-2400 g</li> </ul>",
+      "fullTitle": "CARNESI Rehkeule",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Rehkeule",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Sonstiges Fleisch",
+      "wonCategoryPrimaryPath": "0/17/1738/173814"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 1.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060738,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274769,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 24.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 24.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1792879199
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1792879199,
+     "title": "Rehkeule",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060738,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105301",
+        "name": "Super Wochenende",
+        "url": "/c/de-CH/super-wochenende/a10105301"
+       }
+      ]
+     ],
+     "fullTitle": "CARNESI Rehkeule",
+     "retailLists": [
+      [
+       {
+        "id": 8374,
+        "productSortIndex": 3
+       }
+      ]
+     ],
+     "lists": [
+      8374
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095757",
+        "name": "Sonstiges Fleisch",
+        "url": "/h/de-CH/sonstiges-fleisch/h10095757"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173814",
+       "isMain": true,
+       "name": "Sonstiges Fleisch",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060738"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060761",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274770029211,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "CARNESI",
+      "url": "/q/search?q=carnesi",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/carnesi-rothirschschnitzel/p10060761",
+     "canonicalUrl": "/p/de-CH/carnesi-rothirschschnitzel/p10060761",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060761_5043dd6a",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060761_ef843a1a",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060761",
+     "flashSales": false,
+     "fullTitle": "CARNESI Rothirschschnitzel",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "1842"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/5pyW3ZP-CWz4IUdXBLXJPrZ8NnKKFKBVNxOLYo8dWig/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80ODI0MTY4REI1Q0M1RDJFMjVGMEY1RDY/wODRFOTI2QjZGOEE2RkVGODYwNkY1QkVFOUNFNjU0RUI3Qjg5Njg1LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/5pyW3ZP-CWz4IUdXBLXJPrZ8NnKKFKBVNxOLYo8dWig/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80ODI0MTY4REI1Q0M1RDJFMjVGMEY1RDY/wODRFOTI2QjZGOEE2RkVGODYwNkY1QkVFOUNFNjU0RUI3Qjg5Njg1LnBuZw.png",
+      "accessibility": "Zwei rohe Wildfilets auf einem Teller mit Kräutern und Gewürzen garniert"
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060761,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/5pyW3ZP-CWz4IUdXBLXJPrZ8NnKKFKBVNxOLYo8dWig/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80ODI0MTY4REI1Q0M1RDJFMjVGMEY1RDY/wODRFOTI2QjZGOEE2RkVGODYwNkY1QkVFOUNFNjU0RUI3Qjg5Njg1LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/5pyW3ZP-CWz4IUdXBLXJPrZ8NnKKFKBVNxOLYo8dWig/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80ODI0MTY4REI1Q0M1RDJFMjVGMEY1RDY/wODRFOTI2QjZGOEE2RkVGODYwNkY1QkVFOUNFNjU0RUI3Qjg5Njg1LnBuZw.png",
+       "accessibility": "Zwei rohe Wildfilets auf einem Teller mit Kräutern und Gewürzen garniert"
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Aus freier Wildbahn</li> <li>Herkunft: Ungarn, Polen</li> <li>Pro 2 x 100 g</li> <li>100 g = 3.00</li> </ul>",
+      "fullTitle": "CARNESI Rothirschschnitzel",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Rothirschschnitzel",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Sonstiges Fleisch",
+      "wonCategoryPrimaryPath": "0/17/1738/173814"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 1.0,
+       "deletedPrice": 6.99,
+       "discountHasStar": false,
+       "discountText": "-14%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 14,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 6.99,
+      "price": 5.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060761,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274769,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Rothirschschnitzel",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060761,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "CARNESI Rothirschschnitzel",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 10006
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095757",
+        "name": "Sonstiges Fleisch",
+        "url": "/h/de-CH/sonstiges-fleisch/h10095757"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173814",
+       "isMain": true,
+       "name": "Sonstiges Fleisch",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060761"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060492",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792363074621028,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "HALLOWEEN",
+      "url": "/q/search?q=halloween",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/halloween-chicken-nuggets/p10060492",
+     "canonicalUrl": "/p/de-CH/halloween-chicken-nuggets/p10060492",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060492_0e0429b0",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060492_7dbba320",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060492",
+     "flashSales": false,
+     "fullTitle": "HALLOWEEN Chicken Nuggets",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "11137"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/eWNMIp_7yJ0h_E9iHJilEd1Xw7eVO0whsGjVZZDogTg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8xMDZGOEI1Q0VEREI4RDU0MjRCMTM1RDc/2RUZGNTlGQUQ0REM1RTUyODBCREVCNTk5MzQ5MkVFNkVFQjE0Q0Y3LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/eWNMIp_7yJ0h_E9iHJilEd1Xw7eVO0whsGjVZZDogTg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8xMDZGOEI1Q0VEREI4RDU0MjRCMTM1RDc/2RUZGNTlGQUQ0REM1RTUyODBCREVCNTk5MzQ5MkVFNkVFQjE0Q0Y3LnBuZw.png",
+      "accessibility": "Karton mit tiefgekühlten Hähnchen-Nuggets im Halloween-Design, 400g."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060492,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/eWNMIp_7yJ0h_E9iHJilEd1Xw7eVO0whsGjVZZDogTg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8xMDZGOEI1Q0VEREI4RDU0MjRCMTM1RDc/2RUZGNTlGQUQ0REM1RTUyODBCREVCNTk5MzQ5MkVFNkVFQjE0Q0Y3LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/eWNMIp_7yJ0h_E9iHJilEd1Xw7eVO0whsGjVZZDogTg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8xMDZGOEI1Q0VEREI4RDU0MjRCMTM1RDc/2RUZGNTlGQUQ0REM1RTUyODBCREVCNTk5MzQ5MkVFNkVFQjE0Q0Y3LnBuZw.png",
+       "accessibility": "Karton mit tiefgekühlten Hähnchen-Nuggets im Halloween-Design, 400g."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Pro 400 g</li> <li>100 g = 1.25</li> </ul>",
+      "fullTitle": "HALLOWEEN Chicken Nuggets",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Chicken Nuggets",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Tiefkühlkost (Gefrorene Lebensmittel)/Tiefkühl Fleisch & Geflügel",
+      "wonCategoryPrimaryPath": "0/17/1716/171615"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 4.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060492,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792363074,
+     "seals": [
+      {
+       "altText": "Tiefgefroren DE",
+       "image": "https://imgproxy-retcat.assets.schwarz/qBuJI-5Hb1HUZ1yRE-GyNmLo40R3mvwKVrQgjjQ4618/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8wMDFDNUU4QUIxNTJDMUVBNDREMjE2QUI/5NUY2MUM1REU4NTExNzVCRDRFQUZBQzRCODM2MEYyODMyQThBMEU2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 19.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 19.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792360800
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792360800,
+     "title": "Chicken Nuggets",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060492,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104646",
+        "name": "Halloween",
+        "url": "/c/de-CH/halloween/a10104646"
+       }
+      ]
+     ],
+     "fullTitle": "HALLOWEEN Chicken Nuggets",
+     "retailLists": [
+      [
+       {
+        "id": 8350,
+        "productSortIndex": 10
+       }
+      ]
+     ],
+     "lists": [
+      8350
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10071049",
+        "name": "Tiefgekühlt",
+        "url": "/h/de-CH/tiefkuehlkost/h10071049"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096204",
+        "name": "Tiefkühl Fleisch & Geflügel",
+        "url": "/h/de-CH/tiefkuehl-fleisch-gefluegel/h10096204"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "171615",
+       "isMain": true,
+       "name": "Tiefkühl Fleisch & Geflügel",
+       "parent": "1716",
+       "superCategories": [
+        {
+         "code": "1716",
+         "name": "Tiefkühlkost (Gefrorene Lebensmittel)",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060492"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10059725",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792168945824460,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "DELUXE",
+      "url": "/q/search?q=deluxe",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/deluxe-wildpastete/p10059725",
+     "canonicalUrl": "/p/de-CH/deluxe-wildpastete/p10059725",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10059725_6b20f9d6",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10059725_9e1c4471",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10059725",
+     "flashSales": false,
+     "fullTitle": "DELUXE Wildpastete",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "7400488"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/vt7VuGZL2ZgECI-mNxdIFS_8RPs6_Jv5D_pusEjmSF4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTM2QzYxMEIyMzNCM0QyRjIxMTY2QkF/FMTk2QUQ4NzY4REVEMzEyNzU5QTlEQjM5REQ2MkM4RTcxMkVFRDRFLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/vt7VuGZL2ZgECI-mNxdIFS_8RPs6_Jv5D_pusEjmSF4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTM2QzYxMEIyMzNCM0QyRjIxMTY2QkF/FMTk2QUQ4NzY4REVEMzEyNzU5QTlEQjM5REQ2MkM4RTcxMkVFRDRFLnBuZw.png",
+      "accessibility": "Drei Packungen Schweineleberpaté in verschiedenen Geschmacksrichtungen à 250 g."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10059725,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/vt7VuGZL2ZgECI-mNxdIFS_8RPs6_Jv5D_pusEjmSF4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTM2QzYxMEIyMzNCM0QyRjIxMTY2QkF/FMTk2QUQ4NzY4REVEMzEyNzU5QTlEQjM5REQ2MkM4RTcxMkVFRDRFLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/vt7VuGZL2ZgECI-mNxdIFS_8RPs6_Jv5D_pusEjmSF4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTM2QzYxMEIyMzNCM0QyRjIxMTY2QkF/FMTk2QUQ4NzY4REVEMzEyNzU5QTlEQjM5REQ2MkM4RTcxMkVFRDRFLnBuZw.png",
+       "accessibility": "Drei Packungen Schweineleberpaté in verschiedenen Geschmacksrichtungen à 250 g."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Diverse Sorten</li> <li>Pro 250 g</li> <li>100 g = 1.40</li> </ul>",
+      "fullTitle": "DELUXE Wildpastete",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Wildpastete",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Lebensmittelvorrat/Fleisch- & Fischkonserven",
+      "wonCategoryPrimaryPath": "0/17/1741/174114"
+     },
+     "lidlPlus": [
+      {
+       "price": {
+        "basePrice": {
+         "prefix": false
+        },
+        "discount": {
+         "deletedPrice": 3.99,
+         "discountHasStar": false,
+         "discountText": "-12%",
+         "fromNormalPriceForLidlPlus": false,
+         "fromRecommendedPrice": false,
+         "hideBargainHint": false,
+         "bargainHintEnabled": false,
+         "bargainHintText": "BargainHint_Text",
+         "showDiscount": true,
+         "showFrom": false,
+         "showPercentage": true,
+         "showUpTo": false
+        },
+        "displayedCurrency": "CHF",
+        "hasStar": false,
+        "hasVat": false,
+        "oldPrice": 3.99,
+        "price": 3.49,
+        "priceTheme": "white_yellow",
+        "specialTaxes": [],
+        "superscript": "*"
+       },
+       "lidlPlusText": "Mit Lidl Plus",
+       "highlightText": "-12%"
+      }
+     ],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": true,
+      "hasVat": false,
+      "specialTaxes": [],
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10059725,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792168945,
+     "seals": [
+      {
+       "altText": "Thermometer-Symbol, das gekühlte Produkte anzeigt.",
+       "image": "https://imgproxy-retcat.assets.schwarz/MMStbskViQs4FGQ0hMZSzgdq3uKvuQ0INcIRO_90GNM/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8yQ0FBMUQzMjM4NjNDQzk3QzUwRUY0Rjk/zNjRENzU1QzFDMUJDNzZBRDY3MURBREJGRDc2NTdEMzYwQzk0MzMwLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_PAST_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_PAST_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "Wildpastete",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10059725,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10020520",
+        "name": "Lidl Plus Angebote",
+        "url": "/c/de-CH/lidl-plus-angebote/a10020520"
+       }
+      ],
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "DELUXE Wildpastete",
+     "retailLists": [
+      [
+       {
+        "id": 4501,
+        "productSortIndex": 0
+       },
+       {
+        "id": 8340,
+        "productSortIndex": 20076
+       }
+      ]
+     ],
+     "lists": [
+      4501,
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096095",
+        "name": "Lebensmittelvorrat",
+        "url": "/h/de-CH/lebensmittelvorrat/h10096095"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096102",
+        "name": "Fleisch- & Fischkonserven",
+        "url": "/h/de-CH/fleisch-fischkonserven/h10096102"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "174114",
+       "isMain": true,
+       "name": "Fleisch- & Fischkonserven",
+       "parent": "1741",
+       "superCategories": [
+        {
+         "code": "1741",
+         "name": "Lebensmittelvorrat",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10059725"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060338",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720201411,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-schweinshuft-am-stueck/p10060338",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-schweinshuft-am-stueck/p10060338",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060338_f42e7399",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060338_c189cdba",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060338",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Schweinshuft am Stück",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5106028"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/PxoCfta638ouS4Kx4uvW68eGl-ROi0sVSe2pfUwb7Qg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNkNCNUU1ODUxQkNDNjdBMDBERTk5Mzh/EODE0OEJFOUM1NERFRjgwOUY3NkZBQjdCQkM1RTI4MURBMEUwQ0U0LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/PxoCfta638ouS4Kx4uvW68eGl-ROi0sVSe2pfUwb7Qg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNkNCNUU1ODUxQkNDNjdBMDBERTk5Mzh/EODE0OEJFOUM1NERFRjgwOUY3NkZBQjdCQkM1RTI4MURBMEUwQ0U0LnBuZw.png",
+      "accessibility": "Roher Schweinenacken auf einer Schieferplatte mit Knoblauch und Rosmarin."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060338,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/PxoCfta638ouS4Kx4uvW68eGl-ROi0sVSe2pfUwb7Qg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNkNCNUU1ODUxQkNDNjdBMDBERTk5Mzh/EODE0OEJFOUM1NERFRjgwOUY3NkZBQjdCQkM1RTI4MURBMEUwQ0U0LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/PxoCfta638ouS4Kx4uvW68eGl-ROi0sVSe2pfUwb7Qg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNkNCNUU1ODUxQkNDNjdBMDBERTk5Mzh/EODE0OEJFOUM1NERFRjgwOUY3NkZBQjdCQkM1RTI4MURBMEUwQ0U0LnBuZw.png",
+       "accessibility": "Roher Schweinenacken auf einer Schieferplatte mit Knoblauch und Rosmarin."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Cura Porc</li> <li>Herkunft: Schweiz</li> <li>Pro 100 g</li> <li>Ca. 400-800 g</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Schweinshuft am Stück",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Schweinshuft am Stück",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 1.49,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060338,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Schweinshuft am Stück",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060338,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Schweinshuft am Stück",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 10003
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060338"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060339",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792169016711283,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-schweinsnierstueck-am-stueck/p10060339",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-schweinsnierstueck-am-stueck/p10060339",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060339_9748139a",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060339_8bb25f46",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060339",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Schweinsnierstück am Stück",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5103341"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/ynneGLXK_D77wbRNHuatYIKoRMfYfd7tu7qoewDLDwI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RTkyRUIxOEFDQ0YwOTQ0NjA3MkFEQkY/wNzAwMDNCMzk5RTc4MEUxMjhDNTEwNTA1QkZEQTI2MzFCMTgwOTEyLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/ynneGLXK_D77wbRNHuatYIKoRMfYfd7tu7qoewDLDwI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RTkyRUIxOEFDQ0YwOTQ0NjA3MkFEQkY/wNzAwMDNCMzk5RTc4MEUxMjhDNTEwNTA1QkZEQTI2MzFCMTgwOTEyLnBuZw.png",
+      "accessibility": "Roher Schweinerückenbraten auf einer mit Blumen dekorierten Schieferplatte."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060339,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/ynneGLXK_D77wbRNHuatYIKoRMfYfd7tu7qoewDLDwI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RTkyRUIxOEFDQ0YwOTQ0NjA3MkFEQkY/wNzAwMDNCMzk5RTc4MEUxMjhDNTEwNTA1QkZEQTI2MzFCMTgwOTEyLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/ynneGLXK_D77wbRNHuatYIKoRMfYfd7tu7qoewDLDwI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RTkyRUIxOEFDQ0YwOTQ0NjA3MkFEQkY/wNzAwMDNCMzk5RTc4MEUxMjhDNTEwNTA1QkZEQTI2MzFCMTgwOTEyLnBuZw.png",
+       "accessibility": "Roher Schweinerückenbraten auf einer mit Blumen dekorierten Schieferplatte."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>Pro 100 g</li> <li>Ca. 650-1000 g</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Schweinsnierstück am Stück",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Schweinsnierstück am Stück",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [
+      {
+       "price": {
+        "basePrice": {
+         "prefix": false
+        },
+        "discount": {
+         "deletedPrice": 1.79,
+         "discountHasStar": false,
+         "discountText": "-16%",
+         "fromNormalPriceForLidlPlus": false,
+         "fromRecommendedPrice": false,
+         "hideBargainHint": false,
+         "bargainHintEnabled": false,
+         "bargainHintText": "BargainHint_Text",
+         "showDiscount": true,
+         "showFrom": false,
+         "showPercentage": true,
+         "showUpTo": false
+        },
+        "displayedCurrency": "CHF",
+        "hasStar": false,
+        "hasVat": false,
+        "oldPrice": 1.79,
+        "price": 1.49,
+        "priceTheme": "white_yellow",
+        "specialTaxes": [],
+        "superscript": "*"
+       },
+       "lidlPlusText": "Mit Lidl Plus",
+       "highlightText": "-16%"
+      }
+     ],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": true,
+      "hasVat": false,
+      "specialTaxes": [],
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060339,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792169016,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_PAST_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_PAST_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "Schweinsnierstück am Stück",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060339,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10020520",
+        "name": "Lidl Plus Angebote",
+        "url": "/c/de-CH/lidl-plus-angebote/a10020520"
+       }
+      ],
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Schweinsnierstück am Stück",
+     "retailLists": [
+      [
+       {
+        "id": 4501,
+        "productSortIndex": 15
+       },
+       {
+        "id": 8340,
+        "productSortIndex": 10004
+       }
+      ]
+     ],
+     "lists": [
+      4501,
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060339"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060340",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720216777,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-schweinshals-koteletts-duopack/p10060340",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-schweinshals-koteletts-duopack/p10060340",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060340_2e3f150c",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060340_00a8fc48",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060340",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Schweinshals Koteletts Duopack",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5270"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/cRqxb7mMm0Se_TRGSWHrqIJM-SkkmswDXMvOcqFK6Lg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RTQyOTdCMzQ1MzA5NTdFMDkyMTY4ODJ/ENUM0NTE2M0IwQ0NCRDYzREY4NzdFOTIyMUZGRkREQjY3RUE4QjJFLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/cRqxb7mMm0Se_TRGSWHrqIJM-SkkmswDXMvOcqFK6Lg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RTQyOTdCMzQ1MzA5NTdFMDkyMTY4ODJ/ENUM0NTE2M0IwQ0NCRDYzREY4NzdFOTIyMUZGRkREQjY3RUE4QjJFLnBuZw.png",
+      "accessibility": "Zwei rohe Rindersteaks auf einer Schieferplatte mit Knoblauch und Kräutern."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060340,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/cRqxb7mMm0Se_TRGSWHrqIJM-SkkmswDXMvOcqFK6Lg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RTQyOTdCMzQ1MzA5NTdFMDkyMTY4ODJ/ENUM0NTE2M0IwQ0NCRDYzREY4NzdFOTIyMUZGRkREQjY3RUE4QjJFLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/cRqxb7mMm0Se_TRGSWHrqIJM-SkkmswDXMvOcqFK6Lg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RTQyOTdCMzQ1MzA5NTdFMDkyMTY4ODJ/ENUM0NTE2M0IwQ0NCRDYzREY4NzdFOTIyMUZGRkREQjY3RUE4QjJFLnBuZw.png",
+       "accessibility": "Zwei rohe Rindersteaks auf einer Schieferplatte mit Knoblauch und Kräutern."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>Pro 2 x 500 g</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Schweinshals Koteletts Duopack",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Schweinshals Koteletts Duopack",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 10.9,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060340,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Schweinshals Koteletts Duopack",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060340,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Schweinshals Koteletts Duopack",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 10005
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060340"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060342",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720233949,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "CARNESI",
+      "url": "/q/search?q=carnesi",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/carnesi-black-angus-entrecote/p10060342",
+     "canonicalUrl": "/p/de-CH/carnesi-black-angus-entrecote/p10060342",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060342_1badd4c8",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060342_4d99510d",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060342",
+     "flashSales": false,
+     "fullTitle": "CARNESI Black Angus Entrecôte",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5103268"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/vopzKoIa-33Sqf7HDu8S_pFq_O7v3vCWc-VZIcjRWJM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RjYzQkNEMTU1NEMxODBFRjYyQzQxM0Q/4NTY5ODAzNjBGNThEOTFENDUzMjEwNTUxNEMxRTFFM0M2MjA3NjNFLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/vopzKoIa-33Sqf7HDu8S_pFq_O7v3vCWc-VZIcjRWJM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RjYzQkNEMTU1NEMxODBFRjYyQzQxM0Q/4NTY5ODAzNjBGNThEOTFENDUzMjEwNTUxNEMxRTFFM0M2MjA3NjNFLnBuZw.png",
+      "accessibility": "Roher Rinderbraten auf einer Schieferplatte mit Knoblauch und Kräutern."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060342,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/vopzKoIa-33Sqf7HDu8S_pFq_O7v3vCWc-VZIcjRWJM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RjYzQkNEMTU1NEMxODBFRjYyQzQxM0Q/4NTY5ODAzNjBGNThEOTFENDUzMjEwNTUxNEMxRTFFM0M2MjA3NjNFLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/vopzKoIa-33Sqf7HDu8S_pFq_O7v3vCWc-VZIcjRWJM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84RjYzQkNEMTU1NEMxODBFRjYyQzQxM0Q/4NTY5ODAzNjBGNThEOTFENDUzMjEwNTUxNEMxRTFFM0M2MjA3NjNFLnBuZw.png",
+       "accessibility": "Roher Rinderbraten auf einer Schieferplatte mit Knoblauch und Kräutern."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Am St&uuml;ck</li> <li>Herkunft: Uruguay</li> <li>Pro 100 g</li> <li>Ca. 800-1200 g</li> </ul>",
+      "fullTitle": "CARNESI Black Angus Entrecôte",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Black Angus Entrecôte",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Rind",
+      "wonCategoryPrimaryPath": "0/17/1738/173811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 2.95,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060342,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Black Angus Entrecôte",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060342,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "CARNESI Black Angus Entrecôte",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 10007
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095754",
+        "name": "Rindfleisch",
+        "url": "/h/de-CH/rind/h10095754"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173811",
+       "isMain": true,
+       "name": "Rind",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060342"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060445",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792363095853613,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-bratspeck-duopack-xxl/p10060445",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-bratspeck-duopack-xxl/p10060445",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060445_bfbabd5b",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060445_97775055",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060445",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Bratspeck Duopack XXL",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "6207"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/5-wzLdmQ2ecO2XJPRTK2y75TQBrDjWaOO-qTRIOMHLU/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MjE1MDBGMEI4RTU5QTU4ODdEQkExQzQ/1MkZGMDZEMDYxREZBM0M1QUQ1RjJFMEIwNzUxMDc0NEZCOUUzNzg5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/5-wzLdmQ2ecO2XJPRTK2y75TQBrDjWaOO-qTRIOMHLU/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MjE1MDBGMEI4RTU5QTU4ODdEQkExQzQ/1MkZGMDZEMDYxREZBM0M1QUQ1RjJFMEIwNzUxMDc0NEZCOUUzNzg5LnBuZw.png",
+      "accessibility": "Ein Haufen dünn geschnittener roher Speck auf einer dunklen Schieferplatte mit Kräutern und Gewürzen."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060445,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/5-wzLdmQ2ecO2XJPRTK2y75TQBrDjWaOO-qTRIOMHLU/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MjE1MDBGMEI4RTU5QTU4ODdEQkExQzQ/1MkZGMDZEMDYxREZBM0M1QUQ1RjJFMEIwNzUxMDc0NEZCOUUzNzg5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/5-wzLdmQ2ecO2XJPRTK2y75TQBrDjWaOO-qTRIOMHLU/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MjE1MDBGMEI4RTU5QTU4ODdEQkExQzQ/1MkZGMDZEMDYxREZBM0M1QUQ1RjJFMEIwNzUxMDc0NEZCOUUzNzg5LnBuZw.png",
+       "accessibility": "Ein Haufen dünn geschnittener roher Speck auf einer dunklen Schieferplatte mit Kräutern und Gewürzen."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>Pro 2 x 200 g</li> <li>100 g = 1.50</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Bratspeck Duopack XXL",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Bratspeck Duopack XXL",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "XXL",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 5.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060445,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792363095,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 19.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 19.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792360800
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792360800,
+     "title": "Bratspeck Duopack XXL",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060445,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104647",
+        "name": "XXL sparen",
+        "url": "/c/de-CH/xxl-sparen/a10104647"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Bratspeck Duopack XXL",
+     "retailLists": [
+      [
+       {
+        "id": 8349,
+        "productSortIndex": 2
+       }
+      ]
+     ],
+     "lists": [
+      8349
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060445"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060737",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274769681075,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-schweinshals-am-stueck/p10060737",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-schweinshals-am-stueck/p10060737",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060737_d34d3ada",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060737_9c3ccf10",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060737",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Schweinshals am Stück",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5182"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/YoQT6PuxCbMKHs8J15DvSH2LVIxQeK9HaS_oA4mzmBs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MDAwQTdGRDY0RDE2OTIzMjI3RkE0MER/FQzJFQjc3OTUyMjcwQjA0RkUyODYzMURCNjA4MEVCREVCQjA3QUFBLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/YoQT6PuxCbMKHs8J15DvSH2LVIxQeK9HaS_oA4mzmBs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MDAwQTdGRDY0RDE2OTIzMjI3RkE0MER/FQzJFQjc3OTUyMjcwQjA0RkUyODYzMURCNjA4MEVCREVCQjA3QUFBLnBuZw.png",
+      "accessibility": "Roher Schweinebraten auf einem Teller mit Rosmarin und Knoblauch."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060737,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/YoQT6PuxCbMKHs8J15DvSH2LVIxQeK9HaS_oA4mzmBs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MDAwQTdGRDY0RDE2OTIzMjI3RkE0MER/FQzJFQjc3OTUyMjcwQjA0RkUyODYzMURCNjA4MEVCREVCQjA3QUFBLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/YoQT6PuxCbMKHs8J15DvSH2LVIxQeK9HaS_oA4mzmBs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83MDAwQTdGRDY0RDE2OTIzMjI3RkE0MER/FQzJFQjc3OTUyMjcwQjA0RkUyODYzMURCNjA4MEVCREVCQjA3QUFBLnBuZw.png",
+       "accessibility": "Roher Schweinebraten auf einem Teller mit Rosmarin und Knoblauch."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>Pro 100 g</li> <li>Ca. 600-1100 g</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Schweinshals am Stück",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Schweinshals am Stück",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 1.19,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060737,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274769,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 24.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 24.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1792879199
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1792879199,
+     "title": "Schweinshals am Stück",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060737,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105301",
+        "name": "Super Wochenende",
+        "url": "/c/de-CH/super-wochenende/a10105301"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Schweinshals am Stück",
+     "retailLists": [
+      [
+       {
+        "id": 8374,
+        "productSortIndex": 2
+       }
+      ]
+     ],
+     "lists": [
+      8374
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060737"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060762",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274770056112,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-schweinskoteletts-duopack/p10060762",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-schweinskoteletts-duopack/p10060762",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060762_d4f87cc0",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060762_b4d8f570",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060762",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Schweinskoteletts Duopack",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5271"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/qLS7u58WlCp3omjmLcah1iR-LuFtB0A1oZgUCEYCDgc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yREI3ODBCMDY1RkNCM0Y2MzUyQjcyOTB/BMTBFRjkxMzA2MEJCNDU5NkZBODcwMEVCNTlGNTE5N0QyREIzQzJGLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/qLS7u58WlCp3omjmLcah1iR-LuFtB0A1oZgUCEYCDgc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yREI3ODBCMDY1RkNCM0Y2MzUyQjcyOTB/BMTBFRjkxMzA2MEJCNDU5NkZBODcwMEVCNTlGNTE5N0QyREIzQzJGLnBuZw.png",
+      "accessibility": "Rohe Schweinekoteletts mit Knoblauch und Thymian auf einem grauen Teller."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060762,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/qLS7u58WlCp3omjmLcah1iR-LuFtB0A1oZgUCEYCDgc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yREI3ODBCMDY1RkNCM0Y2MzUyQjcyOTB/BMTBFRjkxMzA2MEJCNDU5NkZBODcwMEVCNTlGNTE5N0QyREIzQzJGLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/qLS7u58WlCp3omjmLcah1iR-LuFtB0A1oZgUCEYCDgc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yREI3ODBCMDY1RkNCM0Y2MzUyQjcyOTB/BMTBFRjkxMzA2MEJCNDU5NkZBODcwMEVCNTlGNTE5N0QyREIzQzJGLnBuZw.png",
+       "accessibility": "Rohe Schweinekoteletts mit Knoblauch und Thymian auf einem grauen Teller."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Mager</li> <li>Herkunft: Schweiz</li> <li>Pro 2 x 500 g</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Schweinskoteletts Duopack",
+      "moreDetails": "Weitere Produktdetails",
+      "supplementalDescription": "1 kg",
+      "title": "Schweinskoteletts Duopack",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 13.89,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060762,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274769,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 22.10.",
+         "type": "IN_STORE_FROM_DATE_FUTURE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 22.10.",
+          "type": "IN_STORE_FROM_DATE_FUTURE"
+         }
+        ],
+        "validFrom": 1792620000
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "title": "Schweinskoteletts Duopack",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060762,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Schweinskoteletts Duopack",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 10007
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060762"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060763",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274770098898,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-kaiserbraten/p10060763",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-kaiserbraten/p10060763",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060763_99b02a20",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060763_20caf2c2",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060763",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Kaiserbraten",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5105924"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/z5QVy3Ehh8w--tnYkcMwnvP3JKw6hlHHLqbQ7nKSYRs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RDUzOTZEMjdCMTdGRDlGMEI0QTRBMTk/1QTY2M0FCNjYwQkEwMkMyRTAwQkJCRTFDQ0YwM0Q0MTI0NDFDRDQ1LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/z5QVy3Ehh8w--tnYkcMwnvP3JKw6hlHHLqbQ7nKSYRs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RDUzOTZEMjdCMTdGRDlGMEI0QTRBMTk/1QTY2M0FCNjYwQkEwMkMyRTAwQkJCRTFDQ0YwM0Q0MTI0NDFDRDQ1LnBuZw.png",
+      "accessibility": "Roher Schweinerollbraten garniert mit Rosmarin und Salz auf einem grauen Teller."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060763,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/z5QVy3Ehh8w--tnYkcMwnvP3JKw6hlHHLqbQ7nKSYRs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RDUzOTZEMjdCMTdGRDlGMEI0QTRBMTk/1QTY2M0FCNjYwQkEwMkMyRTAwQkJCRTFDQ0YwM0Q0MTI0NDFDRDQ1LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/z5QVy3Ehh8w--tnYkcMwnvP3JKw6hlHHLqbQ7nKSYRs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83RDUzOTZEMjdCMTdGRDlGMEI0QTRBMTk/1QTY2M0FCNjYwQkEwMkMyRTAwQkJCRTFDQ0YwM0Q0MTI0NDFDRDQ1LnBuZw.png",
+       "accessibility": "Roher Schweinerollbraten garniert mit Rosmarin und Salz auf einem grauen Teller."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>Pro 100 g</li> <li>Ca. 800-1200 g</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Kaiserbraten",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Kaiserbraten",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Schwein",
+      "wonCategoryPrimaryPath": "0/17/1738/173812"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 1.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060763,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274770,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 22.10.",
+         "type": "IN_STORE_FROM_DATE_FUTURE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 22.10.",
+          "type": "IN_STORE_FROM_DATE_FUTURE"
+         }
+        ],
+        "validFrom": 1792620000
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "title": "Kaiserbraten",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060763,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Kaiserbraten",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 10008
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095755",
+        "name": "Schweinefleisch",
+        "url": "/h/de-CH/schwein/h10095755"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173812",
+       "isMain": true,
+       "name": "Schwein",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060763"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060841",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274771165608,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-buendnerfleisch-aktion-nur-in-der-westschweiz-gueltig/p10060841",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-buendnerfleisch-aktion-nur-in-der-westschweiz-gueltig/p10060841",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060841_981ff8d1",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060841_c7447b13",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060841",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Bündnerfleisch (Aktion nur in der Westschweiz gültig)",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5107879"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/midZu3NC-15EWMfgyiykd58gWs9VBf0XE8-sFanFNk0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84M0EwNkQ5ODM0OTcwQzdFNzI3RUYxQkJ/ERjAxMzk1QzkzNEM2MjU4MDMxNUE0RkMzNzc0MUMzOEZFMjI4QkUwLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/midZu3NC-15EWMfgyiykd58gWs9VBf0XE8-sFanFNk0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84M0EwNkQ5ODM0OTcwQzdFNzI3RUYxQkJ/ERjAxMzk1QzkzNEM2MjU4MDMxNUE0RkMzNzc0MUMzOEZFMjI4QkUwLnBuZw.png",
+      "accessibility": "Geschnittene Bresaola auf einem Schieferbrett mit Rosmarin und schwarzem Pfeffer."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060841,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/midZu3NC-15EWMfgyiykd58gWs9VBf0XE8-sFanFNk0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84M0EwNkQ5ODM0OTcwQzdFNzI3RUYxQkJ/ERjAxMzk1QzkzNEM2MjU4MDMxNUE0RkMzNzc0MUMzOEZFMjI4QkUwLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/midZu3NC-15EWMfgyiykd58gWs9VBf0XE8-sFanFNk0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS84M0EwNkQ5ODM0OTcwQzdFNzI3RUYxQkJ/ERjAxMzk1QzkzNEM2MjU4MDMxNUE0RkMzNzc0MUMzOEZFMjI4QkUwLnBuZw.png",
+       "accessibility": "Geschnittene Bresaola auf einem Schieferbrett mit Rosmarin und schwarzem Pfeffer."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li><span style=\"color: rgb(224, 62, 45)\"><strong>Diese Aktion ist nur in der Westschweiz g&uuml;ltig.</strong></span></li> <li>Classic, hauchd&uuml;nn</li> <li>Pro 80 g/ 90 g</li> <li>100 g = 6.81/ 6.06</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Bündnerfleisch (Aktion nur in der Westschweiz gültig)",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Bündnerfleisch (Aktion nur in der Westschweiz gültig)",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Wurst & Aufschnitt",
+      "wonCategoryPrimaryPath": "0/17/1738/173815"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 1.44,
+       "deletedPrice": 6.89,
+       "discountHasStar": false,
+       "discountText": "-20%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 20,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 6.89,
+      "price": 5.45,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060841,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274771,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Bündnerfleisch (Aktion nur in der Westschweiz gültig)",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060841,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Bündnerfleisch (Aktion nur in der Westschweiz gültig)",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 20076
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095758",
+        "name": "Wurstwaren & Aufschnitt",
+        "url": "/h/de-CH/wurst-aufschnitt/h10095758"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173815",
+       "isMain": true,
+       "name": "Wurst & Aufschnitt",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060841"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060894",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274771766320,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/qualite-suisse-rindshackfleisch-light-duopack-xxl/p10060894",
+     "canonicalUrl": "/p/de-CH/qualite-suisse-rindshackfleisch-light-duopack-xxl/p10060894",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060894_463ddb2d",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060894_0c1e87df",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060894",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Rindshackfleisch light Duopack XXL",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5109919"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/QVcSUW4jFu5s8A1HuFwZRrqiwaPKCDfMkXNebH09R0E/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yRkJCNTA0RUJGNzFEQUM0OUFDN0VBN0Y/5ODJFNUQ3QUJCMzY4MDY3ODkxNzYxOEQ3RDU3MkM4NTcxQ0M2QjA4LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/QVcSUW4jFu5s8A1HuFwZRrqiwaPKCDfMkXNebH09R0E/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yRkJCNTA0RUJGNzFEQUM0OUFDN0VBN0Y/5ODJFNUQ3QUJCMzY4MDY3ODkxNzYxOEQ3RDU3MkM4NTcxQ0M2QjA4LnBuZw.png",
+      "accessibility": "Frisches Hackfleisch auf einem grauen Teller mit Rosmarin und Gewürzen."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060894,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/QVcSUW4jFu5s8A1HuFwZRrqiwaPKCDfMkXNebH09R0E/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yRkJCNTA0RUJGNzFEQUM0OUFDN0VBN0Y/5ODJFNUQ3QUJCMzY4MDY3ODkxNzYxOEQ3RDU3MkM4NTcxQ0M2QjA4LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/QVcSUW4jFu5s8A1HuFwZRrqiwaPKCDfMkXNebH09R0E/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8yRkJCNTA0RUJGNzFEQUM0OUFDN0VBN0Y/5ODJFNUQ3QUJCMzY4MDY3ODkxNzYxOEQ3RDU3MkM4NTcxQ0M2QjA4LnBuZw.png",
+       "accessibility": "Frisches Hackfleisch auf einem grauen Teller mit Rosmarin und Gewürzen."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Herkunft: Schweiz</li> <li>pro 2 x 400 g</li> <li>100 g = 1.87 </li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Rindshackfleisch light Duopack XXL",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Rindshackfleisch light Duopack XXL",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Fleisch & Geflügel/Rind",
+      "wonCategoryPrimaryPath": "0/17/1738/173811"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 14.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060894,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274771,
+     "seals": [
+      {
+       "altText": "Schweizer Qualität.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Schweizer Garantie.",
+       "image": "https://imgproxy-retcat.assets.schwarz/EFErKLbxtdMclNNdbj2LkvyVOdYpWnJDgd98c7o2ZUI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82QURFOUZGQkM0RUNBMkQyMzJDNkM1NjA/3NDgwMjhCODI0QkQ5OUM0M0JCOEJFRjNFREIzQjdGMjk2NTY1MzI2LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 22.10.",
+         "type": "IN_STORE_FROM_DATE_FUTURE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 22.10.",
+          "type": "IN_STORE_FROM_DATE_FUTURE"
+         }
+        ],
+        "validFrom": 1792620000
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "title": "Rindshackfleisch light Duopack XXL",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060894,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Rindshackfleisch light Duopack XXL",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 10000
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095752",
+        "name": "Fleisch & Geflügel",
+        "url": "/h/de-CH/fleisch-gefluegel/h10095752"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095754",
+        "name": "Rindfleisch",
+        "url": "/h/de-CH/rind/h10095754"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173811",
+       "isMain": true,
+       "name": "Rind",
+       "parent": "1738",
+       "superCategories": [
+        {
+         "code": "1738",
+         "name": "Fleisch & Geflügel",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060894"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060614",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792169067555012,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "SILVERCREST",
+      "url": "/q/search?q=silvercrest",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/silvercrest-elektrischer-fleischwolf/p10060614",
+     "canonicalUrl": "/p/de-CH/silvercrest-elektrischer-fleischwolf/p10060614",
+     "category": "Non Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060614_56428cd3",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060614_9b88a034",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060614",
+     "flashSales": false,
+     "fullTitle": "SILVERCREST Elektrischer Fleischwolf",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "524252"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/wn-ffBsCl0C3qzwd_hAcBWMq_3riyVMVdZR0J0JepMM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BNTA2NjM0RkVEMzNCQjhFMzA5MzY2NDR/GMUNCNzkyM0QzMjUyOTNBMUNGOThCNzYzQzJEMkM4MUU3MTUwREExLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/wn-ffBsCl0C3qzwd_hAcBWMq_3riyVMVdZR0J0JepMM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BNTA2NjM0RkVEMzNCQjhFMzA5MzY2NDR/GMUNCNzkyM0QzMjUyOTNBMUNGOThCNzYzQzJEMkM4MUU3MTUwREExLnBuZw.png",
+      "accessibility": "Elektrischer Fleischwolf in Weiß und Schwarz mit Einfüllschale."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060614,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/wn-ffBsCl0C3qzwd_hAcBWMq_3riyVMVdZR0J0JepMM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BNTA2NjM0RkVEMzNCQjhFMzA5MzY2NDR/GMUNCNzkyM0QzMjUyOTNBMUNGOThCNzYzQzJEMkM4MUU3MTUwREExLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/wn-ffBsCl0C3qzwd_hAcBWMq_3riyVMVdZR0J0JepMM/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9BNTA2NjM0RkVEMzNCQjhFMzA5MzY2NDR/GMUNCNzkyM0QzMjUyOTNBMUNGOThCNzYzQzJEMkM4MUU3MTUwREExLnBuZw.png",
+       "accessibility": "Elektrischer Fleischwolf in Weiß und Schwarz mit Einfüllschale."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Non Food",
+      "description": "<ul> <li>Verarbeitet bis zu 1 kg Fleisch/Minute</li> <li>Leistungsaufnahme: 300 W</li> <li>Pro St&uuml;ck</li> </ul>",
+      "fullTitle": "SILVERCREST Elektrischer Fleischwolf",
+      "moreDetails": "Weitere Produktdetails",
+      "supplementalDescription": "Mit 2 Lochscheiben, Stopf- und Kebbe-Aufsatz",
+      "title": "Elektrischer Fleischwolf",
+      "wonCategoryPrimary": "Bedürfniswelten/Küche & Haushalt/Küchengeräte",
+      "wonCategoryPrimaryPath": "0/11/1111"
+     },
+     "lidlPlus": [
+      {
+       "price": {
+        "basePrice": {
+         "prefix": false
+        },
+        "discount": {
+         "deletedPrice": 29.9,
+         "discountHasStar": false,
+         "discountText": "-16%",
+         "fromNormalPriceForLidlPlus": false,
+         "fromRecommendedPrice": false,
+         "hideBargainHint": false,
+         "bargainHintEnabled": false,
+         "bargainHintText": "BargainHint_Text",
+         "showDiscount": true,
+         "showFrom": false,
+         "showPercentage": true,
+         "showUpTo": false
+        },
+        "displayedCurrency": "CHF",
+        "hasStar": false,
+        "hasVat": false,
+        "oldPrice": 29.9,
+        "price": 24.9,
+        "priceTheme": "white_yellow",
+        "specialTaxes": [],
+        "superscript": "*"
+       },
+       "lidlPlusText": "Mit Lidl Plus",
+       "highlightText": "-16%"
+      }
+     ],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": true,
+      "hasVat": false,
+      "specialTaxes": [],
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060614,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792169067,
+     "seals": [
+      {
+       "altText": "SilverCrest Logo mit einem stilisierten Dreieck auf der linken Seite.",
+       "image": "https://imgproxy-retcat.assets.schwarz/bNi1N8856IGSvmQQbe9QJGKQgB-bsQXkcnWMfP4STvU/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9ENjVDRUQzNURDN0ZDMDg3NDREQjVCRTU/xRUJENzRGRDA0RjZFNzAwRTM5MjlEMjdCRDM2QUZFNjgyMUJBNTEwLnBuZw.png"
+      },
+      {
+       "altText": "Kennzeichnung: EdelStahl, Rostfrei.",
+       "image": "https://imgproxy-retcat.assets.schwarz/KPQ3KLjiU-_KN7D35Q20TJAPvMZ0NgORJ89SET_nqqA/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9FQzQzNjY0RDM4OTI3OTdGQzlEOTY2MTI/0NDdBREU5MkM5OUE5REVDNkNGNTI2MkFDRjkzNjdDRjlBNjI5NDUzLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Elektrischer Fleischwolf",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060614,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10020520",
+        "name": "Lidl Plus Angebote",
+        "url": "/c/de-CH/lidl-plus-angebote/a10020520"
+       }
+      ],
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105294",
+        "name": "Küche",
+        "url": "/c/de-CH/kueche/a10105294"
+       }
+      ]
+     ],
+     "fullTitle": "SILVERCREST Elektrischer Fleischwolf",
+     "retailLists": [
+      [
+       {
+        "id": 4501,
+        "productSortIndex": 70
+       },
+       {
+        "id": 8381,
+        "productSortIndex": 5
+       }
+      ]
+     ],
+     "lists": [
+      4501,
+      8381
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068166",
+        "name": "Küche & Haushalt",
+        "url": "/c/de-CH/kueche-haushalt/s10068166"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10067522",
+        "name": "Küchengeräte",
+        "url": "/h/de-CH/kuechengeraete/h10067522"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "1111",
+       "isMain": true,
+       "name": "Küchengeräte",
+       "parent": "11",
+       "superCategories": [
+        {
+         "code": "11",
+         "name": "Küche & Haushalt",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060614"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060618",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015749386703,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "SILVERCREST",
+      "url": "/q/search?q=silvercrest",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/silvercrest-manueller-fleischwolf/p10060618",
+     "canonicalUrl": "/p/de-CH/silvercrest-manueller-fleischwolf/p10060618",
+     "category": "Non Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060618_0ffcd721",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060618_256c9889",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060618",
+     "flashSales": false,
+     "fullTitle": "SILVERCREST Manueller Fleischwolf",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "521768"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/kn876cgc_01RPZdM-pHAjrOkoLQLyTlBwSTdkBysbQE/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wRjNENTRBM0FCNUQyNDBCNTRBQkRCNDE/zQ0EyQzI0QkJCNTkyQTYxRjEwMTkyNzc3NTE4MDhGN0E5MDM3MjM2LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/kn876cgc_01RPZdM-pHAjrOkoLQLyTlBwSTdkBysbQE/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wRjNENTRBM0FCNUQyNDBCNTRBQkRCNDE/zQ0EyQzI0QkJCNTkyQTYxRjEwMTkyNzc3NTE4MDhGN0E5MDM3MjM2LnBuZw.png",
+      "accessibility": "Manuelle Fleischwolf aus Metall mit Zubehör für Kekse und Würstchen."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060618,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/kn876cgc_01RPZdM-pHAjrOkoLQLyTlBwSTdkBysbQE/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wRjNENTRBM0FCNUQyNDBCNTRBQkRCNDE/zQ0EyQzI0QkJCNTkyQTYxRjEwMTkyNzc3NTE4MDhGN0E5MDM3MjM2LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/kn876cgc_01RPZdM-pHAjrOkoLQLyTlBwSTdkBysbQE/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wRjNENTRBM0FCNUQyNDBCNTRBQkRCNDE/zQ0EyQzI0QkJCNTkyQTYxRjEwMTkyNzc3NTE4MDhGN0E5MDM3MjM2LnBuZw.png",
+       "accessibility": "Manuelle Fleischwolf aus Metall mit Zubehör für Kekse und Würstchen."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Non Food",
+      "description": "<ul> <li>Mit 1 Lochscheibe, Stopf- Spritzgeb&auml;ck-Aufsatz</li> <li>Ideal zum Zerkleinern von Fleisch und Gem&uuml;se sowie zur Herstellung von Teig und Wurst &ndash; auch f&uuml;r Spritzgeb&auml;ck geeignet</li> <li>Pro St&uuml;ck</li> </ul>",
+      "fullTitle": "SILVERCREST Manueller Fleischwolf",
+      "moreDetails": "Weitere Produktdetails",
+      "supplementalDescription": "Mit Schraubvorrichtung an Tischplatte befestigen",
+      "title": "Manueller Fleischwolf",
+      "wonCategoryPrimary": "Bedürfniswelten/Küche & Haushalt/Kochen & Backen",
+      "wonCategoryPrimaryPath": "0/11/1112"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 12.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060618,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015749,
+     "seals": [
+      {
+       "altText": "SilverCrest Logo mit einem stilisierten Dreieck auf der linken Seite.",
+       "image": "https://imgproxy-retcat.assets.schwarz/bNi1N8856IGSvmQQbe9QJGKQgB-bsQXkcnWMfP4STvU/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9ENjVDRUQzNURDN0ZDMDg3NDREQjVCRTU/xRUJENzRGRDA0RjZFNzAwRTM5MjlEMjdCRDM2QUZFNjgyMUJBNTEwLnBuZw.png"
+      },
+      {
+       "altText": "Kennzeichnung: EdelStahl, Rostfrei.",
+       "image": "https://imgproxy-retcat.assets.schwarz/KPQ3KLjiU-_KN7D35Q20TJAPvMZ0NgORJ89SET_nqqA/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9FQzQzNjY0RDM4OTI3OTdGQzlEOTY2MTI/0NDdBREU5MkM5OUE5REVDNkNGNTI2MkFDRjkzNjdDRjlBNjI5NDUzLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Manueller Fleischwolf",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060618,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105294",
+        "name": "Küche",
+        "url": "/c/de-CH/kueche/a10105294"
+       }
+      ]
+     ],
+     "fullTitle": "SILVERCREST Manueller Fleischwolf",
+     "retailLists": [
+      [
+       {
+        "id": 8381,
+        "productSortIndex": 9
+       }
+      ]
+     ],
+     "lists": [
+      8381
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068166",
+        "name": "Küche & Haushalt",
+        "url": "/c/de-CH/kueche-haushalt/s10068166"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10067523",
+        "name": "Kochen & Backen",
+        "url": "/h/de-CH/kochen-backen/h10067523"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "1112",
+       "isMain": true,
+       "name": "Kochen & Backen",
+       "parent": "11",
+       "superCategories": [
+        {
+         "code": "11",
+         "name": "Küche & Haushalt",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060618"
+   }
+  }
+ ],
+ "breadcrumbs": [
+  {
+   "code": "query",
+   "label": "fleisch",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=fleisch",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "q": "fleisch"
+   }
+  }
+ ],
+ "details": {},
+ "teasers": {},
+ "advisors": []
+}

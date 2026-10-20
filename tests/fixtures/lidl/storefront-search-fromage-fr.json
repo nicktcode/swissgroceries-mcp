@@ -1,0 +1,2978 @@
+{
+ "type": "search",
+ "version": "v2.0.0",
+ "engine": "ldt-searcher",
+ "xPayload": {
+  "keywordResults": {
+   "num_items_found": 10
+  }
+ },
+ "id": "0a2194b6-09d0-4e50-9d1e-5a90cd17654f",
+ "q": "fromage",
+ "locale": "fr_CH",
+ "assortment": "CH",
+ "resultType": "search",
+ "masterQuery": "fromage",
+ "numFound": 32,
+ "offset": 0,
+ "fetchsize": 10,
+ "maxfetchsize": 1000,
+ "sort": {
+  "code": "relevancy",
+  "label": "Pertinence",
+  "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&sort=relevancy",
+  "link": {
+   "type": "search",
+   "filter": {},
+   "sort": "relevancy",
+   "q": "fromage"
+  }
+ },
+ "sorts": [
+  {
+   "code": "relevancy",
+   "label": "Pertinence",
+   "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&sort=relevancy",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "relevancy",
+    "q": "fromage"
+   }
+  },
+  {
+   "code": "price",
+   "label": "Prix par ordre croissant",
+   "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&sort=price",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "price",
+    "q": "fromage"
+   }
+  },
+  {
+   "code": "price-desc",
+   "label": "Prix par ordre décroissant",
+   "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&sort=price-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "price-desc",
+    "q": "fromage"
+   }
+  },
+  {
+   "code": "firstOnlineDate-desc",
+   "label": "Les articles les plus récents en premier",
+   "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&sort=firstOnlineDate-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "firstOnlineDate-desc",
+    "q": "fromage"
+   }
+  },
+  {
+   "code": "percentageDiscount-desc",
+   "label": "La réduction la plus élevée en premier",
+   "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&sort=percentageDiscount-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "percentageDiscount-desc",
+    "q": "fromage"
+   }
+  }
+ ],
+ "facets": [
+  {
+   "type": "TEXT",
+   "code": "category",
+   "label": "Catégorie",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": false,
+    "selectedPosition": "BELOW",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "topvalues": [
+    {
+     "type": "TEXT",
+     "label": "Manger & Boire",
+     "selected": false,
+     "count": 32,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&category=Manger+%26+Boire",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Manger & Boire"
+       ]
+      },
+      "q": "fromage"
+     },
+     "children": [],
+     "value": "10068374"
+    }
+   ],
+   "values": [
+    {
+     "type": "TEXT",
+     "label": "Manger & Boire",
+     "selected": false,
+     "count": 32,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&category=Manger+%26+Boire",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Manger & Boire"
+       ]
+      },
+      "q": "fromage"
+     },
+     "children": [],
+     "value": "10068374"
+    }
+   ]
+  },
+  {
+   "type": "RANGE",
+   "code": "price",
+   "label": "Prix",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": false,
+    "selectedPosition": "BELOW",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "unit": "CHF",
+   "baseURL": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage",
+   "baseLink": {
+    "type": "search",
+    "filter": {},
+    "q": "fromage"
+   },
+   "globalMin": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 0.0
+   },
+   "globalMax": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 8.0
+   },
+   "min": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 0.0
+   },
+   "max": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 8.0
+   },
+   "selectedMin": {
+    "type": "SelectedNumericValue",
+    "value": 0.0
+   },
+   "selectedMax": {
+    "type": "SelectedNumericValue",
+    "value": 8.0
+   },
+   "values": []
+  },
+  {
+   "type": "TEXT",
+   "code": "brand",
+   "label": "Marque",
+   "selector": "OR",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": true,
+    "selectedPosition": "ABOVE",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "topvalues": [
+    {
+     "type": "TEXT",
+     "label": "MILBONA",
+     "selected": false,
+     "count": 9,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=MILBONA",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "MILBONA"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "MILBONA"
+    },
+    {
+     "type": "TEXT",
+     "label": "QUALITÉ SUISSE",
+     "selected": false,
+     "count": 9,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=QUALIT%C3%89+SUISSE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "QUALITÉ SUISSE"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "QUALITÉ SUISSE"
+    },
+    {
+     "type": "TEXT",
+     "label": "EMMI",
+     "selected": false,
+     "count": 3,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=EMMI",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "EMMI"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "EMMI"
+    },
+    {
+     "type": "TEXT",
+     "label": "ITALIAMO",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=ITALIAMO",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "ITALIAMO"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "ITALIAMO"
+    },
+    {
+     "type": "TEXT",
+     "label": "RAMA",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=RAMA",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "RAMA"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "RAMA"
+    },
+    {
+     "type": "TEXT",
+     "label": "GUSTAVO GUSTO",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=GUSTAVO+GUSTO",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "GUSTAVO GUSTO"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "GUSTAVO GUSTO"
+    },
+    {
+     "type": "TEXT",
+     "label": "KIRI",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=KIRI",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "KIRI"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "KIRI"
+    },
+    {
+     "type": "TEXT",
+     "label": "MÜLLER",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=M%C3%9CLLER",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "MÜLLER"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "MÜLLER"
+    },
+    {
+     "type": "TEXT",
+     "label": "TARTARE",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=TARTARE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "TARTARE"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "TARTARE"
+    }
+   ],
+   "values": [
+    {
+     "type": "TEXT",
+     "label": "MILBONA",
+     "selected": false,
+     "count": 9,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=MILBONA",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "MILBONA"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "MILBONA"
+    },
+    {
+     "type": "TEXT",
+     "label": "QUALITÉ SUISSE",
+     "selected": false,
+     "count": 9,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=QUALIT%C3%89+SUISSE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "QUALITÉ SUISSE"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "QUALITÉ SUISSE"
+    },
+    {
+     "type": "TEXT",
+     "label": "EMMI",
+     "selected": false,
+     "count": 3,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=EMMI",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "EMMI"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "EMMI"
+    },
+    {
+     "type": "TEXT",
+     "label": "ITALIAMO",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=ITALIAMO",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "ITALIAMO"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "ITALIAMO"
+    },
+    {
+     "type": "TEXT",
+     "label": "GUSTAVO GUSTO",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=GUSTAVO+GUSTO",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "GUSTAVO GUSTO"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "GUSTAVO GUSTO"
+    },
+    {
+     "type": "TEXT",
+     "label": "KIRI",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=KIRI",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "KIRI"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "KIRI"
+    },
+    {
+     "type": "TEXT",
+     "label": "MÜLLER",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=M%C3%9CLLER",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "MÜLLER"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "MÜLLER"
+    },
+    {
+     "type": "TEXT",
+     "label": "RAMA",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=RAMA",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "RAMA"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "RAMA"
+    },
+    {
+     "type": "TEXT",
+     "label": "TARTARE",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&brand=TARTARE",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "TARTARE"
+       ]
+      },
+      "q": "fromage"
+     },
+     "value": "TARTARE"
+    }
+   ]
+  },
+  {
+   "type": "SWITCH",
+   "code": "newArticleFlag",
+   "label": "Nouveau",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TOGGLE",
+    "searchable": false,
+    "selectedPosition": "ABOVE",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "value": {
+    "label": "Nouveau",
+    "selected": false,
+    "count": 32,
+    "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage&newArticleFlag=1",
+    "link": {
+     "type": "search",
+     "filter": {
+      "newArticleFlag": [
+       "1"
+      ]
+     },
+     "q": "fromage"
+    }
+   }
+  }
+ ],
+ "items": [
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060382",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015443715606,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "KIRI",
+      "url": "/q/search?q=kiri",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/kiri-fromage-frais-fondu-a-tartiner/p10060382",
+     "canonicalUrl": "/p/fr-CH/kiri-fromage-frais-fondu-a-tartiner/p10060382",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060382_db109a25",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060382_e288795e",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060382",
+     "flashSales": false,
+     "fullTitle": "KIRI Fromage frais fondu à tartiner",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "3788"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/nSsppO0_XzUa6C31FPQJtU5yC76q-eUH4DbGF4l1M0o/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zRDRGMzEyMjA2Q0M3OUU2RkE4ODg4Q0J/DQTY1REIwNDBCNzhGRUUxNjkzNTE3NUYxQjhGQkRGNDUzQjhGQUQ5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/nSsppO0_XzUa6C31FPQJtU5yC76q-eUH4DbGF4l1M0o/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zRDRGMzEyMjA2Q0M3OUU2RkE4ODg4Q0J/DQTY1REIwNDBCNzhGRUUxNjkzNTE3NUYxQjhGQkRGNDUzQjhGQUQ5LnBuZw.png",
+      "accessibility": "Boîte de fromage frais fondu en format XXL de 24 portions."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060382,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/nSsppO0_XzUa6C31FPQJtU5yC76q-eUH4DbGF4l1M0o/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zRDRGMzEyMjA2Q0M3OUU2RkE4ODg4Q0J/DQTY1REIwNDBCNzhGRUUxNjkzNTE3NUYxQjhGQkRGNDUzQjhGQUQ5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/nSsppO0_XzUa6C31FPQJtU5yC76q-eUH4DbGF4l1M0o/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zRDRGMzEyMjA2Q0M3OUU2RkE4ODg4Q0J/DQTY1REIwNDBCNzhGRUUxNjkzNTE3NUYxQjhGQkRGNDUzQjhGQUQ5LnBuZw.png",
+       "accessibility": "Boîte de fromage frais fondu en format XXL de 24 portions."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>24 portions</li> <li>432 g</li> <li>100 g = 1.38</li> </ul>",
+      "fullTitle": "KIRI Fromage frais fondu à tartiner",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Fromage frais fondu à tartiner",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 5.95,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060382,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015443,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Fromage frais fondu à tartiner",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060382,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "KIRI Fromage frais fondu à tartiner",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 20036
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060382"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060740",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274557902833,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/qualite-suisse-fromage-de-montagne-de-davos/p10060740",
+     "canonicalUrl": "/p/fr-CH/qualite-suisse-fromage-de-montagne-de-davos/p10060740",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060740_c2edef66",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060740_ab7fae3d",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060740",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Fromage de montagne de Davos",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5102771"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png",
+      "accessibility": "Fromage de montagne suisse sur une planche en bois, garni de raisins et d'herbes."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060740,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png",
+       "accessibility": "Fromage de montagne suisse sur une planche en bois, garni de raisins et d'herbes."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>185 g</li> <li>100 g = 1.94</li> </ul> <p><a href=\"https://www.lidl.ch/p/fr-CH/p10060741\">Avec Lidl Plus, fais encore plus d&rsquo;&eacute;conomies</a></p>",
+      "fullTitle": "QUALITÉ SUISSE Fromage de montagne de Davos",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Fromage de montagne de Davos",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 0.4,
+       "deletedPrice": 3.99,
+       "discountHasStar": false,
+       "discountText": "-10%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 10,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 3.99,
+      "price": 3.59,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060740,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274557,
+     "seals": [
+      {
+       "altText": "Qualité suisse.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Garantie Suisse",
+       "image": "https://imgproxy-retcat.assets.schwarz/ENubDOYPVp8jPfL_QrbFRoC2MxcuP-5sSlh7lFTr4qY/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82NzZEQzI3MEY5NENERUFEQjk0RTQyMTU/2QzZBMEU3MEJDRDY4QjE4RUI3QjA4NzU3NzQ3MkZBNUFDQkJCNTE4LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 24.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 24.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1792879199
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1792879199,
+     "title": "Fromage de montagne de Davos",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060740,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105301",
+        "name": "Super weekend",
+        "url": "/c/de-CH/super-wochenende/a10105301"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Fromage de montagne de Davos",
+     "retailLists": [
+      [
+       {
+        "id": 8374,
+        "productSortIndex": 5
+       }
+      ]
+     ],
+     "lists": [
+      8374
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060740"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060741",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274557914861,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "QUALITÉ SUISSE",
+      "url": "/q/search?q=qualit%C3%A9+suisse",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/qualite-suisse-fromage-de-montagne-de-davos/p10060741",
+     "canonicalUrl": "/p/fr-CH/qualite-suisse-fromage-de-montagne-de-davos/p10060741",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060741_6c7f2e9f",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060741_f45ff4fc",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060741",
+     "flashSales": false,
+     "fullTitle": "QUALITÉ SUISSE Fromage de montagne de Davos",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5102771"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png",
+      "accessibility": "Fromage de montagne suisse sur une planche en bois, garni de raisins et d'herbes."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060741,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/9cZR4z4psyANhjzXwt-UEyE42Yjl7rEjnZ5d4wSVVdo/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wN0Y2NDVGQkU0MjI1ODVDM0Q4MURDQkZ/CMjVDMjQ3NEZCMDgyRTNDODVCNTcyOTYwQjJGRDQ4NkY0QzYxOUNDLnBuZw.png",
+       "accessibility": "Fromage de montagne suisse sur une planche en bois, garni de raisins et d'herbes."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>185 g</li> <li>100 g = 1.62</li> </ul>",
+      "fullTitle": "QUALITÉ SUISSE Fromage de montagne de Davos",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Fromage de montagne de Davos",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [
+      {
+       "price": {
+        "basePrice": {
+         "prefix": false
+        },
+        "discount": {
+         "deletedPrice": 3.99,
+         "discountHasStar": false,
+         "discountText": "-25%",
+         "fromNormalPriceForLidlPlus": false,
+         "fromRecommendedPrice": false,
+         "hideBargainHint": false,
+         "bargainHintEnabled": false,
+         "bargainHintText": "BargainHint_Text",
+         "showDiscount": true,
+         "showFrom": false,
+         "showPercentage": true,
+         "showUpTo": false
+        },
+        "displayedCurrency": "CHF",
+        "hasStar": false,
+        "hasVat": false,
+        "oldPrice": 3.99,
+        "price": 2.99,
+        "priceTheme": "white_yellow",
+        "specialTaxes": [],
+        "superscript": "*"
+       },
+       "lidlPlusText": "Avec Lidl Plus",
+       "highlightText": "-25%"
+      }
+     ],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": true,
+      "hasVat": false,
+      "specialTaxes": [],
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060741,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274557,
+     "seals": [
+      {
+       "altText": "Qualité suisse.",
+       "image": "https://imgproxy-retcat.assets.schwarz/6wKG_BemBCz2RmyUunb-u5DcKcnNmXxp4Qs-Uh8Ogto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DOTEyQ0Q2MUI1NzhDMTEwMzU5M0EwMEE/yNzNBNzM2REFFNjkyNDMzODg3RjlFOTAwRjZGMkI4RDRBOTRGMTEyLnBuZw.png"
+      },
+      {
+       "altText": "Garantie Suisse",
+       "image": "https://imgproxy-retcat.assets.schwarz/ENubDOYPVp8jPfL_QrbFRoC2MxcuP-5sSlh7lFTr4qY/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82NzZEQzI3MEY5NENERUFEQjk0RTQyMTU/2QzZBMEU3MEJDRDY4QjE4RUI3QjA4NzU3NzQ3MkZBNUFDQkJCNTE4LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 24.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 24.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1792879199
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1792879199,
+     "title": "Fromage de montagne de Davos",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060741,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10020520",
+        "name": "Offres Lidl Plus",
+        "url": "/c/de-CH/lidl-plus-angebote/a10020520"
+       }
+      ],
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105301",
+        "name": "Super weekend",
+        "url": "/c/de-CH/super-wochenende/a10105301"
+       }
+      ]
+     ],
+     "fullTitle": "QUALITÉ SUISSE Fromage de montagne de Davos",
+     "retailLists": [
+      [
+       {
+        "id": 4501,
+        "productSortIndex": 48
+       },
+       {
+        "id": 8374,
+        "productSortIndex": 6
+       }
+      ]
+     ],
+     "lists": [
+      4501,
+      8374
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060741"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060821",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274559017578,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "TARTARE",
+      "url": "/q/search?q=tartare",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/tartare-fromage-frais/p10060821",
+     "canonicalUrl": "/p/fr-CH/tartare-fromage-frais/p10060821",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060821_eb553efd",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060821_fc79dec4",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060821",
+     "flashSales": false,
+     "fullTitle": "TARTARE Fromage frais",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "2911"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/UV-qXJ5pyrdUuvcsPGfkDGNpiUUQ8XXccW9FHrgV5vs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81MDUzNkZGMEY5MjM3NDg2MzZEOEYyQkE/3MDI0MTkzOEE4NjA4N0JBNzJBMjY4OUQ4RDk0QjU2QzVFNzIyNTlGLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/UV-qXJ5pyrdUuvcsPGfkDGNpiUUQ8XXccW9FHrgV5vs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81MDUzNkZGMEY5MjM3NDg2MzZEOEYyQkE/3MDI0MTkzOEE4NjA4N0JBNzJBMjY4OUQ4RDk0QjU2QzVFNzIyNTlGLnBuZw.png",
+      "accessibility": "Trois pots de fromage frais à tartiner aux herbes et à l'ail en différentes variantes."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060821,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/UV-qXJ5pyrdUuvcsPGfkDGNpiUUQ8XXccW9FHrgV5vs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81MDUzNkZGMEY5MjM3NDg2MzZEOEYyQkE/3MDI0MTkzOEE4NjA4N0JBNzJBMjY4OUQ4RDk0QjU2QzVFNzIyNTlGLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/UV-qXJ5pyrdUuvcsPGfkDGNpiUUQ8XXccW9FHrgV5vs/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS81MDUzNkZGMEY5MjM3NDg2MzZEOEYyQkE/3MDI0MTkzOEE4NjA4N0JBNzJBMjY4OUQ4RDk0QjU2QzVFNzIyNTlGLnBuZw.png",
+       "accessibility": "Trois pots de fromage frais à tartiner aux herbes et à l'ail en différentes variantes."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Diverses sortes</li> <li>150 g</li> <li>100 g = 1.73</li> </ul>",
+      "fullTitle": "TARTARE Fromage frais",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Fromage frais",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 0.7,
+       "deletedPrice": 3.29,
+       "discountHasStar": false,
+       "discountText": "-21%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 21,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 3.29,
+      "price": 2.59,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060821,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274558,
+     "seals": [
+      {
+       "altText": "1 Gekühlt FR",
+       "image": "https://imgproxy-retcat.assets.schwarz/MMStbskViQs4FGQ0hMZSzgdq3uKvuQ0INcIRO_90GNM/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8yQ0FBMUQzMjM4NjNDQzk3QzUwRUY0Rjk/zNjRENzU1QzFDMUJDNzZBRDY3MURBREJGRDc2NTdEMzYwQzk0MzMwLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Fromage frais",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060821,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "TARTARE Fromage frais",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 20056
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060821"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060838",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274559257641,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "ITALIAMO",
+      "url": "/q/search?q=italiamo",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/italiamo-fromage-asiago-dop-action-valable-uniquement-au-tessin/p10060838",
+     "canonicalUrl": "/p/fr-CH/italiamo-fromage-asiago-dop-action-valable-uniquement-au-tessin/p10060838",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060838_e8c3f4b5",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060838_2efa9c7f",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060838",
+     "flashSales": false,
+     "fullTitle": "ITALIAMO Fromage Asiago DOP (action valable uniquement au Tessin)",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "6000111"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/wocT4ZM3l-yATIwMg6HJyWAsoRz2uOsQlDA4oX92lDk/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FMTBBNTdCRkQ5MzcyMDk2QUMwRDdDRDQ/xMDM1RDk5REIzQjQxMURGNjBCNkJCRTMzRTc1RUEyNDQzOEExMUMzLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/wocT4ZM3l-yATIwMg6HJyWAsoRz2uOsQlDA4oX92lDk/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FMTBBNTdCRkQ5MzcyMDk2QUMwRDdDRDQ/xMDM1RDk5REIzQjQxMURGNjBCNkJCRTMzRTc1RUEyNDQzOEExMUMzLnBuZw.png",
+      "accessibility": "Paquet de 400g de fromage Asiago DOP Pressato de la marque Italiamo."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060838,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/wocT4ZM3l-yATIwMg6HJyWAsoRz2uOsQlDA4oX92lDk/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FMTBBNTdCRkQ5MzcyMDk2QUMwRDdDRDQ/xMDM1RDk5REIzQjQxMURGNjBCNkJCRTMzRTc1RUEyNDQzOEExMUMzLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/wocT4ZM3l-yATIwMg6HJyWAsoRz2uOsQlDA4oX92lDk/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9FMTBBNTdCRkQ5MzcyMDk2QUMwRDdDRDQ/xMDM1RDk5REIzQjQxMURGNjBCNkJCRTMzRTc1RUEyNDQzOEExMUMzLnBuZw.png",
+       "accessibility": "Paquet de 400g de fromage Asiago DOP Pressato de la marque Italiamo."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li><span style=\"color: rgb(224, 62, 45)\"><strong>Cette action est uniquement valable au Tessin.</strong></span></li> <li>400 g</li> <li>100 g = 1.20</li> </ul>",
+      "fullTitle": "ITALIAMO Fromage Asiago DOP (action valable uniquement au Tessin)",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Fromage Asiago DOP (action valable uniquement au Tessin)",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 1.2,
+       "deletedPrice": 5.99,
+       "discountHasStar": false,
+       "discountText": "-20%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 20,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 5.99,
+      "price": 4.79,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060838,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274559,
+     "seals": [
+      {
+       "altText": "Appellation d'origine protégée.",
+       "image": "https://imgproxy-retcat.assets.schwarz/ZaCZfR8G0oaNH7Ox5VNOXRbpC5xQlCxYfuB76FrkF8s/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi83NkFFNTMwRkE0MzIyRDUxRUQ3RUQxN0R/FNUYyNjg4NTI4QTJFODM1QkUwMDhCMURENDlBNEVGQkFCOUU1QzIwLnBuZw.png"
+      },
+      {
+       "altText": "1 Gekühlt FR",
+       "image": "https://imgproxy-retcat.assets.schwarz/MMStbskViQs4FGQ0hMZSzgdq3uKvuQ0INcIRO_90GNM/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8yQ0FBMUQzMjM4NjNDQzk3QzUwRUY0Rjk/zNjRENzU1QzFDMUJDNzZBRDY3MURBREJGRDc2NTdEMzYwQzk0MzMwLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Fromage Asiago DOP (action valable uniquement au Tessin)",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060838,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "ITALIAMO Fromage Asiago DOP (action valable uniquement au Tessin)",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 20073
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060838"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060750",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274558040733,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "canonicalPath": "/p/fr-CH/barre-borek-aux-epinards-et-au-fromage/p10060750",
+     "canonicalUrl": "/p/fr-CH/barre-borek-aux-epinards-et-au-fromage/p10060750",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060750_6be0ed75",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060750_86a6bf17",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060750",
+     "flashSales": false,
+     "fullTitle": "Barre Börek aux épinards et au fromage",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "6205048"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/EFQDDNiMhI4-vrzHKBHYgYvux7NY8UpcML0VwaJP1GQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQzk4MTIzQ0U1NEM2NURFMEMxMUIwRUU/zOEI0NTEwNEYxQUY3RUM3MTJBNkJDRkFDNjU4RUI3MTZBOTM2MjE4LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/EFQDDNiMhI4-vrzHKBHYgYvux7NY8UpcML0VwaJP1GQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQzk4MTIzQ0U1NEM2NURFMEMxMUIwRUU/zOEI0NTEwNEYxQUY3RUM3MTJBNkJDRkFDNjU4RUI3MTZBOTM2MjE4LnBuZw.png",
+      "accessibility": "Trois rouleaux de pâte feuilletée dorée, garnis d'une farce verte, sur fond blanc."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060750,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/EFQDDNiMhI4-vrzHKBHYgYvux7NY8UpcML0VwaJP1GQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQzk4MTIzQ0U1NEM2NURFMEMxMUIwRUU/zOEI0NTEwNEYxQUY3RUM3MTJBNkJDRkFDNjU4RUI3MTZBOTM2MjE4LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/EFQDDNiMhI4-vrzHKBHYgYvux7NY8UpcML0VwaJP1GQ/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS9GQzk4MTIzQ0U1NEM2NURFMEMxMUIwRUU/zOEI0NTEwNEYxQUY3RUM3MTJBNkJDRkFDNjU4RUI3MTZBOTM2MjE4LnBuZw.png",
+       "accessibility": "Trois rouleaux de pâte feuilletée dorée, garnis d'une farce verte, sur fond blanc."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>90 g</li> <li>100 g = 0.66</li> </ul>",
+      "fullTitle": "Barre Börek aux épinards et au fromage",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Barre Börek aux épinards et au fromage",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Boulangerie/Pâtisseries salées",
+      "wonCategoryPrimaryPath": "0/17/1740/174013"
+     },
+     "lidlPlus": [
+      {
+       "price": {
+        "basePrice": {
+         "prefix": false
+        },
+        "discount": {
+         "deletedPrice": 0.85,
+         "discountHasStar": false,
+         "discountText": "-30%",
+         "fromNormalPriceForLidlPlus": false,
+         "fromRecommendedPrice": false,
+         "hideBargainHint": false,
+         "bargainHintEnabled": false,
+         "bargainHintText": "BargainHint_Text",
+         "showDiscount": true,
+         "showFrom": false,
+         "showPercentage": true,
+         "showUpTo": false
+        },
+        "displayedCurrency": "CHF",
+        "hasStar": false,
+        "hasVat": false,
+        "oldPrice": 0.85,
+        "price": 0.59,
+        "priceTheme": "white_yellow",
+        "specialTaxes": [],
+        "superscript": "*"
+       },
+       "lidlPlusText": "Avec Lidl Plus",
+       "highlightText": "-30%"
+      }
+     ],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": true,
+      "hasVat": false,
+      "specialTaxes": [],
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060750,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274557,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "22.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "22.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792620000,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "storeEndDate": 1793228399,
+     "title": "Barre Börek aux épinards et au fromage",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060750,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10020520",
+        "name": "Offres Lidl Plus",
+        "url": "/c/de-CH/lidl-plus-angebote/a10020520"
+       }
+      ],
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "Barre Börek aux épinards et au fromage",
+     "retailLists": [
+      [
+       {
+        "id": 4501,
+        "productSortIndex": 54
+       },
+       {
+        "id": 8373,
+        "productSortIndex": 10
+       }
+      ]
+     ],
+     "lists": [
+      4501,
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096086",
+        "name": "Boulangerie",
+        "url": "/h/fr-CH/boulangerie/h10096086"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096093",
+        "name": "Bouchées salées",
+        "url": "/h/fr-CH/boulangerie-salee/h10096093"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "174013",
+       "isMain": true,
+       "name": "Pâtisseries salées",
+       "parent": "1740",
+       "superCategories": [
+        {
+         "code": "1740",
+         "name": "Boulangerie",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060750"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060471",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792362943801238,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "canonicalPath": "/p/fr-CH/l-oro-della-cucina/p10060471",
+     "canonicalUrl": "/p/fr-CH/l-oro-della-cucina/p10060471",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060471_68ce761c",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060471_c084c8d7",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060471",
+     "flashSales": false,
+     "fullTitle": "L’oro della Cucina",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5110799"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/gj_mPe7wysd13tnCZAeZngAiNH6ObO2RwIvXpIiAk8g/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wOUY2NjM3QjBFMzgzMTE3MzlBNzk5QzR/BQkQxOUQ3MzM1NTU5NjZDMDAwQkUxMkZDOEMwQzA0NkIwQ0NCOUU5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/gj_mPe7wysd13tnCZAeZngAiNH6ObO2RwIvXpIiAk8g/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wOUY2NjM3QjBFMzgzMTE3MzlBNzk5QzR/BQkQxOUQ3MzM1NTU5NjZDMDAwQkUxMkZDOEMwQzA0NkIwQ0NCOUU5LnBuZw.png",
+      "accessibility": "Sachet de fromage râpé frais de style italien."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060471,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/gj_mPe7wysd13tnCZAeZngAiNH6ObO2RwIvXpIiAk8g/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wOUY2NjM3QjBFMzgzMTE3MzlBNzk5QzR/BQkQxOUQ3MzM1NTU5NjZDMDAwQkUxMkZDOEMwQzA0NkIwQ0NCOUU5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/gj_mPe7wysd13tnCZAeZngAiNH6ObO2RwIvXpIiAk8g/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8wOUY2NjM3QjBFMzgzMTE3MzlBNzk5QzR/BQkQxOUQ3MzM1NTU5NjZDMDAwQkUxMkZDOEMwQzA0NkIwQ0NCOUU5LnBuZw.png",
+       "accessibility": "Sachet de fromage râpé frais de style italien."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Fromage r&acirc;p&eacute; suisse</li> <li>400 g</li> <li>100 g = 1.12</li> </ul>",
+      "fullTitle": "L’oro della Cucina",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "L’oro della Cucina",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Action",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 4.49,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060471,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792362943,
+     "seals": [
+      {
+       "altText": "Drapeau suisse : fond rouge avec croix blanche.",
+       "image": "https://imgproxy-retcat.assets.schwarz/MqIHfKvXGwJDu5RvXlstzlIJkHi5zICHazl_L4IbeKk/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi85OUZFRDI4M0UxQjg0MUE0REZBNzA2NDI/zOTc1Mjc5MzQ3MjNGMUY3QUQ5OTQ4QzlDQTRGMTM1RTAyNTRDODVBLnBuZw.png"
+      },
+      {
+       "altText": "1 Gekühlt FR",
+       "image": "https://imgproxy-retcat.assets.schwarz/MMStbskViQs4FGQ0hMZSzgdq3uKvuQ0INcIRO_90GNM/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8yQ0FBMUQzMjM4NjNDQzk3QzUwRUY0Rjk/zNjRENzU1QzFDMUJDNzZBRDY3MURBREJGRDc2NTdEMzYwQzk0MzMwLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 19.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 19.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792360800
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792360800,
+     "title": "L’oro della Cucina",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060471,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104647",
+        "name": "Économies XXL",
+        "url": "/c/de-CH/xxl-sparen/a10104647"
+       }
+      ]
+     ],
+     "fullTitle": "L’oro della Cucina",
+     "retailLists": [
+      [
+       {
+        "id": 8349,
+        "productSortIndex": 28
+       }
+      ]
+     ],
+     "lists": [
+      8349
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060471"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060416",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015475365940,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "MILBONA",
+      "url": "/q/search?q=milbona",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/milbona-melange-de-fromages-italiens-a-pate-extra-dure-action-valable-uniquement-au-tessin/p10060416",
+     "canonicalUrl": "/p/fr-CH/milbona-melange-de-fromages-italiens-a-pate-extra-dure-action-valable-uniquement-au-tessin/p10060416",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060416_fc10c01e",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060416_30bcedf1",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060416",
+     "flashSales": false,
+     "fullTitle": "MILBONA Mélange de fromages italiens à pâte extra-dure (action valable uniquement au Tessin)",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "6003698"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/AdRhRWheLAE-y7LamuYN7jHe9A53LqBqy1vgN0nOusI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80MTE3ODlFODhBMTJCNzZDMDcxMzNGQzR/FNjZDQzVFQ0E3M0MyOEFCOTlFNDc0QkVCM0M0NDZFNkQyQTIzRTk5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/AdRhRWheLAE-y7LamuYN7jHe9A53LqBqy1vgN0nOusI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80MTE3ODlFODhBMTJCNzZDMDcxMzNGQzR/FNjZDQzVFQ0E3M0MyOEFCOTlFNDc0QkVCM0M0NDZFNkQyQTIzRTk5LnBuZw.png",
+      "accessibility": "Milbona fromage à pâte dure râpé avec Nutri-Score D et label italien, paquet de 100g."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060416,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/AdRhRWheLAE-y7LamuYN7jHe9A53LqBqy1vgN0nOusI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80MTE3ODlFODhBMTJCNzZDMDcxMzNGQzR/FNjZDQzVFQ0E3M0MyOEFCOTlFNDc0QkVCM0M0NDZFNkQyQTIzRTk5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/AdRhRWheLAE-y7LamuYN7jHe9A53LqBqy1vgN0nOusI/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80MTE3ODlFODhBMTJCNzZDMDcxMzNGQzR/FNjZDQzVFQ0E3M0MyOEFCOTlFNDc0QkVCM0M0NDZFNkQyQTIzRTk5LnBuZw.png",
+       "accessibility": "Milbona fromage à pâte dure râpé avec Nutri-Score D et label italien, paquet de 100g."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li><span style=\"color: rgb(224, 62, 45)\"><strong>Cette action est uniquement valable au Tessin.</strong></span></li> <li>R&acirc;p&eacute;</li> <li>100 g</li> </ul>",
+      "fullTitle": "MILBONA Mélange de fromages italiens à pâte extra-dure (action valable uniquement au Tessin)",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Mélange de fromages italiens à pâte extra-dure (action valable uniquement au Tessin)",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 0.44,
+       "deletedPrice": 1.49,
+       "discountHasStar": false,
+       "discountText": "-29%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 29,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 1.49,
+      "price": 1.05,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060416,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015475,
+     "seals": [
+      {
+       "altText": "1 Gekühlt FR",
+       "image": "https://imgproxy-retcat.assets.schwarz/MMStbskViQs4FGQ0hMZSzgdq3uKvuQ0INcIRO_90GNM/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8yQ0FBMUQzMjM4NjNDQzk3QzUwRUY0Rjk/zNjRENzU1QzFDMUJDNzZBRDY3MURBREJGRDc2NTdEMzYwQzk0MzMwLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "Mélange de fromages italiens à pâte extra-dure (action valable uniquement au Tessin)",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060416,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "MILBONA Mélange de fromages italiens à pâte extra-dure (action valable uniquement au Tessin)",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 20069
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060416"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060357",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015443496844,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "MILBONA",
+      "url": "/q/search?q=milbona",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/fr-CH/milbona-parmigiano-reggiano-bio-dop/p10060357",
+     "canonicalUrl": "/p/fr-CH/milbona-parmigiano-reggiano-bio-dop/p10060357",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060357_92ff43da",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060357_5286099b",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060357",
+     "flashSales": false,
+     "fullTitle": "MILBONA Parmigiano Reggiano bio DOP",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "6003620"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/7Wx7Kg9hoxT_UIENW4AqbB_syULSjYjymM8kKxD5q-M/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTJDOEQxQzkyOEZBMTlGMDg0NTE0RDA/xMEExOTMzMjA4MzNEQzY0NUVFRTBFMkNERTk3QjNDMkRCODQ5MTAwLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/7Wx7Kg9hoxT_UIENW4AqbB_syULSjYjymM8kKxD5q-M/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTJDOEQxQzkyOEZBMTlGMDg0NTE0RDA/xMEExOTMzMjA4MzNEQzY0NUVFRTBFMkNERTk3QjNDMkRCODQ5MTAwLnBuZw.png",
+      "accessibility": "Un morceau de fromage à pâte dure sur une planche en bois avec du thym et des noix."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060357,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/7Wx7Kg9hoxT_UIENW4AqbB_syULSjYjymM8kKxD5q-M/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTJDOEQxQzkyOEZBMTlGMDg0NTE0RDA/xMEExOTMzMjA4MzNEQzY0NUVFRTBFMkNERTk3QjNDMkRCODQ5MTAwLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/7Wx7Kg9hoxT_UIENW4AqbB_syULSjYjymM8kKxD5q-M/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS82RTJDOEQxQzkyOEZBMTlGMDg0NTE0RDA/xMEExOTMzMjA4MzNEQzY0NUVFRTBFMkNERTk3QjNDMkRCODQ5MTAwLnBuZw.png",
+       "accessibility": "Un morceau de fromage à pâte dure sur une planche en bois avec du thym et des noix."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Affin&eacute; pendant 24 mois</li> <li>200 g</li> <li>100 g = 2.65</li> </ul>",
+      "fullTitle": "MILBONA Parmigiano Reggiano bio DOP",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "Parmigiano Reggiano bio DOP",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 5.29,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060357,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015443,
+     "seals": [
+      {
+       "altText": "Label Bio",
+       "image": "https://imgproxy-retcat.assets.schwarz/iitfycJlv6bpHPmWKq2cphrF8lHcVRrZibP_ohx_5BM/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi8wNTE1Mjc0MTdFNkQ3RjJCNzhBRUQ4NzI/3MDQwQ0UyRkIyMUFEQTlEQzhBMTQxQkZBRThEOTBDODU0MkFDMTZFLnBuZw.png"
+      },
+      {
+       "altText": "Appellation d'origine protégée.",
+       "image": "https://imgproxy-retcat.assets.schwarz/ZaCZfR8G0oaNH7Ox5VNOXRbpC5xQlCxYfuB76FrkF8s/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi83NkFFNTMwRkE0MzIyRDUxRUQ3RUQxN0R/FNUYyNjg4NTI4QTJFODM1QkUwMDhCMURENDlBNEVGQkFCOUU1QzIwLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "dès le 15.10.",
+         "type": "IN_STORE_FROM_DATE_TODAY"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "dès le 15.10.",
+          "type": "IN_STORE_FROM_DATE_TODAY"
+         }
+        ],
+        "validFrom": 1792015200
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "title": "Parmigiano Reggiano bio DOP",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060357,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "MILBONA Parmigiano Reggiano bio DOP",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 20011
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060357"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060417",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015475393074,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "canonicalPath": "/p/fr-CH/l-horloger-valable-uniquement-en-suisse-romande/p10060417",
+     "canonicalUrl": "/p/fr-CH/l-horloger-valable-uniquement-en-suisse-romande/p10060417",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060417_2d52897e",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060417_d6a34c5f",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Offres valables dans la limite des stocks disponibles. Vente limitée à des quantités usuelles pour un ménage. Vendu sans décoration. Les produits faisant l'objet de la publicité, notamment les produits NonFood, ne font pas partie de notre assortiment de produits permanents."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060417",
+     "flashSales": false,
+     "fullTitle": "L’Horloger (valable uniquement en Suisse romande)",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "5113691"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/9GvdyvBJTR2Xf1vHGN8KEOWeSWQFEjzhN20HQGUW8J8/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNzVDMDM2NkYyRTJCOEFFOUZEMzE3NDB/BQUYxOTA0NDQ1NjNDQjk0QTQxNzM3OUI2MjY2QkI2RDJDRTBGMEY5LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/9GvdyvBJTR2Xf1vHGN8KEOWeSWQFEjzhN20HQGUW8J8/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNzVDMDM2NkYyRTJCOEFFOUZEMzE3NDB/BQUYxOTA0NDQ1NjNDQjk0QTQxNzM3OUI2MjY2QkI2RDJDRTBGMEY5LnBuZw.png",
+      "accessibility": "Morceau et tranches de fromage avec noix, romarin et épices sur une planche en bois."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060417,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/9GvdyvBJTR2Xf1vHGN8KEOWeSWQFEjzhN20HQGUW8J8/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNzVDMDM2NkYyRTJCOEFFOUZEMzE3NDB/BQUYxOTA0NDQ1NjNDQjk0QTQxNzM3OUI2MjY2QkI2RDJDRTBGMEY5LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/9GvdyvBJTR2Xf1vHGN8KEOWeSWQFEjzhN20HQGUW8J8/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zNzVDMDM2NkYyRTJCOEFFOUZEMzE3NDB/BQUYxOTA0NDQ1NjNDQjk0QTQxNzM3OUI2MjY2QkI2RDJDRTBGMEY5LnBuZw.png",
+       "accessibility": "Morceau et tranches de fromage avec noix, romarin et épices sur une planche en bois."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li><span style=\"color: rgb(224, 62, 45)\"><strong>Cette action est uniquement valable en Suisse romande.</strong></span></li> <li>180 g</li> <li>100 g = 2.11</li> </ul>",
+      "fullTitle": "L’Horloger (valable uniquement en Suisse romande)",
+      "moreDetails": "Plus de détails sur le produit",
+      "title": "L’Horloger (valable uniquement en Suisse romande)",
+      "wonCategoryPrimary": "Mondes de besoins/Food et Near Food/Fromages, produits laitiers et œufs/Fromage",
+      "wonCategoryPrimaryPath": "0/17/1739/173912"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 1.0,
+       "deletedPrice": 4.79,
+       "discountHasStar": false,
+       "discountText": "-20%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 20,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 4.79,
+      "price": 3.79,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060417,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015475,
+     "seals": [
+      {
+       "altText": "Garantie Suisse",
+       "image": "https://imgproxy-retcat.assets.schwarz/ENubDOYPVp8jPfL_QrbFRoC2MxcuP-5sSlh7lFTr4qY/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi82NzZEQzI3MEY5NENERUFEQjk0RTQyMTU/2QzZBMEU3MEJDRDY4QjE4RUI3QjA4NzU3NzQ3MkZBNUFDQkJCNTE4LnBuZw.png"
+      },
+      {
+       "altText": "World Cheese Aeward 2024-2025 silver",
+       "image": "https://imgproxy-retcat.assets.schwarz/s94gjo4XF6RsWuEAcydtIVVC096oyhoB8wZ9d7ixdHQ/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi80QjA0MDUwNTE4MEE5NTY4QTRCMzY3Mjc/xQ0YzMUQ0NjkyQUJDRTc2Mzc3MjJCQTEwMzJBRDQzMTM1OTE1N0RFLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "L’Horloger (valable uniquement en Suisse romande)",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060417,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Promotions de la semaine",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "L’Horloger (valable uniquement en Suisse romande)",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 20070
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Manger & Boire",
+        "url": "/c/fr-CH/manger-boire/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10095761",
+        "name": "Fromage, produits laitiers & œufs",
+        "url": "/h/fr-CH/fromages-produits-laitiers-oeufs/h10095761"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096077",
+        "name": "Fromages",
+        "url": "/h/fr-CH/fromage/h10096077"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "173912",
+       "isMain": true,
+       "name": "Fromage",
+       "parent": "1739",
+       "superCategories": [
+        {
+         "code": "1739",
+         "name": "Fromages, produits laitiers et œufs",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food et Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Mondes de besoins",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "fr",
+    "eventType": "GRIDBOX",
+    "id": "10060417"
+   }
+  }
+ ],
+ "breadcrumbs": [
+  {
+   "code": "query",
+   "label": "fromage",
+   "url": "/q/api/search?assortment=CH&locale=fr_CH&version=v2.0.0&q=fromage",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "q": "fromage"
+   }
+  }
+ ],
+ "details": {},
+ "teasers": {},
+ "advisors": []
+}

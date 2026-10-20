@@ -38,3 +38,29 @@ export const LidlCampaignGroupsSchema = z.object({
     campaignId: z.string().optional(),
   })).optional(),
 }).passthrough();
+
+// lidl.ch storefront product record (search `items[].gridbox.data`, or an
+// element of the /p/api/gridboxes array).
+export const LidlCatalogProductSchema = z.object({
+  erpNumber: z.string().optional(),
+  fullTitle: z.string().optional(),
+  category: z.string().optional(),
+  canonicalUrl: z.string().optional(),
+  image: z.string().optional(),
+  brand: z.object({ name: z.string().optional(), showBrand: z.boolean().optional() }).passthrough().nullable().optional(),
+  price: z.object({
+    price: z.number().nullable().optional(),
+    oldPrice: z.number().nullable().optional(),
+  }).passthrough().nullable().optional(),
+  keyfacts: z.object({ description: z.string().nullable().optional() }).passthrough().nullable().optional(),
+}).passthrough();
+
+export const LidlSearchResponseSchema = z.object({
+  numFound: z.number().optional(),
+  items: z.array(z.object({
+    type: z.string().optional(),
+    gridbox: z.object({ data: LidlCatalogProductSchema.optional() }).passthrough().optional(),
+  }).passthrough()).optional(),
+}).passthrough();
+
+export const LidlGridboxResponseSchema = z.array(LidlCatalogProductSchema);

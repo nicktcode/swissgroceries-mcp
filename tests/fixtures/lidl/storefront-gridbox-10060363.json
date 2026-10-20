@@ -1,0 +1,148 @@
+[
+ {
+  "ageRestriction": false,
+  "hasColors": false,
+  "awards": [],
+  "brand": {
+   "name": "VITTEL",
+   "url": "/q/search?q=vittel",
+   "showBrand": true
+  },
+  "canonicalPath": "/p/de-CH/vittel-mineralwasser-still/p10060363",
+  "canonicalUrl": "/p/de-CH/vittel-mineralwasser-still/p10060363",
+  "category": "Food",
+  "cutoutimageV2": [],
+  "dealOfDay": {
+   "active": false
+  },
+  "designTheme": "default",
+  "disclaimers": [
+   {
+    "id": "code_10060363_2668408f",
+    "type": "CODE",
+    "value": "Basic"
+   },
+   {
+    "id": "text_10060363_48513054",
+    "prefix": "*",
+    "type": "TEXT",
+    "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+   }
+  ],
+  "displayFreeDelivery": false,
+  "energyLabels": [],
+  "erpNumber": "10060363",
+  "flashSales": false,
+  "fullTitle": "VITTEL Mineralwasser still",
+  "gs1Attributes": [],
+  "guaranteeLabels": [],
+  "havingPrice": true,
+  "havingThreesixty": false,
+  "havingVideos": false,
+  "highlightedSeals": 0,
+  "ians": [
+   "1800508"
+  ],
+  "image": "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png",
+  "image_V1": {
+   "image": "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png",
+   "accessibility": "6er-Pack natürliches Mineralwasser in 1,5-L-Flaschen."
+  },
+  "isLidlGiftCard": false,
+  "isUsedProduct": false,
+  "itemId": 10060363,
+  "imageList": [
+   "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png"
+  ],
+  "imageList_V1": [
+   {
+    "image": "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png",
+    "accessibility": "6er-Pack natürliches Mineralwasser in 1,5-L-Flaschen."
+   }
+  ],
+  "keyfacts": {
+   "analyticsCategory": "Food",
+   "description": "<ul> <li>Pro 6 x 1,5 l</li> <li>1 l = 0.36</li> <li>Einzelflasche = 1.15</li> </ul>",
+   "fullTitle": "VITTEL Mineralwasser still",
+   "moreDetails": "Weitere Produktdetails",
+   "title": "Mineralwasser still",
+   "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Getränke/Wasser",
+   "wonCategoryPrimaryPath": "0/17/1720/172010"
+  },
+  "lidlPlus": [],
+  "multipack": false,
+  "online": false,
+  "preventSelling": false,
+  "price": {
+   "currencyCode": "CHF",
+   "currencyCodeSecond": "",
+   "currencySymbol": "CHF",
+   "currencySymbolSecond": "",
+   "discount": {
+    "absoluteDiscount": 3.24,
+    "deletedPrice": 6.49,
+    "discountHasStar": false,
+    "discountText": "-50% im 6er Pack",
+    "fromRecommendedPrice": false,
+    "hideBargainHint": false,
+    "bargainHintEnabled": false,
+    "bargainHintText": "BargainHint_Text",
+    "percentageDiscount": 49,
+    "showDiscount": true,
+    "showFrom": false,
+    "showPercentage": true,
+    "showUpTo": false
+   },
+   "displayedCurrency": "CHF",
+   "hasStar": false,
+   "hasVat": false,
+   "oldPrice": 6.49,
+   "price": 3.25,
+   "priceTheme": "white_red",
+   "specialTaxes": [],
+   "superscript": "*",
+   "variantsHaveDifferentPrices": false
+  },
+  "productId": 10060363,
+  "productType": "RETAIL",
+  "productOrigin": "progress_event",
+  "quickAddToCart": false,
+  "regionsPrices": {},
+  "ribbons": [],
+  "renderedTs": 1792061007,
+  "seals": [],
+  "stockAvailability": {
+   "availabilityIndicator": 0,
+   "badgeInfo": {
+    "badges": [
+     {
+      "text": "15.10. - 21.10.",
+      "type": "IN_STORE_TODAY_DATE_RANGE"
+     }
+    ]
+   },
+   "badgeInfoV2": [
+    {
+     "badges": [
+      {
+       "text": "15.10. - 21.10.",
+       "type": "IN_STORE_TODAY_DATE_RANGE"
+      }
+     ],
+     "validFrom": 1792015200,
+     "validUntil": 1792619999
+    }
+   ],
+   "onlineAvailable": false,
+   "minOrderableQuantity": 1,
+   "backInStockNotification": false,
+   "backInStockNotificationSoldOut": false
+  },
+  "store": true,
+  "storeStartDate": 1792015200,
+  "storeEndDate": 1792619999,
+  "title": "Mineralwasser still",
+  "timezoneId": "Europe/Zurich",
+  "zones": {}
+ }
+]

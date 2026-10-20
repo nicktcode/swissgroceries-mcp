@@ -126,7 +126,7 @@ Prompts are surfaced as one-click templates in MCP-aware clients (Claude Desktop
 | Coop | coop.ch catalog (coopathome) | Yes | Yes (geo) | Yes (product detail) | None |
 | Aldi | Full catalog | Yes | No | No (API exposes only allergen claims) | None |
 | Denner | Full catalog | Yes | No | No | Anonymous self-auth (signup + signin, rotated) |
-| Lidl | Weekly leaflet only | Yes | No | No (`energeticInformation` field exists but is empty in practice) | None |
+| Lidl | Online assortment via the lidl.ch storefront (current + upcoming weekly offers, ~600 items; food only, de/fr/it) | Yes (weekly leaflet) | No | No | None |
 | Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | No | None |
 | Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | Yes (parsed from free-text attribute, basis assumed 100g) | None |
 | Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | No | None |
@@ -210,7 +210,7 @@ Rare, since the adapter rotates its token automatically. If it persists, unset a
 
 **Lidl returns 0 results**
 
-Lidl only indexes products from the current weekly campaign leaflet. If your search term is not in this week's campaigns, you will get 0 results. This is expected.
+Lidl Switzerland has no online grocery shop; lidl.ch only lists the current and upcoming weekly offers (around 600 items, food and non-food). Search covers that assortment, so a product that isn't on offer this or next week returns 0 results. This is expected.
 
 **ZIP unknown error**
 

@@ -3,11 +3,15 @@ import type {
   NormalizedProduct, NormalizedStore, NormalizedPromotion,
   SearchQuery, StoreQuery, PromotionQuery,
 } from '../types.js';
-import { lidlFetch } from './client.js';
-import { normalizeProduct, normalizeStore, normalizePromotion } from './normalize.js';
+import { lidlFetch, lidlWebFetch } from './client.js';
+import {
+  normalizeProduct, normalizeStore, normalizePromotion, normalizeCatalogProduct, isCatalogFood,
+} from './normalize.js';
 import { ok, err } from '../../util/adapter-result.js';
 import { haversineKm } from '../../util/haversine.js';
-import { LidlCampaignGroupsSchema, LidlCampaignSchema } from './schemas.js';
+import {
+  LidlCampaignGroupsSchema, LidlCampaignSchema, LidlSearchResponseSchema, LidlGridboxResponseSchema,
+} from './schemas.js';
 
 function classify(e: unknown): AdapterError {
   if (e instanceof Error && (e as any).code === 'schema_mismatch') {
@@ -18,6 +22,16 @@ function classify(e: unknown): AdapterError {
   if (/404/.test(msg)) return { code: 'not_found' };
   return { code: 'unavailable', reason: msg };
 }
+
+function lang(l: string | undefined): 'de' | 'fr' | 'it' {
+  return l === 'fr' ? 'fr' : l === 'it' ? 'it' : 'de';
+}
+
+// lidl.ch ERP numbers are 8 digits; anything else is a leaflet product id.
+const ERP_RX = /^\d{8}$/;
+
+// The storefront caps a page at 60 items.
+const MAX_FETCH = 60;
 
 export const DEFAULT_STORE = process.env.LIDL_DEFAULT_STORE ?? 'CH0149';
 
@@ -75,13 +89,29 @@ export class LidlAdapter implements StoreAdapter {
 
   async searchProducts(q: SearchQuery): Promise<AdapterResult<NormalizedProduct[]>> {
     try {
-      await this.loadCampaigns();
-      const needle = q.query.toLowerCase();
-      const offset = q.offset ?? 0;
-      const matches = (this.cache.products ?? [])
-        .filter((p: any) => (p.title ?? '').toLowerCase().includes(needle))
-        .slice(offset, offset + (q.limit ?? 20));
-      return ok(matches.map(normalizeProduct));
+      // Storefront search over the whole online assortment. Non-food hits
+      // (furniture, clothing) are dropped, so over-fetch a little; `offset`
+      // is applied to the raw hit list.
+      const limit = q.limit ?? 20;
+      const r = await lidlWebFetch('/q/api/search', {
+        q: q.query,
+        locale: `${lang(q.language)}_CH`,
+        assortment: 'CH',
+        version: 'v2.0.0',
+        offset: String(q.offset ?? 0),
+        fetchsize: String(Math.min(limit * 2, MAX_FETCH)),
+      });
+      const parsed = LidlSearchResponseSchema.safeParse(r);
+      if (!parsed.success) {
+        return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) });
+      }
+      const products = (parsed.data.items ?? [])
+        .filter((i) => i.type === 'product' && i.gridbox?.data)
+        .map((i) => i.gridbox!.data as any)
+        .filter(isCatalogFood)
+        .map(normalizeCatalogProduct)
+        .filter((p): p is NormalizedProduct => p !== null);
+      return ok(products.slice(0, limit));
     } catch (e) {
       return err(classify(e));
     }
@@ -89,6 +119,15 @@ export class LidlAdapter implements StoreAdapter {
 
   async getProduct(id: string): Promise<AdapterResult<NormalizedProduct | null>> {
     try {
+      if (ERP_RX.test(id)) {
+        const r = await lidlWebFetch('/p/api/gridboxes/CH/de', { erpNumbers: id });
+        const parsed = LidlGridboxResponseSchema.safeParse(r);
+        if (!parsed.success) {
+          return err({ code: 'schema_mismatch', sample: JSON.stringify(r).slice(0, 500) });
+        }
+        const first = parsed.data[0];
+        return ok(first ? normalizeCatalogProduct(first as any) : null);
+      }
       const r = await lidlFetch('digital-leaflet.lidlplus.com', `/api/v1/CH/products/${encodeURIComponent(id)}`);
       return ok(r ? normalizeProduct(r) : null);
     } catch (e) {

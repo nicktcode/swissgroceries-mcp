@@ -54,11 +54,15 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expectChainProducts(out, 'aldi', ctx);
   }, 30000);
 
-  itLive('Lidl returns at least products or no error', async () => {
+  itLive('Lidl storefront search returns sized products', async (ctx) => {
     const r = buildRegistry();
-    const out = await searchProductsHandler(r, { query: 'milch', chains: ['lidl'], limit: 5 });
-    // Lidl may return 0 if not in current weekly leaflet. Accept any non-error result.
-    expect(out.errors?.find((e) => e.chain === 'lidl')).toBeUndefined();
+    const out = await searchProductsHandler(r, { query: 'milch', chains: ['lidl'], limit: 10 });
+    expectChainProducts(out, 'lidl', ctx);
+    const list = out.byChain.lidl ?? [];
+    if (list.length === 0) return;
+    expect(list.every((p) => p.price.current > 0)).toBe(true);
+    // Weekly assortment varies, but most items should carry a unit price.
+    expect(list.filter((p) => p.unitPrice).length / list.length).toBeGreaterThanOrEqual(0.5);
   }, 30000);
 
   itLive('Farmy search returns products', async (ctx) => {

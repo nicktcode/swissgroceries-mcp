@@ -1,0 +1,1685 @@
+{
+ "type": "search",
+ "version": "v2.0.0",
+ "engine": "ldt-searcher",
+ "xPayload": {
+  "keywordResults": {
+   "num_items_found": 5
+  }
+ },
+ "id": "f9f8778c-4149-4438-a20d-8c89ad8c75c8",
+ "q": "wasser",
+ "locale": "de_CH",
+ "assortment": "CH",
+ "resultType": "search",
+ "masterQuery": "wasser",
+ "numFound": 5,
+ "offset": 0,
+ "fetchsize": 10,
+ "maxfetchsize": 1000,
+ "sort": {
+  "code": "relevancy",
+  "label": "Relevanz",
+  "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&sort=relevancy",
+  "link": {
+   "type": "search",
+   "filter": {},
+   "sort": "relevancy",
+   "q": "wasser"
+  }
+ },
+ "sorts": [
+  {
+   "code": "relevancy",
+   "label": "Relevanz",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&sort=relevancy",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "relevancy",
+    "q": "wasser"
+   }
+  },
+  {
+   "code": "price",
+   "label": "Preis aufsteigend",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&sort=price",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "price",
+    "q": "wasser"
+   }
+  },
+  {
+   "code": "price-desc",
+   "label": "Preis absteigend",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&sort=price-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "price-desc",
+    "q": "wasser"
+   }
+  },
+  {
+   "code": "firstOnlineDate-desc",
+   "label": "Neueste Artikel zuerst",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&sort=firstOnlineDate-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "firstOnlineDate-desc",
+    "q": "wasser"
+   }
+  },
+  {
+   "code": "percentageDiscount-desc",
+   "label": "Höchster Rabatt zuerst",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&sort=percentageDiscount-desc",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "sort": "percentageDiscount-desc",
+    "q": "wasser"
+   }
+  }
+ ],
+ "facets": [
+  {
+   "type": "TEXT",
+   "code": "category",
+   "label": "Kategorie",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": false,
+    "selectedPosition": "BELOW",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "topvalues": [
+    {
+     "type": "TEXT",
+     "label": "Essen & Trinken",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=Essen+%26+Trinken",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Essen & Trinken"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068374"
+    },
+    {
+     "type": "TEXT",
+     "label": "Küche & Haushalt",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=K%C3%BCche+%26+Haushalt",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Küche & Haushalt"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068166"
+    },
+    {
+     "type": "TEXT",
+     "label": "Wohnen & Einrichtung",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=Wohnen+%26+Einrichtung",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Wohnen & Einrichtung"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068371"
+    },
+    {
+     "type": "TEXT",
+     "label": "Baby, Kind & Spielzeug",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=Baby%2C+Kind+%26+Spielzeug",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Baby, Kind & Spielzeug"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068225"
+    }
+   ],
+   "values": [
+    {
+     "type": "TEXT",
+     "label": "Essen & Trinken",
+     "selected": false,
+     "count": 2,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=Essen+%26+Trinken",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Essen & Trinken"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068374"
+    },
+    {
+     "type": "TEXT",
+     "label": "Küche & Haushalt",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=K%C3%BCche+%26+Haushalt",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Küche & Haushalt"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068166"
+    },
+    {
+     "type": "TEXT",
+     "label": "Wohnen & Einrichtung",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=Wohnen+%26+Einrichtung",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Wohnen & Einrichtung"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068371"
+    },
+    {
+     "type": "TEXT",
+     "label": "Baby, Kind & Spielzeug",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&category=Baby%2C+Kind+%26+Spielzeug",
+     "link": {
+      "type": "search",
+      "filter": {
+       "category": [
+        "Baby, Kind & Spielzeug"
+       ]
+      },
+      "q": "wasser"
+     },
+     "children": [],
+     "value": "10068225"
+    }
+   ]
+  },
+  {
+   "type": "RANGE",
+   "code": "price",
+   "label": "Preis",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": false,
+    "selectedPosition": "BELOW",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "unit": "CHF",
+   "baseURL": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser",
+   "baseLink": {
+    "type": "search",
+    "filter": {},
+    "q": "wasser"
+   },
+   "globalMin": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 2.0
+   },
+   "globalMax": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 15.0
+   },
+   "min": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 2.0
+   },
+   "max": {
+    "type": "NumericValue",
+    "unit": "CHF",
+    "value": 15.0
+   },
+   "selectedMin": {
+    "type": "SelectedNumericValue",
+    "value": 2.0
+   },
+   "selectedMax": {
+    "type": "SelectedNumericValue",
+    "value": 15.0
+   },
+   "values": [
+    {
+     "type": "NUMERIC",
+     "label": "bis 10CHF",
+     "selected": false,
+     "count": 4,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&price=2+-+10",
+     "link": {
+      "type": "search",
+      "filter": {
+       "price": [
+        "2 - 10"
+       ]
+      },
+      "q": "wasser"
+     }
+    }
+   ]
+  },
+  {
+   "type": "TEXT",
+   "code": "brand",
+   "label": "Marke",
+   "selector": "OR",
+   "rendering": {
+    "style": "TEXT",
+    "searchable": true,
+    "selectedPosition": "ABOVE",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "topvalues": [
+    {
+     "type": "TEXT",
+     "label": "CIEN",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=CIEN",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "CIEN"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "CIEN"
+    },
+    {
+     "type": "TEXT",
+     "label": "EVIAN",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=EVIAN",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "EVIAN"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "EVIAN"
+    },
+    {
+     "type": "TEXT",
+     "label": "LUPILU",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=LUPILU",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "LUPILU"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "LUPILU"
+    },
+    {
+     "type": "TEXT",
+     "label": "SILVERCREST",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=SILVERCREST",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "SILVERCREST"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "SILVERCREST"
+    },
+    {
+     "type": "TEXT",
+     "label": "VITTEL",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=VITTEL",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "VITTEL"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "VITTEL"
+    }
+   ],
+   "values": [
+    {
+     "type": "TEXT",
+     "label": "CIEN",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=CIEN",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "CIEN"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "CIEN"
+    },
+    {
+     "type": "TEXT",
+     "label": "EVIAN",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=EVIAN",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "EVIAN"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "EVIAN"
+    },
+    {
+     "type": "TEXT",
+     "label": "LUPILU",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=LUPILU",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "LUPILU"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "LUPILU"
+    },
+    {
+     "type": "TEXT",
+     "label": "SILVERCREST",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=SILVERCREST",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "SILVERCREST"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "SILVERCREST"
+    },
+    {
+     "type": "TEXT",
+     "label": "VITTEL",
+     "selected": false,
+     "count": 1,
+     "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&brand=VITTEL",
+     "link": {
+      "type": "search",
+      "filter": {
+       "brand": [
+        "VITTEL"
+       ]
+      },
+      "q": "wasser"
+     },
+     "value": "VITTEL"
+    }
+   ]
+  },
+  {
+   "type": "SWITCH",
+   "code": "newArticleFlag",
+   "label": "Neu",
+   "selector": "REFINE",
+   "rendering": {
+    "style": "TOGGLE",
+    "searchable": false,
+    "selectedPosition": "ABOVE",
+    "renderLabel": true,
+    "collapsible": true
+   },
+   "value": {
+    "label": "Neu",
+    "selected": false,
+    "count": 5,
+    "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser&newArticleFlag=1",
+    "link": {
+     "type": "search",
+     "filter": {
+      "newArticleFlag": [
+       "1"
+      ]
+     },
+     "q": "wasser"
+    }
+   }
+  }
+ ],
+ "items": [
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060363",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015720449677,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "VITTEL",
+      "url": "/q/search?q=vittel",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/vittel-mineralwasser-still/p10060363",
+     "canonicalUrl": "/p/de-CH/vittel-mineralwasser-still/p10060363",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060363_2668408f",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060363_48513054",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060363",
+     "flashSales": false,
+     "fullTitle": "VITTEL Mineralwasser still",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "1800508"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png",
+      "accessibility": "6er-Pack natürliches Mineralwasser in 1,5-L-Flaschen."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060363,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/SytDOHRNHtAyBllvbJVGva6feDH5TyJwON7QT0iUGMg/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS8zOTQ0NjJFODY5NDExQkNENjY0ODlBQjB/BODZERkYzNjYyNUIwMjE2M0EzMkY5RjI4NUVGMUU5Rjk3RUY5RDM2LnBuZw.png",
+       "accessibility": "6er-Pack natürliches Mineralwasser in 1,5-L-Flaschen."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Pro 6 x 1,5 l</li> <li>1 l = 0.36</li> <li>Einzelflasche = 1.15</li> </ul>",
+      "fullTitle": "VITTEL Mineralwasser still",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Mineralwasser still",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Getränke/Wasser",
+      "wonCategoryPrimaryPath": "0/17/1720/172010"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 3.24,
+       "deletedPrice": 6.49,
+       "discountHasStar": false,
+       "discountText": "-50% im 6er Pack",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 49,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 6.49,
+      "price": 3.25,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060363,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015720,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "Mineralwasser still",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060363,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104656",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10104656"
+       }
+      ]
+     ],
+     "fullTitle": "VITTEL Mineralwasser still",
+     "retailLists": [
+      [
+       {
+        "id": 8340,
+        "productSortIndex": 20017
+       }
+      ]
+     ],
+     "lists": [
+      8340
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10071022",
+        "name": "Getränke",
+        "url": "/h/de-CH/getraenke/h10071022"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096232",
+        "name": "Wasser",
+        "url": "/h/de-CH/wasser/h10096232"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "172010",
+       "isMain": true,
+       "name": "Wasser",
+       "parent": "1720",
+       "superCategories": [
+        {
+         "code": "1720",
+         "name": "Getränke",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060363"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060781",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792274770383802,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "EVIAN",
+      "url": "/q/search?q=evian",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/evian-mineralwasser/p10060781",
+     "canonicalUrl": "/p/de-CH/evian-mineralwasser/p10060781",
+     "category": "Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060781_fa00bf32",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060781_85d3388c",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060781",
+     "flashSales": false,
+     "fullTitle": "EVIAN Mineralwasser",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "1800134"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/pbY-UCfn0eePVJiUdLowOySvRU93j9u8VuCBRMgCMm4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80RDA5MURGQ0IzRUJDN0MzNDVCMzNBODl/FOUY2NzU1RkM3NTc0QzBBOTNCMUUyOUI5MzQxODQ4MzM2NzJFQTVGLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/pbY-UCfn0eePVJiUdLowOySvRU93j9u8VuCBRMgCMm4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80RDA5MURGQ0IzRUJDN0MzNDVCMzNBODl/FOUY2NzU1RkM3NTc0QzBBOTNCMUUyOUI5MzQxODQ4MzM2NzJFQTVGLnBuZw.png",
+      "accessibility": "Sechserpack Mineralwasserflaschen mit pinker Verpackung und Aufschrift '200 Years Young'."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060781,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/pbY-UCfn0eePVJiUdLowOySvRU93j9u8VuCBRMgCMm4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80RDA5MURGQ0IzRUJDN0MzNDVCMzNBODl/FOUY2NzU1RkM3NTc0QzBBOTNCMUUyOUI5MzQxODQ4MzM2NzJFQTVGLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/pbY-UCfn0eePVJiUdLowOySvRU93j9u8VuCBRMgCMm4/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80RDA5MURGQ0IzRUJDN0MzNDVCMzNBODl/FOUY2NzU1RkM3NTc0QzBBOTNCMUUyOUI5MzQxODQ4MzM2NzJFQTVGLnBuZw.png",
+       "accessibility": "Sechserpack Mineralwasserflaschen mit pinker Verpackung und Aufschrift '200 Years Young'."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Food",
+      "description": "<ul> <li>Ohne Kohlens&auml;ure</li> <li>Pro 6 x 0,5 l</li> <li>1 l = 1.30</li> <li>Einzelflasche = 0.95</li> </ul>",
+      "fullTitle": "EVIAN Mineralwasser",
+      "moreDetails": "Weitere Produktdetails",
+      "title": "Mineralwasser",
+      "wonCategoryPrimary": "Bedürfniswelten/Food und Near Food/Getränke/Wasser",
+      "wonCategoryPrimaryPath": "0/17/1720/172010"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "discountHasStar": false,
+       "discountText": "Aktion",
+       "fromRecommendedPrice": false,
+       "showDiscount": false,
+       "showFrom": false,
+       "showPercentage": false,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 3.89,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060781,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792274770,
+     "seals": [],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "ab 22.10.",
+         "type": "IN_STORE_FROM_DATE_FUTURE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "ab 22.10.",
+          "type": "IN_STORE_FROM_DATE_FUTURE"
+         }
+        ],
+        "validFrom": 1792620000
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792620000,
+     "title": "Mineralwasser",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060781,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105302",
+        "name": "Wochenaktion",
+        "url": "/c/de-CH/wochenaktion/a10105302"
+       }
+      ]
+     ],
+     "fullTitle": "EVIAN Mineralwasser",
+     "retailLists": [
+      [
+       {
+        "id": 8373,
+        "productSortIndex": 20018
+       }
+      ]
+     ],
+     "lists": [
+      8373
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068374",
+        "name": "Essen & Trinken",
+        "url": "/c/de-CH/essen-trinken/s10068374"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10071022",
+        "name": "Getränke",
+        "url": "/h/de-CH/getraenke/h10071022"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10096232",
+        "name": "Wasser",
+        "url": "/h/de-CH/wasser/h10096232"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "172010",
+       "isMain": true,
+       "name": "Wasser",
+       "parent": "1720",
+       "superCategories": [
+        {
+         "code": "1720",
+         "name": "Getränke",
+         "parent": "17"
+        },
+        {
+         "code": "17",
+         "name": "Food und Near Food",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060781"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060636",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015749580223,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "SILVERCREST",
+      "url": "/q/search?q=silvercrest",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/silvercrest-wasserbad-schmelzschale-einhand-mehlsieb/p10060636",
+     "canonicalUrl": "/p/de-CH/silvercrest-wasserbad-schmelzschale-einhand-mehlsieb/p10060636",
+     "category": "Non Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060636_6cd51df7",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060636_b32d798d",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060636",
+     "flashSales": false,
+     "fullTitle": "SILVERCREST Wasserbad-Schmelzschale/Einhand-Mehlsieb",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "522796"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/G9vY3fetpPK4cJmhFF9Btc1TaMxxtX0k4UkcOhGa3vw/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NUU5M0NFOUQ4RTVFOUNGQzFFREI4NDA/0MzVFNjExN0NBOENCQzlEQzVENjIyODAzRDg5MjI1MzBGQTBGQjI2LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/G9vY3fetpPK4cJmhFF9Btc1TaMxxtX0k4UkcOhGa3vw/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NUU5M0NFOUQ4RTVFOUNGQzFFREI4NDA/0MzVFNjExN0NBOENCQzlEQzVENjIyODAzRDg5MjI1MzBGQTBGQjI2LnBuZw.png",
+      "accessibility": "Edelstahl-Mehlsieb und Schmelzschale für die Küche."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060636,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/G9vY3fetpPK4cJmhFF9Btc1TaMxxtX0k4UkcOhGa3vw/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NUU5M0NFOUQ4RTVFOUNGQzFFREI4NDA/0MzVFNjExN0NBOENCQzlEQzVENjIyODAzRDg5MjI1MzBGQTBGQjI2LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/G9vY3fetpPK4cJmhFF9Btc1TaMxxtX0k4UkcOhGa3vw/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS80NUU5M0NFOUQ4RTVFOUNGQzFFREI4NDA/0MzVFNjExN0NBOENCQzlEQzVENjIyODAzRDg5MjI1MzBGQTBGQjI2LnBuZw.png",
+       "accessibility": "Edelstahl-Mehlsieb und Schmelzschale für die Küche."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Non Food",
+      "description": "<ul> <li>Aus Edelstahl</li> <li>Pro St&uuml;ck</li> </ul> <p>Im Vergleich zum letzten Lidl Preis.</p>",
+      "fullTitle": "SILVERCREST Wasserbad-Schmelzschale/Einhand-Mehlsieb",
+      "moreDetails": "Weitere Produktdetails",
+      "supplementalDescription": "Spülmaschinengeeignet",
+      "title": "Wasserbad-Schmelzschale/Einhand-Mehlsieb",
+      "wonCategoryPrimary": "Bedürfniswelten/Küche & Haushalt/Kochen & Backen",
+      "wonCategoryPrimaryPath": "0/11/1112"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "discount": {
+       "absoluteDiscount": 2.0,
+       "deletedPrice": 4.99,
+       "discountHasStar": false,
+       "discountText": "-40%",
+       "fromRecommendedPrice": false,
+       "hideBargainHint": false,
+       "bargainHintEnabled": false,
+       "bargainHintText": "BargainHint_Text",
+       "percentageDiscount": 40,
+       "showDiscount": true,
+       "showFrom": false,
+       "showPercentage": true,
+       "showUpTo": false
+      },
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 4.99,
+      "price": 2.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060636,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015749,
+     "seals": [
+      {
+       "altText": "SilverCrest Logo mit einem stilisierten Dreieck auf der linken Seite.",
+       "image": "https://imgproxy-retcat.assets.schwarz/bNi1N8856IGSvmQQbe9QJGKQgB-bsQXkcnWMfP4STvU/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9ENjVDRUQzNURDN0ZDMDg3NDREQjVCRTU/xRUJENzRGRDA0RjZFNzAwRTM5MjlEMjdCRDM2QUZFNjgyMUJBNTEwLnBuZw.png"
+      },
+      {
+       "altText": "ILAG Non Stick, Schweizer Technologie, ILAFLON RESIST SP100.",
+       "image": "https://imgproxy-retcat.assets.schwarz/OiGR5v9FYdsCrZw9Ld5MCM6MAo5WY7giUlguXaZsfto/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi85QjkxRUI0ODUyRjZDOTQ5QTdEOTdFRTR/EODkxRkQzQkU3NjkzRjkzODFENTkxRUJDNjZFNTE4M0RGODY4RDlFLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "26.10. - 28.10.",
+         "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "26.10. - 28.10.",
+          "type": "IN_STORE_FROM_FUTURE_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792969200,
+        "validUntil": 1793228399
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": false,
+     "storeStartDate": 1792969200,
+     "storeEndDate": 1793228399,
+     "title": "Wasserbad-Schmelzschale/Einhand-Mehlsieb",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060636,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10105292",
+        "name": "Backen",
+        "url": "/c/de-CH/backen/a10105292"
+       }
+      ]
+     ],
+     "fullTitle": "SILVERCREST Wasserbad-Schmelzschale/Einhand-Mehlsieb",
+     "retailLists": [
+      [
+       {
+        "id": 8383,
+        "productSortIndex": 5
+       }
+      ]
+     ],
+     "lists": [
+      8383
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068166",
+        "name": "Küche & Haushalt",
+        "url": "/c/de-CH/kueche-haushalt/s10068166"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10067523",
+        "name": "Kochen & Backen",
+        "url": "/h/de-CH/kochen-backen/h10067523"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "1112",
+       "isMain": true,
+       "name": "Kochen & Backen",
+       "parent": "11",
+       "superCategories": [
+        {
+         "code": "11",
+         "name": "Küche & Haushalt",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060636"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060208",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792015719363333,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": false,
+     "awards": [],
+     "brand": {
+      "name": "CIEN",
+      "url": "/q/search?q=cien",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/cien-haar-und-bart-schneider/p10060208",
+     "canonicalUrl": "/p/de-CH/cien-haar-und-bart-schneider/p10060208",
+     "category": "Non Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060208_6817c1a8",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060208_85d93ba3",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060208",
+     "flashSales": false,
+     "fullTitle": "CIEN Haar-und-Bart-Schneider",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "552170"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/0D-V1Vfdf29SBw1Vz5yZn3L6iU-8NqmSZsfbLRQu2T0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS85Qjk1OEUxMDA1QzI0QkNDQzc4RjNGQjF/DQzgzNUU0MkE4M0FCMUIxQkMyNzE3NTE4NTc3Q0FEMUE4NTdFOTY1LnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/0D-V1Vfdf29SBw1Vz5yZn3L6iU-8NqmSZsfbLRQu2T0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS85Qjk1OEUxMDA1QzI0QkNDQzc4RjNGQjF/DQzgzNUU0MkE4M0FCMUIxQkMyNzE3NTE4NTc3Q0FEMUE4NTdFOTY1LnBuZw.png",
+      "accessibility": "Schwarzer Haar- und Bartschneider mit zwei verstellbaren Kammaufsätzen."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060208,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/0D-V1Vfdf29SBw1Vz5yZn3L6iU-8NqmSZsfbLRQu2T0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS85Qjk1OEUxMDA1QzI0QkNDQzc4RjNGQjF/DQzgzNUU0MkE4M0FCMUIxQkMyNzE3NTE4NTc3Q0FEMUE4NTdFOTY1LnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/0D-V1Vfdf29SBw1Vz5yZn3L6iU-8NqmSZsfbLRQu2T0/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS85Qjk1OEUxMDA1QzI0QkNDQzc4RjNGQjF/DQzgzNUU0MkE4M0FCMUIxQkMyNzE3NTE4NTc3Q0FEMUE4NTdFOTY1LnBuZw.png",
+       "accessibility": "Schwarzer Haar- und Bartschneider mit zwei verstellbaren Kammaufsätzen."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Non Food",
+      "description": "<ul> <li>Wasserdicht &ndash; f&uuml;r eine Rasur und Reinigung unter Wasser</li> <li>Pro St&uuml;ck</li> </ul>",
+      "fullTitle": "CIEN Haar-und-Bart-Schneider",
+      "moreDetails": "Weitere Produktdetails",
+      "supplementalDescription": "Mit Präzisions- und Langhaaraufsatz, Reinigungsbürste und Klingenöl",
+      "title": "Haar-und-Bart-Schneider",
+      "wonCategoryPrimary": "Bedürfniswelten/Wohnen & Einrichtung/Beauty & Körperpflege",
+      "wonCategoryPrimaryPath": "0/14/1420"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "oldPrice": 0.0,
+      "price": 8.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060208,
+     "productType": "RETAIL",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792015719,
+     "seals": [
+      {
+       "altText": "Cien Logo.",
+       "image": "https://imgproxy-retcat.assets.schwarz/3yabrKcf7Of0CZNkVZTK3e6kVFVQBIgR9Ve1lkYYyDo/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi80OTQ0QTc3NDlCREE3NjAxRTVERkYyRjc/zN0VCNUVDMDNGQzZDOTRGNEQ4RTA3NEFDMjRBNEIyQTM5MUFCREYxLnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "15.10. - 21.10.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "15.10. - 21.10.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792015200,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 1,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792015200,
+     "storeEndDate": 1792619999,
+     "title": "Haar-und-Bart-Schneider",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060208,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104650",
+        "name": "Bad",
+        "url": "/c/de-CH/bad/a10104650"
+       }
+      ]
+     ],
+     "fullTitle": "CIEN Haar-und-Bart-Schneider",
+     "retailLists": [
+      [
+       {
+        "id": 8346,
+        "productSortIndex": 19
+       }
+      ]
+     ],
+     "lists": [
+      8346
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068371",
+        "name": "Wohnen & Einrichtung",
+        "url": "/c/de-CH/wohnen-einrichtung/s10068371"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10067563",
+        "name": "Beauty & Körperpflege",
+        "url": "/h/de-CH/beauty-koerperpflege/h10067563"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "1420",
+       "isMain": true,
+       "name": "Beauty & Körperpflege",
+       "parent": "14",
+       "superCategories": [
+        {
+         "code": "14",
+         "name": "Wohnen & Einrichtung",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060208"
+   }
+  },
+  {
+   "resultClass": "product",
+   "type": "product",
+   "code": "10060294",
+   "label": "",
+   "url": "",
+   "gridbox": {
+    "country": "CH",
+    "sequence": 1792363101794876,
+    "data": {
+     "ageRestriction": false,
+     "hasColors": true,
+     "awards": [],
+     "brand": {
+      "name": "LUPILU",
+      "url": "/q/search?q=lupilu",
+      "showBrand": true
+     },
+     "canonicalPath": "/p/de-CH/lupilu-baby-schneeoverall/p10060294",
+     "canonicalUrl": "/p/de-CH/lupilu-baby-schneeoverall/p10060294",
+     "category": "Non Food",
+     "cutoutimageV2": [],
+     "dealOfDay": {
+      "active": false
+     },
+     "designTheme": "default",
+     "disclaimers": [
+      {
+       "id": "code_10060294_a75d6ec2",
+       "type": "CODE",
+       "value": "Basic"
+      },
+      {
+       "id": "text_10060294_1df0aded",
+       "prefix": "*",
+       "type": "TEXT",
+       "value": "Angebote solange Vorrat. Abgabe nur in haushaltsüblichen Mengen. Verkauf ohne Dekoration. Die hier beworbenen Produkte, vor allem NonFood-Produkte, sind nicht alle dauerhaft im Sortiment."
+      },
+      {
+       "id": "text_10060294_3ee5582d",
+       "prefix": "1",
+       "type": "TEXT",
+       "value": "Nicht alle Modelle und Farben in allen Grössen erhältlich."
+      }
+     ],
+     "displayFreeDelivery": false,
+     "energyLabels": [],
+     "erpNumber": "10060294",
+     "flashSales": false,
+     "fullTitle": "LUPILU Baby-Schneeoverall",
+     "gs1Attributes": [],
+     "guaranteeLabels": [],
+     "havingPrice": true,
+     "havingThreesixty": false,
+     "havingVideos": false,
+     "highlightedSeals": 0,
+     "ians": [
+      "521668"
+     ],
+     "image": "https://imgproxy-retcat.assets.schwarz/dFqO1hZj2OvacrjTGkYRLHzzDqcPicV_0N6TvP6Imfc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83QzI5MDFFNTBBQUQ0MEZDOTNDNEYzRTd/DQkZBMjIxNDAxNUQxNDU5QzcwNjFCM0NDNENERjVFMENCNDc1ODZCLnBuZw.png",
+     "image_V1": {
+      "image": "https://imgproxy-retcat.assets.schwarz/dFqO1hZj2OvacrjTGkYRLHzzDqcPicV_0N6TvP6Imfc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83QzI5MDFFNTBBQUQ0MEZDOTNDNEYzRTd/DQkZBMjIxNDAxNUQxNDU5QzcwNjFCM0NDNENERjVFMENCNDc1ODZCLnBuZw.png",
+      "accessibility": "Kinder-Regenoveralls in Dinosaurier-Grün und Leoparden-Muster."
+     },
+     "isLidlGiftCard": false,
+     "isUsedProduct": false,
+     "itemId": 10060294,
+     "imageList": [
+      "https://imgproxy-retcat.assets.schwarz/dFqO1hZj2OvacrjTGkYRLHzzDqcPicV_0N6TvP6Imfc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83QzI5MDFFNTBBQUQ0MEZDOTNDNEYzRTd/DQkZBMjIxNDAxNUQxNDU5QzcwNjFCM0NDNENERjVFMENCNDc1ODZCLnBuZw.png"
+     ],
+     "imageList_V1": [
+      {
+       "image": "https://imgproxy-retcat.assets.schwarz/dFqO1hZj2OvacrjTGkYRLHzzDqcPicV_0N6TvP6Imfc/sm:0/exar:1:ce/w:427/h:320/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMS83QzI5MDFFNTBBQUQ0MEZDOTNDNEYzRTd/DQkZBMjIxNDAxNUQxNDU5QzcwNjFCM0NDNENERjVFMENCNDc1ODZCLnBuZw.png",
+       "accessibility": "Kinder-Regenoveralls in Dinosaurier-Grün und Leoparden-Muster."
+      }
+     ],
+     "keyfacts": {
+      "analyticsCategory": "Non Food",
+      "description": "<ul> <li>Aus Polyester</li> <li>Wasser- und windabweisend</li> <li>Pro St&uuml;ck</li> </ul> <p><a href=\"https://www.lidl.ch/c/de-CH/s10062921\">Finde jetzt deine Gr&ouml;sse</a></p>",
+      "fullTitle": "LUPILU Baby-Schneeoverall",
+      "moreDetails": "Weitere Produktdetails",
+      "supplementalDescription": "86/92 – 110/116",
+      "title": "Baby-Schneeoverall",
+      "titleSuperscript": "1",
+      "wonCategoryPrimary": "Bedürfniswelten/Baby, Kind & Spielware/Kinderbekleidung 2-8 Jahre",
+      "wonCategoryPrimaryPath": "0/16/1612"
+     },
+     "lidlPlus": [],
+     "multipack": false,
+     "online": false,
+     "preventSelling": false,
+     "price": {
+      "currencyCode": "CHF",
+      "currencyCodeSecond": "",
+      "currencySymbol": "CHF",
+      "currencySymbolSecond": "",
+      "displayedCurrency": "CHF",
+      "hasStar": false,
+      "hasVat": false,
+      "price": 14.99,
+      "priceTheme": "white_red",
+      "specialTaxes": [],
+      "superscript": "*",
+      "variantsHaveDifferentPrices": false
+     },
+     "productId": 10060294,
+     "productType": "RETAIL_HEAD",
+     "productOrigin": "progress_event",
+     "quickAddToCart": false,
+     "regionsPrices": {},
+     "ribbons": [],
+     "renderedTs": 1792363101,
+     "seals": [
+      {
+       "altText": "Lupilu Logo.",
+       "image": "https://imgproxy-retcat.assets.schwarz/3MgBNLbXKuSYGAcNGUly1ZOI2CZ89afrvaCiYYdO25E/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi83QTFGQzJCMTg1QkExQTkxMUFEMDIzRTd/BQzQ0RjM3RkVEMENDMkExQzAwMEQyNUMwOEMwMjEwQzkzMjIwMzA4LnBuZw.png"
+      },
+      {
+       "altText": "Global Recycled Standard.",
+       "image": "https://imgproxy-retcat.assets.schwarz/iaLy4Gou4QkjXqiagK8ErX_vS0X0P9NovCYJQe3oCMI/sm:0/w:140/cz/M6Ly9wcm9kLWNhd/GFsb2ctbWVkaWEvY2gvMi9DN0NCNzRDRUY4OURGNjM4QkQ1NTBDRTk/wRDQxMUI5RDM2QTE2QUYzQTQ5OTEyOEUyQjdGQ0FCNjY3MjhDMUY0LnBuZw.png"
+      }
+     ],
+     "stockAvailability": {
+      "availabilityIndicator": 0,
+      "badgeInfo": {
+       "badges": [
+        {
+         "text": "19.10. - 21.10.",
+         "type": "IN_STORE_TODAY_DATE_RANGE"
+        }
+       ]
+      },
+      "badgeInfoV2": [
+       {
+        "badges": [
+         {
+          "text": "19.10. - 21.10.",
+          "type": "IN_STORE_TODAY_DATE_RANGE"
+         }
+        ],
+        "validFrom": 1792360800,
+        "validUntil": 1792619999
+       }
+      ],
+      "onlineAvailable": false,
+      "minOrderableQuantity": 0,
+      "backInStockNotification": false,
+      "backInStockNotificationSoldOut": false
+     },
+     "store": true,
+     "storeStartDate": 1792360800,
+     "storeEndDate": 1792619999,
+     "title": "Baby-Schneeoverall",
+     "timezoneId": "Europe/Zurich",
+     "zones": {}
+    },
+    "productId": 10060294,
+    "meta": {
+     "categoryPaths": [],
+     "campaignPaths": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10104643",
+        "name": "Wintermode für Kinder",
+        "url": "/c/de-CH/wintermode-fuer-kinder/a10104643"
+       }
+      ]
+     ],
+     "fullTitle": "LUPILU Baby-Schneeoverall",
+     "retailLists": [
+      [
+       {
+        "id": 8353,
+        "productSortIndex": 19
+       }
+      ]
+     ],
+     "lists": [
+      8353
+     ],
+     "wonCategoryBreadcrumbs": [
+      [
+       {
+        "hiddenCategory": false,
+        "id": "10068225",
+        "name": "Baby, Kind & Spielzeug",
+        "url": "/c/de-CH/baby-kind-spielzeug/s10068225"
+       },
+       {
+        "hiddenCategory": false,
+        "id": "10067575",
+        "name": "Kinderbekleidung 2-8 Jahre",
+        "url": "/h/de-CH/kinderbekleidung-2-8-jahre/h10067575"
+       }
+      ]
+     ],
+     "worldOfNeeds": [
+      {
+       "code": "1612",
+       "isMain": true,
+       "name": "Kinderbekleidung 2-8 Jahre",
+       "parent": "16",
+       "superCategories": [
+        {
+         "code": "16",
+         "name": "Baby, Kind & Spielware",
+         "parent": "0"
+        },
+        {
+         "code": "0",
+         "name": "Bedürfniswelten",
+         "parent": ""
+        }
+       ]
+      }
+     ],
+     "preview": false
+    },
+    "action": "UPDATE",
+    "language": "de",
+    "eventType": "GRIDBOX",
+    "id": "10060294"
+   }
+  }
+ ],
+ "breadcrumbs": [
+  {
+   "code": "query",
+   "label": "wasser",
+   "url": "/q/api/search?assortment=CH&locale=de_CH&version=v2.0.0&q=wasser",
+   "link": {
+    "type": "search",
+    "filter": {},
+    "q": "wasser"
+   }
+  }
+ ],
+ "details": {},
+ "teasers": {},
+ "advisors": []
+}

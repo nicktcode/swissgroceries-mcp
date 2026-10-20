@@ -27,3 +27,22 @@ export async function lidlFetch(
     init: { headers: HEADERS },
   });
 }
+
+// lidl.ch web storefront. Its search API (/q/api/search) covers the whole
+// online assortment (current + upcoming weekly offers, ~600 items, food and
+// non-food) and is localized; /p/api/gridboxes returns the same records by
+// ERP number. Needs a browser-style Accept header (bare application/json is
+// rejected). Verified live 2026-10-20.
+const WEB_HEADERS: Record<string, string> = {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15',
+  'Accept': 'application/json, text/plain, */*',
+};
+
+export async function lidlWebFetch(path: string, params: Record<string, string>): Promise<any> {
+  const urlStr = `https://www.lidl.ch${path}?${new URLSearchParams(params).toString()}`;
+  // Locale/language is part of the query string, so it's part of the cache key.
+  return httpJson(urlStr, {
+    cacheKey: `lidl:${urlStr}`,
+    init: { headers: WEB_HEADERS },
+  });
+}
