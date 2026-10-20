@@ -44,6 +44,18 @@ describe('search_products tool', () => {
     expect(out.byChain.coop?.length).toBe(0);
   });
 
+  it('keeps a failed chain in byChain as [] and reports it in errors', async () => {
+    const r = new AdapterRegistry();
+    r.register(makeAdapter('migros', [{ chain: 'migros', id: '1', name: 'milk', price: { current: 1.5, currency: 'CHF' }, tags: [] }]));
+    const coop = makeAdapter('coop', []);
+    coop.searchProducts = async () => ({ ok: false, error: { code: 'unavailable', reason: 'DataDome challenge' } });
+    r.register(coop);
+    const out = await searchProductsHandler(r, { query: 'penne' });
+    expect(out.byChain.coop).toEqual([]);
+    expect(out.errors).toEqual([{ chain: 'coop', code: 'unavailable', reason: 'DataDome challenge' }]);
+    expect(out.sources?.coop).toBeUndefined();
+  });
+
   it('reports per-chain data freshness in `sources`', async () => {
     const r = new AdapterRegistry();
     r.register(makeAdapter('migros', [{ chain: 'migros', id: '1', name: 'milk', price: { current: 1.5, currency: 'CHF' }, tags: [] }]));

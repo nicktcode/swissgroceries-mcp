@@ -11,9 +11,9 @@ const TAG_VALUES = [
 export const searchProductsSchema = z.object({
   query: z.string().min(1)
     .describe('Search term in any language, e.g. "Milch", "pâtes", "Bier". At least 1 character.'),
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos']))
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos', 'coopcity']))
     .optional()
-    .describe('Restrict search to specific chains. Omit to search all configured chains in parallel.'),
+    .describe('Restrict search to specific chains. Omit to search all configured chains in parallel. Coop City (coopcity) is opt-in and only included when listed here.'),
   storeIds: z.array(z.string())
     .optional()
     .describe('Filter results to products available in these store IDs (chain-specific internal IDs).'),
@@ -84,6 +84,9 @@ export async function searchProductsHandler(
         byChain[a.chain] = r.data;
         sources[a.chain] = { fetchedAt: new Date(meta.fetchedAt).toISOString(), fromCache: meta.fromCache };
       } else {
+        // Keep the key so consumers can iterate every queried chain; the
+        // matching `errors` entry distinguishes "failed" from "no results".
+        byChain[a.chain] = [];
         errors.push({ chain: a.chain, code: r.error.code, reason: 'reason' in r.error ? r.error.reason : undefined });
       }
     }),
