@@ -1,6 +1,7 @@
 import zipsRaw from '../data/swiss-zips.json' with { type: 'json' };
 import type { GeoPoint } from '../adapters/types.js';
 import { httpJson } from '../util/http.js';
+import { haversineKm } from '../util/haversine.js';
 
 type ZipEntry = { city: string; lat: number; lng: number };
 const zips = zipsRaw as Record<string, ZipEntry>;
@@ -70,6 +71,22 @@ async function geocodeAddress(address: string): Promise<GeocodeResult> {
     hit.display_name.split(',')[0].trim();
 
   return { ok: true, data: { lat, lng, city } };
+}
+
+/**
+ * Swiss ZIPs whose centroid lies within `radiusKm` of `point`, nearest first,
+ * capped at `max`. The single nearest ZIP is always included (even when it is
+ * outside the radius) so a point between centroids still resolves to its
+ * postcode. Returns [] only when the table is empty. Used by adapters whose
+ * store search is text-ranked and works best with a PLZ query (e.g. Migros).
+ */
+export function nearbyZips(point: GeoPoint, radiusKm: number, max: number): string[] {
+  const ranked = Object.entries(zips)
+    .map(([zip, e]) => ({ zip, d: haversineKm(point, e) }))
+    .sort((a, b) => a.d - b.d);
+  if (ranked.length === 0) return [];
+  const within = ranked.filter((r, i) => i === 0 || r.d <= radiusKm);
+  return within.slice(0, max).map((r) => r.zip);
 }
 
 export async function geocode(input: GeocodeInput): Promise<GeocodeResult> {
