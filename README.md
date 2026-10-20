@@ -8,7 +8,7 @@
   <a href="https://www.npmjs.com/package/@nicktcode/swissgroceries-mcp"><img src="https://img.shields.io/npm/v/@nicktcode/swissgroceries-mcp.svg?label=npm" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/@nicktcode/swissgroceries-mcp"><img src="https://img.shields.io/npm/dm/@nicktcode/swissgroceries-mcp.svg" alt="npm downloads"></a>
   <a href="https://github.com/nicktcode/swissgroceries-mcp/actions/workflows/ci.yml"><img src="https://github.com/nicktcode/swissgroceries-mcp/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License: AGPL-3.0"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-PolyForm%20Shield%201.0.0-blue.svg" alt="License: PolyForm Shield 1.0.0"></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/node/v/@nicktcode/swissgroceries-mcp" alt="Node"></a>
   <a href="https://modelcontextprotocol.io/"><img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP compatible"></a>
   <a href="https://glama.ai/mcp/servers/nicktcode/swissgroceries-mcp"><img src="https://glama.ai/mcp/servers/nicktcode/swissgroceries-mcp/badges/score.svg" alt="nicktcode/swissgroceries-mcp MCP server"></a>
@@ -245,13 +245,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick version:
 
 ## License
 
-Dual-licensed:
+[PolyForm Shield 1.0.0](LICENSE) from v0.10.0. You can use and modify it for
+anything that doesn't compete with this software or the author's own products
+built on it (Swiss grocery search, price comparison and shopping apps or
+services), even if your product is free. Personal use in your own MCP client is
+fine. See [LICENSING.md](LICENSING.md) or contact `nick@thommen.it`.
 
-- **Open-source use:** [AGPL-3.0-only](LICENSE). If you run a modified version
-  of this software as a network service, you must publish your modifications.
-- **Commercial use:** if AGPL-3.0 is incompatible with your project (e.g. a
-  closed-source SaaS or proprietary app), a commercial license is available —
-  see [LICENSING.md](LICENSING.md) or contact `nick@thommen.it`.
-
-Versions ≤ 0.7.4 were released under MIT and remain MIT-licensed in their
-existing published form. Starting with 0.7.5 the license is AGPL-3.0-only.
+v0.7.5 to v0.9.0 were released under AGPL-3.0-only and v0.7.4 and earlier
+under MIT; those published versions keep their original licenses.

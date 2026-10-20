@@ -66,7 +66,7 @@ function stage() {
       'multi-store shopping trips with three optimisation strategies. Zero-config: ' +
       'no accounts, no tokens, no API keys.',
     author: { name: pkg.author ?? 'Unknown' },
-    license: pkg.license ?? 'MIT',
+    license: 'PolyForm-Shield-1.0.0',
     homepage: pkg.homepage,
     repository: pkg.repository
       ? { type: pkg.repository.type ?? 'git', url: pkg.repository.url }

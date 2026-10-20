@@ -1,39 +1,39 @@
 # Licensing
 
-`@nicktcode/swissgroceries-mcp` is dual-licensed.
+## Current license: PolyForm Shield 1.0.0
 
-## Open-source: AGPL-3.0-only
+Starting with **v0.10.0**, `@nicktcode/swissgroceries-mcp` is licensed under the
+[PolyForm Shield License 1.0.0](LICENSE)
+(<https://polyformproject.org/licenses/shield/1.0.0>).
 
-For non-commercial use, research, personal projects, and any use where you
-are willing to comply with the GNU Affero General Public License version 3,
-this package is available under [AGPL-3.0-only](LICENSE).
+In short:
 
-The key obligation: **if you run a modified version of this software as a
-network service (e.g. a hosted website or API), you must publish the full
-source code of your modifications to all users of that service.** This
-includes any application that depends on this package as a library and is
-exposed over a network.
+- **Allowed:** using it for yourself, in your own MCP client (Claude Desktop,
+  Claude Code, Cursor, ...), for research, tinkering, and modifying it, as long
+  as what you build does not compete.
+- **Not allowed:** using it to provide any product that competes with this
+  software or with the licensor's own products built on it. Under the license,
+  products compete even when they are free, and the licensor's line of
+  business (stated in [LICENSE](LICENSE)) covers Swiss grocery search, price
+  comparison, promotions, stock lookup and shopping-list planning apps,
+  websites, APIs and services.
 
-## Commercial license
+This summary is for convenience only; the [LICENSE](LICENSE) text is what
+applies.
 
-If your use case is incompatible with AGPL-3.0 — for example, if you want to
-build a proprietary, closed-source product on top of this package — a
-commercial license is available.
+If you want to use it in a way the license doesn't allow, you can ask, but
+licences for products in the line of business above are generally not
+available. Contact: **Nick Thommen**, `nick@thommen.it`.
 
-Typical scenarios that require a commercial license:
+## Earlier versions
 
-- Hosting a closed-source SaaS that uses this package
-- Embedding this package in a closed-source mobile or desktop app
-- Distributing a derivative work without releasing source code
-- Internal corporate use where AGPL compliance is impractical
-
-To enquire about commercial licensing terms, contact:
-
-**Nick Thommen** — `nick@thommen.it`
+- **v0.7.5 to v0.9.0** were released under AGPL-3.0-only and remain under
+  that license in their published form.
+- **v0.7.4 and earlier** were released under MIT and remain MIT-licensed in
+  their published form.
 
 ## Copyright
 
 The author and sole copyright holder is Nick Thommen. As copyright holder,
 the author retains the right to use, modify, and re-license this software
-under any terms — including in proprietary products — independently of the
-public AGPL-3.0 grant offered to third parties.
+under any terms, including in proprietary products.
