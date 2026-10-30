@@ -21,56 +21,38 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - uses: actions/cache/restore@v4
+        with:
+          path: smoke-state.json
+          key: smoke-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: smoke-state-
+
+      # --retry keeps a single slow response from filing an issue.
       - name: Run live smoke
         id: smoke
         env:
           RUN_LIVE: '1'
+          NO_COLOR: '1'
+          SMOKE_UNAVAILABLE_LOG: smoke-unavailable.log
         run: |
           set -o pipefail
-          npm test -- tests/smoke 2>&1 | tee smoke.log
-          echo "exit_code=$?" >> $GITHUB_OUTPUT
+          npx vitest --run tests/smoke --retry=2 2>&1 | tee smoke.log
         continue-on-error: true
 
-      - name: Open issue if smoke failed
-        if: steps.smoke.outcome == 'failure'
+      - name: Update nightly-smoke issues
+        if: always()
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const fs = require('fs');
-            const log = fs.readFileSync('smoke.log', 'utf8').slice(-4000);
-            const today = new Date().toISOString().split('T')[0];
-            const title = `Nightly smoke failed on ${today}`;
-            const body = [
-              `Nightly smoke run [#${context.runId}](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) failed.`,
-              ``,
-              `**Last 4 KB of log:**`,
-              ``,
-              '```',
-              log,
-              '```',
-              ``,
-              `Triggered by automation. Close once the failing adapter is fixed.`,
-            ].join('\n');
+            const report = require('./.github/scripts/nightly-report.cjs');
+            await report({ github, context, smokeFailed: '${{ steps.smoke.outcome }}' === 'failure' });
 
-            // Avoid duplicates: only open one open issue at a time
-            const existing = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'nightly-smoke',
-            });
-            if (existing.data.some(i => i.title.startsWith('Nightly smoke failed'))) {
-              console.log('Existing nightly-smoke issue is already open; skipping.');
-              return;
-            }
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title,
-              body,
-              labels: ['nightly-smoke', 'adapter-broken'],
-            });
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: smoke-state.json
+          key: smoke-state-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Fail job if smoke failed
         if: steps.smoke.outcome == 'failure'

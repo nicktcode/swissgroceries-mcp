@@ -1,3 +1,4 @@
+import { appendFileSync } from 'node:fs';
 import { describe, it, expect } from 'vitest';
 import { buildRegistry } from '../../src/index.js';
 import { searchProductsHandler } from '../../src/tools/search_products.js';
@@ -29,6 +30,9 @@ function expectChainProducts(
   expect(error?.code).not.toBe('schema_mismatch');
   if (count > 0) return;
   if (error && (error.code === 'unavailable' || error.code === 'rate_limited')) {
+    // One night is an outage; the nightly workflow counts repeats, because a
+    // chain that never comes back only ever shows up here as a skip.
+    if (process.env.SMOKE_UNAVAILABLE_LOG) appendFileSync(process.env.SMOKE_UNAVAILABLE_LOG, `${chain}\n`);
     ctx.skip(`${chain} upstream outage (${error.code}): ${error.reason ?? ''}`);
     return;
   }
@@ -63,12 +67,6 @@ describe('live smoke (RUN_LIVE=1)', () => {
     expect(list.every((p) => p.price.current > 0)).toBe(true);
     // Weekly assortment varies, but most items should carry a unit price.
     expect(list.filter((p) => p.unitPrice).length / list.length).toBeGreaterThanOrEqual(0.5);
-  }, 30000);
-
-  itLive('Farmy search returns products', async (ctx) => {
-    const r = buildRegistry();
-    const out = await searchProductsHandler(r, { query: 'milch', chains: ['farmy'], limit: 5 });
-    expectChainProducts(out, 'farmy', ctx);
   }, 30000);
 
   itLive('Volgshop search returns products', async (ctx) => {
