@@ -12,6 +12,9 @@ export interface HttpOpts {
   backoffMs?: number;
   // Per-host throttle. Default ~10 req/sec.
   rateLimitPerSec?: number;
+  // Abort an attempt after this long; a stalled server otherwise hangs the
+  // caller forever, since fetch has no deadline of its own. Default 10000.
+  timeoutMs?: number;
   // Standard fetch init.
   init?: RequestInit;
 }
@@ -145,12 +148,15 @@ export async function httpJson<T = unknown>(url: string, opts: HttpOpts = {}): P
     const retries = opts.retries ?? 3;
     const backoff = opts.backoffMs ?? 250;
     const rate = opts.rateLimitPerSec ?? 10;
+    const timeoutMs = opts.timeoutMs ?? 10_000;
 
     let lastErr: unknown;
     for (let attempt = 0; attempt <= retries; attempt++) {
       try {
         await throttle(host, rate);
-        const res = await fetch(url, opts.init);
+        const timeout = AbortSignal.timeout(timeoutMs);
+        const signal = opts.init?.signal ? AbortSignal.any([opts.init.signal, timeout]) : timeout;
+        const res = await fetch(url, { ...opts.init, signal });
         if (res.status >= 500) throw new Error(`HTTP ${res.status}`);
         if (!res.ok) {
           // 4xx: don't retry, surface to caller

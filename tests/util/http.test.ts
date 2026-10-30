@@ -185,3 +185,33 @@ describe('httpJson — rate limiting', () => {
     expect(elapsed).toBeGreaterThanOrEqual(450);
   });
 });
+
+describe('httpJson — timeout', () => {
+  // A server that accepts the connection and then goes silent.
+  const stalled = () =>
+    vi.fn((_url: string, init?: RequestInit) =>
+      new Promise<Response>((_resolve, reject) => {
+        init?.signal?.addEventListener('abort', () => reject(init.signal!.reason));
+      }),
+    );
+
+  it('aborts a stalled request and retries instead of hanging', async () => {
+    const fetchMock = stalled();
+    vi.stubGlobal('fetch', fetchMock);
+
+    await expect(httpJson(TEST_URL, { timeoutMs: 10, retries: 1, backoffMs: 1 })).rejects.toThrow(/timeout/i);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('keeps a caller-supplied abort signal working', async () => {
+    const fetchMock = stalled();
+    vi.stubGlobal('fetch', fetchMock);
+    const caller = new AbortController();
+
+    const pending = httpJson(TEST_URL, { retries: 0, init: { signal: caller.signal } });
+    await vi.waitFor(() => expect(fetchMock).toHaveBeenCalled());
+    caller.abort(new Error('caller gave up'));
+
+    await expect(pending).rejects.toThrow('caller gave up');
+  });
+});
