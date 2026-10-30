@@ -1,4 +1,4 @@
-export type Chain = 'migros' | 'coop' | 'aldi' | 'denner' | 'lidl' | 'farmy' | 'volgshop' | 'ottos' | 'coopcity';
+export type Chain = 'migros' | 'coop' | 'aldi' | 'denner' | 'lidl' | 'volgshop' | 'ottos' | 'coopcity';
 
 export type Unit = 'g' | 'kg' | 'ml' | 'l' | 'piece';
 
@@ -106,7 +106,7 @@ export interface NormalizedProduct {
    *   - Coop   (product detail)
    *   - Volgshop (search response, parsed from a free-text blob)
    *
-   * Aldi/Lidl/Denner/Farmy/Ottos do not expose macronutrients in their
+   * Aldi/Lidl/Denner/Ottos do not expose macronutrients in their
    * APIs as of this writing.
    */
   nutrition?: Nutrition;

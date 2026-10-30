@@ -16,7 +16,6 @@ import { CoopAdapter } from './adapters/coop/index.js';
 import { AldiAdapter } from './adapters/aldi/index.js';
 import { DennerAdapter } from './adapters/denner/index.js';
 import { LidlAdapter } from './adapters/lidl/index.js';
-import { FarmyAdapter } from './adapters/farmy/index.js';
 import { VolgshopAdapter } from './adapters/volgshop/index.js';
 import { OttosAdapter } from './adapters/ottos/index.js';
 import { CoopCityAdapter } from './adapters/coopcity/index.js';
@@ -41,7 +40,6 @@ export function buildRegistry(): AdapterRegistry {
   r.register(new AldiAdapter());
   r.register(new DennerAdapter());
   r.register(new LidlAdapter());
-  r.register(new FarmyAdapter());
   r.register(new VolgshopAdapter());
   r.register(new OttosAdapter());
   r.register(new CoopCityAdapter());
@@ -63,7 +61,7 @@ const TOOLS = [
   {
     name: 'search_products',
     description: [
-      'Search for products across configured Swiss grocery chains (Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto\'s, Coop City) by keyword.',
+      'Search for products across configured Swiss grocery chains (Migros, Coop, Aldi, Denner, Lidl, Volgshop, Otto\'s, Coop City) by keyword.',
       'The `coop` chain covers the coop.ch supermarket assortment (groceries, household, drugstore) only. The Coop City department-store range (coop-city.ch: cosmetics, fashion, household, electronics) is the separate `coopcity` chain, which is opt-in: include it in `chains` to search it (it is skipped when `chains` is omitted).',
       'Supports optional filters for price, size range, and product tags (organic, vegan, budget, etc.).',
       'Returns results grouped by chain with normalised price, unit price, size, and promotion info.',

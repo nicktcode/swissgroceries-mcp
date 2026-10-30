@@ -59,7 +59,7 @@ function normalize(s: string): string {
 const NAME_LABELS = new Set([
   'prix', 'garantie', 'm', 'budget', 'classic', 'naturaplan', 'naturafarm', 'primagusto',
   'betty', 'bossi', 'fine', 'food', 'qualite', 'qualité', 'karma', 'jamadu', 'coop', 'migros',
-  'denner', 'volg', 'aldi', 'lidl', 'farmy', 'bio', 'fairtrade', 'alnatura', 'demeter', 'suisse',
+  'denner', 'volg', 'aldi', 'lidl', 'bio', 'fairtrade', 'alnatura', 'demeter', 'suisse',
   'swiss', 'schweizer', 'ca', 'ca.',
 ]);
 

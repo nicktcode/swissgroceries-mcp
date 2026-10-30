@@ -44,7 +44,6 @@ describe('swissgroceries://chains resource', () => {
     expect(chainNames).toContain('aldi');
     expect(chainNames).toContain('denner');
     expect(chainNames).toContain('lidl');
-    expect(chainNames).toContain('farmy');
     expect(chainNames).toContain('volgshop');
     expect(chainNames).toContain('ottos');
     expect(chainNames).toContain('coopcity');

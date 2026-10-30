@@ -15,11 +15,11 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
-Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Farmy, Volgshop, Otto's, and Coop City, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
+Real-time Swiss grocery shopping over the [Model Context Protocol](https://modelcontextprotocol.io/). Search products, compare prices across Migros, Coop, Aldi, Denner, Lidl, Volgshop, Otto's, and Coop City, see weekly promotions, and plan multi-store shopping trips. Works with any MCP-compatible client (Claude Desktop, Claude Code, Cursor, Cline, Continue, VS Code MCP extensions, custom clients).
 
 > **Disclaimer**
 >
-> This is a personal fun project. It is not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, Farmy, Volg, Otto's, or any other retailer. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
+> This is a personal fun project. It is not affiliated with, endorsed by, or sponsored by Migros, Coop, Aldi, Denner, Lidl, Volg, Otto's, or any other retailer. It uses publicly accessible mobile-app endpoints to make Swiss grocery shopping a bit smarter for end users.
 >
 > If you represent any of these stores and have concerns (about API usage, branding, scraping rate, or anything else), please reach out to the maintainer through GitHub and we will work it out. No need to escalate.
 >
@@ -127,7 +127,6 @@ Prompts are surfaced as one-click templates in MCP-aware clients (Claude Desktop
 | Aldi | Full catalog | Yes | No | No (API exposes only allergen claims) | None |
 | Denner | Full catalog | Yes | No | No | Anonymous self-auth (signup + signin, rotated) |
 | Lidl | Online assortment via the lidl.ch storefront (current + upcoming weekly offers, ~600 items; food only, de/fr/it) | Yes (weekly leaflet) | No | No | None |
-| Farmy | Full catalog (organic delivery) | Yes (strikeout-price filter) | No (delivery-only) | No | None |
 | Volgshop | Full catalog | Yes (`on_sale` filter) | No (delivery-only) | Yes (parsed from free-text attribute, basis assumed 100g) | None |
 | Otto's | Grocery-adjacent (food, drugstore, baby) | Yes (priceLabels facet) | Yes (per-store stockLevel) | No | None |
 | Coop City | Department-store catalog (coop-city.ch: cosmetics, household, fashion, electronics). Opt-in: only queried when `chains` includes `coopcity` | Yes (`hasDiscount` facet, current price only, no was-price or end date) | Yes (per-store stockLevel, capped at 50) | No | None |

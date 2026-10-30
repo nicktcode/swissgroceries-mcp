@@ -3,7 +3,7 @@ import type { AdapterRegistry } from '../adapters/registry.js';
 import type { NormalizedPromotion } from '../adapters/types.js';
 
 export const getPromotionsSchema = z.object({
-  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'farmy', 'volgshop', 'ottos', 'coopcity']))
+  chains: z.array(z.enum(['migros', 'coop', 'aldi', 'denner', 'lidl', 'volgshop', 'ottos', 'coopcity']))
     .optional()
     .describe('Limit to specific chains. Omit to fetch promotions from all configured chains. Coop City (coopcity) is opt-in and only included when listed here.'),
   query: z.string()
