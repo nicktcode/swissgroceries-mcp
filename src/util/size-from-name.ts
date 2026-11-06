@@ -59,6 +59,13 @@ export function parsePack(text: string | undefined | null): { count: number; uni
 
 export function sizeFromName(name: string | undefined | null): { value: number; unit: Unit } | undefined {
   if (!name) return undefined;
+  // "Eier 10 Stück 53g+" / "Oeufs 10pce 53g+": the weight is a minimum per piece, not the pack
+  // size, so the product is sold (and compared) per piece.
+  const pieces = name.match(/(\d+)\s*(stück|stueck|stk|st|er|pce|pcs|pièces?|pieces?)\b/i);
+  if (pieces && /\d+\s*g\s*\+/i.test(name)) {
+    const count = parseInt(pieces[1], 10);
+    if (count > 0) return { value: count, unit: 'piece' };
+  }
   const pack = parsePack(name);
   if (pack) return { value: pack.unitSize.value * pack.count, unit: pack.unitSize.unit };
   const m = name.match(RX);

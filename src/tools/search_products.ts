@@ -35,6 +35,9 @@ export const searchProductsSchema = z.object({
   offset: z.number().int().nonnegative().max(500)
     .optional()
     .describe('Skip the first N results per chain. Use with `limit` to paginate. Default 0.'),
+  includeUnpriced: z.boolean()
+    .optional()
+    .describe('Include products listed without a price (CHF 0), which usually means the chain lists but does not sell them, e.g. alcohol at Migros. Default false.'),
 }).describe('Search for products across configured Swiss grocery chains by keyword, with optional price, size, and tag filters. Returns results grouped by chain.');
 
 export type SearchProductsInput = z.infer<typeof searchProductsSchema>;
@@ -81,7 +84,9 @@ export async function searchProductsHandler(
         offset: input.offset,
       }));
       if (r.ok) {
-        byChain[a.chain] = r.data;
+        // A CHF 0 price means "listed, not sold" (Migros lists alcohol it does not sell). Left in,
+        // such products win every price comparison, so they are dropped unless asked for.
+        byChain[a.chain] = input.includeUnpriced ? r.data : r.data.filter((p) => (p.price?.current ?? 0) > 0);
         sources[a.chain] = { fetchedAt: new Date(meta.fetchedAt).toISOString(), fromCache: meta.fromCache };
       } else {
         // Keep the key so consumers can iterate every queried chain; the
