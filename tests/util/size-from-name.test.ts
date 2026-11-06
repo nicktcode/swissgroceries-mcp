@@ -17,6 +17,13 @@ describe('sizeFromName', () => {
     expect(sizeFromName('Butter 250g')).toEqual({ value: 250, unit: 'g' });
   });
   it('returns undefined without a size', () => expect(sizeFromName('Äpfel Gala')).toBeUndefined());
+  it('prices eggs per piece when a minimum weight per piece is given', () => {
+    expect(sizeFromName('Freilandeier 10 Stück 53g+')).toEqual({ value: 10, unit: 'piece' });
+    expect(sizeFromName('Oeufs suisse élevage au sol 10pce 53g+')).toEqual({ value: 10, unit: 'piece' });
+  });
+  it('still reads a plain weight when there is no per-piece minimum', () => {
+    expect(sizeFromName('Gnocchi 500g')).toEqual({ value: 500, unit: 'g' });
+  });
 });
 
 describe('parsePack', () => {
