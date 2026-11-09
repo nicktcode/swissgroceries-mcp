@@ -1,6 +1,7 @@
 import type { NormalizedProduct, NormalizedStore, NormalizedPromotion, Unit } from '../types.js';
 import { computeUnitPrice } from '../../util/unit-price.js';
 import { annotateMultipack } from '../../util/multipack.js';
+import { parsePack } from '../../util/size-from-name.js';
 import { deriveDennerTags } from './tags.js';
 
 const SIZE_RX = /([\d.,]+)\s*(g|kg|ml|cl|dl|l|er|stk|stück|stueck)/i;
@@ -54,7 +55,14 @@ export function normalizeProduct(raw: DennerProductRaw): NormalizedProduct {
   const descText = typeof raw.description === 'string'
     ? raw.description
     : (raw.description?.de ?? raw.description?.fr ?? raw.description?.it ?? '');
-  const size = parseSize(descText);
+  // Multipacks carry the pack in the description ("UHT, 3,5% Fett, 12 x 1 Liter").
+  // parseSize alone stops at the per-unit "1 Liter", which priced a 12-pack as
+  // one litre (CHF 14.80/l). Store the TOTAL pack size, per the
+  // NormalizedProduct.size convention; annotateMultipack derives the per-unit numbers.
+  const pack = parsePack(descText);
+  const size = pack
+    ? { value: pack.unitSize.value * pack.count, unit: pack.unitSize.unit }
+    : parseSize(descText);
   const current = raw.priceOverride ?? raw.priceDiscount ?? 0;
   const regular = raw.priceOrigin && raw.priceOrigin > 0 ? raw.priceOrigin : undefined;
   // Denner's canonical URL is /de/aktionen/<slug>~p<numericId>?variant=<uuid>.
@@ -80,7 +88,7 @@ export function normalizeProduct(raw: DennerProductRaw): NormalizedProduct {
     raw,
   };
   product.unitPrice = computeUnitPrice(current, size);
-  annotateMultipack(product);
+  annotateMultipack(product, descText);
   return product;
 }
 

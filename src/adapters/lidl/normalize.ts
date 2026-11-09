@@ -98,10 +98,10 @@ export function normalizeProduct(raw: LidlProductRaw): NormalizedProduct {
   return p;
 }
 
-// Real Lidl store API (v2/CH) uses storeKey, locality, postalCode, address (flat)
+// Real Lidl store API (v4/CH) uses storeKey, locality, postalCode, address (flat)
 // and location.latitude / location.longitude (not coordinates)
 interface LidlStoreRaw {
-  // v2/CH store format
+  // v4/CH store format
   storeKey?: string;
   name?: string;
   address?: string;
@@ -117,7 +117,7 @@ export function normalizeStore(raw: LidlStoreRaw): NormalizedStore {
   const lat = raw.location?.latitude ?? raw.coordinates?.latitude ?? 0;
   const lng = raw.location?.longitude ?? raw.coordinates?.longitude ?? 0;
   const id = raw.storeKey ?? raw.id ?? '';
-  // address may be a flat string (v2/CH) or nested object (plan draft)
+  // address may be a flat string (v4/CH) or nested object (plan draft)
   const street = typeof raw.address === 'string' ? raw.address : (raw.address as any)?.street ?? '';
   return {
     chain: 'lidl',

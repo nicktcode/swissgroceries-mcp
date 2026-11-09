@@ -1,7 +1,9 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi, afterEach } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { normalizeProduct, normalizeStore, normalizePromotion, parseSize } from '../../src/adapters/aldi/normalize.js';
 import { AldiProductSchema, AldiSearchResponseSchema } from '../../src/adapters/aldi/schemas.js';
+import { AldiAdapter } from '../../src/adapters/aldi/index.js';
+import * as aldiClient from '../../src/adapters/aldi/client.js';
 
 describe('aldi parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -175,5 +177,35 @@ describe('aldi schemas (zod validation)', () => {
     if (result.success) {
       expect(Array.isArray(result.data.data ?? result.data.products ?? result.data.results)).toBe(true);
     }
+  });
+});
+
+describe('aldi searchStores paging', () => {
+  afterEach(() => vi.restoreAllMocks());
+
+  const store = (id: string, lat: number, lng: number) => ({
+    id, name: id, address: { address1: 'x', zipCode: '1000', city: 'x', latitude: String(lat), longitude: String(lng) },
+  });
+
+  it('pages past the first batch so stores far down the fixed list are found', async () => {
+    // The API ignores lat/lng and lists eastern Switzerland first; Lausanne sits on page 2.
+    const page1 = Array.from({ length: 100 }, (_, i) => store(`E${i}`, 47.5, 9.1));
+    const page2 = [store('E900', 46.52, 6.63), store('E901', 47.4, 8.5)];
+    const spy = vi.spyOn(aldiClient, 'aldiFetch').mockImplementation(async (_path, query) =>
+      (query?.offset === 0
+        ? { data: page1, meta: { pagination: { offset: 0, limit: 100, totalCount: 102 } } }
+        : { data: page2, meta: { pagination: { offset: 100, limit: 100, totalCount: 102 } } }));
+    const r = await new AldiAdapter().searchStores({ near: { lat: 46.5197, lng: 6.6323 }, radiusKm: 10 });
+    expect(spy).toHaveBeenCalledTimes(2);
+    expect(spy.mock.calls[0][1]).toMatchObject({ limit: 100, offset: 0 });
+    expect(spy.mock.calls[1][1]).toMatchObject({ limit: 100, offset: 100 });
+    expect(r.ok && r.data.map((s) => s.id)).toEqual(['E900']);
+  });
+
+  it('stops after a short page', async () => {
+    const spy = vi.spyOn(aldiClient, 'aldiFetch').mockResolvedValue({ data: [store('E1', 46.52, 6.63)] });
+    const r = await new AldiAdapter().searchStores({ near: { lat: 46.5197, lng: 6.6323 }, radiusKm: 10 });
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(r.ok && r.data.length).toBe(1);
   });
 });

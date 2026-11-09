@@ -130,3 +130,26 @@ describe('denner schemas (zod validation)', () => {
     }
   });
 });
+
+describe('denner multipack size', () => {
+  it('stores the total pack size from "12 x 1 Liter" and derives the per-litre price', () => {
+    const p = normalizeProduct({
+      id: 'x',
+      title: { de: 'Denner Vollmilch' },
+      description: { de: 'UHT, 3,5% Fett, 12 x 1 Liter' },
+      priceDiscount: 14.8,
+      priceOrigin: 18.6,
+    });
+    expect(p.size).toEqual({ value: 12, unit: 'l' });
+    expect(p.unitPrice?.value).toBeCloseTo(14.8 / 12);
+    expect(p.unitPrice?.per).toBe('l');
+    expect(p.multipack?.count).toBe(12);
+    expect(p.multipack?.perUnitSize).toEqual({ value: 1, unit: 'l' });
+  });
+
+  it('leaves single-unit sizes unchanged', () => {
+    const p = normalizeProduct({ id: 'y', title: 'Butter', description: '250 g', priceDiscount: 3 });
+    expect(p.size).toEqual({ value: 250, unit: 'g' });
+    expect(p.multipack).toBeUndefined();
+  });
+});
