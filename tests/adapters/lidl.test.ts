@@ -1,7 +1,9 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi, afterEach } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { parseSize, normalizeProduct, normalizeStore, normalizePromotion } from '../../src/adapters/lidl/normalize.js';
 import { LidlProductSchema, LidlCampaignSchema, LidlCampaignGroupsSchema } from '../../src/adapters/lidl/schemas.js';
+import { LidlAdapter } from '../../src/adapters/lidl/index.js';
+import * as lidlClient from '../../src/adapters/lidl/client.js';
 
 describe('lidl parseSize', () => {
   it('handles 1L', () => expect(parseSize('1L')).toEqual({ value: 1, unit: 'l' }));
@@ -54,7 +56,7 @@ describe('lidl normalizeProduct', () => {
 });
 
 describe('lidl normalizeStore', () => {
-  it('maps v2/CH store fields correctly', () => {
+  it('maps v4/CH store fields correctly', () => {
     const raw = {
       storeKey: 'CH0149',
       name: 'Wettingen (Fil.Nr. 0149)',
@@ -144,5 +146,20 @@ describe('lidl schemas (zod validation)', () => {
     if (result.success) {
       expect(Array.isArray(result.data.groups)).toBe(true);
     }
+  });
+});
+
+describe('lidl searchStores', () => {
+  afterEach(() => vi.restoreAllMocks());
+
+  it('calls the v4/CH store list (v1-v3 now answer 400 UnsupportedApiVersion) and filters by radius', async () => {
+    const spy = vi.spyOn(lidlClient, 'lidlFetch').mockResolvedValue([
+      { storeKey: 'CH0279', name: 'Lausanne', address: 'x', postalCode: '1004', locality: 'Lausanne', location: { latitude: 46.524, longitude: 6.62 } },
+      { storeKey: 'CH0100', name: 'Arbon', address: 'x', postalCode: '9320', locality: 'Arbon', location: { latitude: 47.49878, longitude: 9.42071 } },
+    ]);
+    const r = await new LidlAdapter().searchStores({ near: { lat: 46.5197, lng: 6.6323 }, radiusKm: 10 });
+    expect(spy.mock.calls[0][0]).toBe('stores.lidlplus.com');
+    expect(spy.mock.calls[0][1]).toBe('/api/v4/CH');
+    expect(r.ok && r.data.map((s) => s.id)).toEqual(['CH0279']);
   });
 });

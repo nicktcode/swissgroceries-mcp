@@ -11,6 +11,11 @@ import { AldiSearchResponseSchema } from './schemas.js';
 
 const ALDI_VALID_LIMITS = [12, 16, 24, 30, 32, 48, 60] as const;
 
+// /v2/service-points accepts limit=100; the cap guards against a runaway loop
+// if totalCount ever goes missing.
+const STORE_PAGE_SIZE = 100;
+const STORE_PAGE_CAP = 1000;
+
 function snapAldiLimit(limit?: number): number {
   const target = limit ?? 16;
   for (const v of ALDI_VALID_LIMITS) {
@@ -76,13 +81,24 @@ export class AldiAdapter implements StoreAdapter {
 
   async searchStores(q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
     try {
-      // Real endpoint: /v2/service-points with lat= and lng= params (not latitude/longitude)
-      const r = await aldiFetch('/v2/service-points', {
-        lat: q.near.lat,
-        lng: q.near.lng,
-        radius: q.radiusKm ?? 5,
-      });
-      const list = (r.data ?? r.stores ?? r.results ?? []) as any[];
+      // Real endpoint: /v2/service-points. It ignores lat/lng/radius and returns
+      // the full Swiss list (~240) in a fixed order, 10 per page by default, so
+      // the first page only ever held eastern-Swiss stores and every query
+      // elsewhere (e.g. Lausanne) came back empty. Page through the whole list
+      // and filter by distance here. Verified live 2026-11-09.
+      const list: any[] = [];
+      for (let offset = 0; offset < STORE_PAGE_CAP; offset += STORE_PAGE_SIZE) {
+        const r = await aldiFetch('/v2/service-points', {
+          lat: q.near.lat,
+          lng: q.near.lng,
+          limit: STORE_PAGE_SIZE,
+          offset,
+        });
+        const page = (r.data ?? r.stores ?? r.results ?? []) as any[];
+        list.push(...page);
+        const total = r.meta?.pagination?.totalCount;
+        if (page.length < STORE_PAGE_SIZE || (typeof total === 'number' && list.length >= total)) break;
+      }
       const radius = q.radiusKm ?? 5;
       return ok(list.map(normalizeStore).filter((s) => haversineKm(q.near, s.location) <= radius));
     } catch (e) {

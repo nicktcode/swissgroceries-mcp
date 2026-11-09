@@ -19,11 +19,11 @@ curl -s "${HEADERS[@]}" \
   'https://digital-leaflet.lidlplus.com/api/v1/CH/products/10091030_10050172' \
   > tests/fixtures/lidl/product-detail.json
 
-# Store detail: use v2/CH endpoint (schedule endpoint only returns hours, not address)
-# The v2/CH endpoint returns all stores; we extract the one for CH0149
+# Store detail: use v4/CH endpoint (schedule endpoint only returns hours, not address)
+# The v4/CH endpoint returns all stores; we extract the one for CH0149
 TODAY=$(date '+%Y-%m-%d')
 curl -s "${HEADERS[@]}" \
-  "https://stores.lidlplus.com/api/v2/CH?countryCode=CH&latitude=47.46&longitude=8.31&radius=2" \
+  "https://stores.lidlplus.com/api/v4/CH?countryCode=CH&latitude=47.46&longitude=8.31&radius=2" \
   | node -e "let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>{
       const j=JSON.parse(d);
       const s=j.find(s=>s.storeKey==='CH0149');

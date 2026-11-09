@@ -139,8 +139,11 @@ export class LidlAdapter implements StoreAdapter {
 
   async searchStores(q: StoreQuery): Promise<AdapterResult<NormalizedStore[]>> {
     try {
-      // Real stores API: v2/CH returns an array with storeKey, name, address, postalCode, locality, location
-      const stores = await lidlFetch('stores.lidlplus.com', '/api/v2/CH', {
+      // Real stores API: v4/CH returns every Swiss store (~200) as an array with
+      // storeKey, name, address, postalCode, locality, location; the lat/lng
+      // params are ignored, so the radius filter below does the work. v1-v3
+      // answer 400 UnsupportedApiVersion since 2026-11 (verified 2026-11-09).
+      const stores = await lidlFetch('stores.lidlplus.com', '/api/v4/CH', {
         countryCode: 'CH',
         latitude: String(q.near.lat),
         longitude: String(q.near.lng),
